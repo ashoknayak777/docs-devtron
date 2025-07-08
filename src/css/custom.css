@@ -1,0 +1,157 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+/* :root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+} */
+
+:root {
+  --ifm-color-primary: #0d1a66;        /* Very dark navy blue */
+  --ifm-color-primary-dark: #0B1659;
+  --ifm-color-primary-darker: #0A144F;
+  --ifm-color-primary-darkest: #081142;
+  --ifm-color-primary-light: #1A2C80;
+  --ifm-color-primary-lighter: #2E4199;
+  --ifm-color-primary-lightest: #4457B3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(13, 26, 102, 0.08);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* [data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
+[data-theme='dark'] {
+  --ifm-color-primary: #ffffff;        /* Deep indigo blue */
+  --ifm-color-primary-dark: #1B2C94;
+  --ifm-color-primary-darker: #172580;
+  --ifm-color-primary-darkest: #131E6B;
+  --ifm-color-primary-light: #3547BB;
+  --ifm-color-primary-lighter: #5667CC;
+  --ifm-color-primary-lightest: #7A8ADE;
+  --docusaurus-highlighted-code-line-bg: rgba(31, 51, 170, 0.12);
+}
+
+/* Primary button hover effect in dark mode */
+[data-theme='dark'] .button--primary:hover,
+[data-theme='dark'] .button--primary:focus {
+  background-color: #FFD700; /* Gold on hover */
+  color: #ffffff;            /* Black text for contrast */
+  border: 1px solid #FFD700;
+}
+
+/* Primary links on hover in dark mode */
+[data-theme='dark'] a:hover {
+  color: #FFD700;
+}
+
+.button--primary {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Base Footer Styles */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light mode */
+}
+
+.footer .footer__links {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .footer__copyright {
+  color: inherit;
+}
+
+/* Light Mode */
+html[data-theme='light'] .footer {
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light mode */
+}
+
+html[data-theme='light'] .footer a {
+  color: #333;
+}
+
+html[data-theme='light'] .footer a:hover {
+  color: #000;
+}
+
+/* Dark Mode */
+html[data-theme='dark'] .footer {
+  background-color: #1c1e21;
+  color: #ccc;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Dark mode */
+}
+
+html[data-theme='dark'] .footer a {
+  color: #ddd;
+}
+
+html[data-theme='dark'] .footer a:hover {
+  color: #fff;
+}
+
+/* Icon Handling */
+.footer-icon {
+  transition: filter 0.3s ease;
+}
+
+html[data-theme='dark'] .footer-icon {
+  filter: invert(100%) brightness(150%);
+}
+
+/* Theme-aware logo switching */
+.light-mode-only {
+  display: block;
+}
+.dark-mode-only {
+  display: none;
+}
+
+html[data-theme='dark'] .light-mode-only {
+  display: none;
+}
+html[data-theme='dark'] .dark-mode-only {
+  display: block;
+}
+
+
+.footer-desc {
+  transition: color 0.3s ease;
+}
+
+/* Light mode text color */
+html[data-theme='light'] .footer-desc {
+  color: #333;
+}
+
+/* Dark mode text color */
+html[data-theme='dark'] .footer-desc {
+  color: #ccc;
+}
