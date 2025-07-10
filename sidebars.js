@@ -21,19 +21,23 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tutorialSidebar: [
+    // {
+    //   type: 'doc',
+    //   id: 'README',
+    //   label: 'Introduction',
+    // },
     {
-      type: 'doc',
-      id: 'README',
-      label: 'Introduction',
+      type: 'category',
+      label: 'Overview',
+      items: [
+        'overview/welcome',
+        'overview/starting-with-devtron',
+        'overview/quick-start',
+      ],
     },
     {
       type: 'category',
-      label: 'Getting Started',
-      items: ['setup/getting-started/starting-with-devtron'],
-    },
-    {
-      type: 'category',
-      label: 'Install Devtron',
+      label: 'Install',
       items: [
         'setup/install/README',
         'setup/install/install-devtron-with-cicd',
@@ -41,18 +45,13 @@ const sidebars = {
         'setup/install/install-devtron',
         'setup/install/Install-devtron-on-Minikube-Microk8s-K3s-Kind',
         'setup/install/install-devtron-in-airgapped-environment',
+        'setup/install/install-devtron-Kubernetes-client',
         'setup/install/demo-tutorials',
         'setup/install/devtron-backup',
         'setup/install/uninstall-devtron',
         'setup/install/faq-on-installation',
       ],
     },
-    {
-      type: 'link',
-      label: 'Install Devtron Enterprise Trial',
-      href: 'https://license.devtron.ai/dashboard',
-    },
-    'setup/install/install-devtron-Kubernetes-client',
     'setup/install/prod-infra',
     {
       type: 'category',

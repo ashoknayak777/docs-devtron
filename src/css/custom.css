@@ -27,6 +27,9 @@
   --ifm-color-primary-lightest: #4457B3;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(13, 26, 102, 0.08);
+  --sidebar-active-bg: #f0f8ff;
+  --sidebar-active-border: #1976d2;
+  --sidebar-active-text: #0066cc;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -155,3 +158,107 @@ html[data-theme='light'] .footer-desc {
 html[data-theme='dark'] .footer-desc {
   color: #ccc;
 }
+
+
+
+
+.shimmer-button {
+  background: linear-gradient(90deg, #1F4ED8 25%, #4A6DFB 50%, #1F4ED8 75%);
+  color: white !important;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: small;
+  font-weight: 600;
+  animation: shimmer 2s infinite linear;
+  background-size: 200% 100%;
+  box-shadow: 0 2px 8px rgba(31, 78, 216, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.shimmer-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+
+.theme-doc-sidebar-menu {
+  font-size: 14px;  
+}
+
+/* Optional: reduce submenu font size (indented links) */
+.theme-doc-sidebar-item-link-level-2,
+.theme-doc-sidebar-item-link-level-3 {
+  font-size: 14px;
+}
+
+.menu__link--active {
+  color: var(--sidebar-active-text);
+  background-color: var(--sidebar-active-bg);
+}
+
+/* Hover effect (applies to both modes) */
+.menu__link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(255, 215, 0, 0.08); /* subtle gold hover */
+}
+
+
+/* DARK MODE overrides */
+html[data-theme='dark'] {
+  --sidebar-active-bg: rgba(255, 215, 0, 0.1); /* light gold tint */
+  --sidebar-active-border: #FFD700;           /* gold */
+  --sidebar-active-text: #FFD700;             /* gold */
+}
+
+/* Active sidebar item styling */
+.theme-doc-sidebar-item-link--active {
+  background-color: var(--sidebar-active-bg);
+  border-left: 4px solid var(--sidebar-active-border);
+  border-radius: 4px;
+  padding-left: 12px;
+  font-weight: 500;
+}
+
+
+/* Light mode: Blue highlight (like sidebar) */
+.table-of-contents__link--active {
+  /* background-color: #f0f8ff; */
+  color: #0066cc;
+  border-radius: 4px;
+  /* padding: 6px 12px; */
+  /* margin-left: -12px;
+  border-radius: 4px;
+  color: #0066cc;
+  font-weight: 500;
+  display: block; */
+}
+
+/* Dark mode: Gold highlight */
+html[data-theme='dark'] .table-of-contents__link--active {
+  /* background-color: rgba(255, 215, 0, 0.1); soft gold */
+  color: #FFD700;
+}
+
+
+/* .table-of-contents__link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+html[data-theme='dark'] .table-of-contents__link:hover {
+  background-color: rgba(255, 215, 0, 0.08);
+} */
+
+
+/* .ext-nav {
+  font-size: small;
+} */

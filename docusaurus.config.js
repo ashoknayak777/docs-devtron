@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Devtron Docs',
-  tagline: 'Understand Devtron without being a Kubernetes expert',
+  tagline: 'Accelerate Kubernetes adoption and achieve seamless deployment with Devtron',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -75,19 +75,32 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexPages: true,
+        language: ['en'],
+        hashed: true,
+        docsRouteBasePath: '/docs', // or '/' if you're using docs-only mode
+      },
+    ],
+  ],  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/devtron-social-card.jpg',
-      announcementBar: {
-        id: 'support_us',
-        content:
-          'Try Devtron Enterprise! <a target="_blank" href="https://license.devtron.ai/dashboard">Start Free Trial</a>',
-        backgroundColor: '#D2EEE5',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'Try Devtron Enterprise! <a target="_blank" href="https://license.devtron.ai/dashboard">Start Free Trial</a>',
+      //   backgroundColor: '#D2EEE5',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
       navbar: {
         title: '',
         logo: {
@@ -96,12 +109,18 @@ const config = {
           srcDark: 'img/hlogos/devtron-logo-horizontal-white.svg',
         },
         items: [
+          { label: 'Documentation', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
+          // { label: 'GitHub Repo', href: 'https://github.com/devtron-labs/devtron', position: 'right' },
+          // { label: 'Join Discord', href: 'https://discord.gg/devtron', position: 'right' },
+          { label: 'Website', href: 'https://devtron.ai', position: 'left' },
+          { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'left' },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            href: 'https://license.devtron.ai/dashboard',
+            label: 'Try Devtron Enterprise',
+            position: 'right',
+            className: 'shimmer-button',
           },
+          { type: 'search', position: 'right' },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -129,7 +148,7 @@ const config = {
                   </a>
                 </div>
                 <p class="footer-desc" style="margin: 1rem 0; font-size: 0.95rem;">
-                  Simplify application management and troubleshooting to unlock the full value of K8s, and drive innovation at scale.
+                  Simplify application management and deployment to unlock the full value of K8s, and bridge the gap between development and operations team.
                 </p>
                 <div style="margin-bottom: 1rem;">
                   <a href="https://discord.gg/jsRG5qx2gp" target="_blank" style="margin: 0 8px;">
