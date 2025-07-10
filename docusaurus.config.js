@@ -79,7 +79,15 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/devtron-social-card.jpg',
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Try Devtron Enterprise! <a target="_blank" href="https://license.devtron.ai/dashboard">Start Free Trial</a>',
+        backgroundColor: '#D2EEE5',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
         title: '',
         logo: {
