@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Devtron Docs',
-  tagline: 'Accelerate Kubernetes adoption and achieve seamless deployment with Devtron',
-  favicon: 'img/favicon.ico',
+  tagline: 'Accelerate Kubernetes adoption and experience smooth deployment with Devtron',
+  favicon: 'img/devtron-favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -50,8 +50,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -105,7 +105,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Devtron Logo',
-          src: 'img/hlogos/devtron-logo-horizontal-black.svg',
+          src: 'img/hlogos/devtron-logo-horizontal-dual.svg',
           srcDark: 'img/hlogos/devtron-logo-horizontal-white.svg',
         },
         items: [
