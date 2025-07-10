@@ -29,6 +29,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Overview',
+      collapsed: false,
       items: [
         'overview/welcome',
         'overview/starting-with-devtron',
@@ -38,6 +39,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Install',
+      collapsed: false,
       items: [
         'setup/install/README',
         'setup/install/install-devtron-with-cicd',
@@ -56,6 +58,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Configurations',
+      collapsed: false,
       items: [
         'setup/configurations/configurations-overview',
         'setup/install/installation-configuration',
@@ -66,6 +69,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Global Configurations',
+      collapsed: false,
       items: [
         'user-guide/global-configurations/README',
         'user-guide/global-configurations/host-url',
@@ -120,6 +124,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Devtron Upgrade',
+      collapsed: false,
       items: [
         'setup/upgrade/README',
         'setup/upgrade/upgrade-devtron-ui',
@@ -136,6 +141,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Applications',
+      collapsed: false,
       items: [
         'user-guide/applications',
         'user-guide/create-application',
@@ -216,6 +222,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Jobs',
+      collapsed: false,
       items: [
         'user-guide/jobs/README',
         'user-guide/jobs/create-job',
@@ -231,6 +238,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Software Distribution Hub',
+      collapsed: false,
       items: [
         'user-guide/software-distribution-hub/README',
         'user-guide/software-distribution-hub/tenants',
@@ -242,6 +250,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Resource Browser',
+      collapsed: false,
       items: [
         'user-guide/resource-browser/README',
         'user-guide/resource-browser/overview',
@@ -260,6 +269,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Charts',
+      collapsed: false,
       items: [
         'user-guide/deploy-chart/README',
         'user-guide/deploy-chart/overview-of-charts',
@@ -281,6 +291,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Security',
+      collapsed: false,
       items: [
         'user-guide/security-features',
         'user-guide/security-features/security-scans',
@@ -294,6 +305,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Integrations',
+      collapsed: false,
       items: [
         'user-guide/integrations/README',
         'user-guide/integrations/build-and-deploy-ci-cd',
@@ -316,6 +328,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Pipeline Plugins',
+      collapsed: false,
       items: [
         'user-guide/plugins/README',
         'user-guide/plugins/create-plugin',
@@ -358,6 +371,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Resources',
+      collapsed: false,
       items: [
         'reference/glossary',
         'FAQs/devtron-troubleshoot',

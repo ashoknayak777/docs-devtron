@@ -173,6 +173,7 @@ html[data-theme='dark'] .footer-desc {
   background-size: 200% 100%;
   box-shadow: 0 2px 8px rgba(31, 78, 216, 0.3);
   transition: transform 0.2s ease;
+  margin-left: 12px;
 }
 
 .shimmer-button:hover {
@@ -190,13 +191,13 @@ html[data-theme='dark'] .footer-desc {
 
 
 .theme-doc-sidebar-menu {
-  font-size: 14px;  
+  font-size: 15px;  
 }
 
 /* Optional: reduce submenu font size (indented links) */
 .theme-doc-sidebar-item-link-level-2,
 .theme-doc-sidebar-item-link-level-3 {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .menu__link--active {
@@ -262,3 +263,24 @@ html[data-theme='dark'] .table-of-contents__link:hover {
 /* .ext-nav {
   font-size: small;
 } */
+
+/* .navbar-docs-link {
+  margin-left: 35%
+} */
+
+.table-of-contents {
+  font-size: 13px;
+  /* font-weight: 500; */
+}
+
+.table-of-contents__title {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible .menu__link {
+  color: #000;
+}

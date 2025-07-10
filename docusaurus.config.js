@@ -109,11 +109,11 @@ const config = {
           srcDark: 'img/hlogos/devtron-logo-horizontal-white.svg',
         },
         items: [
-          { label: 'Documentation', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
+          { label: 'Docs', className: 'navbar-docs-link', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
           // { label: 'GitHub Repo', href: 'https://github.com/devtron-labs/devtron', position: 'right' },
           // { label: 'Join Discord', href: 'https://discord.gg/devtron', position: 'right' },
-          { label: 'Website', href: 'https://devtron.ai', position: 'left' },
-          { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'left' },
+          { label: 'Website', href: 'https://devtron.ai', position: 'right' },
+          { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'right' },
           {
             href: 'https://license.devtron.ai/dashboard',
             label: 'Try Devtron Enterprise',
