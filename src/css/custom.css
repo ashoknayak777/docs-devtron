@@ -17,6 +17,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 } */
 
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* [data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+} */
+
 :root {
   --ifm-color-primary: #0d1a66;        /* Very dark navy blue */
   --ifm-color-primary-dark: #0B1659;
@@ -31,18 +43,6 @@
   --sidebar-active-border: #1976d2;
   --sidebar-active-text: #0066cc;
 }
-
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-/* [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-} */
 
 [data-theme='dark'] {
   --ifm-color-primary: #ffffff;        /* Deep indigo blue */
@@ -283,4 +283,14 @@ html[data-theme='dark'] .table-of-contents__link:hover {
 
 .theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible .menu__link {
   color: #000;
+  font-size: 15px;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible .menu__link {
+  color: #1d8eff;
+  font-size: 15px;
+}
+
+.menu__link {
+  font-size: 13px;
 }
