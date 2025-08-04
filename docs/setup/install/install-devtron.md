@@ -1,3 +1,7 @@
+---
+sidebar_label: Install Devtron without Integrations
+---
+
 # Install Devtron
 
 In this section, we describe on how you can install Helm Dashboard by Devtron without any integrations. Integrations can be added later using [Devtron Stack Manager](../../user-guide/stack-manager.md).
