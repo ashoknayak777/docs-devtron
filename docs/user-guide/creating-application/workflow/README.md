@@ -44,9 +44,9 @@ To create a quick workflow with both build and deployment pipelines, follow the 
 
      ![Figure 5: Clicking 'Create Workflow'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow/build-deploy-new-save-workflow.jpg)
 
-5. If you want to configure advanced configurations in the build pipeline, such as Custom image tag pattern, Vulnerability Scanning, etc., refer to the [CI Pipeline](./ci-pipeline#advanced-options) page to learn more.
+5. If you want to configure advanced configurations in the build pipeline, such as Custom image tag pattern, Vulnerability Scanning, etc., refer to the [CI Pipeline](../workflow/ci-pipeline#advanced-options) page to learn more.
 
-6. If you want to configure advanced configurations in the deployment pipeline, such as adding pre/post tasks, Custom image tag pattern, configure different deployment strategies, etc., refer to the [CD Pipeline](./cd-pipeline.md) page to learn more.
+6. If you want to configure advanced configurations in the deployment pipeline, such as adding pre/post tasks, Custom image tag pattern, configure different deployment strategies, etc., refer to the [CD Pipeline](../workflow/ci-pipeline.md) page to learn more.
 
 7. If you want, you can also add Pre/Post Tasks in both build and deployment pipelines. To do so, refer to the [Pre/Post tasks](./ci-build-pre-post-plugins.md) page to learn more.
 
