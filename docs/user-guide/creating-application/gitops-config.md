@@ -15,7 +15,7 @@ The application-level GitOps configuration offers the flexibility to add a custo
 ## Adding Custom Git Repo for GitOps
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to configure user-defined Git repo.
+Users need to have [Admin permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to configure user-defined Git repo.
 :::
 
 ### For Devtron Apps
@@ -28,7 +28,7 @@ Users need to have [Admin permission](../global-configurations/authorization/use
 
     * **Auto-create repository** - Select this option if you wish to proceed with the default behavior. It will create a repository automatically, named after your application with a prefix. Thus saving you the trouble of creating one manually.
 
-    * **Commit manifests to a desired repository** - Select this option if you wish to add a custom repo that is already created with your [Git provider](../global-configurations/gitops.md#supported-git-providers). Enter its link in the `Git Repo URL` field.
+    * **Commit manifests to a desired repository** - Select this option if you wish to add a custom repo that is already created with your [Git provider](../global-configurations/gitops#supported-git-providers). Enter its link in the `Git Repo URL` field.
 
     ![Figure 2: Repo Creation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/gitops-config.jpg)
 
@@ -41,14 +41,14 @@ GitOps repositories, whether auto-created by Devtron or added manually, are immu
 
     ![Figure 3: Saved GitOps Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/saved-config.jpg)
 
-**Note**: In case you skipped the GitOps configuration for your application and proceeded towards the [creation of a new CD pipeline](../creating-application/workflow/cd-pipeline.md#creating-cd-pipeline) (that uses GitOps), you will be prompted to configure GitOps as shown below:
+**Note**: In case you skipped the GitOps configuration for your application and proceeded towards the [creation of a new CD pipeline](../creating-application/workflow/cd-pipeline#creating-cd-pipeline) (that uses GitOps), you will be prompted to configure GitOps as shown below:
 
 ![Figure 4: Incomplete GitOps Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/gitops-not-configured.jpg)
 
 
 ### For Helm Apps
 
-You can [deploy a helm chart](../deploy-chart/overview-of-charts.md#deploying-chart) using either Helm or GitOps. Let's assume you wish to deploy `airflow` chart.
+You can [deploy a helm chart](../deploy-chart/overview-of-charts#deploying-chart) using either Helm or GitOps. Let's assume you wish to deploy `airflow` chart.
 
 1. Select the helm chart from the [Chart Store](../deploy-chart/README.md).
 

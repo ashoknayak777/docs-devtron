@@ -24,7 +24,7 @@ The **New Deployment** tab displays the following sections:
 
 * [Deploy to Environment](#deploy-to-environment)
 * [Deployment Strategy](#deployment-strategy)
-* [Advanced Options](#advanced-options)
+* Advanced Options
 
 ### Deploy to Environment
 
@@ -39,13 +39,13 @@ This section expects four inputs from you:
 
 ### Deployment Strategy
 
-Devtron supports multiple deployment strategies depending on the [deployment chart type](../../creating-application/deployment-template.md#select-chart-from-default-charts).
+Devtron supports multiple deployment strategies depending on the [deployment chart type](../../creating-application/deployment-template#from-devtron-charts).
 
 ![Figure 3: Strategies Supported by Chart Type](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/chart-and-strategy.jpg)
 
 Refer [Deployment Strategies](#deployment-strategies) to know more about each strategy in depth.
 
-The next section is [Advanced Options](#advanced-options) and it comes with additional capabilities. This option is available at the bottom of the `Create deployment pipeline` window. However, if you don't need them, you may proceed with a basic CD pipeline and click **Create Pipeline**.
+The next section is **Advanced Options** and it comes with additional capabilities. This option is available at the bottom of the `Create deployment pipeline` window. However, if you don't need them, you may proceed with a basic CD pipeline and click **Create Pipeline**.
 
 ![Figure 4: Advanced Options](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/advanced-option.jpg)
 
@@ -90,9 +90,9 @@ Some tasks require extra permissions for the node where Devtron is installed. Ho
 
 To enable the `Execute tasks in application environment` option, follow these steps:
 
-:::info
-Make sure your cluster has [devtron-agent](../../global-configurations/cluster-and-environments.md#installing-devtron-agent) installed.
-:::
+<!-- :::info
+Make sure your cluster has [devtron-agent](../../global-configurations/cluster-and-environments#installing-devtron-agent) installed.
+::: -->
 
 * Go to the chart store and search for the devtron-in-clustercd chart.
 
@@ -155,7 +155,7 @@ To enable manual approval for deployment, follow these steps:
 2. Turn on the ‘Manual approval for deployment’ toggle button.
 3. Select the number of approvals required for each deployment.
 
-To know more about the approval process, refer [Triggering CD](../../deploying-application/triggering-cd.md#manual-approval-for-deployment).  -->
+To know more about the approval process, refer [Triggering CD](../../deploying-application/triggering-cd#manual-approval-for-deployment).  -->
 
 #### Deployment Strategies
 
@@ -286,7 +286,7 @@ This will be utilized only when an existing container image is copied to another
 
     ![Figure 17: Edit Icon](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/edit-cd-image-tag.jpg)
 
-3. You can write an alphanumeric pattern for your image tag, e.g., **prod-v1.0.{x}**. Here, 'x' is a mandatory variable whose value will incrementally increase with every pre or post deployment trigger (that option is also available to you). You can also define the value of 'x' for the next trigger in case you want to change it.
+3. You can write an alphanumeric pattern for your image tag, e.g., **`prod-v1.0.{x}`**. Here, 'x' is a mandatory variable whose value will incrementally increase with every pre or post deployment trigger (that option is also available to you). You can also define the value of 'x' for the next trigger in case you want to change it.
 
     ![Figure 18: Defining Tag Pattern](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/cd-image-tag.jpg)
 
@@ -321,7 +321,7 @@ If you need to run any actions for e.g., closure of Jira ticket, load testing or
 
 Post-deployment stages are similar to pre-deployment stages. The difference is, pre-deployment executes before the deployment, while post-deployment occurs after.
 
-You can use [ConfigMap and Secrets](#configmaps--secrets) in post deployments as well. The option to execute tasks in application environment is available too.
+You can use ConfigMap and Secrets in post deployments as well. The option to execute tasks in application environment is available too.
 
 ![Figure 21: Post-deployment Stage](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/cd_post_build.jpg)
 
@@ -355,7 +355,7 @@ If you already use external Helm or Argo CD for deployment and wish to try out D
 * Your Helm release must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Global Configurations** → **Deployment Charts**, then save the chart type at [base configuration](../deployment-template.md) of your application.
 :::
 
-You can not only [view your external Helm apps](../../applications.md#view-external-helm-app-listing), but also manage their deployments using Devtron's CI/CD.
+You can not only [view your external Helm apps](../../applications#view-external-helm-app-listing), but also manage their deployments using Devtron's CI/CD.
 
 1. Click **Helm Release** in 'Select type of application to migrate'.
 
@@ -363,7 +363,7 @@ You can not only [view your external Helm apps](../../applications.md#view-exter
 
   ![Figure 22: Choosing External Cluster and Helm Release from Dropdown](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/choose-cluster-app.jpg)
 
-3. The target cluster, its namespace, and environment would be visible. If the environment is not available, click **Add Environment**. This will open a new tab. Once you have [added the environment to your cluster](../../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster), return and click the refresh button.
+3. The target cluster, its namespace, and environment would be visible. If the environment is not available, click **Add Environment**. This will open a new tab. Once you have [added the environment to your cluster](../../global-configurations/cluster-and-environments#add-environment-to-a-cluster), return and click the refresh button.
 
   ![Figure 23: Adding Environment to Target](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/add-env-helm.jpg)
 
@@ -384,14 +384,14 @@ This feature comes with certain mentioned limitations and expectations. If your 
 
 ### Migrate Argo CD Application
 
-You can not only [view your external Argo CD apps](../../applications.md#view-external-argocd-app-listing), but also manage their deployments using Devtron's CI/CD.
+You can not only [view your external Argo CD apps](../../applications#view-external-argocd-app-listing), but also manage their deployments using Devtron's CI/CD.
 
 :::warning[Prerequisites]
 * Your app should be an Argo Helm app ([read about supported tools](https://argo-cd.readthedocs.io/en/stable/user-guide/application_sources/)).
 * It must have a single Git source and a single values file. By default, Devtron expects `app-values.yaml` so make sure it is committed to Git.
 * GitOps credentials required to commit in the Git repo should be configured in [Global Configurations](../../global-configurations/gitops.md).
 * The cluster containing your external Argo applications should be added to Devtron. Refer [Clusters & Environments](../../global-configurations/cluster-and-environments.md).
-* The target deployment cluster, its namespace, and its [environment](../../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster) should be added to Devtron.
+* The target deployment cluster, its namespace, and its [environment](../../global-configurations/cluster-and-environments#add-environment-to-a-cluster) should be added to Devtron.
 * Your Argo CD app must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Global Configurations** → **Deployment Charts**. Then save the chart type at [base configuration](../deployment-template.md) of your application.
 
 * The external Argo CD should have auto-sync enabled or an alternative syncing mechanism, as Devtron does not perform manual syncs.
@@ -404,7 +404,7 @@ You can not only [view your external Argo CD apps](../../applications.md#view-ex
 
   ![Figure 25: Choosing External Cluster and Argo App from Dropdown](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/choose-cluster-app2.jpg)
 
-3. The target cluster, its namespace, and environment would be visible. If the environment is not available, click **Add Environment**. This will open a new tab. Once you have [added the environment to your cluster](../../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster), return and click the refresh button.
+3. The target cluster, its namespace, and environment would be visible. If the environment is not available, click **Add Environment**. This will open a new tab. Once you have [added the environment to your cluster](../../global-configurations/cluster-and-environments#add-environment-to-a-cluster), return and click the refresh button.
 
   ![Figure 26: Adding Environment to Target](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/add-env-argo.jpg)
 
@@ -468,5 +468,5 @@ Please follow the steps mentioned below to create sequential pipelines:
 ![Figure 29: Adding Multiple CD Pipelines](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/sequential-workflow.jpg)
 
 :::info[Tip]
-If you have multiple applications that already have an existing pipeline (for a given environment) in their workflow, you may clone the same pipeline and its configurations for new environments instead of recreating them in each application. Refer [Clone Pipeline Config](../../application-groups.md#clone-pipeline-configuration) to know more.
+If you have multiple applications that already have an existing pipeline (for a given environment) in their workflow, you may clone the same pipeline and its configurations for new environments instead of recreating them in each application. Refer [Clone Pipeline Config](../../application-groups#clone-pipelines-) to know more.
 :::

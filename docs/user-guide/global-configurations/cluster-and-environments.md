@@ -13,7 +13,7 @@ Go to **Global Configurations** → **Clusters & Environments** → **Add Cluste
 
 You can add any of the following cluster types:
 * [Kubernetes Cluster](#add-kubernetes-cluster) - If you have access to the cluster, use this option.
-* [Isolated Cluster](#add-isolated-cluster) - For airgapped-related use-cases, use this option.
+* [Isolated Cluster](#add-isolated-cluster-) - For airgapped-related use-cases, use this option.
 
 ![Figure 2: Choosing Cluster Type](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/add-cluster-screen.jpg)
 
@@ -52,10 +52,10 @@ Refer to [Get Cluster Credentials](#get-cluster-credentials) to learn the proces
   ![Figure 5: Enter Cluster Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/add-cluster-cred.jpg)
 
 2. Complete the remaining steps (optional):
-  * [Choose Connection Type](#choose-connection-type)
+  * [Choose Connection Type](#choose-method-of-connection-)
   * [Use Secure TLS Connection](#use-secure-tls-connection)
   * [Configure Prometheus](#configure-prometheus-enable-application-metrics)
-  * [Assign a Category](#assigning-category-to-a-cluster)
+  * [Assign a Category](#assign-category-to-a-cluster)
 
 :::note[Tip]
 If you have a kubeconfig file ready, you may skip the above process and refer to [Add Cluster Using Kubeconfig](#add-cluster-using-kubeconfig) instead.
@@ -78,10 +78,10 @@ In case you prefer to add clusters using kubeconfig, follow these steps:
   ![Figure 8: Clicking Save](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/kubeconfig-save-cluster.jpg)
 
 4. Click the saved cluster, and complete the remaining steps (optional):
-  * [Choose Connection Type](#choose-method-of-connection)
+  * [Choose Connection Type](#choose-method-of-connection-)
   * [Use Secure TLS Connection](#use-secure-tls-connection)
   * [Configure Prometheus](#configure-prometheus-enable-application-metrics)
-  * [Assign a category](#assigning-category-to-a-cluster)
+  * [Assign a category](#assign-category-to-a-cluster)
 
 :::warning[Note]
 Ensure that the kubeconfig file has admin permissions. It is crucial for Devtron to have the necessary administrative privileges; otherwise, it may encounter failures or disruptions during deployments and other operations. Admin permission is essential to ensure the smooth functioning of Devtron and to prevent any potential issues that may arise due to insufficient privileges.
@@ -91,7 +91,7 @@ Ensure that the kubeconfig file has admin permissions. It is crucial for Devtron
 
 Devtron allows you to assign a category (for e.g. Prod, QA, Dev, or Stage) to your clusters. This enables category-based filtering in the UI, allowing you to determine whether an application is deployed to the Prod, QA, Dev, or Stage environment.
 
-Before assigning a category, you must first add the category. To add a category, refer to the [Adding a Category](#adding-a-category) section to learn more.
+Before assigning a category, you must first add the category. To add a category, refer to the [Adding a Category](#add-category) section to learn more.
 
 To assign a category to a cluster, follow the steps below:
 
@@ -120,7 +120,7 @@ Clusters with a directly accessible API server endpoint—either publicly or via
 For security reasons, some Kubernetes clusters are deployed behind a proxy. In this setup, Devtron routes all communication through the specified proxy URL.
 * Use this option when network restrictions require traffic to go through a proxy server.
 * Requires specifying a **Proxy URL** (e.g., `http://proxy.example.org:3128`).
-* **Limitation**: Deployments via [GitOps (ArgoCD)](../../reference/glossary.md#gitops) are not recommended for clusters connected via proxy.
+* **Limitation**: Deployments via [GitOps (ArgoCD)](../../reference/glossary#gitops) are not recommended for clusters connected via proxy.
 
 ![Figure 12: Choosing 'Via Proxy'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/via-proxy.jpg)
 
@@ -134,7 +134,7 @@ When a direct connection isn't possible, Devtron can connect to the Kubernetes c
     * Password
     * SSH Private Key
     * Both Password & SSH Private Key
-* **Limitation**: Deployments via [GitOps (ArgoCD)](../../reference/glossary.md#gitops) are **not recommended** for clusters connected via SSH Tunnel.
+* **Limitation**: Deployments via [GitOps (ArgoCD)](../../reference/glossary#gitops) are **not recommended** for clusters connected via SSH Tunnel.
 
 ![Figure 13: Choosing 'Via SSH Tunnel'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/via-ssh.jpg)
 
@@ -196,7 +196,7 @@ You have successfully configured an isolated cluster.
 ![Figure 18: New Isolated Cluster](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/new-isolated-cluster.jpg)
 
 :::info[Note]
-When you deploy to an isolated environment, Devtron automatically packages application manifests and images into a [Helm chart](../../reference/glossary.md#helm-chartspackages). You can then either:
+When you deploy to an isolated environment, Devtron automatically packages application manifests and images into a [Helm chart](../../reference/glossary#helm-chartspackages). You can then either:
 * Download and install manually in a fully air-gapped setup.
 * Push it to an [OCI registry](../global-configurations/container-registries.md) (provided pushing of helm package is enabled), allowing manifests to be pulled manually or automatically via Devtron on an air-gapped cluster (if pull access to the OCI registry is available).
 :::
@@ -209,7 +209,7 @@ When you deploy to an isolated environment, Devtron automatically packages appli
 Users need to have super-admin permission to add an environment to a cluster.
 :::
 
-1. Whether it is a [Kubernetes Cluster](#add-kubernetes-cluster) or [Isolated Cluster](#add-isolated-cluster), a newly created cluster initially has no environments, so click **Add Environment**.
+1. Whether it is a [Kubernetes Cluster](#add-kubernetes-cluster) or [Isolated Cluster](#add-isolated-cluster-), a newly created cluster initially has no environments, so click **Add Environment**.
 
   ![Figure 19: Adding an Environment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/add-environment-option.jpg)
 
@@ -233,7 +233,7 @@ Users need to have super-admin permission to add an environment to a cluster.
 
    ![Figure 22: Category Assigned](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/assign-category-category-added-env.jpg)
 
- **Note:** Before assigning a category, you must first add the category. To add a category, refer to [Adding a Category](#adding-a-category) section to learn more.
+ **Note:** Before assigning a category, you must first add the category. To add a category, refer to [Adding a Category](#add-category) section to learn more.
 
 4. **Add/Edit labels to namespace** [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) - You can attach labels to your specified namespace in the Kubernetes cluster. Using labels will help you filter and identify resources via CLI or other Kubernetes tools. [Click here](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) to know more about labels.
 

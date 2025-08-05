@@ -15,5 +15,5 @@ You can install `External Secrets Operator` using charts store:
 
 ![External secrets chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/secrets/external-secret.jpg)
 
-3. If you don't find any chart with this name i.e `external-secrets`, add chart repository using repository url  ` https://charts.external-secrets.io`. Please follow this [documentation](../../global-configurations/chart-repo.md#add-chart-repository) for adding chart repository.
+3. If you don't find any chart with this name i.e `external-secrets`, add chart repository using repository url  ` https://charts.external-secrets.io`. Please follow this [documentation](../../global-configurations/chart-repo#add-chart-repository) for adding chart repository.
 4. Deploy the chart.

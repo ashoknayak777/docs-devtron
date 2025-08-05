@@ -16,11 +16,11 @@ After the [CI pipeline](./triggering-ci.md) is complete, you can trigger the CD 
 
 3. If in any scenario, such as deploying a hotfix, if you need to use a different deployment strategy other than the default, you can select a different deployment strategy. 
 
-     **Note:** You can only select the deployment strategies that are configured for that pipeline. Refer to the [CD Pipeline](../creating-application/workflow/cd-pipeline.md#configure-deployment-strategies) to learn more.
+     **Note:** You can only select the deployment strategies that are configured for that pipeline. Refer to the [CD Pipeline](../creating-application/workflow/cd-pipeline#configure-deployment-strategies) to learn more.
 
      ![Figure 4: Selecting Deployment Strategy](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/app-details/deployment-build.jpg)
 
-4. In case you have made any changes in the environment configurations (such as changing deployment strategy, modifying ConfigMaps & Secrets, etc.) since the last deployment, use the **Config Diff** button to compare the new configurations with the last deployed configurations before deploying. Refer to [Reviewing Configurations Differences](#reviewing-configurations-differences) to learn more.
+4. In case you have made any changes in the environment configurations (such as changing deployment strategy, modifying ConfigMaps & Secrets, etc.) since the last deployment, use the **Config Diff** button to compare the new configurations with the last deployed configurations before deploying. Refer to [Reviewing Configurations Differences](#reviewing-configuration-differences) to learn more.
 
 5. Click **Deploy** to trigger the CD pipeline.
 
@@ -66,7 +66,7 @@ If no approved images are available or the current image is already deployed, yo
 
 ### Requesting for Image Approval
 
-Users need to have [Build & deploy permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to request for an image approval.
+Users need to have [Build & deploy permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to request for an image approval.
 
 To request an image approval, follow these steps:
 
@@ -78,7 +78,7 @@ To request an image approval, follow these steps:
 
     ![Figure 12: Requesting Approval](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-cd/request-approval-v2.jpg)
 
-    In case you have configured [SES or SMTP on Devtron](../global-configurations/manage-notification.md#notification-configurations), you can directly choose the approver(s) from the list of approvers as shown below.
+    In case you have configured [SES or SMTP on Devtron](../global-configurations/manage-notification#configurations), you can directly choose the approver(s) from the list of approvers as shown below.
 
     ![Figure 13: Choosing Approvers](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-cd/approver-list-v2.jpg)
 
@@ -99,9 +99,9 @@ To request an image approval, follow these steps:
 
 By default, super-admin users are considered as the default approvers. Users who build the image and/or request for its approval, cannot self-approve it even if they have super-admin privileges.
 
-Users with `Approver` permission (for the specific application and environment) can also approve a deployment. This permission can be granted to users from [`User Permissions`](../global-configurations/authorization/user-access.md#devtron-apps-permissions) present in [Global Configurations](../global-configurations/README.md).
+Users with `Approver` permission (for the specific application and environment) can also approve a deployment. This permission can be granted to users from [`User Permissions`](../global-configurations/authorization/user-access#devtron-apps-permissions) present in [Global Configurations](../global-configurations/README.md).
 
-In case [SES](../global-configurations/manage-notification.md#manage-ses-configurations) or [SMTP](../global-configurations/manage-notification.md#manage-smtp-configurations) was configured in Devtron, and the user chose the approvers while raising an image approval request, the approvers would receive an email notification as shown below:
+In case [SES](../global-configurations/manage-notification#email-ses-configuration) or [SMTP](../global-configurations/manage-notification#email-smtp-configuration) was configured in Devtron, and the user chose the approvers while raising an image approval request, the approvers would receive an email notification as shown below:
 
 ![Figure 16: Email Notification to the Approver](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-cd/email-notification.jpg)
 
@@ -121,9 +121,9 @@ To approve an image approval request, follow these steps:
 
 ### Deploying Approved Image
 
-Users need to have [Build & deploy permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the respective environment and application) to select and deploy an approved image.
+Users need to have [Build & deploy permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the respective environment and application) to select and deploy an approved image.
 
-In case the super-admin has set the minimum number of approval to more than 1 (in [workflow](../creating-application/workflow/cd-pipeline.md#4-manual-approval-for-deployment)), you must wait for all approvals before deploying the image. In other words, partially approved image will not be eligible for deployment.
+In case the super-admin has set the minimum number of approval to more than 1 (in [workflow](../creating-application/workflow/cd-pipeline)), you must wait for all approvals before deploying the image. In other words, partially approved image will not be eligible for deployment.
 
 ![Figure 20: Approval Count](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-cd/approval-count-v2.jpg)
 

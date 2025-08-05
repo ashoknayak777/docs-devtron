@@ -8,9 +8,9 @@ For Devtron version older than v0.4.0, please refer the [CI Pipeline (legacy)](h
 
 A CI Workflow can be created in one of the following ways:
 
-* [Build from Source Code](#id-1.-build-and-deploy-from-source-code)
-* [Linked Build Pipeline](#id-2.-linked-build-pipeline)
-* [Deploy Image from External Service](#id-3.-deploy-image-from-external-service)
+* [Build from Source Code](#1-build-from-source-code)
+* [Linked Build Pipeline](#2-linked-build-pipeline)
+* [Deploy Image from External Service](#3-deploy-image-from-external-service)
 * Sync with Environment [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 * Create a Job
 
@@ -34,7 +34,7 @@ Each method has different use-cases that can be tailored according the needs of 
 
 | Field Name | Required/Optional | Description |
 | :--- | :--- | :--- |
-| Source type | Required | Source type to trigger the CI. Available options: [Branch Fixed](#source-type-branch-fixed) \| [Branch Regex](#source-type-branch-regex) \|[Pull Request](#source-type-pull-request) \| [Tag Creation](#source-type-tag-creation) |
+| Source type | Required | Source type to trigger the CI. Available options: [Branch Fixed](#branch-fixed) \| [Branch Regex](#branch-regex) \|[Pull Request](#pull-request) \| [Tag Creation](#tag-creation) |
 | Branch Name | Required | Branch that triggers the CI build |
 | Advanced Options | Optional | Create Pre-Build, Build, and Post-Build tasks |
 
@@ -59,9 +59,9 @@ Go to the **Build stage** tab.
 | Field Name | Required/Optional | Description |
 | :--- | :--- | :--- |
 | TRIGGER BUILD PIPELINE | Required | The build execution may be set to: <ul><li>**Automatically (default)**: Build is triggered automatically as the Git source code changes.</li><li>**Manually**: Build is triggered manually.</li></ul> |
-| DOCKER LAYER CACHING | Optional | Use this to [enable/disable caching of docker image layers](#docker-layer-caching) from your build pipeline |
+| DOCKER LAYER CACHING | Optional | Use this to [enable/disable caching of docker image layers](#docker-layer-caching-) from your build pipeline |
 | Pipeline Name | Required | A name for the pipeline |
-| Source type | Required | Select the source type to build the CI pipeline: [Branch Fixed](#source-type-branch-fixed) \| [Branch Regex](#source-type-branch-regex) \| [Pull Request](#source-type-pull-request) \| [Tag Creation](#source-type-tag-creation) |
+| Source type | Required | Select the source type to build the CI pipeline: [Branch Fixed](#branch-fixed) \| [Branch Regex](#branch-regex) \| [Pull Request](#pull-request) \| [Tag Creation](#tag-creation) |
 | Branch Name | Required | Branch that triggers the CI build |
 | Docker build arguments | Optional | Override docker build configurations for this pipeline. <br /> <ul><li>Key: Field name</li><li>Value: Field value</li></ul>
 
@@ -83,9 +83,9 @@ If a PVC with cache is attached, it will not be impacted by disabling cache. Onl
 :::
 
 There are 3 places from where you can control the cache behavior:
-1. [Orchestrator ConfigMap (Global Settings)](#orchestrator-configmap-global-settings)
-2. [Editing Pipeline](#editing-pipeline)
-3. [During Trigger](#during-trigger)
+1. [Orchestrator ConfigMap (Global Settings)](#1-orchestrator-configmap-global-settings)
+2. [Editing Pipeline](#2-editing-pipeline)
+3. [During Trigger](#3-during-trigger)
 
 ###### 1. Orchestrator ConfigMap (Global Settings)
 
@@ -221,7 +221,7 @@ This feature helps you apply custom tags (e.g., `v1.0.0`) to readily distinguish
 
     ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/ci-image-tag-pattern.jpg)
 
-2. You can write an alphanumeric pattern for your image tag, e.g., **test-v1.0.{x}**. Here, 'x' is a mandatory variable whose value will incrementally increase with every build. You can also define the value of 'x' for the next build trigger in case you want to change it.
+2. You can write an alphanumeric pattern for your image tag, e.g., **`test-v1.0.{x}`**. Here, 'x' is a mandatory variable whose value will incrementally increase with every build. You can also define the value of 'x' for the next build trigger in case you want to change it.
 
     ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/ci-image-tag-version.jpg)
 
@@ -306,7 +306,7 @@ You can use Devtron for deployments on Kubernetes while using an external CI too
 
 | Fields | Description |
 | --- | --- |
-| **Deploy to environment** | <ul><li>`Environment`: Provide the name of the [environment](../../global-configurations/cluster-and-environments.md#add-environment).</li><li>`Namespace`: Provide the [namespace](../../global-configurations/cluster-and-environments.md#add-environment).</li></ul> |
+| **Deploy to environment** | <ul><li>`Environment`: Provide the name of the [environment](../../global-configurations/cluster-and-environments#add-environment-to-a-cluster).</li><li>`Namespace`: Provide the [namespace](../../global-configurations/cluster-and-environments#add-environment-to-a-cluster).</li></ul> |
 | **When do you want to deploy** | You can deploy either in one of the following ways: <ul><li>`Automatic`: If you select automatic, your application will be deployed automatically everytime a new image is received.</li><li>`Manual`: In case of manual, you have to select the image and deploy manually. </li></ul>|
 | **Deployment Strategy** | Configure the deployment preferences for this pipeline. |
 

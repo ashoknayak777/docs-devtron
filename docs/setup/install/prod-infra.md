@@ -24,7 +24,7 @@ Configure autoscaling to handle fluctuating workloads efficiently, reduce downti
 
 ### Blob Storage
 
-Use blob storage to persist build caches and logs, enabling faster builds and reliable CI troubleshooting in production environments. Refer [Blob Storage Guide](./installation-configuration.md#configuration-of-blob-storage) to know more.
+Use blob storage to persist build caches and logs, enabling faster builds and reliable CI troubleshooting in production environments. Refer [Blob Storage Guide](./installation-configuration#configuration-of-blob-storage) to know more.
 
 * **Cache-Storage**: Used to store the build cache to reduce build time of your application.
 * **CI Logs Bucket**: Used to store the build logs of your application.
@@ -86,9 +86,9 @@ helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f res
 
 ### CI Isolation with Taints and Tolerations
 
-To ensure CI workloads run exclusively on the dedicated CI nodes, you need to specify the taints and labels to the node. Then, for the CI build pods, you can add the tolerations and node selectors in the `devtron-custom-cm` (ConfigMap) of `devtroncd` namespace using [these keys](./installation-configuration.md#configure-overrides). These will automatically propagate to CI workloads when they are created.
+To ensure CI workloads run exclusively on the dedicated CI nodes, you need to specify the taints and labels to the node. Then, for the CI build pods, you can add the tolerations and node selectors in the `devtron-custom-cm` (ConfigMap) of `devtroncd` namespace using [these keys](./installation-configuration#configure-overrides). These will automatically propagate to CI workloads when they are created.
 
-If you are following our [Cloud-Specific Setup Guidelines](#id-2.-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
+If you are following our [Cloud-Specific Setup Guidelines](#2-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
 
 
 ``` bash

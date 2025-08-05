@@ -9,8 +9,8 @@ You can define application behavior by providing information in the following se
 
 | Key | Descriptions |
 | :--- | :--- |
-| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../creating-application/deployment-template.md#selecting-a-chart-version) section for more detail. |
-| `Basic (GUI)` | You can perform a basic deployment configuration for your application in the **Basic (GUI)** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../creating-application/deployment-template.md#using-basic-gui) section for more detail.|
+| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../creating-application/deployment-template#selecting-a-chart-version) section for more detail. |
+| `Basic (GUI)` | You can perform a basic deployment configuration for your application in the **Basic (GUI)** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../creating-application/deployment-template#using-basic-gui) section for more detail.|
 | `Advanced (YAML)` | If you want to do additional configurations, then click **Advanced (YAML)** for modifications.<br />Refer [Advanced (YAML)](#advanced-yaml) section for more detail. |
 | `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br />Refer [Application Metrics](../../creating-application/app-metrics.md) for more detail. |
 
@@ -246,7 +246,7 @@ autoscaling:
 ```yaml
 fullnameOverride: app-name
 ```
-`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses {app-name}-{environment-name} as release fullname.
+`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses `{app-name}`-`{environment-name}` as release fullname.
 
 ### Image
 

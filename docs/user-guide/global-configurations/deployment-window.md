@@ -172,7 +172,7 @@ Users with view only permission or above for an application can view all deploym
 
 ### Overview Page
 
-The **Deployment window** section shows the blackout and maintenance windows configured for each [environment](../../reference/glossary.md#environment) of the application.
+The **Deployment window** section shows the blackout and maintenance windows configured for each [environment](../../reference/glossary#environment) of the application.
 
 ![Figure 21: Overview Page - Deployment Window](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/deployment-window.jpg)
 

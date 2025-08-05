@@ -96,7 +96,7 @@ Choose your preferred K8s distribution and follow the displayed commands to inst
 
 ![Figure 8: Installing Devtron](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/ent-trial/enterpise-license-step-2.jpg)
 
-In case, you want to install Devtron dashboard only, use the commands given in **Devtron without integrations (only dashboard)** tab in [Choose an Installation Option](#id-2.2-choose-an-installation-option) section.
+In case, you want to install Devtron dashboard only, use the commands given in **Devtron without integrations (only dashboard)** tab in [Choose an Installation Option](#22-choose-an-installation-option) section.
 
 :::info[Install Devtron in Air-Gapped Environments]
 
@@ -263,7 +263,7 @@ You will now need to enter your Devtron **Installation Fingerprint** to generate
 
 To get the **Installation Fingerprint**, follow the below steps
 
-1. Visit your Dashboard URL (which you have obtained in [Step-2.3](#id-2.3-obtain-the-dashboard-url))as shown below.
+1. Visit your Dashboard URL (which you have obtained in [Step-2.3](#23-obtain-the-dashboard-url))as shown below.
 
  ![Figure 10: License Activation Screen](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/ent-trial/enterpise-license-fingerprint.jpg)
 
@@ -292,7 +292,7 @@ The license key you generate will be valid only for your enterprise installation
  ![Figure 15: Log in as Administrator ](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/ent-trial/enterpise-license-login.jpg)
 
 :::info[Facing Issues?]
-Visit the [Troubleshoot](#troubleshoot-issues) section to identify the issue or connect with [Devtron Support](support@devtron.ai).
+Visit the [Troubleshoot](#troubleshoot-issues) section to identify the issue or connect with [Devtron Support](mailto:support@devtron.ai).
 :::
 
 ---

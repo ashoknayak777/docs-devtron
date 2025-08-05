@@ -16,7 +16,7 @@ Click `Add Secret` to add a new secret.
 | Key | Description |
 | :--- | :--- |
 | `Name` | Provide a name to your Secret |
-| `Data Type` | Provide the Data Type of your secret. To know about different Data Types available click on [Data Types](secrets.md#data-types) |
+| `Data Type` | Provide the Data Type of your secret. To know about different Data Types available click on [Data Types](secrets#data-types) |
 | `Data Volume` | Specify if there is a need to add a volume that is accessible to the Containers running in a pod. |
 | `Use secrets as Environment Variable` | Select this option if you want to inject Environment Variables in your pods using Secrets. |
 | `Use secrets as Data Volume` | Select this option if you want to configure a Data Volume that is accessible to Containers running in a pod. Ensure that you provide a Volume mount path for the same. |

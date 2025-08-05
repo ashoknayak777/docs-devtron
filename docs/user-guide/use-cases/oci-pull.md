@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Devtron supports the installation of [Helm charts](../../reference/glossary.md#helm-chartspackages) from both: Helm [repos](../../reference/glossary.md#repo) and [Container/OCI registries](../../reference/glossary.md#containeroci-registry). Unlike Helm repos, OCI registries do not have an index file to discover all the charts. However, Devtron makes it easier for you to populate your charts from multiple sources to the [chart store](../../reference/glossary.md#chart-store).
+Devtron supports the installation of [Helm charts](../../reference/glossary#helm-chartspackages) from both: Helm [repos](../../reference/glossary#repo) and [Container/OCI registries](../../reference/glossary#containeroci-registry). Unlike Helm repos, OCI registries do not have an index file to discover all the charts. However, Devtron makes it easier for you to populate your charts from multiple sources to the [chart store](../../reference/glossary#chart-store).
 
 **Prerequisites**
 
 * Helm Chart(s)
-* OCI-compliant Registry (e.g. Docker Hub and [many more](../global-configurations/container-registries.md#supported-registry-providers))
+* OCI-compliant Registry (e.g. Docker Hub and [many more](../global-configurations/container-registries#supported-registry-providers))
 
 You must [add your OCI registry](../global-configurations/container-registries.md) to Devtron with the `Use as chart repository` option enabled.
 

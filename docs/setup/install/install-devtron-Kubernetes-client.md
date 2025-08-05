@@ -37,7 +37,7 @@ https://cdn.devtron.ai/k8s-client/devtron-install.bash
 
 * Devtron Kubernetes Client opens in your browser automatically.
 
-* You must add your cluster to make your cluster visible on the `Kubernetes Resource Browser` and `Clusters` section. To add a cluster, go to the `Global Configurations` and click `Add Cluster`. [Refer documentation on how to add a cluster](../../user-guide/global-configurations/cluster-and-environments.md#add-cluster).
+* You must add your cluster to make your cluster visible on the `Kubernetes Resource Browser` and `Clusters` section. To add a cluster, go to the `Global Configurations` and click `Add Cluster`. [Refer documentation on how to add a cluster](../../user-guide/global-configurations/cluster-and-environments#).
 
 `Note`: You do not need to have a `super admin` permission to add a cluster if you install `Devtron Kubernetes Client`. You can add more than one cluster.
 

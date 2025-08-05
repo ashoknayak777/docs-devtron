@@ -41,7 +41,7 @@ Users need to have super-admin permissions to create an approval policy.
 
         ![Figure 5: Allowing Any Approver](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/approval-count.gif)
 
-    * **Option 2**: Choose **Specific Approver** → **User Group** → **Add Criteria** to choose one or more [user groups](./authorization/user-access.md#add-users) who can provide the requisite number of approvals. The permissible limit is [1 to 6] for each user group you add. From the selected group(s), only the users having `Image Approver` and/or `Configuration Approver` permissions can approve.
+    * **Option 2**: Choose **Specific Approver** → **User Group** → **Add Criteria** to choose one or more [user groups](./authorization/user-access#add-users) who can provide the requisite number of approvals. The permissible limit is [1 to 6] for each user group you add. From the selected group(s), only the users having `Image Approver` and/or `Configuration Approver` permissions can approve.
 
         ![Figure 6: Allowing Approvers from a User Group](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/specific-user-group.gif)
 
@@ -207,7 +207,7 @@ At least one policy must remain applied to a scope, so you cannot remove all the
 Users need to have super-admin permissions to delete an applied policy.
 :::
 
-If you have already applied policies to a scope (e.g., Global, Cluster, Application) and wish to delete all of them from that given scope, follow the steps below. **Note**: This will not [delete the approval policy](#delete-approval-policy) you originally created. Moreover, deployment pipelines may still continue inheriting profiles from higher scopes (e.g., Global, Cluster, Application).
+If you have already applied policies to a scope (e.g., Global, Cluster, Application) and wish to delete all of them from that given scope, follow the steps below. **Note**: This will not [delete the approval policy](#delete-an-approval-policy) you originally created. Moreover, deployment pipelines may still continue inheriting profiles from higher scopes (e.g., Global, Cluster, Application).
 
 1. Go to **Applied Profiles** tab.
 2. Use the filters to find the applied profile(s).

@@ -32,7 +32,7 @@ This will save you the trouble to manually create deployment files separately fo
 ## How to add Environment Overrides
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to change perform environment override.
+Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to change perform environment override.
 :::
 
 Go to **App Configuration** → **Environment Overrides**. For each environment you can override the following configurations:
@@ -48,16 +48,16 @@ Users who are not super-admins will land on [Basic (GUI)](#basic-gui) section wh
 
 #### Basic (GUI)
 
-If you have a [base deployment configuration](../creating-application/deployment-template/deployment.md#2.-basic-configuration) set up at application level, the environment(s) you define for your application will also inherit those values.
+If you have a base deployment configuration set up at application level, the environment(s) you define for your application will also inherit those values.
 
 However, you have the flexibility to use different values at the environment level by overriding the base configurations as shown below.
 
 ![Figure 2: Overriding Deployment Template - GUI Method](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/base-config-override.gif)
 
-Refer [basic configuration](../creating-application/deployment-template/deployment.md#2.-basic-configuration) to know more about each field within `Basic (GUI)` section.
+<!-- Refer [basic configuration](../creating-application/deployment-template/deployment#2-basic-configuration) to know more about each field within `Basic (GUI)` section. -->
 
 :::info[Want to customize the fields displayed on Basic (GUI)? [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)]
-Refer [Customize Basic GUI](../creating-application/deployment-template.md#customize-basic-gui) to know the process of adding, removing, and customizing the Basic (GUI) section.
+Refer [Customize Basic GUI](../creating-application/deployment-template#customize-basic-gui-) to know the process of adding, removing, and customizing the Basic (GUI) section.
 :::
 
 #### Advanced (YAML)
@@ -66,7 +66,7 @@ Similarly, if you are an advanced user intending to tweak more values in deploym
 
 ![Figure 3: Overriding Deployment Template - YAML Method](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/yaml-override.jpg)
 
-[Click here](../creating-application/deployment-template/deployment.md#3-advanced-yaml) to know more about each key-value pair within the `Advanced (YAML)` section.
+[Click here](../creating-application/deployment-template/deployment#advanced-yaml) to know more about each key-value pair within the `Advanced (YAML)` section.
 
 :::warning
 **Delete Override** will discard the current overrides and the base deployment configuration will be applicable again to the environment.

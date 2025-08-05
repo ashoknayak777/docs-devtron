@@ -190,10 +190,10 @@ When multiple values are associated with a scoped variable, the precedence order
 
 There are some system variables that exist by default in Devtron that you can readily use if needed:
 
-* **DEVTRON_NAMESPACE**: Provides name of the [namespace](../../reference/glossary.md#namespace)
+* **DEVTRON_NAMESPACE**: Provides name of the [namespace](../../reference/glossary#namespace)
 * **DEVTRON_CLUSTER_NAME**: Provides name of the [cluster](../global-configurations/cluster-and-environments.md) configured on Devtron
-* **DEVTRON_ENV_NAME**: Provides name of the [environment](../../reference/glossary.md#environment)
-* **DEVTRON_IMAGE_TAG**: Provides [image tag](https://docs.docker.com/engine/reference/commandline/tag/) associated with the [container image](../../reference/glossary.md#image)
+* **DEVTRON_ENV_NAME**: Provides name of the [environment](../../reference/glossary#environment)
+* **DEVTRON_IMAGE_TAG**: Provides [image tag](https://docs.docker.com/engine/reference/commandline/tag/) associated with the [container image](../../reference/glossary#image)
 * **DEVTRON_IMAGE**: Provides full image path of the container image, e.g., `gcr.io/k8s-minikube/kicbase:v0.0.39`
 * **DEVTRON_APP_NAME**: Provides name of the [application on Devtron](../create-application.md)
 

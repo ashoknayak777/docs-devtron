@@ -17,7 +17,7 @@ To configure a deployment chart for your application, do the following steps:
 ## Selecting a Chart Type
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to select a chart.
+Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to select a chart.
 :::
 
 :::warning[Note]
@@ -50,7 +50,7 @@ You can select an available custom chart as shown below. You can also view the d
 ## Selecting a Chart Version
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to select a chart version.
+Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to select a chart version.
 :::
 
 Once you select a chart type, choose a chart version using which you wish to deploy the application.
@@ -68,7 +68,7 @@ Every chart version has its own YAML file that provides specifications for your 
 ## Configuring the Chart
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to configure a chart. However, super-admins can lock keys in base deployment template to prevent non-super-admins from modifying them. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
+Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to configure a chart. However, super-admins can lock keys in base deployment template to prevent non-super-admins from modifying them. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
 :::
 
 ### Using Basic GUI
@@ -107,17 +107,17 @@ Click **Save Changes**. If you want to do additional configurations, then click 
 Superadmin can define and apply custom deployment schema.
 :::
 
-By default, the `Basic (GUI)` section comes with multiple predefined fields as seen earlier [in the table](#2-basic-configuration). However, if you wish to display a different set of fields to your team, you can modify the whole section as per your requirement.
+By default, the `Basic (GUI)` section comes with multiple predefined fields as seen earlier [in the table](#using-basic-gui). However, if you wish to display a different set of fields to your team, you can modify the whole section as per your requirement.
 
 This is useful in scenarios where:
-* Your team members find it difficult to understand and edit the [Advanced (YAML)](#3-advanced-yaml) section.
+* Your team members find it difficult to understand and edit the [Advanced (YAML)](#using-advanced-yaml) section.
 * You frequently edit certain fields in Advanced (YAML), which you expect to remain easily accessible in Basic (GUI) section.
 * You don't require some fields in Basic (GUI) section.
 * You need the autonomy to keep the Basic (GUI) unique for applications/clusters/environments/charts, or display the same Basic (GUI) everywhere.
 
 :::info
 There are two ways you can customize the Basic GUI, use any one of the following:
-1. From [Deployment Charts](../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts) section
+1. From [Deployment Charts](../global-configurations/deployment-charts#editing-gui-schema-of-deployment-charts-) section
 2. Using APIs (explained below)
 :::
 

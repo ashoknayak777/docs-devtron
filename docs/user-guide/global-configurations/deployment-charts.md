@@ -103,7 +103,7 @@ If your code editor highlights a syntax error (property or EOF error) in the abo
 
 ### 3. Add app-values.yaml
 
-In the root directory of your chart, Devtron expects an `app-values.yaml` file. It uses this file to determine the values to be displayed on the [deployment template](../../reference/glossary.md#base-deployment-template) as shown below.
+In the root directory of your chart, Devtron expects an `app-values.yaml` file. It uses this file to determine the values to be displayed on the [deployment template](../../reference/glossary#base-deployment-template) as shown below.
 
 ![Figure 3: Chart Values](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/deployment-template.jpg)
 
@@ -116,9 +116,9 @@ However, if you upload the chart without an `app-values.yaml` or with an empty o
 
 ### 4. Add release-values.yaml
 
-The `release-values.yaml` file contains essential values needed for deployment that aren’t covered by [app-values.yaml](#id-3.-add-app-values.yaml). For example:
+The `release-values.yaml` file contains essential values needed for deployment that aren’t covered by [app-values.yaml](#3-add-app-valuesyaml). For example:
 
-* Some dynamic values (such as `IMAGE_TAG` and `IMAGE_REPO` from the [image descriptor JSON file](#id-2.-create-an-image-descriptor-template-file)) are populated here because they are needed for deployment.
+* Some dynamic values (such as `IMAGE_TAG` and `IMAGE_REPO` from the [image descriptor JSON file](#2-create-an-image-descriptor-template-file)) are populated here because they are needed for deployment.
 * You can use `autoPromotionSeconds` to decide how long to keep old pods running once the latest pods of new release are available.
 
 In the root directory of your chart, create a file named `release-values.yaml` with the following command:
@@ -232,7 +232,7 @@ Once you successfully upload a deployment chart, you can start using it as a dep
 ![Figure 10: Using Deployment Charts](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/use-chart.gif)
 
 :::warning[Note]
-The deployment strategy for a deployment chart is fetched from the chart template and cannot be configured in the [CD pipeline](../creating-application/workflow/cd-pipeline.md#deployment-strategies).
+The deployment strategy for a deployment chart is fetched from the chart template and cannot be configured in the [CD pipeline](../creating-application/workflow/cd-pipeline#deployment-strategies).
 :::
 
 ---
@@ -244,7 +244,7 @@ Only super-admins can edit the GUI schema of deployment charts.
 :::
 
 :::info[Reference]
-This section is an extension of [Customize GUI](../creating-application/deployment-template.md#customize-basic-gui) feature. Refer the document to know more about the significance of having a custom GUI schema for your deployment templates.
+This section is an extension of [Customize GUI](../creating-application/deployment-template#customize-basic-gui-) feature. Refer the document to know more about the significance of having a custom GUI schema for your deployment templates.
 :::
 
 You can edit the GUI schema of the following deployment charts:

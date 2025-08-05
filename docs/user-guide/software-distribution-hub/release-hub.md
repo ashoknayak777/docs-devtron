@@ -100,7 +100,7 @@ The drag-and-drop feature is designed specifically for moving applications betwe
 Users need to have super-admin permission to select images for selected applications.
 :::
 
-1. Select a workflow available for your application. All the [images](../../reference/glossary.md#image) available in the selected workflow will appear.
+1. Select a workflow available for your application. All the [images](../../reference/glossary#image) available in the selected workflow will appear.
 
     ![Figure 12: Selecting Image from Specific Workflow](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/sdh/workflow-selection.gif)
 

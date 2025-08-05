@@ -7,7 +7,7 @@ Install any one of the following integrations for scanning vulnerabilities:
 * [Trivy](../../user-guide/integrations/vulnerability-scanning/trivy.md)
 :::
 
-Devtron's CI pipeline provides a [**Scan for vulnerabilities**](../creating-application/workflow/ci-pipeline.md#scan-for-vulnerabilities) option as shown below. Once you enable this option, it will automatically scan the image for vulnerabilities.
+Devtron's CI pipeline provides a [**Scan for vulnerabilities**](../creating-application/workflow/ci-pipeline#scan-for-vulnerabilities) option as shown below. Once you enable this option, it will automatically scan the image for vulnerabilities.
 
 ![Figure 1: Scan for vulnerabilities](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/security-features/new/enable-image-scan.jpg)
 

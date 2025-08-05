@@ -15,8 +15,8 @@ You can define application behavior by providing information in the following se
 
 | Key | Descriptions |
 | :--- | :--- |
-| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../creating-application/deployment-template.md#selecting-a-chart-version) section for more detail. |
-| `Basic (GUI)` | You can perform a basic deployment configuration for your application in the **Basic (GUI)** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../creating-application/deployment-template.md#using-basic-gui) section for more detail.|
+| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../creating-application/deployment-template#selecting-a-chart-version) section for more detail. |
+| `Basic (GUI)` | You can perform a basic deployment configuration for your application in the **Basic (GUI)** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../creating-application/deployment-template#using-basic-gui) section for more detail.|
 | `Advanced (YAML)` | If you want to do additional configurations, then click **Advanced (YAML)** for modifications.<br />Refer [Advanced (YAML)](#advanced-yaml) section for more detail. |
 | `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br />Refer [Application Metrics](../../creating-application/app-metrics.md) for more detail. |
 
@@ -31,7 +31,7 @@ Some of the use-cases which are defined on the Deployment Template (YAML file) m
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/basic-config-deployment-template-v2.jpg)
 
-[Click here](../../creating-application/deployment-template.md#using-basic-gui) to know more about the Basic (GUI) section. -->
+[Click here](../../creating-application/deployment-template#using-basic-gui) to know more about the Basic (GUI) section. -->
 
 ---
 
@@ -324,7 +324,7 @@ flaggerCanary:
 ```yaml
 fullnameOverride: app-name
 ```
-`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses {app-name}-{environment-name} as release fullname.
+`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses `{app-name}`-`{environment-name}` as release fullname.
 
 ### Image
 
@@ -1126,7 +1126,7 @@ Once all the Deployment template configurations are done, click on `Save` to sav
 
 ### Helm Chart Json Schema
 
-Helm Chart [json schema](../../../../scripts/devtron-reference-helm-charts/reference-chart_4-11-0/schema.json) is used to validate the deployment template values.
+Helm Chart [json schema](https://github.com/devtron-labs/devtron/blob/main/scripts/devtron-reference-helm-charts/reference-chart_4-11-0/schema.json) is used to validate the deployment template values.
 
 ### Other Validations in Json Schema
 

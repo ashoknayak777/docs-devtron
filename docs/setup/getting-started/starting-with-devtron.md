@@ -77,7 +77,7 @@ Choose one of the options as per your requirements:
 | [Devtron with CI/CD](../install/install-devtron-with-cicd.md) | Devtron installation with the CI/CD integration is used to perform CI/CD, security scanning, GitOps, debugging, and observability. |
 | [Helm Dashboard by Devtron](../install/install-devtron.md) | The Helm Dashboard by Devtron which is a standalone installation includes functionalities to deploy, observe, manage, and debug existing Helm applications in multiple clusters. You can also install integrations from [Devtron Stack Manager](../../user-guide/integrations/README.md). |
 | [Devtron with CI/CD along with GitOps (Argo CD)](../install/install-devtron-with-cicd-with-gitops.md) | With this option, you can install Devtron with CI/CD by enabling GitOps during the installation. You can also install other integrations from [Devtron Stack Manager](../../user-guide/integrations/README.md). |
-| **Upgrade Devtron to latest version** | You can upgrade Devtron in one of the following ways:<ul><li><a href="../../setup/upgrade/README.md#upgrade-devtron-using-helm">Upgrade Devtron using Helm</a></li><li><a href="../../setup/upgrade/upgrade-devtron-ui.md">Upgrade Devtron from UI</a></li></ul> |
+| **Upgrade Devtron to latest version** | You can upgrade Devtron in one of the following ways:<ul><li><a href="../../setup/upgrade/README#upgrade-devtron-using-helm">Upgrade Devtron using Helm</a></li><li><a href="../../setup/upgrade/upgrade-devtron-ui.md">Upgrade Devtron from UI</a></li></ul> |
 
 **Note**: If you have questions, please let us know on our discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
 

@@ -16,7 +16,7 @@ Click on `README.md` to get more ideas about the configurations of the chart.
 
 Select the Chart Version that you want to use and Chart Value, you can either use the Default Values or Custom Values.
 
-To know about Custom Values, Click On: [Custom Values](overview-of-charts.md#custom-values)
+To know about Custom Values, Click On: [Custom Values](overview-of-charts#custom-values)
 
 The configuration values can be edited in the section given below Chart Version.
 

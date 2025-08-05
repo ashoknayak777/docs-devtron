@@ -40,7 +40,7 @@ Here, you can give a name and description to your watcher.
 
 ### Namespaces to Watch
 
-Here, you can select the [namespaces](../reference/glossary.md#namespace) whose [Kubernetes resource](../reference/glossary.md#objects) you wish to monitor for changes.
+Here, you can select the [namespaces](../reference/glossary#namespace) whose [Kubernetes resource](../reference/glossary#objects) you wish to monitor for changes.
 
 * You can watch the namespace(s) across **All Clusters** (existing and future).
 

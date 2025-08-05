@@ -76,7 +76,7 @@ helm install devtron devtron/devtron-operator \
 
 <TabItem value="AWS S3 Bucket" label="AWS S3 Bucket">
 
-Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#aws-specific) page.
+Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration#aws-specific) page.
 
 Run the following command to install Devtron along with AWS S3 buckets for storing build logs and cache:
 
@@ -145,7 +145,7 @@ helm install devtron devtron/devtron-operator \
 
 <TabItem value="Azure Blob Storage" label="Azure Blob Storage">
 
-Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#azure-specific) page.
+Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration#azure-specific) page.
 
 Run the following command to install Devtron along with Azure Blob Storage for storing build logs and cache:
 
@@ -169,7 +169,7 @@ helm install devtron devtron/devtron-operator \
 
 <TabItem value="Google Cloud Storage" label="Google Cloud Storage">
 
-Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#google-cloud-storage-specific) page.
+Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](./installation-configuration#google-cloud-storage-specific) page.
 
 Run the following command to install Devtron along with Google Cloud Storage for storing build logs and cache:
 

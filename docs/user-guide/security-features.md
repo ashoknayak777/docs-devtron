@@ -25,7 +25,7 @@ You can integrate a scanning tool of your choice. By default, Devtron integrates
 
 ### Before Building Artifact
 
-When you commit the code, it's essential to scan it before building a [container image](../reference/glossary.md#image). By scanning early, you can catch and fix problems before they become expensive or time-consuming to remediate later.
+When you commit the code, it's essential to scan it before building a [container image](../reference/glossary#image). By scanning early, you can catch and fix problems before they become expensive or time-consuming to remediate later.
 
 ![Figure 2: Scanning in Pre-CI Stage](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/security-features/pre-ci.gif)
 

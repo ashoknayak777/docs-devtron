@@ -118,7 +118,7 @@ Only superadmins can create new versions of a plugin.
 
 You may create incremental versions of your plugin (e.g., `1.0.0` → `1.0.1` or `2.0.0`). The old version(s) of your plugins will still be available to your users.
 
-1. Follow steps 1-7 from the [Create a New Plugin](#create-a-new-plugin) section of this document.
+1. Follow steps 1-7 from the [Plugin Creation](#plugin-creation) section of this document.
 
 2. From the **New version of existing plugin** tab, select the plugin for which you want to create a new version from the **Existing Plugin** dropdown.
 

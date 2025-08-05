@@ -4,7 +4,7 @@
 
 Your [application workflow](../creating-application/workflow/README.md) should follow certain standards and precautions to ensure reliability and a smooth release. For example, mandating load testing for production deployments might help you identify performance bottlenecks early rather than face possible outages, unhappy users, or revenue loss.
 
-The **Plugin Policy** feature in Devtron lets you enforce the presence of specific [plugins](../plugins/README.md) at various stages in your application's build and deployment pipelines, such as [pre-build](../../reference/glossary.md#pre-build), [post-build](../../reference/glossary.md#post-build), [pre-deployment](../../reference/glossary.md#pre-deployment), or [post-deployment](../../reference/glossary.md#post-deployment). Therefore, if the required plugins do not exist in the specified stage(s), you can decide the action (whether to allow or block the pipeline trigger).
+The **Plugin Policy** feature in Devtron lets you enforce the presence of specific [plugins](../plugins/README.md) at various stages in your application's build and deployment pipelines, such as [pre-build](../../reference/glossary#pre-build), [post-build](../../reference/glossary#post-build), [pre-deployment](../../reference/glossary#pre-deployment), or [post-deployment](../../reference/glossary#post-deployment). Therefore, if the required plugins do not exist in the specified stage(s), you can decide the action (whether to allow or block the pipeline trigger).
 
 ![Figure 1: How Plugin Policy Works](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/plugin-policy-main.gif)
 

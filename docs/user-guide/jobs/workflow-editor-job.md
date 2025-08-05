@@ -26,7 +26,7 @@ In the `Workflow Editor` section, you can configure a job pipeline to be execute
 
 ### Docker Layer Caching [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-[Click here](../creating-application/workflow/ci-pipeline.md#docker-layer-caching) to read more about controlling cache behavior in Devtron.
+[Click here](../creating-application/workflow/ci-pipeline#docker-layer-caching-) to read more about controlling cache behavior in Devtron.
 
 ### Source type: Branch Fixed
 
@@ -46,7 +46,7 @@ For example if the user sets the Branch Regex as `feature-*`, then users can tri
 
 The **Source type** - "Pull Request" allows you to configure the CI Pipeline using the PR raised in your repository.
 
-> Before you begin, [configure the webhook](../creating-application/workflow/ci-pipeline.md#configuring-webhook) for either GitHub or Bitbucket.
+> Before you begin, [configure the webhook](../creating-application/workflow/ci-pipeline#configuring-webhook) for either GitHub or Bitbucket.
 
 > The "Pull Request" source type feature only works for the host GitHub or Bitbucket cloud for now. To request support for a different Git host, please create a GitHub issue [here](https://github.com/devtron-labs/devtron/issues).
 
@@ -69,7 +69,7 @@ Select the appropriate filter and pass the matching condition as a regular expre
 
 The **Source type** - "Tag Creation" allows you to build the CI pipeline from a tag.
 
-> Before you begin, [configure the webhook](../creating-application/workflow/ci-pipeline.md#configuring-webhook) for either GitHub or Bitbucket.
+> Before you begin, [configure the webhook](../creating-application/workflow/ci-pipeline#configuring-webhook) for either GitHub or Bitbucket.
 
 To trigger the build from specific tags, you can filter the tags based on the `author` and/or the `tag name`.
 
@@ -85,7 +85,7 @@ Select the appropriate filter and pass the matching condition as a regular expre
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/create-job-pipeline-add-tasks.jpg)
 
-You can also add preset plugins in your job pipeline to execute some standard tasks, such as Code analysis, Load testing, Security scanning etc. Click `Add Task` to add [preset plugins](../creating-application/workflow/ci-build-pre-post-plugins.md#configuring-pre-post-build-tasks).
+You can also add preset plugins in your job pipeline to execute some standard tasks, such as Code analysis, Load testing, Security scanning etc. Click `Add Task` to add [preset plugins](../creating-application/workflow/ci-build-pre-post-plugins#configuring-prepost-build-tasks).
 
 
 ## Update Job Pipeline

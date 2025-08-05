@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Devtron offers the option to pull container images using digest. Refer [CD Pipeline - Image Digest](../creating-application/workflow/cd-pipeline.md#pull-container-image-with-image-digest) to know the purpose it serves.
+Devtron offers the option to pull container images using digest. Refer [CD Pipeline - Image Digest](../creating-application/workflow/cd-pipeline#pull-container-image-with-image-digest) to know the purpose it serves.
 
 Though it can be enabled by an application-admin for a given CD Pipeline, Devtron also allows super-admins to enable pull image digest at environment level.
 
@@ -43,7 +43,7 @@ This is for enabling pull image digest for specific environments. Therefore, onl
 
 2. Click **Save Changes**.
 
-Once you enable pull image digest for a given environment in Global Configurations, users won't be able to modify the [image digest setting in the CD pipeline](../creating-application/workflow/cd-pipeline.md#pull-container-image-with-image-digest). The toggle button would appear disabled for that environment as shown below.
+Once you enable pull image digest for a given environment in Global Configurations, users won't be able to modify the [image digest setting in the CD pipeline](../creating-application/workflow/cd-pipeline#pull-container-image-with-image-digest). The toggle button would appear disabled for that environment as shown below.
 
 ![Figure 4: Non-editable Option](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/image-digest/disabled-pull-digest.jpg)
 

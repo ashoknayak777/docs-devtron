@@ -26,14 +26,14 @@ Get in touch with us if you are looking for a way to improve the efficiency of y
 
 The **Refresh** icon updates the Git Commits section in the CI Pipeline by fetching the latest commits from the repository. Clicking on the refresh icon ensures that you have the most recent commit available.
 
-The **Ignore Cache** option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. [Click here](../creating-application/workflow/ci-pipeline.md#docker-layer-caching) to read more about controlling cache behavior in Devtron.
+The **Ignore Cache** option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. [Click here](../creating-application/workflow/ci-pipeline#docker-layer-caching-) to read more about controlling cache behavior in Devtron.
 
 ---
 
 ## Passing Build Parameters [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Build & deploy permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to pass build parameters.
+Users need to have [Build & deploy permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to pass build parameters.
 :::
 
 If you wish to pass runtime parameters for a build job, you can provide key-value pairs before triggering the build. Thereafter, you can access those passed values by referencing the corresponding keys in the environment variable dictionary.

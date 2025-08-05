@@ -213,7 +213,7 @@ The license key you generate will be valid only for your enterprise installation
     ![Figure 7: Pasting License Key and Activating](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/ent-trial/license-activation-3.jpg)
 
 :::info[Facing Issues?]
-Visit the [Troubleshoot](#troubleshoot-issues) section to identify the issue or connect with [Devtron Support](support@devtron.ai).
+Visit the [Troubleshoot](#troubleshoot-issues) section to identify the issue or connect with [Devtron Support](mailto:support@devtron.ai).
 :::
 
 ---

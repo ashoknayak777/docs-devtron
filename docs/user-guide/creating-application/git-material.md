@@ -2,7 +2,7 @@
 
 ## Introduction
 
-During the [CI process](../deploying-application/triggering-ci.md), the application source code is pulled from your [git repository](../../reference/glossary.md#repo).
+During the [CI process](../deploying-application/triggering-ci.md), the application source code is pulled from your [git repository](../../reference/glossary#repo).
 
 Devtron also supports multiple Git repositories (be it from one Git account or multiple Git accounts) in a single deployment.
 
@@ -58,7 +58,7 @@ Not all repository changes are worth triggering a new [CI build](../deploying-ap
 
 ![Figure 4: Sample Exclusion Rule](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/sample1.jpg)
 
-In other words, if a given commit contains changes only in file(s) present in your exclusion rule, the commit won't show up while selecting the [Git material](../../reference/glossary.md#material), which means it will not be eligible for build. However, if a given commit contains changes in other files too (along with the excluded file), the commit won't be excluded and it will definitely show up in the list of commits.
+In other words, if a given commit contains changes only in file(s) present in your exclusion rule, the commit won't show up while selecting the [Git material](../../reference/glossary#material), which means it will not be eligible for build. However, if a given commit contains changes in other files too (along with the excluded file), the commit won't be excluded and it will definitely show up in the list of commits.
 
 ![Figure 5: Excludes commits made to README.md](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/excluded-commit.jpg)
 

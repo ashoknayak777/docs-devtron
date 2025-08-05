@@ -1,6 +1,6 @@
 # Container/OCI Registry
 
-While [container registries](../../reference/glossary.md#container-registry) are typically used for storing [images](../../reference/glossary.md#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary.md#helm-charts-packages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
+While [container registries](../../reference/glossary#containeroci-registry) are typically used for storing [images](../../reference/glossary#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary#helm-chartspackages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
 
 You can configure a container registry using any registry provider of your choice. It allows you to build, deploy, and manage your container images or charts with easy-to-use UI.
 
@@ -128,7 +128,7 @@ You can use any registry which can be authenticated using `docker login -u <user
 
 ## Registry Credential Access
 
-You can create a Pod that uses a [Secret](../../reference/glossary.md#secrets) to pull an image from a private container registry. You can use any private container registry of your choice, for e.g., [Docker Hub](https://www.docker.com/products/docker-hub).
+You can create a Pod that uses a [Secret](../../reference/glossary#secrets) to pull an image from a private container registry. You can use any private container registry of your choice, for e.g., [Docker Hub](https://www.docker.com/products/docker-hub).
 
 Super-admin users can decide if they want to auto-inject registry credentials or use a secret to pull an image for deployment to environments on specific clusters.
 

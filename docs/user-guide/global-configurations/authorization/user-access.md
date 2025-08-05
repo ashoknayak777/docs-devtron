@@ -115,7 +115,7 @@ There are seven role-based access levels for Devtron Apps:
 4. **Manager**: These users have the same permissions as `Admin` but can also grant or revoke user access for applications and environments they manage.
 5. **Image approver**: These users can approve image deployment requests.
 6. **Configuration approver**: These users can approve configuration change requests for [Deployment Templates](../../creating-application/deployment-template.md), [ConfigMaps](../../creating-application/config-maps.md), and [Secrets](../../creating-application/secrets.md). However, users cannot self-approve their own proposed changes, even if they have this role or Super Admin access.
-7. **Artifact promoter**: These users have the authority to approve the promotion of [artifacts](../../../reference/glossary.md#artifacts) directly to the target CD pipeline.
+7. **Artifact promoter**: These users have the authority to approve the promotion of [artifacts](../../../reference/glossary#artifacts) directly to the target CD pipeline.
 
 However, super-admin users have unrestricted access to all Devtron resources. They can create, modify, delete, and manage any resource, including user access, Git repositories, container registries, clusters, and environments.
 
@@ -274,7 +274,7 @@ When working with multiple collaborators in Devtron, you may need to deactivate 
 
 You can manage a user's active status at three levels:
 * [User-level](#at-user-level)
-* [Permission Group-level](#at-group-level)
+* [Permission Group-level](#at-permission-group-level)
 * [Direct Permissions-level](#at-direct-permissions-level)
 
 
@@ -312,7 +312,7 @@ You can manage a user's active status at three levels:
 :::
 
 :::warning[Note]
-Direct user permissions cannot be edited if you're using [LDAP](./sso/ldap.md)/[Microsoft](./sso/microsoft.md) for SSO with 'auto-assign permission' enabled. Permissions can only be [managed via permission groups](./permission-groups.md#edit-permissions-groups) in such a scenario.
+Direct user permissions cannot be edited if you're using [LDAP](./sso/ldap.md)/[Microsoft](./sso/microsoft.md) for SSO with 'auto-assign permission' enabled. Permissions can only be [managed via permission groups](./permission-groups#edit-permissions-groups) in such a scenario.
 :::
 
 You can edit the user permissions by clicking the edit icon. Click **Save** after editing the permissions.

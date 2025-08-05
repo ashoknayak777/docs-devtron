@@ -14,7 +14,7 @@ The **Applications** page helps you create and manage your microservices, and it
 
 ### Application Listing
 
-You can view the app name, its status, environment, namespace, and many more upfront. The apps are segregated into: [Devtron Apps](../reference/glossary.md#devtron-apps), [Helm Apps](../reference/glossary.md#helm-apps), [ArgoCD Apps](../reference/glossary.md#argocd-apps), and [FluxCD Apps](../reference/glossary.md#fluxcd-apps).
+You can view the app name, its status, environment, namespace, and many more upfront. The apps are segregated into: [Devtron Apps](../reference/glossary#devtron-apps), [Helm Apps](../reference/glossary#helm-apps), [ArgoCD Apps](../reference/glossary#argocd-apps), and [FluxCD Apps](../reference/glossary#fluxcd-apps).
 
 ![Figure 1: App Types](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/argocd/app-types.jpg)
 
@@ -37,7 +37,7 @@ There are additional options available for you:
 ## View External Helm App Listing
 
 :::note[Want to Manage your Existing Helm Release using Devtron?]
-Apart from internal helm apps created in Devtron, you can also view your external Helm app listing. Moreover, you can manage their deployments using Devtron. Read [Migrate Helm Release to Devtron](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-helm-release) to know more.
+Apart from internal helm apps created in Devtron, you can also view your external Helm app listing. Moreover, you can manage their deployments using Devtron. Read [Migrate Helm Release to Devtron](../user-guide/creating-application/workflow/cd-pipeline#migrate-helm-release) to know more.
 :::
 
 :::warning[Who Can Perform This Action?]
@@ -58,7 +58,7 @@ External Helm apps are Helm applications deployed outside of Devtron.
 ## View External ArgoCD App Listing
 
 :::note[Want to Manage your Existing Argo CD Apps using Devtron?]
-You can not only view your ArgoCD app list, but also manage their deployments using Devtron. Read [Migrate ArgoCD Apps to Devtron](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-argo-cd-application) to know more.
+You can not only view your ArgoCD app list, but also manage their deployments using Devtron. Read [Migrate ArgoCD Apps to Devtron](../user-guide/creating-application/workflow/cd-pipeline#migrate-argo-cd-application) to know more.
 :::
 
 :::warning[Who Can Perform This Action?]
@@ -70,7 +70,7 @@ Users need super-admin permission to view/enable/disable the ArgoCD listing.
 In Argo CD, a user manages one dashboard for one ArgoCD instance. Therefore, with multiple ArgoCD instances, the process becomes cumbersome for the user to manage several dashboards.
 
 With Devtron, you get an entire Argo CD app listing in one place. This listing includes:
-* Apps deployed using [GitOps](../reference/glossary.md#gitops) on Devtron
+* Apps deployed using [GitOps](../reference/glossary#gitops) on Devtron
 * Other Argo CD apps present in your cluster
 
 ![Figure 3: ArgoCD App List](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/argocd/app-details-argo.gif)
@@ -79,7 +79,7 @@ With Devtron, you get an entire Argo CD app listing in one place. This listing i
 
 Devtron also bridges the gap for ArgoCD users by providing additional features as follows:
 
-* **Resource Scanning**: You can scan for vulnerabilities using Devtron's [resource scanning](../user-guide/security-features.md#from-app-details) feature. [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* **Resource Scanning**: You can scan for vulnerabilities using Devtron's [resource scanning](../user-guide/security-features#from-app-details) feature. [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
 * **Single-pane View**: All Argo CD apps will show details such as their app status, environment, cluster, and namespace together in one dashboard.
 

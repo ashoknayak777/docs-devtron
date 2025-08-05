@@ -51,8 +51,8 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
 8. **Allow/Block Deployments** - Mandatory tags additionally let you define what should happen if users do not configure them in the intended projects:
     * **Allow deployments** - Use this option if you want to allow the user to deploy an existing application where mandatory tags are not configured yet.
-    * **Block deployment stages of prod environments** - Use this option if you want to prevent the user from deploying an existing application to [production environments](https://docs.devtron.ai/global-configurations/cluster-and-environments#add-environment), if mandatory tags are not configured.
-    * **Block deployment stages of non-prod enviroments** - Use this option if you want to prevent the user from deploying an existing application to [non-production environments](https://docs.devtron.ai/global-configurations/cluster-and-environments#add-environment), if mandatory tags are not configured.
+    * **Block deployment stages of prod environments** - Use this option if you want to prevent the user from deploying an existing application to [production environments](../global-configurations/cluster-and-environments#add-environment-to-a-cluster), if mandatory tags are not configured.
+    * **Block deployment stages of non-prod enviroments** - Use this option if you want to prevent the user from deploying an existing application to [non-production environments](../global-configurations/cluster-and-environments#add-environment-to-a-cluster), if mandatory tags are not configured.
     * **Block deployment stages of all environments** - This will prevent the user from deploying an existing application to all environments if mandatory tags are not configured.
 
     ![Figure 9: Deciding Deployment Restrictions](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/allow-block.gif)
@@ -153,7 +153,7 @@ Users can see a dropdown list of your suggested tags while creating a new app or
 
 ### Impact on Deployment Pipelines
 
-If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tags)).
+If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tag-policy)).
 
 The same is true for auto-triggering deployment pipelines. A new image available after the build stage will not auto-trigger the deployment pipeline due to the missing mandatory tags.
 
@@ -167,6 +167,6 @@ Similarly, if deployment restrictions apply due to missing mandatory tags, users
 
 ### Impact on Release
 
-If a user attempts to [deploy a release](../software-distribution-hub/release-hub.md#deploying-release) that contains applications with missing mandatory tags, the deployment will be blocked if restrictions apply.
+If a user attempts to [deploy a release](../software-distribution-hub/release-hub#deploying-release) that contains applications with missing mandatory tags, the deployment will be blocked if restrictions apply.
 
 ![Figure 22: Deployment Restriction in Release (SDH)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/release-blocked.gif)

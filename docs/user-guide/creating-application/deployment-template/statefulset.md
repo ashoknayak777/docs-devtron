@@ -355,7 +355,7 @@ autoscaling:
 ```yaml
 fullnameOverride: app-name
 ```
-`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses {app-name}-{environment-name} as release fullname.
+`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses `{app-name}`-`{environment-name}` as release fullname.
 
 ### Image
 
@@ -977,7 +977,7 @@ Once all the Deployment template configurations are done, click on `Save` to sav
 
 ### Helm Chart Json Schema
 
-Helm Chart [json schema](../../../../scripts/devtron-reference-helm-charts/reference-chart_4-11-0/schema.json) is used to validate the deployment template values.
+Helm Chart [json schema](https://github.com/devtron-labs/devtron/blob/main/scripts/devtron-reference-helm-charts/reference-chart_4-11-0/schema.json) is used to validate the deployment template values.
 
 ### Other Validations in Json Schema
 

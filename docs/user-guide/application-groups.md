@@ -5,7 +5,7 @@
 Application groups in Devtron streamline the deployment of microservices by enabling you to build and deploy multiple applications simultaneously. This feature is particularly beneficial when your microservices are interdependent, as a change in one service often triggers the need to redeploy others.
 
 :::info
-Only one application group would exist for each [environment](../reference/glossary.md#environment). You cannot group applications belonging to different environments.
+Only one application group would exist for each [environment](../reference/glossary#environment). You cannot group applications belonging to different environments.
 :::
 
 ---
@@ -32,7 +32,7 @@ As you can see, it has similar options as available under [Applications](./appli
 * Configurations
 
 :::info
-Users need to have [View only permission](../user-guide/global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to view all the applications within a group.
+Users need to have [View only permission](../user-guide/global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to view all the applications within a group.
 :::
 
 First, we will walk you through the [key features](#key-features) of Application Groups, followed by [additional features](#additional-features) that will help you perform bulk actions.
@@ -43,13 +43,13 @@ First, we will walk you through the [key features](#key-features) of Application
 
 ### Building Application Images
 
-The **Build & Deploy** tab of your application group enables you to trigger the [CI builds](../reference/glossary.md#image) of one or more applications in bulk.
+The **Build & Deploy** tab of your application group enables you to trigger the [CI builds](../reference/glossary#image) of one or more applications in bulk.
 
 1. Select the applications using the checkboxes and click the **Build Image** button present at the bottom.
 
     ![Figure 4: Build Option](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/application-groups/select-app.jpg)
 
-2. The `Build image` screen opens. Select the application and the [commit](../reference/glossary.md#commit-hash) for which you want to trigger the CI build.
+2. The `Build image` screen opens. Select the application and the [commit](../reference/glossary#commit-hash) for which you want to trigger the CI build.
 
     ![Figure 5: Selecting Commit](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/application-groups/select-commit-1.jpg)
 
@@ -57,7 +57,7 @@ The **Build & Deploy** tab of your application group enables you to trigger the 
 Adding [image labels](./deploying-application/image-labels-and-comments.md) can help you quickly locate the container image from the list of images shown in Application Groups.
 :::
 
-3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci.md#passing-build-parameters) in application groups before triggering the build.
+3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci#passing-build-parameters-) in application groups before triggering the build.
 
 :::info
 Passing build parameters feature is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
@@ -86,7 +86,7 @@ Passing build parameters feature is only available in <img src="https://devtron-
     ![Figure 11: Triggered Deployment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/application-groups/build-image.jpg)
 
 :::info
-Users need to have [Build and deploy permission](../user-guide/global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to trigger the build
+Users need to have [Build and deploy permission](../user-guide/global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to trigger the build
 :::
 
 
@@ -94,16 +94,16 @@ Users need to have [Build and deploy permission](../user-guide/global-configurat
 
 The **Configurations** tab of your application group allows you to configure the following:
 
-* [Deployment template](../reference/glossary.md#base-deployment-template)
-* [ConfigMaps](../reference/glossary.md#configmaps)
-* [Secrets](../reference/glossary.md#secrets)
+* [Deployment template](../reference/glossary#base-deployment-template)
+* [ConfigMaps](../reference/glossary#configmaps)
+* [Secrets](../reference/glossary#secrets)
 
 As shown below, you can handle the configurations of more than one application from a single screen.
 
 ![Figure 12: Configurations of each App](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/application-groups/configurations.jpg)
 
 :::info
-Users need to have [Admin role](../user-guide/global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to change their configuration. Please note, you might not be able to change the values of locked keys in deployment template. Refer [Lock Deployment Configuration](./global-configurations/lock-deployment-config.md) to know more.
+Users need to have [Admin role](../user-guide/global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to change their configuration. Please note, you might not be able to change the values of locked keys in deployment template. Refer [Lock Deployment Configuration](./global-configurations/lock-deployment-config.md) to know more.
 :::
 
 
@@ -140,7 +140,7 @@ Once the deployment is successful, the pipelines will show `Succeeded`.
 ![Figure 19: Successful Deployment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/application-groups/successful.jpg)
 
 :::info
-Users need to have [Build and deploy permission](../user-guide/global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to initiate the deployment
+Users need to have [Build and deploy permission](../user-guide/global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to initiate the deployment
 :::
 
 
@@ -194,12 +194,11 @@ This feature aims at helping the user clone existing CI/CD pipelines for new tar
 |----------------------------------|--------------------------------------------------------------|
 | [**CI Workflow**](../user-guide/creating-application/workflow/ci-pipeline.md)                  | Clones the source’s workflow CI as it is                    |
 | [**Pipeline Configuration**](../user-guide/creating-application/workflow/ci-build-pre-post-plugins.md)       | Cloned, including Pre-CD and Post-CD scripts/plugins        |
-| [**Environment Configuration**](../user-guide/creating-application/README.md#app-configuration)    | Cloned, including Deployment Template (DT), ConfigMap (CM), and Secret |
+| [**Environment Configuration**](../user-guide/creating-application/README.md)    | Cloned, including Deployment Template (DT), ConfigMap (CM), and Secret |
 | [**GitOps Configuration**](../user-guide/creating-application/gitops-config.md)         | Not cloned              |
 | [**Environment Policies**](../user-guide/creating-application/environment-overrides.md)         | Cloned if at pipeline level; ignored if global              |
 | [**CD Filter**](../user-guide/global-configurations/filter-condition.md)                    | Not cloned (handled globally)                              |
 | [**Protect Configurations**](../user-guide/creating-application/config-approval.md)       | Cloned (handled at pipeline level)                         |
-| [**Deployment Approvals**](../user-guide/creating-application/workflow/cd-pipeline.md#manual-approval-for-deployment)         | Cloned                                                     |
 | [**Lock Configurations**](../user-guide/global-configurations/lock-deployment-config.md)          | Not cloned                                                 |
 | **Mandatory Plugin**             | Not cloned                                                 |
 | [**Image Digest Policy**](../user-guide/global-configurations/pull-image-digest.md)          | Cloned at pipeline level; ignored if global                |
@@ -253,7 +252,7 @@ The cloning process will skip if a CD pipeline (for the target environment) alre
 ### Hibernating and Unhibernating Apps
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Build & deploy permission](./global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to hibernate or unhibernate applications.
+Users need to have [Build & deploy permission](./global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to hibernate or unhibernate applications.
 :::
 
 Since every application comes with an option to hibernate, the same is true for application groups. Using application group, you can hibernate one or more applications belonging to the same environment if you do not want them to consume resources (replica count will be set to 0).
@@ -295,7 +294,7 @@ Your applications would be up and running in some time.
 ### Restart Workloads
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Build & deploy permission](./global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to restart workloads in bulk.
+Users need to have [Build & deploy permission](./global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to restart workloads in bulk.
 :::
 
 Restarting workloads might be necessary if you want your new code or configuration to come into effect, or you are experiencing issues like crashing of pods.
@@ -382,10 +381,10 @@ Users can delete a saved filter if they have Admin/Manager access on all applica
 ### Changing Branch
 
 :::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../user-guide/global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and applications) to update their branch.
+Users need to have [Admin role](../user-guide/global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and applications) to update their branch.
 :::
 
-Assume you have a few applications whose [build pipelines](../reference/glossary.md#build-pipeline) fetch from the `main` branch of your code repository. However, you decided to maintain a `master` branch, and you want all the upcoming CI builds to consider the `master` branch as the source. Devtron provides you the option to change the branch at both levels—individual application as well as application group.
+Assume you have a few applications whose [build pipelines](../reference/glossary#build-pipeline) fetch from the `main` branch of your code repository. However, you decided to maintain a `master` branch, and you want all the upcoming CI builds to consider the `master` branch as the source. Devtron provides you the option to change the branch at both levels—individual application as well as application group.
 
 1. In the **Build & Deploy** tab of your application group, select the intended applications and click the **Change Branch** button present at the bottom.
 

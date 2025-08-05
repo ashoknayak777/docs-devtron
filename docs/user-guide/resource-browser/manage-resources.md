@@ -1,7 +1,7 @@
 # Discover and Manage Resources
 
 :::warning[Who Can Perform This Action?]
-Users need to have [access to the cluster](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to discover resources.
+Users need to have [access to the cluster](../global-configurations/authorization/user-access#kubernetes-resources-permissions) to discover resources.
 :::
 
 ## Search a Resource
@@ -42,10 +42,10 @@ Further resources in the cluster are grouped under the following categories:
 ## Edit a Manifest
 
 :::warning[Who Can Perform This Action?]
-User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to edit its manifest. The fields/paths locked by superadmins in the manifest cannot be edited by non-superadmins.
+User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access#kubernetes-resources-permissions) to edit its manifest. The fields/paths locked by superadmins in the manifest cannot be edited by non-superadmins.
 :::
 
-You can edit the [manifest](../../reference/glossary.md#manifest) of a Kubernetes object. This can be for fixing errors, scaling resources, or changing configuration. Moreover, you can edit a manifest [using YAML](#edit-using-yaml) or [GUI](#edit-using-gui), as per your convenience.
+You can edit the [manifest](../../reference/glossary#manifest) of a Kubernetes object. This can be for fixing errors, scaling resources, or changing configuration. Moreover, you can edit a manifest [using YAML](#edit-using-yaml) or [GUI](#edit-using-gui-), as per your convenience.
 
 ### Edit using YAML
 
@@ -82,7 +82,7 @@ For events with warnings, you can take the assistance of AI. Clicking the **Expl
 ## Delete a Resource
 
 :::warning[Who Can Perform This Action?]
-User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to delete it.
+User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access#kubernetes-resources-permissions) to delete it.
 :::
 
 You can delete an unwanted resource if it is orphaned and no longer required by your applications.
@@ -94,10 +94,10 @@ You can delete an unwanted resource if it is orphaned and no longer required by 
 ## Create a Resource
 
 :::warning[Who Can Perform This Action?]
-User needs to be an [admin of the Kubernetes resources](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to create resources.
+User needs to be an [admin of the Kubernetes resources](../global-configurations/authorization/user-access#kubernetes-resources-permissions) to create resources.
 :::
 
-You can create one or more [Kubernetes objects](../../reference/glossary.md#objects) in your cluster using YAML. In case you wish to create multiple objects, separate each resource definition by three dashes (---).
+You can create one or more [Kubernetes objects](../../reference/glossary#objects) in your cluster using YAML. In case you wish to create multiple objects, separate each resource definition by three dashes (---).
 
 Once you select a cluster in Resource Browser, click **+ Create Resource**, and add the resource definition.
 

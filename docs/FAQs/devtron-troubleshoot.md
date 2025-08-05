@@ -279,7 +279,7 @@ The other way is to get the password in the encoded form using the cmd
 
 #### 20. Getting `UPGRADE FAILED: cannot patch "postgresql-postgresql"` while upgrading Devtron to newer versions
 `Debug:`
-1. Make sure to [annotate and label](../setup/upgrade/devtron-upgrade-0.3.x-0.4.x.md#3.-annotate-and-label-all-the-devtron-resources) all the Devtron resources.
+1. Make sure to [annotate and label](../setup/upgrade/devtron-upgrade-0.3.x-0.4.x#3-annotate-and-label-all-the-devtron-resources) all the Devtron resources.
 2. Description of error
 ```
 Error: UPGRADE FAILED: cannot patch "postgresql-postgresql" with kind StatefulSet: StatefulSet.apps "postgresql-postgresql" is invalid: spec: Forbidden: updates to statefulset spec for fields other than 'replicas', 'template', 'updateStrategy' and 'minReadySeconds' are forbidden
@@ -317,7 +317,7 @@ helm upgrade devtron devtron/devtron-operator \
 </TabItem>
 
 <TabItem value="AWS S3 Bucket" label="AWS S3 Bucket">
-This configuration will use AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#aws-specific) page.
+This configuration will use AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#aws-specific) page.
 
 *  **Configure using S3 IAM policy:**
 
@@ -374,7 +374,7 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 
 <TabItem value="Azure Blob Storage" label="Azure Blob Storage">
 This configuration will use Azure Blob Storage for storing build logs and cache.
-Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#azure-specific) page.
+Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#azure-specific) page.
 
 ```bash
 helm repo update
@@ -392,7 +392,7 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 
 <TabItem value="Google Cloud Storage" label="Google Cloud Storage">
 This configuration will use Google Cloud Storage for storing build logs and cache.
-Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#google-cloud-storage-specific) page.
+Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#google-cloud-storage-specific) page.
 
 ```bash
 helm repo update
@@ -620,11 +620,11 @@ Follow the below steps if you are getting the above error:
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/empty-values.jpg)
 
-This happens due to a missing [app-values.yaml](../user-guide/global-configurations/deployment-charts.md#3-add-app-values.yaml) file in your deployment chart.
+This happens due to a missing [app-values.yaml](../user-guide/global-configurations/deployment-charts#3-add-app-valuesyaml) file in your deployment chart.
 
-To fix this issue, include an `app-values.yaml` file in your deployment helm chart before uploading the chart. Refer [adding app-values.yaml](../user-guide/global-configurations/deployment-charts.md#3-add-app-values.yaml) to know more.
+To fix this issue, include an `app-values.yaml` file in your deployment helm chart before uploading the chart. Refer [adding app-values.yaml](../user-guide/global-configurations/deployment-charts#3-add-app-valuesyaml) to know more.
 
 #### 31. Unable to create a GitOps deployment pipeline or encountering errors with GitOps deployment.
 
-If the **GitOps** section is already configured for your [external Argo apps](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-argo-cd-application), and later if you install the GitOps (ArgoCD) module from [Devtron Stack Manager](../user-guide/integrations/argocd.md), make sure to save the [GitOps](../user-guide/global-configurations/gitops.md) configuration once again and also the [Cluster](../user-guide/global-configurations/cluster-and-environments.md) configuration. This might prevent potential errors and ensure your GitOps deployments (for Devtron Apps/Helm Apps) are functional.
+If the **GitOps** section is already configured for your [external Argo apps](../user-guide/creating-application/workflow/cd-pipeline#migrate-argo-cd-application), and later if you install the GitOps (ArgoCD) module from [Devtron Stack Manager](../user-guide/integrations/argocd.md), make sure to save the [GitOps](../user-guide/global-configurations/gitops.md) configuration once again and also the [Cluster](../user-guide/global-configurations/cluster-and-environments.md) configuration. This might prevent potential errors and ensure your GitOps deployments (for Devtron Apps/Helm Apps) are functional.
 
