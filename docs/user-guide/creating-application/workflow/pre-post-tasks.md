@@ -135,12 +135,11 @@ Let's take an example of a **Shell task** in the Post-Build stage, that send an 
 #### Prerequisites
 Make sure to create an App password for the sender's email account to use in the script below. Refer the below video to learn how to create an App password for GMAIL accounts
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=2Z_J4l2RJ8s" title="Creating App Password" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2Z_J4l2RJ8s" title="Creating App Password" frameborder="0" allowfullscreen></iframe>
 
 #### Script
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 !/bin/bash
 
 # SMTP server settings for Gmail
@@ -170,7 +169,7 @@ curl --url "smtp://$SMTP_SERVER:$SMTP_PORT" \
 
 echo "Email sent to $TO"
 ```
-{% endcode %}
+
 
 After the build stage is completes, this task will sends an email to notify you that the build stage is completed.
 
@@ -217,8 +216,7 @@ Let's take an example of a **Shell task** in the Pre-Build stage that ensures th
 
 #### Script
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh 
 set -eo pipefail 
 #set -v  ## uncomment this to debug the script 
@@ -233,7 +231,7 @@ else
   echo "Unsupported DB: $DB_NAME. Only 'prod-db' is allowed for this build."
 fi
 ```
-{% endcode %}
+
 
 #### Output Variables
 
@@ -299,8 +297,7 @@ Since we have already configured a shell task to validate the database name, we 
 
 #### Mount Custom Code
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh
 set -e
 
@@ -317,7 +314,7 @@ else
   exit 1
 fi
 ```
-{% endcode %}
+
 
 **Note:** The examples above demonstrate configuring tasks in the Pre-Build and Post-Build stages; you can add tasks in the Pre-Deployment, and Post-Deployment stages in exactly the same way.
 

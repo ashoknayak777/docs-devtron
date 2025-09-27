@@ -1,6 +1,6 @@
 # User Access
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=VTqBRIFbuSU" title="" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VTqBRIFbuSU" title="" frameborder="0" allowfullscreen></iframe>
 
 Like any enterprise product, Devtron supports fine grained access control to the resources based on
 

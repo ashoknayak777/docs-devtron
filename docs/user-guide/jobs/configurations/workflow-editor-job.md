@@ -150,8 +150,7 @@ Let's take an example of a **Shell task** for a job that allows you to extract a
 
 #### Script
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh
 set -e
 
@@ -167,7 +166,7 @@ ls -l "$ARTIFACT_DIR"
 # Export output variable
 echo "ENV_FILE=$FILE"
 ```
-{% endcode %}
+
 
 #### Output Variables
 
@@ -220,8 +219,7 @@ Let's take an example of a **Shell task** for a job that allows you to back up a
 
 #### Script
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh 
 set -eo pipefail 
 #set -v  ## uncomment this to debug the script 
@@ -229,14 +227,13 @@ set -eo pipefail
 echo "Taking database backup"
 bash ./scripts/backup.sh --db-host "$DB_HOST" --db-user "$DB_USER" --db-name "$DB_NAME" --backup-path "$BACKUP_PATH"
 ```
-{% endcode %}
+
 
 In the above script, instead of writing the entire script for the backup task, we have referenced the `backup.sh` script from the Github Repository configured as Source code. This approach avoids the need to rewrite the same script again and again for each task, thus making it reusable and efficient across multiple jobs.
 
 **backup.sh Script (Stored in Github repository)**
 
-{% code title="backup.sh" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="backup.sh" showLineNumbers
 #!/bin/bash
 
 # Input variables for database connection
@@ -264,7 +261,7 @@ else
     exit 1
 fi
 ```
-{% endcode %}
+
 
 #### Output Variables
 
@@ -310,8 +307,7 @@ Let's take an example of a **Container Image Task** for a job that test if a giv
 
 #### Mount Custom Code
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh
 set -e
 
@@ -330,7 +326,7 @@ fi
 
 echo "STATUS_FILE=$FILE"
 ```
-{% endcode %}
+
 
 You can provide the URL at runtime, and the after the job execution completed, you can access the generated file by navigating to **Run History** → **Artifacts**.
 
@@ -379,8 +375,7 @@ Let's take an example of a **Container Image Task** for a job that provisions an
 
 #### Mount Custom Code
 
-{% code title="Custom Script" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="Custom Script" showLineNumbers
 #!/bin/sh
 set -eo pipefail
 
@@ -397,14 +392,13 @@ terraform apply -auto-approve \
 # Capture the bucket name output
 echo "S3_BUCKET_NAME=$(terraform output -raw bucket_name)"
 ```
-{% endcode %}
+
 
 In the above script, instead of writing the entire Terraform script for provisioning the S3 bucket, we have stored the script `main.tf` and `variable.tf` in the Github Repository configured as Source code. By enabling `mount code to container`, the source code (configured Git Repository) is now mounted inside the container as well and available at `/sourcecode`. This approach avoids the need to rewrite the same scripts multiple times for each task, thus making the scripts reusable and efficient across multiple jobs.
 
 **main.tf Script (Stored in Github repository)**
 
-{% code title="main.tf" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="main.tf" showLineNumbers
 provider "aws" {
   region = var.region
 }
@@ -423,12 +417,11 @@ resource "aws_s3_bucket_versioning" "this" {
   }
 }
 ```
-{% endcode %}
+
 
 **variables.tf Script (Stored in Github repository)**
 
-{% code title="variables.tf" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="variables.tf" showLineNumbers
 variable "bucket_name" {
   description = "The name of the S3 bucket"
   type        = string
@@ -439,7 +432,7 @@ variable "region" {
   type        = string
 }
 ```
-{% endcode %}
+
 
 After adding this S3 provisioner task, you can add more tasks as well, for example, you can add a task to add a bucket policy or send a notification to slack or email that s3 bucket is provisioned successfully.
 

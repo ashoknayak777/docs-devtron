@@ -43,9 +43,7 @@ Only a [Super-Admin](../global-configurations/authorization/user-access.md#grant
 
 3. Use the following template and specify the fields/paths you wish to lock in the `lockedPaths` list, also specify the resource kinds in `applyTo`. Once done, click **Apply**.
 
-{% code title="Lock Schema for ConfigMap" overflow="wrap" lineNumbers="true" %}
-
-```yml
+```yml title="Lock Schema for ConfigMap" showLineNumbers
 apiVersion: crd.devtron.ai/alpha1
 kind: LockSchema
 name: devtron-cm-lock-schema
@@ -58,4 +56,3 @@ lockedPaths:
     - data.ENABLE_CI_JOB
 ```
 
-{% endcode %}

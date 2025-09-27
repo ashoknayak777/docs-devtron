@@ -43,9 +43,7 @@ Only a [Super-Admin](../global-configurations/authorization/user-access.md#grant
 
 3. Use the following template and define your schema in the `schema` object, also specify the resource kinds in `applyTo`. Once done, click **Apply**.
 
-{% code title="GUI Schema for Pod Manifest" overflow="wrap" lineNumbers="true" %}
-
-```yml
+```yml title="GUI Schema for Pod Manifest" showLineNumbers
 apiVersion: crd.devtron.ai/alpha1
 kind: GuiSchema
 metadata:
@@ -136,4 +134,3 @@ schema: |
     }
 ```
 
-{% endcode %}

@@ -51,8 +51,7 @@ There are 2 methods of getting kubeconfig in your system:
 
 1. Go to `~/.kube` folder on your local machine and open the `config` file. Or you may create one with the following content:
 
-  {% code title="kubeconfig" overflow="wrap" lineNumbers="true" %}
-  ```yml
+  ```yaml title="Sample Kubeconfig" showLineNumbers
   apiVersion: v1
   kind: Config
   clusters:
@@ -71,7 +70,7 @@ There are 2 methods of getting kubeconfig in your system:
     user:
       token: <devtron_token>
   ```
-  {% endcode %}
+  
 
 2. Edit the following placeholders in the `server` field and the `token` field:
 

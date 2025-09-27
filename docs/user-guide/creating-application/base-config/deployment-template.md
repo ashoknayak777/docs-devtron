@@ -151,7 +151,7 @@ There are two ways you can customize the GUI, use any one of the following:
 
 2. Using APIs (explained below)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allowfullscreen></iframe>
 
 You can pass a custom JSON (deployment schema) of your choice through the following API. You may need to run the API with the `POST` method if you are doing it for the first time.
 
@@ -159,9 +159,7 @@ You can pass a custom JSON (deployment schema) of your choice through the follow
 PUT {{DEVTRON_BASEURL}}/orchestrator/deployment/template/schema
 ```
 
-{% code title="Sample API Request Body" overflow="wrap" lineNumbers="true" %}
-
-```json
+```json title="Sample API Request Body" showLineNumbers
 {
   "name": "schema-1",
   "type": "JSON",
@@ -211,7 +209,7 @@ PUT {{DEVTRON_BASEURL}}/orchestrator/deployment/template/schema
 }
 
 ```
-{% endcode %}
+
 
 1. In the `name` field, give a name to your schema, e.g., *schema-1*
 

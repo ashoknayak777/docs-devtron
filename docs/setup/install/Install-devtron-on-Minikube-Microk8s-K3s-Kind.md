@@ -13,7 +13,7 @@ Try Devtron Freemium to access all the enterprise features for free and forever,
 
 ## Tutorial 
 
-{% embed url="https://www.youtube.com/watch?v=rKUymNJqcjA" caption="Installing Devtron on Minikube" %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rKUymNJqcjA" title="Installing Devtron on Minikube" frameborder="0" allowfullscreen></iframe>
 
 ---
 

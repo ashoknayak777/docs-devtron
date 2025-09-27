@@ -134,8 +134,7 @@ Before you can configure an Application to use a PVC, you need to make sure the 
 
 The following is a sample PVC YAML configuration. You can modify it as needed based on your storage class, access mode, and resource requirements:
 
-{% code title="pvc.yaml" overflow="wrap" lineNumbers="true" %}
-```bash
+```bash title="pvc.yaml" showLineNumbers
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -149,7 +148,7 @@ spec:
     requests:
       storage: 30Gi
 ```
-{% endcode %}
+
       
 You can apply this configuration using Devtron’s **Resource Browser** 
 

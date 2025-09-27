@@ -121,7 +121,7 @@ Alternatively, if you have a fixed branch (say *hotfix-123*), you may write the 
 
 **Walkthrough Video**:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=R8IbZhXhH-k" title="Filter Condition Example" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R8IbZhXhH-k" title="Filter Condition Example" frameborder="0" allowfullscreen></iframe>
 
 
 ### Fail Condition

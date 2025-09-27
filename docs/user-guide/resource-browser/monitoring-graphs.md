@@ -12,7 +12,7 @@ It works similarly to a 'Single Pane of Glass (SPOG)' that displays data coming 
 
 ## Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=XHfrAsHhTQ0" title="Add Monitoring Graphs or Dashboards" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XHfrAsHhTQ0" title="Add Monitoring Graphs or Dashboards" frameborder="0" allowfullscreen></iframe>
 
 ---
 

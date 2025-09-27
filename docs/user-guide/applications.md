@@ -98,7 +98,7 @@ The cluster in which Argo CD apps exist should be added in **Global Configuratio
 
 ### Enabling ArgoCD App Listing
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4KyYnsAEpqo" title="Enabling External ArgoCD Listing" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4KyYnsAEpqo" title="Enabling External ArgoCD Listing" frameborder="0" allowfullscreen></iframe>
 
 1. Go to the **Resource Browser** of Devtron.
 

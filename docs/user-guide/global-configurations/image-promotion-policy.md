@@ -144,8 +144,7 @@ You can apply a policy using our APIs or through Devtron CLI. Here is the CLI ap
 
 * Create a YAML file and give it a name (say `applyPolicy.yaml`). Within the file, define the applications and environments to which the image promotion policy should apply, as shown below.
 
-{% code title="applyPolicy.yaml" overflow="wrap" lineNumbers="true" %}
-```yml
+```yml title="applyPolicy.yaml" showLineNumbers
 apiVersion: v1
 kind: artifactPromotionPolicy
 spec:
@@ -160,7 +159,7 @@ spec:
     applyToPolicyNames:
       - "example-policy"
 ```
-{% endcode %}
+
 
 Here, `applicationEnvironments` is a dictionary that contains the application names (app1, app2) and the corresponding environment names (env-demo/env-staging) where the policy will apply. In the `applyToPolicyName` key, enter the value of the `name` argument you used earlier while [creating the policy](#creating-an-image-promotion-policy).
 

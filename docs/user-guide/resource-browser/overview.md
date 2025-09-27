@@ -55,4 +55,4 @@ The **Check Compatibility** feature within Resource Browser scans your cluster a
 
 ### Walkthrough
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=mJsTN1x1fr0" title="Check Compatibility before Cluster Upgrade" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mJsTN1x1fr0" title="Check Compatibility before Cluster Upgrade" frameborder="0" allowfullscreen></iframe>

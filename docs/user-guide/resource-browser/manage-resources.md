@@ -14,7 +14,7 @@ You can use the searchbox to browse the resources.
 
 Moreover, you can use filters that allow you to quickly filter your workload as per labels, field selectors, or [CEL expression](https://kubernetes.io/docs/reference/using-api/cel/) as shown below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=E-V-ELCXtfs" title="Filtering Workloads in Devtron" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E-V-ELCXtfs" title="Filtering Workloads in Devtron" frameborder="0" allowfullscreen></iframe>
 
 ### Resource Kinds
 
@@ -107,8 +107,7 @@ In the below example, we have created a simple pod named `nginx`:
 
 Here's one more example that shows the required fields and object specifications for a Kubernetes Deployment:
 
-{% code title="Spec File" overflow="wrap" lineNumbers="true" %}
-```yml
+```yml title="Spec File" showLineNumbers
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -131,7 +130,7 @@ spec:
          ports:
          - containerPort: 80
 ```
-{% endcode %}
+
 
 ---
 

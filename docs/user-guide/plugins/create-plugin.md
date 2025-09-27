@@ -152,9 +152,7 @@ POST {{DEVTRON_BASEURL}}/orchestrator/plugin/global
 
 <!-- ### Sample Request Body
 
-{% code title="Plugin Request Body" overflow="wrap" lineNumbers="true" %}
-
-```json
+```json title="Plugin Request Body" showLineNumbers
 {
     "name": "Secret Management Validator",
     "description": "The Secret Management Validator plugin integrates with your CI/CD pipeline to automatically detect and prevent the inclusion of secrets or sensitive information in your codebase, ensuring compliance and security.",
@@ -232,7 +230,7 @@ POST {{DEVTRON_BASEURL}}/orchestrator/plugin/global
 }
 
 ```
-{% endcode %}
+
 
 Required fields to edit in the above sample payload are:
 
