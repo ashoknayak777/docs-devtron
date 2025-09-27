@@ -14,13 +14,10 @@ Whenever tools like Argo CD or Flux CD recognize changes in the Git repository, 
 
 ## Steps to Configure GitOps
 
-{% hint style="warning" %}
-
-### Who Can Perform This Action?
-
+:::caution Who Can Perform This Action?
 Users need to have [Super-Admin](user-access.md#assign-super-admin-permissions) permission to configure GitOps.
 
-{% endhint %}
+:::
 
 1. Go to **Global Configurations** → **GitOps**
 
@@ -30,14 +27,14 @@ Users need to have [Super-Admin](user-access.md#assign-super-admin-permissions) 
 
    ![Figure 3: Selecting a Provider](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/select-provider-v1.jpg)
 
-{% hint style="warning" %}
+:::caution 
 The Git provider you select for configuring GitOps might impact the following sections:
 
    * [Deployment Template](../creating-application/base-config/deployment-template.md)
 
    * [Charts](../deploy-chart/README.md)
 
-{% endhint %}
+:::
 
 3. Fill all the mandatory fields. Refer [supported Git providers](#supported-git-providers) to know more about the respective fields.
 
@@ -61,10 +58,10 @@ The Git provider you select for configuring GitOps might impact the following se
 
 Alternatively, you may use the feature flag **FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE** to enable or disable custom GitOps repo.
 
-{% hint style="info" %}
+:::info 
 **For disabling** - `FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE: "false"` <br />
 **For enabling** - `FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE: "true"`
-{% endhint %}
+:::
 
 #### How to Use Feature Flag
 
@@ -103,13 +100,10 @@ Below are the Git providers supported in Devtron for storing configuration files
 
 ### GitHub
 
-{% hint style="info" %}
-
-### Prerequisite
-
+:::info Prerequisite
 1. A GitHub account
 2. A GitHub organization. If you don't have one, refer [Creating Organization in GitHub](#creating-organization-in-github).
-{% endhint %}
+:::
 
 Fill the following mandatory fields:
 
@@ -122,15 +116,12 @@ Fill the following mandatory fields:
 
 ### GitLab
 
-{% hint style="info" %}
-
-### Prerequisite
-
+:::info Prerequisite
 1. A GitLab account
 
 2. A GitLab group. If you don't have one, refer [Creating Group in GitLab](#creating-group-in-gitlab).
 
-{% endhint %}
+:::
 
 Fill the following mandatory fields:
 
@@ -143,17 +134,14 @@ Fill the following mandatory fields:
 
 ### AWS Code Commit [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-{% hint style="info" %}
-
-### Prerequisites
-
+:::info Prerequisites
 1. Existing user of AWS CodeCommit ([as AWS stopped adding new customers to it](https://aws.amazon.com/blogs/devops/how-to-migrate-your-aws-codecommit-repository-to-another-git-provider/))
 
 2. An AWS IAM user with `AWSCodeCommitPowerUser` permission. Refer to [Create and Configure an IAM User with AWSCodeCommitPowerUser Permission](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html#setting-up-gc-account) for more information.
 
 3. Obtain SSH Key ID and SSH Private Key. Refer to [Generating SSH Private Key in AWS Code Commit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ssh-unixes.html) for more information.
 
-{% endhint %}
+:::
 
 ![Figure 6: AWS Code Commit](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/aws-code-commit.jpg)
 
@@ -169,15 +157,12 @@ Click **Save**.
 
 ### Azure
 
-{% hint style="info" %}
-
-### Prerequisites
-
+:::info Prerequisites
 1. An organization on Azure DevOps. If you don't have one, refer [this link](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops#create-an-organization).
 
 2. A project in your Azure DevOps organization. Refer [Creating Project in Azure](#creating-project-in-azure-devops).
 
-{% endhint %}
+:::
 
 Fill the following mandatory fields:
 
@@ -198,15 +183,12 @@ Here, you get 2 options:
 
 #### Bitbucket Cloud
 
-{% hint style="info" %}
-
-### Prerequisite
-
+:::info Prerequisite
 1. A Bitbucket account
 
 2. A workspace in your Bitbucket account. Refer [Creating Workspace in Bitbucket](#creating-workspace-in-bitbucket).
 
-{% endhint %}
+:::
 
 ![Figure 7: Entering Details of Bitbucket Cloud](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/bitbucket-cloud-v1.jpg)
 
@@ -222,13 +204,10 @@ Fill the following mandatory fields:
 
 #### Bitbucket Data Center
 
-{% hint style="info" %}
-
-### Prerequisite
-
+:::info Prerequisite
 A Bitbucket Data Center account
 
-{% endhint %}
+:::
 
 ![Figure 8: Entering Details of Bitbucket Data Center](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/bitbucket-server-v1.jpg)
 
@@ -261,9 +240,9 @@ Click **Save**.
 
 ### Creating Organization in GitHub
 
-{% hint style="warning" %}
+:::caution 
 We do **NOT** recommend using GitHub organization that contains your source code.
-{% endhint %}
+:::
 
 {% embed url="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/github/github-gitops-latest.mp4" caption="GitHub" %}
 
@@ -280,10 +259,9 @@ We do **NOT** recommend using GitHub organization that contains your source code
 
 7. Go to your profile and click **Your organizations** to view all the organizations you created.
 
-{% hint style="info" %}
-### Additional References
+:::info Additional References
 For more information about the plans available for your team, see [GitHub's products](https://docs.github.com/en/get-started/learning-about-github/githubs-products). You can also refer [GitHub organization](https://docs.github.com/en/github/setting-up-and-managing-organizations-and-teams/about-organizations) official doc page for more detail.
-{% endhint %}
+:::
 
 
 ### Creating Group in GitLab
@@ -312,10 +290,9 @@ For more information about the plans available for your team, see [GitHub's prod
    * Click **Create**.
    * Azure DevOps displays the project welcome page with the `project name`.
 
-{% hint style="info" %}
-### Additional References
+:::info Additional References
 You can also refer [Azure DevOps - Project Creation](https://docs.microsoft.com/en-us/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=preview-page) official page for more details.
-{% endhint %}
+:::
 
 
 ### Creating Workspace in Bitbucket
@@ -332,7 +309,6 @@ You can also refer [Azure DevOps - Project Creation](https://docs.microsoft.com/
   * Click **Create**.
 6. Your `Workspace name` and `Workspace ID` will be created.
 
-{% hint style="info" %}
-### Additional References
+:::info Additional References
 You can also refer [official Bitbucket Workspace page](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/) for more details.
-{% endhint %}
+:::

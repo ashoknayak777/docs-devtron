@@ -1,9 +1,8 @@
 # Pods
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have [access to the cluster](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to view its pods and its data.
-{% endhint %}
+:::
 
 ## Manifest
 
@@ -41,10 +40,9 @@ In case any of your pod restarts, you can view its details from the pod listing 
 
 ## Terminal
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to access pod terminal.
-{% endhint %}
+:::
 
 You can access the terminal within a running container of a pod to view its logs, troubleshoot issues, or execute commands directly. This is different from the [cluster terminal](cluster-terminal.md) you get at node level. 
 
@@ -74,6 +72,6 @@ This is a part of [Pod Terminal](#terminal). It is especially useful when `kubec
 
     2. **Advanced** - It is particularly useful for advanced users that wish to use labels or annotations since it provides additional key-value options. Refer [Ephemeral Container Spec](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/#ephemeralcontainer-v1-core) to view the supported options.
     
-{% hint style="info" %}
+:::info 
 Devtron ignores the 'command' field while launching an ephemeral container
-{% endhint %}
+:::

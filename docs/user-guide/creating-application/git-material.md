@@ -33,9 +33,9 @@ This is a dropdown that shows the list of Git accounts added to your organizatio
 
 ![Figure 2: Selecting Git Account](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/select-git-account.jpg)
 
-{% hint style="info" %}
+:::info 
 If the authentication type of your Git account is anonymous, only public Git repositories in that account will be accessible. Whereas, adding a user auth or SSH key will make both public and private repositories accessible.
-{% endhint %}
+:::
 
 
 ### Git Repo URL
@@ -46,10 +46,10 @@ You can find this URL by clicking on the **Code** button available on your repos
 
 ![Figure 3: Getting Repo URL](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/repo-url.jpg)
 
-{% hint style="info" %}
+:::info 
 * Copy the HTTPS/SSH portion of the URL too
 * Make sure you've added your [Dockerfile](https://docs.docker.com/engine/reference/builder/) in the repo
-{% endhint %}
+:::
 
 
 ### Exclude specific file/folder in this repo
@@ -73,13 +73,13 @@ To include a path, don't use any prefix, e.g. `path/to/file`
 
 | Sample Values | Description |
 |---|---|
-| `!README.md` | **Exclusion of a single file in root folder:** <br/> Commits containing changes made only in README.md file will not be shown |
-| `!README.md` <br /> `!index.js` | **Exclusion of multiple files in root folder:** <br/> Commits containing changes made only in README.md or/and index.js files will not be shown |
-|  `README.md` | **Inclusion of a single file in root folder:** <br/> Commits containing changes made only in README.md file will be shown. Rest all will be excluded. |
-|  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree:** <br/> Commits containing changes made specifically to code2.py file will not be shown |
-|  `!src/*` | **Exclusion of a single folder and all its files:** <br/> Commits containing changes made specifically to files within src folder will not be shown |
-|  `!README.md` <br/> `index.js` | **Exclusion and inclusion of files:** <br/> Commits containing changes made only in README.md will not be shown, but commits made in index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
-|  `!README.md` <br/> `README.md` | **Exclusion and inclusion of conflicting files:** <br/> If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
+| `!README.md` | **Exclusion of a single file in root folder:** <br /> Commits containing changes made only in README.md file will not be shown |
+| `!README.md` <br /> `!index.js` | **Exclusion of multiple files in root folder:** <br /> Commits containing changes made only in README.md or/and index.js files will not be shown |
+|  `README.md` | **Inclusion of a single file in root folder:** <br /> Commits containing changes made only in README.md file will be shown. Rest all will be excluded. |
+|  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree:** <br /> Commits containing changes made specifically to code2.py file will not be shown |
+|  `!src/*` | **Exclusion of a single folder and all its files:** <br /> Commits containing changes made specifically to files within src folder will not be shown |
+|  `!README.md` <br /> `index.js` | **Exclusion and inclusion of files:** <br /> Commits containing changes made only in README.md will not be shown, but commits made in index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
+|  `!README.md` <br /> `README.md` | **Exclusion and inclusion of conflicting files:** <br /> If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
 
 
 You may use the **Learn how** link (as shown below) to understand the syntax of defining an exclusion or inclusion rule.
@@ -128,9 +128,9 @@ Repeat the process for every new git repository you add. The clone directory pat
 
 Whenever a change is pushed to any of the configured repositories, CI will be triggered and a new Docker image file will be built (based on the latest commits of the configured repositories). Next, the image will be pushed to the container registry you configured in Devtron.
 
-{% hint style="info" %}
+:::info 
 Even if you add multiple repositories, only one image will be created based on the Dockerfile as shown in the [docker build config](docker-build-configuration.md)
-{% endhint %}
+:::
 
 ### Why do you need Multi-Git support?
 

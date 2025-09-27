@@ -12,11 +12,9 @@ The table below shows the installation options available in Devtron OSS. Further
 | [**With CI/CD**](devtron-oss.md#install-devtron-with-ci-cd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
 | [**With CI/CD + GitOps (Argo CD)**](devtron-oss.md#install-devtron-with-ci-cd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
 
-{% hint style="success" %}
-#### Not Sure What To Choose?
-
+:::success Not Sure What To Choose?
 Begin with the **Minimal** version. You can always install CI/CD and GitOps integrations later from [Devtron Stack Manager](../../user-guide/integrations/).
-{% endhint %}
+:::
 
 ---
 
@@ -26,9 +24,7 @@ Begin with the **Minimal** version. You can always install CI/CD and GitOps inte
 * [Helm v3.8+ installed](https://helm.sh/docs/intro/install/)
 * For production cases, fulfill the [Infrastructure Recommendations](prod-infra.md)
 
-{% hint style="warning" %}
-#### Cluster created on AWS? Is your EKS version 1.23 or above?
-
+:::warning Cluster created on AWS? Is your EKS version 1.23 or above?
 Install ['AWS EBS CSI' driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html) using the following command:
 
 ```bash
@@ -37,23 +33,19 @@ helm repo update
 helm upgrade --install aws-ebs-csi-driver \
 --namespace kube-system aws-ebs-csi-driver/aws-ebs-csi-driver
 ```
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-#### Using K3s?
-
+:::warning Using K3s?
 K3s does not include a default storage provisioner, so before you run Helm install in [Step 2](devtron-oss.md#step-2-choose-an-installation-option), apply the Rancher local-path-provisioner to enable dynamic storage:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
 ```
-{% endhint %}
+:::
 
-{% hint style="info" %}
-#### Want to Customize the Installation?
-
+:::info Want to Customize the Installation?
 See [Additional Installation Resources](../../reference/README.md) for production infra recommendations, air-gapped installs, blob storage, config overrides, StorageClass, Database, Ingress setup, backups, and more.
-{% endhint %}
+:::
 
 ---
 
@@ -109,9 +101,7 @@ helm install devtron devtron/devtron-operator \
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-### How much time does it take for installation?
-
+:::info How much time does it take for installation?
 It usually takes 5–15 minutes to spin up all Devtron microservices (depending on your installation option).
 
 You may check the status by running the command below. If the output is `Applied`, Devtron is installed.
@@ -121,7 +111,7 @@ kubectl -n devtroncd get installers installer-devtron \
 -o jsonpath='{.status.sync.status}'
 ```
 
-{% endhint %}
+:::
 
 ---
 
@@ -213,8 +203,6 @@ minikube service devtron-service --namespace devtroncd
 
 You should see the **Devtron Dashboard** post successful login.
 
-{% hint style="success" %}
-#### Next Recommended Action
-
+:::success Next Recommended Action
 After the initial login, we recommend you set up an [Single Sign-On (SSO) service](../../user-guide/global-configurations/sso-login.md) like Google, GitHub, etc., and then [add other members](../../user-guide/global-configurations/authorization/user-access.md#add-users) (including yourself). Thereafter, they can log in using the configured SSO.
-{% endhint %}
+:::

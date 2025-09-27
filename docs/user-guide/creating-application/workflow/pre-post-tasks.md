@@ -80,7 +80,7 @@ To configure a task using the **Codacy** plugin, follow the steps below:
 
     * The right-side panel will display the fields specific to the **Codacy** plugin, which are required to be configured.
 
-    * The left-side panel will now shows a task under **Tasks (IN ORDER OF EXECUTION)**, named after the selected plugin(by default), along with its logo.<br>You can change the task's name using the **Task name** field but plugin's logo will remain indicating that it is a preset plugin.
+    * The left-side panel will now shows a task under **Tasks (IN ORDER OF EXECUTION)**, named after the selected plugin(by default), along with its logo.<br />You can change the task's name using the **Task name** field but plugin's logo will remain indicating that it is a preset plugin.
 
     ![Figure 7: Searching 'Codacy' plugin](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/pre-post-search-codacy.jpg)
 
@@ -113,7 +113,7 @@ Similarly, you can configure any task with a preset plugin in Pre/post-build sta
 
     * **Shell Tasks**: These execute shell scripts directly within the application runtime environment. In this type of task, you can define inline scripts or use script files from your configured source code.
 
-    * **Container Image Tasks**: These allow you to execute commands and scripts inside a custom Docker container. Instead of using the default environment provided by Devtron, you can specify your own container image with all dependencies and tools required for the tasks. <br> These Tasks run using container in container approach, which means the specified image is pulled and run inside the App pod, thus providing a completely isolated environment.
+    * **Container Image Tasks**: These allow you to execute commands and scripts inside a custom Docker container. Instead of using the default environment provided by Devtron, you can specify your own container image with all dependencies and tools required for the tasks. <br /> These Tasks run using container in container approach, which means the specified image is pulled and run inside the App pod, thus providing a completely isolated environment.
 
 4. After selecting the **Task type**, you need to configure task-specific fields based on that **Task type**. Refer the [Examples and Use cases](#examples-and-use-cases) to configure both **Shell type** and **Container image** tasks.
 
@@ -189,7 +189,7 @@ Let's take an example of a **Shell task** in the Pre-Build stage that ensures th
 | `Task Name`| `check-db-name`| Required| Enter a name for the task|
 | `Task Description`| `This task stops the build if the database name is not 'prod-db'` | Optional | Short description for the task|
 | `Task Type` | `Shell`| Optional| Select the preferred task type |
-| `Input variables`| Refer the [Input Variable table](#input-variable-table) below | Optional| <p>These variables provide dynamic values to the script at the time of execution and are defined directly in the UI.<br></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br>Accepted data types include: STRING</li></ul> |
+| `Input variables`| Refer the [Input Variable table](#input-variable-table) below | Optional| <p>These variables provide dynamic values to the script at the time of execution and are defined directly in the UI.<br /></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br />Accepted data types include: STRING</li></ul> |
 | `Trigger/Skip condition` | Not required for this example | Optional| A conditional statement to execute or skip the task|
 | `Script`| Refer the [Script](#script-1) below| Required| Custom script for executing tasks|
 | `Output directory path`  | Not required for this example | Optional| Directory path where output files such as logs, errors, etc. will be available after the execution.|
@@ -203,7 +203,7 @@ Let's take an example of a **Shell task** in the Pre-Build stage that ensures th
 
 * To add an input variable, click **+ Add Variable** next to the **Input Variable**, a new table appears asking you to enter the variable and its required information.
 
-* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br>
+* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br />
 
     ![Figure 12: Variable configuration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/pre-post-var-config.jpg)
 
@@ -264,7 +264,7 @@ Since we have already configured a shell task to validate the database name, we 
 | `Task name`| `verify-db-connectivity`| Required|Enter a name for the task|
 | `Description`| Verify DB connection before build | Optional| A descriptive message for the task|
 | `Task type`| `Container Image`| Optional| Allows you to execute commands and scripts inside a custom Docker container|
-| `Input variables`| Refer the [Input Variable table](#input-variable-table-1) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br>Accepted data types include: STRING</li></ul> |
+| `Input variables`| Refer the [Input Variable table](#input-variable-table-1) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br /></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br />Accepted data types include: STRING</li></ul> |
 | `Trigger/Skip condition`| `DB_VALIDATION == pass`| Optional| Execute or skip the task based on the condition provided.|
 | `Container image`| `mysql:8.0`| Required| Select an image from the drop-down list or enter a custom value in the format `<image>:<tag>`|
 | `Mount custom code`| Refer below [Mount custom code](#mount-custom-code) section| Optional| <p>Enable to mount the custom code in the container. Enter the script in the box below.</p><ul><li>**Mount above code at** (required): Path where the code should be mounted, eg, `/scripts`</li></ul>|
@@ -285,7 +285,7 @@ Since we have already configured a shell task to validate the database name, we 
 
 * To add an input variable, click **+ Add Variable** next to the `Input Variable`, a new table appears asking you to enter the variable and its required information.
 
-* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br>
+* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br />
 
     ![Figure 16: Variable configuration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/pre-post-var-config.jpg)
 
@@ -342,10 +342,9 @@ The execution of the Pre/Post-Deployment stages can be set to:
 
 ### ConfigMaps & Secrets
 
-{% hint style="info" %}
-### Prerequisites
+:::info Prerequisites
 Make sure you have added [ConfigMaps](../base-config/config-maps.md) and [Secrets](../base-config/secrets.md) in App Configuration.
-{% endhint %}
+:::
 
 If you want to use some configuration files and secrets in pre-deployment stages or post-deployment stages, then you can use the `ConfigMaps` & `Secrets` options. You will get them as a drop-down in the pre-deployment stage.
 

@@ -66,8 +66,8 @@ Or, you may try performing a resync as shown below
 
 The removed chart would no longer appear in the Chart Store.
 
-{% hint style="info" %}
+:::info 
 Deleting a chart repo from your OCI registry will not lead to the removal of chart from the Chart Store
-{% endhint %}
+:::
 
 

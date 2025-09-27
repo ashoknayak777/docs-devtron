@@ -10,15 +10,13 @@ Here you can manage who can access your Devtron instance and what actions they c
 
 ## Add Users
 
-{% hint style="danger" %}
-### Mandatory Action
+:::danger Mandatory Action
 This is a mandatory step after configuring SSO in Devtron; otherwise, your users won't be able to log in to Devtron via SSO. 
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only managers and super-admins can add users.
-{% endhint %}
+:::
 
 1. Go to **Global Configurations** → **Authorization** → **User Permissions**.
 
@@ -76,10 +74,7 @@ You can select one or more permission groups, and the user will automatically in
 
 You can also make users [Active/Inactive](#making-users-activeinactive) at permission group-level.
 
-{% hint style="info" %}
-
-### What happens when a user has direct permissions as well as permissions inherited from a group?
-
+:::info What happens when a user has direct permissions as well as permissions inherited from a group?
 If you assign a permission group as well as direct permissions, the user will have the combined permissions of both.
 
 **For example**: 
@@ -90,17 +85,14 @@ If you assign a permission group as well as direct permissions, the user will ha
 
 * Now, the user will have both **Build & Deploy** and **View only** permissions for those three apps, and just **View only** for the other two.
 
-{% endhint %}
+:::
 
 ### Devtron Apps permissions
 
-{% hint style="warning" %}
-
-### Note
-
+:::caution Note
 The **Devtron Apps** tab is displayed only when the [Build and Deploy (CI/CD)](../../integrations/build-and-deploy-ci-cd.md) module is installed in your Devtron instance.
 
-{% endhint %}
+:::
 
 The **Devtron Apps** tab allows you to grant user permissions for Devtron applications.
 
@@ -219,10 +211,9 @@ There are three role-based access levels for Jobs:
 
 ### Kubernetes Resources permissions
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 The 'Kubernetes Resources' tab will be available only if you have super-admin permissions.
-{% endhint %}
+:::
 
 Here you can provide permission to view, inspect, manage, and delete resources in your clusters from [Devtron's Resource Browser](../../resource-browser/README.md).
 
@@ -258,10 +249,9 @@ There are two role-based access levels for Kubernetes Resources:
    
 ### Chart Groups permissions
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 The 'Chart Groups' tab will be available only if the [CI/CD module](../../integrations/build-and-deploy-ci-cd.md) is installed.
-{% endhint %}
+:::
 
 Here you can grant your user the permissions for accessing Chart Groups. Note that you can only give users the permission to either create chart groups or edit them, but not both.
 
@@ -292,13 +282,10 @@ Here you can grant your user the permissions for accessing Chart Groups. Note th
 
 ### Can Manage Access For All Roles (Toggle)
 
-{% hint style="warning" %}
-
-### Who Can Perform This Action?
-
+:::caution Who Can Perform This Action?
 Only a [Super Admin](#grant-super-admin-permission) can enable the **Can manage access for all roles** toggle for other users.
 
-{% endhint %}
+:::
 
 ![Figure 15: 'Can manage access for all roles' Toggle](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/cmafar-highlighted.jpg)
 
@@ -306,35 +293,26 @@ By enabling the **Can manage access for all roles** toggle, you can grant a user
 
 By default, this toggle is disabled. 
 
-{% hint style="warning" %}
-
-### Important Note
-
+:::caution Important Note
 If you enable the **Can manage access for all roles** toggle for a user, then that user can modify permissions of all the users including super-admins.
 
-{% endhint %}
+:::
 
 ### Access Manager (Devtron Apps)
 
-{% hint style="warning" %}
-
-### Who Can Perform This Action?
-
+:::caution Who Can Perform This Action?
 Only [Super-Admins](#grant-super-admin-permission) can grant an **Access Manager** role.  
 
-{% endhint %}
+:::
 
 ![Figure 16: Access Manager](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/access-manager-highlighted.jpg)
 
 Enabling **Access Manager** for a user allows that user to further grant or change permissions of existing users.
 
-{% hint style="warning" %}
-
-### Important Note
-
+:::caution Important Note
 An Access Manager cannot create other Access Managers or add new users. Creation of new users and Access Manager is restricted only to Super-Admins. 
 
-{% endhint %}
+:::
 
 A user who is an Access Manager can grant or change permissions for other existing users only within the permissions assigned to them under the **Access Manager** role in the **Role** drop-down box. For example, refer to the tables below to understand what an Access Manager (User A) is allowed and not allowed to do with the permissions of an existing user (User B).
 
@@ -345,16 +323,13 @@ A user who is an Access Manager can grant or change permissions for other existi
 
 | What's Allowed | What's Not Allowed |
 |:----|:------|
-| **For User A:** <br> Changing User B's **Manager** role to **View Only** role (Manager → View Only) |<ul><li>Reverting to User B's **Manager** role (View Only → Manager)</li><li>Changing User B's **Manager** role to any other role, except for **View Only**</li><li>Performing operations beyond the base role (i.e., **Admin**)</li><li>Modifying Super-Admin permissions</li></ul>|
-| **For User B:** <br> Perform the operations under the scope of **Manager** role across Devtron | <ul><li>Manage user access for other users</li><li>Perform operations beyond the base role (i.e., **Manager**)</li><li>Modifying Super-Admin permissions</li></ul>|
+| **For User A:** <br /> Changing User B's **Manager** role to **View Only** role (Manager → View Only) |<ul><li>Reverting to User B's **Manager** role (View Only → Manager)</li><li>Changing User B's **Manager** role to any other role, except for **View Only**</li><li>Performing operations beyond the base role (i.e., **Admin**)</li><li>Modifying Super-Admin permissions</li></ul>|
+| **For User B:** <br /> Perform the operations under the scope of **Manager** role across Devtron | <ul><li>Manage user access for other users</li><li>Perform operations beyond the base role (i.e., **Manager**)</li><li>Modifying Super-Admin permissions</li></ul>|
 
-{% hint style="info" %}
-
-### Note
-
+:::info Note
 If you need to grant someone global control over modifying the roles of other users, enable the [Can manage access for all roles](#can-manage-access-for-all-roles-toggle) toggle instead.
 
-{% endhint %}
+:::
 
 When enabling the **Access Manager** toggle, make sure to select at least one permission from the checkboxes displayed beneath the toggle to ensure the role is active. 
 
@@ -376,27 +351,23 @@ The following permissions are currently available in the Access Manager role:
 |-----------------------|:----:|:------:|:----:|:------:|:--------------:|:--------------:|:--------------:|:----------------:|:----------------:|
 | **Access Manager**                 | ❌  | ❌     | ❌   | ❌     | ❌             | ❌             | ❌             | ❌               | ✅               |
 
-{% hint style="info" %}
-
-### Note
-
+:::info Note
 [Raise a feature request on GitHub](https://github.com/devtron-labs/devtron/issues) if: 
 
 * You would like to see the **Deployment approver** permission also within the **Access Manager** role.
 
 * You would like to have the app-specific **Access Manager** role (currently available only for Devtron Apps) for Helm apps, Jobs, Kubernetes Resources, or Chart Groups as well. 
 
-{% endhint %}
+:::
 
 ---
 
 ## Making Users Active/Inactive [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 * Super-admins can activate or deactivate users.
 * Managers can activate or deactivate users only if the users has the same or fewer permissions than the manager.
-{% endhint %}
+:::
 
 When working with multiple collaborators in Devtron, you may need to deactivate users who no longer require access and reactivate them when needed. This applies to users of Devtron Apps, Helm Apps, Jobs, and Kubernetes Resources.
 
@@ -436,16 +407,14 @@ You can manage a user's active status at three levels:
 
 ## Edit User Permissions
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 * Super-admins can edit user permissions.
 * Managers can edit user permissions only if the user has the same or fewer permissions than the manager.
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 Direct user permissions cannot be edited if you're using [LDAP](./sso/ldap.md)/[Microsoft](./sso/microsoft.md) for SSO with 'auto-assign permission' enabled. Permissions can only be [managed via permission groups](./permission-groups.md#edit-permissions-groups) in such a scenario.
-{% endhint %}
+:::
 
 You can edit the user permissions by clicking the edit icon. Click **Save** after editing the permissions.
 
@@ -470,11 +439,10 @@ You may download the user data of current users and deleted users in a CSV forma
 
 ## Delete Users
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 * Super-admins can delete users.
 * Managers can delete users only if the user has the same or fewer permissions than the manager.
-{% endhint %}
+:::
 
 If you want to delete a user, click **Delete**.
 

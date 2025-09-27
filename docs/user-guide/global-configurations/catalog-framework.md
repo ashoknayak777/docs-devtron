@@ -24,10 +24,9 @@ There are two parts involved in the creation of a desirable resource catalog:
 
 ## Defining a Schema
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only a super-admin can create/edit a schema.
-{% endhint %}
+:::
 
 
 1. Go to **Global Configurations** → **Catalog Framework**.

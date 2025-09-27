@@ -52,17 +52,11 @@ If you have [configured your CD pipeline](../creating-application/workflow/cd-pi
 
 ![Figure 3b: Pushed Helm Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/use-cases/oci-push/helm-chart.jpg)
 
-{% hint style="warning" %}
-
-### Use as Chart Repository
-
-{% hint style="info" %}
-
-### Prerequisite
+:::info Prerequisite
 
 OCI registry with `Use as chart repository` option enabled. 
 
-{% endhint %}
+:::
 
 Unlike Helm repos, OCI registries do not have an index file to discover all the charts. If you have helm packages pushed to your OCI registry, you can that registry as a chart repository. 
 
@@ -124,9 +118,9 @@ Provide the following additional information apart from the common fields:
 
 JSON key file authentication method can be used to authenticate with username and service account JSON file. Visit this [link](https://cloud.google.com/artifact-registry/docs/docker/authentication#json-key) to get the username and service account JSON file for this registry. 
 
-{% hint style="warning" %}
+:::caution 
 Remove all the white spaces from JSON key and wrap it in a single quote before pasting it in `Service Account JSON File` field
-{% endhint %}
+:::
 
 Provide the following additional information apart from the common fields:
 
@@ -140,9 +134,9 @@ Provide the following additional information apart from the common fields:
 
 JSON key file authentication method can be used to authenticate with username and service account JSON file. Please follow [link](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key) to get the username and service account JSON file for this registry. 
 
-{% hint style="warning" %}
+:::caution 
 Remove all the white spaces from JSON key and wrap it in single quote before pasting it in `Service Account JSON File` field
-{% endhint %}
+:::
 
 ### Quay
 
@@ -165,9 +159,9 @@ Provide below information if you select the registry type as `Other`.
 | **Password/Token** | Provide the password or token corresponding to the username of your registry |
 | **Advanced Registry URL Connection Options** | <ul><li>**Allow Only Secure Connection**: Tick this option for the registry to allow only secure connections</li></ul><ul><li>**Allow Secure Connection With CA Certificate**: Tick this option for the registry to allow secure connection by providing a private CA certificate (ca.crt)</li></ul><ul><li>**Allow Insecure Connection**: Tick this option to make an insecure communication with the registry (for e.g., when SSL certificate is expired)</li></ul> |
 
-{% hint style="info" %}
+:::info 
 You can use any registry which can be authenticated using `docker login -u <username> -p <password> <registry-url>`. However these registries might provide a more secured way for authentication, which we will support later.
-{% endhint %}
+:::
 
 
 ## Registry Credential Access
@@ -221,9 +215,9 @@ where,
 
 You have successfully set your Docker credentials in the cluster as a Secret called `regcred`.
 
-{% hint style="warning" %}
+:::caution 
 Typing secrets on the command line may store them in your shell history unprotected, and those secrets might also be visible to other users on your PC during the time when kubectl is running.
-{% endhint %}
+:::
 
 Enter the Secret name in the field and click **Save**.
 
@@ -239,10 +233,7 @@ If you prefer to delete an OCI registry, follow the instructions below:
 
 3. Click the **Delete** button. The OCI registry will be deleted.
 
-{% hint style="warning" %}
-
-### Important Note
-
+:::caution Important Note
 If you used an OCI registry as a chart source, deleting the OCI registry will remove all its associated charts from the Chart Store.
 
-{% endhint %}
+:::

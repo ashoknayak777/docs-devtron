@@ -18,10 +18,9 @@ The **Plugin Policy** feature in Devtron lets you enforce the presence of specif
 
 ## Creating a Plugin Policy
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to create a plugin policy.
-{% endhint %}
+:::
 
 1. Go to **Global Configurations** → **Plugin Policy**.
 
@@ -37,10 +36,9 @@ Users need to have super-admin permission to create a plugin policy.
 
 4. Choose whether the profile should apply to the **Build pipeline** or the **Deployment pipeline**.
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 A single policy cannot apply to both build and deployment pipelines simultaneously. You can create separate policies instead.
-{% endhint %}
+:::
 
 5. Under **Mandatory Plugin(s)**, click **Add Plugin**.
 
@@ -50,10 +48,9 @@ A single policy cannot apply to both build and deployment pipelines simultaneous
 
     ![Figure 6: Finding and Choosing Plugins](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/choose-plugins.gif)
 
-{% hint style="info" %}
-### Tip
+:::info Tip
 There is a search box for you to quickly find the plugins. Moreover, since plugins are classified by tags, you can use the tag filter to find your intended plugins.
-{% endhint %}
+:::
 
 7. Click **Done**.
 
@@ -77,10 +74,9 @@ There is a search box for you to quickly find the plugins. Moreover, since plugi
 
 ## Applying a Plugin Policy
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to apply a plugin policy.
-{% endhint %}
+:::
 
 1. After you create a policy, you can apply it. Click **Apply Profile** on the same screen.
 

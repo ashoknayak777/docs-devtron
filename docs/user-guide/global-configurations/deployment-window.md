@@ -34,10 +34,9 @@ Technically, both of them are different methods of restricting deployments to an
 
 ## Configuring Deployment Window
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to configure deployment window.
-{% endhint %}
+:::
 
 Go to **Global Configurations** → **Deployment Window**.
 
@@ -67,12 +66,11 @@ This involves the process of creating a blackout window or a maintenance window.
 
     ![Figure 6: Selecting Timezone](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/time-zone.jpg)
 
-{% hint style="info" %}
-### Why Time Zone?
+:::info Why Time Zone?
 Let's say you are a super-admin located in New Delhi (GMT +5:30) and you wish to restrict midnight deployments according to the Californian timings (GMT -07:00) for your team in the US. Therefore, it's crucial to choose the correct time zone (i.e., GMT -07:00) and then add the duration (see next steps). 
 
 This ensures that deployments occur at the intended local time, helping to avoid disruptions, and facilitating co-ordinated operations across different regions.
-{% endhint %}
+:::
 
 4. Click **+ Add duration**. 
 
@@ -101,9 +99,9 @@ However, by specifying a start date and an end date (as shown below), your deplo
 
 ![Figure 9: Setting Start and End Date](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/start-end-date-v2.jpg)
 
-{% hint style="info" %}
+:::info 
 After clicking **Done**, you can use the **+ Add duration** button to add more than one duration (for e.g., one monthly and one weekly) in a given deployment window.
-{% endhint %}
+:::
 
 6. You can also determine the users who can take actions (say deployment) even when restrictions are in place. These can be super-admins, specific users, both, or none.
 
@@ -168,10 +166,9 @@ You can remove deployment window(s) applied to one or more deployment pipelines 
 
 ## Checking Deployment Window
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users with view only permission or above for an application can view all deployment windows configured for its deployment pipelines.
-{% endhint %}
+:::
 
 ### Overview Page
 
@@ -220,9 +217,9 @@ The below functions are blocked during an ongoing blackout window or outside mai
 * [Rollback](#rollback)
 * [Deletion of CD Pipeline](#deletion-of-cd-pipeline)
 
-{% hint style="info" %}
+:::info 
 The exempted users specified in the deployment window configuration can perform the above actions.
-{% endhint %}
+:::
 
 
 ### Hibernation
@@ -263,9 +260,9 @@ Despite that, if a user selects an eligible image and proceeds to deploy, it wil
 
 ![Figure 28b: Deployment Dialog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/blocked-deployment-dialog.jpg)
 
-{% hint style="warning" %}
+:::caution 
 Not just manual trigger, deployments remain blocked even if the trigger mode is automatic. In such cases, if a new CI image is built, the user has to manually deploy once the deployment block is lifted.
-{% endhint %}
+:::
 
 The `Deployment History` tab will also log whether a given deployment was initiated during a blackout window or outside a maintenance window.
 

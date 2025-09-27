@@ -201,7 +201,7 @@ Click on `Save`, once you have configured all the required permissions for the u
 | :---   | :---         |
 | View  | Only can view chart groups |
 | Create | Can create, view, edit or delete |
-| Edit | <ul><br/><li>**Deny:** Can't edit chart groups</li><li>**Specific chart groups:** can edit specific chart group</li></ul> |
+| Edit | <ul><br /><li>**Deny:** Can't edit chart groups</li><li>**Specific chart groups:** can edit specific chart group</li></ul> |
 
 ### 3. Edit User Permissions
 

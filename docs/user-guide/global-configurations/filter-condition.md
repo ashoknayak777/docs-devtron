@@ -14,10 +14,9 @@ Using filter conditions, you can control the progression of events. Here are a f
 
 ## Steps to Create a Filter
 
-{% hint style="info" %}
-### Prerequisites
+:::info Prerequisites
 You must have application(s) with CI-CD workflow(s) configured
-{% endhint %}
+:::
 
 1. From the left sidebar, go to **Global Configurations** → **Filter Condition**.
 
@@ -56,17 +55,17 @@ You must have application(s) with CI-CD workflow(s) configured
 
     ![Figure 5: Selecting Environment(s) from Cluster(s)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/environment-selection.jpg)
 
-{% hint style="info" %}
+:::info 
 Since an application can have more than one environment, the filter conditions apply only to the environment you chose in the **Apply to** section. If you create a filter condition without choosing an application or environment, it will not apply to any of your pipelines.
-{% endhint %}
+:::
 
 6. Click **Save**. You have successfully created a filter.
 
     ![Figure 6: Success Toast](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/filter-created.jpg)
 
-{% hint style="warning" %}
+:::caution 
 If you create filters using CEL expressions that result in a conflict (i.e., passing and failing of the same image), fail will have higher precedence
-{% endhint %}
+:::
 
 ---
 

@@ -46,10 +46,9 @@ Use our provided [Terraform scripts](https://github.com/devtron-labs/utilities/t
 ### Azure (AKS)
 Use our provided [Terraform scripts](https://github.com/devtron-labs/utilities/tree/main/terraform/terraform-aks) to set up AKS cluster for Devtron.
 
-{% hint style="success" %}
-### Next Step
+:::success Next Step
 Proceed with the [Devtron installation on your cluster](../install/devtron-oss.md).
-{% endhint %}
+:::
 
 ---
 
@@ -67,10 +66,7 @@ Below are the core components (Devtron microservices) for which you need to allo
 | **Kubewatch** | 200m | 300m | 600Mi | 1000Mi |
 
 
-{% hint style="info" %}
-
-### Need a YAML template to add resources?
-
+:::info Need a YAML template to add resources?
 You can create a resources file similar to this [YAML file](https://github.com/devtron-labs/devtron/blob/main/charts/devtron/resources-small.yaml) and add resources according to your load and requirements for any service you want, and remove those you don’t wish to modify.
 
 Run the following command once the file is ready: 
@@ -79,7 +75,7 @@ Run the following command once the file is ready:
 helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f resources-values-file.yaml
 ```
 
-{% endhint %}
+:::
 
 ---
 

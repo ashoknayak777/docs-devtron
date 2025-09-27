@@ -4,11 +4,10 @@ After creating the job pipeline, the next step is to trigger the job pipeline. T
 
 To trigger the job pipeline:
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have the **Admin role** or the **Super Admin role**.
 Refer the [User permissions](../global-configurations/authorization/user-access.md#roles-available-for-jobs).
-{% endhint %}
+:::
 
 1. Navigate to the **Trigger Job** tab of your job, which lists all configured pipelines.
 

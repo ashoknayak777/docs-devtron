@@ -4,9 +4,9 @@
 The Pull images from container repository plugin helps you poll the specified container repository and fetch the container images to deploy them on your target Kubernetes environments using Devtron's CD pipeline. By integrating this plugin you can:
 - Poll the designated container repository to get the specific container image build using external CI like Jenkins and Github actions. Once the image becomes available, you can deploy it to your target Kubernetes environment using Devtron's CD pipeline.
 
-{% hint style="warning" %}
+:::caution 
 Currently, this plugin only supports ACR and ECR registry. Support for other container registries will be added soon.
-{% endhint %}
+:::
 
 ### Prerequisites
 Before integrating the **Pull images from the container repository** plugin, ensure that you have a specific container image present at your ECR container repository to pull the image and deploy it to the target environment.

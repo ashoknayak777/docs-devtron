@@ -20,15 +20,15 @@ Top-level categories (eg. app, chart, security, global-config) are auto-filled d
 | Explore nested options | `→` |
 | Navigate to a screen | `Enter` |
 
-<br>
+<br />
 
 ### How to use the command bar (Eg. Navigate to Workflow editor of an App.)
 
-<br>
+<br />
 
 ![](../images/command-bar/cmd-bar-gif.gif)
 
-<br>
+<br />
 
 ### Steps to use
 

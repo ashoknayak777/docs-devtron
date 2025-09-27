@@ -15,9 +15,9 @@ Before integrating the **Code Scan** plugin, install the [Vulnerability Scanning
 4. Click **New Workflow** and navigate to the **Build and Deploy from Source Code**.
 5. Fill the required fields in the **Create build pipeline** window and navigate to the **Pre-build stage**.
 
-{% hint style="warning" %}
+:::caution 
 If you have already configured workflow, edit the build pipeline, and navigate to **Pre-build stage**.
-{% endhint %}
+:::
 
 6. Under 'TASKS', click the **+ Add task** button.
 7. Select the **Code Scan** plugin.

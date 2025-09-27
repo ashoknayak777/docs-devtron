@@ -16,10 +16,9 @@ The Environment Overrides section allows you to customize the **Deployment Templ
 
 ## Environment Configurations Page
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have [Admin role](../global-configurations/authorization/user-access.md#roles-available-for-devtron-apps) or above (along with access to the environment and applications) to perform environment override.
-{% endhint %}
+:::
 
 1. In your application, go to **Configurations** → **Environment Overrides**. 
 
@@ -64,10 +63,9 @@ As you can see, the Deployment Template for the *banking-final* environment show
     * **YAML** - This mode has a YAML based editor intended for advanced users. [Click here](../creating-application/base-config/deployment-template/deployment.md#yaml) to know more about each key-value pair within the `YAML` section.
     * **GUI** - This mode has a user-friendly interface intended for beginner to advanced users. [Click here](../creating-application/base-config/deployment-template.md#using-gui) to know more about each field within the `GUI` section.
 
-{% hint style="info" %}
-### Note
+:::info Note
 Users who are not super-admins will land on GUI mode when they override; whereas super-admins will land on YAML mode. This is just the default behavior, users can still toggle the mode if needed.
-{% endhint %}
+:::
 
 Let's choose YAML mode for now and proceed. If you prefer GUI mode, go to [Override Deployment Template using GUI](#override-deployment-template-using-gui) section.
 
@@ -115,10 +113,9 @@ Suppose you update your deployment chart version (e.g., from `4.0.0` to `4.0.1`)
 | logLevel  | "info"             | *(Not specified)*            | *(Removed)*         |
 | timeout   | (Not specified)    | 30s                          | 30s (Added)         |
 
-{% hint style="info" %}
-### What if some keys are locked from editing?
+:::info What if some keys are locked from editing?
 You cannot modify locked keys in an environment's deployment template unless you are a super-admin. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
-{% endhint %}
+:::
 
 ### Override Deployment Template using GUI 
 
@@ -138,13 +135,10 @@ Follow the below steps to override your deployment template using GUI:
 
 7. Click on **Save Changes**.
 
-{% hint style="info" %}
-
-### Want to customize the deployment template values displayed on GUI? [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
-
+:::info Want to customize the deployment template values displayed on GUI? [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 The GUI mode shows limited number of fields as specified by the super-admin in the GUI schema. Refer [Customize GUI](../creating-application/base-config/deployment-template.md#customize-the-gui) to know more.
 
-{% endhint %}
+:::
 
 ---
 
@@ -156,13 +150,10 @@ The process to override both ConfigMaps and Secrets is similar to [Override Depl
 
 ### Patch Strategy
 
-{% hint style="info" %}
-
-### Impact of Patch strategy on Base Configuration's CM/Secret?
-
+:::info Impact of Patch strategy on Base Configuration's CM/Secret?
 You cannot delete a ConfigMap or Secret in **Base Configurations** if you have used 'Patch' strategy for overridding ConfigMap or Secret at your environment-level. This happens because they are still dependent and inheriting their values from Base Configurations.
 
-{% endhint %}
+:::
 
 ### Replace Strategy
 

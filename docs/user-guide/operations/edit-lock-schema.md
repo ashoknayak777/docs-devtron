@@ -4,13 +4,10 @@
 
 In Devtron, you can create [CRDs](../../reference/glossary.md#crd) for defining lock schema. Your lock schema will be used to determine the fields (in the resource manifest) that cannot be added/updated/deleted by non-superadmins. This is especially useful for preventing unwanted edits to the manifests of pod, deployment, configmap, and many more.
 
-{% hint style="warning" %}
-
-### Who Can Perform This Action?
-
+:::caution Who Can Perform This Action?
 Only a [Super-Admin](../global-configurations/authorization/user-access.md#grant-super-admin-permission) can configure Lock Schema. 
 
-{% endhint %}
+:::
 
 ---
 

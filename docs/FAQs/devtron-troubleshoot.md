@@ -591,9 +591,9 @@ kubectl.kubernetes.io/last-applied-configuration: | {"apiVersion":"v1","data":{"
 
 You may take the help of JSON validators to identify where the unintended human error has occured in the JSON. Rectifying the same should resolve this issue.
 
-{% hint style="info" %}
+:::info 
 The annotation `kubectl.kubernetes.io/last-applied-configuration:` is automatically added to each object when you run `kubectl apply`. 
-{% endhint %}
+:::
 
 #### 29. Helm Charts provided by Bitnami are not visible in Chart Store. Getting 'tls: handshake failure' while deploying Bitnami Charts.
 

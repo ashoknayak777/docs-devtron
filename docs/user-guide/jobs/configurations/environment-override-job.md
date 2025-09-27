@@ -12,11 +12,10 @@ The Environment Overrides section allows you to customize the **ConfigMaps**, an
 
 ## Environment Configurations Page
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have the **Admin role** or the **Super Admin role**.
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-jobs).
-{% endhint %}
+:::
 
 1. In your job, go to **Configurations** → **Environment Overrides**. 
 

@@ -1,8 +1,8 @@
 # Applications
 
-{% hint style="warning" %}
+:::caution 
 Configure [Global Configurations](./global-configurations/README.md) first before creating an application or cloning an existing application.
-{% endhint %}
+:::
 
 ## Introduction
 
@@ -36,15 +36,13 @@ There are additional options available for you:
 
 ## View External Helm App Listing
 
-{% hint style="tip" %}
-### Want to Manage your Existing Helm Release using Devtron?
+:::tip Want to Manage your Existing Helm Release using Devtron?
 Apart from internal helm apps created in Devtron, you can also view your external Helm app listing. Moreover, you can manage their deployments using Devtron. Read [Migrate Helm Release to Devtron](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-helm-release) to know more.
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users with view only permission or above for an application can view helm app listing.
-{% endhint %}
+:::
 
 External Helm apps are Helm applications deployed outside of Devtron. 
 
@@ -59,15 +57,13 @@ External Helm apps are Helm applications deployed outside of Devtron.
 
 ## View External ArgoCD App Listing
 
-{% hint style="tip" %}
-### Want to Manage your Existing Argo CD Apps using Devtron?
+:::tip Want to Manage your Existing Argo CD Apps using Devtron?
 You can not only view your ArgoCD app list, but also manage their deployments using Devtron. Read [Migrate ArgoCD Apps to Devtron](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-argo-cd-application) to know more.
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need super-admin permission to view/enable/disable the ArgoCD listing.
-{% endhint %}
+:::
 
 ### Preface
 
@@ -89,10 +85,9 @@ Devtron also bridges the gap for ArgoCD users by providing additional features a
 
 * **Feature-rich Options**: Clicking an Argo CD app will give you access to its logs, terminal, events, manifest, available resource kinds, pod restart log, and many more.
 
-{% hint style="info" %}
-### Additional References
+:::info Additional References
 [ArgoCD: Standalone Configuration vs Devtron Configuration](https://devtron.ai/blog/argocd-standalone-configuration-vs-devtron-configuration/#argocd-installation-and-configuration)
-{% endhint %}
+:::
 
 ### Prerequisite
 The cluster in which Argo CD apps exist should be added in **Global Configurations** → **Clusters and Environments**
@@ -133,10 +128,9 @@ The cluster in which Argo CD apps exist should be added in **Global Configuratio
 
 ## View External FluxCD App Listing
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need super-admin permission to view/enable/disable the FluxCD listing.
-{% endhint %}
+:::
 
 ### Preface
 
@@ -153,10 +147,9 @@ The cluster in which Flux CD apps exist should be added in **Global Configuratio
 
 ### Enabling FluxCD App Listing
 
-{% hint style="info" %}
-### Tip
+:::info Tip
 You may refer the steps mentioned in the [Enabling ArgoCD App Listing](#enabling-argocd-app-listing) section since the procedure is similar. 
-{% endhint %}
+:::
 
 Using Devtron's Resource Browser, add the [feature flag](#feature-flag-1) in the Dashboard ConfigMap as shown below.
 

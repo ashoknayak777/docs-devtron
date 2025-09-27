@@ -66,7 +66,6 @@ cronjobConfigs:
 | `suspend` | The suspend field is also optional. If it is set to true, all subsequent executions are suspended. This setting does not apply to already started executions. Defaults to false. |
 | `kind` | As with all other Kubernetes config, a Job and cronjob needs apiVersion, kind.cronjob and job also needs a section fields which is optional . these fields specify to deploy which job (conjob or job) should be kept. by default, they are set cronjob. |
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 Super-admins can lock keys in Job & CronJob deployment template to prevent non-super-admins from modifying those locked keys. Refer [Lock Deployment Configuration](../../../global-configurations/lock-deployment-config.md) to know more.
-{% endhint %}
+:::

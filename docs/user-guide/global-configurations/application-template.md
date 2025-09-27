@@ -6,10 +6,9 @@ Application Templates in Devtron allows you to create Devtron application quickl
 
 Let's assume you have already created a microservice (Devtron Application) with all the required configurations, Git Repository, Build configurations, CI/CD workflows, deployment configurations, etc. Now, instead of repeating the same setup to create a similar Devtron app, you can create an Application Template from your existing Devtron app. This template can then be used to quickly create new microservices (Devtron applications) with the same trusted setup.
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to create Application Templates.
-{% endhint %}
+:::
 
 ---
 
@@ -99,7 +98,6 @@ You can use an application template to create an application. Refer [Creating Ap
 
     ![Figure 8: Confirming Delete Action](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/application-templates/application-template-confirm-delete.jpg)
 
-{% hint style="success" %}
-### Note
+:::tip Note
 Deleting an Application Template does not affect any applications, neither the application used to create that template, nor the applications created using that template.
-{% endhint %}
+:::

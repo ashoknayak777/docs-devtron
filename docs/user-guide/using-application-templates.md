@@ -6,12 +6,11 @@ Application templates provide a predefined configuration for creating new applic
 
 Refer [Application Templates](./global-configurations/application-template.md) to learn more.
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 * Users need to have Admin permission or above to create applications from application templates.
 * Users need to have super-admin permissions in order to customize template configurations.
 
-{% endhint %}
+:::
 
 ---
 
@@ -54,10 +53,9 @@ You can create an application using an application template by following the bel
 
     ![Figure 4b: Configuring Code Source, Container Registry and Environments](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application-from-template/application-template-enter-details-2.jpg)
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 By default, configurations are inherited from the application which is used to create that application template.
-{% endhint %}
+:::
 
 7. Click **Create Application** and the application will be created.
 
@@ -82,8 +80,8 @@ When tags are propagated, they are considered as labels to Kubernetes resources.
 
 3. Click `+` icon next to **KEY** field to add a new tag.
 
-4. Click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg"  height="10"> on the left side of your tag to propagate a tag.<br>`Note`: Dark grey colour in symbol specifies that the tags are propagated.
+4. Click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg"  height="10" /> on the left side of your tag to propagate a tag.<br />`Note`: Dark grey colour in symbol specifies that the tags are propagated.
 
-5. To remove the tags from propagation, click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/propagate-dark.jpg" height="10"> again.
+5. To remove the tags from propagation, click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/propagate-dark.jpg" height="10" /> again.
 
 

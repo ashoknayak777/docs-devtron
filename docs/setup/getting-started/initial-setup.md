@@ -8,11 +8,11 @@ Devtron is installed over a Kubernetes cluster. Once you create a Kubernetes clu
 
 ### Create a Kubernetes Cluster
 
-{% hint style="info" %}
+:::info 
 **Setting up a production-grade infrastructure?**
 
 Refer [Devtron's Production Infra Recommendations](../install/prod-infra.md)
-{% endhint %}
+:::
 
 You can create any [Kubernetes cluster](https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/) (preferably K8s version 1.16 or higher) for installing Devtron.
 
@@ -44,15 +44,11 @@ The minimum requirements for installing Devtron depends on the integrations you 
 
 > Refer to the [Override Configurations](../install/override-default-devtron-installation-configs.md) section for more information. If you have questions, let us know on our Discord channel. [![Join us on Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
 
-{% hint style="warning" %}
-#### Note
-
+:::warning Note
 * Please make sure that the recommended resources are available on your Kubernetes cluster before you proceed with Devtron installation.
 * We do not recommend using burstable CPU VMs (T series in AWS, B series in Azure, or E2/N1 in GCP) for installing Devtron, as they may lead to inconsistent performance.
-{% endhint %}
+:::
 
-{% hint style="success" %}
-#### Next Step
-
+:::success Next Step
 [Install Devtron on your Kubernetes Cluster](../install/)
-{% endhint %}
+:::

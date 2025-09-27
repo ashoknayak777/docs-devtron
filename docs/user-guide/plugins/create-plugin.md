@@ -19,15 +19,13 @@ There are two parts to creating a plugin:
 
 ### Part 1: Create a Custom Task
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only superadmins can create plugins.
-{% endhint %}
+:::
 
-{% hint style="info" %}
-### Prerequisite
+:::info Prerequisite
 A build or deployment pipeline must exist in the **Workflow Editor** of your app.
-{% endhint %}
+:::
 
 In the following example, we are creating a plugin named 'Secret Management Validator'.
 
@@ -68,10 +66,9 @@ In the following example, we are creating a plugin named 'Secret Management Vali
 
     ![Figure 7: 'Update Pipeline' Button](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/plugins/create-plugin/update-plugin.jpg)
 
-{% hint style="success" %}
-### Next Steps
+:::tip Next Steps
 Go to the **Build & Deploy** tab of your application and run the pipeline having your custom task. If the custom task executes correctly and the script performs as expected, you may proceed to [save your custom task as a plugin](#part-2-convert-custom-task-to-a-plugin).
-{% endhint %} 
+::: 
 
 ---
 
@@ -115,10 +112,9 @@ Go to the **Build & Deploy** tab of your application and run the pipeline having
 
 ## Create a New Version of Plugin
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only superadmins can create new versions of a plugin.
-{% endhint %}
+:::
 
 You may create incremental versions of your plugin (e.g., `1.0.0` → `1.0.1` or `2.0.0`). The old version(s) of your plugins will still be available to your users.
 
@@ -144,10 +140,9 @@ You may create incremental versions of your plugin (e.g., `1.0.0` → `1.0.1` or
 
 <!-- ## API Call
 
-{% hint style="warning" %}
-### Prerequisite
+:::caution Prerequisite
 You will need a [token](../../user-guide/global-configurations/authorization/api-tokens.md) to make API calls
-{% endhint %}
+:::
 
 ```
 POST {{DEVTRON_BASEURL}}/orchestrator/plugin/global

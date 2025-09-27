@@ -38,10 +38,9 @@ helm create my-custom-chart
 | `Version` | This is the chart version. Update this value for each new version of the chart (Required). |
 | `Description` | Give a description to your chart (Optional). |
 
-{% hint style="info" %}
-### Example of Chart.yaml
+:::info Example of Chart.yaml
 [Click here](https://devtron-public-asset.s3.us-east-2.amazonaws.com/custom-charts/chart-yaml-file.jpg) to view a sample 'Chart.yaml' file.
-{% endhint %}
+:::
 
 ### 2. Create an Image Descriptor Template File
 
@@ -87,10 +86,9 @@ The Image Descriptor Template file is a GO template that produces a valid JSON f
     }
     ```
 
-{% hint style="warning" %}
-### Got a JSON Error?
+:::caution Got a JSON Error?
 If your code editor highlights a syntax error (property or EOF error) in the above JSON, ignore it.
-{% endhint %}
+:::
 
 <!-- | Field | Description |
 | --- | --- |
@@ -155,10 +153,9 @@ orchestrator.deploymant.algo: 1
 The Helm chart to be uploaded must be packaged as a versioned archive file in the format: `<helm-chart-name>-x.x.x.tgz`. 
 Both `<helm-chart-name>` and `x.x.x` will be automatically fetched from the name and version fields present in the Chart.yaml file, respectively."
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 Ensure you navigate out of the Helm chart folder before packaging it in a '.tgz' format
-{% endhint %}
+:::
 
 Run the following command to package the chart:
 
@@ -172,10 +169,9 @@ The above command will generate a `<helm-chart-name>-x.x.x.tgz` file.
 
 ## Uploading a Deployment Chart
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only super admin users can upload a deployment chart. A super admin can upload multiple versions of a chart.
-{% endhint %}
+:::
 
 ### Steps
 
@@ -216,10 +212,9 @@ The following are interpretations of the validation checks performed:
 
 ## Viewing Deployment Charts
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only super-admins can view deployment charts.
-{% endhint %}
+:::
 
 To view the list of available deployment charts, go to  **Global Configurations** → **Deployment Charts** page.
 
@@ -236,24 +231,21 @@ Once you successfully upload a deployment chart, you can start using it as a dep
 
 ![Figure 10: Using Deployment Charts](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/use-chart.gif)
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 The deployment strategy for a deployment chart is fetched from the chart template and cannot be configured in the [CD pipeline](../creating-application/workflow/cd-pipeline.md#deployment-strategies).
-{% endhint %}
+:::
 
 ---
 
 ## Editing GUI Schema of Deployment Charts [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Only super-admins can edit the GUI schema of deployment charts.
-{% endhint %}
+:::
 
-{% hint style="info" %}
-### Reference
+:::info Reference
 This section is an extension of [Customize GUI](../creating-application/base-config/deployment-template.md#using-gui) feature. Refer the document to know more about the significance of having a custom GUI schema for your deployment templates.
-{% endhint %}
+:::
 
 You can edit the GUI schema of the following deployment charts:
 1. Default charts provided by Devtron (*Deployment*, *Job & CronJob*, *Rollout Deployment*, and *StatefulSet*)

@@ -1,10 +1,9 @@
 # CI Pipeline
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have the **Admin role**, the **Manager role**, or the **Super Admin role**.
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-devtron-apps).
-{% endhint %}
+:::
 
 A workflow can be created in one of the following ways:
 
@@ -26,10 +25,9 @@ Each method has different use-cases that can be tailored according to the needs 
 
 **Build from Source Code** workflow allows you to build the container image from a source code repository.
 
-{% hint style="info" %}
-### Note
+:::info Note
 Devtron typically uses a Dockerfile from your repository to build container images. If you don’t have one, Devtron provides default templates to help you get started. You can also build images without a Dockerfile using **Buildpacks**.
-{% endhint %}
+:::
 
 ### Creating a CI Pipeline
 
@@ -78,9 +76,9 @@ Devtron typically uses a Dockerfile from your repository to build container imag
 
    Select the appropriate filter and pass the matching condition as a regular expression (regex).
 
-   {% hint style="info" %}
-   Devtron uses the regexp library, view [regexp cheatsheet](https://yourbasic.org/golang/regexp-cheat-sheet/). You can test your custom regex from [here](https://regex101.com/r/lHHuaE/1).
-   {% endhint %}
+   :::info 
+Devtron uses the regexp library, view [regexp cheatsheet](https://yourbasic.org/golang/regexp-cheat-sheet/). You can test your custom regex from [here](https://regex101.com/r/lHHuaE/1).
+   :::
 
    | Filter Key      | Description                                                            |
    | :-------------- | :--------------------------------------------------------------------- |
@@ -98,9 +96,9 @@ Devtron typically uses a Dockerfile from your repository to build container imag
 
    Select the appropriate filter and pass the matching condition as a regular expression (regex).
 
-   {% hint style="info" %}
-   Devtron uses the regexp library, view [regexp cheatsheet](https://yourbasic.org/golang/regexp-cheat-sheet/). You can test your custom regex from [here](https://regex101.com/r/lHHuaE/1).
-   {% endhint %}
+   :::info 
+Devtron uses the regexp library, view [regexp cheatsheet](https://yourbasic.org/golang/regexp-cheat-sheet/). You can test your custom regex from [here](https://regex101.com/r/lHHuaE/1).
+   :::
 
    | Filter Key | Description              |
    | ---------- | ------------------------ |
@@ -183,17 +181,16 @@ Instead of creating and maintaining separate pipelines for each application, you
 
 Then, for other applications, you can simply link that source pipeline to reuse its build images directly in your workflow and proceed to create a CD pipeline using those images.
 
-{% hint style="info" %}
+:::info 
 The **Linked Build Pipeline** can only access build images that are generated after it has been created. Any images built by the source pipeline before the Linked Build Pipeline was set up will not be available.
-{% endhint %}
+:::
 
 To create a **Linked Build Pipeline**, follow the steps below. 
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have the **Admin role**, the **Manager role**, or the **Super Admin role**.
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-devtron-apps).
-{% endhint %}
+:::
 
 1. Navigate to **Configurations** → **Workflow Editor** of your application.
 
@@ -209,10 +206,9 @@ Refer the [User permissions](../../global-configurations/authorization/user-acce
 
    ![Figure 17: Entering details of existing pipeline](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/linked-build-pipeline-create-pipeline.jpg)
 
-   {% hint style="warning" %}
-   ### Note
+   :::caution Note
    The user must have at least view access to the application that contains the source pipeline, otherwise, the application will not appear in the **Filter By Application** field.
-   {% endhint %}
+   :::
 
    |Field Name|Description|
    |:---|:---|
@@ -230,10 +226,9 @@ Refer the [User permissions](../../global-configurations/authorization/user-acce
 
    ![Figure 20: Creating CD pipeline](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/linked-build-pipeline-cd.jpg)
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 Linked CI pipelines can't trigger builds. They rely on the source CI pipeline to build images. Trigger a build in the source CI pipeline to see the images available for deployment in the linked CI pipeline's Deployment stage.
-{% endhint %}
+:::
 
 ---
 
@@ -686,10 +681,9 @@ The **Change Image Source** feature in Devtron lets you update the container ima
 
 ### Docker Layer Caching [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-{% hint style="warning" %}
-### Prerequisite
+:::caution Prerequisite
 [Configure blob storage](../../../setup/install/installation-configuration.md#configuration-of-blob-storage) if you wish to store cache.
-{% endhint %}
+:::
 
 If you are rebuilding the same Docker image frequently, an effective cache strategy can cut down build time. Docker images are built layer by layer, and [Docker’s layer caching mechanism](https://docs.docker.com/build/cache/) allows unchanged layers to be reused across pipeline runs.
 
@@ -698,10 +692,9 @@ You can disable caching if:
 * It consumes unnecessary storage
 * The pipeline doesn’t perform an actual Docker build
 
-{% hint style="info" %}
-### Which cache gets impacted? 
+:::info Which cache gets impacted? 
 If a PVC with cache is attached, it will not be impacted by disabling cache. Only the remote cache is disabled.
-{% endhint %}
+:::
 
 There are 3 places from where you can control the cache behavior:
 
@@ -741,10 +734,9 @@ You have the option to ignore cache while triggering a build (regardless of the 
 
 ![Figure 73: Cache behavior at Trigger](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/ignore-cache.gif)
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 If the caching flags in **Global Settings** are set to false, ignoring cache becomes the default behavior even if you don't select the 'Ignore Cache' checkbox during trigger.
-{% endhint %}
+:::
 
 ###  Override Build Configuration
 
@@ -784,9 +776,9 @@ The overridden container registry/container image location/target platform will 
 
 ### Configuring Webhook
 
-{% hint style="info" %}
+:::info 
 If you choose **Pull Request** or **Tag Creation** as the **Source Type**, you must first configure the Webhook for GitHub/Bitbucket as a prerequisite step.
-{% endhint %}
+:::
 
 #### For GitHub
 

@@ -1,9 +1,8 @@
 # Install ESO
 
-{% hint style="info" %}
-### Prerequisites
+:::info Prerequisites
 Chart version should be > 4.14.0
-{% endhint %}
+:::
 
 External Secrets Operator is a Kubernetes operator that integrates external secret management systems like AWS Secrets Manager, HashiCorp Vault, Google Secrets Manager, Azure Key Vault and many more. The operator reads information from external APIs and automatically injects the values into a Kubernetes Secret.
 

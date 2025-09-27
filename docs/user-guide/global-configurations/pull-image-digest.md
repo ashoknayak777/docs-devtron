@@ -8,10 +8,9 @@ Though it can be enabled by an application-admin for a given CD Pipeline, Devtro
 
 This helps in better governance and less repetitiveness if you wish to manage pull image digest for multiple applications across environments.
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to enable pull image digest at environment level.
-{% endhint %}
+:::
 
 ---
 

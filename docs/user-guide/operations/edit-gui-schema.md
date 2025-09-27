@@ -4,13 +4,10 @@
 
 In Devtron, you can create [CRDs](../../reference/glossary.md#crd) for defining the GUI schema. Your GUI schema will be used to determine the fields displayed to the user when they [edit the manifest in GUI mode](../resource-browser/manage-resources.md#edit-using-gui).
 
-{% hint style="warning" %}
-
-### Who Can Perform This Action?
-
+:::caution Who Can Perform This Action?
 Only a [Super-Admin](../global-configurations/authorization/user-access.md#grant-super-admin-permission) can configure GUI Schema. 
 
-{% endhint %}
+:::
 
 ---
 

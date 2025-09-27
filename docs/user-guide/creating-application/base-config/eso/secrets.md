@@ -81,11 +81,10 @@ When mounting multiple files to the same location, you can use the **Set Sub Pat
 
 * If **Set Sub Path** is disabled (unchecked), the system will delete any files already present in the [specified path](#volume-mount-path) and then mount the new files.
 
-{% hint style="info" %}
-### Note
+:::info Note
 In case of Kubernetes Secrets, all keys will be mounted as files on the specified path.
 In case of External Secrets, manually specify the keys which should be mounted as files.
-{% endhint %}
+:::
 
 
 ### Set File Permission
@@ -129,10 +128,9 @@ Your configurations will appear in the left pane, while the right pane will disp
 2. Modify its values.
 3. Click **Update**.
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 You cannot change the name of a Secret. Create a new Secret instead.
-{% endhint %}
+:::
 
 ![Figure 8: Updating Existing Secret](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/secrets/update-secret.jpg)
 
@@ -161,10 +159,9 @@ Any changes made to the protected base configurations (Deployment Template, Conf
 
 ## External Secret Operator (ESO)
 
-{% hint style="info" %}
-### Prerequisite
+:::info Prerequisite
 Chart version should be > 4.14.0
-{% endhint %}
+:::
 
 ### Purpose
 
@@ -184,10 +181,9 @@ External Secrets Operator (ESO) is a Kubernetes component that integrates with e
 
     ![Figure 10: Searching External Secrets Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/secrets/external-secret.jpg)
 
-{% hint style="info" %}
-### What if external-secrets chart is not found?
+:::info What if external-secrets chart is not found?
 Manually add the following chart repository URL in Devtron: `https://charts.external-secrets.io`. Follow this [guide](../../../global-configurations/chart-repo.md#add-chart-repository) to know the steps.
-{% endhint %}
+:::
 
 3. Give a name to the helm app that will be created from the chart. Also enter the project and environment where you wish to install the chart.
 

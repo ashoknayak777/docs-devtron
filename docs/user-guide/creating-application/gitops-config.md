@@ -1,8 +1,8 @@
 # GitOps Configuration
 
-{% hint style="warning" %}
+:::caution 
 The 'GitOps Configuration' page appears only if the super-admin has enabled 'Allow changing git repository for application' in [Global Configurations → GitOps](../global-configurations/gitops.md).
-{% endhint %}
+:::
 
 ## Introduction
 
@@ -14,10 +14,9 @@ The application-level GitOps configuration offers the flexibility to add a custo
 
 ## Adding Custom Git Repo for GitOps
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have [Admin permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to configure user-defined Git repo.
-{% endhint %}
+:::
 
 ### For Devtron Apps
 
@@ -34,9 +33,9 @@ Users need to have [Admin permission](../global-configurations/authorization/use
     ![Figure 2: Repo Creation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/gitops-config.jpg)
 
 
-{% hint style="warning" %}
+:::caution 
 GitOps repositories, whether auto-created by Devtron or added manually, are immutable. This means they cannot be modified after creation. The same is true if you have an existing CD pipeline that uses/used GitOps for deployment.
-{% endhint %}
+:::
 
 3. Click **Save**.
 
@@ -61,9 +60,9 @@ You can [deploy a helm chart](../deploy-chart/deployment-of-charts.md#configure-
 
 3. After you enter the `App Name`, `Project`, and `Environment`; an option to choose the deployment approach (i.e., Helm or GitOps) would appear. Select **GitOps**.
 
-{% hint style="info" %}
-The option to choose between 'Helm' or 'GitOps' is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg">
-{% endhint %}
+:::info 
+The option to choose between 'Helm' or 'GitOps' is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
+:::
 
 ![Figure 7a: Deployment Approach](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/deployment-method.jpg)
 
@@ -81,6 +80,6 @@ The option to choose between 'Helm' or 'GitOps' is only available in <img src="h
 
 Next, you may proceed to deploy the chart.
 
-{% hint style="warning" %}
+:::caution 
 Once you deploy a helm app with GitOps, you cannot change its GitOps repo.
-{% endhint %}
+:::

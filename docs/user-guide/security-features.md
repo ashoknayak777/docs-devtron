@@ -121,10 +121,9 @@ You can also check for vulnerabilities within a specific workload such as job, p
 
 ## Scans and Policies
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to enable vulnerability scanning and to define security policies in Devtron.
-{% endhint %}
+:::
 
 Devtron's Security feature has two primary sections:
 

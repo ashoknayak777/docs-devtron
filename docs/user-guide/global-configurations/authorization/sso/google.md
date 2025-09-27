@@ -4,10 +4,7 @@
 
 Integrating Google as your Single Sign-On (SSO) provider enables users to authenticate with their Google accounts, ensuring secure and streamlined access to Devtron. This document walks you through setting up Google SSO in Devtron, ensuring users can log in smoothly.
 
-{% hint style="info" %}
-
-### Prerequisites
-
+:::info Prerequisites
 To configure Google SSO in Devtron, you will need:
 
 * Super Admin permissions
@@ -45,7 +42,7 @@ The next step is to configure OAuth credentials in Google Cloud Console. This in
   * Paste the Redirect URI (copied from Devtron) under Authorized Redirect URIs.
 * Click **Create** to generate the Client ID and Client Secret.
 
-{% hint style="warning" %}
+:::caution
 ### Google SSO Requires a Valid Domain with HTTPS
 
 Google does not support IP addresses as valid redirect URIs. You must use a valid domain name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)) accessible over HTTPS.
@@ -61,7 +58,7 @@ Examples of invalid URIs:
 ❌ http://localhost:8080/callback
 
 ❌ http://192.168.1.10/callback
-{% endhint %}
+:::
 
 ![Figure 1: Creating OAuth Client](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/creating-oauth-client-google-sso.jpg)
 
@@ -95,9 +92,9 @@ In the configuration,
   * Copy the Redirect URI displayed in Devtron and paste the value in the `redirectURI` field.
 * Click **Update** to save the configuration, once saved, Google SSO is successfully configured
 
-{% hint style="warning" %}
+:::caution 
 Although Google SSO is now set up, users will not be able to sign in unless they are explicitly added to Devtron with the necessary permissions.
-{% endhint %}
+:::
 
 ## Important: Enable User Access After SSO Setup
 

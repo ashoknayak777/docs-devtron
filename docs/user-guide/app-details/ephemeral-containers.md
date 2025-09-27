@@ -30,11 +30,10 @@ To create an ephemeral container from the Resource Browser, refer to [Launching 
 
 ## Create From Cluster Terminal
 
-{% hint style="warning" %}
-
+:::caution 
 This is not a recommended method. However, if you still wish to proceed, then this option is available only if you are an [Admin](../global-configurations/authorization/user-access.md).
 
-{% endhint %}
+:::
 
 {% embed url="https://www.youtube.com/watch?v=PzB6dFRYe38" caption="Externally Created Ephemeral Container" %}
 
@@ -44,10 +43,9 @@ This is not a recommended method. However, if you still wish to proceed, then th
 
 You can remove an ephemeral container from either the **App Details** page or the **Resource Browser**.
 
-{% hint style="info" %}
-
+:::info 
 If you had created an ephemeral container using the Kubernetes CLI, then you will not be able to remove the container from the **App Details** page or the **Resource Browser**.
 
-{% endhint %}
+:::
 
 {% embed url="https://www.youtube.com/watch?v=tZID0YU0YUU" caption="Deleting Ephemeral Containers" %}

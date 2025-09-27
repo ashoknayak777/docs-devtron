@@ -85,15 +85,12 @@ When mounting multiple files to the same location, you can use the **Set Sub Pat
 
 * If **Set Sub Path** is disabled (unchecked), the system will delete any files already present in the [specified path](#volume-mount-path) and then mount the new files.
 
-{% hint style="info" %}
-
-### Note
-
+:::info Note
 In case of Kubernetes ConfigMap, all keys will be mounted as files on the specified path.
 
 In case of Kubernetes External ConfigMap, manually specify the keys which should be mounted as files.
 
-{% endhint %}
+:::
 
 
 ### Set File Permission
@@ -137,10 +134,9 @@ Your configurations will appear in the left pane, while the right pane will disp
 2. Modify its values.
 3. Click **Update**.
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 You cannot change the name of a ConfigMap. Create a new ConfigMap instead.
-{% endhint %}
+:::
 
 ![Figure 7: Updating Existing ConfigMap](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-maps/update_configmap.jpg)
 

@@ -85,10 +85,9 @@ There are 2 methods of getting kubeconfig in your system:
 
 3. Test the connection to the cluster by running any kubectl command, e.g., `kubectl get ns` or `kubectl get po -A`
 
-{% hint style="info" %}
-### Additional References
+:::info Additional References
 Once the connection is successful, you may run any [kubectl operations](https://kubernetes.io/docs/reference/kubectl/#operations) from your system.
-{% endhint %}
+:::
 
 ---
 

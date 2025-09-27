@@ -83,13 +83,10 @@ To configure the GitLab SSO in Devtron, follow the below steps of instructions:
 
 ![Figure 5: Login with GitLab](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/gitlab/gitlab-sso-login.gif)
 
-{% hint style="warning" %}
-
-### Important Note
-
+:::caution Important Note
 Although GitLab SSO is now configured, you will not be able to sign in with GitLab unless you add yourself as a user with the necessary permissions and manage other user permissions as well in Devtron. It is highly recommended to create [User Permissions](../user-access.md).
 
-{% endhint %}
+:::
 
 ---
 

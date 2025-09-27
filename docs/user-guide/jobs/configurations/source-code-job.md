@@ -2,11 +2,10 @@
 
 In Devtron, the Source Code configuration is used to specify the repository that contains your scripts, Terraform files, YAML configurations, or other resources. The repository acts as a central location for these files, allowing you to reference and execute them in your job without needing to rewrite the scripts in the Workflow Editor each time.
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have the **Admin role** or the **Super Admin role**.
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-jobs).
-{% endhint %}
+:::
 
 To configure the Source Code, follow these steps:
 
@@ -57,8 +56,8 @@ To define the exclusion or inclusion rules, follow these steps:
     |  `README.md` | **Inclusion of a single file in root folder** | Commits containing changes made only in the README.md file will be shown. Rest all will be excluded. |
     |  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree** |Commits containing changes made specifically to code2.py file will not be shown |
     |  `!src/*` | **Exclusion of a single folder and all its files:** |Commits containing changes made specifically to files within the `src` folder will not be shown |
-    |  `!README.md` <br/> `index.js` | **Exclusion and inclusion of files** | Commits containing changes made only in README.md will not be shown, but commits made in the index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
-    |  `!README.md` <br/> `README.md` | **Exclusion and inclusion of conflicting files** | If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
+    |  `!README.md` <br /> `index.js` | **Exclusion and inclusion of files** | Commits containing changes made only in README.md will not be shown, but commits made in the index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
+    |  `!README.md` <br /> `README.md` | **Exclusion and inclusion of conflicting files** | If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
 
 
     You may use the **Learn how** link (as shown below) to understand the syntax of defining an exclusion or inclusion rule.

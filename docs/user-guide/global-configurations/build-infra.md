@@ -8,10 +8,9 @@ Therefore, applying a common infra configuration to all applications is not opti
 
 With the 'Build Infra' feature, Devtron makes it possible for you to tweak the resources as per the needs of your applications. The build (ci-runner) pod will be scheduled on an available node (considering applied taints and tolerations) in the cluster on which 'Devtron' is installed.
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to configure Build Infra.
-{% endhint %}
+:::
 
 ---
 
@@ -36,15 +35,14 @@ You may click it to modify the following:
 |**CPU**|Processor core allocated to the build process. See [CPU units](#cpu-units).|
 |**Memory**|RAM allocated to the build process. See [memory units](#memory-units).|
 |**Build Timeout**|Max. time limit allocated to the build process. See [timeout units](#timeout-units).|
-|**Node Selector** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12"></a> |Node Selector are key-value pair labels to match Pods with Nodes. To learn more, refer to [nodeSelector](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector) page.|
-|**Toleration** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12"></a>|A Toleration allow a pod to be scheduled on a Node that has a matching Taint. To learn more, refer to [Taints and Toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) page.|
-|**ConfigMaps** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12"></a>|Key Value pairs to store non-sensitive configurations. Refer to [ConfigMaps](../creating-application/base-config/config-maps.md).|
-|**Secrets** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12"></a>|Key Value pairs to store sensitive configurations. Refer to [Secrets](../creating-application/base-config/secrets.md).|
+|**Node Selector** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12" /></a> |Node Selector are key-value pair labels to match Pods with Nodes. To learn more, refer to [nodeSelector](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#nodeselector) page.|
+|**Toleration** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12" /></a>|A Toleration allow a pod to be scheduled on a Node that has a matching Taint. To learn more, refer to [Taints and Toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) page.|
+|**ConfigMaps** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12" /></a>|Key Value pairs to store non-sensitive configurations. Refer to [ConfigMaps](../creating-application/base-config/config-maps.md).|
+|**Secrets** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" height="12" /></a>|Key Value pairs to store sensitive configurations. Refer to [Secrets](../creating-application/base-config/secrets.md).|
 
-{% hint style="info" %}
-### Note
+:::info Note
 ConfigMaps and Secrets defined here will be used at the time of build, not during deployment.
-{% endhint %}
+:::
 
 ![Figure 3: Editing Global Profile](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/build-infra/default-infra-config.jpg)
 
@@ -100,15 +98,14 @@ Optimizing your CI builds for each platform ensures:
 
 Each platform may have unique requirements for resources like CPU and memory, or they may benefit from different configuration of resources. Thus, Devtron allows defining platform specific configurations within a build infra profile. This ensures each build is executed with the right configurations specific to the target platform.
 
-{% hint style="info" %}
-### K8s Driver v/s Container Driver
+:::info K8s Driver v/s Container Driver
  **Platform specific configurations** are only supported for builds executed using the k8s driver. 
  
  When you use the K8s driver, each build for a target platform runs as its own pod within your Kubernetes cluster. This allows you to assign different CPU, memory, and other configurations for each target platform like `amd64` or `arm64`. 
  
  If you use the container driver, all builds run inside a single CI runner pod and share the same configuration, regardless of the target platform while K8s driver.
 
- {% endhint %}
+ :::
 
 To configure platform specific configurations:
 
@@ -152,10 +149,9 @@ Once you create a profile, attach it to the intended applications, or else the [
     ![Figure 12: Confirming Profile Change](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/build-infra/confirm-profile-change.jpg)
 
 
-{% hint style="success" %}
-### Tip
+:::tip Tip
 If you missed creating a profile but selected your application(s), you can use the 'Create Profile' button. This will quickly open a new tab for creating a profile. Once done, you can return and click the refresh icon as shown below.
-{% endhint %}
+:::
 
 ![Figure 13: Quick Profile Creation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/build-infra/quick-profile-creation.jpg)
 

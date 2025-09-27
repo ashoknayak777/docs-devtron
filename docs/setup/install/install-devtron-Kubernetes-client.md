@@ -9,11 +9,10 @@ The **Devtron Kubernetes Desktop Client** comes packaged with the following modu
 * [Kubernetes Resource Browser](#kubernetes-resource-browser) - To manage all Kubernetes resources in your cluster(s)
 * [Clusters](#clusters) - To perform troubleshooting and node operations on the cluster(s) you connect from the Devtron Kubernetes Desktop Client
 
-{% hint style="success" %}
-
+:::success 
 Try Devtron Freemium to access all the enterprise features for free and forever, limited to adding one additional cluster. [Install Devtron Freemium](https://license.devtron.ai/dashboard)
 
-{% endhint %}
+:::
 
 ---
 
@@ -25,10 +24,7 @@ Try Devtron Freemium to access all the enterprise features for free and forever,
    wget -O devtron-install.bash https://cdn.devtron.ai/k8s-client/devtron-install.bash && [ -f devtron-install.bash ] && sh devtron-install.bash start
    ```
 
-{% hint style="info" %}
-
-### Desktop Client not opening?
-
+:::info Desktop Client not opening?
 * In case you closed the Devtron Kubernetes Desktop Client browser tab by mistake, you can reopen it by executing the following command in your terminal:
 
    ```bash
@@ -41,7 +37,7 @@ Try Devtron Freemium to access all the enterprise features for free and forever,
    rm -rf .devtron/ 
    ```           
 
-{% endhint %}
+:::
 
 2. Open your terminal and enter the following command to download and run a bash script for generating the [kubeconfig](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/):
 
@@ -51,13 +47,10 @@ Try Devtron Freemium to access all the enterprise features for free and forever,
 
    The cluster credentials are displayed in the output of the command. 
 
-{% hint style="info" %}
-
-### Important Note
-
+:::info Important Note
 Upon executing the above-mentioned command, if you encounter an error saying that you already have a service account named `cd-user`, change the service account name in the command from `cd-user` to `cd-user1` or `cd-user2`.
 
-{% endhint %}
+:::
 
 3. Fetch the cluster credentials (`Cluster name`, `Server URL`, `Bearer token`) from the terminal and note them aside.
 
@@ -77,17 +70,14 @@ Upon executing the above-mentioned command, if you encounter an error saying tha
    sh devtron-install.bash stop
    ``` 
 
-{% hint style="info" %}
-
-### Note
-
+:::info Note
 The next time, if you wish to run the Devtron Kubernetes Desktop Client again, run the following command in your terminal:
 
 ```bash
 sh devtron-install.bash start
 ```
 
-{% endhint %}
+:::
 
 ---
 

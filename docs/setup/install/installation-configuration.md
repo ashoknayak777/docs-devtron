@@ -379,13 +379,12 @@ Before installing Devtron, create the following databases on your external Postg
 4. **casbin** - Authorization and policy database
 5. **clairv4** - (*Optional*) Required only if you are using [Clair](../../user-guide/integrations/vulnerability-scanning/clair.md) for image scanning instead of [Trivy](../../user-guide/integrations/vulnerability-scanning/trivy.md)
 
-{% hint style="warning" %}
-### Not sure how to create a PostgreSQL database?
+:::warning Not sure how to create a PostgreSQL database?
 Here’s how you can create databases using popular providers:
 * [Amazon RDS instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
 * [Google Cloud SQL for PostgreSQL](https://cloud.google.com/sql/docs/postgres/create-instance#create-2nd-gen)
 * [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server)
-{% endhint %}
+:::
 
 #### Database Creation Commands
 
@@ -404,10 +403,9 @@ CREATE DATABASE clairv4;
 
 ### Devtron Configuration for External DB
 
-{% hint style="warning" %}
-### Note
+:::warning Note
 Ensure the [required databases](#database-creation-commands) exist before proceeding.
-{% endhint %}
+:::
 
 When installing Devtron, you can specify your external PostgreSQL by using either of the following:
 * Updating `values.yaml` file

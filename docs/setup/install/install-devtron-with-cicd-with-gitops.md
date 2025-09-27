@@ -4,16 +4,12 @@
 
 In this section, we describe the steps in detail on how you can install Devtron with CI/CD by enabling GitOps during the installation.
 
-{% hint style="success" %}
-
+:::success 
 Try Devtron Freemium to access all the enterprise features for free and forever, limited to adding one additional cluster. [Install Devtron Freemium](https://license.devtron.ai/dashboard)
 
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-
-### Prerequisites
-
+:::warning Prerequisites
 * Install [Helm](https://helm.sh/docs/intro/install/), if you have not installed it already.
 
 * If you are using EKS version 1.23 or above, you must also install [aws-ebs-csi-driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html). Run the following command to install AWS EBS CSI driver using Helm:
@@ -26,7 +22,7 @@ helm upgrade --install aws-ebs-csi-driver \
 --namespace kube-system aws-ebs-csi-driver/aws-ebs-csi-driver
 ```
 
-{% endhint %}
+:::
 
 ---
 
@@ -272,7 +268,7 @@ Please wait until the installation is completed.
 
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use that credentials to log in as an administrator. 
 
-**Username**: `admin` <br>
+**Username**: `admin` <br />
 **Password**: Run the following command to get the admin password:
 
 ```bash
@@ -280,18 +276,14 @@ kubectl -n devtroncd get secret devtron-secret \
 -o jsonpath='{.data.ADMIN_PASSWORD}' | base64 -d
 ```
 
-{% hint style="info" %}
-
-### Next Recommended Action
-
+:::info Next Recommended Action
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use it to log in as an administrator.
 
 After the initial login, we recommend you set up any [Single Sign-On (SSO)](../../user-guide/global-configurations/sso-login.md) service like Google, GitHub, etc., and then add other users (including yourself). Subsequently, all the users can use the same SSO (e.g., GitHub) to log in to the Dashboard.
 
-{% endhint %}
+:::
 
-{% hint style="info" %}
-
+:::info 
 If you have questions, please let us know on our discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
 
-{% endhint %}
+:::

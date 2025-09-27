@@ -4,16 +4,12 @@
 
 In certain scenarios, you may need to deploy Devtron to a Kubernetes cluster that isn’t connected to the internet. Such air-gapped environments are used for various reasons, particularly in industries with strict regulatory requirements like healthcare, banking, and finance. This is because air-gapped environments aren't exposed to the public internet; therefore, they create a controlled and secure space for handling sensitive data and operations.
 
-{% hint style="success" %}
-
+:::success 
 Try Devtron Freemium to access all the enterprise features for free and forever, limited to adding one additional cluster. [Install Devtron Freemium](https://license.devtron.ai/dashboard)
 
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-
-### Prerequisites 
-
+:::warning Prerequisites 
 1. Install `podman` or `docker` on the VM from where you're executing the installation commands.
 
 2. Get the latest image file
@@ -26,7 +22,7 @@ curl -LO https://raw.githubusercontent.com/devtron-labs/devtron/refs/heads/main/
 
 If you are using Docker, the TARGET_REGISTRY should be in the format `docker.io/<USERNAME>`
 
-{% endhint %}
+:::
 
 ---
 
@@ -293,7 +289,7 @@ Please wait until the installation is completed.
 
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use that credentials to log in as an administrator. 
 
-**Username**: `admin` <br>
+**Username**: `admin` <br />
 **Password**: Run the following command to get the admin password:
 
 ```bash
@@ -301,18 +297,14 @@ kubectl -n devtroncd get secret devtron-secret \
 -o jsonpath='{.data.ADMIN_PASSWORD}' | base64 -d
 ```
 
-{% hint style="info" %}
-
-### Next Recommended Action
-
+:::info Next Recommended Action
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use it to log in as an administrator.
 
 After the initial login, we recommend you set up any [Single Sign-On (SSO)](../../user-guide/global-configurations/sso-login.md) service like Google, GitHub, etc., and then add other users (including yourself). Subsequently, all the users can use the same SSO (e.g., GitHub) to log in to the Dashboard.
 
-{% endhint %}
+:::
 
-{% hint style="info" %}
-
+:::info 
 If you have questions, please let us know on our discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
 
-{% endhint %}
+:::

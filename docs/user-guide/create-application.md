@@ -20,8 +20,8 @@ To create a new application from the custom app, select **Custom app**.
 
 * In the **Create application** window, enter an **App Name** and select a **Project**.
 * Select either:<ul><li>**Create from scratch** to create an application from scratch, or<li>**Clone existing application** to clone an existing application.</ul></li>
-* If you select **Create from scratch**, select the project from the drop-down list.<br>`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.
-* If you select **Clone existing application**, select an app you want to clone from and the project from the drop-down list.<br>`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.</br>
+* If you select **Create from scratch**, select the project from the drop-down list.<br />`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.
+* If you select **Clone existing application**, select an app you want to clone from and the project from the drop-down list.<br />`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.
 
 
 ## Tags
@@ -34,8 +34,8 @@ When tags are propagated, they are considered as labels to Kubernetes resources.
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/propagate-tags.jpg)
 
 * Click `+ Add tag` to add a new tag.
-* Click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg"  height="10"> on the left side of your tag to propagate a tag.<br>`Note`: Dark grey colour in symbol specifies that the tags are propagated.
-* To remove the tags from propagation, click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/propagate-dark.jpg" height="10"> again.
+* Click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg"  height="10" /> on the left side of your tag to propagate a tag.<br />`Note`: Dark grey colour in symbol specifies that the tags are propagated.
+* To remove the tags from propagation, click the symbol <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/propagate-dark.jpg" height="10" /> again.
 * Click `Save`.
 
 

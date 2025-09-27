@@ -28,7 +28,7 @@ The left side of the **About** section displays essential information about the 
 | :--------- | :--------------- |:--------- |
 | **Application Name** | No |Displays the name of the application (e.g., backend-healthcare-app).|
 | **Short Description**|Yes|A short, optional description to summarize the application's purpose.|
-| **Project** |Yes|Indicates the current project under which the application is organized.<br>You can change the project directly from this section.<ol><li> Click the **Edit** icon next to the current project.</li><li> In the **Change Project** window, select the new project from the dropdown.</li><li>Click **Save**.</li></ol>Changing the project will revoke access for existing users and grant access only to those who have permissions in the newly selected project.|
+| **Project** |Yes|Indicates the current project under which the application is organized.<br />You can change the project directly from this section.<ol><li> Click the **Edit** icon next to the current project.</li><li> In the **Change Project** window, select the new project from the dropdown.</li><li>Click **Save**.</li></ol>Changing the project will revoke access for existing users and grant access only to those who have permissions in the newly selected project.|
 | **Created on** |No|Shows the exact date and time when the application was created.|
 | **Created by**|No|Displays the email address of the user who created the application.|
 | **Code Source** |No|Shows the connected Git repository or template used for the application.|
@@ -68,9 +68,9 @@ To add or update the **Readme**:
 
 ![Figure 4: Editing Readme](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/readme.jpg)
 
-{% hint style="info" %}
- After saving, the system displays the email address of the user who last updated the README, along with the date and time. This information appears in the header of the Readme section, beside the title.
-{% endhint %}
+:::info 
+After saving, the system displays the email address of the user who last updated the README, along with the date and time. This information appears in the header of the Readme section, beside the title.
+:::
 
 ### Deployment Window [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
@@ -86,9 +86,9 @@ You can expand each environment row to view detailed information like window nam
 
 ![Figure 5: Deployment Window](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/deployement-window.jpg)
 
-{% hint style=“info” %}
+:::info 
 This section is view-only and does not require any configuration at the application level.
-{% endhint %}
+:::
 
 > To learn how to configure deployment windows, refer to the [Deployment Window documentation](../global-configurations/deployment-window.md).
 
@@ -110,9 +110,9 @@ When you click the **Edit** icon, a form appears based on the defined schema. As
 
 ![Figure 7: Catalog Form](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog-expanded.jpg)
 
-{% hint style= "info" %}
+:::info 
 The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in **Catalog Framework**. Field names and sections may vary depending on how the schema was defined by your organization.
-{% endhint %}
+:::
 
 Once saved, this information is displayed in a readable format within the Catalog subsection and is accessible to all users who have permission to view the application.
 

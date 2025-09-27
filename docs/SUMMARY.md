@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Getting Started](setup/getting-started/getting-started.md)
+* [Getting Started](setup/getting-started/initial-setup.md)
 * [Install Devtron](setup/install/README.md)
   * [Install Devtron OSS](setup/install/devtron-oss.md)
   * [Install Devtron Freemium](setup/install/devtron-freemium.md)

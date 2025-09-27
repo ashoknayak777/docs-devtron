@@ -2,16 +2,12 @@
 
 In this section, we describe the steps in detail on how you can install Devtron with CI/CD integration.
 
-{% hint style="success" %}
-
+:::success 
 Try Devtron Freemium to access all the enterprise features for free and forever, limited to adding one additional cluster. [Install Devtron Freemium](https://license.devtron.ai/dashboard)
 
-{% endhint %}
+:::
 
-{% hint style="warning" %}
-
-### Prerequisites
-
+:::warning Prerequisites
 * Install [Helm](https://helm.sh/docs/intro/install/), if you have not installed it already.
 
 * If you are using EKS version 1.23 or above, you must also install [aws-ebs-csi-driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html). Run the following command to install AWS EBS CSI driver using Helm:
@@ -24,7 +20,7 @@ helm upgrade --install aws-ebs-csi-driver \
 --namespace kube-system aws-ebs-csi-driver/aws-ebs-csi-driver
 ```
 
-{% endhint %}
+:::
 
 ---
 
@@ -42,11 +38,10 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd}
 ```
 
-{% hint style="info" %}
-
+:::info 
 If you want to configure Blob Storage during the installation, refer [Configure Blob Storage During Installation](#configure-blob-storage-during-installation).
 
-{% endhint %}
+:::
 
 <!-- ---
 
@@ -54,9 +49,9 @@ If you want to configure Blob Storage during the installation, refer [Configure 
 
 To install Devtron on clusters with the multi-architecture nodes (ARM and AMD), append the Devtron installation command with `--set installer.arch=multi-arch`.
 
-{% hint style="info" %}
+:::info 
 If you want to install Devtron for `production deployments`, please refer our [recommended overrides](override-default-devtron-installation-configs.md) for Devtron Installation.
-{% endhint %} -->
+::: -->
 
 ---
 
@@ -207,9 +202,9 @@ helm install devtron devtron/devtron-operator \
 
 ## Check Status of Devtron Installation
 
-{% hint style="info" %}
+:::info 
 The installation takes about 15 to 20 minutes to spin up all of the Devtron microservices one by one
-{% endhint %}
+:::
 
 Run the following command to check the status of the installation:
 
@@ -254,13 +249,13 @@ You will get an output similar to the example shown below:
 
 Use the hostname `aaff16e9760594a92afa0140dbfd99f7-305259315.us-east-1.elb.amazonaws.com` (Loadbalancer URL) to access the Devtron dashboard.
 
-{% hint style="info" %}
+:::info 
 If you do not get a hostname or receive a message that says "service doesn't exist," it means Devtron is still installing. Please wait until the installation is completed.
-{% endhint %}
+:::
 
-{% hint style="info" %}
+:::info 
 You can also use a `CNAME` entry corresponding to your domain/subdomain to point to the Loadbalancer URL to access at a customized domain.
-{% endhint %}
+:::
 
 | Host | Type | Points to |
 | :--- | :--- | :--- |
@@ -272,7 +267,7 @@ You can also use a `CNAME` entry corresponding to your domain/subdomain to point
 
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use that credentials to log in as an administrator. 
 
-**Username**: `admin` <br>
+**Username**: `admin` <br />
 **Password**: Run the following command to get the admin password:
 
 ```bash
@@ -280,18 +275,14 @@ kubectl -n devtroncd get secret devtron-secret \
 -o jsonpath='{.data.ADMIN_PASSWORD}' | base64 -d
 ```
 
-{% hint style="info" %}
-
-### Next Recommended Action
-
+:::info Next Recommended Action
 When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use it to log in as an administrator.
 
 After the initial login, we recommend you set up any [Single Sign-On (SSO)](../../user-guide/global-configurations/sso-login.md) service like Google, GitHub, etc., and then add other users (including yourself). Subsequently, all the users can use the same SSO (e.g., GitHub) to log in to the Dashboard.
 
-{% endhint %}
+:::
 
-{% hint style="info" %}
-
+:::info 
 If you have any questions, please let us know on our Discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
 
-{% endhint %}
+:::

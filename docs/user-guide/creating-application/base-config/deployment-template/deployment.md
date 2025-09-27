@@ -15,16 +15,15 @@ You can define application behavior by providing information in the following se
 
 | Key | Descriptions |
 | :--- | :--- |
-| `Chart version` | Select the Chart Version using which you want to deploy the application.<br> Refer [Chart Version](../../../creating-application/base-config/deployment-template.md#choose-a-chart-version) section for more detail.</br> |
-| `GUI` | You can perform a basic deployment configuration for your application in the **GUI** section instead of configuring the YAML file.<br>Refer [Basic Configuration](../../../creating-application/base-config/deployment-template.md#using-gui) section for more detail.</br>|
-| `YAML` | If you want to do additional configurations, then click **YAML** for modifications.<br>Refer [YAML](#yaml) section for more detail.</br> |
-| `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br>Refer [Application Metrics](../../../creating-application/app-metrics.md) for more detail.</br> |
+| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../../creating-application/base-config/deployment-template.md#choose-a-chart-version) section for more detail. |
+| `GUI` | You can perform a basic deployment configuration for your application in the **GUI** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../../creating-application/base-config/deployment-template.md#using-gui) section for more detail.|
+| `YAML` | If you want to do additional configurations, then click **YAML** for modifications.<br />Refer [YAML](#yaml) section for more detail. |
+| `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br />Refer [Application Metrics](../../../creating-application/app-metrics.md) for more detail. |
 
 
-{% hint style="warning" %}
-### Note
+:::caution Note
 Super-admins can lock keys in deployment template to prevent non-super-admins from modifying those locked keys. Refer [Lock Deployment Configuration](../../../global-configurations/lock-deployment-config.md) to know more.
-{% endhint %}
+:::
 
 <!-- ## Basic Configuration
 

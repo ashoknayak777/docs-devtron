@@ -10,10 +10,9 @@ The **Tags Policy** feature in Devtron allows you to enforce a tag that must be 
 
 ## Adding Tag Policy
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to create tag policy.
-{% endhint %}
+:::
 
 1. Go to **Global Configurations** → **Tags Policy**.
 
@@ -70,12 +69,11 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
     ![Figure 10c: How Tag Propagation Works](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/inject-tags.jpg)
 
-{% hint style="Info" %}
-### Changing Propagation in Suggested Tags vs. Mandatory Tags
+:::Info Changing Propagation in Suggested Tags vs. Mandatory Tags
 **In suggested tags**: When you enable/disable tag propagation, users can still disable/enable it during app creation, ensuring its tags propagate to associated Kubernetes resources.
 
 **In mandatory tags**: When you enable/disable tag propagation, users do not get the option to change the propagation setting.
-{% endhint %} 
+::: 
 
 10. (Optional) Click the **`+`** option to create more suggested tags or more mandatory tags in one go.
 
@@ -87,10 +85,9 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
 ## Editing a Tag
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to edit tags.
-{% endhint %}
+:::
 
 You can edit an existing tag key to do the following:
 * Modify the tag key
@@ -115,10 +112,9 @@ You may use the checkboxes to add/remove projects from multiple tags at once as 
 
 ## Deleting a Tag
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 Users need to have super-admin permission to delete tags.
-{% endhint %}
+:::
 
 If you delete a 'Suggested Tag', it will no longer show up as a suggestion to your users while adding tags. If it's a 'Mandatory Tag', the deployment rules (if any, associated with that tag) will no longer be enforced.
 

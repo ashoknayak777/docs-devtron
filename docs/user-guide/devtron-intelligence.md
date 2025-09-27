@@ -16,13 +16,12 @@ Check out the [Results](#results) section to see where Devtron gives you AI-powe
 
 ## Steps to Configure Devtron Intelligence
 
-{% hint style="warning" %}
-### Who Can Perform This Action?
+:::caution Who Can Perform This Action?
 User must have permissions to:
   * Deploy Helm Apps (with environment access)
   * Edit the ConfigMaps of 'default-cluster'
   * Restart the pods
-{% endhint %}
+:::
 
 ### 1. Get API Key from LLM
 
@@ -63,9 +62,9 @@ data:
 
 #### Method B: Using kubectl command
 
-{% hint style="success" %}
+:::tip 
 Unlike [Method A](#method-a-using-create-resource), this method doesn't require you to encode your LLM Key to Base64 format. 
-{% endhint %}
+:::
 
 1. Go to Devtron's [Resource Browser](./resource-browser/README.md) and click the [terminal icon](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/cluster-terminal.gif) next to the cluster where you wish to create the secret. 
 
@@ -87,10 +86,9 @@ kubectl create secret generic ai-secret \
 
 ### 3. Deploy AI Agent Chart
 
-{% hint style="warning" %}
-### Where should I install the Chart?
+:::caution Where should I install the Chart?
 Deploy the chart in the cluster whose workloads you wish to troubleshoot. You may install the chart in multiple clusters (1 agent for 1 cluster). 
-{% endhint %}
+:::
 
 1. Go to Devtron's Chart Store.
 
