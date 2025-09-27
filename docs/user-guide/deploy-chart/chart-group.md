@@ -119,7 +119,7 @@ The **Advanced Options** page enables you to change the chart values, chart conf
 
 3. Select the chart version you'd like to use from the **Chart version** drop-down box. 
 
-4. Select the chart values you'd like to use from the **Values** drop-down box. If you want to configure a preset value for your chart, or use a previously configured one, select **Preset values**. Refer to [Preset Values](deployment-of-charts.md/#preset-values) for more information.
+4. Select the chart values you'd like to use from the **Values** drop-down box. If you want to configure a preset value for your chart, or use a previously configured one, select **Preset values**. Refer to [Preset Values](deployment-of-charts.md#preset-values) for more information.
 
 5. Select the project in the **Project** drop-down box.
 

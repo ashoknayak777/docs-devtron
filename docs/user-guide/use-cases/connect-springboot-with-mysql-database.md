@@ -6,7 +6,7 @@ This document will help you to deploy a sample Spring Boot Application, using **
 
 ### **1. Deploy a mysql Helm Chart**
 
-To deploy mysql Helm Chart, you can refer to our documentation on [Deploy mysql Helm Chart](../deploy-chart/examples/deploying-mysql-helm-chart.md)
+To deploy mysql Helm Chart, you can refer to our documentation on [Deploy mysql Helm Chart](../deploy-chart/deployment-of-charts.md#example)
 
 ### **2. Fork the Git Repository**
 
