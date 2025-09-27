@@ -8,7 +8,7 @@ Follow the below-mentioned steps, to deploy the application on Devtron using mon
 
 ## **1. Deploy mongoDb Helm Chart**
 
-To deploy mongoDb Helm Chart, you can refer to our documentation on [Deploy mongoDb Helm Chart](../deploy-chart/examples/deploying-mongodb-helm-chart.md)
+To deploy mongoDb Helm Chart, you can refer to our documentation on [Deploy mongoDb Helm Chart](../deploy-chart/deployment-of-charts.md#example).
 
 ## **2. Fork the Git Repository**
 
