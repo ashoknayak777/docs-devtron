@@ -310,7 +310,7 @@ This will be utilized only when an existing container image is copied to another
 
     ![Figure 13: Edit Icon](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/edit-cd-image-tag.jpg)
 
-3. You can write an alphanumeric pattern for your image tag, e.g., **prod-v1.0.{x}**. Here, 'x' is a mandatory variable whose value will incrementally increase with every pre or post deployment trigger (that option is also available to you). You can also define the value of 'x' for the next trigger in case you want to change it. 
+3. You can write an alphanumeric pattern for your image tag, e.g., **prod-v1.0.`{x}`**. Here, 'x' is a mandatory variable whose value will incrementally increase with every pre or post deployment trigger (that option is also available to you). You can also define the value of 'x' for the next trigger in case you want to change it. 
 
     ![Figure 14: Defining Tag Pattern](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-cd-pipeline/cd-image-tag.jpg)
 

@@ -2,6 +2,9 @@
 hidden: true
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Install Devtron Freemium
 
 ## Introduction

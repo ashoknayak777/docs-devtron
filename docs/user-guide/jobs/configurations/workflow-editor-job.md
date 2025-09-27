@@ -145,7 +145,7 @@ Let's take an example of a **Shell task** for a job that allows you to extract a
 | `Task Description`| `This task extract all the environment variables available to the job pod at runtime and saves it as a file` | Optional | Short description for the task|
 | `Task Type` | `Shell`| Optional| Select the preferred task type |
 | `Script`| Refer the [Script](#script) below| Required| Custom script for executing Job tasks|
-| `Output variables`| Refer to the [output variable](#output-variables) table| Optional| <p>Output variables store the output as variables, and these variables can be used as input variables for the next task.|
+| `Output variables`| Refer to the [output variable](#output-variables) table| Optional| Output variables store the output as variables, and these variables can be used as input variables for the next task.|
 
 
 #### Script

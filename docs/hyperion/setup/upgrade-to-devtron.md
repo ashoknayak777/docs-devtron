@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Upgrade Hyperion to Devtron Full mode
 
 To install Helm3, please check [Installing Helm3](https://helm.sh/docs/intro/install/)
@@ -41,7 +44,7 @@ helm upgrade devtron devtron/devtron-operator --create-namespace --namespace dev
 </Tabs>
 
 
-If you are planning to use Devtron for `production deployments`, please refer to our recommended overrides for [Devtron Installation](override-default-devtron-installation-configs.md).
+If you are planning to use Devtron for `production deployments`, please refer to our recommended overrides for [Devtron Installation](../../setup/install/override-default-devtron-installation-configs.md).
 
 ## Installation status
 

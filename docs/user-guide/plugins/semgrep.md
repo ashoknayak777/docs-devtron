@@ -16,8 +16,8 @@ Semgrep is a fast, open source, static analysis engine for finding bugs, detecti
  | Variable | Format | Description |
 | ---- | ---- | ---- |
 | SemgrepAppToken | String | App token of Semgrep. If it is provided, this token will be used, otherwise it will be picked from Global Secret. |
-| PrefixAppNameInSemgrepBranchName | Bool | Enter either `true` or `false` accordingly whether you want app name to be reflected with a branch name. If it is `true`, it will add app name with branch name. E.g., {SemgrepAppName}-{branchName} |
-| UseCommitAsSemgrepBranchName | Bool | Enter either `true` or `false` accordingly whether you want app name to be reflected with commit hash. If it is `true`, it will add app name with commit hash. E.g., {SemgrepAppName}-{CommitHash}. |
+| PrefixAppNameInSemgrepBranchName | Bool | Enter either `true` or `false` accordingly whether you want app name to be reflected with a branch name. If it is `true`, it will add app name with branch name. E.g., `{SemgrepAppName}`-`{branchName}` |
+| UseCommitAsSemgrepBranchName | Bool | Enter either `true` or `false` accordingly whether you want app name to be reflected with commit hash. If it is `true`, it will add app name with commit hash. E.g., `{SemgrepAppName}`-`{CommitHash}`. |
 | SemgrepAppName | String | App name for Semgrep. If it is provided, and `PrefixAppNameInSemgrepBranchName` is true, then this will be prefixed with branch name/commit hash.|
 | ExtraCommandArguments | String | Extra command arguments for Semgrep CI command. E.g., Input: --json --dry-run. |
 

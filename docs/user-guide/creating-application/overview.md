@@ -187,13 +187,13 @@ Follow the steps below to apply the PVC to all or specific pipelines
 
 | Key | Value|
 |:--- |:---  | 
-|devtron.ai/ci-pvc-<pipeline-name>| cache-pvc |
+|devtron.ai/ci-pvc-`<pipeline-name>`| cache-pvc |
 
 ![Figure 11a: Finding Pipeline name](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/pipeline-name-pvc-1.jpg)
 
 ![Figure 11b: Mounting PVC to a specific pipeline](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/pipeline-level-tag.jpg)
 
-> Replace <pipeline-name> with the exact name of the CI pipeline (visible in the Workflow Editor).
+> Replace `<pipeline-name>` with the exact name of the CI pipeline (visible in the Workflow Editor).
 
 4. Click **Save** to apply the tag.
 

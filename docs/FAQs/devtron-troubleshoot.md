@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Troubleshooting Guide
 
 We always try to make your experience of using Devtron as smooth as possible but still if you face any issues, follow the troubleshooting guide given below or join our [discord channel](https://discord.gg/jsRG5qx2gp) if you couldn't find the solution for the issue you are facing.
@@ -74,7 +77,7 @@ Again wait for 5 minutes and your issue should be resolved
 #### 5. Grafana dashboards not visible in App Details page even after adding prometheus endpoint or Graphs showing error panel with id 2 not found
 
 If the graphs are not visible check if prometheus is configured properly. Then go to Global Configurations > Clusters & Environments > Click on any environment for the cluster where you added prometheus endpoint and simply click `Update`.  
-If the charts are still not visible, try visiting the url: <devtron-url>/grafana?orgId=2  
+If the charts are still not visible, try visiting the url: `<devtron-url>`/grafana?orgId=2  
 If you see `Not Found` on this page, then follow all the given steps or if the page is accessible and you are getting `panel with id 2 not found` then follow from step 6:  
 1. Get grafana password using `kubectl -n devtroncd get secret devtron-secret -o jsonpath='{.data.GRAFANA_PASSWORD}' | base64 -d`
 2. `kubectl run --rm -it --image quay.io/devtron/k8s-utils:tutum-curl curl` Run this command and it will create a pod for using `curl`
@@ -105,7 +108,7 @@ curl "${grafanaUrl}/api/datasources/2" -X PUT \
 EOF
 ```
 and run in the pod that we created above in step 2.
-4. Now visit <devtron-url>/grafana?orgId=2 again and you'll see grafana login page. Login using username `admin` and password from step 1 and check if prometheus url is updated in datasources. If not, update it in the default datasource.
+4. Now visit `<devtron-url>`/grafana?orgId=2 again and you'll see grafana login page. Login using username `admin` and password from step 1 and check if prometheus url is updated in datasources. If not, update it in the default datasource.
 5. Now from devtron UI, update any of the environment again and it's datasource will be created automatically.
 6. In Grafana UI you need to be logged in and Go to Dashboards > Manage then click `Import` and Import the given dashboards one by one.
 ```
@@ -406,7 +409,7 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 </TabItem>
 </Tabs>
 
-#### 22. Rollout is showing error - <string>:111: attempt to index a non-table object(nil) with key 'stableRS' stack traceback: <string>:111: in main chunk [G]: ?
+#### 22. Rollout is showing error - `<string>`:111: attempt to index a non-table object(nil) with key 'stableRS' stack traceback: `<string>`:111: in main chunk [G]: ?
 
 This can occur if you are using or recently upgraded to Kubernetes version 1.22 or above and you are using rollout controller version 0.13.0 from chart `devtron-charts/rollout` or `devtron/rollout`. The issue can be because of CRDs which were updated in later versions of rollout chart.
 

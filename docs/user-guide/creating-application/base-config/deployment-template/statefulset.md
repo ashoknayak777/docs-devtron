@@ -355,7 +355,7 @@ autoscaling:
 ```yaml
 fullnameOverride: app-name
 ```
-`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses {app-name}-{environment-name} as release fullname.
+`fullnameOverride` replaces the release fullname created by default by devtron, which is used to construct Kubernetes object names. By default, devtron uses `{app-name}-{environment-name}` as release fullname.
 
 ### Image
 
@@ -920,10 +920,10 @@ Above settings will take action on `Sat` and `Sun` from 00:00 to 23:59:59, and o
 
 The above example will select the application objects which have been created 10 hours ago across all namespaces excluding application's namespace. Winter soldier exposes following functions to handle time, cpu and memory.
 
-- ParseTime - This function can be used to parse time. For eg to parse creationTimestamp use ParseTime({{metadata.creationTimestamp}}, '2006-01-02T15:04:05Z')
-- AddTime - This can be used to add time. For eg AddTime(ParseTime({{metadata.creationTimestamp}}, '2006-01-02T15:04:05Z'), '-10h') ll add 10h to the time. Use d for day, h for hour, m for minutes and s for seconds. Use negative number to get earlier time.
+- ParseTime - This function can be used to parse time. For eg to parse creationTimestamp use `ParseTime({{metadata.creationTimestamp}}, '2006-01-02T15:04:05Z')`
+- AddTime - This can be used to add time. For eg `AddTime(ParseTime({{metadata.creationTimestamp}}, '2006-01-02T15:04:05Z'), '-10h')` ll add 10h to the time. Use d for day, h for hour, m for minutes and s for seconds. Use negative number to get earlier time.
 - Now - This can be used to get current time.
-- CpuToNumber - This can be used to compare CPU. For eg any({{spec.containers.#.resources.requests}}, { MemoryToNumber(.memory) < MemoryToNumber('60Mi')}) will check if any resource.requests is less than 60Mi.
+- CpuToNumber - This can be used to compare CPU. For eg `any({{spec.containers.#.resources.requests}}, { MemoryToNumber(.memory) < MemoryToNumber('60Mi')})` will check if any resource.requests is less than 60Mi.
 
 
 

@@ -13,7 +13,7 @@ To configure Google SSO in Devtron, you will need:
 
 * A Google Cloud account to create and manage OAuth credentials. If you don’t have one, you must create it at the [Google Cloud Console](https://console.cloud.google.com/).
 
-{%endhint%}
+:::
 
 ## Get the Redirect URI from Devtron
 

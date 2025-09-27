@@ -44,7 +44,7 @@ e.g., `The Cosign plugin is integrated for  ensuring the authenticity of contain
 |   PostCommand            |    STRING    | Command to run after image is signed by Cosign |    cosign verify $DOCKER_IMAGE                            |
 |   ExtraArguments         |    STRING    | Arguments for Cosign command                   |    --certificate-identity=name@example.com                                      | 
 |   CosignPassword         |    STRING    | Password for Cosign private key                |   S3cur3P@ssw0rd123!                   |
-|   VariableAsPrivateKey   |    STRING    | base64 encoded private-key                     |   @{{COSIGN_PRIVATE_KEY}}   |
+|   VariableAsPrivateKey   |    STRING    | base64 encoded private-key                     |   `@{{COSIGN_PRIVATE_KEY}}`   |
 |   PreCommand             |    STRING    | Command to get the required conditions to execute Cosign command | curl -sLJO https://raw.githubusercontent.com/devtron-labs/sampleRepo/branchName/private             |
 
 ### Trigger/Skip Condition

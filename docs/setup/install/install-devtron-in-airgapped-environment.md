@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Devtron Installation in an Airgapped Environment
 
 ## Introduction

@@ -19,7 +19,7 @@ To create a new application from the custom app, select **Custom app**.
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/create-application.jpg)
 
 * In the **Create application** window, enter an **App Name** and select a **Project**.
-* Select either:<ul><li>**Create from scratch** to create an application from scratch, or<li>**Clone existing application** to clone an existing application.</ul></li>
+* Select either:<ul><li>**Create from scratch** to create an application from scratch</li>, or<li>**Clone existing application** to clone an existing application.</li></ul>
 * If you select **Create from scratch**, select the project from the drop-down list.<br />`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.
 * If you select **Clone existing application**, select an app you want to clone from and the project from the drop-down list.<br />`Note`: You have to add [project under Global Configurations](./global-configurations/projects.md). Only then, it will appear in the drop-down list here.
 

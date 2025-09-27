@@ -88,7 +88,7 @@ Provide the following additional information apart from the common fields:
 | Fields | Description |
 | --- | --- |
 | **Registry URL** | Example of URL format: `xxxxxxxxxxxx.dkr.ecr.<region>.amazonaws.com` where `xxxxxxxxxxxx` is your 12-digit AWS account ID |
-| **Authentication Type** | Select one of the authentication types:<ul><li>**EC2 IAM Role**: Authenticate with workernode IAM role and attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the cluster worker nodes IAM role of your Kubernetes cluster.</li></ul><ul><li>**User Auth**: It is a key-based authentication, attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the [IAM user](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).<ul><li>`Access key ID`: Your AWS access key</li></ul><ul><li>`Secret access key`: Your AWS secret access key ID</li></ul> |
+| **Authentication Type** | Select one of the authentication types:<ul><li>**EC2 IAM Role**: Authenticate with workernode IAM role and attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the cluster worker nodes IAM role of your Kubernetes cluster.</li><li>`User Auth`: It is a key-based authentication, attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the [IAM user](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).</li><li>`Access key ID`: Your AWS access key</li><li>`Secret access key`: Your AWS secret access key ID</li></ul> |
 
 
 ### Docker 
@@ -157,7 +157,7 @@ Provide below information if you select the registry type as `Other`.
 | **Registry URL** | Enter the URL of your private registry |
 | **Username** | Provide the username of your account where you have created your registry |
 | **Password/Token** | Provide the password or token corresponding to the username of your registry |
-| **Advanced Registry URL Connection Options** | <ul><li>**Allow Only Secure Connection**: Tick this option for the registry to allow only secure connections</li></ul><ul><li>**Allow Secure Connection With CA Certificate**: Tick this option for the registry to allow secure connection by providing a private CA certificate (ca.crt)</li></ul><ul><li>**Allow Insecure Connection**: Tick this option to make an insecure communication with the registry (for e.g., when SSL certificate is expired)</li></ul> |
+| **Advanced Registry URL Connection Options** | <ul><li>**Allow Only Secure Connection**: Tick this option for the registry to allow only secure connections</li><li>**Allow Secure Connection With CA Certificate**: Tick this option for the registry to allow secure connection by providing a private CA certificate (ca.crt)</li><li>**Allow Insecure Connection**: Tick this option to make an insecure communication with the registry (for e.g., when SSL certificate is expired)</li></ul> |
 
 :::info 
 You can use any registry which can be authenticated using `docker login -u <username> -p <password> <registry-url>`. However these registries might provide a more secured way for authentication, which we will support later.

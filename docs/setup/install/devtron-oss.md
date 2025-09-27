@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Install Devtron OSS
 
 ## Introduction
@@ -125,7 +128,7 @@ To access the dashboard on EKS, AKS, or GKE cluster, run the following command:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.status.loadBalancer.ingress}'
 ```
 
-<mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">: The LoadBalancer URL displayed in the output</mark>
+<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>: The LoadBalancer URL displayed in the output</div>
 </TabItem>
 
 <TabItem label="MicroK8s/Kind/K3s (and Cloud VMs)" value="MicroK8s/Kind/K3s (and Cloud VMs)">
@@ -140,7 +143,7 @@ Run the following command to port-forward the devtron service to port `8000`
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">:</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`http://127.0.0.1:8000`</mark>
+<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://127.0.0.1:8000`</div>
 
 ***
 
@@ -158,7 +161,7 @@ Then run the following command to get the port number assigned to the service:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.spec.ports[0].nodePort}'
 ```
 
-<mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">:</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`http://<HOST_IP>:<NODEPORT>/dashboard`</mark>
+<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://<HOST_IP>:<NODEPORT>/dashboard`</div>
 
 ***
 
@@ -174,7 +177,7 @@ kubectl config use-context <context-name> # Set the correct context.
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">:</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`http://127.0.0.1:8000`</mark>
+<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://127.0.0.1:8000`</div>
 </TabItem>
 
 <TabItem label="Minikube" value="Minikube">
@@ -184,7 +187,7 @@ Run the following command:
 minikube service devtron-service --namespace devtroncd
 ```
 
-<mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">: (Directly opens in your browser)</mark>
+<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>: (Directly opens in your browser)</div>
 </TabItem>
 </Tabs>
 

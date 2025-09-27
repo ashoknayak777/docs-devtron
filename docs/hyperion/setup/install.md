@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Install Hyperion using Helm3 (Deprecated)
 
 > **Note**: Hyperion is now Devtron

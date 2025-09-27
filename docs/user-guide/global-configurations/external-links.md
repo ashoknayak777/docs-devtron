@@ -94,19 +94,19 @@ The following fields are provided on the **Add Link** page:
         <td>
             The configured URL Template is used by apps deployed on the selected clusters/applications.            
             By combining one or more of the env variables, a URL with the structure shown below can be created:<br />
-            <i>http://www.domain.com/{namespace}/{appName}/details/{appId}/env/{envId}/details/{podName}</i>
+            <i>http://www.domain.com/`{namespace}`/`{appName}`/details/`{appId}`/env/`{envId}`/details/`{podName}`</i>
             <br />
-            If you include the variables {podName} and {containerName} in the URL template, then the configured links (e.g. Grafana) will be visible only on the pod level and container level respectively.<br />
+            If you include the variables `{podName}` and `{containerName}` in the URL template, then the configured links (e.g. Grafana) will be visible only on the pod level and container level respectively.<br />
             The env variables:
             <ul>
-                <li>{appName}</li>
-                <li>{appId}</li>
-                <li>{envId}</li>
-                <li>{namespace}</li>
-                <li>{podName}: If used, the link will only be visible at the pod level on the [App Details](../app-details/README.md) page.
-                <li>{containerName}: If used, the link will only be visible at the container level on the [App Details](../app-details/README.md) page. </li>
+                <li>`{appName}`</li>
+                <li>`{appId}`</li>
+                <li>`{envId}`</li>
+                <li>`{namespace}`</li>
+                <li>`{podName}`: If used, the link will only be visible at the pod level on the [App Details](../app-details/README.md) page.</li>
+                <li>`{containerName}`: If used, the link will only be visible at the container level on the [App Details](../app-details/README.md) page. </li>
             </ul>
-            <b>Note: The env variables will be dynamically replaced by the values that you used to configure the link.           
+            <b>Note</b>: The env variables will be dynamically replaced by the values that you used to configure the link.           
         </td>
     </tr>
 </table>
