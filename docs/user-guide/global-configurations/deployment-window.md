@@ -34,9 +34,10 @@ Technically, both of them are different methods of restricting deployments to an
 
 ## Configuring Deployment Window
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to configure deployment window.
-:::
+{% endhint %}
 
 Go to **Global Configurations** → **Deployment Window**.
 
@@ -58,7 +59,7 @@ This involves the process of creating a blackout window or a maintenance window.
 
     ![Figure 4: Name and Description](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/name-description.jpg)
 
-3. Choose a deployment window type, i.e., maintenance window or blackout window.
+3. Choose a deployment window type, i.e., maintenance window or blackout window. 
 
     ![Figure 5: Selecting Deployment Window Type](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/window-type-v2.jpg)
 
@@ -66,26 +67,27 @@ This involves the process of creating a blackout window or a maintenance window.
 
     ![Figure 6: Selecting Timezone](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/time-zone.jpg)
 
-:::info[Why Time Zone?]
-Let's say you are a super-admin located in New Delhi (GMT +5:30) and you wish to restrict midnight deployments according to the Californian timings (GMT -07:00) for your team in the US. Therefore, it's crucial to choose the correct time zone (i.e., GMT -07:00) and then add the duration (see next steps).
+{% hint style="info" %}
+### Why Time Zone?
+Let's say you are a super-admin located in New Delhi (GMT +5:30) and you wish to restrict midnight deployments according to the Californian timings (GMT -07:00) for your team in the US. Therefore, it's crucial to choose the correct time zone (i.e., GMT -07:00) and then add the duration (see next steps). 
 
 This ensures that deployments occur at the intended local time, helping to avoid disruptions, and facilitating co-ordinated operations across different regions.
-:::
+{% endhint %}
 
-4. Click **+ Add duration**.
+4. Click **+ Add duration**. 
 
     ![Figure 7: Adding Duration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/add-duration.jpg)
 
 5. The following options are available for you to enforce the deployment window:
     * **Once**: Use this to make your deployment window active between two specific date and time, e.g., 20 Jun 2024, 08:00 PM ➝ 26 Jun 2024, 05:00 PM
     * **Daily**: Use this to make your deployment window active everyday between specific timings, e.g., daily between 12:00 AM ➝ 06:00 AM
-    * **Weekly**: On selected days at specific timings, e.g., Wed and Sun • 02:00 AM ➝ 05:30 AM
-    * **Weekly Range**: Between days of the week, e.g., Mon (02:00 AM) to Fri (05:30 AM)
+    * **Weekly**: On selected days at specific timings, e.g., Wed and Sun • 02:00 AM ➝ 05:30 AM 
+    * **Weekly Range**: Between days of the week, e.g., Mon (02:00 AM) to Fri (05:30 AM) 
     * **Monthly**: On or between days of the month, e.g., Day 1 (10:30 PM) to Day 2 (06:30 AM)
 
     ![Figure 8: Setting Window Duration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/set-duration.jpg)
 
-You can also add **Start Date** and **End Date** to your recurring deployment window.
+You can also add **Start Date** and **End Date** to your recurring deployment window. 
 
 | Option                    | When To Use                                                                      |
 |---------------------------|----------------------------------------------------------------------------------|
@@ -93,15 +95,15 @@ You can also add **Start Date** and **End Date** to your recurring deployment wi
 | End Date                  | Use this to stop restrictions of a deployment window beyond a specific date       |
 | Both Start Date and End Date | Use these to confine your deployment window restrictions between two dates       |
 
-Let's say you wish to enforce a blackout window every weekend to prevent unsolicited deployments by your team. If you select a weekly range (e.g., Saturday 12:00 AM to Monday 12:00 AM) and apply the deployment window without specifying dates, the weekend restrictions will persist indefinitely.
+Let's say you wish to enforce a blackout window every weekend to prevent unsolicited deployments by your team. If you select a weekly range (e.g., Saturday 12:00 AM to Monday 12:00 AM) and apply the deployment window without specifying dates, the weekend restrictions will persist indefinitely. 
 
 However, by specifying a start date and an end date (as shown below), your deployment window will have a defined validity period. This ensures that the deployment window restrictions are temporary and do not extend beyond the intended timeframe.
 
 ![Figure 9: Setting Start and End Date](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/start-end-date-v2.jpg)
 
-:::info
+{% hint style="info" %}
 After clicking **Done**, you can use the **+ Add duration** button to add more than one duration (for e.g., one monthly and one weekly) in a given deployment window.
-:::
+{% endhint %}
 
 6. You can also determine the users who can take actions (say deployment) even when restrictions are in place. These can be super-admins, specific users, both, or none.
 
@@ -166,13 +168,14 @@ You can remove deployment window(s) applied to one or more deployment pipelines 
 
 ## Checking Deployment Window
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users with view only permission or above for an application can view all deployment windows configured for its deployment pipelines.
-:::
+{% endhint %}
 
 ### Overview Page
 
-The **Deployment window** section shows the blackout and maintenance windows configured for each [environment](../../reference/glossary#environment) of the application.
+The **Deployment window** section shows the blackout and maintenance windows configured for each [environment](../../reference/glossary.md#environment) of the application.
 
 ![Figure 21: Overview Page - Deployment Window](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/deployment-window.jpg)
 
@@ -217,9 +220,9 @@ The below functions are blocked during an ongoing blackout window or outside mai
 * [Rollback](#rollback)
 * [Deletion of CD Pipeline](#deletion-of-cd-pipeline)
 
-:::info
+{% hint style="info" %}
 The exempted users specified in the deployment window configuration can perform the above actions.
-:::
+{% endhint %}
 
 
 ### Hibernation
@@ -250,7 +253,7 @@ Similar to [restart workloads](#restart-workloads), deletion of workloads might 
 
 ### Deployment
 
-Go to the `Build & Deploy` tab. The CD pipelines with restricted deployment will carry a **`DO NOT DEPLOY`** label.
+Go to the `Build & Deploy` tab. The CD pipelines with restricted deployment will carry a **`DO NOT DEPLOY`** label. 
 
 ![Figure 27: Do Not Deploy Labels](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/deployment-restricted.jpg)
 
@@ -260,9 +263,9 @@ Despite that, if a user selects an eligible image and proceeds to deploy, it wil
 
 ![Figure 28b: Deployment Dialog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/blocked-deployment-dialog.jpg)
 
-:::warning
+{% hint style="warning" %}
 Not just manual trigger, deployments remain blocked even if the trigger mode is automatic. In such cases, if a new CI image is built, the user has to manually deploy once the deployment block is lifted.
-:::
+{% endhint %}
 
 The `Deployment History` tab will also log whether a given deployment was initiated during a blackout window or outside a maintenance window.
 
@@ -281,9 +284,9 @@ Rolling back to an older version, by using a previously deployed image, is barre
 
 ### Deletion of CD Pipeline
 
-Go to **App Configuration** → **Workflow**.
+Go to **App Configuration** → **Workflow**. 
 
-In Devtron, deleting a CD pipeline affects the current state of the deployed application. Moreover, it might impact future deployments and you will also lose information about past deployments, i.e., Deployment History.
+In Devtron, deleting a CD pipeline affects the current state of the deployed application. Moreover, it might impact future deployments and you will also lose information about past deployments, i.e., Deployment History. 
 
 If you attempt to delete any CD pipeline with restricted deployment, it will show `Pipeline deletion is blocked`.
 

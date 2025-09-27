@@ -24,7 +24,7 @@ Configure autoscaling to handle fluctuating workloads efficiently, reduce downti
 
 ### Blob Storage
 
-Use blob storage to persist build caches and logs, enabling faster builds and reliable CI troubleshooting in production environments. Refer [Blob Storage Guide](./installation-configuration#configuration-of-blob-storage) to know more.
+Use blob storage to persist build caches and logs, enabling faster builds and reliable CI troubleshooting in production environments. Refer [Blob Storage Guide](./installation-configuration.md#configuration-of-blob-storage) to know more.
 
 * **Cache-Storage**: Used to store the build cache to reduce build time of your application.
 * **CI Logs Bucket**: Used to store the build logs of your application.
@@ -46,9 +46,10 @@ Use our provided [Terraform scripts](https://github.com/devtron-labs/utilities/t
 ### Azure (AKS)
 Use our provided [Terraform scripts](https://github.com/devtron-labs/utilities/tree/main/terraform/terraform-aks) to set up AKS cluster for Devtron.
 
-:::tip[Next Step]
-Proceed with the [Devtron installation on your cluster](../install/install-devtron.md).
-:::
+{% hint style="success" %}
+### Next Step
+Proceed with the [Devtron installation on your cluster](../install/devtron-oss.md).
+{% endhint %}
 
 ---
 
@@ -66,19 +67,19 @@ Below are the core components (Devtron microservices) for which you need to allo
 | **Kubewatch** | 200m | 300m | 600Mi | 1000Mi |
 
 
-:::info
+{% hint style="info" %}
 
 ### Need a YAML template to add resources?
 
 You can create a resources file similar to this [YAML file](https://github.com/devtron-labs/devtron/blob/main/charts/devtron/resources-small.yaml) and add resources according to your load and requirements for any service you want, and remove those you don’t wish to modify.
 
-Run the following command once the file is ready:
+Run the following command once the file is ready: 
 
 ```bash
 helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f resources-values-file.yaml
 ```
 
-:::
+{% endhint %}
 
 ---
 
@@ -86,9 +87,9 @@ helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f res
 
 ### CI Isolation with Taints and Tolerations
 
-To ensure CI workloads run exclusively on the dedicated CI nodes, you need to specify the taints and labels to the node. Then, for the CI build pods, you can add the tolerations and node selectors in the `devtron-custom-cm` (ConfigMap) of `devtroncd` namespace using [these keys](./installation-configuration#configure-overrides). These will automatically propagate to CI workloads when they are created.
+To ensure CI workloads run exclusively on the dedicated CI nodes, you need to specify the taints and labels to the node. Then, for the CI build pods, you can add the tolerations and node selectors in the `devtron-custom-cm` (ConfigMap) of `devtroncd` namespace using [these keys](./installation-configuration.md#configure-overrides). These will automatically propagate to CI workloads when they are created.
 
-If you are following our [Cloud-Specific Setup Guidelines](#2-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
+If you are following our [Cloud-Specific Setup Guidelines](#id-2.-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
 
 
 ``` bash

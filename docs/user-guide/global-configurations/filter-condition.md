@@ -2,7 +2,7 @@
 
 ## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-The [workflows](../creating-application/workflow/) you create in Devtron for managing the CI-CD of your application can be made flexible or restricting with the help of CD filter conditions, for e.g., not all events (such as image builds) generated during the CI stage require progression to the CD stage. Therefore, instead of creating multiple workflows that cater to complex requirements, Devtron provides you the option of defining filters to tailor your workflow according to your specific needs.
+The [workflows](../creating-application/workflow/) you create in Devtron for managing the CI-CD of your application can be made flexible or restricting with the help of CD filter conditions, for e.g., not all events (such as image builds) generated during the CI stage require progression to the CD stage. Therefore, instead of creating multiple workflows that cater to complex requirements, Devtron provides you the option of defining filters to tailor your workflow according to your specific needs. 
 
 Using filter conditions, you can control the progression of events. Here are a few general examples:
 * Images containing the label "test" should not be eligible for deployment in production environment
@@ -14,9 +14,10 @@ Using filter conditions, you can control the progression of events. Here are a f
 
 ## Steps to Create a Filter
 
-:::info[Prerequisites]
+{% hint style="info" %}
+### Prerequisites
 You must have application(s) with CI-CD workflow(s) configured
-:::
+{% endhint %}
 
 1. From the left sidebar, go to **Global Configurations** → **Filter Condition**.
 
@@ -55,17 +56,17 @@ You must have application(s) with CI-CD workflow(s) configured
 
     ![Figure 5: Selecting Environment(s) from Cluster(s)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/environment-selection.jpg)
 
-:::info
+{% hint style="info" %}
 Since an application can have more than one environment, the filter conditions apply only to the environment you chose in the **Apply to** section. If you create a filter condition without choosing an application or environment, it will not apply to any of your pipelines.
-:::
+{% endhint %}
 
 6. Click **Save**. You have successfully created a filter.
 
     ![Figure 6: Success Toast](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/filter-created.jpg)
 
-:::warning
+{% hint style="warning" %}
 If you create filters using CEL expressions that result in a conflict (i.e., passing and failing of the same image), fail will have higher precedence
-:::
+{% endhint %}
 
 ---
 
@@ -94,7 +95,7 @@ Click **Select Image** for the `test` CD pipeline. The first tab **Eligible imag
 
 ![Figure 10: List of Eligible Images](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/eligible-list-1.jpg)
 
-The second tab **Latest images** shows the latest builds (up to 10 images) irrespective of whether they have satisfied the filter condition(s) or not. The ones that have not satisfied the filter conditions get marked as `Excluded`. In other words, they are not eligible for deployment.
+The second tab **Latest images** shows the latest builds (up to 10 images) irrespective of whether they have satisfied the filter condition(s) or not. The ones that have not satisfied the filter conditions get marked as `Excluded`. In other words, they are not eligible for deployment. 
 
 ![Figure 11: List of Latest Images](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/latest-list-1.jpg)
 
@@ -121,7 +122,7 @@ Alternatively, if you have a fixed branch (say *hotfix-123*), you may write the 
 
 **Walkthrough Video**:
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/R8IbZhXhH-k" title="Filter Condition Example" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=R8IbZhXhH-k" caption="Filter Condition Example" %}
 
 
 ### Fail Condition
@@ -140,7 +141,7 @@ Click **Select Image** for the `devtron-demo` CD pipeline. The first tab **Eligi
 
 ![Figure 15: List of Eligible Images](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/eligible-list-3.jpg)
 
-The second tab **Latest images** shows the latest builds (up to 10 images) irrespective of whether they have satisfied the filter condition(s) or not. The ones that have satisfied the filter conditions get marked as `Excluded`. In other words, they are not eligible for deployment.
+The second tab **Latest images** shows the latest builds (up to 10 images) irrespective of whether they have satisfied the filter condition(s) or not. The ones that have satisfied the filter conditions get marked as `Excluded`. In other words, they are not eligible for deployment. 
 
 ![Figure 16: List of Latest Images](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/filters/latest-list-2.jpg)
 

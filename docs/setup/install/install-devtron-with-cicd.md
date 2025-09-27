@@ -1,24 +1,20 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Install Devtron with CI/CD
 
 In this section, we describe the steps in detail on how you can install Devtron with CI/CD integration.
 
-:::tip
-Try Devtron Enterprise for free — unlock advanced features built for scale. [Start Free Trial](https://license.devtron.ai/dashboard)
-:::
+{% hint style="success" %}
 
----
+Try Devtron Freemium to access all the enterprise features for free and forever, limited to adding one additional cluster. [Install Devtron Freemium](https://license.devtron.ai/dashboard)
 
-## Prerequisites
+{% endhint %}
 
-Install [Helm](https://helm.sh/docs/intro/install/), if you have not installed it already.
+{% hint style="warning" %}
 
-:::info
-If you are using EKS version 1.23 or above, you must also install [aws-ebs-csi-driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html).
+### Prerequisites
 
-Run the following command to install AWS EBS CSI driver using Helm:
+* Install [Helm](https://helm.sh/docs/intro/install/), if you have not installed it already.
+
+* If you are using EKS version 1.23 or above, you must also install [aws-ebs-csi-driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html). Run the following command to install AWS EBS CSI driver using Helm:
 
 ```bash
 helm repo add aws-ebs-csi-driver \
@@ -27,7 +23,8 @@ helm repo update \
 helm upgrade --install aws-ebs-csi-driver \
 --namespace kube-system aws-ebs-csi-driver/aws-ebs-csi-driver
 ```
-:::
+
+{% endhint %}
 
 ---
 
@@ -36,7 +33,7 @@ helm upgrade --install aws-ebs-csi-driver \
 Run the following command to install the latest version of Devtron along with the CI/CD module:
 
 ```bash
-helm repo add devtron https://helm.devtron.ai
+helm repo add devtron https://helm.devtron.ai 
 
 helm repo update devtron
 
@@ -45,21 +42,21 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd}
 ```
 
-:::info
-If you want to configure Blob Storage during the installation, refer [configure blob storage duing installation](#configure-blob-storage-during-installation).
-:::
+{% hint style="info" %}
 
+If you want to configure Blob Storage during the installation, refer [Configure Blob Storage During Installation](#configure-blob-storage-during-installation).
 
+{% endhint %}
 
-<!-- ## Install Multi-Architecture Nodes (ARM and AMD)
+<!-- ---
+
+## Install Multi-Architecture Nodes (ARM and AMD)
 
 To install Devtron on clusters with the multi-architecture nodes (ARM and AMD), append the Devtron installation command with `--set installer.arch=multi-arch`.
 
-:::info
+{% hint style="info" %}
 If you want to install Devtron for `production deployments`, please refer our [recommended overrides](override-default-devtron-installation-configs.md) for Devtron Installation.
-:::
--->
-
+{% endhint %} -->
 
 ---
 
@@ -68,20 +65,20 @@ If you want to install Devtron for `production deployments`, please refer our [r
 Configuring Blob Storage in your Devtron environment allows you to store build logs and cache.
 In case, if you do not configure the Blob Storage, then:
 
-- You will not be able to access the build and deployment logs after an hour.
+- You will not be able to access the build logs after an hour.
 - Build time for commit hash takes longer as cache is not available.
 - Artifact reports cannot be generated in pre/post build and deployment stages.
 
 Choose one of the options to configure blob storage:
 
-<Tabs>
+{% tabs %}
 
-<TabItem value="MinIO Storage" label="MinIO Storage">
+{% tab title="MinIO Storage" %}
 
 Run the following command to install Devtron along with MinIO for storing logs and cache.
 
 ```bash
-helm repo add devtron https://helm.devtron.ai
+helm repo add devtron https://helm.devtron.ai 
 
 helm repo update devtron
 
@@ -92,11 +89,11 @@ helm install devtron devtron/devtron-operator \
 ```
 **Note**: Unlike global cloud providers such as AWS S3 Bucket, Azure Blob Storage and Google Cloud Storage, MinIO can be hosted locally also.
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="AWS S3 Bucket" label="AWS S3 Bucket">
+{% tab title="AWS S3 Bucket" %}
 
-Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration#aws-specific) page.
+Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#aws-specific) page.
 
 Run the following command to install Devtron along with AWS S3 buckets for storing build logs and cache:
 
@@ -138,7 +135,7 @@ helm install devtron devtron/devtron-operator \
 --set secrets.BLOB_STORAGE_S3_SECRET_KEY=<secret-key>
 ```
 
-*  Install using S3 compatible storages:
+*  Install using S3 compatible storages: 
 
 ```bash
 helm repo add devtron https://helm.devtron.ai
@@ -158,11 +155,11 @@ helm install devtron devtron/devtron-operator \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Azure Blob Storage" label="Azure Blob Storage">
+{% tab title="Azure Blob Storage" %}
 
-Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration#azure-specific) page.
+Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#azure-specific) page.
 
 Run the following command to install Devtron along with Azure Blob Storage for storing build logs and cache:
 
@@ -181,11 +178,11 @@ helm install devtron devtron/devtron-operator \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Google Cloud Storage" label="Google Cloud Storage">
+{% tab title="Google Cloud Storage" %}
 
-Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](./installation-configuration#google-cloud-storage-specific) page.
+Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#google-cloud-storage-specific) page.
 
 Run the following command to install Devtron along with Google Cloud Storage for storing build logs and cache:
 
@@ -203,16 +200,16 @@ helm install devtron devtron/devtron-operator \
 --set configs.DEFAULT_BUILD_LOGS_BUCKET=log-bucket
 ```
 
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
 ---
 
 ## Check Status of Devtron Installation
 
-:::info
+{% hint style="info" %}
 The installation takes about 15 to 20 minutes to spin up all of the Devtron microservices one by one
-:::
+{% endhint %}
 
 Run the following command to check the status of the installation:
 
@@ -257,13 +254,13 @@ You will get an output similar to the example shown below:
 
 Use the hostname `aaff16e9760594a92afa0140dbfd99f7-305259315.us-east-1.elb.amazonaws.com` (Loadbalancer URL) to access the Devtron dashboard.
 
-:::info
+{% hint style="info" %}
 If you do not get a hostname or receive a message that says "service doesn't exist," it means Devtron is still installing. Please wait until the installation is completed.
-:::
+{% endhint %}
 
-:::info
+{% hint style="info" %}
 You can also use a `CNAME` entry corresponding to your domain/subdomain to point to the Loadbalancer URL to access at a customized domain.
-:::
+{% endhint %}
 
 | Host | Type | Points to |
 | :--- | :--- | :--- |
@@ -273,15 +270,9 @@ You can also use a `CNAME` entry corresponding to your domain/subdomain to point
 
 ## Devtron Admin Credentials
 
-When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use that credentials to log in as an administrator.
+When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use that credentials to log in as an administrator. 
 
-After the initial login, we recommend you set up any SSO service like Google, GitHub, etc., and then add other users (including yourself). Subsequently, all the users can use the same SSO (let's say, GitHub) to log in to Devtron's dashboard.
-
-The sections below will help you understand the process of getting the administrator password.
-
-### For Devtron version v0.6.0 and higher
-
-**Username**: `admin` <br />
+**Username**: `admin` <br>
 **Password**: Run the following command to get the admin password:
 
 ```bash
@@ -289,25 +280,18 @@ kubectl -n devtroncd get secret devtron-secret \
 -o jsonpath='{.data.ADMIN_PASSWORD}' | base64 -d
 ```
 
-<details>
-<summary>For Devtron version less than v0.6.0</summary>
+{% hint style="info" %}
 
-**Username**: `admin` <br />
-**Password**: Run the following command to get the admin password:
+### Next Recommended Action
 
-```bash
-kubectl -n devtroncd get secret devtron-secret \
--o jsonpath='{.data.ACD_PASSWORD}' | base64 -d
-```
-</details>
+When you install Devtron for the first time, it creates a default admin user and password (with unrestricted access to Devtron). You can use it to log in as an administrator.
 
+After the initial login, we recommend you set up any [Single Sign-On (SSO)](../../user-guide/global-configurations/sso-login.md) service like Google, GitHub, etc., and then add other users (including yourself). Subsequently, all the users can use the same SSO (e.g., GitHub) to log in to the Dashboard.
 
-* If you want to uninstall Devtron or clean Devtron helm installer, refer our [uninstall Devtron](../install/uninstall-devtron.md).
+{% endhint %}
 
-* Related to installaltion, please also refer [FAQ](../install/faq-on-installation.md) section also.
+{% hint style="info" %}
 
-
-:::info
 If you have any questions, please let us know on our Discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
-:::
 
+{% endhint %}

@@ -1,22 +1,23 @@
 # GitOps Configuration
 
-:::warning
+{% hint style="warning" %}
 The 'GitOps Configuration' page appears only if the super-admin has enabled 'Allow changing git repository for application' in [Global Configurations → GitOps](../global-configurations/gitops.md).
-:::
+{% endhint %}
 
 ## Introduction
 
 This configuration is an extension of the [GitOps](../global-configurations/gitops.md) settings present in [Global Configurations](../global-configurations/README.md) of Devtron. Therefore, make sure you read it before making any changes to your app configuration.
 
-The application-level GitOps configuration offers the flexibility to add a custom Git repo (as opposed to Devtron auto-creating a repo for your application).
+The application-level GitOps configuration offers the flexibility to add a custom Git repo (as opposed to Devtron auto-creating a repo for your application). 
 
 ---
 
 ## Adding Custom Git Repo for GitOps
 
-:::warning[Who Can Perform This Action?]
-Users need to have [Admin permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to configure user-defined Git repo.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have [Admin permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to configure user-defined Git repo.
+{% endhint %}
 
 ### For Devtron Apps
 
@@ -27,28 +28,28 @@ Users need to have [Admin permission](../global-configurations/authorization/use
 2. Assuming a GitOps repo was not added to your application earlier, you get 2 options:
 
     * **Auto-create repository** - Select this option if you wish to proceed with the default behavior. It will create a repository automatically, named after your application with a prefix. Thus saving you the trouble of creating one manually.
-
-    * **Commit manifests to a desired repository** - Select this option if you wish to add a custom repo that is already created with your [Git provider](../global-configurations/gitops#supported-git-providers). Enter its link in the `Git Repo URL` field.
+ 
+    * **Commit manifests to a desired repository** - Select this option if you wish to add a custom repo that is already created with your [Git provider](../global-configurations/gitops.md#supported-git-providers). Enter its link in the `Git Repo URL` field.
 
     ![Figure 2: Repo Creation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/gitops-config.jpg)
 
 
-:::warning
+{% hint style="warning" %}
 GitOps repositories, whether auto-created by Devtron or added manually, are immutable. This means they cannot be modified after creation. The same is true if you have an existing CD pipeline that uses/used GitOps for deployment.
-:::
+{% endhint %}
 
 3. Click **Save**.
 
     ![Figure 3: Saved GitOps Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/saved-config.jpg)
 
-**Note**: In case you skipped the GitOps configuration for your application and proceeded towards the [creation of a new CD pipeline](../creating-application/workflow/cd-pipeline#creating-cd-pipeline) (that uses GitOps), you will be prompted to configure GitOps as shown below:
+**Note**: In case you skipped the GitOps configuration for your application and proceeded towards the [creation of a new CD pipeline](../creating-application/workflow/cd-pipeline.md#creating-cd-pipeline) (that uses GitOps), you will be prompted to configure GitOps as shown below:
 
 ![Figure 4: Incomplete GitOps Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/gitops-not-configured.jpg)
 
 
 ### For Helm Apps
 
-You can [deploy a helm chart](../deploy-chart/overview-of-charts#deploying-chart) using either Helm or GitOps. Let's assume you wish to deploy `airflow` chart.
+You can [deploy a helm chart](../deploy-chart/deployment-of-charts.md#configure-and-deploy-charts) using either Helm or GitOps. Let's assume you wish to deploy `airflow` chart.
 
 1. Select the helm chart from the [Chart Store](../deploy-chart/README.md).
 
@@ -60,9 +61,9 @@ You can [deploy a helm chart](../deploy-chart/overview-of-charts#deploying-chart
 
 3. After you enter the `App Name`, `Project`, and `Environment`; an option to choose the deployment approach (i.e., Helm or GitOps) would appear. Select **GitOps**.
 
-:::info
-The option to choose between 'Helm' or 'GitOps' is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
-:::
+{% hint style="info" %}
+The option to choose between 'Helm' or 'GitOps' is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg">
+{% endhint %}
 
 ![Figure 7a: Deployment Approach](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/deployment-method.jpg)
 
@@ -80,6 +81,6 @@ The option to choose between 'Helm' or 'GitOps' is only available in <img src="h
 
 Next, you may proceed to deploy the chart.
 
-:::warning
+{% hint style="warning" %}
 Once you deploy a helm app with GitOps, you cannot change its GitOps repo.
-:::
+{% endhint %}

@@ -7,7 +7,7 @@ We are thrilled to announce that Devtron seamlessly supports Graviton instances,
 
 ## Installation
 
-To install Devtron on graviton-cluster, refer this [link](../setup/install/install-devtron-with-cicd)
+To install Devtron on graviton-cluster, refer this [link](../setup/install/devtron-oss.md)
 
 ## Inferences
 

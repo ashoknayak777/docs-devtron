@@ -1,10 +1,14 @@
 # Workflow Editor
 
+## Introduction
+
 After configuring the **Build Configurations** and **Base Configurations**, the next step is to create a workflow using the Workflow Editor.
 
 In Devtron, a **Workflow** is a logical sequence of different stages(pipelines) used for continuous integration and continuous deployment of an application. 
 
  ![Figure 1: Workflow Editor](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/arora1.gif)
+
+---
 
 ## Create Workflow
 
@@ -44,25 +48,26 @@ To create a quick workflow with both build and deployment pipelines, follow the 
 
      ![Figure 5: Clicking 'Create Workflow'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow/build-deploy-new-save-workflow.jpg)
 
-5. If you want to configure advanced configurations in the build pipeline, such as Custom image tag pattern, Vulnerability Scanning, etc., refer to the [CI Pipeline](../workflow/ci-pipeline#advanced-options) page to learn more.
+5. If you want to configure advanced configurations in the build pipeline, such as Custom image tag pattern, Vulnerability Scanning, etc., refer to the [CI Pipeline](./ci-pipeline.md#configuring-advanced-options) page to learn more.
 
-6. If you want to configure advanced configurations in the deployment pipeline, such as adding pre/post tasks, Custom image tag pattern, configure different deployment strategies, etc., refer to the [CD Pipeline](../workflow/ci-pipeline.md) page to learn more.
+6. If you want to configure advanced configurations in the deployment pipeline, such as adding pre/post tasks, Custom image tag pattern, configure different deployment strategies, etc., refer to the [CD Pipeline](./cd-pipeline.md) page to learn more.
 
-7. If you want, you can also add Pre/Post Tasks in both build and deployment pipelines. To do so, refer to the [Pre/Post tasks](./ci-build-pre-post-plugins.md) page to learn more.
+7. If you want, you can also add Pre/Post Tasks in both build and deployment pipelines. To do so, refer to the [Pre/Post tasks](./pre-post-tasks.md) page to learn more.
 
+---
 
-### Types of CI Pipelines
+## Types of CI Pipelines
 
 Apart from configuring advanced options, you can create five types of CI pipelines depending on your use case.
 
-* [Build from Source Code](./ci-pipeline#1-build-from-source-code): Choose this option if you want Devtron to build the image of the source code.
+* [Build from Source Code](./ci-pipeline.md#id-1.-build-from-source-code): Choose this option if you want Devtron to build the image of the source code.
 
-* [Linked Build Pipeline](./ci-pipeline#2-linked-build-pipeline): Choose this option if you want to use an image created by an existing CI pipeline in Devtron.
+* [Linked Build Pipeline](./ci-pipeline.md#id-2.-linked-build-pipeline): Choose this option if you want to use an image created by an existing CI pipeline in Devtron.
 
-* [Deploy Image from External Service](./ci-pipeline#3-deploy-image-from-external-service): Choose this if you want to build your image outside Devtron; it will receive a Docker image from an external source via the incoming webhook.
+* [Deploy Image from External Service](./ci-pipeline.md#id-3.-deploy-image-from-external-service): Choose this if you want to build your image outside Devtron; it will receive a Docker image from an external source via the incoming webhook.
 
-* Sync with Environment [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* [Sync with Environment](./ci-pipeline.md#id-4.-sync-with-environment) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-* Create a Job
+* [Create a Job](./ci-pipeline.md#id-5.-create-a-job)
 
 ![Figure 6: Selecting an Image Source](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow/workflow-ci.jpg)

@@ -22,21 +22,21 @@ This stands true for both: base configuration and respective environment-level c
 
 ## Tutorial
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/TVLEbY850hI" title="Protect Configuration and Approval" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=TVLEbY850hI" caption="Protect Configuration and Approval" %}
 
 ---
 
 ## Changing the Configuration Values
 
-:::info
-Only a super-admin, manager, and admin can edit the configuration values.
-:::
+{% hint style="info" %}
+Only a super-admin, manager, and admin can edit the configuration values. 
+{% endhint %}
 
 Let's assume you are the application admin and you wish to edit the deployment template of your environment (as an override).
 
 1. Go to the `App Configuration` tab.
 
-2. In Environment Overrides → (choose your environment) → Deployment Template
+2. In Environment Overrides → (choose your environment) → Deployment Template 
 
     ![Figure 2: Selecting Values to Change](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/edit-deployment-template.jpg)
 
@@ -44,9 +44,9 @@ Let's assume you are the application admin and you wish to edit the deployment t
 
     ![Figure 3: Changed Values](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/changed-values.jpg)
 
-:::info
-If you are not a super-admin, you cannot modify the locked keys in deployment template. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
-:::
+{% hint style="info" %}
+If you are not a super-admin, you cannot modify the locked keys in deployment template. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more. 
+{% endhint %}
 
 4. If the configuration is protected, your changes won't be published right away. You can do either of the following:
 
@@ -61,19 +61,19 @@ If you are not a super-admin, you cannot modify the locked keys in deployment te
 
     ![Figure 5: Viewing the Approver(s)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/approver-list-1.jpeg)
 
-:::info
+{% hint style="info" %}
 The one who performs the edits cannot approve their own changes. A different user has to review and approve.
-:::
+{% endhint %}
 
-Only one draft can exist at time and you cannot create multiple drafts. In the top-right corner, you have the option to discard the draft if you don't wish to proceed with the edits you made.
+Only one draft can exist at time and you cannot create multiple drafts. In the top-right corner, you have the option to discard the draft if you don't wish to proceed with the edits you made. 
 
 ---
 
 ## Approving the Configuration
 
-:::info
+{% hint style="info" %}
 Only a different super-admin user or someone (who is not amongst the editors of the draft), having `Configuration approver` access, can approve the changes made to the configuration files.
-:::
+{% endhint %}
 
 Go to the edited configuration file to review and approve the changes as shown below.
 
@@ -92,7 +92,7 @@ Once the approver validates and approves your configuration changes, you can pro
 
 1. Go to the **Build & Deploy** tab of your application.
 
-2. Click **Select Image** in the deployment flow.
+2. Click **Select Image** in the deployment flow. 
 
     ![Figure 8: Build & Deploy Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/deploy-pipeline.jpg)
 
@@ -100,25 +100,25 @@ Once the approver validates and approves your configuration changes, you can pro
 
     ![Figure 9: Checking Config Diff](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/review-config-diff.jpg)
 
-:::info
+{% hint style="info" %}
 If the new configuration is not yet approved, the changes made to the config would not be visible during deployment, it would show `No Config Diff from Last Deployed` at the bottom. In that case, check whether your changes are present in the live config or not. If your changes are absent, chances are your draft is either pending for approval or rejected (discarded).
-:::
+{% endhint %}
 
 4. Once you have verified the changes, you can click **Deploy**.
 
     ![Figure 10: Deploying App using New Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-approval/deploy.jpg)
 
-:::info
+{% hint style="info" %}
 If you don't wish to deploy with the new changes, you can choose `Last deployed config` from the available drop-down.
-:::
+{% endhint %}
 
 ---
 
 ## Enabling/Disabling Config Protection
 
-:::info
+{% hint style="info" %}
 Only a super-admin can enable or disable the config protection.
-:::
+{% endhint %}
 
 1. Go to the `App Configuration` tab.
 

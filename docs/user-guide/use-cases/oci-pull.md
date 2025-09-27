@@ -2,20 +2,20 @@
 
 ## Introduction
 
-Devtron supports the installation of [Helm charts](../../reference/glossary#helm-chartspackages) from both: Helm [repos](../../reference/glossary#repo) and [Container/OCI registries](../../reference/glossary#containeroci-registry). Unlike Helm repos, OCI registries do not have an index file to discover all the charts. However, Devtron makes it easier for you to populate your charts from multiple sources to the [chart store](../../reference/glossary#chart-store).
+Devtron supports the installation of [Helm charts](../../reference/glossary.md#helm-chartspackages) from both: Helm [repos](../../reference/glossary.md#repo) and [Container/OCI registries](../../reference/glossary.md#containeroci-registry). Unlike Helm repos, OCI registries do not have an index file to discover all the charts. However, Devtron makes it easier for you to populate your charts from multiple sources to the [chart store](../../reference/glossary.md#chart-store).
 
 **Prerequisites**
 
 * Helm Chart(s)
-* OCI-compliant Registry (e.g. Docker Hub and [many more](../global-configurations/container-registries#supported-registry-providers))
+* OCI-compliant Registry (e.g. Docker Hub and [many more](../global-configurations/container-registries.md#supported-registry-providers))
 
-You must [add your OCI registry](../global-configurations/container-registries.md) to Devtron with the `Use as chart repository` option enabled.
+You must [add your OCI registry](../global-configurations/container-registries.md) to Devtron with the `Use as chart repository` option enabled. 
 
 ---
 
 ## Tutorial
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/9imC5MMz9gs" title="Pulling Charts from an OCI Registry to Devtron" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=9imC5MMz9gs" caption="Pulling Charts from an OCI Registry to Devtron" %}
 
 ---
 
@@ -66,8 +66,8 @@ Or, you may try performing a resync as shown below
 
 The removed chart would no longer appear in the Chart Store.
 
-:::info
+{% hint style="info" %}
 Deleting a chart repo from your OCI registry will not lead to the removal of chart from the Chart Store
-:::
+{% endhint %}
 
 

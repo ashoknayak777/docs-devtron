@@ -30,7 +30,7 @@ Before you begin, configure an application in the Devtron dashboard.
 - Super admin access
 - Monitoring tool URL
 
-**Note**: External links can only be added/managed by a super admin, but non-super admin users can [access the configured external links](././../creating-application/app-details.md) on the `App Configuration` page.
+**Note**: External links can only be added/managed by a super admin, but non-super admin users can [access the configured external links](../app-details/README.md) on the `App Configuration` page.
 
 ## Add an External Link
 
@@ -85,7 +85,7 @@ The following fields are provided on the **Add Link** page:
             Choose the application for which you want to configure the selected external link with.
             <ul>
                 <li>Select one or more than one application to enable the link on the specified application.</li>
-                <li>Select All applications to enable the link on all the applications.<br />Note: If you enable `App admins can edit`, then you can view the selected links on the App-Details page. </li>                
+                <li>Select All applications to enable the link on all the applications.<br>Note: If you enable `App admins can edit`, then you can view the selected links on the App-Details page. </li>                
             </ul>
         </td>
     </tr>
@@ -93,20 +93,20 @@ The following fields are provided on the **Add Link** page:
         <td><b>URL Template</b></td>
         <td>
             The configured URL Template is used by apps deployed on the selected clusters/applications.            
-            By combining one or more of the env variables, a URL with the structure shown below can be created:<br />
-            <i>http://www.domain.com/`{namespace}`/`{appName}`/details/`{appId}`/env/`{envId}`/details/`{podName}`</i>
-            <br />
-            If you include the variables `{podName}` and `{containerName}` in the URL template, then the configured links (e.g. Grafana) will be visible only on the pod level and container level respectively.<br />
+            By combining one or more of the env variables, a URL with the structure shown below can be created:<br></br>
+            <i>http://www.domain.com/{namespace}/{appName}/details/{appId}/env/{envId}/details/{podName}</i>
+            <br></br>
+            If you include the variables {podName} and {containerName} in the URL template, then the configured links (e.g. Grafana) will be visible only on the pod level and container level respectively.<br></br>
             The env variables:
             <ul>
-                <li>`{appName}`</li>
-                <li>`{appId}`</li>
-                <li>`{envId}`</li>
-                <li>`{namespace}`</li>
-                <li>`{podName}`: If used, the link will only be visible at the pod level on the <a href="../creating-application/app-details.md"> App details </a> page. </li>
-                <li>`{containerName}`: If used, the link will only be visible at the container level on the <a href="../creating-application/app-details.md">App details</a> page. </li>
+                <li>{appName}</li>
+                <li>{appId}</li>
+                <li>{envId}</li>
+                <li>{namespace}</li>
+                <li>{podName}: If used, the link will only be visible at the pod level on the [App Details](../app-details/README.md) page.
+                <li>{containerName}: If used, the link will only be visible at the container level on the [App Details](../app-details/README.md) page. </li>
             </ul>
-            <strong>Note</strong>: The env variables will be dynamically replaced by the values that you used to configure the link.           
+            <b>Note: The env variables will be dynamically replaced by the values that you used to configure the link.           
         </td>
     </tr>
 </table>
@@ -118,7 +118,7 @@ Click **Save**.
 
 ## Access an external link
 
-The users (admin and others) can access the configured external link on the [App Details](././../creating-application/app-details.md) page. 
+The users (admin and others) can access the configured external link on the [App Details](../app-details/README.md) page. 
 
 **Note**: If you enable `App admins can edit` on the `External Links` page, then only non-super admin users can view the selected links on the `App Details` page. 
 

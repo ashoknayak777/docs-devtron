@@ -1,11 +1,11 @@
 # GKE Provisioner
 
 ## Introduction
-This plugin streamlines the creation and configuration of a Google Kubernetes Engine (GKE) cluster on your Google Cloud Platform (GCP). It automates the provisioning process while implementing essential security measures, including a preconfigured firewall that allows access to SSH, HTTP (port 80), 8080, and Kubernetes NodePorts. By automating the GKE provisioning process through this plugin, you can save time, ensure consistency in cluster setup, maintain security standards, and provide a Kubernetes-ready environment for deploying your containerized applications.
+This plugin streamlines the creation and configuration of a Google Kubernetes Engine (GKE) cluster on your Google Cloud Platform (GCP). It automates the provisioning process while implementing essential security measures, including a preconfigured firewall that allows access to SSH, HTTP (port 80), 8080, and Kubernetes NodePorts. By automating the GKE provisioning process through this plugin, you can save time, ensure consistency in cluster setup, maintain security standards, and provide a Kubernetes-ready environment for deploying your containerized applications. 
 
-:::warning
+{% hint style="warning" %}
 The **GKE Provisioner** plugin creates a [Standard GKE Cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-a-zonal-cluster), not an Autopilot GKE cluster.
-:::
+{% endhint %}
 
 ### Prerequisites
 Before integrating the **GKE Provisioner** plugin make sure that you have a GCP account with valid permissions to provision GKE.
@@ -30,7 +30,7 @@ Before integrating the **GKE Provisioner** plugin make sure that you have a GCP 
 ## User Inputs
 
 ### Task Name
-Enter the name of your task
+Enter the name of your task 
 
 e.g., `GKE Provisioner`
 
@@ -59,9 +59,9 @@ e.g., `The GKE Provisioner plugin is integrated for provisioning of GKE cluster.
 Here you can set conditions to execute or skip the task. You can select `Set trigger conditions` for the execution of a task or `Set skip conditions` to skip the task.
 
 ### Output Variables
-| Variable                 | Format       | Description |
+| Variable                 | Format       | Description | 
 | ------------------------ | ------------ | ----------- |
-|   GkeKubeconfigFilePath | STRING        | File path of the generated GKE cluster kubeconfig |
+|   GkeKubeconfigFilePath | STRING        | File path of the generated GKE cluster kubeconfig |   
 
 Click **Update Pipeline**.
 

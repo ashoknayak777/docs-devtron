@@ -2,17 +2,18 @@
 
 ## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-This section allows you to add new [tenants](./README.md#tenants) and map environments to these [installations](./README.md#installations) to ensure updates [rollout](./README.md#rollout) correctly.
+This section allows you to add new [tenants](./README.md#tenants) and map environments to these [installations](./README.md#installations) to ensure updates [rollout](./README.md#rollout) correctly. 
 
 ---
 
 ## Adding Tenant
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to add tenants.
-:::
+{% endhint %}
 
-This involves the creation of new organizations where you wish to deploy s/w updates. Whenever you are onboarding a new client, you add them as a tenant.
+This involves the creation of new organizations where you wish to deploy s/w updates. Whenever you are onboarding a new client, you add them as a tenant. 
 
 1. Click **+ Add Tenant**.
 
@@ -32,9 +33,10 @@ This involves the creation of new organizations where you wish to deploy s/w upd
 
 ## Adding Installation
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to add installations to a tenant.
-:::
+{% endhint %}
 
 This involves setting up [installation](./README.md#installations) for different environments, such as Prod, Development, and QA environments. You can consider these as licenses/installations your client has subscribed for.
 
@@ -58,11 +60,12 @@ This involves setting up [installation](./README.md#installations) for different
 
 ## Mapping Environments
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to map environments.
-:::
+{% endhint %}
 
-This involves mapping customer's environments to the tenant installation so that your updates are deployed to the correct environments. If you haven't created an environment yet, refer [Clusters & Environments](../global-configurations/cluster-and-environments#add-environment-to-a-cluster).
+This involves mapping customer's environments to the tenant installation so that your updates are deployed to the correct environments. If you haven't created an environment yet, refer [Clusters & Environments](../global-configurations/cluster-and-environments.md#add-environment).
 
 1. Click **Map Environment**.
 
@@ -72,7 +75,7 @@ This involves mapping customer's environments to the tenant installation so that
 
     ![Figure 7: Mapping Environment to Your Installation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/sdh/map-environments.jpg)
 
-    Here, we have mapped `doc1` and `doc2` environments to the production installation.
+    Here, we have mapped `doc1` and `doc2` environments to the production installation. 
 
 3. Click **Save**
 

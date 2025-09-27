@@ -1,11 +1,12 @@
 # Security Policies
 
-:::info[Prerequisite]
+{% hint style="info" %}
+### Prerequisite
 
 Install any one of the following integrations for scanning vulnerabilities:
 * [Clair](../../user-guide/integrations/vulnerability-scanning/clair.md)
 * [Trivy](../../user-guide/integrations/vulnerability-scanning/trivy.md)
-:::
+{% endhint %}
 
 Devtron's Security Policies feature allows users to define policies based on the severity levels of vulnerabilities, which include `Critical`, `Moderate`, and `Low`. Users have the flexibility to set policies that either block the deployment of container images with vulnerabilities or allow their deployment.
 
@@ -13,20 +14,21 @@ With this feature, users can specify their desired actions for each severity lev
 
 For in-depth instructions, refer to the [Configure Security Policies](#configuring-security-policies) section.
 
-:::warning[Who Can Perform This Action?]
-Users need to have super-admin permission to define or modify security policies.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have super-admin permission to define or modify security policies. 
+{% endhint %}
 
 ---
 
 ## Configuring Security Policies
 
-You can establish security policies for their vulnerabilities through the `Security Policies` tab, which can be accessed from the left pane by navigating to `Security` and selecting `Security Policies`.
+You can establish security policies for their vulnerabilities through the `Security Policies` tab, which can be accessed from the left pane by navigating to `Security` and selecting `Security Policies`. 
 
 You can define policies at the following levels:
 
 * [Global](#configure-global-security-policy)
-* [Cluster](#configure-cluster-security-policy)
+* [Cluster](#configure-cluster-security-policy) 
 * [Environment](#configure-environment-security-policy)
 * [Application](#configure-application-security-policy)
 
@@ -35,7 +37,7 @@ You can define policies at the following levels:
 However, if you define policies at more than one level, the order of precedence would be as follows:
 
 * Application + Environment (highest priority)
-* Environment
+* Environment 
 * Cluster
 * Global
 

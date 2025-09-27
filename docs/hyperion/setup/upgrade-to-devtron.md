@@ -1,20 +1,17 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Upgrade Hyperion to Devtron Full mode
 
 To install Helm3, please check [Installing Helm3](https://helm.sh/docs/intro/install/)
 
-<Tabs>
-<TabItem value="Upgrade with default configurations" label="Upgrade with default configurations">
+{% tabs %}
+{% tab title="Upgrade with default configurations" %}
 This installation will use Minio for storing build logs and cache.
 
 ```bash
 helm upgrade devtron devtron/devtron-operator --namespace devtroncd --set installer.mode=full
 ```
-</TabItem>
+{% endtab %}
 
-<TabItem value="Upgrade with AWS S3" label="Upgrade with AWS S3">
+{% tab title="Upgrade with AWS S3" %}
 This installation will use AWS s3 buckets for storing build logs and cache
 
 ```bash
@@ -26,9 +23,9 @@ helm upgrade devtron devtron/devtron-operator --create-namespace --namespace dev
 --set configs.DEFAULT_BUILD_LOGS_BUCKET=demo-s3-bucket \
 --set configs.DEFAULT_CD_LOGS_BUCKET_REGION=us-east-1
 ```
-</TabItem>
+{% endtab %}
 
-<TabItem value="Upgrade with Azure Blob Storage" label="Upgrade with Azure Blob Storage">
+{% tab title="Upgrade with Azure Blob Storage" %}
 This installation will use Azure Blob Storage for storing build logs and cache
 
 ```bash
@@ -40,11 +37,11 @@ helm upgrade devtron devtron/devtron-operator --create-namespace --namespace dev
 --set configs.AZURE_BLOB_CONTAINER_CI_LOG=ci-log-container \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
 
-If you are planning to use Devtron for `production deployments`, please refer to our recommended overrides for [Devtron Installation](../../setup/install/override-default-devtron-installation-configs.md).
+If you are planning to use Devtron for `production deployments`, please refer to our recommended overrides for [Devtron Installation](override-default-devtron-installation-configs.md).
 
 ## Installation status
 

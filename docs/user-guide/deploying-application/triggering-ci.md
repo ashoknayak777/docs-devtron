@@ -12,7 +12,7 @@ CI Pipelines with automatic trigger enabled are triggered immediately when a new
 
 ---
 
-## Partal Cloning Feature [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Partial Cloning Feature [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
 CI builds can be time-consuming for large repositories, especially for enterprises. However, Devtron's partial cloning feature significantly increases cloning speed, reducing the time it takes to clone your source code and leading to faster build times.
 
@@ -26,15 +26,16 @@ Get in touch with us if you are looking for a way to improve the efficiency of y
 
 The **Refresh** icon updates the Git Commits section in the CI Pipeline by fetching the latest commits from the repository. Clicking on the refresh icon ensures that you have the most recent commit available.
 
-The **Ignore Cache** option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. [Click here](../creating-application/workflow/ci-pipeline#docker-layer-caching-) to read more about controlling cache behavior in Devtron.
+The **Ignore Cache** option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. [Click here](../creating-application/workflow/ci-pipeline.md#docker-layer-caching) to read more about controlling cache behavior in Devtron.
 
 ---
 
 ## Passing Build Parameters [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-:::warning[Who Can Perform This Action?]
-Users need to have [Build & deploy permission](../global-configurations/authorization/user-access#devtron-apps-permissions) or above (along with access to the environment and application) to pass build parameters.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have [Build & deploy permission](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above (along with access to the environment and application) to pass build parameters.
+{% endhint %}
 
 If you wish to pass runtime parameters for a build job, you can provide key-value pairs before triggering the build. Thereafter, you can access those passed values by referencing the corresponding keys in the environment variable dictionary.
 
@@ -48,7 +49,7 @@ If you wish to pass runtime parameters for a build job, you can provide key-valu
 
     ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/add-parameter.jpg)
 
-3. Enter your key-value pair as shown below.
+3. Enter your key-value pair as shown below. 
 
     ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/key-value.jpg)
 
@@ -56,9 +57,9 @@ If you wish to pass runtime parameters for a build job, you can provide key-valu
 
 4. Click **Start Build**.
 
-:::info
+{% hint style="info" %}
 In case you trigger builds in bulk, you can consider passing build parameters in [Application Groups](../application-groups.md).
-:::
+{% endhint %}
 
 ---
 

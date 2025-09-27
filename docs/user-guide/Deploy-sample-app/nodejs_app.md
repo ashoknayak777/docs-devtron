@@ -3,7 +3,7 @@
 Hurray! 
 Your Devtron stack is completely setup. Let's get started by deploying a simple application on it.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/9u-pKiWV-tM&t=2s" title="Deploy a Kubernetes Node.js micro-service using Devtron" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=9u-pKiWV-tM&t=2s" caption="Deploy a Kubernetes Node.js micro-service using Devtron" %}
 
 ## Find out the steps here 
 

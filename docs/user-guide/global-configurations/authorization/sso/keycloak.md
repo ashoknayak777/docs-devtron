@@ -28,7 +28,7 @@ Here, we will add Devtron as a client for using Keycloak SSO.
     ![Figure 3: Enabling Client Authentication Toggle](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/enable-client-auth.gif)
 
 
-4. Within **Login settings**, enter `https://<DEVTRON_BASE_URL>/orchestrator/api/dex/callback` in the following fields.
+4. Within **Login settings**, enter `https://<DEVTRON_BASE_URL>/orchestrator/api/dex/callback` in the following fields. 
     * **Valid redirect URIs**
     * **Valid post logout redirect URIs**
     * **Web origins**
@@ -47,7 +47,7 @@ Here, we will obtain the secret we need while configuring SSO in Devtron.
 
     ![Figure 5: Obtaining Client Secret](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/client-secret.gif)
 
-2. Use the copy button next to the **Client Secret** field and paste it somewhere for future reference.
+2. Use the copy button next to the **Client Secret** field and paste it somewhere for future reference. 
 
 ### Creating Users
 
@@ -81,7 +81,7 @@ Here, we will obtain the Issuer URL we need while configuring SSO in Devtron.
 
     ![Figure 8: OpenID Endpoint Configuration Link](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/endpoint-config.gif)
 
-3. This will open a new page, copy the value of the key named `issuer`, and paste it somewhere for future reference.
+3. This will open a new page, copy the value of the key named `issuer`, and paste it somewhere for future reference. 
 
     ![Figure 9: Locating Issuer URL](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/issuer-url.jpg)
 
@@ -91,9 +91,10 @@ Here, we will obtain the Issuer URL we need while configuring SSO in Devtron.
 
 ### Configuring OIDC SSO
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to configure SSO.
-:::
+{% endhint %}
 
 Here, we will set up an OIDC SSO and enter the values we obtained in the [previous section](#steps-on-keycloak-admin-console).
 
@@ -113,13 +114,14 @@ Here, we will set up an OIDC SSO and enter the values we obtained in the [previo
 
     ![Figure 12: Sample Keycloak SSO Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/keycloak-sso-config.jpg)
 
-4. Click **Save** or **Update** to activate Keycloak SSO login.
+4. Click **Save** or **Update** to activate Keycloak SSO login. 
 
 ### Adding Users
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to add users.
-:::
+{% endhint %}
 
 Here, we will add the user we created in the Keycloak Admin Console. If this step is skipped, the user might not be able to log in to Devtron via Keycloak.
 
@@ -139,11 +141,12 @@ Here, we will add the user we created in the Keycloak Admin Console. If this ste
 
 Now, you may log out and test the Keycloak OIDC login method using the [user credentials](#creating-users). Clicking the **Login with Oidc** button will land you on Keycloak's login page.
 
-![Figure 15a: Login using OIDC method](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/login-oidc.jpg)
+![Figure 15a: Login using OIDC method](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/login-oidc.jpg) 
 
 
 ![Figure 15b: Keycloak's Login Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/keycloak/keycloak-login.jpg)
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 Kindly get in touch with us if you encounter any issues while logging out of Keycloak on Devtron as it might be buggy.
-:::
+{% endhint %}

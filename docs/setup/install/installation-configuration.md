@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Installation Configuration
 
 ## Configure Secrets
@@ -30,7 +27,7 @@ Configure the following properties:
 
 ## Configure Resources
 Devtron provides ways to control how much `memory` or `CPU` can be allocated to each Devtron microservice. You can adjust the resources that are allocated to these microservices based on your requirements. The resource configurations are available in following sizes:
-
+ 
 **`Small`**: To configure the small resources (e.g. to manage less than 10 apps on Devtron ) based on the requirements, append the Devtron installation command with  `-f https://raw.githubusercontent.com/devtron-labs/devtron/main/charts/devtron/resources-small.yaml`.
 
 ## Configure Overrides
@@ -102,7 +99,7 @@ echo -n "string" | base64
 
 ---
 
-The following tables contain parameters and their details for Secrets and ConfigMaps that are configured during the installation of Devtron.
+The following tables contain parameters and their details for Secrets and ConfigMaps that are configured during the installation of Devtron. 
 If the installation is done using `Helm`, the values can be tweaked in [values.yaml](https://github.com/devtron-labs/charts/blob/main/charts/devtron/values.yaml) file.
 
 We can use the `--set` flag to override the default values when installing with Helm. For example, to update POSTGRESQL_PASSWORD and BLOB_STORAGE_PROVIDER, use the install command as:
@@ -115,22 +112,22 @@ helm install devtron devtron/devtron-operator --create-namespace --namespace dev
 
 ## Configuration of Blob Storage
 
-Blob Storage allows users to store large amounts of unstructured data. Unstructured data is a data that does not adhere to a particular data model or definition, such as text or binary data.
+Blob Storage allows users to store large amounts of unstructured data. Unstructured data is a data that does not adhere to a particular data model or definition, such as text or binary data. 
 Configuring blob storage in your Devtron environment allows you to store build logs and cache.
 
 In case, if you do not configure the Blob Storage, then:
 
-- You will not be able to access the build and deployment logs after an hour.
+- You will not be able to access the build logs after an hour.
 - Build time for commit hash takes longer as cache is not available.
 - Artifact reports cannot be generated in pre/post build and deployment stages.
 
 You can configure Blob Storage with one of the following Blob Storage providers given below:
 
 **Note**: You can also use the respective following command to switch to another Blob Storage provider. As an example, If you are using MinIO Storage and want to switch to Azure Blob Storage, use the command provided on the Azure Blob Storage tab to switch.
-<Tabs>
+{% tabs %}
 
 
-<TabItem value="MinIO Storage" label="MinIO Storage">
+{% tab title="MinIO Storage" %}
 
 Use the following command to configure MinIO for storing logs and cache.
 
@@ -145,9 +142,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set minio.enabled=true
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="AWS S3 Bucket" label="AWS S3 Bucket">
+{% tab title="AWS S3 Bucket" %}
 Use the following command to configure AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](#aws-specific) page.
 
 *  **Configure using S3 IAM policy:**
@@ -202,9 +199,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Azure Blob Storage" label="Azure Blob Storage">
+{% tab title="Azure Blob Storage" %}
 Use the following command to configure Azure Blob Storage for storing build logs and cache.
 Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](#azure-specific) page.
 
@@ -220,9 +217,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Google Cloud Storage" label="Google Cloud Storage">
+{% tab title="Google Cloud Storage" %}
 Use the following command to configure Google Cloud Storage for storing build logs and cache.
 Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](#google-cloud-storage-specific) page.
 
@@ -238,9 +235,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.DEFAULT_BUILD_LOGS_BUCKET=log-bucket
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="S3-compatible Storage" label="S3-compatible Storage">
+{% tab title="S3-compatible Storage" %}
 Use the following command to configure S3-compatible storage (e.g., Longhorn) for storing build logs and cache.
 
 ```bash
@@ -258,8 +255,8 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
 ---
 
@@ -335,7 +332,7 @@ You can specify a StorageClass to be used by Devtron microservices' Persistent V
 To check if your cluster has a default StorageClass, run:
 
 ```bash
-kubectl get sc
+kubectl get sc 
 ```
 
 This command will list all available StorageClasses in your cluster, including the default storage class set (if any). The default StorageClass (if any) can be identified by the (default) label next to its name.
@@ -376,18 +373,19 @@ You can configure Devtron to use an external PostgreSQL database (e.g., Amazon R
 
 Before installing Devtron, create the following databases on your external PostgreSQL server.
 
-1. **orchestrator** - Main Devtron orchestration database
-2. **lens** - Lens service database
-3. **git_sensor** - Git sensor service database
+1. **orchestrator** - Main Devtron orchestration database  
+2. **lens** - Lens service database  
+3. **git_sensor** - Git sensor service database  
 4. **casbin** - Authorization and policy database
 5. **clairv4** - (*Optional*) Required only if you are using [Clair](../../user-guide/integrations/vulnerability-scanning/clair.md) for image scanning instead of [Trivy](../../user-guide/integrations/vulnerability-scanning/trivy.md)
 
-:::warning[Not sure how to create a PostgreSQL database?]
+{% hint style="warning" %}
+### Not sure how to create a PostgreSQL database?
 Here’s how you can create databases using popular providers:
 * [Amazon RDS instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html)
 * [Google Cloud SQL for PostgreSQL](https://cloud.google.com/sql/docs/postgres/create-instance#create-2nd-gen)
 * [Azure Database for PostgreSQL](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/quickstart-create-server)
-:::
+{% endhint %}
 
 #### Database Creation Commands
 
@@ -406,9 +404,10 @@ CREATE DATABASE clairv4;
 
 ### Devtron Configuration for External DB
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 Ensure the [required databases](#database-creation-commands) exist before proceeding.
-:::
+{% endhint %}
 
 When installing Devtron, you can specify your external PostgreSQL by using either of the following:
 * Updating `values.yaml` file

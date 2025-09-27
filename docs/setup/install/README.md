@@ -1,21 +1,82 @@
----
-hide_table_of_contents: true
-title: Install Devtron
----
+# Install Devtron
 
-Devtron is installed over a Kubernetes cluster. Once you create a Kubernetes cluster, Devtron can be installed standalone or along with CI/CD integration.
+## Introduction
 
-:::tip
-Try Devtron Enterprise for free — unlock advanced features built for scale. [Start Free Trial](https://license.devtron.ai/dashboard)
-:::
+Devtron can be installed on any [Kubernetes cluster](../getting-started/getting-started.md#create-a-kubernetes-cluster) of your choice.
 
-Choose one of the options as per your requirements:
+The following tiers are available in Devtron:
 
-| Installation Options | Description | When to choose  |
-| --- | --- | --- |
-| [Devtron with CI/CD](../install/install-devtron-with-cicd.md) | Devtron installation with the CI/CD integration is used to perform CI/CD, security scanning, GitOps, debugging, and observability. | Use this option to install Devtron with `Build and Deploy CI/CD` integration. |
-| [Helm Dashboard by Devtron](../install/install-devtron.md) | The Helm Dashboard by Devtron which is a standalone installation includes functionalities to deploy, observe, manage, and debug existing Helm applications in multiple clusters. You can also install integrations from [Devtron Stack Manager](../../user-guide/integrations/README.md). | Use this option if you are managing the applications via Helm and you want to use Devtron to deploy, observe, manage, and debug the Helm applications. |
-| [Devtron with CI/CD along with GitOps (Argo CD)](../install/install-devtron-with-cicd-with-gitops.md) | With this option, you can install Devtron with CI/CD by enabling GitOps during the installation. You can also install other integrations from [Devtron Stack Manager](../../user-guide/integrations/README.md). |  Use this option to install Devtron with CI/CD by enabling GitOps, which is the most scalable method in terms of version control, collaboration, compliance and infrastructure automation.  |
+<table>
+	<thead>
+		<tr>
+			<th width="112.78125">Tiers</th>
+			<th width="372.6640625">Description</th>
+			<th>Installation Link</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>OSS</td>
+			<td>OSS edition, with optional CI/CD and GitOps modules</td>
+			<td>
+				<a href="../install/devtron-oss.md">
+					<strong>Install Devtron OSS</strong>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Freemium</td>
+			<td>All enterprise features, limited to 1 cluster managed by Devtron</td>
+			<td>
+				<a href="../install/devtron-freemium.md">
+					<strong>Install Devtron Freemium</strong>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>Enterprise</td>
+			<td>Full access to enterprise features, with multi-cluster support and enterprise-scale solutions</td>
+			<td>
+				<a href="https://devtron.ai/contact-sales">
+					<strong>Get Devtron Enterprise</strong>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
 
+## Additional Resources
 
-**Note**: If you have questions, please let us know on our discord channel. [![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
+<details>
+
+<summary><strong>Want to install Devtron in an Air-gapped environment?</strong></summary>
+
+See the full guide here: [Install Devtron in Air-gapped Environment](install-devtron-in-airgapped-environment.md)
+
+</details>
+
+<details>
+
+<summary><strong>Want to explore Devtron without installing on your cluster?</strong></summary>
+
+* Try [Devtron Sandbox](https://preview.devtron.ai)
+* Try [Devtron Kubernetes Desktop Client](install-devtron-Kubernetes-client.md)
+
+</details>
+
+<details>
+
+<summary><strong>Need help or demo?</strong></summary>
+
+* [Discord community for support](https://discord.gg/jsRG5qx2gp)[![Join Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp).
+* [Book time with our team](https://devtron.ai/demo)
+
+</details>
+
+<details>
+
+<summary><strong>Looking for advanced setup?</strong></summary>
+
+See [Additional Installation Resources](../../reference/README.md) for production infra recommendations, advanced configs, blob storage, air-gapped installs, backup, and more.
+
+</details>

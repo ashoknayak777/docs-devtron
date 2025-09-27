@@ -4,23 +4,24 @@
 
 Your [application workflow](../creating-application/workflow/README.md) should follow certain standards and precautions to ensure reliability and a smooth release. For example, mandating load testing for production deployments might help you identify performance bottlenecks early rather than face possible outages, unhappy users, or revenue loss.
 
-The **Plugin Policy** feature in Devtron lets you enforce the presence of specific [plugins](../plugins/README.md) at various stages in your application's build and deployment pipelines, such as [pre-build](../../reference/glossary#pre-build), [post-build](../../reference/glossary#post-build), [pre-deployment](../../reference/glossary#pre-deployment), or [post-deployment](../../reference/glossary#post-deployment). Therefore, if the required plugins do not exist in the specified stage(s), you can decide the action (whether to allow or block the pipeline trigger).
+The **Plugin Policy** feature in Devtron lets you enforce the presence of specific [plugins](../plugins/README.md) at various stages in your application's build and deployment pipelines, such as [pre-build](../../reference/glossary.md#pre-build), [post-build](../../reference/glossary.md#post-build), [pre-deployment](../../reference/glossary.md#pre-deployment), or [post-deployment](../../reference/glossary.md#post-deployment). Therefore, if the required plugins do not exist in the specified stage(s), you can decide the action (whether to allow or block the pipeline trigger).
 
 ![Figure 1: How Plugin Policy Works](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/plugin-policy-main.gif)
 
 ---
 
-## Tutorial
+## Tutorial 
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/Cb25p_n3YTs" title="Using Plugin Policy in Devtron" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=Cb25p_n3YTs" caption="Using Plugin Policy in Devtron" %}
 
 ---
 
 ## Creating a Plugin Policy
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to create a plugin policy.
-:::
+{% endhint %}
 
 1. Go to **Global Configurations** → **Plugin Policy**.
 
@@ -36,9 +37,10 @@ Users need to have super-admin permission to create a plugin policy.
 
 4. Choose whether the profile should apply to the **Build pipeline** or the **Deployment pipeline**.
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 A single policy cannot apply to both build and deployment pipelines simultaneously. You can create separate policies instead.
-:::
+{% endhint %}
 
 5. Under **Mandatory Plugin(s)**, click **Add Plugin**.
 
@@ -48,9 +50,10 @@ A single policy cannot apply to both build and deployment pipelines simultaneous
 
     ![Figure 6: Finding and Choosing Plugins](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/choose-plugins.gif)
 
-:::info[Tip]
+{% hint style="info" %}
+### Tip
 There is a search box for you to quickly find the plugins. Moreover, since plugins are classified by tags, you can use the tag filter to find your intended plugins.
-:::
+{% endhint %}
 
 7. Click **Done**.
 
@@ -74,9 +77,10 @@ There is a search box for you to quickly find the plugins. Moreover, since plugi
 
 ## Applying a Plugin Policy
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to apply a plugin policy.
-:::
+{% endhint %}
 
 1. After you create a policy, you can apply it. Click **Apply Profile** on the same screen.
 
@@ -86,7 +90,7 @@ Users need to have super-admin permission to apply a plugin policy.
 
     ![Figure 10: Selecting Profiles](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/select-profiles.jpg)
 
-3. Under **Apply selected policies to all pipelines**:
+3. Under **Apply selected policies to all pipelines**: 
     * **Global** - Select this option to apply your chosen policies to all application workflows across all clusters.
     * **By Match Criteria** - Select this option to use a combination of filters to decide the target pipelines fulfilling your criteria. Your policy will only apply to such target pipelines.
 

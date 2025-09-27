@@ -1,11 +1,16 @@
 # Container/OCI Registry
 
-While [container registries](../../reference/glossary#containeroci-registry) are typically used for storing [images](../../reference/glossary#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary#helm-chartspackages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
+## Introduction
 
-You can configure a container registry using any registry provider of your choice. It allows you to build, deploy, and manage your container images or charts with easy-to-use UI.
+While [container registries](../../reference/glossary.md#container-registry) are typically used for storing [images](../../reference/glossary.md#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary.md#helm-charts-packages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
 
+You can configure a container registry using any registry provider of your choice. It allows you to build, deploy, and manage your container images or charts with easy-to-use UI. 
+
+---
 
 ## Add Container Registry
+
+### Steps
 
 1. From the left sidebar, go to **Global Configurations** → **Container/OCI Registry**.
 
@@ -29,11 +34,50 @@ You can configure a container registry using any registry provider of your choic
     | **Registry URL** | Provide the URL of your registry in case it doesn't come prefilled (do not include `oci://`, `http://`, or `/https://` in the URL) |
     | **Authentication Type** | The credential input fields may differ depending on the registry provider, check [Registry Providers](#supported-registry-providers) |
     | **Push container images** | Tick this checkbox if you wish to use the repository to push container images. This comes selected by default and you may untick it if you don't intend to push container images after a CI build. If you wish to to use the same repository to pull container images too, read [Registry Credential Access](#registry-credential-access). |
-    | **Push helm packages** | Tick this checkbox if you wish to push helm charts to your registry |
-    | **Use as chart repository** | Tick this checkbox if you want Devtron to pull helm charts from your registry and display them on its chart store. Also, you will have to provide a list of repositories (present within your registry) for Devtron to successfully pull the helm charts. |
+    | **Push helm packages** | Tick this checkbox if you wish to [push helm charts to your OCI registry](#push-helm-packages) |
+    | **Use as chart repository** | Tick this checkbox if you want Devtron to [pull helm charts from your registry and display them on chart store](#use-as-chart-repository). Also, you will have to provide a list of repositories (present within your registry) for Devtron to successfully pull the helm charts. |
     | **Set as default registry** | Tick this checkbox to set your registry as the default registry hub for your images or artifacts |
 
 6. Click **Save**.
+
+### Push Helm Packages
+
+Upon enabling this option, Devtron supports the pushing of helm charts to your OCI registry.  
+
+This is possible through [isolated clusters](../global-configurations/cluster-and-environments.md#add-isolated-cluster) that facilitate air-gapped deployments. In other words, it generates a helm package that you can use to deploy your application in air-gapped clusters.
+
+If you have [configured your CD pipeline](../creating-application/workflow/cd-pipeline.md#deploying-to-an-isolated-environment) to push the helm package to your OCI registry, you can view the pushed helm package in your registry as shown below:
+
+![Figure 3a: OCI Registry Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/use-cases/oci-push/pushed-artifacts.jpg)
+
+![Figure 3b: Pushed Helm Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/use-cases/oci-push/helm-chart.jpg)
+
+{% hint style="warning" %}
+
+### Use as Chart Repository
+
+{% hint style="info" %}
+
+### Prerequisite
+
+OCI registry with `Use as chart repository` option enabled. 
+
+{% endhint %}
+
+Unlike Helm repos, OCI registries do not have an index file to discover all the charts. If you have helm packages pushed to your OCI registry, you can that registry as a chart repository. 
+
+Upon enabling this option, Devtron can use your OCI registry as the chart source and pull the helm charts to display them on your [Chart Store](../deploy-chart/README.md) for easy deployment.
+
+#### Tutorial
+
+{% embed url="https://www.youtube.com/watch?v=9imC5MMz9gs" caption="Pulling Charts from an OCI Registry to Devtron" %}
+
+#### Steps
+
+Search your OCI registry in the list and click it. 
+
+In the **List of repositories** field, add your chart repo(s). You can [find the username](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/use-cases/oci-pull/find-username.jpg) from your registry provider account.
+
 
 
 ## Supported Registry Providers
@@ -48,12 +92,12 @@ Before you begin, create an [IAM user](https://docs.aws.amazon.com/AmazonECR/lat
 Provide the following additional information apart from the common fields:
 
 | Fields | Description |
-|--------|-------------|
+| --- | --- |
 | **Registry URL** | Example of URL format: `xxxxxxxxxxxx.dkr.ecr.<region>.amazonaws.com` where `xxxxxxxxxxxx` is your 12-digit AWS account ID |
-| **Authentication Type** | Select one of the authentication types:<br/><br/>- **EC2 IAM Role**: Authenticate with workernode IAM role and attach the ECR policy (`AmazonEC2ContainerRegistryFullAccess`) to the cluster worker nodes IAM role of your Kubernetes cluster.<br/><br/>- **User Auth**: It is a key-based authentication, attach the ECR policy (`AmazonEC2ContainerRegistryFullAccess`) to the [IAM user](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).<br/> &nbsp;&nbsp;&nbsp;&nbsp;- `Access key ID`: Your AWS access key<br/> &nbsp;&nbsp;&nbsp;&nbsp;- `Secret access key`: Your AWS secret access key ID |
+| **Authentication Type** | Select one of the authentication types:<ul><li>**EC2 IAM Role**: Authenticate with workernode IAM role and attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the cluster worker nodes IAM role of your Kubernetes cluster.</li></ul><ul><li>**User Auth**: It is a key-based authentication, attach the ECR policy (AmazonEC2ContainerRegistryFullAccess) to the [IAM user](https://docs.aws.amazon.com/AmazonECR/latest/userguide/get-set-up-for-amazon-ecr.html).<ul><li>`Access key ID`: Your AWS access key</li></ul><ul><li>`Secret access key`: Your AWS secret access key ID</li></ul> |
 
 
-### Docker
+### Docker 
 
 Provide the following additional information apart from the common fields:
 
@@ -76,13 +120,13 @@ Provide the following additional information apart from the common fields:
 | **Password** | Provide the password of your Azure container registry |
 
 
-### Artifact Registry (GCP)
+### Artifact Registry (GCP) 
 
-JSON key file authentication method can be used to authenticate with username and service account JSON file. Visit this [link](https://cloud.google.com/artifact-registry/docs/docker/authentication#json-key) to get the username and service account JSON file for this registry.
+JSON key file authentication method can be used to authenticate with username and service account JSON file. Visit this [link](https://cloud.google.com/artifact-registry/docs/docker/authentication#json-key) to get the username and service account JSON file for this registry. 
 
-:::warning
+{% hint style="warning" %}
 Remove all the white spaces from JSON key and wrap it in a single quote before pasting it in `Service Account JSON File` field
-:::
+{% endhint %}
 
 Provide the following additional information apart from the common fields:
 
@@ -92,13 +136,13 @@ Provide the following additional information apart from the common fields:
 | **Service Account JSON File** | Paste the content of the service account JSON file |
 
 
-### Google Container Registry (GCR)
+### Google Container Registry (GCR) 
 
-JSON key file authentication method can be used to authenticate with username and service account JSON file. Please follow [link](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key) to get the username and service account JSON file for this registry.
+JSON key file authentication method can be used to authenticate with username and service account JSON file. Please follow [link](https://cloud.google.com/container-registry/docs/advanced-authentication#json-key) to get the username and service account JSON file for this registry. 
 
-:::warning
+{% hint style="warning" %}
 Remove all the white spaces from JSON key and wrap it in single quote before pasting it in `Service Account JSON File` field
-:::
+{% endhint %}
 
 ### Quay
 
@@ -121,14 +165,14 @@ Provide below information if you select the registry type as `Other`.
 | **Password/Token** | Provide the password or token corresponding to the username of your registry |
 | **Advanced Registry URL Connection Options** | <ul><li>**Allow Only Secure Connection**: Tick this option for the registry to allow only secure connections</li></ul><ul><li>**Allow Secure Connection With CA Certificate**: Tick this option for the registry to allow secure connection by providing a private CA certificate (ca.crt)</li></ul><ul><li>**Allow Insecure Connection**: Tick this option to make an insecure communication with the registry (for e.g., when SSL certificate is expired)</li></ul> |
 
-:::info
+{% hint style="info" %}
 You can use any registry which can be authenticated using `docker login -u <username> -p <password> <registry-url>`. However these registries might provide a more secured way for authentication, which we will support later.
-:::
+{% endhint %}
 
 
 ## Registry Credential Access
 
-You can create a Pod that uses a [Secret](../../reference/glossary#secrets) to pull an image from a private container registry. You can use any private container registry of your choice, for e.g., [Docker Hub](https://www.docker.com/products/docker-hub).
+You can create a Pod that uses a [Secret](../../reference/glossary.md#secrets) to pull an image from a private container registry. You can use any private container registry of your choice, for e.g., [Docker Hub](https://www.docker.com/products/docker-hub).
 
 Super-admin users can decide if they want to auto-inject registry credentials or use a secret to pull an image for deployment to environments on specific clusters.
 
@@ -144,7 +188,7 @@ There are two options to manage the access of registry credentials:
 2. You can choose one of the two options for defining credentials:
 
 * [Use Registry Credentials](#use-registry-credentials)
-* [Specify Image Pull Secret](#specify-image-pull-secret)
+* [Specify Image Pull Secret](#specify-image-pull-secret) 
 
 ### Use Registry Credentials
 
@@ -152,14 +196,14 @@ If you select **Use Registry Credentials**, the clusters will be auto-injected w
 
 Click **Save**.
 
-![Figure 3: Using Registry Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/use-registry-credentials-1.jpg)
+![Figure 4: Using Registry Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/use-registry-credentials-1.jpg)
 
 
 ### Specify Image Pull Secret
 
 You can create a Secret by providing credentials on the command line.
 
-![Figure 4: Using Image Pull Secret](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/specify-image-pull-secret-1.jpg)
+![Figure 5: Using Image Pull Secret](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/specify-image-pull-secret-1.jpg)
 
 Create this Secret and name it `regcred` (let's say):
 
@@ -177,30 +221,28 @@ where,
 
 You have successfully set your Docker credentials in the cluster as a Secret called `regcred`.
 
-:::warning
+{% hint style="warning" %}
 Typing secrets on the command line may store them in your shell history unprotected, and those secrets might also be visible to other users on your PC during the time when kubectl is running.
-:::
+{% endhint %}
 
 Enter the Secret name in the field and click **Save**.
 
+## Delete an OCI Registry
 
+If you prefer to delete an OCI registry, follow the instructions below:
 
+1. Navigate back to **Container/OCI Registry** page. 
 
+    ![Figure 6: Delete an OCI Registry](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploy-chart/delete-oci-registry.jpg)
 
+2. Select your preferred OCI registry. 
 
+3. Click the **Delete** button. The OCI registry will be deleted.
 
+{% hint style="warning" %}
 
+### Important Note
 
+If you used an OCI registry as a chart source, deleting the OCI registry will remove all its associated charts from the Chart Store.
 
-
-
-
-
-
-
-
-
-
-
-
-
+{% endhint %}

@@ -15,9 +15,9 @@ Before integrating the Container Image Exporter plugin, you need to properly con
 4. Click **New Workflow** and navigate to the **Build and Deploy from Source Code**.
 5. Fill the required fields in the **Create build pipeline** window and navigate to the **Post-Build stage**.
 
-:::warning
+{% hint style="warning" %}
 If you have already configured workflow, edit the build pipeline, and navigate to **Post-Build stage**.
-:::
+{% endhint %}
 
 6. Under 'TASKS', click the **+ Add task** button.
 7. Select the **Container Image Exporter** plugin.
@@ -47,9 +47,9 @@ e.g., `The Container Image Exporter plugin is integrated to generate a tarball a
 |   AwsSecretKey           | STRING       | Enter your AWS Secret Access Key if using AWS as a cloud provider       | VtudqygefuyqgjR29283bcq            |
 |   AzureAccountKey        | STRING       | Provide the Account Key for your Azure Storage account, if using Azure as a cloud provider      |   abc123def567ghi           |
 |   AzureAccountName       | STRING       | Enter the Account Name of your Azure Storage account, if using Azure as a cloud provider  |  	prod-us            |
-|   Expiry                 | STRING       | Set the expiration time for the S3 bucket (in minutes, a whole number between 1 and 720)|     10         |
+|   Expiry                 | STRING       | Set the expiration time for the S3 bucket (in minutes, a whole number between 1 and 720)|     10         |  
 |   BucketName             | STRING       | Enter the name of the storage container where you want to upload the exported image file|   tarball-store           |
-|   ContainerImage         | STRING       | Provide the name of the system variable containing the image to be exported  |   DOCKER_IMAGE           |
+|   ContainerImage         | STRING       | Provide the name of the system variable containing the image to be exported  |   DOCKER_IMAGE           |  
 |   GcpServiceAccountJson  | STRING       | Enter your Google Cloud service account JSON credentials in base64 format (use scoped variables for security), if using GCP as a cloud provider|  wogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiZHV            |
 |   GcpProjectName         | STRING       | Specify the Google Cloud project name associated with your service account, if using GCP as a cloud provider     |    project-12345          |
 |   CloudProvider          | STRING       | Choose your preferred cloud storage provider (aws for Amazon S3, Azure for azure Blob Storage, or gcp for Google Cloud Storage)|    aws           |

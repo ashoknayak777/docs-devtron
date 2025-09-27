@@ -10,9 +10,10 @@ The **Tags Policy** feature in Devtron allows you to enforce a tag that must be 
 
 ## Adding Tag Policy
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to create tag policy.
-:::
+{% endhint %}
 
 1. Go to **Global Configurations** → **Tags Policy**.
 
@@ -43,7 +44,7 @@ Users need to have super-admin permission to create tag policy.
 
     ![Figure 7: Creating List of Choices](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/value-choices.gif)
 
-You may enable **Allow Custom Input** to give the user a choice to enter their own value if it is unavailable in the list. Or you may skip creating the list of choices altogether so that your user can enter their own value.
+You may enable **Allow Custom Input** to give the user a choice to enter their own value if it is unavailable in the list. Or you may skip creating the list of choices altogether so that your user can enter their own value. 
 
 7. **Description** - Write a brief description explaining the significance of the tag.
 
@@ -51,29 +52,30 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
 8. **Allow/Block Deployments** - Mandatory tags additionally let you define what should happen if users do not configure them in the intended projects:
     * **Allow deployments** - Use this option if you want to allow the user to deploy an existing application where mandatory tags are not configured yet.
-    * **Block deployment stages of prod environments** - Use this option if you want to prevent the user from deploying an existing application to [production environments](../global-configurations/cluster-and-environments#add-environment-to-a-cluster), if mandatory tags are not configured.
-    * **Block deployment stages of non-prod enviroments** - Use this option if you want to prevent the user from deploying an existing application to [non-production environments](../global-configurations/cluster-and-environments#add-environment-to-a-cluster), if mandatory tags are not configured.
+    * **Block deployment stages of prod environments** - Use this option if you want to prevent the user from deploying an existing application to [production environments](../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster), if mandatory tags are not configured. 
+    * **Block deployment stages of non-prod enviroments** - Use this option if you want to prevent the user from deploying an existing application to [non-production environments](../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster), if mandatory tags are not configured. 
     * **Block deployment stages of all environments** - This will prevent the user from deploying an existing application to all environments if mandatory tags are not configured.
 
     ![Figure 9: Deciding Deployment Restrictions](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/allow-block.gif)
 
 9. **Propagate Tag** - By default, tags assigned to applications in Devtron are not automatically propagated to Kubernetes resources as labels. For more information on how labels function in Kubernetes, refer to the [Kubernetes Labels Documentation](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/).
 
-    ![Figure 10a: Propagating Tags](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagate-tag.gif)
+    ![Figure 10a: Propagating Tags](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagate-tag.gif) 
 
     <br />
 
-    ![Figure 10b: Enabling/Disabling Propagation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagation-enable-disable.jpg)
-
+    ![Figure 10b: Enabling/Disabling Propagation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagation-enable-disable.jpg) 
+    
     <br />
 
     ![Figure 10c: How Tag Propagation Works](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/inject-tags.jpg)
 
-:::info[Changing Propagation in Suggested Tags vs. Mandatory Tags]
+{% hint style="Info" %}
+### Changing Propagation in Suggested Tags vs. Mandatory Tags
 **In suggested tags**: When you enable/disable tag propagation, users can still disable/enable it during app creation, ensuring its tags propagate to associated Kubernetes resources.
 
 **In mandatory tags**: When you enable/disable tag propagation, users do not get the option to change the propagation setting.
-:::
+{% endhint %} 
 
 10. (Optional) Click the **`+`** option to create more suggested tags or more mandatory tags in one go.
 
@@ -85,9 +87,10 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
 ## Editing a Tag
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to edit tags.
-:::
+{% endhint %}
 
 You can edit an existing tag key to do the following:
 * Modify the tag key
@@ -112,9 +115,10 @@ You may use the checkboxes to add/remove projects from multiple tags at once as 
 
 ## Deleting a Tag
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have super-admin permission to delete tags.
-:::
+{% endhint %}
 
 If you delete a 'Suggested Tag', it will no longer show up as a suggestion to your users while adding tags. If it's a 'Mandatory Tag', the deployment rules (if any, associated with that tag) will no longer be enforced.
 
@@ -153,7 +157,7 @@ Users can see a dropdown list of your suggested tags while creating a new app or
 
 ### Impact on Deployment Pipelines
 
-If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tag-policy)).
+If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tags)).
 
 The same is true for auto-triggering deployment pipelines. A new image available after the build stage will not auto-trigger the deployment pipeline due to the missing mandatory tags.
 
@@ -167,6 +171,6 @@ Similarly, if deployment restrictions apply due to missing mandatory tags, users
 
 ### Impact on Release
 
-If a user attempts to [deploy a release](../software-distribution-hub/release-hub#deploying-release) that contains applications with missing mandatory tags, the deployment will be blocked if restrictions apply.
+If a user attempts to [deploy a release](../software-distribution-hub/release-hub.md#deploying-release) that contains applications with missing mandatory tags, the deployment will be blocked if restrictions apply.
 
 ![Figure 22: Deployment Restriction in Release (SDH)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/release-blocked.gif)

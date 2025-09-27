@@ -1,6 +1,3 @@
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 # Troubleshooting Guide
 
 We always try to make your experience of using Devtron as smooth as possible but still if you face any issues, follow the troubleshooting guide given below or join our [discord channel](https://discord.gg/jsRG5qx2gp) if you couldn't find the solution for the issue you are facing.
@@ -76,9 +73,9 @@ Again wait for 5 minutes and your issue should be resolved
 
 #### 5. Grafana dashboards not visible in App Details page even after adding prometheus endpoint or Graphs showing error panel with id 2 not found
 
-If the graphs are not visible check if prometheus is configured properly. Then go to Global Configurations > Clusters & Environments > Click on any environment for the cluster where you added prometheus endpoint and simply click `Update`.
-If the charts are still not visible, try visiting the url: `<devtron-url>`/grafana?orgId=2
-If you see `Not Found` on this page, then follow all the given steps or if the page is accessible and you are getting `panel with id 2 not found` then follow from step 6:
+If the graphs are not visible check if prometheus is configured properly. Then go to Global Configurations > Clusters & Environments > Click on any environment for the cluster where you added prometheus endpoint and simply click `Update`.  
+If the charts are still not visible, try visiting the url: <devtron-url>/grafana?orgId=2  
+If you see `Not Found` on this page, then follow all the given steps or if the page is accessible and you are getting `panel with id 2 not found` then follow from step 6:  
 1. Get grafana password using `kubectl -n devtroncd get secret devtron-secret -o jsonpath='{.data.GRAFANA_PASSWORD}' | base64 -d`
 2. `kubectl run --rm -it --image quay.io/devtron/k8s-utils:tutum-curl curl` Run this command and it will create a pod for using `curl`
 3. Copy the following and change `grafana-password` with your password of grafana and change the value of `prometheusUrl` with your prometheus endpoint
@@ -108,7 +105,7 @@ curl "${grafanaUrl}/api/datasources/2" -X PUT \
 EOF
 ```
 and run in the pod that we created above in step 2.
-4. Now visit `<devtron-url>`/grafana?orgId=2 again and you'll see grafana login page. Login using username `admin` and password from step 1 and check if prometheus url is updated in datasources. If not, update it in the default datasource.
+4. Now visit <devtron-url>/grafana?orgId=2 again and you'll see grafana login page. Login using username `admin` and password from step 1 and check if prometheus url is updated in datasources. If not, update it in the default datasource.
 5. Now from devtron UI, update any of the environment again and it's datasource will be created automatically.
 6. In Grafana UI you need to be logged in and Go to Dashboards > Manage then click `Import` and Import the given dashboards one by one.
 ```
@@ -165,7 +162,7 @@ In the Devtron's Discover Chart section, if you are not able to see any charts a
 
 #### 8. Not able to update cluster
 
-In `Global Configurations` >> `Cluters & Environments`, if you try to update a cluster which has been already added in Devtron, you might get an error as `{"message":"Failed to update datasource. Reload new version and try again"}`. If you are facing such issue, please follow the following steps -
+In `Global Configurations` >> `Cluters & Environments`, if you try to update a cluster which has been already added in Devtron, you might get an error as `{"message":"Failed to update datasource. Reload new version and try again"}`. If you are facing such issue, please follow the following steps - 
 
 1. Edit the changes you want to make in respective cluster
 2. Click on save after making changes and you may get error message stated above.
@@ -175,8 +172,8 @@ In `Global Configurations` >> `Cluters & Environments`, if you try to update a c
 [Note: If you already have created some environments in that cluster, it needs to be updated again]
 
 #### 9. Postgresql is in crashloop with error - Failed to pull image
-
-There may be some other pods also in crashloop as they are not able to connect to database. To resolve this issue, you can either [update devtron to latest version](../setup/upgrade/README.md) or run the following commands to fix instantly on the same version you are using:
+    
+There may be some other pods also in crashloop as they are not able to connect to database. To resolve this issue, you can either [update devtron to latest version](../setup/upgrade/README.md) or run the following commands to fix instantly on the same version you are using: 
 ```bash
 kubectl patch -n devtroncd statefulset postgresql-postgresql -p '{"spec":{"template":{"spec":{"initContainers":[{"name":"init-chmod-data","image":"quay.io/devtron/minideb:latest"}],"containers":[{"name":"postgresql-postgresql","image":"quay.io/devtron/postgres:11.3.0-debian-9-r28"}]}}}}'
 ```
@@ -206,7 +203,7 @@ Do the following:-
 
 CPU metrics should start showing up in a while.
 
-#### 13. If user not able to upload a file more than specific size.
+#### 13. If user not able to upload a file more than specific size. 
 
 `Please use below annotation in ingress`
 ```bash
@@ -279,7 +276,7 @@ The other way is to get the password in the encoded form using the cmd
 
 #### 20. Getting `UPGRADE FAILED: cannot patch "postgresql-postgresql"` while upgrading Devtron to newer versions
 `Debug:`
-1. Make sure to [annotate and label](../setup/upgrade/devtron-upgrade-0.3.x-0.4.x#3-annotate-and-label-all-the-devtron-resources) all the Devtron resources.
+1. Make sure to [annotate and label](../setup/upgrade/devtron-upgrade-0.3.x-0.4.x.md#id-3.-annotate-and-label-all-the-devtron-resources) all the Devtron resources.
 2. Description of error
 ```
 Error: UPGRADE FAILED: cannot patch "postgresql-postgresql" with kind StatefulSet: StatefulSet.apps "postgresql-postgresql" is invalid: spec: Forbidden: updates to statefulset spec for fields other than 'replicas', 'template', 'updateStrategy' and 'minReadySeconds' are forbidden
@@ -297,10 +294,10 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 
 
 You can configure blob storage with one of the following:
-<Tabs>
+{% tabs %}
 
 
-<TabItem value="MinIO storage" label="MinIO storage">
+{% tab title="MinIO storage" %}
 
 This configuration will use MinIO for storing logs and cache.
 
@@ -314,10 +311,10 @@ helm upgrade devtron devtron/devtron-operator \
 --set minio.enabled=true
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="AWS S3 Bucket" label="AWS S3 Bucket">
-This configuration will use AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#aws-specific) page.
+{% tab title="AWS S3 Bucket" %}
+This configuration will use AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#aws-specific) page.
 
 *  **Configure using S3 IAM policy:**
 
@@ -370,11 +367,11 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Azure Blob Storage" label="Azure Blob Storage">
+{% tab title="Azure Blob Storage" %}
 This configuration will use Azure Blob Storage for storing build logs and cache.
-Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#azure-specific) page.
+Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#azure-specific) page.
 
 ```bash
 helm repo update
@@ -388,11 +385,11 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
 
-</TabItem>
+{% endtab %}
 
-<TabItem value="Google Cloud Storage" label="Google Cloud Storage">
+{% tab title="Google Cloud Storage" %}
 This configuration will use Google Cloud Storage for storing build logs and cache.
-Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration#google-cloud-storage-specific) page.
+Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#google-cloud-storage-specific) page.
 
 ```bash
 helm repo update
@@ -406,10 +403,10 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.DEFAULT_BUILD_LOGS_BUCKET: log-bucket
 ```
 
-</TabItem>
-</Tabs>
+{% endtab %}
+{% endtabs %}
 
-#### 22. Rollout is showing error - &lt;string&gt; :111: attempt to index a non-table object(nil) with key 'stableRS' stack traceback: &lt;string&gt; :111: in main chunk [G]: ?
+#### 22. Rollout is showing error - <string>:111: attempt to index a non-table object(nil) with key 'stableRS' stack traceback: <string>:111: in main chunk [G]: ?
 
 This can occur if you are using or recently upgraded to Kubernetes version 1.22 or above and you are using rollout controller version 0.13.0 from chart `devtron-charts/rollout` or `devtron/rollout`. The issue can be because of CRDs which were updated in later versions of rollout chart.
 
@@ -432,7 +429,7 @@ You can resolve the `ImagePullBackOff` issue by clicking **How to resolve?** on 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/how-to-resolve-latest1.png)
 
 
-To provide the auto-inject credentials to the specific clusters for pulling the image from the private repository, click **Manage Access** which will take you to the **Container Registries** page.
+To provide the auto-inject credentials to the specific clusters for pulling the image from the private repository, click **Manage Access** which will take you to the **Container Registries** page. 
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/container-registries/manage-access-latest.jpg)
 
@@ -547,7 +544,7 @@ kubectl delete po -n devtroncd -l app=git-sensor
 In case the cloning fails, you can generate the token, update the Git account in Global Configurations, and try to save the git repository again.
 
 
-#### 27. Git-sensor PVC- disk full
+#### 27. Git-sensor PVC- disk full 
 
 **Need to increase the PVC size if you are getting following error:**
 
@@ -594,9 +591,9 @@ kubectl.kubernetes.io/last-applied-configuration: | {"apiVersion":"v1","data":{"
 
 You may take the help of JSON validators to identify where the unintended human error has occured in the JSON. Rectifying the same should resolve this issue.
 
-:::info
-The annotation `kubectl.kubernetes.io/last-applied-configuration:` is automatically added to each object when you run `kubectl apply`.
-:::
+{% hint style="info" %}
+The annotation `kubectl.kubernetes.io/last-applied-configuration:` is automatically added to each object when you run `kubectl apply`. 
+{% endhint %}
 
 #### 29. Helm Charts provided by Bitnami are not visible in Chart Store. Getting 'tls: handshake failure' while deploying Bitnami Charts.
 
@@ -620,11 +617,11 @@ Follow the below steps if you are getting the above error:
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/empty-values.jpg)
 
-This happens due to a missing [app-values.yaml](../user-guide/global-configurations/deployment-charts#3-add-app-valuesyaml) file in your deployment chart.
+This happens due to a missing [app-values.yaml](../user-guide/global-configurations/deployment-charts.md#id-3.-add-app-values.yaml) file in your deployment chart. 
 
-To fix this issue, include an `app-values.yaml` file in your deployment helm chart before uploading the chart. Refer [adding app-values.yaml](../user-guide/global-configurations/deployment-charts#3-add-app-valuesyaml) to know more.
+To fix this issue, include an `app-values.yaml` file in your deployment helm chart before uploading the chart. Refer [adding app-values.yaml](../user-guide/global-configurations/deployment-charts.md#id-3.-add-app-valuesyaml) to know more.
 
 #### 31. Unable to create a GitOps deployment pipeline or encountering errors with GitOps deployment.
 
-If the **GitOps** section is already configured for your [external Argo apps](../user-guide/creating-application/workflow/cd-pipeline#migrate-argo-cd-application), and later if you install the GitOps (ArgoCD) module from [Devtron Stack Manager](../user-guide/integrations/argocd.md), make sure to save the [GitOps](../user-guide/global-configurations/gitops.md) configuration once again and also the [Cluster](../user-guide/global-configurations/cluster-and-environments.md) configuration. This might prevent potential errors and ensure your GitOps deployments (for Devtron Apps/Helm Apps) are functional.
+If the **GitOps** section is already configured for your [external Argo apps](../user-guide/creating-application/workflow/cd-pipeline.md#migrate-argo-cd-application), and later if you install the GitOps (ArgoCD) module from [Devtron Stack Manager](../user-guide/integrations/argocd.md), make sure to save the [GitOps](../user-guide/global-configurations/gitops.md) configuration once again and also the [Cluster](../user-guide/global-configurations/cluster-and-environments.md) configuration. This might prevent potential errors and ensure your GitOps deployments (for Devtron Apps/Helm Apps) are functional.
 

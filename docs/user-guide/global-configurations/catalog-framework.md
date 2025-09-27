@@ -4,29 +4,30 @@
 
 Ideally, all resources such as microservices, clusters, jobs, pods, etc. should contain detailed information so that its users know what each of those resources do, how to use them, as well as all their technical specs. Access to such data makes it easier for engineers to quickly discover and understand the relevant resources.
 
-To achieve this, Devtron supports a feature known as **Catalog Framework**. Using this, you as a [super-admin](../global-configurations/authorization/user-access#devtron-apps-permissions) can decide the data you expect from the managers of different resource types. In other words, you can create a custom <a href="https://json-schema.org/understanding-json-schema/reference" target="_blank">JSON schema</a> that would ultimately render a form for the resource owners to fill. Once the form is filled, a GUI output will appear as shown below.
+To achieve this, Devtron supports a feature known as **Catalog Framework**. Using this, you as a [super-admin](../global-configurations/authorization/user-access.md#devtron-apps-permissions) can decide the data you expect from the managers of different resource types. In other words, you can create a custom <a href="https://json-schema.org/understanding-json-schema/reference" target="_blank">JSON schema</a> that would ultimately render a form for the resource owners to fill. Once the form is filled, a GUI output will appear as shown below.
 
 ![Sample Catalog Data for an App](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/catalog-framework/sample-app-catalog.jpg)
 
 Currently, Devtron supports catalog framework for the following resource types (a.k.a. resource kind):
 
-* [Devtron applications](../../reference/glossary#devtron-apps)
-* [Helm applications](../../reference/glossary#helm-apps)
-* [Clusters](../../reference/glossary#cluster)
-* [Jobs](../../reference/glossary#job)
+* [Devtron applications](../../reference/glossary.md#devtron-apps)
+* [Helm applications](../../reference/glossary.md#helm-apps)
+* [Clusters](../../reference/glossary.md#cluster)
+* [Jobs](../../reference/glossary.md#job)
 
 There are two parts involved in the creation of a desirable resource catalog:
 
-1. [Defining a Schema](#defining-a-schema)
+1. [Defining a Schema](#defining-a-schema) 
 2. [Filling the Schema-Generated Form](#filling-the-schema-generated-form)
 
 ---
 
 ## Defining a Schema
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only a super-admin can create/edit a schema.
-:::
+{% endhint %}
 
 
 1. Go to **Global Configurations** → **Catalog Framework**.
@@ -62,7 +63,7 @@ Similarly, you can define schemas for other resource types.
 
 ## Filling the Schema-Generated Form
 
-Once a catalog schema exists for a resource type, its corresponding form would be available in the overview section of that resource type.
+Once a catalog schema exists for a resource type, its corresponding form would be available in the overview section of that resource type. 
 
 1. Since we defined a schema for Devtron applications in the above example, go to the **Overview** tab of your application (any Devtron application). Click the **Edit** button within the `About` section.
 

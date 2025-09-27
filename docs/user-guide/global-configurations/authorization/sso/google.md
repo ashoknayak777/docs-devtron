@@ -4,21 +4,23 @@
 
 Integrating Google as your Single Sign-On (SSO) provider enables users to authenticate with their Google accounts, ensuring secure and streamlined access to Devtron. This document walks you through setting up Google SSO in Devtron, ensuring users can log in smoothly.
 
-:::info
+{% hint style="info" %}
 
 ### Prerequisites
 
 To configure Google SSO in Devtron, you will need:
 
 * Super Admin permissions
-  * Only a [Super-Admin](https://docs.devtron.ai/global-configurations/authorization/user-access) can configure SSO. If you are setting up SSO for the first time, use [Admin Credentials](https://docs.devtron.ai/install/install-devtron#devtron-admin-credentials) instead.
+
+  * Only a [Super-Admin](../user-access.md#grant-super-admin-permission) can configure SSO. If you are setting up SSO for the first time, use [Admin Credentials](https://docs.devtron.ai/install/install-devtron#devtron-admin-credentials) instead.
+
 * A Google Cloud account to create and manage OAuth credentials. If you don’t have one, you must create it at the [Google Cloud Console](https://console.cloud.google.com/).
 
-:::
+{%endhint%}
 
 ## Get the Redirect URI from Devtron
 
-Before configuring Google as an SSO provider,
+Before configuring Google as an SSO provider, 
 * Ensure that the [Host URL](../../host-url.md) is correctly configured in Devtron. This is crucial because the Redirect URI is generated based on the Host URL.
 * You need to retrieve the Redirect URI from Devtron, which will be required in Google Cloud while setting up OAuth credentials.
 
@@ -28,7 +30,7 @@ Before configuring Google as an SSO provider,
   * Click the URL next to **Click to use** in green color. The URL field will be automatically populated with the URL next to **Click to use**; this is essential to generate the correct **Redirect URI**.
   * Copy the **Redirect URI** displayed in this section. You will need to enter this in Google Cloud.
 
- <iframe width="100%" height="400" src="https://www.youtube.com/embed/QvufIzUSNpg" title="Getting the Redirect URI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ {% embed url="https://www.youtube.com/watch?v=QvufIzUSNpg" caption="Getting the Redirect URI" %}
 
 ## Configure OAuth in Google Cloud Console
 
@@ -43,7 +45,7 @@ The next step is to configure OAuth credentials in Google Cloud Console. This in
   * Paste the Redirect URI (copied from Devtron) under Authorized Redirect URIs.
 * Click **Create** to generate the Client ID and Client Secret.
 
-:::warning
+{% hint style="warning" %}
 ### Google SSO Requires a Valid Domain with HTTPS
 
 Google does not support IP addresses as valid redirect URIs. You must use a valid domain name ([FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name)) accessible over HTTPS.
@@ -59,7 +61,7 @@ Examples of invalid URIs:
 ❌ http://localhost:8080/callback
 
 ❌ http://192.168.1.10/callback
-:::
+{% endhint %}
 
 ![Figure 1: Creating OAuth Client](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/creating-oauth-client-google-sso.jpg)
 
@@ -81,7 +83,7 @@ The next step is to configure Devtron to use these credentials for authenticatio
 
 ![Figure 4: Configuring SSO in Devtron](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/sso-login-service/configuration-devtron-google-sso.jpg)
 
-In the configuration,&#x20;
+In the configuration,
 
 * Enter the OAuth Credentials:
   * Paste the Client ID obtained from Google Cloud in the `clientID` field.
@@ -93,9 +95,9 @@ In the configuration,&#x20;
   * Copy the Redirect URI displayed in Devtron and paste the value in the `redirectURI` field.
 * Click **Update** to save the configuration, once saved, Google SSO is successfully configured
 
-:::warning
+{% hint style="warning" %}
 Although Google SSO is now set up, users will not be able to sign in unless they are explicitly added to Devtron with the necessary permissions.
-:::
+{% endhint %}
 
 ## Important: Enable User Access After SSO Setup
 

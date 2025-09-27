@@ -1,15 +1,17 @@
-# Deployment Visibility & Actions
+# Deployment Visibility & Actions 
 
-:::info[Prerequisites]
-The [Deployment Chart Type](../creating-application/deployment-template#from-devtron-charts) must be set to Rollout in order to use Blue-Green or Canary strategies.
+{% hint style="info" %}
+### Prerequisites
+The [Deployment Chart Type](../creating-application/base-config/deployment-template.md#select-a-deployment-chart-type) must be set to Rollout in order to use Blue-Green or Canary strategies.
 
-Deployment Visibility and Actions is only available for Canary and Blue-Green Strategies. Refer to the [Deployment Strategies](../creating-application/workflow/cd-pipeline#deployment-strategies) to learn more.
+Deployment Visibility and Actions is only available for Canary and Blue-Green Strategies. Refer to the [Deployment Strategies](../creating-application/workflow/cd-pipeline.md#deployment-strategies) to learn more.
 
-:::
+{% endhint %}
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Users need to have Build and Deploy or above (along with access to the environment and application).
-:::
+{% endhint %}
 
 Devtron helps you to manage your **Canary** and **Blue-Green** deployments by providing visibility and easy controls to manage how new versions (releases) are shared with users.
 
@@ -19,7 +21,7 @@ Devtron allows you to:
 
 * For canary deployments you can manually trigger the next step for the release or fully complete the rollout.
 
-* For Blue-Green deployments
+* For Blue-Green deployments 
 
      * You can directly route the end user traffic to the application’s new deployment on a particular environment.
 
@@ -33,7 +35,7 @@ Devtron allows you to:
 
 After triggering the deployment, navigate to **App Details**, to get a quick overview of your release rollout status.
 
-You can select the **Manage Traffic** button to view the rollout status and steps involved in the release.
+You can select the **Manage Traffic** button to view the rollout status and steps involved in the release. 
 
 If you wish you can also trigger the next release steps (for example 25%, 50%, 75%) or you can also trigger the full rollout at once according to your use case.
 
@@ -44,7 +46,7 @@ If you wish you can also trigger the next release steps (for example 25%, 50%, 7
 
 ### For Blue Green deployments
 
-Devtron automatically swaps the traffic from the current running release to the new release based on the defined strategy configuration. In case `autoPromotionEnabled` field value is set to `false`, you can manually swap the traffic from the current release to the new release.
+Devtron automatically swaps the traffic from the current running release to the new release based on the defined strategy configuration. In case `autoPromotionEnabled` field value is set to `false`, you can manually swap the traffic from the current release to the new release. 
 
 ![Figure 2: autoPromotionEnabled: false](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/app-details/deployment-auto-promotion-enabled-false.jpg)
 
@@ -83,9 +85,9 @@ To do so, follow the below steps:
 
 4. This will skip the Blue-Green Strategy and route the end user traffic from the current running release to the new release on a particular environment.
 
-### Rollback the Deployment
+### Rollback the Deployment 
 
-In case you have identified some bugs or performance of the release is not as expected then you can also rollback to the previous release.
+In case you have identified some bugs or performance of the release is not as expected then you can also rollback to the previous release. 
 
 You can perform a rollback from **Build & Deploy** Section and from App Details (for Blue-Green & Canary Strategies only)
 
@@ -94,7 +96,7 @@ To perform a rollback from App Details follow the below steps:
 1. Navigate to **App details** of your Devtron Application.
 
 2. Based on the type of deployment strategy, perform one of the following actions:
-
+    
   * In case of Canary deployments, select **Rollback** under **Canary Strategy**.
 
       ![Figure 7: Selecting Rollback For Canary Deployment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/app-details/deployment-rollback.jpg)

@@ -1,4 +1,4 @@
-# Running Kubectl Commands Locally
+# Running Kubectl Commands Locally 
 
 ## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
@@ -28,7 +28,7 @@ Devtron helps in reducing the challenges and simplifying the maintenance of kube
 
 ## Steps
 
-**Prerequisite**: An [API token with necessary permissions](../global-configurations/authorization/api-tokens.md) for the user(s) to access the cluster.
+**Prerequisite**: An [API token with necessary permissions](../global-configurations/authorization/api-tokens.md) for the user(s) to access the cluster. 
 
 If you are not a super-admin and can't generate a token yourself, you can find the session token (argocd.token) using the Developer Tools available in your web browser as shown below.
 
@@ -40,7 +40,7 @@ There are 2 methods of getting kubeconfig in your system:
 
 ### Quick Method
 
-1. In Resource Browser, hover on the cluster name and click the `Get kubeconfig` icon.
+1. In Resource Browser, hover on the cluster name and click the `Get kubeconfig` icon. 
 
   ![Figure 23: Get Kubeconfig](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/getkubeconfig.gif)
 
@@ -51,7 +51,7 @@ There are 2 methods of getting kubeconfig in your system:
 
 1. Go to `~/.kube` folder on your local machine and open the `config` file. Or you may create one with the following content:
 
-  <!-- {% code title="kubeconfig" overflow="wrap" lineNumbers="true" %} -->
+  {% code title="kubeconfig" overflow="wrap" lineNumbers="true" %}
   ```yml
   apiVersion: v1
   kind: Config
@@ -71,23 +71,24 @@ There are 2 methods of getting kubeconfig in your system:
     user:
       token: <devtron_token>
   ```
-  <!-- {% endcode %} -->
+  {% endcode %}
 
 2. Edit the following placeholders in the `server` field and the `token` field:
 
   | Placeholder         | Description                         | Example          | Where to Find      |
   | ------------------- | ----------------------------------- | ---------------- | ------------------ |
-  | &lt;devtron_host_name&gt; | Hostname of the Devtron server      | demo.devtron.ai  | [Host URL Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/hostname-page.jpg)      |
-  | &lt;cluster_name&gt;      | Name of the cluster (or cluster ID) | devtron-cluster  | [Applications Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/applications-page.jpg)  |
-  | &lt;devtron_token>&gt;     | API token or session token          | \-               | [Authorization Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/authorization-page.jpg) |
+  | <devtron_host_name> | Hostname of the Devtron server      | demo.devtron.ai  | [Host URL Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/hostname-page.jpg)      |
+  | <cluster_name>      | Name of the cluster (or cluster ID) | devtron-cluster  | [Applications Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/applications-page.jpg)  |
+  | <devtron_token>     | API token or session token          | \-               | [Authorization Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/authorization-page.jpg) |
 
   ![Figure 23: Editing Kubeconfig File](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/kubeconfig.gif)
 
 3. Test the connection to the cluster by running any kubectl command, e.g., `kubectl get ns` or `kubectl get po -A`
 
-:::info[Additional References]
+{% hint style="info" %}
+### Additional References
 Once the connection is successful, you may run any [kubectl operations](https://kubernetes.io/docs/reference/kubectl/#operations) from your system.
-:::
+{% endhint %}
 
 ---
 

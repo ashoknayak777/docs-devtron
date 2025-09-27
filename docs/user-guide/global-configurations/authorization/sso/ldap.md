@@ -30,15 +30,15 @@ Since LDAP supports creation of User Groups, this feature simplifies the onboard
 
 If you've created user groups in LDAP, you can create corresponding permission groups in Devtron with the same names. When members of those user groups first log in to Devtron, they'll automatically inherit the permissions from their Devtron permission group. This means you can't manually adjust or add [individual permissions for users](../user-access.md) mapped to a permission group.
 
-:::warning
+{% hint style="warning" %}
 SSO login requires exact matching between Devtron permission group names and LDAP user groups. Any discrepancies or missing groups will prevent successful login.
 
 Once you save the configuration with this auto-assign feature enabled, existing user permissions will be cleared and the future permissions will be managed through [Permission Groups](../permission-groups.md) linked to LDAP user groups.
-:::
+{% endhint %}
 
-:::info
+{% hint style="info" %}
 If you're missing some permissions that you know you should have, try logging out and signing back in to Devtron. This will refresh your permissions based on your latest LDAP user group.
-:::
+{% endhint %}
 
 
 

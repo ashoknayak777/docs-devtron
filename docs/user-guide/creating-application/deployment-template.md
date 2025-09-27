@@ -16,30 +16,32 @@ To configure a deployment chart for your application, do the following steps:
 
 ## Selecting a Chart Type
 
-:::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to select a chart.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to select a chart.
+{% endhint %}
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 After you select and save a chart type for a given application, you won't be able to change it later. Make sure to choose the correct chart type before saving. You can select a chart from [Devtron Charts](#from-devtron-charts) or other [Deployment Charts](#from-deployment-charts).
-:::
+{% endhint %}
 
 ### From Devtron Charts
 
 You can select a default deployment chart from the following options:
 
-1. [Deployment](deployment-template/deployment.md) (Recommended)
-2. [Rollout Deployment](deployment-template/rollout-deployment.md)
-3. [Job & CronJob](deployment-template/job-and-cronjob.md)
-4. [StatefulSet](deployment-template/statefulset.md)
+1. [Deployment](../creating-application/base-config/deployment-template/deployment.md) (Recommended)
+2. [Rollout Deployment](../creating-application/base-config/deployment-template/rollout-deployment.md)
+3. [Job & CronJob](../creating-application/base-config/deployment-template/job-and-cronjob.md)
+4. [StatefulSet](../creating-application/base-config/deployment-template/statefulset.md)
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/select-devtron-chart.gif)
 
 ### From Deployment Charts
 
-:::warning
+{% hint style="warning" %}
 This option will be available only if a custom chart exists. If it doesn't, a user with `super admin` permission may upload one in [Global Configurations → Deployment Charts](../global-configurations/deployment-charts.md).
-:::
+{% endhint %}
 
 You can select an available custom chart as shown below. You can also view the description of the custom charts in the list.
 
@@ -49,9 +51,10 @@ You can select an available custom chart as shown below. You can also view the d
 
 ## Selecting a Chart Version
 
-:::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to select a chart version.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to select a chart version.
+{% endhint %}
 
 Once you select a chart type, choose a chart version using which you wish to deploy the application.
 
@@ -67,9 +70,10 @@ Every chart version has its own YAML file that provides specifications for your 
 
 ## Configuring the Chart
 
-:::warning[Who Can Perform This Action?]
-Users need to have [Admin role](../global-configurations/authorization/user-access#devtron-apps-permissions) or above to configure a chart. However, super-admins can lock keys in base deployment template to prevent non-super-admins from modifying them. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
-:::
+{% hint style="warning" %}
+### Who Can Perform This Action?
+Users need to have [Admin role](../global-configurations/authorization/user-access.md#devtron-apps-permissions) or above to configure a chart. However, super-admins can lock keys in base deployment template to prevent non-super-admins from modifying them. Refer [Lock Deployment Configuration](../global-configurations/lock-deployment-config.md) to know more.
+{% endhint %}
 
 ### Using Basic GUI
 
@@ -96,16 +100,18 @@ By default, the following fields are available for you to modify in the **Basic 
 
 Click **Save Changes**. If you want to do additional configurations, then click the **Switch to Advanced** button or **Advanced (YAML)** button for modifications.
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 * If you change any values in the 'Basic (GUI)', then the corresponding values will change in 'Advanced (YAML)' too.
 * Users who are not super-admins will land on 'Basic (GUI)' section when they visit **Base Deployment Template** page; whereas super-admins will land on 'Advanced (YAML)' section. This is just a default behavior; therefore, they can still navigate to the other section if needed.
-:::
+{% endhint %}
 
 #### Customize Basic GUI [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Superadmin can define and apply custom deployment schema.
-:::
+{% endhint %}
 
 By default, the `Basic (GUI)` section comes with multiple predefined fields as seen earlier [in the table](#using-basic-gui). However, if you wish to display a different set of fields to your team, you can modify the whole section as per your requirement.
 
@@ -115,13 +121,13 @@ This is useful in scenarios where:
 * You don't require some fields in Basic (GUI) section.
 * You need the autonomy to keep the Basic (GUI) unique for applications/clusters/environments/charts, or display the same Basic (GUI) everywhere.
 
-:::info
+{% hint style="info" %}
 There are two ways you can customize the Basic GUI, use any one of the following:
-1. From [Deployment Charts](../global-configurations/deployment-charts#editing-gui-schema-of-deployment-charts-) section
+1. From [Deployment Charts](../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts) section
 2. Using APIs (explained below)
-:::
+{% endhint %}
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=09VP1I-WvUs" caption="JSON-driven Deployment Schema" %}
 
 You can pass a custom JSON (deployment schema) of your choice through the following API. You may need to run the API with the `POST` method if you are doing it for the first time.
 
@@ -129,7 +135,7 @@ You can pass a custom JSON (deployment schema) of your choice through the follow
 PUT {{DEVTRON_BASEURL}}/orchestrator/deployment/template/schema
 ```
 
-<!-- {% code title="Sample API Request Body" overflow="wrap" lineNumbers="true" %} -->
+{% code title="Sample API Request Body" overflow="wrap" lineNumbers="true" %}
 
 ```json
 {
@@ -181,13 +187,13 @@ PUT {{DEVTRON_BASEURL}}/orchestrator/deployment/template/schema
 }
 
 ```
-<!-- {% endcode %} -->
+{% endcode %}
 
 1. In the `name` field, give a name to your schema, e.g., *schema-1*
 2. Enter the `type` as JSON.
 3. The `schema` field is for entering your custom deployment schema. Perform the following steps:
-    * To create a custom schema of your choice, you may use [RJSF JSON Schema Tool](https://rjsf-team.github.io/react-jsonschema-form/).
-    * Copy the final JSON and stringify it using any free online tool.
+    * To create a custom schema of your choice, you may use [RJSF JSON Schema Tool](https://rjsf-team.github.io/react-jsonschema-form/). 
+    * Copy the final JSON and stringify it using any free online tool. 
     * Paste the stringified JSON in the `schema` field of the API request body.
     * Send the API request. If your schema already exists, use the `PUT` method instead of `POST` in the API call.
 4. The `attributeSelector` object helps you choose the scope at which your custom deployment schema will take effect.
@@ -208,17 +214,17 @@ If you are an advanced user wishing to perform additional configurations, you ma
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/advanced-yaml.jpg)
 
 Refer the respective templates to view the YAML details.
-* [Deployment](deployment-template/deployment.md)
-* [Rollout Deployment](deployment-template/rollout-deployment.md)
-* [Job & CronJob](deployment-template/job-and-cronjob.md)
-* [StatefulSet](deployment-template/statefulset.md)
+* [Deployment](./base-config/deployment-template/deployment.md)
+* [Rollout Deployment](./base-config/deployment-template/rollout-deployment.md)
+* [Job & CronJob](./base-config/deployment-template/job-and-cronjob.md)
+* [StatefulSet](./base-config/deployment-template/statefulset.md)
 
 ---
 
 ## Application Metrics
 
 Depending on the chart type and version you select, application metrics of your application may be viewed. <br />
-This includes:
+This includes: 
 * Status codes 2xx, 3xx, 5xx
 * Throughput
 * Latency

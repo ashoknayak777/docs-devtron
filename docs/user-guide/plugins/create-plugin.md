@@ -7,7 +7,7 @@ Devtron lets you create plugins to run specific tasks at different stages of you
 * CD plugin (in pre-deployment/post-deployment stage)
 ...or both.
 
-You can achieve this by converting a fully functional custom task into a plugin. Creating a plugin makes it reusable with other CI or CD pipelines.
+You can achieve this by converting a fully functional custom task into a plugin. Creating a plugin makes it reusable with other CI or CD pipelines. 
 
 ---
 
@@ -19,13 +19,15 @@ There are two parts to creating a plugin:
 
 ### Part 1: Create a Custom Task
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only superadmins can create plugins.
-:::
+{% endhint %}
 
-:::info[Prerequisite]
+{% hint style="info" %}
+### Prerequisite
 A build or deployment pipeline must exist in the **Workflow Editor** of your app.
-:::
+{% endhint %}
 
 In the following example, we are creating a plugin named 'Secret Management Validator'.
 
@@ -53,7 +55,7 @@ In the following example, we are creating a plugin named 'Secret Management Vali
 
     * **Task Name** - Give a name to the task, e.g., `Secret Management Validator Task`.
     * **Description** - Write the purpose of the task in brief.
-    * **Task Type** - Choose `Shell` if the task consists of shell commands or choose `Container Image` in case of complex operations that require a specific container environment (refer ['Container Image' task](https://docs.devtron.ai/usage/applications/creating-application/workflow/ci-pipeline/ci-build-pre-post-plugins#custom-script-container-image)).
+    * **Task Type** - Choose `Shell` if the task consists of shell commands or choose `Container Image` in case of complex operations that require a specific container environment (refer ['Container Image' task](../creating-application/workflow/pre-post-tasks.md#example-3-container-image-task)). 
     * **Input Variables** - Add one or more input variables to accept values from the user. Give a name to your input variable along with a description and input type (String/Number/Boolean/Date).
     * **Trigger Skip Condition** - Here you can set conditions to execute or skip the task. You can select **Set trigger conditions** to execute the task, or **Set skip conditions** to skip the task.
     * **Script** - Enter the script to be executed.
@@ -66,9 +68,10 @@ In the following example, we are creating a plugin named 'Secret Management Vali
 
     ![Figure 7: 'Update Pipeline' Button](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/plugins/create-plugin/update-plugin.jpg)
 
-:::tip[Next Steps]
+{% hint style="success" %}
+### Next Steps
 Go to the **Build & Deploy** tab of your application and run the pipeline having your custom task. If the custom task executes correctly and the script performs as expected, you may proceed to [save your custom task as a plugin](#part-2-convert-custom-task-to-a-plugin).
-:::
+{% endhint %} 
 
 ---
 
@@ -112,13 +115,14 @@ Go to the **Build & Deploy** tab of your application and run the pipeline having
 
 ## Create a New Version of Plugin
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only superadmins can create new versions of a plugin.
-:::
+{% endhint %}
 
 You may create incremental versions of your plugin (e.g., `1.0.0` → `1.0.1` or `2.0.0`). The old version(s) of your plugins will still be available to your users.
 
-1. Follow steps 1-7 from the [Plugin Creation](#plugin-creation) section of this document.
+1. Follow steps 1-7 from the [Create a New Plugin](#create-a-new-plugin) section of this document.
 
 2. From the **New version of existing plugin** tab, select the plugin for which you want to create a new version from the **Existing Plugin** dropdown.
 
@@ -140,9 +144,10 @@ You may create incremental versions of your plugin (e.g., `1.0.0` → `1.0.1` or
 
 <!-- ## API Call
 
-:::warning[Prerequisite]
+{% hint style="warning" %}
+### Prerequisite
 You will need a [token](../../user-guide/global-configurations/authorization/api-tokens.md) to make API calls
-:::
+{% endhint %}
 
 ```
 POST {{DEVTRON_BASEURL}}/orchestrator/plugin/global
@@ -273,7 +278,7 @@ The variables defined in the `pluginStepVariable` array would appear as shown be
 To fetch details of a specific plugin by its ID
 
 ```
-GET
+GET 
 /orchestrator/plugin/global/detail/{pluginId}
 ```
 

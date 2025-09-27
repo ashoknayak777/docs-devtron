@@ -3,7 +3,7 @@ This feature helps you to update Deployment Template, ConfigMaps & Secrets for m
 ## Overview
 
 Need to make some common changes across multiple devtron applications?
-**Bulk Edit** allows you to do that.<br />
+**Bulk Edit** allows you to do that.<br>
 Eg. You can change the value for `MaxReplicas` in Deployment Templates of multiple Devtron applications or you can add key-value pairs in multiple ConfigMaps & Secrets. However, you might not be able to change the values of locked keys. Refer [Lock Deployment Configuration](./global-configurations/lock-deployment-config.md) to know more.
 
 ## Support
@@ -30,8 +30,8 @@ Bulk edit is currently supported for:
 ### Example
 Example below will select all applications having `abc and xyz` present in their name and out of those will exclude applications having `abcd and xyza` in their name. Since global flag is false and envId 23 is provided, it will make changes in envId 23 and not in global deployment template for this application.
 
-If you want to update globally then please set `global: true`. If you have provided an envId but deployment template, configMap or secret is not overridden for that particular environment then it will not apply the changes.
-Also, of all the provided names of configMaps/secrets, for every app & environment override only the names that are present in them will be considered.
+If you want to update globally then please set `global: true`. If you have provided an envId but deployment template, ConfigMap or Secret is not overridden for that particular environment then it will not apply the changes.
+Also, of all the provided names of ConfigMaps/secrets, for every app & environment override only the names that are present in them will be considered.
 
 
 ### Sample Script
@@ -87,7 +87,7 @@ The following tables list the configurable parameters of the Payload component i
 | `secret.spec.names`      | Names of all Secrets to be updated. | `secret1`,`secret2`|
 | `configMap.spec.patchJson` / `secret.spec.patchJson`       | String having the update operation for ConfigMaps/Secrets(you can apply more than one changes at a time). It supports [JSON patch ](http://jsonpatch.com/) specifications for update. | `'[{ "op": "add", "path": "/{key}", "value": "{value}" },{"op": "replace","path":"/{key}","value": "{value}"}]'`(Replace the `{key}` part to the key you want to perform operation on & the `{value}`is the key's corresponding value |
 
-<br />
+<br>
 
 4. Once you have modified the script, you can click on the `Show Impacted Objects` button to see the names of all applications that will be modified when the script is `Run`.
 

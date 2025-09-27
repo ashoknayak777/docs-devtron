@@ -12,7 +12,7 @@ For any use case not addressed by the default Helm charts, you can upload your o
 
 This video contains a quick walkthrough of the steps mentioned in the [Preparing a Deployment Chart](#preparing-a-deployment-chart) section of this page and the subsequent uploading of the deployment chart on Devtron.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/jzMZa7bSiyA" title="How to Upload your Deployment Chart in Devtron" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=jzMZa7bSiyA" caption="How to Upload your Deployment Chart in Devtron" %}
 
 ---
 
@@ -38,9 +38,10 @@ helm create my-custom-chart
 | `Version` | This is the chart version. Update this value for each new version of the chart (Required). |
 | `Description` | Give a description to your chart (Optional). |
 
-:::info[Example of Chart.yaml]
+{% hint style="info" %}
+### Example of Chart.yaml
 [Click here](https://devtron-public-asset.s3.us-east-2.amazonaws.com/custom-charts/chart-yaml-file.jpg) to view a sample 'Chart.yaml' file.
-:::
+{% endhint %}
 
 ### 2. Create an Image Descriptor Template File
 
@@ -52,7 +53,7 @@ The Image Descriptor Template file is a GO template that produces a valid JSON f
     touch .image_descriptor_template.json
     ```
 
-* Ensure the above file is created in the directory where the main `Chart.yaml` exists (as shown below):
+* Ensure the above file is created in the directory where the main `Chart.yaml` exists (as shown below): 
 
     ![Figure 2: Filepath of Image Descriptor Template](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/descriptor-filepath.jpg)
 
@@ -86,9 +87,10 @@ The Image Descriptor Template file is a GO template that produces a valid JSON f
     }
     ```
 
-:::warning[Got a JSON Error?]
+{% hint style="warning" %}
+### Got a JSON Error?
 If your code editor highlights a syntax error (property or EOF error) in the above JSON, ignore it.
-:::
+{% endhint %}
 
 <!-- | Field | Description |
 | --- | --- |
@@ -103,7 +105,7 @@ If your code editor highlights a syntax error (property or EOF error) in the abo
 
 ### 3. Add app-values.yaml
 
-In the root directory of your chart, Devtron expects an `app-values.yaml` file. It uses this file to determine the values to be displayed on the [deployment template](../../reference/glossary#base-deployment-template) as shown below.
+In the root directory of your chart, Devtron expects an `app-values.yaml` file. It uses this file to determine the values to be displayed on the [deployment template](../../reference/glossary.md#deployment-template) as shown below. 
 
 ![Figure 3: Chart Values](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/deployment-template.jpg)
 
@@ -116,9 +118,9 @@ However, if you upload the chart without an `app-values.yaml` or with an empty o
 
 ### 4. Add release-values.yaml
 
-The `release-values.yaml` file contains essential values needed for deployment that aren’t covered by [app-values.yaml](#3-add-app-valuesyaml). For example:
+The `release-values.yaml` file contains essential values needed for deployment that aren’t covered by [app-values.yaml](#id-3.-add-app-values.yaml). For example:
 
-* Some dynamic values (such as `IMAGE_TAG` and `IMAGE_REPO` from the [image descriptor JSON file](#2-create-an-image-descriptor-template-file)) are populated here because they are needed for deployment.
+* Some dynamic values (such as `IMAGE_TAG` and `IMAGE_REPO` from the [image descriptor JSON file](#id-2.-create-an-image-descriptor-template-file)) are populated here because they are needed for deployment.
 * You can use `autoPromotionSeconds` to decide how long to keep old pods running once the latest pods of new release are available.
 
 In the root directory of your chart, create a file named `release-values.yaml` with the following command:
@@ -143,19 +145,20 @@ waitForSecondsBeforeScalingDown: 0
 autoPromotionSeconds: 30
 
 #used for deployment algo selection
-orchestrator.deploymant.algo: 1
+orchestrator.deploymant.algo: 1 
 ```
 
 ### 5. Package the chart in a tgz format
 
 <!-- Before you package the chart, ensure your Helm chart has the mandatory files mentioned in the [Prerequisites](#prerequisites) section of this page. -->
 
-The Helm chart to be uploaded must be packaged as a versioned archive file in the format: `<helm-chart-name>-x.x.x.tgz`.
+The Helm chart to be uploaded must be packaged as a versioned archive file in the format: `<helm-chart-name>-x.x.x.tgz`. 
 Both `<helm-chart-name>` and `x.x.x` will be automatically fetched from the name and version fields present in the Chart.yaml file, respectively."
 
-:::warning[Note]
+{% hint style="warning" %}
+### Note
 Ensure you navigate out of the Helm chart folder before packaging it in a '.tgz' format
-:::
+{% endhint %}
 
 Run the following command to package the chart:
 
@@ -169,9 +172,10 @@ The above command will generate a `<helm-chart-name>-x.x.x.tgz` file.
 
 ## Uploading a Deployment Chart
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only super admin users can upload a deployment chart. A super admin can upload multiple versions of a chart.
-:::
+{% endhint %}
 
 ### Steps
 
@@ -212,9 +216,10 @@ The following are interpretations of the validation checks performed:
 
 ## Viewing Deployment Charts
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only super-admins can view deployment charts.
-:::
+{% endhint %}
 
 To view the list of available deployment charts, go to  **Global Configurations** → **Deployment Charts** page.
 
@@ -227,25 +232,28 @@ To view the list of available deployment charts, go to  **Global Configurations*
 
 ## Using Deployment Chart in Application
 
-Once you successfully upload a deployment chart, you can start using it as a deployment template for your application. Refer [Deployment Template](../creating-application/deployment-template.md) to know more.
+Once you successfully upload a deployment chart, you can start using it as a deployment template for your application. Refer [Deployment Template](../creating-application/base-config/deployment-template.md) to know more.
 
 ![Figure 10: Using Deployment Charts](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/use-chart.gif)
 
-:::warning[Note]
-The deployment strategy for a deployment chart is fetched from the chart template and cannot be configured in the [CD pipeline](../creating-application/workflow/cd-pipeline#deployment-strategies).
-:::
+{% hint style="warning" %}
+### Note
+The deployment strategy for a deployment chart is fetched from the chart template and cannot be configured in the [CD pipeline](../creating-application/workflow/cd-pipeline.md#deployment-strategies).
+{% endhint %}
 
 ---
 
 ## Editing GUI Schema of Deployment Charts [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-:::warning[Who Can Perform This Action?]
+{% hint style="warning" %}
+### Who Can Perform This Action?
 Only super-admins can edit the GUI schema of deployment charts.
-:::
+{% endhint %}
 
-:::info[Reference]
-This section is an extension of [Customize GUI](../creating-application/deployment-template#customize-basic-gui-) feature. Refer the document to know more about the significance of having a custom GUI schema for your deployment templates.
-:::
+{% hint style="info" %}
+### Reference
+This section is an extension of [Customize GUI](../creating-application/base-config/deployment-template.md#using-gui) feature. Refer the document to know more about the significance of having a custom GUI schema for your deployment templates.
+{% endhint %}
 
 You can edit the GUI schema of the following deployment charts:
 1. Default charts provided by Devtron (*Deployment*, *Job & CronJob*, *Rollout Deployment*, and *StatefulSet*)
@@ -253,7 +261,7 @@ You can edit the GUI schema of the following deployment charts:
 
 ### Tutorial
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/93tGIsM1qC8" title="JSON-driven Deployment Schema" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% embed url="https://www.youtube.com/watch?v=93tGIsM1qC8" caption="JSON-driven Deployment Schema" %}
 
 ### Steps
 
@@ -263,7 +271,7 @@ In this example, we will edit the Deployment chart type provided by Devtron.
 
     ![Figure 11: Edit GUI Schema Button](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/edit-chart-schema.jpg)
 
-2. A GUI schema is available for you to edit in case of Devtron charts. In case of custom charts, you may have to define a GUI schema yourself. To know how to create such GUI schema, refer [RJSF JSON Schema Tool](https://rjsf-team.github.io/react-jsonschema-form/).
+2. A GUI schema is available for you to edit in case of Devtron charts. In case of custom charts, you may have to define a GUI schema yourself. To know how to create such GUI schema, refer [RJSF JSON Schema Tool](https://rjsf-team.github.io/react-jsonschema-form/). 
 
     ![Figure 12: Editable Schema](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/gui-schema.jpg)
 
@@ -279,4 +287,4 @@ In this example, we will edit the Deployment chart type provided by Devtron.
 
     ![Figure 15: Save Changes](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/save-changes.jpg)
 
-Next, if you go to **App Configuration** → **Base Configurations** → **Deployment Template**, you will be able to see the deployment template fields (in GUI) as per your customized schema.
+Next, if you go to **Configurations** → **Base Configurations** → **Deployment Template**, you will be able to see the deployment template fields (in GUI) as per your customized schema.

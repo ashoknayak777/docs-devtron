@@ -15,9 +15,9 @@ No prerequisites are required for integrating the **CraneCopy** plugin.
 4. Click **New Workflow** and navigate to the **Build and Deploy from Source Code**.
 5. Fill the required fields in the **Create build pipeline** window and navigate to the **Post-build stage**.
 
-:::warning
+{% hint style="warning" %}
 If you have already configured workflow, edit the build pipeline, and navigate to **Post-build stage**.
-:::
+{% endhint %}
 
 6. Under 'TASKS', click the **+ Add task** button.
 7. Click the **CraneCopy** plugin.
@@ -43,7 +43,7 @@ e.g., `The CraneCopy plugin is integrated to copy the container images from one 
 | ------------------------ | ------------ | ----------- | ------------ |
 |   RegistryUsername       |    STRING    | Username of target registry for authentication      |    admin                |
 |   RegistryPassword       |    STRING    | Password for the target registry for authentication |    Tr5$mH7p             |
-|   TargetRegistry         |    STRING    | The target registry to push to image                |    docker.io/dockertest |
+|   TargetRegistry         |    STRING    | The target registry to push to image                |    docker.io/dockertest | 
 
 
 ### Trigger/Skip Condition

@@ -5,7 +5,7 @@ We have multiple plugins available in Devtron. At the moment, here are the plugi
 * [Codacy](./codacy.md)
 * [Code-Scan](./code-scan.md)
 * [Copacetic](./copacetic.md)
-* [Container Image Exporter](./container-image-exporter.md)
+* [Container Image Exporter]()
 * [Copy Container Image](./copy-container-image.md)
 * [Cosign](./cosign.md)
 * [CraneCopy](./crane-copy.md)

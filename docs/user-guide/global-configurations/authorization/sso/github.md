@@ -11,7 +11,7 @@ Setting up GitHub SSO enables you to authenticate using your GitHub account, ens
 To configure GitHub SSO in Devtron, you need:
 
 * Super Admin permission
-    * Only a [Super-Admin](../user-access.md) in Devtron can configure SSO. However, you can use the [Admin credentials](../../../../setup/install/install-devtron-with-cicd.md) provided during the initial setup, if you’re setting up Devtron for the first time.
+    * Only a [Super-Admin](../user-access.md) in Devtron can configure SSO. However, you can use the [Admin credentials](../../../../setup/install/devtron-oss.md#step-4-log-in-to-devtron) provided during the initial setup, if you’re setting up Devtron for the first time.
 * A GitHub account to create and manage OAuth credentials. If you do not have a GitHub account, you must create it first on GitHub.
 * [Host URL](../../host-url.md) configured on the Host URL screen (**Global Configurations** → **Host URL**).
 
@@ -39,8 +39,8 @@ When you populate the Host URL in the **URL** field, the redirectURI (or callbac
 
 Open Authentication (OAuth) allows you to authorize one application to sign in to another without the need for passwords. Configuring OAuth credentials in GitHub involves creating a GitHub OAuth Client ID and Client Secret, which will then be used in Devtron for authentication.
 
-1. Navigate to **GitHub** → **Profile** → **Settings** → **Developer settings** → **OAuth Apps**.
-
+1. Navigate to **GitHub** → **Profile** → **Settings** → **Developer settings** → **OAuth Apps**. 
+    
     If you do not already have an OAuth application created on GitHub, refer to [Creating an OAuth app](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app). If you already have an OAuth application on GitHub, follow the instructions below:
 
 2. Select your preferred OAuth app and click **Edit**.
@@ -79,10 +79,10 @@ To configure the GitHub SSO in Devtron, follow the below steps of instructions:
 
 ---
 
-:::warning
+{% hint style="warning" %}
 
 ### Important: Enable User Access After SSO Setup
 
 Although GitHub SSO is now configured, you will not be able to sign in with GitHub unless you add yourself as a user with the necessary permissions and manage other user permissions as well in Devtron. For detailed steps on managing user permissions, refer to the [User Permissions Documentation](../user-access.md).
 
-:::
+{% endhint %}

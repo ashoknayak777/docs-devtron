@@ -2,7 +2,7 @@
 
 ## Introduction
 
-During the [CI process](../deploying-application/triggering-ci.md), the application source code is pulled from your [git repository](../../reference/glossary#repo).
+During the [CI process](../deploying-application/triggering-ci.md), the application source code is pulled from your [git repository](../../reference/glossary.md#repo). 
 
 Devtron also supports multiple Git repositories (be it from one Git account or multiple Git accounts) in a single deployment.
 
@@ -33,9 +33,9 @@ This is a dropdown that shows the list of Git accounts added to your organizatio
 
 ![Figure 2: Selecting Git Account](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/select-git-account.jpg)
 
-:::info
+{% hint style="info" %}
 If the authentication type of your Git account is anonymous, only public Git repositories in that account will be accessible. Whereas, adding a user auth or SSH key will make both public and private repositories accessible.
-:::
+{% endhint %}
 
 
 ### Git Repo URL
@@ -46,10 +46,10 @@ You can find this URL by clicking on the **Code** button available on your repos
 
 ![Figure 3: Getting Repo URL](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/repo-url.jpg)
 
-:::info
+{% hint style="info" %}
 * Copy the HTTPS/SSH portion of the URL too
 * Make sure you've added your [Dockerfile](https://docs.docker.com/engine/reference/builder/) in the repo
-:::
+{% endhint %}
 
 
 ### Exclude specific file/folder in this repo
@@ -58,11 +58,11 @@ Not all repository changes are worth triggering a new [CI build](../deploying-ap
 
 ![Figure 4: Sample Exclusion Rule](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/sample1.jpg)
 
-In other words, if a given commit contains changes only in file(s) present in your exclusion rule, the commit won't show up while selecting the [Git material](../../reference/glossary#material), which means it will not be eligible for build. However, if a given commit contains changes in other files too (along with the excluded file), the commit won't be excluded and it will definitely show up in the list of commits.
+In other words, if a given commit contains changes only in file(s) present in your exclusion rule, the commit won't show up while selecting the [Git material](../../reference/glossary.md#material), which means it will not be eligible for build. However, if a given commit contains changes in other files too (along with the excluded file), the commit won't be excluded and it will definitely show up in the list of commits.
 
 ![Figure 5: Excludes commits made to README.md](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/git-material/excluded-commit.jpg)
 
-Devtron allows you to create either an exclusion rule, an inclusion rule, or a combination of both. In case of multiple files or folders, you can list them in new lines.
+Devtron allows you to create either an exclusion rule, an inclusion rule, or a combination of both. In case of multiple files or folders, you can list them in new lines. 
 
 To exclude a path, use **!** as the prefix, e.g. `!path/to/file` <br />
 To include a path, don't use any prefix, e.g. `path/to/file`
@@ -92,7 +92,7 @@ Since file paths can be long, Devtron supports regex too for writing the paths. 
 
 #### How to view excluded commits?
 
-As we saw earlier in fig. 4 and 5, commits containing the changes of only `README.md` file were not displayed, since the file was in the exclusion list.
+As we saw earlier in fig. 4 and 5, commits containing the changes of only `README.md` file were not displayed, since the file was in the exclusion list. 
 
 However, Devtron gives you the option to view the excluded commits too. There's a döner menu at the top-right (beside the `Search by commit hash` search bar).
 
@@ -122,15 +122,15 @@ This checkbox is optional and is used for pulling [git submodules](https://git-s
 
 ## Multi Repo Application
 
-As discussed earlier, Devtron also supports multiple git repositories in a single application. To add multiple repositories, click **Add Git Repository** and repeat all the steps as mentioned in [Single Repo Application](#single-repo-application). However, ensure that the clone directory paths are unique for each repo.
+As discussed earlier, Devtron also supports multiple git repositories in a single application. To add multiple repositories, click **Add Git Repository** and repeat all the steps as mentioned in [Single Repo Application](#single-repo-application). However, ensure that the clone directory paths are unique for each repo. 
 
 Repeat the process for every new git repository you add. The clone directory path is used by Devtron to assign a directory to each of your Git repositories. Devtron will clone your code at those locations and those paths can be referenced in the Docker file to create a Docker image of the application.
 
 Whenever a change is pushed to any of the configured repositories, CI will be triggered and a new Docker image file will be built (based on the latest commits of the configured repositories). Next, the image will be pushed to the container registry you configured in Devtron.
 
-:::info
+{% hint style="info" %}
 Even if you add multiple repositories, only one image will be created based on the Dockerfile as shown in the [docker build config](docker-build-configuration.md)
-:::
+{% endhint %}
 
 ### Why do you need Multi-Git support?
 

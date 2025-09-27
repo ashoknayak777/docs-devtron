@@ -1,7 +1,7 @@
 # GitHub Pull Request Updater
 
 ## Introduction
-The **GitHub Pull Request Updater** plugin automatically adds pipeline status and deployment information as comments on your GitHub pull requests. Every time your Devtron CI pipeline runs, you get instant visibility onto the specific pull request on GitHub. This seamless integration eliminates the need to switch between multiple tools or platforms to track your deployment. Development teams also save time by avoiding manual status updates and reducing the back-and-forth communication about deployment states.
+The **GitHub Pull Request Updater** plugin automatically adds pipeline status and deployment information as comments on your GitHub pull requests. Every time your Devtron CI pipeline runs, you get instant visibility onto the specific pull request on GitHub. This seamless integration eliminates the need to switch between multiple tools or platforms to track your deployment. Development teams also save time by avoiding manual status updates and reducing the back-and-forth communication about deployment states. 
 
 ### Prerequisites
 Before integrating the **GitHub Pull Request Updater** plugin, ensure you have a GitHub Personal Access Token (PAT) with appropriate permissions to access your GitHub repository.
@@ -15,9 +15,9 @@ Before integrating the **GitHub Pull Request Updater** plugin, ensure you have a
 4. Click **New Workflow** and navigate to the **Build and Deploy from Source Code**.
 5. Fill the required fields in the **Create build pipeline** window and navigate to the **Post-build stage**.
 
-:::warning
+{% hint style="warning" %}
 If you have already configured workflow, edit the build pipeline, and navigate to **Post-build stage**.
-:::
+{% endhint %}
 
 6. Under 'TASKS', click the **+ Add task** button.
 7. Click the **GitHub Pull Request Updater** plugin.
