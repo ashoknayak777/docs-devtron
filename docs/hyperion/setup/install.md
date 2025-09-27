@@ -5,13 +5,13 @@
 Before you begin, install [Helm3](https://helm.sh/docs/intro/install/)
 
 {% tabs %}
-{% tab title="Install with default configurations" %}
+<TabItem label="Install with default configurations" value="Install with default configurations">
 ```bash
 helm repo add devtron https://helm.devtron.ai
 helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd --set installer.mode=hyperion
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 For those countries/users where Github is blocked, you can download the [Hyperion Helm chart](https://s3-ap-southeast-1.amazonaws.com/devtron.ai/devtron-operator-latest.tgz)
 

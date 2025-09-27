@@ -297,7 +297,7 @@ You can configure blob storage with one of the following:
 {% tabs %}
 
 
-{% tab title="MinIO storage" %}
+<TabItem label="MinIO storage" value="MinIO storage">
 
 This configuration will use MinIO for storing logs and cache.
 
@@ -311,9 +311,9 @@ helm upgrade devtron devtron/devtron-operator \
 --set minio.enabled=true
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="AWS S3 Bucket" %}
+<TabItem label="AWS S3 Bucket" value="AWS S3 Bucket">
 This configuration will use AWS S3 bucket for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#aws-specific) page.
 
 *  **Configure using S3 IAM policy:**
@@ -367,9 +367,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="Azure Blob Storage" %}
+<TabItem label="Azure Blob Storage" value="Azure Blob Storage">
 This configuration will use Azure Blob Storage for storing build logs and cache.
 Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#azure-specific) page.
 
@@ -385,9 +385,9 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="Google Cloud Storage" %}
+<TabItem label="Google Cloud Storage" value="Google Cloud Storage">
 This configuration will use Google Cloud Storage for storing build logs and cache.
 Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](../setup/install/installation-configuration.md#google-cloud-storage-specific) page.
 
@@ -403,8 +403,8 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 --set configs.DEFAULT_BUILD_LOGS_BUCKET: log-bucket
 ```
 
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 #### 22. Rollout is showing error - <string>:111: attempt to index a non-table object(nil) with key 'stableRS' stack traceback: <string>:111: in main chunk [G]: ?
 

@@ -115,7 +115,7 @@ helm repo update devtron
 ### 2.2 Choose an Installation Option
 
 {% tabs %}
-{% tab title="Devtron in Full Mode" %}
+<TabItem label="Devtron in Full Mode" value="Devtron in Full Mode">
 * To install Devtron with all core enterprise features **except ArgoCD**:
 
 ```bash
@@ -127,9 +127,9 @@ helm install devtron devtron/devtron-enterprise --create-namespace --namespace d
 ```bash
 helm install devtron devtron/devtron-enterprise --create-namespace --namespace devtroncd --set devtron.argo-cd.enabled=true
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Devtron without integrations (only Dashboard)" %}
+<TabItem label="Devtron without integrations (only Dashboard)" value="Devtron without integrations (only Dashboard)">
 To install only the Devtron Dashboard (without CI/CD, ArgoCD, Security, Notification, or Monitoring):
 
 ```bash
@@ -137,13 +137,13 @@ helm install devtron devtron/devtron-enterprise --create-namespace --namespace d
 --set devtron.installer.modules={} --set devtron.security.enabled=false  \
 --set devtron.notifier.enabled=false  --set devtron.security.trivy.enabled=false --set devtron.monitoring.grafana.enabled=false
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 ### 2.3 Obtain the Dashboard URL
 
 {% tabs %}
-{% tab title="For EKS/AKS/GKE" %}
+<TabItem label="For EKS/AKS/GKE" value="For EKS/AKS/GKE">
 Run the following command to get the Dashboard URL:
 
 ```bash
@@ -151,9 +151,9 @@ kubectl get svc -n devtroncd devtron-service -o jsonpath='{.status.loadBalancer.
 ```
 
 You can access your Devtron Dashboard using the LoadBalancer URL displayed in the output.
-{% endtab %}
+</TabItem>
 
-{% tab title="MicroK8s/Kind/K3s" %}
+<TabItem label="MicroK8s/Kind/K3s" value="MicroK8s/Kind/K3s">
 #### Accessing the Dashboard locally (MicroK8s/Kind/K3s)
 
 To obtain the Dashboard URL when MicroK8s/Kind/K3s running locally, run the following command to port-forward the devtron service to port `8000`
@@ -191,9 +191,9 @@ kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
 The Dashboard URL will be `http://127.0.0.1:8000` on your local machine.
-{% endtab %}
+</TabItem>
 
-{% tab title="Minikube" %}
+<TabItem label="Minikube" value="Minikube">
 To access the dashboard on Minikube cluster, run the following command:
 
 ```bash
@@ -201,9 +201,9 @@ minikube service devtron-service --namespace devtroncd
 ```
 
 This will directly open the dashboard URL on your browser
-{% endtab %}
+</TabItem>
 
-{% tab title="Cloud VMs" %}
+<TabItem label="Cloud VMs" value="Cloud VMs">
 #### Accessing the Dashboard via NodePort
 
 To obtain the dashboard URL on Cloud VMs using NodePort, run the following command to retrieve the port number assigned to the service:
@@ -231,8 +231,8 @@ kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
 The Dashboard URL will be `http://127.0.0.1:8000` on your local machine.
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 After successfully installing Devtron and obtaining the dashboard URL, click **Next** to proceed to [Step 3: Get License Key](freemium.md#step-3-get-license-key)
 

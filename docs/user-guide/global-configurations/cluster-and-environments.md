@@ -547,13 +547,13 @@ We recommend using a self-hosted URL instead of a cloud-hosted URL. Refer to the
 You can get the **Server URL** and **Bearer Token** by running the following command, depending on the cluster provider:
 
 {% tabs %}
-{% tab title="k8s Cluster Providers" %}
+<TabItem label="k8s Cluster Providers" value="k8s Cluster Providers">
 If you are using EKS, AKS, GKE, Kops, Digital Ocean managed Kubernetes, run the following command to generate the server URL and bearer token:
 ```bash
 curl -O https://raw.githubusercontent.com/devtron-labs/utilities/main/kubeconfig-exporter/kubernetes_export_sa.sh && bash kubernetes_export_sa.sh cd-user  devtroncd
 ```
-{% endtab %}
-{% tab title="Microk8s Cluster" %}
+</TabItem>
+<TabItem label="Microk8s Cluster" value="Microk8s Cluster">
 If you are using a **`microk8s cluster`**, run the following command to generate the server URL and bearer token:
 
 ```bash
@@ -561,8 +561,8 @@ curl -O https://raw.githubusercontent.com/devtron-labs/utilities/main/kubeconfig
 kubernetes_export_sa.sh && bash kubernetes_export_sa.sh cd-user \
 devtroncd
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 ![Figure 41: Generating Cluster Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/generate-cluster-credentials.jpg)
 

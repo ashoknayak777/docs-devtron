@@ -68,7 +68,7 @@ Choose one of the options to configure blob storage:
 
 {% tabs %}
 
-{% tab title="MinIO Storage" %}
+<TabItem label="MinIO Storage" value="MinIO Storage">
 
 Run the following command to install Devtron along with MinIO for storing logs and cache.
 
@@ -84,9 +84,9 @@ helm install devtron devtron/devtron-operator \
 ```
 **Note**: Unlike global cloud providers such as AWS S3 Bucket, Azure Blob Storage and Google Cloud Storage, MinIO can be hosted locally also.
 
-{% endtab %}
+</TabItem>
 
-{% tab title="AWS S3 Bucket" %}
+<TabItem label="AWS S3 Bucket" value="AWS S3 Bucket">
 
 Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#aws-specific) page.
 
@@ -150,9 +150,9 @@ helm install devtron devtron/devtron-operator \
 --set configs.BLOB_STORAGE_S3_ENDPOINT=<endpoint>
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="Azure Blob Storage" %}
+<TabItem label="Azure Blob Storage" value="Azure Blob Storage">
 
 Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#azure-specific) page.
 
@@ -173,9 +173,9 @@ helm install devtron devtron/devtron-operator \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="Google Cloud Storage" %}
+<TabItem label="Google Cloud Storage" value="Google Cloud Storage">
 
 Refer to the `Google Cloud specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#google-cloud-storage-specific) page.
 
@@ -195,8 +195,8 @@ helm install devtron devtron/devtron-operator \
 --set configs.DEFAULT_BUILD_LOGS_BUCKET=log-bucket
 ```
 
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 ---
 

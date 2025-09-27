@@ -12,7 +12,7 @@ Install [Helm3](https://helm.sh/docs/intro/install/).
 
 
 {% tabs %}
-{% tab title="Install with default configurations" %}
+<TabItem label="Install with default configurations" value="Install with default configurations">
 This installation will use Minio for storing build logs and cache. 
 
 ```bash
@@ -23,9 +23,9 @@ helm repo update devtron
 helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd \
 --set installer.modules={cicd}
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Install with AWS S3 Buckets" %}
+<TabItem label="Install with AWS S3 Buckets" value="Install with AWS S3 Buckets">
 This installation will use AWS s3 buckets for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#storage-for-logs-and-cache) page.
 
 ```bash
@@ -39,9 +39,9 @@ helm install devtron devtron/devtron-operator --create-namespace --namespace dev
 --set configs.DEFAULT_BUILD_LOGS_BUCKET=demo-s3-bucket \
 --set configs.DEFAULT_CD_LOGS_BUCKET_REGION=us-east-1
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Install with Azure Blob Storage" %}
+<TabItem label="Install with Azure Blob Storage" value="Install with Azure Blob Storage">
 This installation will use Azure Blob Storage for storing build logs and cache.
 Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#storage-for-logs-and-cache) page.
 
@@ -56,19 +56,19 @@ helm install devtron devtron/devtron-operator --create-namespace --namespace dev
 --set configs.AZURE_BLOB_CONTAINER_CI_LOG=ci-log-container \
 --set configs.AZURE_BLOB_CONTAINER_CI_CACHE=ci-cache-container
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 For those countries/users where Github is blocked, you can use Gitee as the installation source.
 
 {% tabs %}
-{% tab title="Install with Gitee" %}
+<TabItem label="Install with Gitee" value="Install with Gitee">
 ```bash
 helm repo add devtron https://helm.devtron.ai
 helm install devtron devtron/devtron-operator --create-namespace --namespace devtroncd --set installer.source=gitee
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 If you are planning to use Devtron for `production deployments`, please refer to our recommended overrides for [Devtron Installation](override-default-devtron-installation-configs.md).
 
@@ -92,7 +92,7 @@ $ helm install devtron . --create-namespace --namespace devtroncd \
 --set installer.modules={cicd}
 
 ```
-{% tab title="Install with AWS S3 Buckets" %}
+<TabItem label="Install with AWS S3 Buckets" value="Install with AWS S3 Buckets">
 This installation will use AWS s3 buckets for storing build logs and cache. Refer to the `AWS specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#storage-for-logs-and-cache) page.
 ```bash
 $ git clone [https://github.com/devtron-labs/devtron.git](https://github.com/devtron-labs/devtron.git)
@@ -108,7 +108,7 @@ $ helm install devtron . --create-namespace --namespace devtroncd \
 --set configs.DEFAULT_CD_LOGS_BUCKET_REGION=us-east-1
 ```
 
-{% tab title="Install with Azure Blob Storage" %}
+<TabItem label="Install with Azure Blob Storage" value="Install with Azure Blob Storage">
 This installation will use Azure Blob Storage for storing build logs and cache.
 Refer to the `Azure specific` parameters on the [Storage for Logs and Cache](./installation-configuration.md#storage-for-logs-and-cache) page.
 

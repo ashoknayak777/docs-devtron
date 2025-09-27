@@ -205,7 +205,7 @@ This would download the tar file of the devtron-operator chart, Make sure to rep
 
 {% tabs %}
 
-{% tab title="Without Integrations" %}
+<TabItem label="Without Integrations" value="Without Integrations">
 
 Use the below command to install Devtron without any integrations:
 
@@ -219,9 +219,9 @@ Use the below command to install Devtron without any integrations:
     helm install devtron <devtron-chart-file> -n devtroncd --set global.containerRegistry="$TARGET_REGISTRY" --set global.imagePullSecrets[0].name=devtron-imagepull --set-string components.devtron.customOverrides.IS_AIR_GAP_ENVIRONMENT=true
     ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD" %}
+<TabItem label="With CI/CD" value="With CI/CD">
 
 Use the below command to install Devtron with only the CI/CD module
 
@@ -235,9 +235,9 @@ Use the below command to install Devtron with only the CI/CD module
     helm install devtron <devtron-chart-file> -n devtroncd --set installer.modules={cicd} --set global.containerRegistry="$TARGET_REGISTRY" --set global.imagePullSecrets[0].name=devtron-imagepull --set-string components.devtron.customOverrides.IS_AIR_GAP_ENVIRONMENT=true
     ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD and GitOps (Argo CD)" %}
+<TabItem label="With CI/CD and GitOps (Argo CD)" value="With CI/CD and GitOps (Argo CD)">
 
 Use the below command to install Devtron with the CI/CD module and Argo CD
 
@@ -251,9 +251,9 @@ Use the below command to install Devtron with the CI/CD module and Argo CD
     helm install devtron <devtron-chart-file> --create-namespace -n devtroncd --set installer.modules={cicd} --set argo-cd.enabled=true --set global.containerRegistry="$TARGET_REGISTRY" --set argo-cd.global.image.repository="${TARGET_REGISTRY}/argocd" --set argo-cd.redis.image.repository="${TARGET_REGISTRY}/redis" --set global.imagePullSecrets[0].name=devtron-imagepull --set-string components.devtron.customOverrides.IS_AIR_GAP_ENVIRONMENT=true
     ```
 
-{% endtab %}
+</TabItem>
 
-{% endtabs %}
+</Tabs>
 
 ---
 

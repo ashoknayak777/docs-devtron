@@ -112,7 +112,7 @@ Deploy the chart in the cluster whose workloads you wish to troubleshoot. You ma
 
 {% tabs %}
 
-{% tab title="OpenAI" %}
+<TabItem label="OpenAI" value="OpenAI">
 ```yaml
 additionalEnvVars:
   - name: MODEL
@@ -125,9 +125,9 @@ additionalEnvVars:
   - name: CLUSTER_NAME
     value: document-nonprod  ## Name of the target cluster (optional)
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Google" %}
+<TabItem label="Google" value="Google">
 ```yaml
 additionalEnvVars:
   - name: MODEL
@@ -140,9 +140,9 @@ additionalEnvVars:
   - name: CLUSTER_NAME
     value: document-nonprod  ## Name of the target cluster (optional)
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Azure OpenAI" %}
+<TabItem label="Azure OpenAI" value="Azure OpenAI">
 ```yaml
 additionalEnvVars:
   - name: MODEL
@@ -161,9 +161,9 @@ additionalEnvVars:
   - name: CLUSTER_NAME
     value: document-nonprod  ## Name of the target cluster (optional)
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="AWS Bedrock" %}
+<TabItem label="AWS Bedrock" value="AWS Bedrock">
 ```yaml
 additionalEnvVars:
   - name: MODEL
@@ -183,9 +183,9 @@ additionalEnvVars:
   - name: CLUSTER_NAME
     value: document-nonprod  ## Name of the target cluster (optional)
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="Anthropic" %}
+<TabItem label="Anthropic" value="Anthropic">
 ```yaml
 additionalEnvVars:
   - name: MODEL
@@ -198,9 +198,9 @@ additionalEnvVars:
   - name: CLUSTER_NAME
     value: document-nonprod  ## Name of the target cluster (optional)
 ```
-{% endtab %}
+</TabItem>
 
-{% endtabs %}
+</Tabs>
 
 ![Figure 3: Chart Configuration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/chart-config-v4.jpg)
 

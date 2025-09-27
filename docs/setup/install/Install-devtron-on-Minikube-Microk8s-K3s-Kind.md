@@ -44,7 +44,7 @@ Ensure you meet [all the requirements](../getting-started/getting-started.md#pre
 
 {% tabs %}
 
-{% tab title="Without Integrations" %}
+<TabItem label="Without Integrations" value="Without Integrations">
 
 **Minikube/MicroK8s/Kind Cluster**
 
@@ -70,9 +70,9 @@ helm install devtron devtron/devtron-operator \
 --set components.devtron.service.type=NodePort
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD" %}
+<TabItem label="With CI/CD" value="With CI/CD">
 
 **Minikube/MicroK8s/Kind Cluster**
 
@@ -100,9 +100,9 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd}
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD and GitOps (Argo CD)" %}
+<TabItem label="With CI/CD and GitOps (Argo CD)" value="With CI/CD and GitOps (Argo CD)">
 
 **Minikube/MicroK8s/Kind Cluster**
 
@@ -132,14 +132,14 @@ helm install devtron devtron/devtron-operator \
 --set argo-cd.enabled=true
 ```
 
-{% endtab %}
+</TabItem>
 
-{% endtabs %}
+</Tabs>
  
 ### Access Devtron Dashboard
 
 {% tabs %}
-{% tab title="Minikube" %}
+<TabItem label="Minikube" value="Minikube">
 
 To access the dashboard on **Minikube** cluster, run the following command:
 
@@ -149,8 +149,8 @@ minikube service devtron-service --namespace devtroncd
 
 This will directly open the dashboard URL in your browser
 
-{% endtab %}
-{% tab title="MicroK8s/Kind/K3s Cluster" %}
+</TabItem>
+<TabItem label="MicroK8s/Kind/K3s Cluster" value="MicroK8s/Kind/K3s Cluster">
 
 To access the dashboard on **MicroK8s/Kind/K3s** cluster, run the following command to port-forward the devtron service to port 8000:
 
@@ -160,8 +160,8 @@ kubectl -n devtroncd port-forward service/devtron-service 8000:80
 
 After port-forwarding, you can access the dashboard at this URL: `http://127.0.0.1:8000`
 
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 ### Get Admin Credentials
 
@@ -212,7 +212,7 @@ source .bashrc
 
 {% tabs %}
 
-{% tab title="Without Integrations" %}
+<TabItem label="Without Integrations" value="Without Integrations">
 
 ```bash
 helm install devtron devtron/devtron-operator \
@@ -220,9 +220,9 @@ helm install devtron devtron/devtron-operator \
 --set components.devtron.service.type=NodePort 
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD" %}
+<TabItem label="With CI/CD" value="With CI/CD">
 
 ```bash
 helm install devtron devtron/devtron-operator \
@@ -231,9 +231,9 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd}
 ```
 
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD and GitOps (Argo CD)" %}
+<TabItem label="With CI/CD and GitOps (Argo CD)" value="With CI/CD and GitOps (Argo CD)">
 
 ```bash
 helm install devtron devtron/devtron-operator \
@@ -243,9 +243,9 @@ helm install devtron devtron/devtron-operator \
 --set argo-cd.enabled=true
 ```
 
-{% endtab %}
+</TabItem>
 
-{% endtabs %}
+</Tabs>
 
 ### Get devtron-service Port Number
 

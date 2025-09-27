@@ -60,8 +60,8 @@ helm repo update devtron
 
 ## Step 2: Choose an Installation Option
 
-{% tabs %}
-{% tab title="Minimal (Dashboard Only)" %}
+<Tabs>
+<TabItem label="Minimal (Dashboard Only)" value="Minimal (Dashboard Only)">
 
 ### Install Devtron without Integrations
 
@@ -71,9 +71,9 @@ After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run
 helm install devtron devtron/devtron-operator \
 --create-namespace --namespace devtroncd
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD" %}
+<TabItem label="With CI/CD" value="With CI/CD">
 
 ### Install Devtron with CI/CD
 
@@ -84,9 +84,9 @@ helm install devtron devtron/devtron-operator \
 --create-namespace --namespace devtroncd \
 --set installer.modules={cicd}
 ```
-{% endtab %}
+</TabItem>
 
-{% tab title="With CI/CD + GitOps (Argo CD)" %}
+<TabItem label="With CI/CD + GitOps (Argo CD)" value="With CI/CD + GitOps (Argo CD)">
 
 ### Install Devtron with CI/CD + GitOps (ArgoCD)
 
@@ -98,8 +98,8 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd} \
 --set argo-cd.enabled=true
 ```
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 :::info How much time does it take for installation?
 It usually takes 5–15 minutes to spin up all Devtron microservices (depending on your installation option).
@@ -117,8 +117,8 @@ kubectl -n devtroncd get installers installer-devtron \
 
 ## Step 3: Obtain the Dashboard URL
 
-{% tabs %}
-{% tab title="For EKS/AKS/GKE" %}
+<Tabs>
+<TabItem label="For EKS/AKS/GKE" value="For EKS/AKS/GKE">
 To access the dashboard on EKS, AKS, or GKE cluster, run the following command:
 
 ```bash
@@ -126,9 +126,9 @@ kubectl get svc -n devtroncd devtron-service -o jsonpath='{.status.loadBalancer.
 ```
 
 <mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">: The LoadBalancer URL displayed in the output</mark>
-{% endtab %}
+</TabItem>
 
-{% tab title="MicroK8s/Kind/K3s (and Cloud VMs)" %}
+<TabItem label="MicroK8s/Kind/K3s (and Cloud VMs)" value="MicroK8s/Kind/K3s (and Cloud VMs)">
 You have a few different ways to open the Devtron dashboard on local or VM-based clusters.\
 Pick the method that works best for you: quick port-forward, persistent NodePort, or remote access via kubeconfig.
 
@@ -175,9 +175,9 @@ kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
 <mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">:</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`http://127.0.0.1:8000`</mark>
-{% endtab %}
+</TabItem>
 
-{% tab title="Minikube" %}
+<TabItem label="Minikube" value="Minikube">
 Run the following command:
 
 ```bash
@@ -185,8 +185,8 @@ minikube service devtron-service --namespace devtroncd
 ```
 
 <mark style="color:purple;">**Dashboard URL**</mark><mark style="color:purple;">: (Directly opens in your browser)</mark>
-{% endtab %}
-{% endtabs %}
+</TabItem>
+</Tabs>
 
 ---
 
