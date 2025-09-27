@@ -91,10 +91,10 @@ Suppose you want to update only one field (e.g., `"username" = "johndoe"`) in a 
 
 If you know the fields you wish to change, simply enter the changed key-value fields along with indentation (if any).
 
-{% embed url="https://www.youtube.com/watch?v=phhv1_2eStI" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=phhv1_2eStI" title="" frameborder="0" allowfullscreen></iframe>
 
 <!--* Or you may copy-paste the entire config, and change the fields.
-    {% embed url="https://www.youtube.com/watch?v=4eHM5ZsNoCg" %}
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=4eHM5ZsNoCg" title="" frameborder="0" allowfullscreen></iframe>
 -->
 
 ### Using Replace Strategy 
@@ -157,11 +157,11 @@ You cannot delete a ConfigMap or Secret in **Base Configurations** if you have u
 
 ### Replace Strategy
 
-{% embed url="https://www.youtube.com/watch?v=lSoj8wwOej0" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=lSoj8wwOej0" title="" frameborder="0" allowfullscreen></iframe>
 
 ### Override ConfigMaps and Secrets using GUI
 
-{% embed url="https://www.youtube.com/watch?v=UOTKLVuSkDg" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=UOTKLVuSkDg" title="" frameborder="0" allowfullscreen></iframe>
 
 ---
 

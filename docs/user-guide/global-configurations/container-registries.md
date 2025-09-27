@@ -64,7 +64,7 @@ Upon enabling this option, Devtron can use your OCI registry as the chart source
 
 #### Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=9imC5MMz9gs" caption="Pulling Charts from an OCI Registry to Devtron" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9imC5MMz9gs" title="Pulling Charts from an OCI Registry to Devtron" frameborder="0" allowfullscreen></iframe>
 
 #### Steps
 

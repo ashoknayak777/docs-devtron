@@ -61,7 +61,7 @@ Only [Super-Admins](user-access.md) can create and manage SES configurations.
 
 #### Email (SES) Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=WRP1CBHW6Ic" caption="Enabling Email Notifications for Devtron CI/CD" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=WRP1CBHW6Ic" title="Enabling Email Notifications for Devtron CI/CD" frameborder="0" allowfullscreen></iframe>
 
 #### Steps
 
@@ -104,7 +104,7 @@ SMTP credentials (username and password) from your SMTP provider.
 
 #### Email SMTP Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=CkPG7wC59hY" caption="Enabling Email Notifications for Devtron CI/CD" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=CkPG7wC59hY" title="Enabling Email Notifications for Devtron CI/CD" frameborder="0" allowfullscreen></iframe>
 
 #### Steps
 
@@ -144,7 +144,7 @@ A Slack account, a Slack channel, and an [Incoming Webhook URL](https://api.slac
 
 #### Slack Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=ve1eGqslBqc" caption="Enabling Slack Notifications for Devtron CI/CD" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ve1eGqslBqc" title="Enabling Slack Notifications for Devtron CI/CD" frameborder="0" allowfullscreen></iframe>
 
 #### Steps
 
@@ -179,7 +179,7 @@ A Webhook URL to receive notifications (e.g., Microsoft Teams Webhook URL, Disco
 
 #### Webhook Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=8RQ2dezrVvY" caption="Enabling Notifications for Devtron CI/CD using Webhook" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=8RQ2dezrVvY" title="Enabling Notifications for Devtron CI/CD using Webhook" frameborder="0" allowfullscreen></iframe>
 
 #### Steps
 

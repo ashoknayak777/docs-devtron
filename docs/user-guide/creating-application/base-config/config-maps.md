@@ -42,7 +42,7 @@ Follow the instructions below to create a Kubernetes ConfigMap:
    * **GUI mode** – User-friendly interface. Click **+Add** button and enter the **Key** and **Value** fields without quotes. 
    * **YAML mode** – Raw YAML for entering key-value pairs in the format **`key: value`**. Boolean and numeric values must be wrapped in double quotes.
 
-   {% embed url="https://www.youtube.com/watch?v=QfJqX6KM2lU" %}
+   <iframe width="560" height="315" src="https://www.youtube.com/watch?v=QfJqX6KM2lU" title="" frameborder="0" allowfullscreen></iframe>
 
 5. You may [perform a dry run](#perform-a-dry-run) before clicking **Save**.
 
@@ -159,4 +159,4 @@ You may delete a ConfigMap if not in use anymore. Once a ConfigMap is deleted, i
 
 Any changes made to the protected base configurations (Deployment Template, ConfigMap, Secret) will require approval if an [approval policy](../../../user-guide/global-configurations/approval-policy.md) is enforced.
 
-{% embed url="https://www.youtube.com/watch?v=gY9LKJSVS-g" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=gY9LKJSVS-g" title="" frameborder="0" allowfullscreen></iframe>

@@ -12,7 +12,7 @@ Only super admin users can set up SSO providers.
 
 ## Tutorial
 
-{% embed url="https://www.youtube.com/watch?v=i-7IWkg6Ipk" caption="Okta App Setup" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=i-7IWkg6Ipk" title="Okta App Setup" frameborder="0" allowfullscreen></iframe>
 
 ## Steps on Okta Admin Console
 

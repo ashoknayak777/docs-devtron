@@ -2,7 +2,7 @@
 
 **Please configure Global Configurations before moving ahead with App Configuration**
 
-{% embed url="https://www.youtube.com/watch?v=9u-pKiWV-tM" caption="" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=9u-pKiWV-tM" title="" frameborder="0" allowfullscreen></iframe>
 
 **Parts of Documentation**
 

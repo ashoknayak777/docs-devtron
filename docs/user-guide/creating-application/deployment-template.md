@@ -121,7 +121,7 @@ There are two ways you can customize the Basic GUI, use any one of the following
 2. Using APIs (explained below)
 :::
 
-{% embed url="https://www.youtube.com/watch?v=09VP1I-WvUs" caption="JSON-driven Deployment Schema" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allowfullscreen></iframe>
 
 You can pass a custom JSON (deployment schema) of your choice through the following API. You may need to run the API with the `POST` method if you are doing it for the first time.
 

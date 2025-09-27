@@ -50,6 +50,6 @@ Before you start creating an application, we recommend to provide basic informat
 
 <!-- You can also refer our YouTube video provided here.
 
-{% embed url="https://www.youtube.com/watch?v=4VFjrjtieMI" caption="" %} -->
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4VFjrjtieMI" title="" frameborder="0" allowfullscreen></iframe> -->
 
 

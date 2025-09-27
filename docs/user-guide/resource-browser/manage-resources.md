@@ -14,7 +14,7 @@ You can use the searchbox to browse the resources.
 
 Moreover, you can use filters that allow you to quickly filter your workload as per labels, field selectors, or [CEL expression](https://kubernetes.io/docs/reference/using-api/cel/) as shown below.
 
-{% embed url="https://www.youtube.com/watch?v=E-V-ELCXtfs" caption="Filtering Workloads in Devtron" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=E-V-ELCXtfs" title="Filtering Workloads in Devtron" frameborder="0" allowfullscreen></iframe>
 
 ### Resource Kinds
 

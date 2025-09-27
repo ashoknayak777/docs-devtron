@@ -124,7 +124,7 @@ To configure platform specific configurations:
 
 6. The platform specific configuration will be available below the runner configuration.
 
-{% embed url="https://www.youtube.com/watch?v=5nFJfai125U" caption="Platform Specific Configurations" %}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=5nFJfai125U" title="Platform Specific Configurations" frameborder="0" allowfullscreen></iframe>
 
 ---
 
