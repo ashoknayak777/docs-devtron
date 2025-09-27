@@ -114,7 +114,7 @@ helm repo update devtron
 
 ### 2.2 Choose an Installation Option
 
-{% tabs %}
+<Tabs>
 <TabItem label="Devtron in Full Mode" value="Devtron in Full Mode">
 * To install Devtron with all core enterprise features **except ArgoCD**:
 
@@ -142,7 +142,7 @@ helm install devtron devtron/devtron-enterprise --create-namespace --namespace d
 
 ### 2.3 Obtain the Dashboard URL
 
-{% tabs %}
+<Tabs>
 <TabItem label="For EKS/AKS/GKE" value="For EKS/AKS/GKE">
 Run the following command to get the Dashboard URL:
 

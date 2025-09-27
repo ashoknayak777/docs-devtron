@@ -124,7 +124,7 @@ In case, if you do not configure the Blob Storage, then:
 You can configure Blob Storage with one of the following Blob Storage providers given below:
 
 **Note**: You can also use the respective following command to switch to another Blob Storage provider. As an example, If you are using MinIO Storage and want to switch to Azure Blob Storage, use the command provided on the Azure Blob Storage tab to switch.
-{% tabs %}
+<Tabs>
 
 
 <TabItem label="MinIO Storage" value="MinIO Storage">

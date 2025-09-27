@@ -11,7 +11,7 @@ Install [Helm3](https://helm.sh/docs/intro/install/).
 3. Install Devtron
 
 
-{% tabs %}
+<Tabs>
 <TabItem label="Install with default configurations" value="Install with default configurations">
 This installation will use Minio for storing build logs and cache. 
 
@@ -61,7 +61,7 @@ helm install devtron devtron/devtron-operator --create-namespace --namespace dev
 
 For those countries/users where Github is blocked, you can use Gitee as the installation source.
 
-{% tabs %}
+<Tabs>
 <TabItem label="Install with Gitee" value="Install with Gitee">
 ```bash
 helm repo add devtron https://helm.devtron.ai

@@ -203,7 +203,7 @@ This would download the tar file of the devtron-operator chart, Make sure to rep
 
 ### Installation Commands
 
-{% tabs %}
+<Tabs>
 
 <TabItem label="Without Integrations" value="Without Integrations">
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Devtron can be installed on any [Kubernetes cluster](../getting-started/getting-started.md#create-a-kubernetes-cluster) of your choice.
+Devtron can be installed on any [Kubernetes cluster](../getting-started/initial-setup.md#create-a-kubernetes-cluster) of your choice.
 
 The following tiers are available in Devtron:
 

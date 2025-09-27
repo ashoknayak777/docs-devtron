@@ -294,7 +294,7 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 
 
 You can configure blob storage with one of the following:
-{% tabs %}
+<Tabs>
 
 
 <TabItem label="MinIO storage" value="MinIO storage">

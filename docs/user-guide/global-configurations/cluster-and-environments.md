@@ -546,7 +546,7 @@ We recommend using a self-hosted URL instead of a cloud-hosted URL. Refer to the
 
 You can get the **Server URL** and **Bearer Token** by running the following command, depending on the cluster provider:
 
-{% tabs %}
+<Tabs>
 <TabItem label="k8s Cluster Providers" value="k8s Cluster Providers">
 If you are using EKS, AKS, GKE, Kops, Digital Ocean managed Kubernetes, run the following command to generate the server URL and bearer token:
 ```bash

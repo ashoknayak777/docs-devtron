@@ -110,7 +110,7 @@ Deploy the chart in the cluster whose workloads you wish to troubleshoot. You ma
 
 5. In the `values.yaml` file editor, add the appropriate `additionalEnvVars` block based on your LLM provider. Use the tabs below to find the configuration snippet of some well-known LLM providers.
 
-{% tabs %}
+<Tabs>
 
 <TabItem label="OpenAI" value="OpenAI">
 ```yaml

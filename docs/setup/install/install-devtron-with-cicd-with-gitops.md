@@ -65,7 +65,7 @@ In case, if you do not configure the Blob Storage, then:
 
 Choose one of the options to configure blob storage:
 
-{% tabs %}
+<Tabs>
 
 <TabItem label="MinIO Storage" value="MinIO Storage">
 

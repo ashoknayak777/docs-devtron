@@ -2,7 +2,7 @@
 
 To install Helm3, please check [Installing Helm3](https://helm.sh/docs/intro/install/)
 
-{% tabs %}
+<Tabs>
 <TabItem label="Upgrade with default configurations" value="Upgrade with default configurations">
 This installation will use Minio for storing build logs and cache.
 

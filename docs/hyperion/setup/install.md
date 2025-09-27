@@ -4,7 +4,7 @@
 
 Before you begin, install [Helm3](https://helm.sh/docs/intro/install/)
 
-{% tabs %}
+<Tabs>
 <TabItem label="Install with default configurations" value="Install with default configurations">
 ```bash
 helm repo add devtron https://helm.devtron.ai

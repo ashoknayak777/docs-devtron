@@ -42,7 +42,7 @@ Ensure you meet [all the requirements](../getting-started/getting-started.md#pre
 
 ### Installation Commands
 
-{% tabs %}
+<Tabs>
 
 <TabItem label="Without Integrations" value="Without Integrations">
 
@@ -138,7 +138,7 @@ helm install devtron devtron/devtron-operator \
  
 ### Access Devtron Dashboard
 
-{% tabs %}
+<Tabs>
 <TabItem label="Minikube" value="Minikube">
 
 To access the dashboard on **Minikube** cluster, run the following command:
@@ -210,7 +210,7 @@ source .bashrc
 
 ### Installation Commands
 
-{% tabs %}
+<Tabs>
 
 <TabItem label="Without Integrations" value="Without Integrations">
 
