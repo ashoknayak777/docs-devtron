@@ -5,7 +5,7 @@ The Overview page provides a centralized view of an application’s details with
 The **Overview** page contains three main sections:
 *	[**About**](#about): Contains application metadata such as name, description, project, creator, tags, and connected code source. It also includes options to manage tags and [Configure PVCs](#configure-persistentvolumeclaim-pvc).
 *	[**Environments**](#environments): Displays all environments where the application is deployed, along with their current status and quick access to associated workflows.
-*	[**Dependencies**](#dependencies): Shows which Devtron applications this application depends on, and which other Devtron applications depend on it, thus helping visualize microservices dependency.
+*	[**Dependencies**](#dependencies-): Shows which Devtron applications this application depends on, and which other Devtron applications depend on it, thus helping visualize microservices dependency.
 
 ![Figure 1: Overview Tab](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/overview-latest-1.jpg)
 

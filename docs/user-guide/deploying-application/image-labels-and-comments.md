@@ -11,7 +11,7 @@ For example:
 
 ![Figure 1: Labels and Comments](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/tag-comment/tag-and-comment.jpg)
 
-Such labels and comments will be visible only within Devtron, and will not propagate to your [container registry](../../reference/glossary.md#containeroci-registry) (say Docker Hub), unlike custom [image tag pattern](../creating-application/workflow/ci-pipeline.md#custom-image-tag-pattern). You may use it to simplify the management and [selection of container images](./triggering-cd.md#deploying-approved-image) for deployment.
+Such labels and comments will be visible only within Devtron, and will not propagate to your [container registry](../../reference/glossary.md#containeroci-registry) (say Docker Hub), unlike custom image tag pattern. You may use it to simplify the management and [selection of container images](./triggering-cd.md#deploying-approved-image) for deployment.
 
 :::caution 
 Tagging labels and comments are supported only for images in workflows with at least one production deployment pipeline. In Devtron, you can go to **Global Configurations** → **Clusters & Environments** to identify a production environment by checking the 'Prod' label.
@@ -34,7 +34,7 @@ You can add labels and comments from the following pages:
 
 :::caution 
 You can add multiple labels to an image. but each label can be used only once 'per image, per application'. You may use it in an image of other application though. <br />
-Refer [Deleting Labels](#deleting-labels-and-comments) if you commit a mistake while adding labels.
+Refer [Deleting Labels](#deleting-labels--comments) if you commit a mistake while adding labels.
 :::
  
 ### From Build & Deploy

@@ -153,7 +153,7 @@ Users can see a dropdown list of your suggested tags while creating a new app or
 
 ### Impact on Deployment Pipelines
 
-If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tags)).
+If an existing application belongs to a project where mandatory tags are enabled along with deployment restrictions, if the user does not provide values for the mandatory tags, they cannot deploy that app to the intended environment (check step 9 of [adding tags](#adding-tag-policy)).
 
 The same is true for auto-triggering deployment pipelines. A new image available after the build stage will not auto-trigger the deployment pipeline due to the missing mandatory tags.
 

@@ -3,8 +3,8 @@
 
 This chart deploys Job & CronJob. A Job is a controller object that represents a finite task and CronJob is used to schedule the creation of Jobs.
 
- * [Job](#id-1.-job)
- * [CronJob](#id-2.-cronjob)
+ * [Job](#1-job)
+ * [CronJob](#2-cronjob)
 
 ![Figure 1: Choosing 'Job & CronJob' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/job-cronjob.jpg)
 

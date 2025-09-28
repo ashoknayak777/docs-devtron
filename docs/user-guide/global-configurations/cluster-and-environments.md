@@ -9,7 +9,7 @@ Devtron allows you to connect and manage your existing Kubernetes clusters by ad
 
 You can add any of the following cluster types:
 * [Kubernetes Cluster](#add-kubernetes-cluster) - If you have access to the cluster, use this option.
-* [Isolated Cluster](#add-isolated-cluster) - For air-gapped use-cases, use this option.
+* [Isolated Cluster](#add-isolated-cluster-) - For air-gapped use-cases, use this option.
 
 ---
 
@@ -56,7 +56,7 @@ Refer to [Get Cluster Credentials](#get-cluster-credentials) to learn the proces
   ![Figure 4: Enter Cluster Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/cluster-env-add-cluster-cred.jpg)
 
 2. Complete the remaining steps (optional): 
-  * [Choose Connection Type](#choose-method-of-connection)
+  * [Choose Connection Type](#choose-method-of-connection-)
   * [Use Secure TLS Connection](#use-secure-tls-connection)
   * [Configure Prometheus](#configure-prometheus-enable-application-metrics)
   * [Assign a Category](#assign-category-to-a-cluster)
@@ -82,7 +82,7 @@ In case you prefer to add clusters using kubeconfig, follow these steps:
   ![Figure 7: Clicking Save](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/cluster-env-kubeconfig-save-cluster.jpg)
 
 4. Click the saved cluster, and complete the remaining steps (optional): 
-  * [Choose Connection Type](#choose-method-of-connection)
+  * [Choose Connection Type](#choose-method-of-connection-)
   * [Use Secure TLS Connection](#use-secure-tls-connection)
   * [Configure Prometheus](#configure-prometheus-enable-application-metrics)
   * [Assign a category](#assign-category-to-a-cluster)
@@ -388,7 +388,7 @@ When you deploy to an isolated environment, Devtron automatically packages appli
 Users need to have super-admin permission to add an environment to a cluster.
 :::
 
-After adding a cluster to Devtron ([Kubernetes Cluster](#add-kubernetes-cluster), [Isolated Cluster](#add-isolated-cluster), and a newly created cluster), initially it has no environments.
+After adding a cluster to Devtron ([Kubernetes Cluster](#add-kubernetes-cluster), [Isolated Cluster](#add-isolated-cluster-), and a newly created cluster), initially it has no environments.
 
 1. Select the Cluster to which you want to add an Environment and click **Add Environment**. Alternatively you can also hover over the cluster and click `+` icon (Add Environment icon); an **Add Environment** modal window appears.
 

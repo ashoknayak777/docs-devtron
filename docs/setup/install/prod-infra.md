@@ -85,7 +85,7 @@ helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f res
 
 To ensure CI workloads run exclusively on the dedicated CI nodes, you need to specify the taints and labels to the node. Then, for the CI build pods, you can add the tolerations and node selectors in the `devtron-custom-cm` (ConfigMap) of `devtroncd` namespace using [these keys](./installation-configuration.md#configure-overrides). These will automatically propagate to CI workloads when they are created.
 
-If you are following our [Cloud-Specific Setup Guidelines](#id-2.-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
+If you are following our [Cloud-Specific Setup Guidelines](#2-cloud-specific-setup-guidelines) then set the below values for the keys in `devtron-custom-cm`:
 
 
 ``` bash

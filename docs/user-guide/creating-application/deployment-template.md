@@ -117,7 +117,7 @@ This is useful in scenarios where:
 
 :::info 
 There are two ways you can customize the Basic GUI, use any one of the following:
-1. From [Deployment Charts](../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts) section
+1. From [Deployment Charts](../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts-) section
 2. Using APIs (explained below)
 :::
 

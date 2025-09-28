@@ -64,7 +64,7 @@ The **Build & Deploy** tab of your application group enables you to trigger the 
 Adding [image labels](./deploying-application/image-labels-and-comments.md) can help you quickly locate the container image from the list of images shown in Application Groups.
 :::
 
-3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci.md#passing-build-parameters) in application groups before triggering the build.
+3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci.md#passing-build-parameters-) in application groups before triggering the build.
 
 :::info Note
 Passing build parameters feature is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
@@ -220,7 +220,7 @@ This feature aims at helping the user clone existing CI/CD pipelines for new tar
 |----------------------------------|--------------------------------------------------------------|
 | [**CI Workflow**](../user-guide/creating-application/workflow/ci-pipeline.md)                  | Clones the source’s workflow CI as it is                    |
 | [**Pipeline Configuration**](../user-guide/creating-application/workflow/pre-post-tasks.md)       | Cloned, including Pre-CD and Post-CD scripts/plugins        |
-| [**Environment Configuration**](../user-guide/creating-application/README.md#app-configuration)    | Cloned, including Deployment Template (DT), ConfigMap (CM), and Secret |
+| [**Environment Configuration**](../user-guide/creating-application/environment-overrides.md)    | Cloned, including Deployment Template (DT), ConfigMap (CM), and Secret |
 | [**GitOps Configuration**](../user-guide/creating-application/gitops-config.md)         | Not cloned              |
 | [**Environment Policies**](../user-guide/creating-application/environment-overrides.md)         | Cloned if at pipeline level,ignored if global              |
 | [**CD Filter**](../user-guide/global-configurations/filter-condition.md)                    | Not cloned (handled globally)                              |

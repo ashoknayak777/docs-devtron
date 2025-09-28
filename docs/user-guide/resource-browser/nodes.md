@@ -120,17 +120,13 @@ Taints are `key:value` pairs associated with effect. After you add taints to nod
 
   ![Figure 6b: Tainting a Node](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/edit-taints-db.jpg)
 
-* Enter the `key:value` pairs and select the [taint effect](#taint-effects) from the drop-down list.
+* Enter the `key:value` pairs and select the taint effect from the drop-down list. [Click here](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts) to read about taint effects.
 
   ![Figure 6c: Adding Taints](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/taint-dialog-db.jpg)
 
 * Click **Save**.
 
 You can also add more taints using **+ Add taint button**, or delete the existing taint by using the delete icon. 
-
-:::info Additional Reference
-[Click here](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/#concepts) to read about taint effects.
-:::
 
 ---
 

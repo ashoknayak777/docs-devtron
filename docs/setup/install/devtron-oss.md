@@ -12,8 +12,8 @@ The table below shows the installation options available in Devtron OSS. Further
 | Installation Option                                                                                      | What Is Included                                            | When To Use                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | [**Minimal (without integrations)**](devtron-oss.md#install-devtron-without-integrations)     | Dashboard + Resource Browser + Core operator configurations | A unified view of Helm apps, FluxCD apps, ArgoCD apps, and their related K8s resources |
-| [**With CI/CD**](devtron-oss.md#install-devtron-with-ci-cd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
-| [**With CI/CD + GitOps (Argo CD)**](devtron-oss.md#install-devtron-with-ci-cd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
+| [**With CI/CD**](devtron-oss.md#install-devtron-with-cicd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
+| [**With CI/CD + GitOps (Argo CD)**](devtron-oss.md#install-devtron-with-cicd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
 
 :::success Not Sure What To Choose?
 Begin with the **Minimal** version. You can always install CI/CD and GitOps integrations later from [Devtron Stack Manager](../../user-guide/integrations/).

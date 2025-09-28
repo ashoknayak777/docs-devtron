@@ -2,7 +2,7 @@
 
 ## Introduction
 
-While [container registries](../../reference/glossary.md#container-registry) are typically used for storing [images](../../reference/glossary.md#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary.md#helm-charts-packages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
+While [container registries](../../reference/glossary.md#containeroci-registry) are typically used for storing [images](../../reference/glossary.md#image) built by the CI Pipeline, an OCI registry can store container images as well as other artifacts such as [helm charts](../../reference/glossary.md#helm-chartspackages). In other words, all container registries are OCI registries, but not all OCI registries are container registries.
 
 You can configure a container registry using any registry provider of your choice. It allows you to build, deploy, and manage your container images or charts with easy-to-use UI. 
 
@@ -35,7 +35,7 @@ You can configure a container registry using any registry provider of your choic
     | **Authentication Type** | The credential input fields may differ depending on the registry provider, check [Registry Providers](#supported-registry-providers) |
     | **Push container images** | Tick this checkbox if you wish to use the repository to push container images. This comes selected by default and you may untick it if you don't intend to push container images after a CI build. If you wish to to use the same repository to pull container images too, read [Registry Credential Access](#registry-credential-access). |
     | **Push helm packages** | Tick this checkbox if you wish to [push helm charts to your OCI registry](#push-helm-packages) |
-    | **Use as chart repository** | Tick this checkbox if you want Devtron to [pull helm charts from your registry and display them on chart store](#use-as-chart-repository). Also, you will have to provide a list of repositories (present within your registry) for Devtron to successfully pull the helm charts. |
+    | **Use as chart repository** | Tick this checkbox if you want Devtron to pull helm charts from your registry and display them on chart store. Also, you will have to provide a list of repositories (present within your registry) for Devtron to successfully pull the helm charts. |
     | **Set as default registry** | Tick this checkbox to set your registry as the default registry hub for your images or artifacts |
 
 6. Click **Save**.
@@ -44,9 +44,9 @@ You can configure a container registry using any registry provider of your choic
 
 Upon enabling this option, Devtron supports the pushing of helm charts to your OCI registry.  
 
-This is possible through [isolated clusters](../global-configurations/cluster-and-environments.md#add-isolated-cluster) that facilitate air-gapped deployments. In other words, it generates a helm package that you can use to deploy your application in air-gapped clusters.
+This is possible through [isolated clusters](../global-configurations/cluster-and-environments.md#add-isolated-cluster-) that facilitate air-gapped deployments. In other words, it generates a helm package that you can use to deploy your application in air-gapped clusters.
 
-If you have [configured your CD pipeline](../creating-application/workflow/cd-pipeline.md#deploying-to-an-isolated-environment) to push the helm package to your OCI registry, you can view the pushed helm package in your registry as shown below:
+If you have [configured your CD pipeline](../creating-application/workflow/cd-pipeline.md) to push the helm package to your OCI registry, you can view the pushed helm package in your registry as shown below:
 
 ![Figure 3a: OCI Registry Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/use-cases/oci-push/pushed-artifacts.jpg)
 

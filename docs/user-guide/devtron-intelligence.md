@@ -45,7 +45,7 @@ There are 2 methods to create a secret in Devtron, follow the one you prefer:
 
 2. Go to Devtron's **Resource Browser** → (Select Cluster) → **Create Resource**
 
-3. Paste the following YAML and replace the key with your base64-encoded OpenAI key. Also, enter the namespace where the [AI Agent chart](#id-3.-deploy-ai-agent-chart) will be installed:
+3. Paste the following YAML and replace the key with your base64-encoded OpenAI key. Also, enter the namespace where the [AI Agent chart](#3-deploy-ai-agent-chart) will be installed:
 
 ```yaml
 apiVersion: v1
@@ -105,7 +105,7 @@ Deploy the chart in the cluster whose workloads you wish to troubleshoot. You ma
 
     * **Project**: Select your project
 
-    * **Deploy to environment**: Choose the target environment (should be associated with the same namespace used while creating secret key in [Step 2](#id-2.-create-secret-in-devtron))
+    * **Deploy to environment**: Choose the target environment (should be associated with the same namespace used while creating secret key in [Step 2](#2-create-secret-in-devtron))
 
     * **Chart Version**: Select the latest chart version.
 

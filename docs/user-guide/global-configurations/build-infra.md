@@ -20,7 +20,7 @@ From the left sidebar, go to **Global Configurations** → **Build Infra**.
 
 ![Figure 1: Global Configurations - Build Infra](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/build-infra/gc-build-infra.jpg)
 
-Under **Profiles** tab, you will see the [Global Profile](#global-profile) and a list of [Custom Profiles](#creating-custom-profile) (if they exist). Setting up profiles makes it easier for you to manage the build infra configurations, ensuring its reusability in the long term.
+Under **Profiles** tab, you will see the [Global Profile](#global-profile) and a list of [Custom Profiles](#creating-custom-profile-) (if they exist). Setting up profiles makes it easier for you to manage the build infra configurations, ensuring its reusability in the long term.
 
 ### Global Profile
 

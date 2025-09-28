@@ -93,10 +93,10 @@ Below are the Git providers supported in Devtron for storing configuration files
 
 * [GitHub](#github)
 * [GitLab](#gitlab)
-* [AWS Code Commit](#aws-code-commit)
+* [AWS Code Commit](#aws-code-commit-)
 * [Azure](#azure)
 * [Bitbucket](#bitbucket)
-* [Other GitOps](#other-gitops)
+* [Other GitOps](#other-gitops-)
 
 ### GitHub
 

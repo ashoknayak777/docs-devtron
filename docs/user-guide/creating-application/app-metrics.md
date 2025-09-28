@@ -90,7 +90,7 @@ Ensure [GitOps](../global-configurations/gitops.md) is configured before deployi
 :::caution Common Pitfall: Prometheus Deployment Timeout due to Failed CRDs
 While deploying `kube-prometheus-stack` chart, the deployment status may show as **Timed out**, and some CustomResourceDefinitions (CRDs) may appear as **Failed**.
 
-To solve it, refer [Troubleshoot Issues](#common-pitfall-prometheus-deployment-timeout-due-to-failed-crds)
+To solve it, refer [Troubleshoot Issues](#troubleshoot-issues)
 
 :::
 

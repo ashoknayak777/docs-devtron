@@ -72,7 +72,7 @@ A Custom Resource Definition (CRD) allows you to add custom resource types to Ku
 
 ### CronJob
 
-CronJob is used to create Jobs on a repeating schedule. It is commonly used for running periodic tasks with no manual intervention. In Devtron, you can view a list of cronjobs by going to Resource Browser → (choose a cluster) → Workloads → CronJob. [Read More...](../user-guide/creating-application/base-config/deployment-template/job-and-cronjob.md#id-2.-cronjob)
+CronJob is used to create Jobs on a repeating schedule. It is commonly used for running periodic tasks with no manual intervention. In Devtron, you can view a list of cronjobs by going to Resource Browser → (choose a cluster) → Workloads → CronJob. [Read More...](../user-guide/creating-application/base-config/deployment-template/job-and-cronjob.md#2-cronjob)
 
 ### Deployment Charts
 
@@ -180,7 +180,7 @@ In Devtron, you can view the manifest of K8s resources under `App Details` and a
 
 ### Material
 
-In Git Repo, the source code of your application in a given commit is referred as material. The option to choose a Git material will be available in the CI stage under the `Build & Deploy` tab of your application. [Read More...](../user-guide/jobs/triggering-job.md#triggering-job-pipeline)
+In Git Repo, the source code of your application in a given commit is referred as material. The option to choose a Git material will be available in the CI stage under the `Build & Deploy` tab of your application. [Read More...](../user-guide/jobs/triggering-job.md)
 
 ### Namespace
 

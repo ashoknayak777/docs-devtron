@@ -20,14 +20,14 @@ This guide covers how to:
 
 * [Perform a Dry Run](#perform-a-dry-run)
 
-* [Extra: Edit a Protected Deployment Configuration](#edit-a-protected-deployment-template) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* [Extra: Edit a Protected Deployment Configuration](#edit-a-protected-deployment-template-) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
 ---
 
 ## Select a Deployment Chart Type
 
 :::caution Who Can Perform This Action?
-Users need to have [Admin role](../../../user-guide/global-configurations/user-access.md#role-based-access-levels) or above to select a chart.
+Users need to have [Admin role](../../../user-guide/global-configurations/user-access.md#user-roles-and-permissions) or above to select a chart.
 
 :::
 
@@ -147,7 +147,7 @@ This is useful in scenarios where:
 
 There are two ways you can customize the GUI, use any one of the following:
 
-1. From [Deployment Charts](../../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts) section
+1. From [Deployment Charts](../../global-configurations/deployment-charts.md#editing-gui-schema-of-deployment-charts-) section
 
 2. Using APIs (explained below)
 

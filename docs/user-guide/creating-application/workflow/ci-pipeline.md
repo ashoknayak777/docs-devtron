@@ -7,15 +7,15 @@ Refer the [User permissions](../../global-configurations/authorization/user-acce
 
 A workflow can be created in one of the following ways:
 
-* [Build from Source Code](#id-1.-build-from-source-code)
+* [Build from Source Code](#1-build-from-source-code)
 
-* [Linked Build Pipeline](#id-2.-linked-build-pipeline)
+* [Linked Build Pipeline](#2-linked-build-pipeline)
 
-* [Deploy Image from External Service](#id-3.-deploy-image-from-external-service)
+* [Deploy Image from External Service](#3-deploy-image-from-external-service)
 
-* [Sync with Environment](#id-4.-sync-with-environment) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* [Sync with Environment](#4-sync-with-environment-) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
-* [Create a Job](#id-5.-create-a-job)
+* [Create a Job](#5-create-a-job)
 
 Each method has different use-cases that can be tailored according to the needs of the organization.
 
@@ -135,7 +135,7 @@ This document focuses on configuring the Build Stage. If you want to set up Pre-
    | Field Name| Required/Optional | Description|
    | :---| :--- |:---|
    | `TRIGGER BUILD PIPELINE`| Required| <p>The build execution may be set to:</p><ul><li><code>Automatically</code>(default): Build is triggered automatically as the Git source code changes.</li><li><code>Manually</code>: Build is triggered manually.</li></ul>|
-   | DOCKER LAYER CACHING | Optional | Use this to [enable/disable caching of docker image layers](#docker-layer-caching) from your build pipeline |
+   | DOCKER LAYER CACHING | Optional | Use this to [enable/disable caching of docker image layers](#docker-layer-caching-) from your build pipeline |
    | `Pipeline Name`| Required| Devtron automatically assigns a unique name for the pipeline, if you wish, you can edit it here.|
    | `Scan for Vulnerabilities` | Optional| <p><strong>Prerequisite</strong>: Install either [Clair](../../integrations/vulnerability-scanning/clair.md) or [Trivy](../../integrations/vulnerability-scanning/trivy.md).</p><ul><li>In the **Build** Stage, enable the **Scan for vulnerabilities** toggle.</li><li>Refer: [Vulnerability Scanning](../../integrations/vulnerability-scanning/README.md) to learn more.</li></ul>|
    | `Override Options`| Optional| Allows overriding configurations from earlier stages like CRI configuration, target platform configuration, etc.|
@@ -289,7 +289,7 @@ To configure the Webhook in External CI, follow the steps below.
 
    ![Figure 28: Getting sample cURL request and selecting metadata](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/deploy-image-select-metadata.jpg)
 
-4. Copy the Sample cURL request and integrate it into your External CI (Jenkins) pipeline along with the API token and tag for Docker Image. Refer to [Integrate with External Sources](#integrate-with-external-sources-jenkins) to know more.
+4. Copy the Sample cURL request and integrate it into your External CI (Jenkins) pipeline along with the API token and tag for Docker Image. Refer to [Integrate with External Sources](#integrate-with-external-sources---jenkins) to know more.
 
    ![Figure 29: Copying Sample cURL request](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/deploy-image-copy-curl-cmd.jpg)
 
@@ -677,7 +677,7 @@ The **Change Image Source** feature in Devtron lets you update the container ima
 
     ![Figure 70b: Selecting Workflow Template](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/change-image-source-select-workflow.jpg)
 
-2. Select the intended workflow template and enter the details required as per the selected workflow template. Refer [Types of workflow templates](#ci-pipeline) to learn more.
+2. Select the intended workflow template and enter the details required as per the selected workflow template. Refer [Types of workflow templates](../workflow/README.md#types-of-ci-pipelines) to learn more.
 
 ### Docker Layer Caching [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
@@ -698,11 +698,11 @@ If a PVC with cache is attached, it will not be impacted by disabling cache. Onl
 
 There are 3 places from where you can control the cache behavior:
 
-* [Orchestrator ConfigMap (Global Settings)](#id-1.-orchestrator-configmap-global-settings)
+* [Orchestrator ConfigMap (Global Settings)](#1-orchestrator-configmap-global-settings)
 
-* [Editing Pipeline](#id-2.-editing-pipeline)
+* [Editing Pipeline](#2-editing-pipeline)
 
-* [During Trigger](#id-3.-during-trigger)
+* [During Trigger](#3-during-trigger)
 
 #### 1. Orchestrator ConfigMap (Global Settings)
 

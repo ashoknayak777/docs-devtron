@@ -15,6 +15,6 @@ Under **INTEGRATIONS**, select **Discover**.
  
 ![Discover integrations](https://devtron-public-asset.s3.us-east-2.amazonaws.com/integrations/devtron-integrations.jpg)
  
-> Although the integrations are installed separately, they cannot be upgraded separately. Integrations update happens automatically with [Devtron upgrade](#upgrade-devtron).
+> Although the integrations are installed separately, they cannot be upgraded separately. Integrations update happens automatically with [Devtron upgrade](../../setup/upgrade-devtron.md).
  
 

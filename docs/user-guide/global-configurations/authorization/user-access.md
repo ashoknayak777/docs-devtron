@@ -72,7 +72,7 @@ The **Permission Groups** drop-down box allows you to select from a list of perm
 
 You can select one or more permission groups, and the user will automatically inherit all the permissions to the projects and resources defined for those groups. Once you select permission group(s), assigning direct permissions can be skipped (unless you wish to grant additional permissions). 
 
-You can also make users [Active/Inactive](#making-users-activeinactive) at permission group-level.
+You can also make users [Active/Inactive](#making-users-activeinactive-) at permission group-level.
 
 :::info What happens when a user has direct permissions as well as permissions inherited from a group?
 If you assign a permission group as well as direct permissions, the user will have the combined permissions of both.
@@ -132,7 +132,7 @@ The role-based access for Devtron Apps are as follows:
 
    * **Deployment Approver**: You can approve the deployment requests for the selected applications and environments.
 
-You also have the provision of granting Access Manager role to a user. Refer [Access Manager](#access-manager) to know more.
+You also have the provision of granting Access Manager role to a user. Refer [Access Manager](#access-manager-) to know more.
 
 #### Roles and Scopes
 

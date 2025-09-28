@@ -45,7 +45,7 @@ Further resources in the cluster are grouped under the following categories:
 User needs to be an [admin of the Kubernetes resource](../global-configurations/authorization/user-access.md#kubernetes-resources-permissions) to edit its manifest. The fields/paths locked by superadmins in the manifest cannot be edited by non-superadmins.
 :::
 
-You can edit the [manifest](../../reference/glossary.md#manifest) of a Kubernetes object. This can be for fixing errors, scaling resources, or changing configuration. Moreover, you can edit a manifest [using YAML](#edit-using-yaml) or [GUI](#edit-using-gui), as per your convenience.
+You can edit the [manifest](../../reference/glossary.md#manifest) of a Kubernetes object. This can be for fixing errors, scaling resources, or changing configuration. Moreover, you can edit a manifest [using YAML](#edit-using-yaml) or [GUI](#edit-using-gui-), as per your convenience.
 
 ### Edit using YAML
 

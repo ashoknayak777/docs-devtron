@@ -11,7 +11,7 @@ If you have built such a [workflow](../creating-application/workflow/README.md),
 Therefore, Devtron offers a feature called 'Image Promotion Policy' that allows you to directly promote an image to the target environment, bypassing the intermediate stages in your workflow including:
 
 * [Pre-CD](../creating-application/workflow/cd-pipeline.md#pre-deployment-stage) and [Post-CD](../creating-application/workflow/cd-pipeline.md#post-deployment-stage) of the intermediate stages
-* All [approval nodes](../creating-application/workflow/cd-pipeline.md#manual-approval-for-deployment) of the intermediate stages
+* All [approval nodes](../global-configurations/approval-policy.md) of the intermediate stages
 
 ![Figure 2: Promoting an Image](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/image-promotion/image-promotion-visual.jpg)
 
@@ -201,7 +201,7 @@ Here, you can promote images to the target environment(s).
 The image's promotion to the target environment now depends on the approval settings in the image promotion policy. If the super-admin has enforced an approval process, the image requires the necessary number of approvals before promotion. On the other hand, if the super-admin has not enforced approval, the image will be automatically promoted since there is no request phase involved.
 
 :::caution 
-In case you have configured [SES or SMTP on Devtron](../global-configurations/manage-notification.md#notification-configurations), an email notification will be sent to the approvers.
+In case you have configured [SES or SMTP on Devtron](../global-configurations/manage-notification.md#configurations), an email notification will be sent to the approvers.
 :::
 
 7. If approval(s) are required for image promotion, you may check the status of your request in the `Approval Pending` tab.
@@ -244,7 +244,7 @@ Users with build & deploy permission or above for the application and environmen
 
 If a user has approved the promotion request for an image, they may or may not be able to deploy depending upon the [policy configuration](#creating-an-image-promotion-policy).
 
-However, a promoted image does not automatically qualify as a deployable image. It must fulfill all configured requirements ([Image Deployment Approval](../creating-application/workflow/cd-pipeline.md#manual-approval-for-deployment), [Filter Conditions](./filter-condition.md), etc.) of the target environment for it to be deployed.
+However, a promoted image does not automatically qualify as a deployable image. It must fulfill all configured requirements ([Image Deployment Approval](../global-configurations/approval-policy.md), [Filter Conditions](./filter-condition.md), etc.) of the target environment for it to be deployed.
 
 In the **Build & Deploy** tab of your application, click **Select Image** for the CD pipeline, and choose your promoted image for deployment.
 
