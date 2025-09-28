@@ -33,7 +33,7 @@ Refer the [User permissions](../../../global-configurations/authorization/user-a
 
     ![Figure 4: ConfigMap Data Type](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/configmap-data-type.jpg)
 
-5. After selecting the data type, you can choose how to mount the data of your ConfigMap. Devtron allows you to mount ConfigMap Data in the following ways: <br /><br /> **Mount data as** - Select how you want to mount the ConfigMap:
+5. After selecting the data type, you can choose how to mount the data of your ConfigMap. Devtron allows you to mount ConfigMap Data in the following ways: <br/><br/> **Mount data as** - Select how you want to mount the ConfigMap:
 
     * [**Environment Variable**](#mount-data-as-environment-variables) – Select this option if you want to inject Environment Variables in pods using ConfigMap.
 
@@ -49,7 +49,7 @@ This will pass your ConfigMap data into your Job pod as environment variables, t
 
 #### For Kubernetes ConfigMap
 
-If you have selected Data type as `Kubernetes ConfigMap` and mount data as `Environment Variable`, then you also need to enter the required data (key-value pairs) in the **Data** field<br /><br />Enter data in:
+If you have selected Data type as `Kubernetes ConfigMap` and mount data as `Environment Variable`, then you also need to enter the required data (key-value pairs) in the **Data** field<br/><br/>Enter data in:
 
 * **GUI mode** – User-friendly interface. Click the **+Add** button and enter the **Key** and **Value** fields without quotes. 
 

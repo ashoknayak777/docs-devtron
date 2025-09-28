@@ -56,19 +56,19 @@ To enable deployments through GitOps via FluxCD, you need to enable a specific f
 4. Edit the `dashboard-cm` ConfigMap by clicking **Edit live manifest**.
 
       ![Figure 4: Editing Live Manifest](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/fluxcd/fluxcd-edit-live-manifest.jpg)
-      1. To enable deployments via FluxCD, check if the below entries are present in the ConfigMap (create one if it doesn't exist) and select **Apply changes**.<br />
+      1. To enable deployments via FluxCD, check if the below entries are present in the ConfigMap (create one if it doesn't exist) and select **Apply changes**.<br/>
 
             ```yaml
             FEATURE_FLUX_DEPLOYMENTS_ENABLE: "true"
             ```
 
-      2. To enable migration for external FluxCD applications, check if the below entries are present in the ConfigMap (create one if it doesn't exist) and select **Apply changes**.<br />
+      2. To enable migration for external FluxCD applications, check if the below entries are present in the ConfigMap (create one if it doesn't exist) and select **Apply changes**.<br/>
 
             ```yaml
             FEATURE_LINK_EXTERNAL_FLUX_ENABLE: "true"
             ```
       
-      <br />
+      <br/>
 
       ![Figure 5: Adding Feature Flags](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/fluxcd/fluxcd-add-flags.jpg)
 

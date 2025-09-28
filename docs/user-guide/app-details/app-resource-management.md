@@ -27,7 +27,7 @@ When you choose a Kubernetes resource kind (e.g., pods), you can perform a few a
 
 | **Actions** |**Description**|
 |:------------- |:--------------| 
-| **Logs** | Choose **Logs** when you want to view the logs of running pods (old and new). The logs that you get when you click **Logs** and the logs you get when you go via **Log Analyzer** are the same. <br /> Note: **Logs** are available only for the **Pod** resource kind. | 
+| **Logs** | Choose **Logs** when you want to view the logs of running pods (old and new). The logs that you get when you click **Logs** and the logs you get when you go via **Log Analyzer** are the same. <br/> Note: **Logs** are available only for the **Pod** resource kind. | 
 | **Terminal** | Choose **Terminal** when you want to view logs, debug issues, or execute commands directly. Please note that this terminal is different from the cluster terminal that you get on a node level. | 
 | **Events** | Choose **Events** when you want to view all the activities (create/update/delete) of the selected pod. | 
 | **Manifest** | Choose **Manifest** when you want to view or edit the configuration of the selected pod. | 

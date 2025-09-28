@@ -102,7 +102,7 @@ You can also select from the following conditions before draining a node:
 | --- | --- |
 | Grace Period | Period of time in seconds given to each pod to terminate gracefully. If negative, the default value specified in the pod will be used. |
 | Delete empty directory data | Enabling this field will delete the pods using empty directory data when the node is drained. |
-| Disable eviction (use with caution) | Enabling this field will force drain to use delete, even if eviction is supported. This will bypass checking `PodDisruptionBudgets`.<br />Note: Make sure to use with caution. |
+| Disable eviction (use with caution) | Enabling this field will force drain to use delete, even if eviction is supported. This will bypass checking `PodDisruptionBudgets`.<br/>Note: Make sure to use with caution. |
 | Force drain | Enabling this field will force drain a node even if there are pods that do not declare a controller. |
 | Ignore DaemonSets | Enabling this field will ignore DaemonSet-managed pods. |
 

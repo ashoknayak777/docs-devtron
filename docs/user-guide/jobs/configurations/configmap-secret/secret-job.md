@@ -41,7 +41,7 @@ Refer the [User permissions](../../../global-configurations/authorization/user-a
     
     **Note**: Devtron automatically converts secrets from various data types to Kubernetes Secrets. Regardless of the original data type, once the conversion is complete, the Pods can access the secrets in the same way as native Kubernetes Secrets.
 
-5. After selecting the data type, you can choose how to mount the data of your Secret. Devtron allows you to mount Secret data in the following ways: <br /><br /> **Mount data as** - Select how you want to mount the Secret:
+5. After selecting the data type, you can choose how to mount the data of your Secret. Devtron allows you to mount Secret data in the following ways: <br/><br/> **Mount data as** - Select how you want to mount the Secret:
 
     * [**Environment Variable**](#mount-data-as-environment-variables) – Select this option if you want to inject Secret data(key-value pairs) as Environment Variables in pods using Secret.
 
@@ -57,7 +57,7 @@ This will pass your secret data into your Job pod as environment variables, thus
 
 #### For Kubernetes Secret
 
-If you have selected Data type as `Kubernetes Secret` and mount data as `Environment Variable`, then you also need to enter the required data (key-value pairs) in the **Data** field<br /><br />Enter data in:
+If you have selected Data type as `Kubernetes Secret` and mount data as `Environment Variable`, then you also need to enter the required data (key-value pairs) in the **Data** field<br/><br/>Enter data in:
 
 * **GUI mode** – User-friendly interface. Click the **+Add** button and enter the **Key** and **Value** fields without quotes. 
 
@@ -144,7 +144,7 @@ Enter data in:
 
 #### For Mount Existing Kubernetes Secrets
 
-This option allows you to mount an existing Kubernetes Secret in your job pods as data volumes. A Secret will not be created by the system, so please ensure that the secret with the same name already exists within the namespace. Otherwise, the deployment will fail.<br /><br />If you have selected Data type as `Mount Existing Kubernetes Secrets`, then no data is required as Devtron will fetch the existing Secret data and use it to create a Secret.
+This option allows you to mount an existing Kubernetes Secret in your job pods as data volumes. A Secret will not be created by the system, so please ensure that the secret with the same name already exists within the namespace. Otherwise, the deployment will fail.<br/><br/>If you have selected Data type as `Mount Existing Kubernetes Secrets`, then no data is required as Devtron will fetch the existing Secret data and use it to create a Secret.
 
 ![Figure 15: Mounting Existing Kubernetes Secrets for 'Data Volume'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/secret-mount-existing-data-vol.jpg)
 

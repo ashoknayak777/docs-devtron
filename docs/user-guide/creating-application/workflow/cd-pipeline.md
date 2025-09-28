@@ -36,8 +36,8 @@ This section expects four inputs from you:
 | ----------- | ---------------------------------------------------------- | ------------------------- |
 | Environment | Select the environment where you want to deploy your application | (List of available environments)  |
 | Namespace   | Automatically populated based on the selected environment | Not Applicable                           |
-| Trigger     | When to execute the deployment pipeline                   | **Automatic**: Deployment triggers automatically when a new image completes the previous stage (build pipeline or another deployment pipeline) <br /> **Manual**: Deployment is not initiated automatically. You can trigger deployment with a desired image. |
-| Deployment Approach [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) | How to deploy the application | **Helm**, [GitOps(ArgoCD)](../../integrations/argocd.md) or [Gitops (FluxCD)](../../creating-application/fluxcd.md) <br /> Refer [GitOps](../../global-configurations/gitops.md) to learn more  |
+| Trigger     | When to execute the deployment pipeline                   | **Automatic**: Deployment triggers automatically when a new image completes the previous stage (build pipeline or another deployment pipeline) <br/> **Manual**: Deployment is not initiated automatically. You can trigger deployment with a desired image. |
+| Deployment Approach [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) | How to deploy the application | **Helm**, [GitOps(ArgoCD)](../../integrations/argocd.md) or [Gitops (FluxCD)](../../creating-application/fluxcd.md) <br/> Refer [GitOps](../../global-configurations/gitops.md) to learn more  |
 
 :::caution FluxCD Deployment Failed
  * Make sure that the FluxCD controller is installed in the cluster in which you want to deploy the application. Refer [Enable GitOps Deployments with FluxCD](../../creating-application/fluxcd.md#installing-fluxcd-controller-only-for-deployments) to learn more.

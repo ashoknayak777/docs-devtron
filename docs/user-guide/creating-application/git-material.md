@@ -64,7 +64,7 @@ In other words, if a given commit contains changes only in file(s) present in yo
 
 Devtron allows you to create either an exclusion rule, an inclusion rule, or a combination of both. In case of multiple files or folders, you can list them in new lines. 
 
-To exclude a path, use **!** as the prefix, e.g. `!path/to/file` <br />
+To exclude a path, use **!** as the prefix, e.g. `!path/to/file` <br/>
 To include a path, don't use any prefix, e.g. `path/to/file`
 
 
@@ -73,13 +73,13 @@ To include a path, don't use any prefix, e.g. `path/to/file`
 
 | Sample Values | Description |
 |---|---|
-| `!README.md` | **Exclusion of a single file in root folder:** <br /> Commits containing changes made only in README.md file will not be shown |
-| `!README.md` <br /> `!index.js` | **Exclusion of multiple files in root folder:** <br /> Commits containing changes made only in README.md or/and index.js files will not be shown |
-|  `README.md` | **Inclusion of a single file in root folder:** <br /> Commits containing changes made only in README.md file will be shown. Rest all will be excluded. |
-|  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree:** <br /> Commits containing changes made specifically to code2.py file will not be shown |
-|  `!src/*` | **Exclusion of a single folder and all its files:** <br /> Commits containing changes made specifically to files within src folder will not be shown |
-|  `!README.md` <br /> `index.js` | **Exclusion and inclusion of files:** <br /> Commits containing changes made only in README.md will not be shown, but commits made in index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
-|  `!README.md` <br /> `README.md` | **Exclusion and inclusion of conflicting files:** <br /> If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
+| `!README.md` | **Exclusion of a single file in root folder:** <br/> Commits containing changes made only in README.md file will not be shown |
+| `!README.md` <br/> `!index.js` | **Exclusion of multiple files in root folder:** <br/> Commits containing changes made only in README.md or/and index.js files will not be shown |
+|  `README.md` | **Inclusion of a single file in root folder:** <br/> Commits containing changes made only in README.md file will be shown. Rest all will be excluded. |
+|  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree:** <br/> Commits containing changes made specifically to code2.py file will not be shown |
+|  `!src/*` | **Exclusion of a single folder and all its files:** <br/> Commits containing changes made specifically to files within src folder will not be shown |
+|  `!README.md` <br/> `index.js` | **Exclusion and inclusion of files:** <br/> Commits containing changes made only in README.md will not be shown, but commits made in index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
+|  `!README.md` <br/> `README.md` | **Exclusion and inclusion of conflicting files:** <br/> If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
 
 
 You may use the **Learn how** link (as shown below) to understand the syntax of defining an exclusion or inclusion rule.

@@ -22,10 +22,10 @@ The table below illustrates how Devtron uses scoped variables defined for differ
 | Scope       | Variable | Values                                                                              |
 | :-----------| :--------|:------------------------------------------------------------------------------------|
 | Global      | DB_NAME  |  `central-db`                                                                       |
-| Cluster     | DB_NAME  |  **AWS EKS (Cluster):** `eks-db` <br /> **GKE (Cluster):** `gke-db`                   |
-| Environment | DB_NAME  |  **Dev (Environment):** `dev-db` <br /> **Prod (Environment):** `prod-db`             |
-| Application | DB_NAME  |  **App1 (Application):** `app1-db` <br /> **App2 (Application):** `app2-db`           |
-| Env + App   | DB_NAME  |  **Dev + App1:** `dev-app1-db` <br /> **Prod + App2:** `prod-app2-db`                 | 
+| Cluster     | DB_NAME  |  **AWS EKS (Cluster):** `eks-db` <br/> **GKE (Cluster):** `gke-db`                   |
+| Environment | DB_NAME  |  **Dev (Environment):** `dev-db` <br/> **Prod (Environment):** `prod-db`             |
+| Application | DB_NAME  |  **App1 (Application):** `app1-db` <br/> **App2 (Application):** `app2-db`           |
+| Env + App   | DB_NAME  |  **Dev + App1:** `dev-app1-db` <br/> **Prod + App2:** `prod-app2-db`                 | 
 
 
 ### Precedence of Scoped Variables

@@ -104,9 +104,9 @@ After creating a profile, the next step is to apply the profile to the specific 
 
         ![Figure 9: Applying Profile to Specific Deployment Templates](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/lock-config-specific-apps.gif)
 
-     2. **By match criteria**: This option allows you to use a combination of filters to create criteria. Lock deployment configuration profile will only apply to the deployment templates of the applications fulfilling your criteria (including existing and future ones).<br />(Optional) You may also write a note for your other team members to understand the intent and context of your policy.
+     2. **By match criteria**: This option allows you to use a combination of filters to create criteria. Lock deployment configuration profile will only apply to the deployment templates of the applications fulfilling your criteria (including existing and future ones).<br/>(Optional) You may also write a note for your other team members to understand the intent and context of your policy.
 
-        Let's understand how to use **By match criteria** with the below example:<br /><br />
+        Let's understand how to use **By match criteria** with the below example:<br/><br/>
 
         Suppose you want to apply a lock deployment configuration profile to all applications in a particular project. You can achieve this by selecting that project as the match criteria.
 
@@ -136,7 +136,7 @@ Let's look at a scenario where a user (non-super-admin) tries to edit the same i
 ### Editing Locked Configurations
 
 :::info GUI/YAML Mode
-<span><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/mode1.jpg" alt="GUI or YAML Mode" /></span> <br />
+<span><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/mode1.jpg" alt="GUI or YAML Mode" /></span> <br/>
 If you select 'GUI' mode instead of 'YAML', all the keys meant for GUI mode will be displayed in the GUI even if some are locked. While users can modify these keys, they cannot save the changes made to the locked keys.
 :::
 

@@ -41,9 +41,9 @@ Provide the information in the following fields:
 
 | Dropdown | Description |
 | --- | --- |
-| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br />Note: If you want to select more than one project, then click `Add row`. |
-| **Environment** | Select the specific environment or all environments from the drop-down list.<br />Note: If you select `All environments` option, then a user gets access to all the current environments including any new environment which gets associated with the application later. |
-| **Application**  | Select the specific applications or all applications from the drop-down list corresponding to your selected Environments.<br />Note: If you select `All applications` option, then a user gets access to all the current applications including any new application which gets associated with the project later.  |
+| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br/>Note: If you want to select more than one project, then click `Add row`. |
+| **Environment** | Select the specific environment or all environments from the drop-down list.<br/>Note: If you select `All environments` option, then a user gets access to all the current environments including any new environment which gets associated with the application later. |
+| **Application**  | Select the specific applications or all applications from the drop-down list corresponding to your selected Environments.<br/>Note: If you select `All applications` option, then a user gets access to all the current applications including any new application which gets associated with the project later.  |
 | **Role**  | Select one of the [roles](#devtron-apps-permissions) to which you want to give permission to the user:<ul><li>`View only`</li></ul> <ul><li>`Build and Deploy`</li></ul><ul><li>`Admin`</li></ul><ul><li>`Manager`</li></ul>  |
 
 You can add multiple rows for `Devtron Apps` permission.
@@ -60,9 +60,9 @@ Provide the information in the following fields:
 
 | Dropdown | Description |
 | --- | --- |
-| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br />Note: If you want to select more than one project, then click `Add row`. |
-| **Environment or cluster/namespace** | Select the specific environment or `all existing environments in default cluster` from the drop-down list.<br />Note: If you select `all existing + future environments in default cluster` option, then a user gets access to all the current environments including any new environment which gets associated with the application later. |
-| **Application**  | Select the specific application or all applications from the drop-down list corresponding to your selected Environments.<br />Note: If `All applications` option is selected, then a user gets access to all the current applications including any new application which gets associated with the project later.  |
+| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br/>Note: If you want to select more than one project, then click `Add row`. |
+| **Environment or cluster/namespace** | Select the specific environment or `all existing environments in default cluster` from the drop-down list.<br/>Note: If you select `all existing + future environments in default cluster` option, then a user gets access to all the current environments including any new environment which gets associated with the application later. |
+| **Application**  | Select the specific application or all applications from the drop-down list corresponding to your selected Environments.<br/>Note: If `All applications` option is selected, then a user gets access to all the current applications including any new application which gets associated with the project later.  |
 | **Role**  | Select one of the [roles](#helm-apps-permissions) to which you want to give permission to the user:<ul><li>`View only`</li></ul> <ul><li>`View & Edit`</li></ul><ul><li>`Admin`</li></ul>  |
 
 You can add multiple rows for Helm app permission.
@@ -79,10 +79,10 @@ Provide the information in the following fields:
 
 | Dropdown | Description |
 | --- | --- |
-| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br />Note: If you want to select more than one project, then click `Add row`. |
-| **Job Name** | Select the specific job name or all jobs from the drop-down list.<br />Note: If you select `All Jobs` option, then the user gets access to all the current jobs including any new job which gets associated with the project later.  |
-| **Workflow**  | Select the specific workflow or all workflows from the drop-down list.<br />Note: If you select `All Workflows` option, then the user gets access to all the current workflows including any new workflow which gets associated with the project later. |
-| **Environment** | Select the specific environment or all environments from the drop-down list.<br />Note: If you select `All environments` option, then the user gets access to all the current environments including any new environment which gets associated with the project later. |
+| **Project** | Select a project from the drop-down list to which you want to give permission to the group. You can select only one project at a time.<br/>Note: If you want to select more than one project, then click `Add row`. |
+| **Job Name** | Select the specific job name or all jobs from the drop-down list.<br/>Note: If you select `All Jobs` option, then the user gets access to all the current jobs including any new job which gets associated with the project later.  |
+| **Workflow**  | Select the specific workflow or all workflows from the drop-down list.<br/>Note: If you select `All Workflows` option, then the user gets access to all the current workflows including any new workflow which gets associated with the project later. |
+| **Environment** | Select the specific environment or all environments from the drop-down list.<br/>Note: If you select `All environments` option, then the user gets access to all the current environments including any new environment which gets associated with the project later. |
 | **Role**  | Select one of the roles to which you want to give permission to the user:<ul><li>`View only`</li></ul> <ul><li>`Run job`</li></ul><ul><li>`Admin`</li></ul>  |
 
 You can add multiple rows for `Jobs` permission.
@@ -109,7 +109,7 @@ On the `Kubernetes resource permission`, provide the information in the followin
 
 | Dropdown | Description |
 | --- | --- |
-| **Cluster** | Select a cluster from the drop-down list to which you want to give permission to the user. You can select only one cluster at a time.<br />Note: To add another cluster, then click `Add another`. |
+| **Cluster** | Select a cluster from the drop-down list to which you want to give permission to the user. You can select only one cluster at a time.<br/>Note: To add another cluster, then click `Add another`. |
 | **Namespace** | Select the namespace from the drop-down list. |
 | **API Group**  | Select the specific API group or `All API groups` from the drop-down list corresponding to the K8s resource.  |
  **Kind**  | Select the kind or `All kind` from the drop-down list corresponding to the K8s resource.  |

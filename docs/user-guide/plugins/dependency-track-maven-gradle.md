@@ -12,7 +12,7 @@ Configuring `Dependency Track for NodeJs` in pre-build or post build task create
 
 * Enter a relevant name in the `Task name` field. It is a mandatory field.
 * Enter a descriptive message for the task in the `Description` field. It is an optional field.
-* Provide a value for the input variable.<br /> Note: The value may be any of the values from the previous build stages, a global variable, or a custom value.
+* Provide a value for the input variable.<br/> Note: The value may be any of the values from the previous build stages, a global variable, or a custom value.
 
  | Variable | Format | Description |
 | ---- | ---- | ---- |

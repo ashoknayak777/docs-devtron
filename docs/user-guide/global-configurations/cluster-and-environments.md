@@ -50,7 +50,7 @@ Refer to [Get Cluster Credentials](#get-cluster-credentials) to learn the proces
   | Field | Description |
   | :--- | :--- |
   | **Name** | Enter the name of your cluster. |
-  | **Server URL** |  Enter the Server URL of your cluster (with https)<br />**Note**: We recommend using a [self-hosted URL](#benefits-of-self-hosted-url) instead of a cloud-hosted URL.  |
+  | **Server URL** |  Enter the Server URL of your cluster (with https)<br/>**Note**: We recommend using a [self-hosted URL](#benefits-of-self-hosted-url) instead of a cloud-hosted URL.  |
   | **Bearer Token** | Paste the bearer token of your cluster |
 
   ![Figure 4: Enter Cluster Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/cluster-env-add-cluster-cred.jpg)
@@ -171,7 +171,7 @@ Provide the information in the following fields:
 | Field | Description |
 | :--- | :--- |
 | **Prometheus endpoint** | Provide the URL of your Prometheus |
-| **Authentication Type** | Prometheus supports two authentication types:<ul><li>**Basic**: If you select the `Basic` authentication type, then you must provide the `Username` and `Password` of Prometheus for authentication.</li></ul> <ul><li>**Anonymous**: If you select the `Anonymous` authentication type, then you do not need to provide the `Username` and `Password`.<br />**Note**: The fields `Username` and `Password` will not be available by default.</li></ul> |
+| **Authentication Type** | Prometheus supports two authentication types:<ul><li>**Basic**: If you select the `Basic` authentication type, then you must provide the `Username` and `Password` of Prometheus for authentication.</li></ul> <ul><li>**Anonymous**: If you select the `Anonymous` authentication type, then you do not need to provide the `Username` and `Password`.<br/>**Note**: The fields `Username` and `Password` will not be available by default.</li></ul> |
 | **TLS Key** & **TLS Certificate** | These fields are optional and can be used when you use a customized URL. |
 
 Click **Save Cluster** to save your cluster on Devtron.
@@ -213,7 +213,7 @@ Follow the steps mentioned below to install OpenTofu:
     | **Registry URL** | `ghcr.io` | 
     | **List of repositories** | `flux-iac/charts/tofu-controller` | 
 
-    <br />
+    <br/>
 
     ![Figure 16: Container/OCI Registry](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/container-oci-registry.jpg)
 
@@ -328,18 +328,18 @@ Only a [Super-Admin](../global-configurations/user-access.md#assign-super-admin-
   | :--- | :--- |
   | `Cluster Provider` | Select the type of cluster you'd like to create based on your requirement | 
   | `Name` | Enter the name of your Kubernetes cluster (e.g., `eks-cluster-nonprod` in the case of EKS and `rancher-cluster-qa` in the case of Rancher) | 
-  | `Region` | Select the region where your cluster is hosted (e.g., `us-east-1` in the case of EKS and `ap-south-3` in the case of Rancher) <br /> Refer to [View cluster details using the AWS Management Console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view-clusters.html#emr-view-cluster-console) for more information| 
+  | `Region` | Select the region where your cluster is hosted (e.g., `us-east-1` in the case of EKS and `ap-south-3` in the case of Rancher) <br/> Refer to [View cluster details using the AWS Management Console](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view-clusters.html#emr-view-cluster-console) for more information| 
   | `VPC CIDR` | Enter the [VPC CIDR](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html) value. This value determines the number of [pods](../../reference/glossary.md#pod), [nodes](../../reference/glossary.md#nodes), or services your cluster can host (e.g., `10.0.1.6/16`)| 
-  | `Authentication Mode` | Select the authentication mode you wish to perform for the cluster <br /> <ul><li> **API_AND_CONFIG_MAP** - Select this if you want to use both the API and the ConfigMap to authenticate who can access the cluster. This option is recommended if you are migrating from the old `aws-auth` ConfigMap method (which is deprecated) to the new API method. <br /> Refer to [Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) for more information. </li> <li>**API** - Select this if you want to manage access using a single API. This option is recommended as this is the best practice for EKS cluster creation. <br /> Refer to [Manage User Access with API](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) for more information.</li> <li> **CONFIG MAP** - Select this if you want to rely on the original (but deprecated) way of authentication using `aws-auth` ConfigMap. This option is not recommended anymore. <br /> Refer to [Grant IAM users access to Kubernetes. with a ConfigMap.](https://docs.aws.amazon.com/eks/latest/userguide/auth-configmap.html) for more information.</li></ul>| 
+  | `Authentication Mode` | Select the authentication mode you wish to perform for the cluster <br/> <ul><li> **API_AND_CONFIG_MAP** - Select this if you want to use both the API and the ConfigMap to authenticate who can access the cluster. This option is recommended if you are migrating from the old `aws-auth` ConfigMap method (which is deprecated) to the new API method. <br/> Refer to [Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) for more information. </li> <li>**API** - Select this if you want to manage access using a single API. This option is recommended as this is the best practice for EKS cluster creation. <br/> Refer to [Manage User Access with API](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) for more information.</li> <li> **CONFIG MAP** - Select this if you want to rely on the original (but deprecated) way of authentication using `aws-auth` ConfigMap. This option is not recommended anymore. <br/> Refer to [Grant IAM users access to Kubernetes. with a ConfigMap.](https://docs.aws.amazon.com/eks/latest/userguide/auth-configmap.html) for more information.</li></ul>| 
   | `Enable IRSA` | Turn on this IRSA toggle (IAM Roles for [Service Accounts](https://kubernetes.io/docs/concepts/security/service-accounts/)) if you want your application to securely connect to other AWS services using a service account| 
   | `Allow public access` | Turn on this toggle if you want to allow your [EKS control plane](https://docs.aws.amazon.com/eks/latest/best-practices/control-plane.html) endpoint to be accessed publicly from anywhere without the VPC. It is recommended to keep this toggle disabled |
   | `Cluster Version` | Select your preferred Kubernetes cluster version. If you are running a live application in a production environment, it is recommended that you select a stable version instead of the latest version | 
 
-  <br />
+  <br/>
 
   ![Figure 19: Create Kubernetes Cluster](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/create-k8s-cluster.jpg)
   
-  <br />
+  <br/>
   
 * Refer the following table (containing **optional** fields) and enter the details in the corresponding fields:
 
@@ -347,8 +347,8 @@ Only a [Super-Admin](../global-configurations/user-access.md#assign-super-admin-
   | :--- | :--- |
   | `Team` | Select the team whose tag you want to attach to the cluster resources. For example, when you select `qa-team`, it means that the cluster resources (pods, ConfigMaps, etc.) created with this cluster are owned by the QA team | 
   | `Environment` | Select the environment. For example, when you select `qa`, it means that this cluster is a part of the QA environment | 
-  | `Availability Zones` | Select availability zones (e.g., `us-east-2b` and `ap-west-1a`) if you prefer to distribute your worker nodes across multiple zones to make your cluster highly available. <br /> This means that even if one availability zone goes down (e.g., `us-east-2b`), the other zones (e.g., `ap-west-1a`) keep your cluster up and running | 
-  | `Private access CIDRs` | Enter the private access CIDRs (IP addresses that are allowed to reach the API server). If you had turned off the **Allow public access** toggle, then your EKS control plane endpoint would be private. <br /> It then becomes crucial to enter the private access CIDRs so that the API server recognizes them and allows them to access the endpoint | 
+  | `Availability Zones` | Select availability zones (e.g., `us-east-2b` and `ap-west-1a`) if you prefer to distribute your worker nodes across multiple zones to make your cluster highly available. <br/> This means that even if one availability zone goes down (e.g., `us-east-2b`), the other zones (e.g., `ap-west-1a`) keep your cluster up and running | 
+  | `Private access CIDRs` | Enter the private access CIDRs (IP addresses that are allowed to reach the API server). If you had turned off the **Allow public access** toggle, then your EKS control plane endpoint would be private. <br/> It then becomes crucial to enter the private access CIDRs so that the API server recognizes them and allows them to access the endpoint | 
 
 * Click **Create Cluster**.
 
@@ -401,12 +401,12 @@ After adding a cluster to Devtron ([Kubernetes Cluster](#add-kubernetes-cluster)
   | Field | Description |
   | :--- | :--- |
   | **Environment Name** | Enter a name for your environment. |
-  | **Enter Namespace** | Enter a namespace corresponding to your environment.<br />**Note**: If this namespace does not exist in your cluster, Devtron will create it. If it already exists, Devtron will map the environment to it. |
+  | **Enter Namespace** | Enter a namespace corresponding to your environment.<br/>**Note**: If this namespace does not exist in your cluster, Devtron will create it. If it already exists, Devtron will map the environment to it. |
   | **Environment Type** | Select your environment type:<ul><li>`Production`</li></ul> <ul><li>`Non-production`</li></ul>Note: Devtron shows deployment metrics (DORA metrics) for environments tagged as `Production` only. |
 
   ![Figure 24: Saving an Environment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/cluster-and-environments/cluster-env-add-env-fields.jpg)
 
-3. **Assign a Category to environment** [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) - Devtron allows you to assign a category (for e.g. Prod, QA, Dev, or Stage) to your environments. This enables category-based filtering in the UI, allowing you to determine whether an application is deployed to Prod, QA, Dev, or Stage environment.<br /><br />
+3. **Assign a Category to environment** [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) - Devtron allows you to assign a category (for e.g. Prod, QA, Dev, or Stage) to your environments. This enables category-based filtering in the UI, allowing you to determine whether an application is deployed to Prod, QA, Dev, or Stage environment.<br/><br/>
  To assign a category to your environment, follow the steps below: 
    1. Select a category from the dropdown under **Assign Category** and click **Update**.
 

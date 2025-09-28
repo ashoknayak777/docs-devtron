@@ -112,7 +112,7 @@ Consider another scenario where you wish to make images eligible for deployment 
 
 `gitCommitDetails.filter(gitCommitDetail, gitCommitDetail.startsWith('https://github.com/devtron-labs')).map(repo, gitCommitDetails[repo].branch).exists_one(branch, branch.startsWith('hotfix-'))`
 
-where, `https://github.com/devtron-labs` is a portion of the repo URL <br />
+where, `https://github.com/devtron-labs` is a portion of the repo URL <br/>
 and `hotfix-` is for finding the branch name (say *hotfix-sept-2024*)
 
 Alternatively, if you have a fixed branch (say *hotfix-123*), you may write the following expression:

@@ -62,14 +62,14 @@ Ensure [GitOps](../global-configurations/gitops.md) is configured before deployi
         - pods=[*]
     ```
 
-    <br />
+    <br/>
 
     ```yaml
     serviceMonitorSelectorNilUsesHelmValues: false
     podMonitorSelectorNilUsesHelmValues: false
     ```
 
-    <br />
+    <br/>
 
     Search for the above parameters, and update them as shown (or customize as needed).
 

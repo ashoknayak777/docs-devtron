@@ -584,7 +584,7 @@ kubectl delete po -n devtroncd git-sensor-0
 
 As shown above, Rollout object’s sync status is showing `Failed` and throwing an `Invalid JSON Document` error.
 
-This might happen due to manual changes in the Rollout object in the annotation `kubectl.kubernetes.io/last-applied-configuration:` <br /> The value of the above annotation is a JSON. ArgoCD tries to validate that JSON and throws an error if it is invalid.
+This might happen due to manual changes in the Rollout object in the annotation `kubectl.kubernetes.io/last-applied-configuration:` <br/> The value of the above annotation is a JSON. ArgoCD tries to validate that JSON and throws an error if it is invalid.
 
 Below is a sample annotation for your reference.
 

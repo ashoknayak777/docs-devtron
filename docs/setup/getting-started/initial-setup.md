@@ -4,7 +4,7 @@
 
 Devtron is installed over a Kubernetes cluster. Once you create a Kubernetes cluster, Devtron can be installed standalone or along with integrations. This section includes information about the minimum requirements you need to install and use Devtron.
 
-***
+---
 
 ### Create a Kubernetes Cluster
 
@@ -23,7 +23,7 @@ You can create any [Kubernetes cluster](https://kubernetes.io/docs/tutorials/kub
 | **Azure Kubernetes Service (AKS)** | Create a cluster using [AKS](https://learn.microsoft.com/en-us/azure/aks/)                                                                                                                                                                                                                                                                                                                            |
 | **k3s - Lightweight Kubernetes**   | <p>Create a cluster using <a href="https://devtron.ai/blog/deploy-your-applications-over-k3s-lightweight-kubernetes-in-no-time/">k3s - Lightweight Kubernetes</a></p><p><strong>Note</strong>: <a href="../install/devtron-oss.md">Refer our documentation</a> for installing Devtron on Minikube, Microk8s, K3s, or Kind</p>                                                                         |
 
-***
+---
 
 ### Recommended Resources
 

@@ -15,10 +15,10 @@ You can define application behavior by providing information in the following se
 
 | Key | Descriptions |
 | :--- | :--- |
-| `Chart version` | Select the Chart Version using which you want to deploy the application.<br /> Refer [Chart Version](../../../creating-application/base-config/deployment-template.md#choose-a-chart-version) section for more detail. |
-| `GUI` | You can perform a basic deployment configuration for your application in the **GUI** section instead of configuring the YAML file.<br />Refer [Basic Configuration](../../../creating-application/base-config/deployment-template.md#using-gui) section for more detail.|
-| `YAML` | If you want to do additional configurations, then click **YAML** for modifications.<br />Refer [YAML](#yaml) section for more detail. |
-| `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br />Refer [Application Metrics](../../../creating-application/app-metrics.md) for more detail. |
+| `Chart version` | Select the Chart Version using which you want to deploy the application.<br/> Refer [Chart Version](../../../creating-application/base-config/deployment-template.md#choose-a-chart-version) section for more detail. |
+| `GUI` | You can perform a basic deployment configuration for your application in the **GUI** section instead of configuring the YAML file.<br/>Refer [Basic Configuration](../../../creating-application/base-config/deployment-template.md#using-gui) section for more detail.|
+| `YAML` | If you want to do additional configurations, then click **YAML** for modifications.<br/>Refer [YAML](#yaml) section for more detail. |
+| `Show application metrics` | You can enable `Show application metrics` to see your application's metrics-CPU Service Monitor usage, Memory Usage, Status, Throughput and Latency.<br/>Refer [Application Metrics](../../../creating-application/app-metrics.md) for more detail. |
 
 
 :::caution Note
@@ -1024,8 +1024,8 @@ winterSoldier:
 | `apiVersion` | `pincher.devtron.ai/v1beta1`, `pincher.devtron.ai/v1alpha1` | specific api version  |
 | `action` | `sleep`,`delete`, `scale` | This specify  the action need to perform.  |
 | `timeRangesWithZone`:`timeZone` | eg:- `"Asia/Kolkata"`,`"US/Pacific"` |  It use to specify the timeZone used. (It uses standard format. please refer [this](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones))  |
-| `timeRangesWithZone`:`timeRanges` | array of [ `timeFrom`, `timeTo`, `weekdayFrom`, `weekdayTo`] |  It use to define time period/range on which the user need to perform the specified action. you can have multiple timeRanges. <br /> These settings will take `action` on Sat and Sun from 00:00 to 23:59:59, |
-| `targetReplicas` | `[n]` : n - number of replicas to scale. | These is mandatory field when the `action` is `scale` <br /> Default value is `[]`.  |
+| `timeRangesWithZone`:`timeRanges` | array of [ `timeFrom`, `timeTo`, `weekdayFrom`, `weekdayTo`] |  It use to define time period/range on which the user need to perform the specified action. you can have multiple timeRanges. <br/> These settings will take `action` on Sat and Sun from 00:00 to 23:59:59, |
+| `targetReplicas` | `[n]` : n - number of replicas to scale. | These is mandatory field when the `action` is `scale` <br/> Default value is `[]`.  |
 | `fieldSelector` | `- AfterTime(AddTime( ParseTime({{metadata.creationTimestamp}}, '2006-01-02T15:04:05Z'), '5m'), Now()) `  | These value will take a list of methods to select the resources on which we perform specified `action` .  |
 
 

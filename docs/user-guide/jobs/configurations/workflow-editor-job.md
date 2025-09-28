@@ -54,7 +54,7 @@ This stage allows you to define primary configurations such as **Pipeline name**
 | `Pipeline Name` | Assign a name to your job pipeline|
 | `Source type` | Source type to trigger the job pipeline. Available options: Branch Fixed, Branch Regex, Pull Request, Tag Creation|
 | `Branch Name`| Branch that triggers the CI build|
-| `Use remote cache`| <p>Enable this option to use the Docker cache from previous builds. Docker's layer caching mechanism allows unchanged docker images layers to be reused across pipeline runs, thus drastically reducing execution times<br /></p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The globe toggle, next to <code>Docker Layer Caching</code> means that the configuration is inherited from global<br /></p><ul><li>Enabled: Inherits the caching settings defined globally.</li><li>Disabled: Allows you to define a pipeline-level configuration specific to this job.</li></ul></div> |
+| `Use remote cache`| <p>Enable this option to use the Docker cache from previous builds. Docker's layer caching mechanism allows unchanged docker images layers to be reused across pipeline runs, thus drastically reducing execution times<br/></p><div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>The globe toggle, next to <code>Docker Layer Caching</code> means that the configuration is inherited from global<br/></p><ul><li>Enabled: Inherits the caching settings defined globally.</li><li>Disabled: Allows you to define a pipeline-level configuration specific to this job.</li></ul></div> |
 
 ### Tasks to be Executed
 
@@ -94,7 +94,7 @@ To create a task using the **GKE Provisioner** plugin, follow the steps below:
 
       ![Figure 9: Searching 'GKE Provisioner' Plugin](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/workflow-editor-gke-search.jpg)
 
-    * The left-side panel will now show a task under **Tasks (IN ORDER OF EXECUTION)**, named after the selected plugin(by default), along with its logo.<br /> You can change the task's name using the **Task name** field, but plugin's logo will remain indicating that it is a preset plugin.
+    * The left-side panel will now show a task under **Tasks (IN ORDER OF EXECUTION)**, named after the selected plugin(by default), along with its logo.<br/> You can change the task's name using the **Task name** field, but plugin's logo will remain indicating that it is a preset plugin.
 
       ![Figure 10: Gke Provisioner Plugin](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/workflow-editor-gke.jpg)
 
@@ -188,7 +188,7 @@ Let's take an example of a **Shell task** for a job that allows you to back up a
 | `Task Name`| `pg-backup-task`| Required| Enter a name for the task|
 | `Task Description`| `This task performs a backup of a specific PostgreSQL database and saves it as a file, and stores the file path as an output variable.` | Optional | Short description for the task|
 | `Task Type` | `Shell`| Optional| Select the preferred task type |
-| `Input variables`| Refer the [Input Variable table](#input-variable-table) below | Optional| <p>These variables provide dynamic values to the script at the time of execution and are defined directly in the UI.<br /></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br />Accepted data types include: STRING</li></ul> |
+| `Input variables`| Refer the [Input Variable table](#input-variable-table) below | Optional| <p>These variables provide dynamic values to the script at the time of execution and are defined directly in the UI.<br/></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br/>Accepted data types include: STRING</li></ul> |
 | `Trigger/Skip condition` | `Trigger If: DB_NAME == prod-db`| Optional| A conditional statement to execute or skip the task|
 | `Script`| Refer the [Script](#script-1) below| Required| Custom script for executing Job tasks|
 | `Output directory path`  | `/backups`| Optional| Directory path where output files such as logs, errors, etc., will be available after the execution.|
@@ -205,7 +205,7 @@ Let's take an example of a **Shell task** for a job that allows you to back up a
 
 * To add an input variable, click **+ Add Variable** next to the **Input Variable**, a new table appears asking you to enter the variable and its required information.
 
-* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br />
+* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br/>
 
     ![Figure 12: Variable configuration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/workflow-editor-var-config.jpg)
 
@@ -288,7 +288,7 @@ Let's take an example of a **Container Image Task** for a job that test if a giv
 | `Task name`| `check-endpoint`| Required|Enter a name for the task|
 | `Description`|`Checks API endpoint`|
 | `Task type`| `Container Image`| Optional| Allows you to execute commands and scripts inside a custom Docker container|
-| `Input variables`| Refer the [Input Variable table](#input-variable-table-1) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br /></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br />Accepted data types include: STRING</li></ul> |
+| `Input variables`| Refer the [Input Variable table](#input-variable-table-1) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br/></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br/>Accepted data types include: STRING</li></ul> |
 | `Trigger/Skip condition`| `No`| Optional| Execute or skip the task based on the condition provided.|
 | `Container image`| `alpine:3.2.0`| Required| Select an image from the drop-down list or enter a custom value in the format `<image>:<tag>`|
 | `Mount custom code`| Refer below [Mount custom code](#mount-custom-code) section| Optional| <p>Enable to mount the custom code in the container. Enter the script in the box below.</p><ul><li>**Mount above code at** (required): Path where the code should be mounted, i.e., `/run.sh` (for this example only) </li></ul>|
@@ -341,7 +341,7 @@ Let's take an example of a **Container Image Task** for a job that provisions an
 | `Task name`| `provision-s3-bucket`| Required|Enter a name for the task|
 | `Description`| Provision an S3 bucket with Terraform| Optional| A descriptive message for the task|
 | `Task type`| `Container Image`| Optional| Allows you to execute commands and scripts inside a custom Docker container|
-| `Input variables`| Refer the [Input Variable table](#input-variable-table-2) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br /></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br />Accepted data types include: STRING</li></ul> |
+| `Input variables`| Refer the [Input Variable table](#input-variable-table-2) below | Optional| <p>These variables provide dynamic values to the script and are defined directly in the UI.<br/></p><ul><li><strong>Variable name</strong>: Alphanumeric chars and (_) only</li><li><strong>Source or input value</strong>: The variable's value can be global, output from the previous task, or a custom value.<br/>Accepted data types include: STRING</li></ul> |
 | `Trigger/Skip condition`| `TF_ENV == "prod"`| Optional| Execute or skip the task based on the condition provided.|
 | `Container image`| `hashicorp/terraform:1.5.0`| Required| Select an image from the drop-down list or enter a custom value in the format `<image>:<tag>`|
 | `Mount custom code`| Refer below [Mount custom code](#mount-custom-code-1) section| Optional| <p>Enable to mount the custom code in the container. Enter the script in the box below.</p><ul><li>**Mount above code at** (required): Path where the code should be mounted</li></ul>|
@@ -361,7 +361,7 @@ Let's take an example of a **Container Image Task** for a job that provisions an
 
 * To add an input variable, click **+ Add Variable** next to the `Input Variable`, a new table appears asking you to enter the variable and its required information.
 
-* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br />
+* You can click `+` icon next to **Variable** header field to add more rows to the input variable table.<br/>
 
     ![Figure 15: Variable configuration](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/workflow-editor-var-config.jpg)
 

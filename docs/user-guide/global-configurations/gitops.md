@@ -59,7 +59,7 @@ The Git provider you select for configuring GitOps might impact the following se
 Alternatively, you may use the feature flag **FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE** to enable or disable custom GitOps repo.
 
 :::info 
-**For disabling** - `FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE: "false"` <br />
+**For disabling** - `FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE: "false"` <br/>
 **For enabling** - `FEATURE_USER_DEFINED_GITOPS_REPO_ENABLE: "true"`
 :::
 
@@ -110,9 +110,9 @@ Fill the following mandatory fields:
 | Field | Description |
 | --- | --- |
 | **Git Host** | Shows the URL of GitHub, e.g., https://github.com/ |
-| **GitHub Organisation Name** | Enter the GitHub organization name. <br />If you do not have one, refer [How to create organization in GitHub](#creating-organization-in-github). |
+| **GitHub Organisation Name** | Enter the GitHub organization name. <br/>If you do not have one, refer [How to create organization in GitHub](#creating-organization-in-github). |
 | **GitHub Username** | Provide the username of your GitHub account |
-| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your GitHub account. <br />If you do not have one, create a GitHub PAT [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). <br /><br /> **Access Required**: <br /> `repo` - Full control of private repositories (able to access commit status, deployment status, and public repositories). <br /> `admin:org` - Full control of organizations and teams (Read and Write access). May not be required if you are using user-defined git repo. <br /> `delete_repo` - Grants delete repo access on private repositories. |
+| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your GitHub account. <br/>If you do not have one, create a GitHub PAT [here](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token). <br/><br/> **Access Required**: <br/> `repo` - Full control of private repositories (able to access commit status, deployment status, and public repositories). <br/> `admin:org` - Full control of organizations and teams (Read and Write access). May not be required if you are using user-defined git repo. <br/> `delete_repo` - Grants delete repo access on private repositories. |
 
 ### GitLab
 
@@ -128,9 +128,9 @@ Fill the following mandatory fields:
 | Field | Description |
 | --- | --- |
 | **Git Host** | Shows the URL of GitLab, e.g., https://gitlab.com/ |
-| **GitLab Group ID** | Enter the GitLab group ID. <br />If you do not have one, refer [GitLab Group ID](#creating-group-in-gitlab).|
+| **GitLab Group ID** | Enter the GitLab group ID. <br/>If you do not have one, refer [GitLab Group ID](#creating-group-in-gitlab).|
 | **GitLab Username** | Provide the username of your GitLab account |
-| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your GitLab account. <br />If you do not have one, create a GitLab PAT [here](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html). <br /><br /> **Access Required**: <br /> `api` - Grants complete read/write access to the scoped project API. <br /> `write_repository` - Allows read/write access (pull, push) to the repository.|
+| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your GitLab account. <br/>If you do not have one, create a GitLab PAT [here](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html). <br/><br/> **Access Required**: <br/> `api` - Grants complete read/write access to the scoped project API. <br/> `write_repository` - Allows read/write access (pull, push) to the repository.|
 
 ### AWS Code Commit [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
 
@@ -169,9 +169,9 @@ Fill the following mandatory fields:
 | Field | Description |
 | --- | --- |
 | **Azure DevOps Organisation Url*** | Enter the Org URL of Azure DevOps. Format should be `https://dev.azure.com/<org-name>`, where `<org-name>` represents the organization name, e.g., [https://dev.azure.com/devtron-test](https://dev.azure.com/devtron-test)|
-| **Azure DevOps Project Name** | Enter the Azure DevOps project name. <br />If you do not have one, refer [Azure DevOps Project Name](#creating-project-in-azure-devops).|
+| **Azure DevOps Project Name** | Enter the Azure DevOps project name. <br/>If you do not have one, refer [Azure DevOps Project Name](#creating-project-in-azure-devops).|
 | **Azure DevOps Username*** | Provide the username of your Azure DevOps account |
-| **Azure DevOps Access Token*** | Provide your Azure DevOps access token. It is used as an alternate password to authenticate your Azure DevOps account. <br />If you do not have one, create a Azure DevOps access token [here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page). <br /><br /> **Access Required**: <br /> `code` - Grants the ability to read source code and metadata about commits, change sets, branches, and other version control artifacts. [More information on scopes in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes). |
+| **Azure DevOps Access Token*** | Provide your Azure DevOps access token. It is used as an alternate password to authenticate your Azure DevOps account. <br/>If you do not have one, create a Azure DevOps access token [here](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page). <br/><br/> **Access Required**: <br/> `code` - Grants the ability to read source code and metadata about commits, change sets, branches, and other version control artifacts. [More information on scopes in Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes). |
 
 ### Bitbucket
 
@@ -197,10 +197,10 @@ Fill the following mandatory fields:
 | Field | Description |
 | --- | --- |
 | **Bitbucket Host** | Shows the URL of Bitbucket Cloud, e.g., https://bitbucket.org/ |
-| **Bitbucket Workspace ID** | Enter the Bitbucket workspace ID. <br />If you do not have one, refer [Bitbucket Workspace ID](#creating-workspace-in-bitbucket)|
-| **Bitbucket Project Key** | Enter the Bitbucket project key. <br />If you do not have one, refer [Bitbucket Project Key](https://support.atlassian.com/bitbucket-cloud/docs/group-repositories-into-projects/). <br />Note: If the project is not provided, the repository is automatically assigned to the oldest project in the workspace. |
+| **Bitbucket Workspace ID** | Enter the Bitbucket workspace ID. <br/>If you do not have one, refer [Bitbucket Workspace ID](#creating-workspace-in-bitbucket)|
+| **Bitbucket Project Key** | Enter the Bitbucket project key. <br/>If you do not have one, refer [Bitbucket Project Key](https://support.atlassian.com/bitbucket-cloud/docs/group-repositories-into-projects/). <br/>Note: If the project is not provided, the repository is automatically assigned to the oldest project in the workspace. |
 | **Bitbucket Username*** | Provide the username of your Bitbucket account |
-| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your Bitbucket Cloud account. <br />If you do not have one, create a Bitbucket Cloud PAT [here](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/). <br /><br /> **Access Required**: <br /> `repo` - Full control of repositories (Read, Write, Admin, Delete) access. |
+| **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your Bitbucket Cloud account. <br/>If you do not have one, create a Bitbucket Cloud PAT [here](https://support.atlassian.com/bitbucket-cloud/docs/app-passwords/). <br/><br/> **Access Required**: <br/> `repo` - Full control of repositories (Read, Write, Admin, Delete) access. |
 
 #### Bitbucket Data Center
 

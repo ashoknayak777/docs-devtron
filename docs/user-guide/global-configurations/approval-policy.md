@@ -96,7 +96,7 @@ Users need to have super-admin permissions to apply an approval policy.
     ![Figure 10: Choosing Scope](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/select-approval-scope.jpg)
 
 4. Under **Apply to**, you get the following options to choose from: 
-    * **Specific Criteria** - Select this option to apply your policy to specific environment(s) of specific applications. <br />
+    * **Specific Criteria** - Select this option to apply your policy to specific environment(s) of specific applications. <br/>
 
         **Example**: In case of Deployment
 
@@ -106,7 +106,7 @@ Users need to have super-admin permissions to apply an approval policy.
 
         ![Figure 11b: Specific Criteria for 'Configuration Change' Approval](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/specific-criteria-config.gif)
 
-    * **By match criteria** - Select this option to use a combination of filters to create criteria. Your policy will only apply to target pipelines/configurations fulfilling your criteria (including existing and future ones). (Optional) You may also write a note for your other team members to understand the intent and context of your policy. <br />
+    * **By match criteria** - Select this option to use a combination of filters to create criteria. Your policy will only apply to target pipelines/configurations fulfilling your criteria (including existing and future ones). (Optional) You may also write a note for your other team members to understand the intent and context of your policy. <br/>
 
         **Example**: In case of Deployment
 
@@ -116,7 +116,7 @@ Users need to have super-admin permissions to apply an approval policy.
 
         ![Figure 12b: Match Criteria for 'Configuration Change' Approval](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/match-criteria-config.gif)
 
-    * **Global** - Select this option to apply your chosen policies to every deployment pipeline or configurations (existing and future) of all applications in all clusters. <br />
+    * **Global** - Select this option to apply your chosen policies to every deployment pipeline or configurations (existing and future) of all applications in all clusters. <br/>
 
         **Example**: In case of Deployment
 
@@ -164,8 +164,8 @@ As shown in step 2 of [Apply an Approval Policy](#apply-an-approval-policy), you
     ![Figure 15: Applying More Policy in Bulk](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/add-policies-bulk.gif)
 
 :::caution How do multiple policies work if applied together?
-If you apply multiple policies together, the user has to meet the approval conditions of all the applied policies. <br />
-**Example 1**: if 'Policy A' demands 3 approvals specifically from John, Jane, and Jessy; and if 'Policy B' requires 1 approval from 'Product User Group', the user will have to get 4 approvals. <br />
+If you apply multiple policies together, the user has to meet the approval conditions of all the applied policies. <br/>
+**Example 1**: if 'Policy A' demands 3 approvals specifically from John, Jane, and Jessy; and if 'Policy B' requires 1 approval from 'Product User Group', the user will have to get 4 approvals. <br/>
 **Example 2**: if 'Policy A' demands 3 approvals specifically from John, Jane, and Jessy; and if 'Policy B' requires 2 approvals from anyone, the user will still have to get 3 approvals from John, Jane, and Jessy. In short, the stricter conditions from the policies are enforced first and they have to be fulfilled.
 :::
 

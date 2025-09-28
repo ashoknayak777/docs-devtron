@@ -52,7 +52,7 @@ If you wish to pass runtime parameters for a build job, you can provide key-valu
 
     ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/key-value.jpg)
 
-    <br /> Similarly, you may add more than one key-value pair by using the **+ Add Parameter** button.
+    <br/> Similarly, you may add more than one key-value pair by using the **+ Add Parameter** button.
 
 4. Click **Start Build**.
 

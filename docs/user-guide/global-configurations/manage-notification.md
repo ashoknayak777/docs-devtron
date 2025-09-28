@@ -194,7 +194,7 @@ A Webhook URL to receive notifications (e.g., Microsoft Teams Webhook URL, Disco
     | **Configuration name** | Give a name to your webhook configuration, e.g., `qa-webhook` |
     | **Webhook URL** | Enter a valid Webhook URL link |
     | **Headers** | Add optional key-value pairs, e.g. `Content-Type: application/json` |
-    | **Data to be shared through webhook** | Write the payload content of the notification in a JSON format. <br /> Refer: <ul><li>[Microsoft Teams Payload](#for-microsoft-teams)</li><li>[Discord Payload](#for-discord)</li><li>[Slack Payload](#for-slack)</li><li>[RingCentral Payload](#for-ringcentral)</li></ul> |
+    | **Data to be shared through webhook** | Write the payload content of the notification in a JSON format. <br/> Refer: <ul><li>[Microsoft Teams Payload](#for-microsoft-teams)</li><li>[Discord Payload](#for-discord)</li><li>[Slack Payload](#for-slack)</li><li>[RingCentral Payload](#for-ringcentral)</li></ul> |
 
 3. Click **Save**. 
 

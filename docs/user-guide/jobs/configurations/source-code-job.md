@@ -52,12 +52,12 @@ To define the exclusion or inclusion rules, follow these steps:
     | Sample Rules | Description | Impact on Commits |
     |:---|:---|:---|
     | `!README.md` | **Exclusion of a single file in root folder** | Commits containing changes made only in the README.md file will not be shown |
-    | `!README.md` <br /> `!index.js` | **Exclusion of multiple files in root folder** |  Commits containing changes made only in README.md or/and index.js files will not be shown |
+    | `!README.md` <br/> `!index.js` | **Exclusion of multiple files in root folder** |  Commits containing changes made only in README.md or/and index.js files will not be shown |
     |  `README.md` | **Inclusion of a single file in root folder** | Commits containing changes made only in the README.md file will be shown. Rest all will be excluded. |
     |  `!src/extensions/printer/code2.py` | **Exclusion of a single file in a folder tree** |Commits containing changes made specifically to code2.py file will not be shown |
     |  `!src/*` | **Exclusion of a single folder and all its files:** |Commits containing changes made specifically to files within the `src` folder will not be shown |
-    |  `!README.md` <br /> `index.js` | **Exclusion and inclusion of files** | Commits containing changes made only in README.md will not be shown, but commits made in the index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
-    |  `!README.md` <br /> `README.md` | **Exclusion and inclusion of conflicting files** | If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
+    |  `!README.md` <br/> `index.js` | **Exclusion and inclusion of files** | Commits containing changes made only in README.md will not be shown, but commits made in the index.js file will be shown. All other commits apart from the aforementioned files will be excluded. |
+    |  `!README.md` <br/> `README.md` | **Exclusion and inclusion of conflicting files** | If conflicting paths are defined in the rule, the one defined later will be considered. In this case, commits containing changes made only in README.md will be shown. |
 
 
     You may use the **Learn how** link (as shown below) to understand the syntax of defining an exclusion or inclusion rule.

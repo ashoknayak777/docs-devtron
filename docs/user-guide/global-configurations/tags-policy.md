@@ -61,11 +61,11 @@ You may enable **Allow Custom Input** to give the user a choice to enter their o
 
     ![Figure 10a: Propagating Tags](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagate-tag.gif) 
 
-    <br />
+    <br/>
 
     ![Figure 10b: Enabling/Disabling Propagation](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/propagation-enable-disable.jpg) 
     
-    <br />
+    <br/>
 
     ![Figure 10c: How Tag Propagation Works](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/mandatory-tags/inject-tags.jpg)
 

@@ -100,9 +100,9 @@ The **Devtron Apps** tab allows you to grant user permissions for Devtron applic
 
 | Field | Description |
 | --- | --- |
-| **Project** | Select your preferred project from the drop-down box to grant the user access. You can select only one project at a time.<br />**Note**: If you want to select more than one project, then click **Add Permission**. |
-| **Environment** | Select a specific environment or all environments from the drop-down box as per your requirement.<br />**Note**: If you select `All environments`, the user will have access to all the current environments and any new environment which gets associated with the application in the future. |
-| **Application**  | Select a specific application or all applications from the drop-down box that is associated with the environment(s) selected in the **Environment** drop-down box, as per your requirement.<br />**Note**: If you select `All applications`, the user will have access to all the current and future applications associated with the project. Moreover, user with access to all applications, can create new applications too.  |
+| **Project** | Select your preferred project from the drop-down box to grant the user access. You can select only one project at a time.<br/>**Note**: If you want to select more than one project, then click **Add Permission**. |
+| **Environment** | Select a specific environment or all environments from the drop-down box as per your requirement.<br/>**Note**: If you select `All environments`, the user will have access to all the current environments and any new environment which gets associated with the application in the future. |
+| **Application**  | Select a specific application or all applications from the drop-down box that is associated with the environment(s) selected in the **Environment** drop-down box, as per your requirement.<br/>**Note**: If you select `All applications`, the user will have access to all the current and future applications associated with the project. Moreover, user with access to all applications, can create new applications too.  |
 | **Role**  | Available Roles:<ul><li>`Base Role`</li> <li>`Additional Roles` [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)</li><li>`Access Manager` [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)</li></ul>[Click here](#roles-available-for-devtron-apps) to learn more about the role you wish to assign to the user.  |
 | **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)   |
 
@@ -156,9 +156,9 @@ Here you can grant your user the permissions for Helm apps deployed from Devtron
 
 | Field | Description |
 | --- | --- |
-| **Project** | Select a project from the dropdown list to grant the user access. You can select only one project at a time.<br />**Note**: If you want to select more than one project, then click **Add Permission**. |
-| **Environment or Cluster/Namespace** | Select a specific environment from the dropdown list.<br />**Note**: If you select `All existing + future environments in cluster`, then the user will get access to all the current environments including any new environment which gets associated with the application later. |
-| **Application**  | Select a specific helm application or all helm apps from the dropdown list corresponding to your selected environments.<br />**Note**: If `All applications` is selected, the user will have access to all current and future applications associated with the project.  |
+| **Project** | Select a project from the dropdown list to grant the user access. You can select only one project at a time.<br/>**Note**: If you want to select more than one project, then click **Add Permission**. |
+| **Environment or Cluster/Namespace** | Select a specific environment from the dropdown list.<br/>**Note**: If you select `All existing + future environments in cluster`, then the user will get access to all the current environments including any new environment which gets associated with the application later. |
+| **Application**  | Select a specific helm application or all helm apps from the dropdown list corresponding to your selected environments.<br/>**Note**: If `All applications` is selected, the user will have access to all current and future applications associated with the project.  |
 | **Permission**  | Available Permissions:<ul><li>`View only`</li> <li>`View & Edit`</li><li>`Admin`</li></ul> [Click here](#roles-available-for-helm-apps) to learn more about the permission you wish to assign the user.  |
 | **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)   |
 
@@ -185,7 +185,7 @@ Here you can grant your user the permissions to access the jobs created in Devtr
 
 | Field | Description |
 | --- | --- |
-| **Project** | Select a project from the dropdown list to grant the user access. You can select only one project at a time.<br />**Note**: If you want to select more than one project, then click **Add Permission**. |
+| **Project** | Select a project from the dropdown list to grant the user access. You can select only one project at a time.<br/>**Note**: If you want to select more than one project, then click **Add Permission**. |
 | **Job Name** | Select a specific job or choose `All jobs` to grant access to all available jobs within the project. |
 | **Workflow** | Select a specific workflow or `All workflows` to grant access to the workflows containing the job pipelines.  |
 | **Environment** | Select a specific environment or `All environments` to grant access to the environments associated with the job(s). |
@@ -226,7 +226,7 @@ To grant Kubernetes resource permission, click **Add permission**.
 
 | Field | Description |
 | --- | --- |
-| **Cluster** | Select a cluster from the dropdown list to which you want to give permission to the user. You can select only one cluster at a time.<br />**Note**: To add another cluster, click **Add another**. |
+| **Cluster** | Select a cluster from the dropdown list to which you want to give permission to the user. You can select only one cluster at a time.<br/>**Note**: To add another cluster, click **Add another**. |
 | **Namespace** | Select a namespace from the dropdown list. |
 | **API Group**  | Select a specific API group or `All API groups` from the dropdown list corresponding to the Kubernetes resource.  |
 | **Kind**  | Select a kind or `All kind` from the dropdown list corresponding to the Kubernetes resource.  |
@@ -323,8 +323,8 @@ A user who is an Access Manager can grant or change permissions for other existi
 
 | What's Allowed | What's Not Allowed |
 |:----|:------|
-| **For User A:** <br /> Changing User B's **Manager** role to **View Only** role (Manager → View Only) |<ul><li>Reverting to User B's **Manager** role (View Only → Manager)</li><li>Changing User B's **Manager** role to any other role, except for **View Only**</li><li>Performing operations beyond the base role (i.e., **Admin**)</li><li>Modifying Super-Admin permissions</li></ul>|
-| **For User B:** <br /> Perform the operations under the scope of **Manager** role across Devtron | <ul><li>Manage user access for other users</li><li>Perform operations beyond the base role (i.e., **Manager**)</li><li>Modifying Super-Admin permissions</li></ul>|
+| **For User A:** <br/> Changing User B's **Manager** role to **View Only** role (Manager → View Only) |<ul><li>Reverting to User B's **Manager** role (View Only → Manager)</li><li>Changing User B's **Manager** role to any other role, except for **View Only**</li><li>Performing operations beyond the base role (i.e., **Admin**)</li><li>Modifying Super-Admin permissions</li></ul>|
+| **For User B:** <br/> Perform the operations under the scope of **Manager** role across Devtron | <ul><li>Manage user access for other users</li><li>Perform operations beyond the base role (i.e., **Manager**)</li><li>Modifying Super-Admin permissions</li></ul>|
 
 :::info Note
 If you need to grant someone global control over modifying the roles of other users, enable the [Can manage access for all roles](#can-manage-access-for-all-roles-toggle) toggle instead.

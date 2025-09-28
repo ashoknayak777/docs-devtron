@@ -28,7 +28,7 @@ The left side of the **About** section displays essential information about the 
 | :--------- | :--------------- |:--------- |
 | **Application Name** | No |Displays the name of the application (e.g., backend-healthcare-app).|
 | **Short Description**|Yes|A short, optional description to summarize the application's purpose.|
-| **Project** |Yes|Indicates the current project under which the application is organized.<br />You can change the project directly from this section.<ol><li> Click the **Edit** icon next to the current project.</li><li> In the **Change Project** window, select the new project from the dropdown.</li><li>Click **Save**.</li></ol>Changing the project will revoke access for existing users and grant access only to those who have permissions in the newly selected project.|
+| **Project** |Yes|Indicates the current project under which the application is organized.<br/>You can change the project directly from this section.<ol><li> Click the **Edit** icon next to the current project.</li><li> In the **Change Project** window, select the new project from the dropdown.</li><li>Click **Save**.</li></ol>Changing the project will revoke access for existing users and grant access only to those who have permissions in the newly selected project.|
 | **Created on** |No|Shows the exact date and time when the application was created.|
 | **Created by**|No|Displays the email address of the user who created the application.|
 | **Code Source** |No|Shows the connected Git repository or template used for the application.|
