@@ -410,6 +410,46 @@ const sidebars = {
       collapsed: false,
       items: [
         'reference/glossary',
+            // Additional Resources / Upgrade & Troubleshooting
+        {
+          type: 'category',
+          label: 'Upgrade Devtron',
+          collapsed: false,
+          items: [
+            'setup/upgrade/README',
+            'setup/upgrade/upgrade-devtron-ui',
+            'setup/upgrade/devtron-upgrade-1.5.0',
+            'setup/upgrade/devtron-upgrade-0.6.x-0.7.x',
+            'setup/upgrade/devtron-upgrade-0.5.x-0.6.x',
+            'setup/upgrade/devtron-upgrade-0.4.x-0.5.x',
+            'setup/upgrade/devtron-upgrade-0.4.x-0.4.x',
+            'setup/upgrade/devtron-upgrade-0.3.x-0.4.x',
+            'setup/upgrade/devtron-upgrade-0.3.x-0.3.x',
+            'setup/upgrade/devtron-upgrade-0.2.x-0.3.x',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Additional Installation Resources',
+          collapsed: false,
+          items: [
+            'reference/README',
+            'setup/install/prod-infra',
+            'setup/configurations/configurations-overview',
+            'setup/install/installation-configuration',
+            'setup/install/override-default-devtron-installation-configs',
+            'setup/install/ingress-setup',
+            'setup/install/install-devtron-in-airgapped-environment',
+            // 'setup/install/freemium',
+            'setup/install/install-devtron-Kubernetes-client',
+            'setup/install/demo-tutorials',
+            'setup/install/devtron-backup',
+            'setup/install/faq-on-installation',
+          ],
+        },
+
+        // Troubleshooting / Other resources
         'FAQs/devtron-troubleshoot',
         {
           type: 'category',
@@ -431,51 +471,9 @@ const sidebars = {
           label: 'Release Notes',
           href: 'https://github.com/devtron-labs/devtron/releases',
         },
+        'setup/install/uninstall-devtron',
       ],
     },
-
-    // Additional Resources / Upgrade & Troubleshooting
-    {
-      type: 'category',
-      label: 'Upgrade Devtron',
-      collapsed: false,
-      items: [
-        'setup/upgrade/README',
-        'setup/upgrade/upgrade-devtron-ui',
-        'setup/upgrade/devtron-upgrade-1.5.0',
-        'setup/upgrade/devtron-upgrade-0.6.x-0.7.x',
-        'setup/upgrade/devtron-upgrade-0.5.x-0.6.x',
-        'setup/upgrade/devtron-upgrade-0.4.x-0.5.x',
-        'setup/upgrade/devtron-upgrade-0.4.x-0.4.x',
-        'setup/upgrade/devtron-upgrade-0.3.x-0.4.x',
-        'setup/upgrade/devtron-upgrade-0.3.x-0.3.x',
-        'setup/upgrade/devtron-upgrade-0.2.x-0.3.x',
-      ],
-    },
-
-    {
-      type: 'category',
-      label: 'Additional Installation Resources',
-      collapsed: false,
-      items: [
-        'reference/README',
-        'setup/install/prod-infra',
-        'setup/configurations/configurations-overview',
-        'setup/install/installation-configuration',
-        'setup/install/override-default-devtron-installation-configs',
-        'setup/install/ingress-setup',
-        'setup/install/install-devtron-in-airgapped-environment',
-        // 'setup/install/freemium',
-        'setup/install/install-devtron-Kubernetes-client',
-        'setup/install/demo-tutorials',
-        'setup/install/devtron-backup',
-        'setup/install/faq-on-installation',
-      ],
-    },
-
-    // Troubleshooting / Other resources
-    'FAQs/devtron-troubleshoot',
-    'setup/install/uninstall-devtron',
   ],
 };
 
