@@ -60,7 +60,7 @@ As you can see, the Deployment Template for the *banking-final* environment show
     ![Figure 7: Creat Override Button](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/create-override.gif)
 
 4. In the same tab (now labelled as **Override**), you can choose any one mode for changing the configuration values:
-    * **YAML** - This mode has a YAML based editor intended for advanced users. [Click here](../creating-application/base-config/deployment-template/deployment.md#yaml) to know more about each key-value pair within the `YAML` section.
+    * **YAML** - This mode has a YAML based editor intended for advanced users. [Click here](../creating-application/base-config/deployment-template-types/deployment.md#yaml) to know more about each key-value pair within the `YAML` section.
     * **GUI** - This mode has a user-friendly interface intended for beginner to advanced users. [Click here](../creating-application/base-config/deployment-template.md#using-gui) to know more about each field within the `GUI` section.
 
 :::info Note

@@ -72,7 +72,7 @@ A Custom Resource Definition (CRD) allows you to add custom resource types to Ku
 
 ### CronJob
 
-CronJob is used to create Jobs on a repeating schedule. It is commonly used for running periodic tasks with no manual intervention. In Devtron, you can view a list of cronjobs by going to Resource Browser → (choose a cluster) → Workloads → CronJob. [Read More...](../user-guide/creating-application/base-config/deployment-template/job-and-cronjob.md#2-cronjob)
+CronJob is used to create Jobs on a repeating schedule. It is commonly used for running periodic tasks with no manual intervention. In Devtron, you can view a list of cronjobs by going to Resource Browser → (choose a cluster) → Workloads → CronJob. [Read More...](../user-guide/creating-application/base-config/deployment-template-types/job-and-cronjob.md#2-cronjob)
 
 ### Deployment Charts
 
@@ -274,7 +274,7 @@ In Devtron, you get the option to add secrets in the `App Configuration` tab of 
 
 ### Security Context
 
-A Kubernetes resource configuration that defines security settings and permissions for pods and containers. A security context defines privilege and access control settings for a pod or container. [Read More...](../user-guide/creating-application/base-config/deployment-template/deployment.md#security-context)
+A Kubernetes resource configuration that defines security settings and permissions for pods and containers. A security context defines privilege and access control settings for a pod or container. [Read More...](../user-guide/creating-application/base-config/deployment-template-types/deployment.md#security-context)
 
 ### Service 
 
@@ -284,7 +284,7 @@ When the network addresses of pods changes frequently, it becomes difficult to c
 
 A Kubernetes object designed for managing stateful applications, maintaining stable network identities and storage across pod rescheduling. 
 
-In Devtron, view the list of StatefulSets by going to Resource Browser → (choose a cluster) → Workloads → StatefulSet. [Read More...](../user-guide/creating-application/base-config/deployment-template/statefulset.md)
+In Devtron, view the list of StatefulSets by going to Resource Browser → (choose a cluster) → Workloads → StatefulSet. [Read More...](../user-guide/creating-application/base-config/deployment-template-types/statefulset.md)
 
 ### Target Platform
 

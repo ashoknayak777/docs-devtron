@@ -158,11 +158,11 @@ const sidebars = {
                       label: 'Types of Deployment Templates',
                       collapsed: false,
                       items: [
-                        'user-guide/creating-application/base-config/deployment-template/README',
-                        'user-guide/creating-application/base-config/deployment-template/deployment',
-                        'user-guide/creating-application/base-config/deployment-template/rollout-deployment',
-                        'user-guide/creating-application/base-config/deployment-template/job-and-cronjob',
-                        'user-guide/creating-application/base-config/deployment-template/statefulset',
+                        'user-guide/creating-application/base-config/deployment-template-types/README',
+                        'user-guide/creating-application/base-config/deployment-template-types/deployment',
+                        'user-guide/creating-application/base-config/deployment-template-types/rollout-deployment',
+                        'user-guide/creating-application/base-config/deployment-template-types/job-and-cronjob',
+                        'user-guide/creating-application/base-config/deployment-template-types/statefulset',
                       ],
                     },
                     // External Secrets (ESO) nested

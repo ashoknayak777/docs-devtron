@@ -14,7 +14,7 @@ Base Configurations in Devtron consists of:
 
 In Devtron, these are the core settings that dictate an application's behavior.
 
-![Figure 1: Base Configurations of Application](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/base-config-main.jpg)
+![Figure 1: Base Configurations of Application](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/base-config-main.jpg)
 
 ## Next Steps
 

@@ -8,7 +8,7 @@ The [Deployment Template](../../reference/glossary.md#deployment-template) might
 
 These restrictions can be applied for deployment templates in both the:
 
-* [Base configuration](../../user-guide/creating-application/deployment-template.md)
+* [Base configuration](../../user-guide/creating-application/base-config/README.md)
 * [Environment-level configuration](../../user-guide/creating-application/environment-overrides.md)
 
 **How is this different from the 'Protect Configuration' feature?**

@@ -9,7 +9,7 @@ This chart creates a deployment that runs multiple replicas of your application 
 * Use the status of the Deployment as an indicator that a rollout has stuck.
 * Clean up older ReplicaSets that you do not need anymore.
 
-![Figure 1: Choosing 'Deployment' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/dt-type-3.jpg)
+![Figure 1: Choosing 'Deployment' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/dt-type-3.jpg)
 
 You can define application behavior by providing information in the following sections:
 
@@ -24,14 +24,6 @@ You can define application behavior by providing information in the following se
 :::caution Note
 Super-admins can lock keys in deployment template to prevent non-super-admins from modifying those locked keys. Refer [Lock Deployment Configuration](../../../global-configurations/lock-deployment-config.md) to know more.
 :::
-
-<!-- ## Basic Configuration
-
-Some of the use-cases which are defined on the Deployment Template (YAML file) may not be applicable to configure for your application. In such cases, you can do a basic deployment configuration for your application in the **GUI** section instead of configuring the YAML file.
-
-![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/basic-config-deployment-template-v2.jpg)
-
-[Click here](../../creating-application/deployment-template.md#using-basic-gui) to know more about the GUI section. -->
 
 ---
 
@@ -1120,7 +1112,7 @@ It gives the realtime metrics of the deployed applications
 
 If you want to see application metrics like different HTTP status codes metrics, application throughput, latency, response time. Enable the Application metrics from below the deployment template Save button. After enabling it, you should be able to see all metrics on App detail page. By default it remains disabled.
 
-![Figure 2: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/deployment_application_metrics.jpg)
+![Figure 2: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/deployment_application_metrics.jpg)
 
 Once all the Deployment template configurations are done, click on `Save` to save your deployment configuration. Now you are ready to create [Workflow](../../workflow/README.md) to do CI/CD.
 

@@ -3,7 +3,7 @@
 
 The `Rollout Deployment` chart deploys an advanced version of deployment that supports Blue/Green and Canary deployments. For functioning, it requires a rollout controller to run inside the cluster.
 
-![Figure 1: Choosing 'Rollout' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/dt-type-2.jpg)
+![Figure 1: Choosing 'Rollout' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/dt-type-2.jpg)
 
 You can define application behavior by providing information in the following sections:
 
@@ -952,7 +952,7 @@ Wait for given period of time before scaling down the container.
 
 If you want to see application metrics like different HTTP status codes metrics, application throughput, latency, response time. Enable the Application metrics from below the deployment template Save button. After enabling it, you should be able to see all metrics on App detail page. By default it remains disabled.
 
-![Figure 4: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/application-metrics.jpg)
+![Figure 4: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/application-metrics.jpg)
 
 Once all the Deployment template configurations are done, click on `Save` to save your deployment configuration. Now you are ready to create [Workflow](../../workflow/README.md) to do CI/CD.
 
