@@ -53,7 +53,7 @@ const sidebars = {
           label: 'Get Devtron Enterprise',
           href: 'https://devtron.ai/contact-sales',
         },
-        'setup/install/install-devtron', // Devtron Admin Credentials
+        // 'setup/install/install-devtron',
       ],
     },
 
@@ -465,7 +465,7 @@ const sidebars = {
         'setup/install/override-default-devtron-installation-configs',
         'setup/install/ingress-setup',
         'setup/install/install-devtron-in-airgapped-environment',
-        'setup/install/freemium',
+        // 'setup/install/freemium',
         'setup/install/install-devtron-Kubernetes-client',
         'setup/install/demo-tutorials',
         'setup/install/devtron-backup',
