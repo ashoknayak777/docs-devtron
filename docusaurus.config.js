@@ -31,7 +31,13 @@ const config = {
   projectName: 'docs-devtron', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -148,7 +154,7 @@ const config = {
                   </a>
                 </div>
                 <p class="footer-desc" style="margin: 1rem 0; font-size: 0.95rem;">
-                  Simplify application management and deployment to unlock the full value of K8s, and bridge the gap between development and operations team.
+                  Unlock the full value of K8s, and bridge the gap between development and operations team.
                 </p>
                 <div style="margin-bottom: 1rem;">
                   <a href="https://discord.gg/jsRG5qx2gp" target="_blank" style="margin: 0 8px;">
