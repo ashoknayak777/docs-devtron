@@ -26,24 +26,28 @@ const sidebars = {
     //   id: 'README',
     //   label: 'Introduction',
     // },
-    {
-      type: 'doc',
-      id: 'README',
-      label: 'Introduction',
-    },
+
 
     // Getting Started
     {
-      type: 'doc',
-      id: 'setup/getting-started/initial-setup',
+      type: 'category',
       label: 'Getting Started',
+      collapsed: true,
+      items: [
+        {
+          type: 'doc',
+          id: 'README',
+          label: 'Introduction',
+        },
+        'setup/getting-started/initial-setup',
+      ],
     },
 
     // Install Devtron
     {
       type: 'category',
       label: 'Install Devtron',
-      collapsed: false,
+      collapsed: true,
       items: [
         'setup/install/README',
         'setup/install/devtron-oss',
@@ -57,78 +61,18 @@ const sidebars = {
       ],
     },
 
-    // Global Configurations (top-level)
+    // Application Management
     {
       type: 'category',
-      label: 'Global Configurations',
-      collapsed: false,
+      label: 'Application Management',
+      collapsed: true,
       items: [
-        'user-guide/global-configurations/README',
-        'user-guide/global-configurations/host-url',
-        'user-guide/global-configurations/gitops',
-        'user-guide/global-configurations/projects',
-        'user-guide/global-configurations/cluster-and-environments',
-        'user-guide/global-configurations/git-accounts',
-        'user-guide/global-configurations/container-registries',
-        'user-guide/global-configurations/chart-repo',
-        'user-guide/global-configurations/deployment-charts',
-        // Authorization nested
-        {
-          type: 'category',
-          label: 'Authorization',
-          collapsed: false,
-          items: [
-            'user-guide/global-configurations/authorization/README',
-            'user-guide/global-configurations/sso-login',
-            {
-              type: 'category',
-              label: 'SSO Login Services',
-              collapsed: false,
-              items: [
-                'user-guide/global-configurations/authorization/sso/google',
-                'user-guide/global-configurations/authorization/sso/github',
-                'user-guide/global-configurations/authorization/sso/gitlab',
-                'user-guide/global-configurations/authorization/sso/microsoft',
-                'user-guide/global-configurations/authorization/sso/ldap',
-                'user-guide/global-configurations/authorization/sso/oidc',
-                'user-guide/global-configurations/authorization/sso/keycloak',
-                'user-guide/global-configurations/authorization/sso/okta',
-                'user-guide/global-configurations/authorization/sso/openshift',
-              ],
-            },
-            'user-guide/global-configurations/authorization/user-access',
-            'user-guide/global-configurations/authorization/permission-groups',
-            'user-guide/global-configurations/authorization/api-tokens',
-          ],
-        },
-        'user-guide/global-configurations/manage-notification',
-        'user-guide/global-configurations/application-template',
-        'user-guide/global-configurations/deployment-window',
-        'user-guide/global-configurations/approval-policy',
-        'user-guide/global-configurations/external-links',
-        'user-guide/global-configurations/catalog-framework',
-        'user-guide/global-configurations/scoped-variables',
-        'user-guide/global-configurations/plugin-policy',
-        'user-guide/global-configurations/pull-image-digest',
-        'user-guide/global-configurations/tags-policy',
-        'user-guide/global-configurations/filter-condition',
-        'user-guide/global-configurations/lock-deployment-config',
-        'user-guide/global-configurations/image-promotion-policy',
-        'user-guide/global-configurations/build-infra',
-      ],
-    },
-
-    // Usage
-    {
-      type: 'category',
-      label: 'Usage',
-      collapsed: false,
-      items: [
+        'user-guide/app-management-overview',
         // Applications top
         {
           type: 'category',
           label: 'Applications',
-          collapsed: false,
+          collapsed: true,
           items: [
             'user-guide/applications',
             'user-guide/create-application',
@@ -138,7 +82,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'App Configuration',
-              collapsed: false,
+              collapsed: true,
               items: [
                 'user-guide/creating-application/README',
                 'user-guide/creating-application/git-material',
@@ -147,7 +91,7 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Base Configurations',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     'user-guide/creating-application/base-config/README',
                     'user-guide/creating-application/base-config/config-maps',
@@ -156,7 +100,7 @@ const sidebars = {
                     {
                       type: 'category',
                       label: 'Types of Deployment Templates',
-                      collapsed: false,
+                      collapsed: true,
                       items: [
                         'user-guide/creating-application/base-config/deployment-template-types/README',
                         'user-guide/creating-application/base-config/deployment-template-types/deployment',
@@ -169,7 +113,7 @@ const sidebars = {
                     {
                       type: 'category',
                       label: 'Types of External Secrets',
-                      collapsed: false,
+                      collapsed: true,
                       items: [
                         'user-guide/creating-application/base-config/eso/README',
                         'user-guide/creating-application/base-config/eso/install-eso',
@@ -185,7 +129,7 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'Workflow Editor',
-                  collapsed: false,
+                  collapsed: true,
                   items: [
                     'user-guide/creating-application/workflow/README',
                     'user-guide/creating-application/workflow/ci-pipeline',
@@ -202,7 +146,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Build and Deploy',
-              collapsed: false,
+              collapsed: true,
               items: [
                 'user-guide/deploying-application/README',
                 'user-guide/deploying-application/triggering-ci',
@@ -216,7 +160,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'App Details',
-              collapsed: false,
+              collapsed: true,
               items: [
                 'user-guide/creating-application/overview',
                 'user-guide/app-details/README',
@@ -232,11 +176,134 @@ const sidebars = {
           ],
         },
 
+        // Application Groups
+        'user-guide/application-groups',
+
+        // Chart Store section
+        {
+          type: 'category',
+          label: 'Chart Store',
+          collapsed: true,
+          items: [
+            'user-guide/deploy-chart/README',
+            'user-guide/deploy-chart/deployment-of-charts',
+            'user-guide/deploy-chart/chart-group',
+          ],
+        },
+
+        'user-guide/bulk-update',
+        'user-guide/global-configurations/application-template',
+        'user-guide/global-configurations/projects',
+
+        // App Configurations
+        {
+          type: 'category',
+          label: 'Configurations',
+          collapsed: true,
+          items: [
+            'user-guide/global-configurations/gitops',
+            'user-guide/global-configurations/git-accounts',
+            'user-guide/global-configurations/chart-repo',
+            'user-guide/global-configurations/deployment-charts',
+            'user-guide/global-configurations/manage-notification',
+            'user-guide/global-configurations/scoped-variables',
+            'user-guide/global-configurations/build-infra',
+          ]
+        },
+        // Policies
+        {
+          type: 'category',
+          label: 'Policies',
+          collapsed: true,
+          items: [
+            'user-guide/global-configurations/deployment-window',
+            'user-guide/global-configurations/approval-policy',
+            'user-guide/global-configurations/plugin-policy',
+            'user-guide/global-configurations/pull-image-digest',
+            'user-guide/global-configurations/tags-policy',
+            'user-guide/global-configurations/filter-condition',
+            'user-guide/global-configurations/lock-deployment-config',
+          ]
+        },
+      ],
+    },
+
+    // Infrastructure Management
+    {
+      type: 'category',
+      label: 'Infrastructure Management',
+      collapsed: true,
+      items: [
+        {
+          type: 'category',
+          label: 'Resource Browser',
+          collapsed: true,
+          items: [
+            'user-guide/resource-browser/README',
+            'user-guide/resource-browser/overview',
+            'user-guide/resource-browser/manage-resources',
+            'user-guide/resource-browser/compare-and-sync',
+            'user-guide/resource-browser/nodes',
+            'user-guide/resource-browser/pods',
+            'user-guide/resource-browser/resource-recommender',
+            'user-guide/resource-browser/cluster-terminal',
+            'user-guide/resource-browser/monitoring-graphs',
+            'user-guide/resource-browser/kubectl-local',
+            'user-guide/operations/edit-gui-schema',
+            'user-guide/operations/edit-lock-schema',
+          ],
+        },
+        'user-guide/resource-watcher',
+      ]
+    },
+
+    // Software Distribution Hub
+    {
+      type: 'category',
+      label: 'Software Distribution Hub',
+      collapsed: true,
+      items: [
+        'user-guide/software-distribution-hub/README',
+        'user-guide/software-distribution-hub/tenants',
+        'user-guide/software-distribution-hub/release-hub',
+      ],
+    },
+
+    // Cost Visibility
+    {
+      type: 'category',
+      label: 'Cost Visibility',
+      collapsed: true,
+      items: [
+        'user-guide/cost-visibility-overview',
+        'user-guide/finops/cost-breakdown',
+        'user-guide/finops/configurations',
+      ],
+    },
+
+    // Security
+    {
+      type: 'category',
+      label: 'Security',
+      collapsed: true,
+      items: [
+        'user-guide/security-features',
+        'user-guide/security-features/security-scans',
+        'user-guide/security-features/security-policies',
+      ],
+    },
+
+    // Automation & Enablement
+    {
+      type: 'category',
+      label: 'Automation & Enablement',
+      collapsed: true,
+      items: [
         // Jobs
         {
           type: 'category',
           label: 'Jobs',
-          collapsed: false,
+          collapsed: true,
           items: [
             'user-guide/jobs/README',
             'user-guide/jobs/create-job',
@@ -264,76 +331,130 @@ const sidebars = {
             'user-guide/jobs/overview-job',
           ],
         },
+        // 'user-guide/automation/alerting',
+        // 'user-guide/automation/incident-response',
+        // 'user-guide/automation/api-portal',
+        // 'user-guide/automation/runbook-automation',
+      ],
+    },
 
-        // Application Groups
-        'user-guide/application-groups',
+    // Backup & Restore
+    {
+      type: 'category',
+      label: 'Backup & Restore',
+      collapsed: true,
+      items: [
+        'user-guide/storageops/backup-and-restore',
+      ],
+    },
 
-        // Software Distribution Hub
+    // AI Recommendations
+    {
+      type: 'category',
+      label: 'AI Recommendations',
+      collapsed: true,
+      items: [
+        'user-guide/ai-recommendations',
+      ],
+    },
+
+    // Global Configurations (top-level)
+    {
+      type: 'category',
+      label: 'Global Configurations',
+      collapsed: true,
+      items: [
+        'user-guide/global-configurations/README',
+        'user-guide/global-configurations/host-url',
+        'user-guide/global-configurations/cluster-and-environments',
+        'user-guide/global-configurations/container-registries',
+        // Authorization nested
         {
           type: 'category',
-          label: 'Software Distribution Hub',
-          collapsed: false,
+          label: 'Authorization',
+          collapsed: true,
           items: [
-            'user-guide/software-distribution-hub/README',
-            'user-guide/software-distribution-hub/tenants',
-            'user-guide/software-distribution-hub/release-hub',
+            'user-guide/global-configurations/authorization/README',
+            'user-guide/global-configurations/sso-login',
+            {
+              type: 'category',
+              label: 'SSO Login Services',
+              collapsed: true,
+              items: [
+                'user-guide/global-configurations/authorization/sso/google',
+                'user-guide/global-configurations/authorization/sso/github',
+                'user-guide/global-configurations/authorization/sso/gitlab',
+                'user-guide/global-configurations/authorization/sso/microsoft',
+                'user-guide/global-configurations/authorization/sso/ldap',
+                'user-guide/global-configurations/authorization/sso/oidc',
+                'user-guide/global-configurations/authorization/sso/keycloak',
+                'user-guide/global-configurations/authorization/sso/okta',
+                'user-guide/global-configurations/authorization/sso/openshift',
+              ],
+            },
+            'user-guide/global-configurations/authorization/user-access',
+            'user-guide/global-configurations/authorization/permission-groups',
+            'user-guide/global-configurations/authorization/api-tokens',
+          ],
+        },
+        'user-guide/global-configurations/external-links',
+        'user-guide/global-configurations/catalog-framework',
+        'user-guide/global-configurations/image-promotion-policy',
+
+      ],
+    },
+
+    // Resources (top-level)
+    {
+      type: 'category',
+      label: 'Resources',
+      collapsed: true,
+      items: [
+        'reference/glossary',
+        'FAQs/devtron-troubleshoot',
+        {
+          type: 'category',
+          label: 'Upgrade Devtron',
+          collapsed: true,
+          items: [
+            'setup/upgrade/README',
+            'setup/upgrade/upgrade-devtron-ui',
+            'setup/upgrade/devtron-upgrade-1.5.0',
+            'setup/upgrade/devtron-upgrade-0.6.x-0.7.x',
+            'setup/upgrade/devtron-upgrade-0.5.x-0.6.x',
+            'setup/upgrade/devtron-upgrade-0.4.x-0.5.x',
+            'setup/upgrade/devtron-upgrade-0.4.x-0.4.x',
+            'setup/upgrade/devtron-upgrade-0.3.x-0.4.x',
+            'setup/upgrade/devtron-upgrade-0.3.x-0.3.x',
+            'setup/upgrade/devtron-upgrade-0.2.x-0.3.x',
           ],
         },
 
-        // Resource Browser
         {
           type: 'category',
-          label: 'Resource Browser',
-          collapsed: false,
+          label: 'Additional Installation Resources',
+          collapsed: true,
           items: [
-            'user-guide/resource-browser/README',
-            'user-guide/resource-browser/overview',
-            'user-guide/resource-browser/manage-resources',
-            'user-guide/resource-browser/compare-and-sync',
-            'user-guide/resource-browser/nodes',
-            'user-guide/resource-browser/pods',
-            'user-guide/resource-browser/resource-recommender',
-            'user-guide/resource-browser/cluster-terminal',
-            'user-guide/resource-browser/monitoring-graphs',
-            'user-guide/resource-browser/kubectl-local',
-            'user-guide/operations/edit-gui-schema',
-            'user-guide/operations/edit-lock-schema',
+            'reference/README',
+            'setup/install/prod-infra',
+            'setup/configurations/configurations-overview',
+            'setup/install/installation-configuration',
+            'setup/install/override-default-devtron-installation-configs',
+            'setup/install/ingress-setup',
+            'setup/install/install-devtron-in-airgapped-environment',
+            // 'setup/install/freemium',
+            'setup/install/install-devtron-Kubernetes-client',
+            'setup/install/demo-tutorials',
+            'setup/install/devtron-backup',
+            'setup/install/faq-on-installation',
           ],
         },
-
-        'user-guide/resource-watcher',
-
-        // Chart Store / Chart Store (Chart Store section)
-        {
-          type: 'category',
-          label: 'Chart Store',
-          collapsed: false,
-          items: [
-            'user-guide/deploy-chart/README',
-            'user-guide/deploy-chart/deployment-of-charts',
-            'user-guide/deploy-chart/chart-group',
-          ],
-        },
-
-        // Security
-        {
-          type: 'category',
-          label: 'Security',
-          collapsed: false,
-          items: [
-            'user-guide/security-features',
-            'user-guide/security-features/security-scans',
-            'user-guide/security-features/security-policies',
-          ],
-        },
-
-        'user-guide/bulk-update',
 
         // Integrations
         {
           type: 'category',
           label: 'Integrations',
-          collapsed: false,
+          collapsed: true,
           items: [
             'user-guide/integrations/README',
             'user-guide/integrations/build-and-deploy-ci-cd',
@@ -356,7 +477,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Pipeline Plugins',
-          collapsed: false,
+          collapsed: true,
           items: [
             'user-guide/plugins/README',
             'user-guide/plugins/create-plugin',
@@ -395,66 +516,13 @@ const sidebars = {
           ],
         },
 
-        // Using Devtron Intelligence
         'user-guide/devtron-intelligence',
-
-        // Enable GitOps with FluxCD
         'user-guide/creating-application/fluxcd',
-      ],
-    },
 
-    // Resources (top-level)
-    {
-      type: 'category',
-      label: 'Resources',
-      collapsed: false,
-      items: [
-        'reference/glossary',
-            // Additional Resources / Upgrade & Troubleshooting
-        {
-          type: 'category',
-          label: 'Upgrade Devtron',
-          collapsed: false,
-          items: [
-            'setup/upgrade/README',
-            'setup/upgrade/upgrade-devtron-ui',
-            'setup/upgrade/devtron-upgrade-1.5.0',
-            'setup/upgrade/devtron-upgrade-0.6.x-0.7.x',
-            'setup/upgrade/devtron-upgrade-0.5.x-0.6.x',
-            'setup/upgrade/devtron-upgrade-0.4.x-0.5.x',
-            'setup/upgrade/devtron-upgrade-0.4.x-0.4.x',
-            'setup/upgrade/devtron-upgrade-0.3.x-0.4.x',
-            'setup/upgrade/devtron-upgrade-0.3.x-0.3.x',
-            'setup/upgrade/devtron-upgrade-0.2.x-0.3.x',
-          ],
-        },
-
-        {
-          type: 'category',
-          label: 'Additional Installation Resources',
-          collapsed: false,
-          items: [
-            'reference/README',
-            'setup/install/prod-infra',
-            'setup/configurations/configurations-overview',
-            'setup/install/installation-configuration',
-            'setup/install/override-default-devtron-installation-configs',
-            'setup/install/ingress-setup',
-            'setup/install/install-devtron-in-airgapped-environment',
-            // 'setup/install/freemium',
-            'setup/install/install-devtron-Kubernetes-client',
-            'setup/install/demo-tutorials',
-            'setup/install/devtron-backup',
-            'setup/install/faq-on-installation',
-          ],
-        },
-
-        // Troubleshooting / Other resources
-        'FAQs/devtron-troubleshoot',
         {
           type: 'category',
           label: 'Use Cases',
-          collapsed: false,
+          collapsed: true,
           items: [
             'user-guide/use-cases/README',
             'user-guide/use-cases/devtron-generic-helm-chart-to-run-cron-job-or-one-time-job',
