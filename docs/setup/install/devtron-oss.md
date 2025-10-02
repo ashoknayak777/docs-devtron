@@ -128,7 +128,11 @@ To access the dashboard on EKS, AKS, or GKE cluster, run the following command:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.status.loadBalancer.ingress}'
 ```
 
-<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>: The LoadBalancer URL displayed in the output</div>
+<div style={{ color: "purple" }}>
+  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
+  <span>The LoadBalancer URL displayed in the output</span>
+</div>
+
 </TabItem>
 
 <TabItem label="MicroK8s/Kind/K3s (and Cloud VMs)" value="MicroK8s/Kind/K3s (and Cloud VMs)">
@@ -143,9 +147,12 @@ Run the following command to port-forward the devtron service to port `8000`
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://127.0.0.1:8000`</div>
+<div style={{ color: "purple" }}>
+  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
+  <span>`http://127.0.0.1:8000`</span>
+</div>
 
-***
+---
 
 #### Accessing the Dashboard via NodePort
 
@@ -161,9 +168,12 @@ Then run the following command to get the port number assigned to the service:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.spec.ports[0].nodePort}'
 ```
 
-<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://<HOST_IP>:<NODEPORT>/dashboard`</div>
+<div style={{ color: "purple" }}>
+  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
+  <span>`http://<HOST_IP>:<NODEPORT>/dashboard`</span>
+</div>
 
-***
+---
 
 #### Accessing the Dashboard locally from a remote VM (Port Forwarding via Kubeconfig)
 
@@ -177,7 +187,12 @@ kubectl config use-context <context-name> # Set the correct context.
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>:</div> <div style={{color: "purple"}}></div><div style={{color: "purple"}}>`http://127.0.0.1:8000`</div>
+<div style={{ color: "purple" }}>
+  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
+  <span>`http://127.0.0.1:8000`</span>
+</div>
+
+
 </TabItem>
 
 <TabItem label="Minikube" value="Minikube">
@@ -187,7 +202,11 @@ Run the following command:
 minikube service devtron-service --namespace devtroncd
 ```
 
-<div style={{color: "purple"}}>**Dashboard URL**</div><div style={{color: "purple"}}>: (Directly opens in your browser)</div>
+<div style={{ color: "purple" }}>
+  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
+  <span>(Directly opens in your browser)</span>
+</div>
+
 </TabItem>
 </Tabs>
 
@@ -195,7 +214,7 @@ minikube service devtron-service --namespace devtroncd
 
 ## Step 4: Log in to Devtron
 
-1. From your browser, visit the dashboard URL (obtained in the previous step) to view the login page of Devtron.
+1. From your browser, visit the Dashboard URL (obtained in the previous step) to view the login page of Devtron.
 2. Enter **`admin`** in the username.
 3.  Run the below command to get your password.
 

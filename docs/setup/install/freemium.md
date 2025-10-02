@@ -26,7 +26,7 @@ If you're currently using the open-source (OSS) version of Devtron, we **do not 
 Instead, we suggest you to perform a fresh installation of Devtron Freemium on a separate cluster (following the steps below) for the best experience.
 :::
 
-***
+---
 
 ## Step 1: Go to the Devtron License Dashboard
 
@@ -80,7 +80,7 @@ Once logged in, the **Devtron License Dashboard** will open.
 
 ![Figure 7: Entering the Details](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-enterprise-license-step-1.jpg)
 
-***
+---
 
 ## Step 2: Install Devtron
 
@@ -239,7 +239,7 @@ The Dashboard URL will be `http://127.0.0.1:8000` on your local machine.
 
 After successfully installing Devtron and obtaining the dashboard URL, click **Next** to proceed to [Step 3: Get License Key](freemium.md#step-3-get-license-key)
 
-***
+---
 
 ## Step 3: Get License Key
 
@@ -292,7 +292,7 @@ In such cases, contact [Devtron Support](mailto:support@devtron.ai).
 Visit the [Troubleshoot](freemium.md#troubleshoot-issues) section to identify the issue or connect with [Devtron Support](mailto:support@devtron.ai).
 :::
 
-***
+---
 
 ## Log in to Devtron
 
@@ -317,7 +317,7 @@ After the initial login, we recommend you set up any [Single Sign-On (SSO) servi
 
 ![Figure 17: Devtron Dashboard](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-enterprise-license-dashboard.jpg)
 
-***
+---
 
 ## Convert Enterprise Free Trial to Freemium
 
@@ -351,7 +351,7 @@ Ensure your Enterprise Free Trial has no more than one additional cluster connec
 
     ![Figure 24: Click Activate](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-paste-license-2.jpg)
 
-***
+---
 
 ## Additional Actions
 
@@ -377,7 +377,7 @@ If you want to add more than one cluster, email us at [enterprise@devtron.ai](ma
 
 ![Figure 27: Upgrade License](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-upgrade.jpg)
 
-***
+---
 
 ## Troubleshoot Issues
 
@@ -390,7 +390,7 @@ If you want to add more than one cluster, email us at [enterprise@devtron.ai](ma
 | <p><strong>Multiple Cluster Detected</strong><br/><a href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-multiple-cluster-detected.jpg">Snapshot</a></p>                  | You have added more than one cluster                                 | Devtron Dashboard Page or License Dashboard | Reach out to enterprise@devtron.ai for renewal               |
 | <p><strong>License Key Already Exists for Fingerprint</strong><br/><a href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/freemium/freemium-license-already-exists-v2.jpg">Snapshot</a></p> | You cannot generate more than 1 license key for 1 fingerprint        | License Dashboard (Step-3)                  | Contact Support                                              |
 
-***
+---
 
 ## FAQs
 
