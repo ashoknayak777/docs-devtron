@@ -32,7 +32,7 @@ html[data-theme='dark'] .heroBanner {
   font-weight: 400;
   margin-bottom: 2.5rem;
   opacity: 0.95;
-  max-width: 700px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
@@ -130,7 +130,7 @@ html[data-theme='dark'] .heroBanner {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 2rem;
+  padding: 1.25rem 1.5rem;   /* reduce vertical padding (was 2rem) */
   background: white;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
@@ -162,7 +162,7 @@ html[data-theme='dark'] .heroBanner {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;    /* tighter spacing below icon */
   transition: all 0.3s ease;
 }
 
@@ -181,7 +181,7 @@ html[data-theme='dark'] .heroBanner {
 .featureTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;     /* reduce title-bottom gap */
   color: #1e293b;
   transition: color 0.3s ease;
 }
@@ -193,7 +193,7 @@ html[data-theme='dark'] .heroBanner {
 .featureDescription {
   font-size: 0.95rem;
   color: #64748b;
-  line-height: 1.6;
+  line-height: 1.4;          /* was 1.6 → makes text block more compact */
   margin: 0;
 }
 
@@ -202,12 +202,19 @@ html[data-theme='dark'] .heroBanner {
 }
 
 .featureArrow {
+  position: absolute;
+  top: 1rem;     /* distance from top */
+  right: 1rem;   /* distance from right */
+  margin: 0;     /* remove old margin */
+  opacity: 0;    /* keep your hover effect */
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 1rem;
+  /* margin-top: 0.5rem; 
   opacity: 0;
   transform: translateX(-10px);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 
 .featureCardLink:hover .featureArrow {

@@ -92,7 +92,7 @@
 
 /* Light Mode */
 html[data-theme='light'] .footer {
-  background-color: #f9f9f9;
+  background-color: #ced4da63;
   color: #333;
   border-top: 1px solid rgba(0, 0, 0, 0.1); /* Light mode */
 }
@@ -217,7 +217,7 @@ html[data-theme='dark'] .footer-desc {
     rgba(255, 255, 255, 0.1) 100%
   );
   transform: skewX(-20deg);
-  animation: shimmer-highlight 2.5s infinite;
+  animation: shimmer-highlight 3.5s infinite;
 }
 
 .shimmer-button-freemium:hover {
@@ -249,7 +249,7 @@ html[data-theme='dark'] .footer-desc {
   font-size: small;
   font-weight: 600;
   /* animation: shimmer 3s infinite linear; */
-  border: 1px solid #ccc; /* thin gray border */
+  border: 1px solid #ddd; /* thin gray border */
   background-size: 200% 100%;
   box-shadow: 0 2px 8px rgba(184, 134, 11, 0.4);
   /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
