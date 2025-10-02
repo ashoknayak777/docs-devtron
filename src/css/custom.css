@@ -185,23 +185,24 @@ html[data-theme='dark'] .footer-desc {
 
 .shimmer-button-freemium {
   position: relative;
-  overflow: hidden; /* ensure highlight band stays inside */
+  overflow: hidden;
   background: linear-gradient(
     135deg,
-    #1E3A8A 25%,   /* Dark navy-blue */
-    #4C1D95 50%,   /* Deep violet */
-    #6D28D9 75%    /* Rich purple */
+    #6366F1 25%,   /* Indigo */
+    #6366F1 50%,   /* Indigo */
+    #8B5CF6 75%    /* Light purple */
   );
   color: white !important;
   padding: 6px 16px;
   border-radius: 6px;
   font-size: small;
   font-weight: 600;
-  box-shadow: 0 2px 10px rgba(109, 40, 217, 0.45);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35); /* lighter shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   margin-left: 12px;
   cursor: pointer;
 }
+
 
 .shimmer-button-freemium::before {
   content: "";
