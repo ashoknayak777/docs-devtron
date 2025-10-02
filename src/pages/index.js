@@ -65,7 +65,7 @@ const features = [
     title: 'Cost Visibility',
     Icon: DollarSign,
     description: 'Track and optimize your infrastructure costs.',
-    link: '/docs/user-guide/cost-visibility-overview',
+    link: '/docs/user-guide/finops/cost-visibility-overview',
     color: '#10B981',
   },
   {
