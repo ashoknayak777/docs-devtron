@@ -6,7 +6,7 @@ This chart deploys Job & CronJob. A Job is a controller object that represents a
  * [Job](#1-job)
  * [CronJob](#2-cronjob)
 
-![Figure 1: Choosing 'Job & CronJob' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/job-cronjob.jpg)
+![Figure 1: Choosing 'Job & CronJob' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/job-cronjob.jpg)
 
 ## 1. Job
 

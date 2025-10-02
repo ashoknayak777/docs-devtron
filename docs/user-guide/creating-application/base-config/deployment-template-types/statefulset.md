@@ -2,11 +2,11 @@
 
 The StatefulSet chart in Devtron allows you to deploy and manage stateful applications. StatefulSet is a Kubernetes resource that provides guarantees about the ordering and uniqueness of Pods during deployment and scaling. 
 
-![Figure 1: Choosing 'StatefulSet' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/sts-chart.jpg)
+![Figure 1: Choosing 'StatefulSet' Chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/sts-chart.jpg)
 
 It supports only `ONDELETE` and `ROLLINGUPDATE` deployment strategy.
 
-![Figure 2: Selecting Deployment Strategy](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/sts-strategy.jpg)
+![Figure 2: Selecting Deployment Strategy](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/sts-strategy.jpg)
 
 
 You can select `StatefulSet` chart when you want to use only basic use cases which contain the following:
@@ -971,7 +971,7 @@ It gives the realtime metrics of the deployed applications
 
 If you want to see application metrics like different HTTP status codes metrics, application throughput, latency, response time. Enable the Application metrics from below the deployment template Save button. After enabling it, you should be able to see all metrics on App detail page. By default it remains disabled.
 
-![Figure 3: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template-types/deployment_application_metrics.jpg)
+![Figure 3: Application Metrics](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/deployment-template/deployment_application_metrics.jpg)
 
 Once all the Deployment template configurations are done, click on `Save` to save your deployment configuration. Now you are ready to create [Workflow](../../workflow/README.md) to do CI/CD.
 

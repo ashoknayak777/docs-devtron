@@ -85,7 +85,7 @@ const sidebars = {
           items: [
             'user-guide/create-application',
             'user-guide/cloning-application',
-            'user-guide/Deploy-sample-app/nodejs_app',
+            'user-guide/deploy-sample-app/nodejs_app',
             // App Configuration nested
             {
               type: 'category',
