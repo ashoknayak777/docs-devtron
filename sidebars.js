@@ -33,20 +33,22 @@ const sidebars = {
       type: 'category',
       label: 'Getting Started',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'README',
+      },
       items: [
-        {
-          type: 'doc',
-          id: 'README',
-          label: 'Introduction',
-        },
         'setup/getting-started/initial-setup',
         // Install Devtron
         {
           type: 'category',
           label: 'Install Devtron',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'setup/install/README',
+      },
           items: [
-            'setup/install/README',
             'setup/install/devtron-oss',
             'setup/install/devtron-freemium',
             {
@@ -65,6 +67,10 @@ const sidebars = {
       type: 'category',
       label: 'Application Management',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/app-management/README',
+      },
       items: [
         'user-guide/app-management-overview',
         // Applications top
@@ -72,8 +78,11 @@ const sidebars = {
           type: 'category',
           label: 'Applications',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/applications',
+          },
           items: [
-            'user-guide/applications',
             'user-guide/create-application',
             'user-guide/cloning-application',
             'user-guide/Deploy-sample-app/nodejs_app',
@@ -82,8 +91,11 @@ const sidebars = {
               type: 'category',
               label: 'App Configuration',
               collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/creating-application/README',
+              },
               items: [
-                'user-guide/creating-application/README',
                 'user-guide/creating-application/git-material',
                 'user-guide/creating-application/docker-build-configuration',
                 // Base Configurations nested
@@ -91,8 +103,11 @@ const sidebars = {
                   type: 'category',
                   label: 'Base Configurations',
                   collapsed: true,
+                  link: {
+                    type: 'doc', // or 'generated-index'
+                    id: 'user-guide/creating-application/base-config/README',
+                  },
                   items: [
-                    'user-guide/creating-application/base-config/README',
                     'user-guide/creating-application/base-config/config-maps',
                     'user-guide/creating-application/base-config/secrets',
                     // Types of Deployment Templates nested
@@ -100,8 +115,11 @@ const sidebars = {
                       type: 'category',
                       label: 'Types of Deployment Templates',
                       collapsed: true,
+                      link: {
+                        type: 'doc', // or 'generated-index'
+                        id: 'user-guide/creating-application/base-config/deployment-template-types/README',
+                      },
                       items: [
-                        'user-guide/creating-application/base-config/deployment-template-types/README',
                         'user-guide/creating-application/base-config/deployment-template-types/deployment',
                         'user-guide/creating-application/base-config/deployment-template-types/rollout-deployment',
                         'user-guide/creating-application/base-config/deployment-template-types/job-and-cronjob',
@@ -113,8 +131,11 @@ const sidebars = {
                       type: 'category',
                       label: 'Types of External Secrets',
                       collapsed: true,
+                      link: {
+                        type: 'doc', // or 'generated-index'
+                        id: 'user-guide/creating-application/base-config/eso/README',
+                      },
                       items: [
-                        'user-guide/creating-application/base-config/eso/README',
                         'user-guide/creating-application/base-config/eso/install-eso',
                         'user-guide/creating-application/base-config/eso/aws-eso',
                         'user-guide/creating-application/base-config/eso/gcp-eso',
@@ -129,8 +150,11 @@ const sidebars = {
                   type: 'category',
                   label: 'Workflow Editor',
                   collapsed: true,
+                  link: {
+                    type: 'doc', // or 'generated-index'
+                    id: 'user-guide/creating-application/workflow/README',
+                  },
                   items: [
-                    'user-guide/creating-application/workflow/README',
                     'user-guide/creating-application/workflow/ci-pipeline',
                     'user-guide/creating-application/workflow/cd-pipeline',
                     'user-guide/creating-application/workflow/pre-post-tasks',
@@ -146,8 +170,11 @@ const sidebars = {
               type: 'category',
               label: 'Build and Deploy',
               collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/deploying-application/README',
+              },
               items: [
-                'user-guide/deploying-application/README',
                 'user-guide/deploying-application/triggering-ci',
                 'user-guide/deploying-application/triggering-cd',
                 'user-guide/deploying-application/rollback-deployment',
@@ -160,9 +187,11 @@ const sidebars = {
               type: 'category',
               label: 'App Details',
               collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/app-details/README',
+              },
               items: [
-                'user-guide/creating-application/overview',
-                'user-guide/app-details/README',
                 'user-guide/app-details/application-summary',
                 'user-guide/creating-application/app-metrics',
                 'user-guide/app-details/deployment-visibility',
@@ -183,8 +212,11 @@ const sidebars = {
           type: 'category',
           label: 'Chart Store',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/deploy-chart/README',
+          },
           items: [
-            'user-guide/deploy-chart/README',
             'user-guide/deploy-chart/deployment-of-charts',
             'user-guide/deploy-chart/chart-group',
           ],
@@ -199,6 +231,10 @@ const sidebars = {
           type: 'category',
           label: 'Configurations',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/app-configurations/README',
+          },
           items: [
             'user-guide/global-configurations/gitops',
             'user-guide/global-configurations/git-accounts',
@@ -214,6 +250,10 @@ const sidebars = {
           type: 'category',
           label: 'Policies',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/policies/README',
+          },
           items: [
             'user-guide/global-configurations/deployment-window',
             'user-guide/global-configurations/approval-policy',
@@ -232,13 +272,20 @@ const sidebars = {
       type: 'category',
       label: 'Infrastructure Management',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/infra-management/README',
+      },
       items: [
         {
           type: 'category',
           label: 'Resource Browser',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/resource-browser/README',
+          },
           items: [
-            'user-guide/resource-browser/README',
             'user-guide/resource-browser/overview',
             'user-guide/resource-browser/manage-resources',
             'user-guide/resource-browser/compare-and-sync',
@@ -261,8 +308,11 @@ const sidebars = {
       type: 'category',
       label: 'Software Distribution Hub',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/software-distribution-hub/README',
+      },
       items: [
-        'user-guide/software-distribution-hub/README',
         'user-guide/software-distribution-hub/tenants',
         'user-guide/software-distribution-hub/release-hub',
       ],
@@ -273,6 +323,10 @@ const sidebars = {
       type: 'category',
       label: 'Cost Visibility',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/finops/README',
+      },
       items: [
         'user-guide/cost-visibility-overview',
         'user-guide/finops/cost-breakdown',
@@ -285,8 +339,11 @@ const sidebars = {
       type: 'category',
       label: 'Security',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/security-features',
+      },
       items: [
-        'user-guide/security-features',
         'user-guide/security-features/security-scans',
         'user-guide/security-features/security-policies',
       ],
@@ -297,27 +354,42 @@ const sidebars = {
       type: 'category',
       label: 'Automation & Enablement',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/automation/README',
+      },
       items: [
         // Jobs
         {
           type: 'category',
           label: 'Jobs',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/jobs/README',
+          },
           items: [
-            'user-guide/jobs/README',
             'user-guide/jobs/create-job',
             {
               type: 'category',
               label: 'Configurations',
+              collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/jobs/README',
+              },
               items: [
-                'user-guide/jobs/configurations/README',
                 'user-guide/jobs/configurations/source-code-job',
                 'user-guide/jobs/configurations/workflow-editor-job',
                 {
                   type: 'category',
                   label: 'ConfigMaps & Secrets',
+                  collapsed: true,
+                  link: {
+                    type: 'doc', // or 'generated-index'
+                    id: 'user-guide/jobs/configurations/configmap-secret/README',
+                  },
                   items: [
-                    'user-guide/jobs/configurations/configmap-secret/README',
                     'user-guide/jobs/configurations/configmap-secret/configmap-job',
                     'user-guide/jobs/configurations/configmap-secret/secret-job',
                   ],
@@ -342,6 +414,10 @@ const sidebars = {
       type: 'category',
       label: 'Backup & Restore',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/storageops/README',
+      },
       items: [
         'user-guide/storageops/backup-and-restore',
       ],
@@ -352,8 +428,12 @@ const sidebars = {
       type: 'category',
       label: 'AI Recommendations',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/ai-recommendations/README',
+      },
       items: [
-        'user-guide/ai-recommendations',
+        // 'user-guide/ai-recommendations',
       ],
     },
 
@@ -362,8 +442,11 @@ const sidebars = {
       type: 'category',
       label: 'Global Configurations',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'user-guide/global-configurations/README',
+      },
       items: [
-        'user-guide/global-configurations/README',
         'user-guide/global-configurations/host-url',
         'user-guide/global-configurations/cluster-and-environments',
         'user-guide/global-configurations/container-registries',
@@ -372,13 +455,19 @@ const sidebars = {
           type: 'category',
           label: 'Authorization',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/global-configurations/authorization/README',
+          },
           items: [
-            'user-guide/global-configurations/authorization/README',
-            'user-guide/global-configurations/sso-login',
             {
               type: 'category',
               label: 'SSO Login Services',
               collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/global-configurations/sso-login',
+              },
               items: [
                 'user-guide/global-configurations/authorization/sso/google',
                 'user-guide/global-configurations/authorization/sso/github',
@@ -408,6 +497,10 @@ const sidebars = {
       type: 'category',
       label: 'Resources',
       collapsed: true,
+      link: {
+        type: 'doc', // or 'generated-index'
+        id: 'README',
+      },
       items: [
         'reference/glossary',
         'FAQs/devtron-troubleshoot',
@@ -415,8 +508,11 @@ const sidebars = {
           type: 'category',
           label: 'Upgrade Devtron',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'setup/upgrade/README',
+          },
           items: [
-            'setup/upgrade/README',
             'setup/upgrade/upgrade-devtron-ui',
             'setup/upgrade/devtron-upgrade-1.5.0',
             'setup/upgrade/devtron-upgrade-0.6.x-0.7.x',
@@ -433,8 +529,11 @@ const sidebars = {
           type: 'category',
           label: 'Additional Installation Resources',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'reference/README',
+          },
           items: [
-            'reference/README',
             'setup/install/prod-infra',
             'setup/configurations/configurations-overview',
             'setup/install/installation-configuration',
@@ -454,15 +553,22 @@ const sidebars = {
           type: 'category',
           label: 'Integrations',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/integrations/README',
+          },
           items: [
-            'user-guide/integrations/README',
             'user-guide/integrations/build-and-deploy-ci-cd',
             'user-guide/integrations/argocd',
             {
               type: 'category',
               label: 'Vulnerability Scanning',
+              collapsed: true,
+              link: {
+                type: 'doc', // or 'generated-index'
+                id: 'user-guide/integrations/vulnerability-scanning/README',
+              },
               items: [
-                'user-guide/integrations/vulnerability-scanning/README',
                 'user-guide/integrations/vulnerability-scanning/clair',
                 'user-guide/integrations/vulnerability-scanning/trivy',
               ],
@@ -477,8 +583,11 @@ const sidebars = {
           type: 'category',
           label: 'Pipeline Plugins',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/plugins/README',
+          },
           items: [
-            'user-guide/plugins/README',
             'user-guide/plugins/create-plugin',
             'user-guide/plugins/plugin-list',
             'user-guide/plugins/ansible-runner',
@@ -522,8 +631,11 @@ const sidebars = {
           type: 'category',
           label: 'Use Cases',
           collapsed: true,
+          link: {
+            type: 'doc', // or 'generated-index'
+            id: 'user-guide/use-cases/README',
+          },
           items: [
-            'user-guide/use-cases/README',
             'user-guide/use-cases/devtron-generic-helm-chart-to-run-cron-job-or-one-time-job',
             'user-guide/use-cases/connect-springboot-with-mysql-database',
             'user-guide/use-cases/connect-expressjs-with-mongodb-database',

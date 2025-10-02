@@ -254,6 +254,7 @@ html[data-theme='dark'] .footer-desc {
   box-shadow: 0 2px 8px rgba(184, 134, 11, 0.4);
   /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
   margin-left: 12px;
+  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -431,3 +432,28 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
 .menu__link {
   font-size: 13px;
 }
+
+
+/* Move dark mode toggle left of other navbar buttons */
+.navbar__items--right .colorModeToggle {
+  order: -1;  /* Moves it before Website/Sandbox buttons */
+  margin-right: auto;  /* Pushes it further left if needed */
+}
+
+/* Shrink all top navbar links */
+/* .navbar__item {
+  font-size: 0.85rem;   
+  padding: 0 8px;      
+} */
+
+/* If you want the "Docs" link smaller too */
+/* .navbar__link {
+  font-size: 0.85rem;
+} */
+
+/* Compact the CTA buttons (Freemium/Enterprise)
+.navbar__item .button {
+  font-size: 0.8rem;
+  padding: 4px 10px;    /* less chunky */
+  /* border-radius: 4px;   slightly sharper */
+/* } */

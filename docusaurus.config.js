@@ -120,6 +120,7 @@ const config = {
           { label: 'Docs', className: 'navbar-docs-link', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
           // { label: 'GitHub Repo', href: 'https://github.com/devtron-labs/devtron', position: 'right' },
           // { label: 'Join Discord', href: 'https://discord.gg/devtron', position: 'right' },
+          { type: 'search', position: 'right' },
           { label: 'Website', href: 'https://devtron.ai', position: 'right' },
           { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'right' },
           {
@@ -134,7 +135,6 @@ const config = {
             position: 'right',
             className: 'shimmer-button-enterprise',
           },
-          { type: 'search', position: 'right' },
           // {to: '/blog', label: 'Blog', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -142,6 +142,11 @@ const config = {
           //   position: 'right',
           // },
         ],
+      },
+      colorMode: {
+        defaultMode: 'light', // or 'dark'
+        disableSwitch: false, // set true to hide the toggle
+        // respectPrefersColorScheme: true, // use system preference
       },
       footer: {
         style: 'light', // switch from 'dark' to 'light'
