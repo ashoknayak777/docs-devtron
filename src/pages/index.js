@@ -30,7 +30,7 @@ const features = [
     title: 'Getting Started',
     Icon: BookOpen,
     description: 'Learn the basics and get up and running with Devtron quickly.',
-    link: '/docs/README',
+    link: '/docs',
     color: '#4F46E5',
   },
   {
@@ -124,7 +124,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className={clsx('button button--primary button--lg', styles.primaryButton)}
-            to="docs/README.md">
+            to="docs">
             Get Started
           </Link>
           <Link
