@@ -40,24 +40,23 @@ const sidebars = {
           label: 'Introduction',
         },
         'setup/getting-started/initial-setup',
-      ],
-    },
-
-    // Install Devtron
-    {
-      type: 'category',
-      label: 'Install Devtron',
-      collapsed: true,
-      items: [
-        'setup/install/README',
-        'setup/install/devtron-oss',
-        'setup/install/devtron-freemium',
+        // Install Devtron
         {
-          type: 'link',
-          label: 'Get Devtron Enterprise',
-          href: 'https://devtron.ai/contact-sales',
+          type: 'category',
+          label: 'Install Devtron',
+          collapsed: true,
+          items: [
+            'setup/install/README',
+            'setup/install/devtron-oss',
+            'setup/install/devtron-freemium',
+            {
+              type: 'link',
+              label: 'Get Devtron Enterprise',
+              href: 'https://devtron.ai/contact-sales',
+            },
+            // 'setup/install/install-devtron',
+          ],
         },
-        // 'setup/install/install-devtron',
       ],
     },
 

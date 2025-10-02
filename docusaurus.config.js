@@ -124,9 +124,15 @@ const config = {
           { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'right' },
           {
             href: 'https://license.devtron.ai/dashboard',
-            label: 'Try Devtron Enterprise',
+            label: 'Get Devtron Freemium',
             position: 'right',
-            className: 'shimmer-button',
+            className: 'shimmer-button-freemium',
+          },
+          {
+            href: 'https://devtron.ai/contact-sales',
+            label: 'Get Devtron Enterprise',
+            position: 'right',
+            className: 'shimmer-button-enterprise',
           },
           { type: 'search', position: 'right' },
           // {to: '/blog', label: 'Blog', position: 'left'},
