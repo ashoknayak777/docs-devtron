@@ -1,6 +1,6 @@
 # Resource Recommender
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 **Resource Recommender** is a Devtron feature that analyzes the history of resource usage (such as CPU and memory) for Kubernetes workloads in a specific cluster and generates data-backed recommendations for optimal resource allocation. 
 

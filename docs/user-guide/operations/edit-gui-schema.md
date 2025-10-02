@@ -1,6 +1,6 @@
 # Configure GUI Schema for Editing Manifest
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 In Devtron, you can create [CRDs](../../reference/glossary.md#crd) for defining the GUI schema. Your GUI schema will be used to determine the fields displayed to the user when they [edit the manifest in GUI mode](../resource-browser/manage-resources.md#edit-using-gui-).
 

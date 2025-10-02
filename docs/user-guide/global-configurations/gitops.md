@@ -132,7 +132,7 @@ Fill the following mandatory fields:
 | **GitLab Username** | Provide the username of your GitLab account |
 | **Personal Access Token** | Provide your personal access token (PAT). It is used as an alternate password to authenticate your GitLab account. <br/>If you do not have one, create a GitLab PAT [here](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html). <br/><br/> **Access Required**: <br/> `api` - Grants complete read/write access to the scoped project API. <br/> `write_repository` - Allows read/write access (pull, push) to the repository.|
 
-### AWS Code Commit [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### AWS Code Commit <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::info Prerequisites
 1. Existing user of AWS CodeCommit ([as AWS stopped adding new customers to it](https://aws.amazon.com/blogs/devops/how-to-migrate-your-aws-codecommit-repository-to-another-git-provider/))
@@ -220,7 +220,7 @@ Fill the following mandatory fields:
 | **Bitbucket Username*** | Provide the username of your Bitbucket Data Center account |
 | **Password** | Provide the password to authenticate your Bitbucket Data Center account |
 
-### Other GitOps [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Other GitOps <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 ![Figure 9: Other GitOps](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/other-gitops.jpg)
 
@@ -244,7 +244,7 @@ Click **Save**.
 We do **NOT** recommend using GitHub organization that contains your source code.
 :::
 
-<iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/github/github-gitops-latest.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/github/github-gitops-latest.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe></div>
 
 1. Create a new account on GitHub (if you do not have one).
 2. On the upper-right corner of your GitHub page, click your profile photo, then click **Settings**.
@@ -266,7 +266,7 @@ For more information about the plans available for your team, see [GitHub's prod
 
 ### Creating Group in GitLab
 
-<iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/gitlab/gitops-gitlab-latest1.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/gitlab/gitops-gitlab-latest1.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe></div>
 
 
 1. Create a new account on GitLab (if you do not have one).
@@ -297,7 +297,7 @@ You can also refer [Azure DevOps - Project Creation](https://docs.microsoft.com/
 
 ### Creating Workspace in Bitbucket
 
-<iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/bitbucket/bitbucket-latest-gitops.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/bitbucket/bitbucket-latest-gitops.mp4" title="GitHub" frameborder="0" allowfullscreen></iframe></div>
 
 1. Create a new individual account on Bitbucket (if you do not have one).
 2. Select your profile and settings avatar on the upper-right corner of the top navigation bar.

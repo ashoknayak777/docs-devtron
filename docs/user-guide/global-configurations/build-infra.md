@@ -54,7 +54,7 @@ Furthermore, CPU and Memory have 2 fields each:
 | **Limit** | This field is use to set the maximum amount of CPU/Memory resources the build process can use, even if there is a lot available in the cluster.|
 
 
-### Creating Custom Profile [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Creating Custom Profile <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Instead of global profile, you can create custom profiles having different infra configurations. Example: One profile for Python apps, a second profile for large apps, and a third profile for small apps, and many more.
 
@@ -84,7 +84,7 @@ Instead of global profile, you can create custom profiles having different infra
 
 ---
 
-## Adding Platform Specific Configurations [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Adding Platform Specific Configurations <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Modern applications often need to run on different hardware platforms (architectures), such as `amd64` (x86_64) and `arm64` to support cross-platform compatibility.
 
@@ -124,7 +124,7 @@ To configure platform specific configurations:
 
 6. The platform specific configuration will be available below the runner configuration.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5nFJfai125U" title="Platform Specific Configurations" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/5nFJfai125U" title="Platform Specific Configurations" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 

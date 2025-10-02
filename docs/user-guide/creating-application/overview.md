@@ -72,7 +72,7 @@ To add or update the **Readme**:
 After saving, the system displays the email address of the user who last updated the README, along with the date and time. This information appears in the header of the Readme section, beside the title.
 :::
 
-### Deployment Window [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Deployment Window <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The **Deployment Window** in the **About** section displays all Blackout Windows and Maintenance Windows configured for your application’s environments.
 
@@ -92,7 +92,7 @@ This section is view-only and does not require any configuration at the applicat
 
 > To learn how to configure deployment windows, refer to the [Deployment Window documentation](../global-configurations/deployment-window.md).
 
-### Catalog [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Catalog <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The **Catalog** in the **About** section displays information about your application, such as documentation references, ownership details, and technical specifications. This data is managed using [Devtron’s Catalog Framework](../global-configurations/catalog-framework.md).
 
@@ -213,7 +213,7 @@ The Environments section provides a detailed view of all environments where the 
 
 ![Figure 12: Environments List](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/environments.jpg)
 
-## Dependencies [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Dependencies <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The Dependencies section displays the relationship of the current application with other Devtron-managed applications in the form of upstream and downstream dependencies.
 

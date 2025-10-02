@@ -67,7 +67,12 @@ Adding [image labels](./deploying-application/image-labels-and-comments.md) can 
 3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci.md#passing-build-parameters-) in application groups before triggering the build.
 
 :::info Note
-Passing build parameters feature is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
+Passing build parameters feature is only available in <img 
+  src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" 
+  alt="Enterprise Feature"
+  className="enterprise-badge-img"
+/>
+
 :::
 
 * Go to the **Parameters** tab.
@@ -207,7 +212,7 @@ To do so, follow the below steps:
 
 ## Additional Features
 
-### Clone Pipelines [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Clone Pipelines <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::caution Who Can Perform This Action?
 Only a [Super-Admin](../user-guide/global-configurations/authorization/user-access.md#grant-super-admin-permission) can clone pipelines.

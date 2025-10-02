@@ -10,11 +10,11 @@ You can use the searchbox to browse the resources.
 
 ![Figure 1: Locate Resources using Searchbox](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/discover-resource.gif)
 
-### Filter Resources [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Filter Resources <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Moreover, you can use filters that allow you to quickly filter your workload as per labels, field selectors, or [CEL expression](https://kubernetes.io/docs/reference/using-api/cel/) as shown below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E-V-ELCXtfs" title="Filtering Workloads in Devtron" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/E-V-ELCXtfs" title="Filtering Workloads in Devtron" frameborder="0" allowfullscreen></iframe></div>
 
 ### Resource Kinds
 
@@ -51,7 +51,7 @@ You can edit the [manifest](../../reference/glossary.md#manifest) of a Kubernete
 
 ![Figure 3a: Editing Manifest (Using YAML)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/edit-live-manifest-yaml.gif)
 
-### Edit using GUI [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Edit using GUI <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 ![Figure 3b: Editing Manifest (Using GUI)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/edit-live-manifest-gui.gif)
 
@@ -67,7 +67,7 @@ You can monitor activities like creation, deletion, updation, scaling, or errors
 
 ![Figure 4a: Viewing All Events](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/events.gif)
 
-### AI-assistance on Events [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### AI-assistance on Events <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::info How to Configure Devtron Intelligence?
 Refer [Devtron Intelligence](../devtron-intelligence.md) to enable this feature.
@@ -134,7 +134,7 @@ spec:
 
 ---
 
-## Bulk Actions on Resources [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Bulk Actions on Resources <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 You can use the checkbox to select the resources/workloads you wish to delete or restart.
 

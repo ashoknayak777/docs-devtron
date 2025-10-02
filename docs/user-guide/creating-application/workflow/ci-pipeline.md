@@ -13,7 +13,7 @@ A workflow can be created in one of the following ways:
 
 * [Deploy Image from External Service](#3-deploy-image-from-external-service)
 
-* [Sync with Environment](#4-sync-with-environment-) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* [Sync with Environment](#4-sync-with-environment-) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 * [Create a Job](#5-create-a-job)
 
@@ -449,7 +449,7 @@ Now, you can access the images on the Devtron dashboard and deploy manually. If 
 
 ---
 
-## 4. Sync with Environment [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## 4. Sync with Environment <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 **Sync with Environment** allows you to reuse the deployed container image from one CD workflow in another CD workflow within the same application. 
 
@@ -679,7 +679,7 @@ The **Change Image Source** feature in Devtron lets you update the container ima
 
 2. Select the intended workflow template and enter the details required as per the selected workflow template. Refer [Types of workflow templates](../workflow/README.md#types-of-ci-pipelines) to learn more.
 
-### Docker Layer Caching [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+### Docker Layer Caching <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::caution Prerequisite
 [Configure blob storage](../../../setup/install/installation-configuration.md#configuration-of-blob-storage) if you wish to store cache.

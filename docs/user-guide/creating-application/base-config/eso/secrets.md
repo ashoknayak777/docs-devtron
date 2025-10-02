@@ -37,7 +37,7 @@ Simply put, if a [ConfigMap](../config-maps.md) is a recipe card in the kitchen,
    - **GUI mode** – User-friendly interface. Click **+Add** button and enter the **Key** and **Value** fields without quotes. 
    - **YAML mode** – Raw YAML for entering key-value pairs in the format **`key: value`**. Boolean and numeric values must be wrapped in double quotes.
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/x6IIr6pDZig" title="" frameborder="0" allowfullscreen></iframe>
+   <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/x6IIr6pDZig" title="" frameborder="0" allowfullscreen></iframe></div>
 
 5. You may [perform a dry run](#perform-a-dry-run) before clicking **Save**.
 
@@ -149,11 +149,11 @@ You may delete a Secret if not in use anymore. Once a Secret is deleted, it will
 
 ---
 
-## Edit a Protected Secret [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Edit a Protected Secret <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Any changes made to the protected base configurations (Deployment Template, ConfigMap, Secret) will require approval if an [approval policy](../../../global-configurations/approval-policy.md) is enforced.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pJPX-rJNb_o" title="" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/pJPX-rJNb_o" title="" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 

@@ -103,8 +103,8 @@ The **Devtron Apps** tab allows you to grant user permissions for Devtron applic
 | **Project** | Select your preferred project from the drop-down box to grant the user access. You can select only one project at a time.<br/>**Note**: If you want to select more than one project, then click **Add Permission**. |
 | **Environment** | Select a specific environment or all environments from the drop-down box as per your requirement.<br/>**Note**: If you select `All environments`, the user will have access to all the current environments and any new environment which gets associated with the application in the future. |
 | **Application**  | Select a specific application or all applications from the drop-down box that is associated with the environment(s) selected in the **Environment** drop-down box, as per your requirement.<br/>**Note**: If you select `All applications`, the user will have access to all the current and future applications associated with the project. Moreover, user with access to all applications, can create new applications too.  |
-| **Role**  | Available Roles:<ul><li>`Base Role`</li> <li>`Additional Roles` [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)</li><li>`Access Manager` [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)</li></ul>[Click here](#roles-available-for-devtron-apps) to learn more about the role you wish to assign to the user.  |
-| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)   |
+| **Role**  | Available Roles:<ul><li>`Base Role`</li> <li>`Additional Roles` <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a></li><li>`Access Manager` <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a></li></ul>[Click here](#roles-available-for-devtron-apps) to learn more about the role you wish to assign to the user.  |
+| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>   |
 
 #### Roles available for Devtron Apps
 
@@ -120,7 +120,7 @@ The role-based access for Devtron Apps are as follows:
 
 * **Manager**: In addition to **Admin** permission, users can also grant or revoke user access for applications and environments that they manage. The **Manager** role for enterprise users will be deprecated and removed soon. Therefore, we recommend using the **Access Manager** role instead of **Manager** going forward. 
 
-* **Additional Roles**  [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* **Additional Roles**  <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
    **Additional Roles** allows you to assign specific permissions to a user beyond their **Base Role**. For example, you can grant a user both the **Build and Deploy** (Base Role) and **Config Approver** permissions (Additional Role). This allows the user to build and deploy images, while also being responsible for approving configuration change requests.
    
@@ -160,7 +160,7 @@ Here you can grant your user the permissions for Helm apps deployed from Devtron
 | **Environment or Cluster/Namespace** | Select a specific environment from the dropdown list.<br/>**Note**: If you select `All existing + future environments in cluster`, then the user will get access to all the current environments including any new environment which gets associated with the application later. |
 | **Application**  | Select a specific helm application or all helm apps from the dropdown list corresponding to your selected environments.<br/>**Note**: If `All applications` is selected, the user will have access to all current and future applications associated with the project.  |
 | **Permission**  | Available Permissions:<ul><li>`View only`</li> <li>`View & Edit`</li><li>`Admin`</li></ul> [Click here](#roles-available-for-helm-apps) to learn more about the permission you wish to assign the user.  |
-| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)   |
+| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>   |
 
 #### Roles available for Helm Apps
 
@@ -190,7 +190,7 @@ Here you can grant your user the permissions to access the jobs created in Devtr
 | **Workflow** | Select a specific workflow or `All workflows` to grant access to the workflows containing the job pipelines.  |
 | **Environment** | Select a specific environment or `All environments` to grant access to the environments associated with the job(s). |
 | **Role** | Available Roles:<ul><li>`View only`</li> <li>`Run job`</li><li>`Admin`</li></ul>[Click here](#roles-available-for-jobs) to learn more about the role you wish to assign the user.|
-| **Status** | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) |
+| **Status** | Read: [Making Users Active/Inactive](#at-direct-permissions-level) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a> |
 
 
 #### Roles available for Jobs
@@ -232,7 +232,7 @@ To grant Kubernetes resource permission, click **Add permission**.
 | **Kind**  | Select a kind or `All kind` from the dropdown list corresponding to the Kubernetes resource.  |
 | **Resource name**  | Select a resource name or `All resources` from the dropdown list to which you want to give permission to the user. |
 | **Role**  | Available Roles:<ul><li>`View`</li> <li>`Admin`</li></ul>[Click here](#roles-available-for-kubernetes-resources) to learn more about the role you wish to assign the user. |
-| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) |
+| **Status**  | Read: [Making Users Active/Inactive](#at-direct-permissions-level) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a> |
 
 #### Roles available for Kubernetes Resources
 
@@ -278,7 +278,7 @@ Here you can grant your user the permissions for accessing Chart Groups. Note th
 
 ---
 
-## Access Manager [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Access Manager <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 ### Can Manage Access For All Roles (Toggle)
 
@@ -362,7 +362,7 @@ The following permissions are currently available in the Access Manager role:
 
 ---
 
-## Making Users Active/Inactive [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Making Users Active/Inactive <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::caution Who Can Perform This Action?
 * Super-admins can activate or deactivate users.

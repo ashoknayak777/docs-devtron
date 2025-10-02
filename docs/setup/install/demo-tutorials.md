@@ -6,7 +6,7 @@ Here we have demonstrated the installation of Devtron on popular cloud providers
 
 **Cloud Provider**: [Amazon Web Services (AWS)](https://aws.amazon.com/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eY2vudE5jFM" title="Installing Devtron on AWS" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/eY2vudE5jFM" title="Installing Devtron on AWS" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 
@@ -14,7 +14,7 @@ Here we have demonstrated the installation of Devtron on popular cloud providers
 
 **Cloud Provider**: [Microsoft Azure](https://azure.microsoft.com/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8ZdhwJQ-IU4" title="Installing Devtron on Azure" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/8ZdhwJQ-IU4" title="Installing Devtron on Azure" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 
@@ -22,7 +22,7 @@ Here we have demonstrated the installation of Devtron on popular cloud providers
 
 **Cloud Provider**: [Google Cloud Platform (GCP)](https://console.cloud.google.com/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7UN_Fbo3VMM" title="Installing Devtron on Google Cloud" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/7UN_Fbo3VMM" title="Installing Devtron on Google Cloud" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 

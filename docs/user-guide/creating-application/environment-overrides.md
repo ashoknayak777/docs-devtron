@@ -91,10 +91,10 @@ Suppose you want to update only one field (e.g., `"username" = "johndoe"`) in a 
 
 If you know the fields you wish to change, simply enter the changed key-value fields along with indentation (if any).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/phhv1_2eStI" title="" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/phhv1_2eStI" title="" frameborder="0" allowfullscreen></iframe></div>
 
 <!--* Or you may copy-paste the entire config, and change the fields.
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4eHM5ZsNoCg" title="" frameborder="0" allowfullscreen></iframe>
+    <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/4eHM5ZsNoCg" title="" frameborder="0" allowfullscreen></iframe></div>
 -->
 
 ### Using Replace Strategy 
@@ -135,7 +135,7 @@ Follow the below steps to override your deployment template using GUI:
 
 7. Click on **Save Changes**.
 
-:::info Want to customize the deployment template values displayed on GUI? [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+:::info Want to customize the deployment template values displayed on GUI? <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 The GUI mode shows limited number of fields as specified by the super-admin in the GUI schema. Refer [Customize GUI](../creating-application/base-config/deployment-template.md#customize-the-gui-) to know more.
 
 :::
@@ -157,11 +157,11 @@ You cannot delete a ConfigMap or Secret in **Base Configurations** if you have u
 
 ### Replace Strategy
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lSoj8wwOej0" title="" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/lSoj8wwOej0" title="" frameborder="0" allowfullscreen></iframe></div>
 
 ### Override ConfigMaps and Secrets using GUI
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UOTKLVuSkDg" title="" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/UOTKLVuSkDg" title="" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 
@@ -177,7 +177,7 @@ This action will discard the current overrides and the base configuration file (
 
 ---
 
-## Protected Environment Configurations [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Protected Environment Configurations <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Any changes made to the protected environment configurations (Deployment Template, ConfigMap, Secret) will require approval if an [approval policy](../global-configurations/approval-policy.md) is enforced.
 

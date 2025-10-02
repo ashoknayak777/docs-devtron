@@ -43,7 +43,7 @@ To configure and deploy Helm, follow the instructions below:
 
     ![Figure 3: Deployment Methods](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploy-chart/deployment-methods.jpg)
 
-    **How do you want to deploy?** [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+    **How do you want to deploy?** <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
     | Method | Description |
     | :--- | :--- |
@@ -133,7 +133,7 @@ When you upgrade your helm chart, ensure that the values are compatible with the
 
 ---
 
-## Security Scan [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Security Scan <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Enabling the **Security scan** toggle scans the image(s) in the chart for vulnerabilities and license risks. To know more about security scan, refer to [Vulnerability Scanning](../plugins/vulnerability-scanning.md).
 

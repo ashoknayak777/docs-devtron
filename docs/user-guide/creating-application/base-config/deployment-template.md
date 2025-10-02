@@ -20,7 +20,7 @@ This guide covers how to:
 
 * [Perform a Dry Run](#perform-a-dry-run)
 
-* [Extra: Edit a Protected Deployment Configuration](#edit-a-protected-deployment-template-) [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+* [Extra: Edit a Protected Deployment Configuration](#edit-a-protected-deployment-template-) <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 ---
 
@@ -126,7 +126,7 @@ If you wish to perform additional configurations, click the **Switch to Advanced
 
 :::
 
-#### Customize the GUI [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+#### Customize the GUI <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::caution Who Can Perform This Action?
 Only a [Super-Admin](../../global-configurations/user-access.md#assign-super-admin-permissions) can customize the GUI section.
@@ -151,7 +151,7 @@ There are two ways you can customize the GUI, use any one of the following:
 
 2. Using APIs (explained below)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/09VP1I-WvUs" title="JSON-driven Deployment Schema" frameborder="0" allowfullscreen></iframe></div>
 
 You can pass a custom JSON (deployment schema) of your choice through the following API. You may need to run the API with the `POST` method if you are doing it for the first time.
 
@@ -295,7 +295,7 @@ Your configurations will appear in the left pane, while the right pane will disp
 
 ---
 
-## Edit a Protected Deployment Template [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Edit a Protected Deployment Template <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::info Who Can Perform This Action?
 Only a super-admin, manager, and admin can edit the configuration values. 

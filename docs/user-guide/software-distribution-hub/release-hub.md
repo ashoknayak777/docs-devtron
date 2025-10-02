@@ -4,7 +4,7 @@
 Create a [Tenant](./tenants.md) before proceeding with any action in Release Hub.
 :::
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 This section allows you to define [release tracks](./README.md#release-tracks), create and version software releases, add applications, select container images, and deploy releases to specified tenant [installations](./README.md#installations).
 
@@ -161,7 +161,7 @@ This involves the deployment of the release to the specified tenant installation
     
 3. Use the checkbox to select the applications belonging to the first release stage. You may use the filters on the left-hand side to make it easier.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HPYZ4-hhoDM" title="First Release Stage" frameborder="0" allowfullscreen></iframe>
+    <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/HPYZ4-hhoDM" title="First Release Stage" frameborder="0" allowfullscreen></iframe></div>
 
 4. Click **Deploy**.
 
@@ -171,7 +171,7 @@ This involves the deployment of the release to the specified tenant installation
 
 5. Once the applications from the first release stage are successfully deployed, select the applications from the subsequent release stage and deploy.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/ioGZP1CCuxI" title="Last Release Stage" frameborder="0" allowfullscreen></iframe>
+    <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/ioGZP1CCuxI" title="Last Release Stage" frameborder="0" allowfullscreen></iframe></div>
 
 :::caution 
 An application can be deployed on the tenant in the next release stage only if other applications in the previous stage are deployed successfully on the given tenant.

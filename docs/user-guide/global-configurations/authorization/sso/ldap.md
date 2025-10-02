@@ -22,7 +22,7 @@ Devtron provides a sample configuration out of the box. Here are some values you
 
 ---
 
-## Auto-assign Permissions [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Auto-assign Permissions <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Since LDAP supports creation of User Groups, this feature simplifies the onboarding process of organizations having a large headcount of users. It also eliminates repetitive permission assignment by automatically mapping your LDAP User groups to Devtron's [Permission Groups](../permission-groups.md) during single sign-on (SSO) login.
 

@@ -1,6 +1,6 @@
 # Filter Condition
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The [workflows](../creating-application/workflow/) you create in Devtron for managing the CI-CD of your application can be made flexible or restricting with the help of CD filter conditions, for e.g., not all events (such as image builds) generated during the CI stage require progression to the CD stage. Therefore, instead of creating multiple workflows that cater to complex requirements, Devtron provides you the option of defining filters to tailor your workflow according to your specific needs. 
 
@@ -121,7 +121,7 @@ Alternatively, if you have a fixed branch (say *hotfix-123*), you may write the 
 
 **Walkthrough Video**:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R8IbZhXhH-k" title="Filter Condition Example" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/R8IbZhXhH-k" title="Filter Condition Example" frameborder="0" allowfullscreen></iframe></div>
 
 
 ### Fail Condition

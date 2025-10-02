@@ -61,7 +61,12 @@ You can [deploy a helm chart](../deploy-chart/deployment-of-charts.md#configure-
 3. After you enter the `App Name`, `Project`, and `Environment`; an option to choose the deployment approach (i.e., Helm or GitOps) would appear. Select **GitOps**.
 
 :::info 
-The option to choose between 'Helm' or 'GitOps' is only available in <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" />
+The option to choose between 'Helm' or 'GitOps' is only available in <img 
+  src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" 
+  alt="Enterprise Feature"
+  className="enterprise-badge-img"
+/>
+
 :::
 
 ![Figure 7a: Deployment Approach](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/deployment-method.jpg)

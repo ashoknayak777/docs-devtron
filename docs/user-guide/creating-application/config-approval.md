@@ -1,6 +1,6 @@
 # Protect Configuration
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Since resources are created according to the configurations you enter, it's essential to restrict such configurations from direct modifications. For critical environments like production, it becomes necessary to introduce an approval flow for any edits made to the configuration files.
 
@@ -22,7 +22,7 @@ This stands true for both: base configuration and respective environment-level c
 
 ## Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TVLEbY850hI" title="Protect Configuration and Approval" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/TVLEbY850hI" title="Protect Configuration and Approval" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 

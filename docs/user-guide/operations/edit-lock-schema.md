@@ -1,6 +1,6 @@
 # Configure Lock Schema
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 In Devtron, you can create [CRDs](../../reference/glossary.md#crd) for defining lock schema. Your lock schema will be used to determine the fields (in the resource manifest) that cannot be added/updated/deleted by non-superadmins. This is especially useful for preventing unwanted edits to the manifests of pod, deployment, configmap, and many more.
 

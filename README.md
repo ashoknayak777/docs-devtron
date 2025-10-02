@@ -6,13 +6,12 @@ Devtron is a tool integration platform for Kubernetes.
 Devtron deeply integrates with products across the lifecycle of microservices i.e., CI/CD, security, cost, debugging, and observability via an intuitive web interface. 
 Devtron helps you to deploy, observe, manage & debug the existing Helm apps in all your clusters.
 
-<iframe width="560" height="315"
+<div class="video-wrapper"><iframe width="560" height="315"
   src="https://www.youtube.com/embed/AG8HfTceHxw"
   title="Introducing Devtron"
   frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen>
-</iframe>
+</iframe></div>
  
  
 ## Devtron's Key Features:

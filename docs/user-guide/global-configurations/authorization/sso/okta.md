@@ -12,7 +12,7 @@ Only super admin users can set up SSO providers.
 
 ## Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i-7IWkg6Ipk" title="Okta App Setup" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/i-7IWkg6Ipk" title="Okta App Setup" frameborder="0" allowfullscreen></iframe></div>
 
 ## Steps on Okta Admin Console
 
@@ -60,7 +60,7 @@ Once your Okta org is set up, create an app integration on Okta to get a Client 
 
 Now your users will be able to log in to Devtron using the Okta authentication method. Note that existing signed-in users will be logged out, and they have to log in again using their OIDC account.
 
-## Auto-assign Permissions [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Auto-assign Permissions <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::caution Prerequisites
 In order to auto-assign feature to work

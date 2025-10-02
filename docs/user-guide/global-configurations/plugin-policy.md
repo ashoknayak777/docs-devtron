@@ -1,6 +1,6 @@
 # Plugin Policy
 
-## Introduction [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 Your [application workflow](../creating-application/workflow/README.md) should follow certain standards and precautions to ensure reliability and a smooth release. For example, mandating load testing for production deployments might help you identify performance bottlenecks early rather than face possible outages, unhappy users, or revenue loss.
 
@@ -12,7 +12,7 @@ The **Plugin Policy** feature in Devtron lets you enforce the presence of specif
 
 ## Tutorial 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cb25p_n3YTs" title="Using Plugin Policy in Devtron" frameborder="0" allowfullscreen></iframe>
+<div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/Cb25p_n3YTs" title="Using Plugin Policy in Devtron" frameborder="0" allowfullscreen></iframe></div>
 
 ---
 

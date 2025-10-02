@@ -9,10 +9,10 @@ A scoped variable (key-value pair) allows you to define a value once and reuse i
 | Category                      | Description                                                                                                                                                                                                               |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Global**                    | Variable value will be universally same throughout Devtron.                                                                                                                                                               |
-| **Cluster**                   | Variable value might differ for each Kubernetes cluster. <a href="https://devtron.ai/pricing" target="_blank"> <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" /></a>  |
-| **Environment**               | Variable value might differ for each environment within a cluster, e.g., staging, dev, prod. [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) |
-| **Application**               | Variable value might differ for each application. [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)                                            |
-| **Environment + Application** | Variable value might differ for each application on a specific environment. [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)                  |
+| **Cluster**                   | Variable value might differ for each Kubernetes cluster. <a href="https://devtron.ai/pricing" target="_blank"> <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" alt="Enterprise Feature" className="enterprise-badge-img" /></a>  |
+| **Environment**               | Variable value might differ for each environment within a cluster, e.g., staging, dev, prod. <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a> |
+| **Application**               | Variable value might differ for each application. <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>                                            |
+| **Environment + Application** | Variable value might differ for each application on a specific environment. <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>                  |
 
 
 For example, you can create a variable named `db_host` to store the database host URL and set its value to `https://dev.company.com/mydb` for development environment, and for production environment you can set its value to `https://prod.company.com/mydb`, at the time of deployment, Devtron will automatically choose the correct value based on the environment.
@@ -34,10 +34,10 @@ If the same variable is defined at more than one scope, Devtron resolves the val
 
 | Precedence Order  | Scope                                                                                                                                                  |
 |:------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 (Highest)       | Environment + Application [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing) |
-| 2                 | Application [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)               |
-| 3                 | Environment [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)               |
-| 4                 | Cluster [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)                   |
+| 1 (Highest)       | Environment + Application <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a> |
+| 2                 | Application <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>               |
+| 3                 | Environment <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>               |
+| 4                 | Cluster <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>                   |
 | 5 (Lowest)        | Global                                                                                                                                                 |
 
 1. **Environment + App:** This is the most specific scope, and it will take precedence over all other scopes. For example, the value of `DB_Name` variable for the `app1` application in the `dev` environment would be `dev-app1-db`, even though there is a global `DB_Name` variable set to `central-db`. If a variable value for this scope is not defined, the **App** scope will be checked.
@@ -165,7 +165,7 @@ spec:
 
 ---
 
-## Defining YAML values in scoped variables [![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)](https://devtron.ai/pricing)
+## Defining YAML values in scoped variables <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 In Devtron, Scoped variables usually store simple values like strings or numbers, for example, if you want to connect multiple applications to the same SonarQube server, you can define a variable for its endpoint URL once instead of entering it everywhere. 
 
