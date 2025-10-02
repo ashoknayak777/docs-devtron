@@ -499,7 +499,7 @@ const sidebars = {
       collapsed: true,
       link: {
         type: 'doc', // or 'generated-index'
-        id: 'README',
+        id: 'reference/resources',
       },
       items: [
         'reference/glossary',
