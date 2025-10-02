@@ -44,7 +44,7 @@ const features = [
     title: 'Application Management',
     Icon: Box,
     description: 'Create, configure, and deploy applications with ease.',
-    link: '/docs/user-guide/app-management-overview',
+    link: '/docs/user-guide/app-management/app-management-overview',
     color: '#2563EB',
   },
   {
@@ -177,7 +177,7 @@ function FeaturesSection() {
 
 function QuickLinks() {
   const quickLinks = [
-    { title: 'Deploy Sample App', link: '/docs/user-guide/Deploy-sample-app/nodejs_app' },
+    { title: 'Deploy Sample App', link: '/docs/user-guide/deploy-sample-app/nodejs_app' },
     { title: 'CI/CD Pipeline Setup', link: '/docs/user-guide/creating-application/workflow' },
     { title: 'Chart Store', link: '/docs/user-guide/deploy-chart' },
     { title: 'Troubleshooting', link: '/docs/FAQs/devtron-troubleshoot' },
