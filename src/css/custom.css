@@ -161,28 +161,6 @@ html[data-theme='dark'] .footer-desc {
 
 
 
-
-.shimmer-button-freemium {
-  background: linear-gradient(
-    135deg,               /* Diagonal shimmer */
-    #1E3A8A 25%,          /* Dark navy-blue */
-    #4C1D95 50%,          /* Deep violet */
-    #6D28D9 75%           /* Rich purple */
-  );
-  color: white !important;
-  padding: 6px 16px;
-  border-radius: 6px;
-  font-size: small;
-  font-weight: 600;
-  border: 1px solid #bbb; /* thin gray border */
-  animation: shimmer 2.5s infinite linear;
-  background-size: 250% 250%;
-  box-shadow: 0 2px 10px rgba(109, 40, 217, 0.45); /* Dark purple glow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-left: 12px;
-  cursor: pointer;
-}
-
 .shimmer-button-freemium {
   position: relative;
   overflow: hidden;
@@ -255,6 +233,7 @@ html[data-theme='dark'] .footer-desc {
   box-shadow: 0 2px 8px rgba(184, 134, 11, 0.4);
   /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
   margin-left: 12px;
+  margin-right: 12px;
   cursor: pointer;
 }
 
