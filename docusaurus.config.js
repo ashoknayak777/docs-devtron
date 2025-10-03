@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Devtron Docs',
   tagline: 'Accelerate Kubernetes adoption and experience smooth deployment with Devtron',
-  favicon: 'img/devtron-favicon.png',
+  favicon: 'https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/devtron-favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -111,7 +111,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/devtron-social-card.jpg',
+      image: 'https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/devtron-social-card.jpg',
       // announcementBar: {
       //   id: 'support_us',
       //   content:
@@ -124,8 +124,8 @@ const config = {
         title: '',
         logo: {
           alt: 'Devtron Logo',
-          src: 'img/hlogos/devtron-logo-horizontal-dual.svg',
-          srcDark: 'img/hlogos/devtron-logo-horizontal-white.svg',
+          src: 'https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/hlogos/devtron-logo-horizontal-dual.svg',
+          srcDark: 'https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/hlogos/devtron-logo-horizontal-white.svg',
         },
         items: [
           { label: 'Docs', className: 'navbar-docs-link', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
@@ -173,8 +173,8 @@ const config = {
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">
                   <a href="/" style="display: inline-block;">
-                    <img src="img/hlogos/devtron-logo-horizontal-black.svg" alt="Devtron Logo" width="160" class="footer-logo light-mode-only" />
-                    <img src="img/hlogos/devtron-logo-horizontal-white.svg" alt="Devtron Logo" width="160" class="footer-logo dark-mode-only" />
+                    <img src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/hlogos/devtron-logo-horizontal-black.svg" alt="Devtron Logo" width="160" class="footer-logo light-mode-only" />
+                    <img src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/hlogos/devtron-logo-horizontal-white.svg" alt="Devtron Logo" width="160" class="footer-logo dark-mode-only" />
                   </a>
                 </div>
                 <p class="footer-desc" style="margin: 1rem 0; font-size: 0.95rem;">
@@ -182,19 +182,19 @@ const config = {
                 </p>
                 <div style="margin-bottom: 1rem;">
                   <a href="https://discord.gg/jsRG5qx2gp" target="_blank" style="margin: 0 8px;">
-                    <img class="footer-icon" src="img/socials/discord.svg" alt="Join Discord" height="24"/>
+                    <img class="footer-icon" src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/socials/discord.svg" alt="Join Discord" height="24"/>
                   </a>
                   <a href="https://github.com/devtron-labs/devtron" target="_blank" style="margin: 0 8px;">
-                    <img class="footer-icon" src="img/socials/github.svg" alt="GitHub" height="24"/>
+                    <img class="footer-icon" src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/socials/github.svg" alt="GitHub" height="24"/>
                   </a>
                   <a href="https://linkedin.com/company/devtron-labs" target="_blank" style="margin: 0 8px;">
-                    <img class="footer-icon" src="img/socials/linkedin.svg" alt="LinkedIn" height="24"/>
+                    <img class="footer-icon" src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/socials/linkedin.svg" alt="LinkedIn" height="24"/>
                   </a>
                   <a href="https://x.com/DevtronL" target="_blank" style="margin: 0 8px;">
-                    <img class="footer-icon" src="img/socials/x.svg" alt="X" height="24"/>
+                    <img class="footer-icon" src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/socials/x.svg" alt="X" height="24"/>
                   </a>
                   <a href="https://devtron.ai/blog/" target="_blank" style="margin: 0 8px;">
-                    <img class="footer-icon" src="img/socials/blog.svg" alt="Devtron Blogs" height="24"/>
+                    <img class="footer-icon" src="https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/socials/blog.svg" alt="Devtron Blogs" height="24"/>
                   </a>
                 </div>
                 <div style="margin-bottom: 1rem;">
