@@ -20,10 +20,10 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://ashokdevtron.github.io',
+  url: 'https://docs.venz.shop',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-devtron/',
+  baseUrl: '/',
 
   trailingSlash: false,
 
