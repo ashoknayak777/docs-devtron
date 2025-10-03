@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.venz.shop/blog"/>
     <subtitle>Devtron Docs Blog</subtitle>
-    <icon>https://docs.venz.shop/https://ik.imagekit.io/y7zzkvdgn/doc-assets/img/devtron-favicon.png</icon>
+    <icon>https://docs.venz.shop/https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://docs.venz.shop/blog/welcome</id>
