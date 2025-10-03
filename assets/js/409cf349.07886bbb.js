@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocdevtron=self.webpackChunkdocdevtron||[]).push([[4091],{9702:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/docs-devtron/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
