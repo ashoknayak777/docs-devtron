@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+const redirectsConfig = require('./docusaurus-redirects.json');
+
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -94,17 +96,7 @@ const config = {
         docsRouteBasePath: '/docs', // or '/' if you're using docs-only mode
       },
     ],
-    [
-      '@docusaurus/plugin-client-redirects',
-      {
-        redirects: [
-          {
-            to: '/docs/usage/applications', // New path
-            from: ['/user-guide/creating-application', '/usage/apps'], // Old path(s)
-          },
-        ],
-      },
-    ],
+    ...redirectsConfig.plugins,
   ],  
 
   themeConfig:

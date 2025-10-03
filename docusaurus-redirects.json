@@ -1,0 +1,847 @@
+{
+  "plugins": [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        "redirects": [
+          {
+            "from": [
+              "/setup"
+            ],
+            "to": "/docs"
+          },
+          {
+            "from": [
+              "/setup/install"
+            ],
+            "to": "/docs/setup/install"
+          },
+          {
+            "from": [
+              "/setup/install/install-devtron-with-cicd"
+            ],
+            "to": "/docs/setup/install/install-devtron"
+          },
+          {
+            "from": [
+              "/setup/install/install-devtron"
+            ],
+            "to": "/docs/setup/install/install-devtron"
+          },
+          {
+            "from": [
+              "/setup/install/installation-configuration"
+            ],
+            "to": "/docs/setup/install/installation-configuration"
+          },
+          {
+            "from": [
+              "/setup/install/override-default-devtron-installation-configs"
+            ],
+            "to": "/docs/setup/install/override-default-devtron-installation-configs"
+          },
+          {
+            "from": [
+              "/setup/install/ingress-setup"
+            ],
+            "to": "/docs/setup/install/ingress-setup"
+          },
+          {
+            "from": [
+              "/setup/upgrade"
+            ],
+            "to": "/docs/setup/upgrade"
+          },
+          {
+            "from": [
+              "/setup/upgrade/upgrade-devtron-ui"
+            ],
+            "to": "/docs/setup/upgrade/upgrade-devtron-ui"
+          },
+          {
+            "from": [
+              "/setup/upgrade/devtron-upgrade-0.4.x-0.4.x"
+            ],
+            "to": "/docs/setup/upgrade/devtron-upgrade-0.4.x-0.4.x"
+          },
+          {
+            "from": [
+              "/setup/upgrade/devtron-upgrade-0.3.x-0.4.x"
+            ],
+            "to": "/docs/setup/upgrade/devtron-upgrade-0.3.x-0.4.x"
+          },
+          {
+            "from": [
+              "/setup/upgrade/devtron-upgrade-0.3.x-0.3.x"
+            ],
+            "to": "/docs/setup/upgrade/devtron-upgrade-0.3.x-0.3.x"
+          },
+          {
+            "from": [
+              "/setup/upgrade/devtron-upgrade-0.2.x-0.3.x"
+            ],
+            "to": "/docs/setup/upgrade/devtron-upgrade-0.2.x-0.3.x"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations",
+              "/setup/global-configurations"
+            ],
+            "to": "/docs/user-guide/global-configurations"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/gitops",
+              "/setup/global-configurations/gitops"
+            ],
+            "to": "/docs/user-guide/global-configurations/gitops"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/custom-charts",
+              "/global-configurations/custom-charts",
+              "/setup/global-configurations/custom-charts"
+            ],
+            "to": "/docs/user-guide/global-configurations/deployment-charts"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/user-access",
+              "/setup/global-configurations/authorization/user-access",
+              "/setup/global-configurations/user-access"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/user-access"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/external-links",
+              "/setup/global-configurations/external-links"
+            ],
+            "to": "/docs/user-guide/global-configurations/external-links"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/projects",
+              "/setup/global-configurations/projects"
+            ],
+            "to": "/docs/user-guide/global-configurations/projects"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/manage-notification",
+              "/setup/global-configurations/manage-notification"
+            ],
+            "to": "/docs/user-guide/global-configurations/manage-notification"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/sso-login",
+              "/global-configurations/sso-login",
+              "/setup/global-configurations/sso-login"
+            ],
+            "to": "/docs/user-guide/global-configurations/sso-login"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/git-accounts",
+              "/setup/global-configurations/git-accounts"
+            ],
+            "to": "/docs/user-guide/global-configurations/git-accounts"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/container-registries",
+              "/getting-started/global-configurations/docker-registries",
+              "/setup/global-configurations/docker-registries"
+            ],
+            "to": "/docs/user-guide/global-configurations/container-registries"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/chart-repo",
+              "/setup/global-configurations/chart-repo"
+            ],
+            "to": "/docs/user-guide/global-configurations/chart-repo"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/cluster-and-environments",
+              "/setup/global-configurations/cluster-and-environments"
+            ],
+            "to": "/docs/user-guide/global-configurations/cluster-and-environments"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization",
+              "/setup/global-configurations/authorization"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/permission-groups",
+              "/setup/global-configurations/authorization/permission-groups"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/permission-groups"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/api-tokens",
+              "/global-configurations/api-token",
+              "/setup/global-configurations/authorization/api-tokens"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/api-tokens"
+          },
+          {
+            "from": [
+              "/setup/global-configurations/nodejs_app"
+            ],
+            "to": "/docs/user-guide/deploy-sample-app/nodejs_app"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/host-url",
+              "/setup/global-configurations/host-url"
+            ],
+            "to": "/docs/user-guide/global-configurations/host-url"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/google",
+              "/setup/global-configurations/authorization/sso/google"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/google"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/github",
+              "/setup/global-configurations/authorization/sso/github"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/github"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/gitlab",
+              "/setup/global-configurations/authorization/sso/gitlab"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/gitlab"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/microsoft",
+              "/setup/global-configurations/authorization/sso/microsoft"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/microsoft"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/ldap",
+              "/setup/global-configurations/authorization/sso/ldap"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/ldap"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/oidc",
+              "/setup/global-configurations/authorization/sso/oidc"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/oidc"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/authorization/sso/openshift",
+              "/setup/global-configurations/authorization/sso/openshift"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/openshift"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/okta",
+              "/setup/global-configurations/okta"
+            ],
+            "to": "/docs/user-guide/global-configurations/sso-login"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/catalog-framework",
+              "/setup/global-configurations/catalog-framework"
+            ],
+            "to": "/docs/user-guide/global-configurations/catalog-framework"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/scoped-variables",
+              "/setup/global-configurations/scoped-variables"
+            ],
+            "to": "/docs/user-guide/global-configurations/scoped-variables"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/pull-image-digest",
+              "/setup/global-configurations/pull-image-digest"
+            ],
+            "to": "/docs/user-guide/global-configurations/pull-image-digest"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/tags-policy",
+              "/setup/global-configurations/tags-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/tags-policy"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/lock-deployment-config",
+              "/setup/global-configurations/lock-deployment-config"
+            ],
+            "to": "/docs/user-guide/global-configurations/lock-deployment-config"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/image-promotion-policy",
+              "/setup/global-configurations/image-promotion-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/image-promotion-policy"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/filter-condition",
+              "/setup/global-configurations/filter-condition"
+            ],
+            "to": "/docs/user-guide/global-configurations/filter-condition"
+          },
+          {
+            "from": [
+              "/getting-started/global-configurations/build-infra",
+              "/setup/global-configurations/build-infra"
+            ],
+            "to": "/docs/user-guide/global-configurations/build-infra"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application"
+            ],
+            "to": "/docs/user-guide/creating-application"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/git-material"
+            ],
+            "to": "/docs/user-guide/creating-application/git-material"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/docker-build-configuration"
+            ],
+            "to": "/docs/user-guide/creating-application/docker-build-configuration"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/deployment-template"
+            ],
+            "to": "/docs/user-guide/creating-application/base-config/deployment-template"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/deployment-template/rollout-deployment"
+            ],
+            "to": "/docs/user-guide/creating-application/base-config/deployment-template-types/rollout-deployment"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/deployment-template/job-and-cronjob"
+            ],
+            "to": "/docs/user-guide/creating-application/base-config/deployment-template-types/job-and-cronjob"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow/ci-pipeline"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow/ci-pipeline/ci-build-pre-post-plugins"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow/ci-pipeline-legacy"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow/cd-pipeline"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/cd-pipeline"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/config-maps"
+            ],
+            "to": "/docs/user-guide/creating-application/base-config/config-maps"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/secrets"
+            ],
+            "to": "/docs/user-guide/creating-application/base-config/secrets"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/environment-overrides"
+            ],
+            "to": "/docs/user-guide/creating-application/environment-overrides"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/app-metrics"
+            ],
+            "to": "/docs/user-guide/creating-application/app-metrics"
+          },
+          {
+            "from": [
+              "/user-guide/app-details"
+            ],
+            "to": "/docs/user-guide/app-details"
+          },
+          {
+            "from": [
+              "/user-guide/debugging-deployment-and-monitoring"
+            ],
+            "to": "/docs/user-guide/debugging-deployment-and-monitoring"
+          },
+          {
+            "from": [
+              "/user-guide/cloning-application"
+            ],
+            "to": "/docs/user-guide/cloning-application"
+          },
+          {
+            "from": [
+              "/user-guide/deploying-application"
+            ],
+            "to": "/docs/user-guide/deploying-application"
+          },
+          {
+            "from": [
+              "/user-guide/deploying-application/triggering-ci"
+            ],
+            "to": "/docs/user-guide/deploying-application/triggering-ci"
+          },
+          {
+            "from": [
+              "/user-guide/deploying-application/triggering-cd"
+            ],
+            "to": "/docs/user-guide/deploying-application/triggering-cd"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart"
+            ],
+            "to": "/docs/user-guide/deploy-chart"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/overview-of-charts"
+            ],
+            "to": "/docs/user-guide/deploy-chart"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/deployment-of-charts"
+            ],
+            "to": "/docs/user-guide/deploy-chart/deployment-of-charts"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/examples"
+            ],
+            "to": "/docs/user-guide/deploy-chart"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/examples/deploying-mysql-helm-chart"
+            ],
+            "to": "/docs/user-guide/deploy-chart"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/examples/deploying-mongodb-helm-chart"
+            ],
+            "to": "/docs/user-guide/deploy-chart"
+          },
+          {
+            "from": [
+              "/user-guide/deploy-chart/chart-group"
+            ],
+            "to": "/docs/user-guide/deploy-chart/chart-group"
+          },
+          {
+            "from": [
+              "/user-guide/namespaces-and-environments"
+            ],
+            "to": "/docs/user-guide/namespaces-and-environments"
+          },
+          {
+            "from": [
+              "/user-guide/security-features"
+            ],
+            "to": "/docs/user-guide/security-features"
+          },
+          {
+            "from": [
+              "/user-guide/deleting-application"
+            ],
+            "to": "/docs/user-guide/deleting-application"
+          },
+          {
+            "from": [
+              "/user-guide/bulk-update"
+            ],
+            "to": "/docs/user-guide/bulk-update"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases/devtron-generic-helm-chart-to-run-cron-job-or-one-time-job"
+            ],
+            "to": "/docs/user-guide/use-cases/devtron-generic-helm-chart-to-run-cron-job-or-one-time-job"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases"
+            ],
+            "to": "/docs/user-guide/use-cases"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases/connect-springboot-with-mysql-database"
+            ],
+            "to": "/docs/user-guide/use-cases/connect-springboot-with-mysql-database"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases/connect-expressjs-with-mongodb-database"
+            ],
+            "to": "/docs/user-guide/use-cases/connect-expressjs-with-mongodb-database"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases/connect-django-with-mysql-database"
+            ],
+            "to": "/docs/user-guide/use-cases/connect-django-with-mysql-database"
+          },
+          {
+            "from": [
+              "/user-guide/telemetry"
+            ],
+            "to": "/docs/user-guide/telemetry"
+          },
+          {
+            "from": [
+              "/getting-started/install/installation-configuration"
+            ],
+            "to": "/docs/setup/install/installation-configuration"
+          },
+          {
+            "from": [
+              "/user-guide/use-cases/untitled-3"
+            ],
+            "to": "/docs/user-guide/use-cases/connect-django-with-mysql-database"
+          },
+          {
+            "from": [
+              "/user-guide/creating-application/workflow/ci-pipeline2"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
+          },
+          {
+            "from": [
+              "/usage/clusters",
+              "/user-guide/clusters"
+            ],
+            "to": "/docs/user-guide/resource-browser"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/okta"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/okta"
+          },
+          {
+            "from": [
+              "/usage/applications/creating-application/ci-pipeline/ci-build-pre-post-plugins"
+            ],
+            "to": "/docs/user-guide/creating-application/workflow/pre-post-tasks"
+          },
+          {
+            "from": [
+              "/getting-started"
+            ],
+            "to": "/docs"
+          },
+          {
+            "from": [
+              "/install"
+            ],
+            "to": "/docs/setup/install"
+          },
+          {
+            "from": [
+              "/install/devtron-oss"
+            ],
+            "to": "/docs/setup/install/devtron-oss"
+          },
+          {
+            "from": [
+              "/install/devtron-freemium"
+            ],
+            "to": "/docs/setup/install/devtron-freemium"
+          },
+          {
+            "from": [
+              "/global-configurations"
+            ],
+            "to": "/docs/user-guide/global-configurations"
+          },
+          {
+            "from": [
+              "/global-configurations/host-url"
+            ],
+            "to": "/docs/user-guide/global-configurations/host-url"
+          },
+          {
+            "from": [
+              "/global-configurations/gitops"
+            ],
+            "to": "/docs/user-guide/global-configurations/gitops"
+          },
+          {
+            "from": [
+              "/global-configurations/projects"
+            ],
+            "to": "/docs/user-guide/global-configurations/projects"
+          },
+          {
+            "from": [
+              "/global-configurations/cluster-and-environments"
+            ],
+            "to": "/docs/user-guide/global-configurations/cluster-and-environments"
+          },
+          {
+            "from": [
+              "/global-configurations/git-accounts"
+            ],
+            "to": "/docs/user-guide/global-configurations/git-accounts"
+          },
+          {
+            "from": [
+              "/global-configurations/container-registries"
+            ],
+            "to": "/docs/user-guide/global-configurations/container-registries"
+          },
+          {
+            "from": [
+              "/global-configurations/chart-repo"
+            ],
+            "to": "/docs/user-guide/global-configurations/chart-repo"
+          },
+          {
+            "from": [
+              "/global-configurations/deployment-charts"
+            ],
+            "to": "/docs/user-guide/global-configurations/deployment-charts"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login"
+            ],
+            "to": "/docs"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/google"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/google"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/github"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/github"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/gitlab"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/gitlab"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/microsoft"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/microsoft"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/ldap"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/ldap"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/oidc"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/oidc"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/oidc/keycloak"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/keycloak"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/oidc/okta"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/okta"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/sso-login/openshift"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/sso/openshift"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/user-access"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/user-access"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/permission-groups"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/permission-groups"
+          },
+          {
+            "from": [
+              "/global-configurations/authorization/api-tokens"
+            ],
+            "to": "/docs/user-guide/global-configurations/authorization/api-tokens"
+          },
+          {
+            "from": [
+              "/global-configurations/manage-notification"
+            ],
+            "to": "/docs/user-guide/global-configurations/manage-notification"
+          },
+          {
+            "from": [
+              "/global-configurations/application-template"
+            ],
+            "to": "/docs/user-guide/global-configurations/application-template"
+          },
+          {
+            "from": [
+              "/global-configurations/deployment-window"
+            ],
+            "to": "/docs/user-guide/global-configurations/deployment-window"
+          },
+          {
+            "from": [
+              "/global-configurations/approval-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/approval-policy"
+          },
+          {
+            "from": [
+              "/global-configurations/external-links"
+            ],
+            "to": "/docs/user-guide/global-configurations/external-links"
+          },
+          {
+            "from": [
+              "/global-configurations/catalog-framework"
+            ],
+            "to": "/docs/user-guide/global-configurations/catalog-framework"
+          },
+          {
+            "from": [
+              "/global-configurations/scoped-variables"
+            ],
+            "to": "/docs/user-guide/global-configurations/scoped-variables"
+          },
+          {
+            "from": [
+              "/global-configurations/plugin-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/plugin-policy"
+          },
+          {
+            "from": [
+              "/global-configurations/pull-image-digest"
+            ],
+            "to": "/docs/user-guide/global-configurations/pull-image-digest"
+          },
+          {
+            "from": [
+              "/global-configurations/tags-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/tags-policy"
+          },
+          {
+            "from": [
+              "/global-configurations/filter-condition"
+            ],
+            "to": "/docs/user-guide/global-configurations/filter-condition"
+          },
+          {
+            "from": [
+              "/global-configurations/lock-deployment-config"
+            ],
+            "to": "/docs/user-guide/global-configurations/lock-deployment-config"
+          },
+          {
+            "from": [
+              "/global-configurations/image-promotion-policy"
+            ],
+            "to": "/docs/user-guide/global-configurations/image-promotion-policy"
+          },
+          {
+            "from": [
+              "/global-configurations/build-infra"
+            ],
+            "to": "/docs/user-guide/global-configurations/build-infra"
+          },
+          {
+            "from": [
+              "/usage/applications"
+            ],
+            "to": "/docs/usage/applications"
+          },
+          {
+            "from": [
+              "/usage/applications/create-application"
+            ],
+            "to": "/docs/user-guide/create-application"
+          }
+        ]
+      }
+    ]
+  ]
+}
