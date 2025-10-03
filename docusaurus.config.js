@@ -100,7 +100,7 @@ const config = {
         redirects: [
           {
             to: '/docs/usage/applications', // New path
-            from: ['/user-guide/creating-application'], // Old path(s)
+            from: ['/user-guide/creating-application', '/usage/apps'], // Old path(s)
           },
         ],
       },
