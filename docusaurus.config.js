@@ -94,6 +94,17 @@ const config = {
         docsRouteBasePath: '/docs', // or '/' if you're using docs-only mode
       },
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/usage/applications', // New path
+            from: ['/user-guide/creating-application'], // Old path(s)
+          },
+        ],
+      },
+    ],
   ],  
 
   themeConfig:
