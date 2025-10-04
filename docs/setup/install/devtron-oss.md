@@ -11,7 +11,7 @@ The table below shows the installation options available in Devtron OSS. Further
 
 | Installation Option                                                                                      | What Is Included                                            | When To Use                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [**Minimal (without integrations)**](#option-a-install-devtron-without-integrations)     | Dashboard + Resource Browser + Core operator configurations | A unified view of Helm apps, FluxCD apps, ArgoCD apps, and their related K8s resources |
+| [**Minimal (without integrations)**](#option-a-minimal-without-integrations)     | Dashboard + Resource Browser + Core operator configurations | A unified view of Helm apps, FluxCD apps, ArgoCD apps, and their related K8s resources |
 | [**With CI/CD**](#option-b-install-devtron-with-cicd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
 | [**With CI/CD + GitOps (Argo CD)**](#option-c-install-devtron-with-cicd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
 
@@ -63,7 +63,7 @@ helm repo update devtron
 
 ## Step 2: Choose an Installation Option
 
-### Option A: Install Devtron without Integrations
+### Option A: Minimal (without integrations)
 
 After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run the command below:
 
@@ -117,10 +117,7 @@ To access the dashboard on EKS, AKS, or GKE cluster, run the following command:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.status.loadBalancer.ingress}'
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>The LoadBalancer URL displayed in the output</span>
-</div>
+**Dashboard URL**: The LoadBalancer URL displayed in the output
 
 </TabItem>
 
@@ -136,10 +133,7 @@ Run the following command to port-forward the devtron service to port `8000`
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>`http://127.0.0.1:8000`</span>
-</div>
+**Dashboard URL**: `http://127.0.0.1:8000`
 
 ---
 
@@ -157,10 +151,7 @@ Then run the following command to get the port number assigned to the service:
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.spec.ports[0].nodePort}'
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>`http://<HOST_IP>:<NODEPORT>/dashboard`</span>
-</div>
+**Dashboard URL**: `http://<HOST_IP>:<NODEPORT>/dashboard`
 
 ---
 
@@ -176,10 +167,7 @@ kubectl config use-context <context-name> # Set the correct context.
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>`http://127.0.0.1:8000`</span>
-</div>
+**Dashboard URL**: `http://127.0.0.1:8000`
 
 
 </TabItem>
@@ -191,10 +179,7 @@ Run the following command:
 minikube service devtron-service --namespace devtroncd
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>(Directly opens in your browser)</span>
-</div>
+**Dashboard URL**: (Directly opens in your browser)
 
 </TabItem>
 </Tabs>

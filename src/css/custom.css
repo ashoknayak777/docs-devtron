@@ -481,7 +481,7 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 8px; /* optional: rounded corners */
+  border-radius: 4px; /* optional: rounded corners */
 }
 
 .image-lightbox {
@@ -545,7 +545,7 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
   margin: 2rem auto;          /* center image with spacing */
   width: 90%;                 /* 80% of content width */
   max-width: 900px;           /* optional: prevents overly large images */
-  border-radius: 10px;        /* rounded corners */
+  border-radius: 0px;        /* rounded corners */
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* 3D elevation */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -595,4 +595,51 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
 html[data-theme='dark'] .main-wrapper {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: #1a1a1a;
+}
+
+
+/* 🌞 Light Mode */
+.theme-tabs-container {
+  background-color: rgba(112, 138, 255, 0.15); /* soft bluish-purple tint */
+  border-radius: 8px;
+  padding: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-tabs-container .tabs {
+  background-color: transparent;
+  border-bottom: 1px solid #8fa1ff; /* soft border */
+}
+
+.theme-tabs-container .tabs__item {
+  color: #2b2b2b;
+}
+
+.theme-tabs-container .tabs__item--active {
+  background-color: #4355b9; /* saturated blue-purple */
+  border-radius: 6px;
+  color: #fff;
+}
+
+
+/* 🌙 Dark Mode */
+html[data-theme='dark'] .theme-tabs-container {
+  background-color: rgba(65, 80, 170, 0.3); /* muted bluish purple */
+  border: 1px solid #3f4b9d;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+html[data-theme='dark'] .theme-tabs-container .tabs {
+  border-bottom: 1px solid #4e5bc4;
+}
+
+html[data-theme='dark'] .theme-tabs-container .tabs__item {
+  color: #cdd1ff;
+}
+
+html[data-theme='dark'] .theme-tabs-container .tabs__item--active {
+  background-color: #5a6ae0;
+  border-radius: 6px;
+  color: #fff;
 }

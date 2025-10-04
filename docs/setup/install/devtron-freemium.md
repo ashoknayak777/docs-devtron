@@ -98,10 +98,7 @@ To obtain the Dashboard URL on MicroK8s/Kind/K3s/Cloud VMs using NodePort, run t
 kubectl get svc -n devtroncd devtron-service -o jsonpath='{.spec.ports[0].nodePort}'
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>`http://<HOST_IP>:<NODEPORT>/dashboard`</span>
-</div>
+**Dashboard URL**: `http://<HOST_IP>:<NODEPORT>/dashboard`
 
 ---
 
@@ -115,10 +112,7 @@ kubectl config use-context <context-name> # Set the correct context.
 kubectl -n devtroncd port-forward service/devtron-service 8000:80
 ```
 
-<div style={{ color: "purple" }}>
-  <span style={{ fontWeight: "bold" }}>Dashboard URL: </span>
-  <span>`http://127.0.0.1:8000`</span>
-</div>
+**Dashboard URL**: `http://127.0.0.1:8000`
 
 :::
 
