@@ -6,7 +6,7 @@ hidden: true
 ## Why command bar?
 The command bar is designed to enable you to navigate across the devtron dashboard without having to click around the screen.
 
-![](../images/command-bar/command-bar-parts.png)
+![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/command-bar/command-bar-parts.png)
 
 Top-level categories (eg. app, chart, security, global-config) are auto-filled depending upon your location on the Devtron dashboard.
 
@@ -26,7 +26,7 @@ Top-level categories (eg. app, chart, security, global-config) are auto-filled d
 
 <br/>
 
-![](../images/command-bar/cmd-bar-gif.gif)
+![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/command-bar/cmd-bar.gif)
 
 <br/>
 
@@ -42,7 +42,7 @@ Top-level categories (eg. app, chart, security, global-config) are auto-filled d
 
 4. In this case, `app / dashboard / configure / workflow-editor` will navigate to the Workflow editor in dashboard application.
 
-![](../images/command-bar/cmdbar-workflow-editor-path.png)
+![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/command-bar/cmdbar-workflow-editor-path.png)
 
 Similarly, you can use the command bar to navigate around the Devtron dashboard without a click.
 
