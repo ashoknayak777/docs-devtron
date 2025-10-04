@@ -576,3 +576,11 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
   margin-left: 6px;       /* spacing */
   border-radius: 4px;     /* keep rounded */
 }
+
+
+.inline-badge img {
+  display: inline !important;
+  vertical-align: middle;
+  margin: 0 !important;
+  max-width: fit-content !important;
+}
