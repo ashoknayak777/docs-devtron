@@ -236,9 +236,9 @@ Once you have configured the notifications in the **Configuration** tab, you can
 
     Once you have selected your preferred filter type, a list of CI/CD pipelines are displayed as filter results. 
 
-    * <span><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/ci1.jpg" alt="CI Icon" /></span> indicates that it is a CI (Build) pipeline.
+    * <span className="inline-badge"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/ci1.jpg" alt="CI Icon" /></span> indicates that it is a CI (Build) pipeline.
 
-    * <span><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/cd1.jpg" alt="CD Icon" /></span> indicates that it is a CD (Deployment) pipeline.
+    * <span className="inline-badge"> <img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/cd1.jpg" alt="CD Icon" /></span> indicates that it is a CD (Deployment) pipeline.
 
     * You can also choose to receive notifications for any CI or CD pipelines that do not exist currently but may exist in future by enabling the **All current and future pipelines matching** pipeline in the **Pipeline Name** column. 
 

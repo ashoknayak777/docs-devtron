@@ -67,11 +67,7 @@ Adding [image labels](./deploying-application/image-labels-and-comments.md) can 
 3. Similar to application, you can also [pass build parameters](./deploying-application/triggering-ci.md#passing-build-parameters-) in application groups before triggering the build.
 
 :::info Note
-Passing build parameters feature is only available in <img 
-  src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" 
-  alt="Enterprise Feature"
-  className="enterprise-badge-img"
-/>
+Passing build parameters feature is only available in <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 :::
 
@@ -174,7 +170,7 @@ You can go to the **App Details** tab to have a bird's-eye view of your applicat
 
 :::
 
-### Managing Traffic ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg)
+### Managing Traffic <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 While deployment, Devtron allows you to manage your **Canary** and **Blue-Green** deployments by providing visibility and easy controls to manage how new versions (releases) are shared with users.
 

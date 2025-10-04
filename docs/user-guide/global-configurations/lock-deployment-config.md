@@ -136,7 +136,7 @@ Let's look at a scenario where a user (non-super-admin) tries to edit the same i
 ### Editing Locked Configurations
 
 :::info GUI/YAML Mode
-<span><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/mode1.jpg" alt="GUI or YAML Mode" /></span> <br/>
+<span className="inline-badge"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/mode1.jpg" alt="GUI or YAML Mode" /></span> <br/>
 If you select 'GUI' mode instead of 'YAML', all the keys meant for GUI mode will be displayed in the GUI even if some are locked. While users can modify these keys, they cannot save the changes made to the locked keys.
 :::
 

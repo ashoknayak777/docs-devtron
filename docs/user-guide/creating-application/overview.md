@@ -43,7 +43,7 @@ Tags are key-value pairs used to identify and organize applications effectively.
 1. Click the **Edit** icon next to **Tags**.
 2. On the **Manage Tags** page, click **+ Add tag** to create a new tag.
 3. To delete a tag, click the **X** icon next to it.
-4. To propagate a tag as a Kubernetes label, click the **Propagation** icon ![propagation icon](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg).  
+4. To propagate a tag as a Kubernetes label, click the **Propagation** icon <span className="inline-badge">![propagation icon](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/donot-propagate.jpg)</span>.  
    - The icon turns dark grey when propagation is enabled.  
    - Click again if you wish to disable propagation.  
    
