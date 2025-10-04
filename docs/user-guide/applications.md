@@ -1,7 +1,6 @@
 ---
 id: applications
 title: Applications
-slug: /usage/applications
 ---
 
 # Applications

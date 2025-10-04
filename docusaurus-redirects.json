@@ -321,7 +321,7 @@
             "from": [
               "/user-guide/creating-application"
             ],
-            "to": "/docs/user-guide/creating-application"
+            "to": "/docs/user-guide/create-application"
           },
           {
             "from": [
@@ -362,12 +362,6 @@
           {
             "from": [
               "/user-guide/creating-application/workflow/ci-pipeline"
-            ],
-            "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
-          },
-          {
-            "from": [
-              "/user-guide/creating-application/workflow/ci-pipeline/ci-build-pre-post-plugins"
             ],
             "to": "/docs/user-guide/creating-application/workflow/ci-pipeline"
           },
@@ -578,7 +572,8 @@
           },
           {
             "from": [
-              "/usage/applications/creating-application/ci-pipeline/ci-build-pre-post-plugins"
+              "/usage/applications/creating-application/ci-pipeline/ci-build-pre-post-plugins",
+              "/user-guide/creating-application/workflow/ci-pipeline/ci-build-pre-post-plugins"
             ],
             "to": "/docs/user-guide/creating-application/workflow/pre-post-tasks"
           },
@@ -832,7 +827,7 @@
             "from": [
               "/usage/applications"
             ],
-            "to": "/docs/usage/applications"
+            "to": "/docs/user-guide/applications"
           },
           {
             "from": [

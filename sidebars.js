@@ -108,8 +108,7 @@ const sidebars = {
                     id: 'user-guide/creating-application/base-config/README',
                   },
                   items: [
-                    'user-guide/creating-application/base-config/config-maps',
-                    'user-guide/creating-application/base-config/secrets',
+                    'user-guide/creating-application/base-config/deployment-template',
                     // Types of Deployment Templates nested
                     {
                       type: 'category',
@@ -126,6 +125,8 @@ const sidebars = {
                         'user-guide/creating-application/base-config/deployment-template-types/statefulset',
                       ],
                     },
+                    'user-guide/creating-application/base-config/config-maps',
+                    'user-guide/creating-application/base-config/secrets',
                     // External Secrets (ESO) nested
                     {
                       type: 'category',
