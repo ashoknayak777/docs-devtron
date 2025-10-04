@@ -11,9 +11,9 @@ The table below shows the installation options available in Devtron OSS. Further
 
 | Installation Option                                                                                      | What Is Included                                            | When To Use                                                                            |
 | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [**Minimal (without integrations)**](#install-devtron-without-integrations)     | Dashboard + Resource Browser + Core operator configurations | A unified view of Helm apps, FluxCD apps, ArgoCD apps, and their related K8s resources |
-| [**With CI/CD**](#install-devtron-with-cicd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
-| [**With CI/CD + GitOps (Argo CD)**](#install-devtron-with-cicd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
+| [**Minimal (without integrations)**](#option-a-install-devtron-without-integrations)     | Dashboard + Resource Browser + Core operator configurations | A unified view of Helm apps, FluxCD apps, ArgoCD apps, and their related K8s resources |
+| [**With CI/CD**](#option-b-install-devtron-with-cicd)                                   | Everything in Minimal + Build and Deploy (CI/CD) module     | You need a complete CI-CD pipeline for your custom apps (a.k.a Devtron Apps)           |
+| [**With CI/CD + GitOps (Argo CD)**](#option-c-install-devtron-with-cicd--gitops-argocd) | Everything in CI/CD + GitOps (Argo CD) module               | You need automated, Git-driven deployments                                             |
 
 :::success Not Sure What To Choose?
 Begin with the **Minimal** version. You can always install CI/CD and GitOps integrations later from [Devtron Stack Manager](../../user-guide/integrations/).
@@ -63,10 +63,7 @@ helm repo update devtron
 
 ## Step 2: Choose an Installation Option
 
-<Tabs>
-<TabItem label="Minimal (Dashboard Only)" value="Minimal (Dashboard Only)">
-
-### Install Devtron without Integrations
+### Option A: Install Devtron without Integrations
 
 After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run the command below:
 
@@ -74,11 +71,8 @@ After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run
 helm install devtron devtron/devtron-operator \
 --create-namespace --namespace devtroncd
 ```
-</TabItem>
 
-<TabItem label="With CI/CD" value="With CI/CD">
-
-### Install Devtron with CI/CD
+### Option B: Install Devtron with CI/CD
 
 After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run the command below:
 
@@ -87,11 +81,8 @@ helm install devtron devtron/devtron-operator \
 --create-namespace --namespace devtroncd \
 --set installer.modules={cicd}
 ```
-</TabItem>
 
-<TabItem label="With CI/CD + GitOps (Argo CD)" value="With CI/CD + GitOps (Argo CD)">
-
-### Install Devtron with CI/CD + GitOps (ArgoCD)
+### Option C: Install Devtron with CI/CD + GitOps (ArgoCD)
 
 After you [add Devtron Helm Repository](#step-1-add-devtron-helm-repository) run the command below:
 
@@ -101,8 +92,6 @@ helm install devtron devtron/devtron-operator \
 --set installer.modules={cicd} \
 --set argo-cd.enabled=true
 ```
-</TabItem>
-</Tabs>
 
 :::info How much time does it take for installation?
 It usually takes 5–15 minutes to spin up all Devtron microservices (depending on your installation option).
