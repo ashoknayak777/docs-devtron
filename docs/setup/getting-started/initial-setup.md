@@ -42,7 +42,7 @@ The minimum requirements for installing Devtron depends on the integrations you 
     | **With CI/CD, GitOps**                        |  6  |  13 GB |
     | **Minimal (Only Dashboard, No Integrations)** |  2  |  3 GB  |
 
-> Refer to the [Override Configurations](../install/override-default-devtron-installation-configs.md) section for more information. If you have questions, let us know on our Discord channel. [![Join us on Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)
+> Refer to the [Override Configurations](../install/override-default-devtron-installation-configs.md) section for more information. If you have questions, let us know on our Discord channel. <span className="inline-badge">[![Join us on Discord](https://img.shields.io/badge/Join%20us%20on-Discord-e01563.svg)](https://discord.gg/jsRG5qx2gp)</span>
 
 :::warning Note
 * Please make sure that the recommended resources are available on your Kubernetes cluster before you proceed with Devtron installation.
