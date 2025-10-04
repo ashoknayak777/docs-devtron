@@ -243,7 +243,7 @@ const config = {
       //   copyright: `Copyright © ${new Date().getFullYear()} Devtron Inc.`,
       // },
       prism: {
-        theme: prismThemes.github,
+        theme: prismThemes.dracula, // prismThemes.github for light mode
         darkTheme: prismThemes.dracula,
       },
     }),
