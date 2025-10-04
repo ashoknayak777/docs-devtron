@@ -584,3 +584,15 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
   margin: 0 !important;
   max-width: fit-content !important;
 }
+
+/* Smooth separation between main content and footer */
+.main-wrapper {
+  padding-bottom: 4rem; /* gives space before footer */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* subtle divider */
+  background: #f8fafc;
+}
+
+html[data-theme='dark'] .main-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: #1a1a1a;
+}
