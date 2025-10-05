@@ -1,34 +1,34 @@
 /* Hero Section */
 
 .heroBanner {
-  padding: 0rem 2rem 4rem;
+  padding: 3rem 2rem 4rem;
   text-align: center;
-  position: relative;
+  position: none !important;
   overflow: hidden;
-  background: linear-gradient(135deg, #2bf 0%, #1b2a6e 100%);
+  background: linear-gradient(0deg, #2bf 0%, #1b2a6e 100%);
   color: white;
   /* border-bottom: 1px solid #ccc; thin gray border */
 }
 
-.heroBanner::after {
+/* .heroBanner::after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px; /* much shorter */
+  height: 50px; 
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
     #f8fafc 20%
   );
   pointer-events: none;
-}
+} */
 
 
 /* Dark mode using Docusaurus theme attribute */
 html[data-theme='dark'] .heroBanner {
-  background: linear-gradient(135deg, #2bf 0%, #1b2a6e 100%);
+  background: linear-gradient(0deg, #2bf 0%, #1b2a6e 100%);
   color: #f1f1f1;
   /* border-bottom: 1px solid #444; subtle gray for dark mode */
 }
@@ -103,6 +103,7 @@ html[data-theme='dark'] .heroBanner::after {
 
 /* Features Section */
 .features {
+  margin-top: 1rem;
   padding: 1rem 2rem;
   background-color: #f8fafc;
 }
