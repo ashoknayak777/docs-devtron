@@ -177,7 +177,7 @@ html[data-theme='dark'] .footer-desc {
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35); /* lighter shadow */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin-left: 12px;
+  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -232,7 +232,6 @@ html[data-theme='dark'] .footer-desc {
   background-size: 200% 100%;
   box-shadow: 0 2px 8px rgba(184, 134, 11, 0.4);
   /* transition: transform 0.2s ease, box-shadow 0.2s ease; */
-  margin-left: 12px;
   margin-right: 12px;
   cursor: pointer;
 }
