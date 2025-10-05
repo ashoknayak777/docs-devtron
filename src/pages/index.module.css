@@ -1,7 +1,7 @@
 /* Hero Section */
 
 .heroBanner {
-  padding: 5rem 2rem 7rem;
+  padding: 0rem 2rem 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -336,9 +336,9 @@ html[data-theme='dark'] .heroBanner::after {
 }
 
 @media screen and (max-width: 768px) {
-  .heroBanner {
-    padding: 4rem 1rem 3rem;
-  }
+  /* .heroBanner {
+    padding: 2rem 1rem 2rem;
+  } */
 
   .heroTitle {
     font-size: 2rem;

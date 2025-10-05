@@ -643,3 +643,128 @@ html[data-theme='dark'] .theme-tabs-container .tabs__item--active {
   border-radius: 6px;
   color: #fff;
 }
+
+
+/* =========================
+   Default (Desktop and large screens)
+   ========================= */
+   .footer {
+    text-align: left;
+  }
+  
+  .footer__link-item {
+    display: inline-block;
+    width: auto;
+  }
+  
+  /* =========================
+     Tablets (below 996px)
+     ========================= */
+  @media (max-width: 996px) {
+    .footer {
+      text-align: center !important;
+    }
+  
+    .footer__col,
+    .footer__links,
+    .footer__title,
+    .footer__item {
+      text-align: center !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+  
+    .footer__col > * {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    .footer__link-item {
+      display: block;
+      width: 300px;
+      margin: 0.3rem auto;
+    }
+  
+    .footer__logo,
+    .footer__logo img {
+      margin: 0 auto !important;
+    }
+  }
+  
+  /* =========================
+     Small tablets / large phones (below 768px)
+     ========================= */
+  @media (max-width: 768px) {
+    .footer__link-item {
+      width: 250px;
+    }
+  
+    .footer__links {
+      flex-direction: column !important;
+    }
+  }
+  
+  /* =========================
+     Medium phones (below 600px)
+     ========================= */
+  @media (max-width: 600px) {
+    .footer__link-item {
+      width: 200px;
+    }
+  }
+  
+  /* =========================
+     Small phones (below 480px)
+     ========================= */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 1.5rem 1rem;
+    }
+  
+    .footer__link-item {
+      width: 100%;
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+  }
+
+/* =========================
+   Hero Section Height Fix
+   ========================= */
+   .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Desktop / Default */
+  .hero {
+    min-height: 70vh; /* taller hero for large screens */
+    padding-bottom: 2rem;
+  }
+  
+  /* Tablets (below 996px) */
+  @media (max-width: 996px) {
+    .hero {
+      min-height: 60vh;
+      padding-bottom: 2.5rem;
+    }
+  }
+  
+  /* Small tablets / large phones (below 768px) */
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 65vh;
+      padding-bottom: 3rem;
+    }
+  }
+  
+  /* Mobile (below 480px) */
+  @media (max-width: 480px) {
+    .hero {
+      min-height: 70vh;
+      padding-bottom: 3.5rem;
+    }
+  }
+  
