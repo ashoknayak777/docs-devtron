@@ -124,8 +124,8 @@ const config = {
           // { label: 'GitHub Repo', href: 'https://github.com/devtron-labs/devtron', position: 'right' },
           // { label: 'Join Discord', href: 'https://discord.gg/devtron', position: 'right' },
           { type: 'search', position: 'right' },
-          { label: 'Website', href: 'https://devtron.ai', position: 'right' },
-          { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'right' },
+          { label: 'Website', href: 'https://devtron.ai', position: 'left' },
+          { label: 'Sandbox', href: 'https://preview.devtron.ai/', position: 'left' },
           {
             href: 'https://license.devtron.ai/dashboard',
             label: 'Get Devtron Freemium',
