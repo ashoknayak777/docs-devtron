@@ -4,9 +4,9 @@ A ConfigMap stores key-value pairs (non-sensitive data) that your applications c
 
 ## Add ConfigMap
 
-1. Navigate to the **Applications** page and click on your preferred application. 
+1. Go to **Application Management** → **Applications** → **Devtron Apps** (tab) → (Select Your App)
 
-2. Go to the **Configurations** → **Base Configurations**.
+2. Go to **Configurations** (tab) → **Base Configurations**.
 
     ![Figure 1: Application's 'Configurations' Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/config-maps/appconfig-page.jpg)
 

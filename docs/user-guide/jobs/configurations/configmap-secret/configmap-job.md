@@ -11,7 +11,7 @@ Users need to have the **Admin role** or the **Super Admin role**.
 Refer the [User permissions](../../../global-configurations/authorization/user-access.md#roles-available-for-jobs).
 :::
 
-1. Go to **Configurations** → **ConfigMaps & Secrets**.
+1. Go to **Configurations** (tab) → **ConfigMaps & Secrets**.
 
     ![Figure 1: ConfigMaps & Secrets](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/configmap.jpg)
 

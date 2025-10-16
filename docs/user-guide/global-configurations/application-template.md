@@ -14,7 +14,7 @@ Users need to have super-admin permission to create Application Templates.
 
 ## Creating an Application Template
 
-1. Navigate to **Global Configurations** → **Application Templates**.
+1. Navigate to **Application Management** → **Application Templates**.
 
 2. Click **+ Create Template**; a modal window will appear.
 
@@ -43,7 +43,7 @@ Users need to have super-admin permission to create Application Templates.
 
 After you create an application template, you can view the configurations it inherited (Git, Build, Chart, Pipeline config) from the source application. If you wish, you may modify those configurations according to your use cases.
 
-1. Navigate to **Global Configurations** → **Application Templates**.
+1. Navigate to **Application Management** → **Application Templates**.
 
 2. Select your preferred application template.
 
@@ -86,7 +86,7 @@ You can use an application template to create an application. Refer [Creating Ap
 
 ## Deleting an Application Template
 
-1. Navigate to **Global Configurations** → **Application Templates**.
+1. Navigate to **Application Management** → **Application Templates**.
 
 2. Select your preferred application template.
 

@@ -148,7 +148,7 @@ Only a [Super-Admin](../global-configurations/authorization/user-access.md#helm-
 
 Disabling a Helm chart source (e.g., Bitnami) does not display all associated charts in the Chart Store. When you previously used charts from a particular chart source, but no longer want to use it, you can simply disable the chart source by following the instructions below:
 
-1. Navigate to **Chart Store** → **Source**.
+1. Navigate to **Application Management** → **Chart Store** → **Source**.
 
 2. Disable the toggle next to your preferred chart source (e.g., Bitnami).
 

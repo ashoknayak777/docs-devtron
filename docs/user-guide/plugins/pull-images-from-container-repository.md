@@ -14,9 +14,9 @@ Before integrating the **Pull images from the container repository** plugin, ens
 ---
 
 ## Steps
-1. Go to Applications → **Devtron Apps**.
+1. Go to **Application Management** → **Applications** → **Devtron Apps** (tab).
 2. Click your application.
-3. Go to **App Configuration** → **Workflow Editor**.
+3. Go to **Configurations** (tab) → **Workflow Editor**.
 4. Click **New Workflow** and navigate to the **CREATE JOB PIPELINE**.
 5. Enter the required fields in the **Basic configuration** window.
 6. Under 'TASKS', click the **+ Add task** button.

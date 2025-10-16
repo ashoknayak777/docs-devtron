@@ -17,7 +17,7 @@ Refer the [User permissions](../global-configurations/authorization/user-access.
 
 To create a new **Blank Job** in Devtron, follow these steps:
 
-1. Navigate to **Devtron Dashboard** → **Jobs**.
+1. Navigate to **Automation & Enablement** → **Jobs**.
 
     ![Figure 1: Job's Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/jobs.jpg)
 
@@ -77,7 +77,7 @@ Refer the [User permissions](../global-configurations/authorization/user-access.
 
 To delete a job, you have to first delete any configured pipelines in that job workflow.
 
-1. Navigate to **Jobs** → **Select the job** → **Configurations** → **Workflow Editor**.
+1. Navigate to **Automation & Enablement** → **Jobs** → **Select the job** → **Configurations** → **Workflow Editor**.
 
 2. Select the job pipeline you wish to delete, and an edit job pipeline modal window will appear.
 

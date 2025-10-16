@@ -38,7 +38,7 @@ Technically, both of them are different methods of restricting deployments to an
 Users need to have super-admin permission to configure deployment window.
 :::
 
-Go to **Global Configurations** → **Deployment Window**.
+Go to **Application Management** → **Policies** → **Deployment Window**.
 
 ![Figure 2: Deployment Window in Global Configurations](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-window/gc-deployment-window.jpg)
 
@@ -281,7 +281,7 @@ Rolling back to an older version, by using a previously deployed image, is barre
 
 ### Deletion of CD Pipeline
 
-Go to **App Configuration** → **Workflow**. 
+Go to **Configuration** (tab) → **Workflow**. 
 
 In Devtron, deleting a CD pipeline affects the current state of the deployed application. Moreover, it might impact future deployments and you will also lose information about past deployments, i.e., Deployment History. 
 

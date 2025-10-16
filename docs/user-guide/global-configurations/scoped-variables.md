@@ -73,7 +73,7 @@ Depending on your use case, you can do either one of the following:
 
 ### Download the Template
 
-1. From the left sidebar, go to **Global Configurations** → **Scoped Variables**
+1. From the left sidebar, go to **Application Management** → **Configurations** → **Scoped Variables**
 
 2. Click **Download template**. 
 

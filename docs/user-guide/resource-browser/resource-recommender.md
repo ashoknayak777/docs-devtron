@@ -158,7 +158,7 @@ You can also export resource recommendations to a CSV file. To do so, follow the
 
 To modify the schedule of the **Resource Recommender** background job, follow the steps below:
 
-1. In a new tab, go to **Resource Browser** → (Select the Cluster for which you want to modify the resource recommender job schedule) → **Config & Storage** → **ConfigMap**
+1. In a new tab, go to **Infrastructure Management** → **Resource Browser** → (Select the Cluster for which you want to modify the resource recommender job schedule) → **Config & Storage** → **ConfigMap**
 
 2. Select the **Orchestrator/Devtron ConfigMap**
      1. If **Devtron** is managing your setup, contact **Devtron** support to perform these changes.

@@ -1,12 +1,12 @@
 # GitOps Configuration
 
 :::caution 
-The 'GitOps Configuration' page appears only if the super-admin has enabled 'Allow changing git repository for application' in [Global Configurations → GitOps](../global-configurations/gitops.md).
+The 'GitOps Configuration' page appears only if the super-admin has enabled 'Allow changing git repository for application' in [Application Management → Configurations → GitOps](../global-configurations/gitops.md).
 :::
 
 ## Introduction
 
-This configuration is an extension of the [GitOps](../global-configurations/gitops.md) settings present in [Global Configurations](../global-configurations/README.md) of Devtron. Therefore, make sure you read it before making any changes to your app configuration.
+This configuration is an extension of the [GitOps](../global-configurations/gitops.md) settings present in [Application Management → Configurations](../global-configurations/README.md) of Devtron. Therefore, make sure you read it before making any changes to your app configuration.
 
 The application-level GitOps configuration offers the flexibility to add a custom Git repo (as opposed to Devtron auto-creating a repo for your application). 
 
@@ -20,7 +20,7 @@ Users need to have [Admin permission](../global-configurations/authorization/use
 
 ### For Devtron Apps
 
-1. Go to **Applications** → **Devtron Apps** (tab) → (choose your app) → **App Configuration** (tab) → **GitOps Configuration**.
+1. Go to **Application Management** **Applications** → **Devtron Apps** (tab) → (choose your app) → **Configurations** (tab) → **GitOps Configuration**.
 
     ![Figure 1: App-level GitOps Config](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/gitops/app-config-gitops.jpg)
 

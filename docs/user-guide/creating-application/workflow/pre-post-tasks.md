@@ -34,7 +34,7 @@ You can create a task either by selecting one of the available preset plugins or
 
 To create a pre/post task, follow the steps below:
 
-1. Navigate to **Configurations** → **Workflow Editor** of your Devtron App. 
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of your Devtron App. 
 
 2. Select the Build or Deployment pipeline for configuring the pre/post tasks.
 

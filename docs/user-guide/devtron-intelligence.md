@@ -43,7 +43,7 @@ There are 2 methods to create a secret in Devtron, follow the one you prefer:
 
 1. Go to [strings.devtron.ai](https://strings.devtron.ai/base64-encoder) and encode your API key in base64. This base64 encoded key will be used while creating a secret in the next step.
 
-2. Go to Devtron's **Resource Browser** → (Select Cluster) → **Create Resource**
+2. Go to **Infrastructure Management** → **Resource Browser** → (Select Cluster) → **Create Resource**
 
 3. Paste the following YAML and replace the key with your base64-encoded OpenAI key. Also, enter the namespace where the [AI Agent chart](#3-deploy-ai-agent-chart) will be installed:
 
@@ -220,7 +220,7 @@ additionalEnvVars:
 
 ### 5. Update ConfigMaps
 
-1. In a new tab, go to **Resource Browser** → (Select Cluster) → **Config & Storage** → **ConfigMap**
+1. In a new tab, go to **Infrastructure Management** → **Resource Browser** → (Select Cluster) → **Config & Storage** → **ConfigMap**
 
 2. Edit the ConfigMaps:
 
@@ -247,7 +247,7 @@ additionalEnvVars:
 
 ### 6. Restart Pods
 
-1. Go to **Resource Browser** → (Select Cluster) → **Workloads** → **Deployment**
+1. Go to **Infrastructure Management** → **Resource Browser** → (Select Cluster) → **Workloads** → **Deployment**
 
 2. Click the checkbox next to the following **Deployment** workloads and restart them using the **`⟳`** button:
     * `devtron`
@@ -270,7 +270,7 @@ Devtron supports **Explain** option at the following screens (only for specific 
 
 ### Pod Errors
 
-**Path**: Resource Browser → (Select Cluster) → Workloads → Pod
+**Path**: Infrastructure Management → Resource Browser → (Select Cluster) → Workloads → Pod
 
 ![Figure 8a: AI Explain for Pod Issues](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/explain-with-ai.jpg) 
 
@@ -278,19 +278,19 @@ Devtron supports **Explain** option at the following screens (only for specific 
 
 ### Pod Last Restart Snapshot
 
-**Path**: Resource Browser → (Select Cluster) → Workloads → Pod → Pod Last Restart Snapshot
+**Path**: Infrastructure Management → Resource Browser → (Select Cluster) → Workloads → Pod → Pod Last Restart Snapshot
 
 ![Figure 9: AI Explain for Pod Restart Snapshot](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/pod-restart-explain.jpg)
 
 ### Event Errors
 
-**Path**: Resource Browser → (Select Cluster) → Events
+**Path**: Infrastructure Management → Resource Browser → (Select Cluster) → Events
 
 ![Figure 10: AI Explain for Event Errors](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/events-explain.jpg)
 
 ### App Details - Application Status
 
-**Path**: Application → App Details → Application Status Drawer
+**Path**: Application Management → Applications → (Select Application) → App Details → Application Status Drawer
 
 ![Figure 11a: AI Explain at Application Status](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/appstatus-drawer-explain1.jpg)
 
@@ -298,7 +298,7 @@ Devtron supports **Explain** option at the following screens (only for specific 
 
 ### App Details - K8s Resources
 
-**Path**: Application → App Details → K8s Resources (tab) → Workloads
+**Path**: Application Management → Applications → (Select Application) → App Details → K8s Resources (tab) → Workloads
 
 ![Figure 12: AI Explain at K8s Resources (tab)](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/app-workload-explain.jpg)
 

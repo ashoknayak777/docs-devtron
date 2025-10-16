@@ -20,7 +20,7 @@ The Environment Overrides section allows you to customize the **Deployment Templ
 Users need to have [Admin role](../global-configurations/authorization/user-access.md#roles-available-for-devtron-apps) or above (along with access to the environment and applications) to perform environment override.
 :::
 
-1. In your application, go to **Configurations** → **Environment Overrides**. 
+1. In your Devtron app, go to **Configurations** (tab) → **Environment Overrides**. 
 
     ![Figure 2: Accessing Environment Overrides](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/config-env-override.jpg)
 
@@ -121,9 +121,9 @@ You cannot modify locked keys in an environment's deployment template unless you
 
 Follow the below steps to override your deployment template using GUI: 
 
-1. Navigate to **Applications** and click on your preferred application. 
+1. Navigate to **Application Management** → **Applications** and click your Devtron application. 
 
-2. Go to **Configurations** → **Base Configurations** → **Environment Overrides** and click on your preferred environment to override deployment template.
+2. Go to **Configurations** (tab) → **Base Configurations** → **Environment Overrides** and click on your preferred environment to override deployment template.
 
 3. Click on the **No Override** option and then click on **Create Override**. 
 
@@ -183,9 +183,9 @@ Any changes made to the protected environment configurations (Deployment Templat
 
 Follow the below steps to make changes to a protected environment: 
 
-1. Navigate to **Applications** and click on your preferred application. 
+1. Navigate to **Application Management** → **Applications** and click on your preferred application. 
 
-2. Go to **Configurations** → **Base Configurations** → **Environment Overrides** and click on your preferred environment.
+2. Go to **Configurations** (tab) → **Base Configurations** → **Environment Overrides** and click on your preferred environment.
 
 3. Click on the **No Override** option and then click on **Create Override**.
 

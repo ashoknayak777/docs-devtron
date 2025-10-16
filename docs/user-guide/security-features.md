@@ -29,7 +29,7 @@ When you commit the code, it's essential to scan it before building a [container
 
 ![Figure 2: Scanning in Pre-CI Stage](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/security-features/pre-ci.gif)
 
-1. In your application, go to **App Configuration** → **Workflow Editor**.
+1. In your Devtron application, go to **Configurations** (tab) → **Workflow Editor**.
 
 2. Click the CI pipeline of your preferred workflow.
 

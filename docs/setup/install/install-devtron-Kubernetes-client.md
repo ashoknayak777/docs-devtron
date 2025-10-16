@@ -56,7 +56,7 @@ Upon executing the above-mentioned command, if you encounter an error saying tha
 
    ![Figure 1: Fetch Cluster Credentials](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/install+devtron+K8s+client/cluster-credentials.jpg)
 
-4. Navigate to **Global Configurations** → **Clusters** → **Add cluster** and paste the credentials in their respective fields. 
+4. Navigate to **Global Configurations** → **Clusters & Environments** → **Add cluster** and paste the credentials in their respective fields. 
 
    ![Figure 2a: Add a Cluster](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/install+devtron+K8s+client/global-configs-clusters.jpg)
 

@@ -18,7 +18,7 @@ Therefore, this doc is divided into 2 sections, read the one that caters to your
 
 Follow the below steps if the source code of your application is hosted on a single Git repository.
 
-In your application, go to **App Configuration** → **Git Repository**. You will get the following fields and options:
+In your Devtron app, go to **Configuration** (tab) → **Git Repository**. You will get the following fields and options:
 
 1. [Git Account](#git-account)
 2. [Git Repo URL](#git-repo-url)

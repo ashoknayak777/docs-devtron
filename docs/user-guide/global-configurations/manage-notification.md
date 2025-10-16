@@ -24,7 +24,7 @@ The **Notifications** module in Devtron helps you solve this problem by sending 
 
 ## Configurations
 
-The **Notifications** page allows you to configure and manage notifications for your CI/CD pipeline(s). To access the **Notifications** page, navigate to **Global Configurations** → **Notifications**.
+The **Notifications** page allows you to configure and manage notifications for your CI/CD pipeline(s). To access the **Notifications** page, navigate to **Application Management** → **Configurations** → **Notifications**.
 
 ![Figure 2: Notifications Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/revised-imgs-21052025/notifications-screen-configurations.jpg)
 
@@ -65,7 +65,7 @@ Only [Super-Admins](user-access.md) can create and manage SES configurations.
 
 #### Steps
 
-1. Navigate to the **Global Configurations** → **Notifications** → **Configurations** → **Email (SES)** → **Add SES**.
+1. Navigate to the **Application Management** → **Configurations** → **Notifications** → **Configurations** → **Email (SES)** → **Add SES**.
 
     ![Figure 3: Configure SES](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/revised-imgs-21052025/configure-ses.jpg)
 
@@ -108,7 +108,7 @@ SMTP credentials (username and password) from your SMTP provider.
 
 #### Steps
 
-1. Navigate to the **Global Configurations** → **Notifications** → **Configurations** → **Email (SMTP)** → **Add SMTP**.
+1. Navigate to the **Application Management** → **Configurations** → **Notifications** → **Configurations** → **Email (SMTP)** → **Add SMTP**.
 
     ![Figure 4: Configure SMTP](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/revised-imgs-21052025/configure-smtp.jpg)
 
@@ -148,7 +148,7 @@ A Slack account, a Slack channel, and an [Incoming Webhook URL](https://api.slac
 
 #### Steps
 
-1. Navigate to the **Global Configurations** → **Notifications** → **Configurations** → **Slack** → **Add Slack**.
+1. Navigate to the **Application Management** → **Configurations** → **Notifications** → **Configurations** → **Slack** → **Add Slack**.
 
     ![Figure 5: Configure Slack](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/revised-imgs-21052025/configure-slack.jpg)
 
@@ -183,7 +183,7 @@ A Webhook URL to receive notifications (e.g., Microsoft Teams Webhook URL, Disco
 
 #### Steps
 
-1. Navigate to the **Global Configurations** → **Notifications** → **Configurations** → **Webhook** → **Add Webhook**.
+1. Navigate to the **Application Management** → **Configurations** → **Notifications** → **Configurations** → **Webhook** → **Add Webhook**.
 
     ![Figure 6: Configure Webhook](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/manage-notification/revised-imgs-21052025/configure-webhook.jpg)
 

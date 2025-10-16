@@ -73,7 +73,7 @@ The users (admin and others) can access the configured external link on the [App
 
 On the `External Links` page, the configured external links can be filtered/searched, as well as edited/deleted.
 
-Select `Global Configurations > External links`.
+Go to **Application Management** → **Configurations** → **External links**.
 
 ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/external-links/manage-external-links-v2.jpg)
 

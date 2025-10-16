@@ -192,7 +192,7 @@ Users need to have the **Admin role**, the **Manager role**, or the **Super Admi
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-devtron-apps).
 :::
 
-1. Navigate to **Configurations** → **Workflow Editor** of your application.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of your application.
 
 2. Select **+ New Workflow**, a modal window will appear where you can select the type of pipeline you want to create. 
 
@@ -240,7 +240,7 @@ This is useful when your CI pipeline is managed outside the Devtron platform, al
 
 To create a pipeline form **Deploy Image from External Service**, follow the steps below
 
-1. Navigate to **Configurations** → **Workflow Editor** of your application.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of your application.
 
 2. Select **+ New Workflow**, a modal window will appear where you can select the type of pipeline you want to create.
 
@@ -461,7 +461,7 @@ This allows the new workflow to use the same image as the stable production envi
 
 To create a pipeline form **Sync with Environment**, follow the steps below
 
-1. Navigate to **Configurations** → **Workflow Editor** of your application.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of your application.
 
 2. Select **+ New Workflow**, a modal window will appear where you can select the type of pipeline you want to create.
 
@@ -501,7 +501,7 @@ This is useful when the image is built externally (for example, in Jenkins) and 
 
 To create a workflow using **Create a job**, follow the steps below
 
-1. Navigate to **Configurations** → **Workflow Editor** of your application.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of your application.
 
 2. Select **+ New Workflow**, a modal window will appear where you can select the type of pipeline you want to create.
 
@@ -632,7 +632,7 @@ Before deleting a CI pipeline, make sure that there is no CD pipeline attached t
 
 To delete a CI pipeline, follow the steps below.
 
-1. Navigate to **Configurations** → **Workflow Editor** and click the pipeline you wish to delete.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** and click the pipeline you wish to delete.
 
    ![Figure 64: Selecting Workflow to delete](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/delete-pipeline-select-workflow.jpg)
 

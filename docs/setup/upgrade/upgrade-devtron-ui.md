@@ -1,6 +1,6 @@
 # Update Devtron from Devtron UI
  
-Devtron can be updated from the **Devtron Stack Manager > About Devtron** section.
+Devtron can be updated from the **Devtron Stack Manage → About Devtron** section.
  
 ![Upgrade Devtron](https://devtron-public-asset.s3.us-east-2.amazonaws.com/integrations/about-devtron.png)
  

@@ -175,7 +175,7 @@ Only super admin users can upload a deployment chart. A super admin can upload m
 
 ### Steps
 
-* Go to **Global Configurations** → **Deployment Charts**.
+* Go to **Application Management** → **Configurations** → **Deployment Charts**.
 
     ![Figure 5: Global Configurations - Deployment Charts](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/gc-deployment-charts.jpg)
 
@@ -216,7 +216,7 @@ The following are interpretations of the validation checks performed:
 Only super-admins can view deployment charts.
 :::
 
-To view the list of available deployment charts, go to  **Global Configurations** → **Deployment Charts** page.
+To view the list of available deployment charts, go to  **Application Management** → **Configurations** → **Deployment Charts** page.
 
 ![Figure 9: Viewing Deployment Charts](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/view-charts.jpg)
 
@@ -279,4 +279,4 @@ In this example, we will edit the Deployment chart type provided by Devtron.
 
     ![Figure 15: Save Changes](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/deployment-charts/save-changes.jpg)
 
-Next, if you go to **Configurations** → **Base Configurations** → **Deployment Template**, you will be able to see the deployment template fields (in GUI) as per your customized schema.
+Next, if you go to **Configurations** (tab) → **Base Configurations** → **Deployment Template**, you will be able to see the deployment template fields (in GUI) as per your customized schema.

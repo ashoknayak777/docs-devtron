@@ -19,7 +19,7 @@ Users need to have [Super-Admin](user-access.md#assign-super-admin-permissions) 
 
 :::
 
-1. Go to **Global Configurations** → **GitOps**
+1. Go to **Application Management** → **Configurations** → **GitOps**
 
    ![Figure 2: Global Configuration - GitOps](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/gitops/gitops-v1.jpg)
 

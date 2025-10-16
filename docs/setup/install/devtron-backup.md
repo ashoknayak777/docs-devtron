@@ -28,7 +28,7 @@ To store Devtron backups on Azure Containers, please follow these steps:
 
 1. Create a storage account in Azure.
 2. Within the storage account, create two containers for the Devtron backup.
-3. Navigate to Security + Networking > Access Key section in Azure and copy the Access Key:
+3. Navigate to Security + Networking → Access Key section in Azure and copy the Access Key:
 
 ![Azure Storage Account Key](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/install-devtron/backup/azure-sa-key.jpg)
 

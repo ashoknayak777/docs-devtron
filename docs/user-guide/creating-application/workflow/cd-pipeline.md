@@ -377,7 +377,7 @@ If you already use external Helm or Argo CD for deployment and wish to try out D
 
 :::caution Prerequisites
 * Add your external cluster (containing your Helm Apps) in [Clusters & Environments](../../global-configurations/cluster-and-environments.md).
-* Your Helm release must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Global Configurations** → **Deployment Charts**, then save the chart type at [base configuration](../base-config/deployment-template.md) of your application.
+* Your Helm release must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Application Management** → **Configurations** → **Deployment Charts**, then save the chart type at [base configuration](../base-config/deployment-template.md) of your application.
 :::
 
 You can not only [view your external Helm apps](../../applications.md#view-external-helm-app-listing), but also manage their deployments using Devtron's CI/CD. 
@@ -422,7 +422,7 @@ You can not only [view your external Argo CD apps](../../applications.md#view-ex
 
 * The target deployment cluster, its namespace, and its [environment](../../global-configurations/cluster-and-environments.md#add-environment-to-a-cluster) should be added to Devtron.
 
-* Your Argo CD app must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Global Configurations** → **Deployment Charts**. Then save the chart type at [base configuration](../base-config/deployment-template.md) of your application.
+* Your Argo CD app must use the same chart type as your application. If needed, you can upload or select the appropriate chart in **Application Management** → **Configurations** → **Deployment Charts**. Then save the chart type at [base configuration](../base-config/deployment-template.md) of your application.
 
 * The external Argo CD should have auto-sync enabled or an alternative syncing mechanism, as Devtron does not perform manual syncs.
 

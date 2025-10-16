@@ -154,7 +154,7 @@ You can apply this configuration using Devtron’s **Resource Browser**
 
 **Apply using Devtron’s Resource Browser**
 
-1.	Navigate to [Resource Browser](../resource-browser/README.md) in the Devtron sidebar.
+1.	Navigate to **Infrastructure Management** → [Resource Browser](../resource-browser/README.md)..
 2.	Select the Cluster where your CI pipelines run.
 3.	Click **Create Resource**.
 4.	Paste the YAML into the editor and click **Create**.

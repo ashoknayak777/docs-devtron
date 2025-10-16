@@ -16,7 +16,7 @@ Users need to have super-admin permission to configure Build Infra.
 
 ## Configure Build Infra
 
-From the left sidebar, go to **Global Configurations** → **Build Infra**. 
+From the left sidebar, go to **Application Management** → **Configurations** → **Build Infra**. 
 
 ![Figure 1: Global Configurations - Build Infra](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/build-infra/gc-build-infra.jpg)
 
@@ -109,7 +109,7 @@ Each platform may have unique requirements for resources like CPU and memory, or
 
 To configure platform specific configurations:
 
-1. From the left sidebar, go to **Global Configurations** → **Build Infra**. 
+1. From the left sidebar, go to **Application Management** → **Configurations** → **Build Infra**. 
 
 2. Select the profile for which you want to configure platform specific configurations.
 

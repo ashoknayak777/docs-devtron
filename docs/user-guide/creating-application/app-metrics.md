@@ -136,7 +136,7 @@ To enable **Throughput** and **Latency** metrics in Devtron, follow these steps:
     
 1. Open your Devtron app.
 
-2. Go to **Configurations** → **Base Configurations** → **Deployment Template**.
+2. Go to its **Configurations** (tab) → **Base Configurations** → **Deployment Template**.
 
 3. Enable **Application Metrics** in the Deployment Template as shown below and save the changes.
 
@@ -184,7 +184,7 @@ kubectl apply -f https://raw.githubusercontent.com/devtron-labs/devtron/main/man
 <details>
 <summary><strong> Grafana dashboards not visible in App Details page even after adding prometheus endpoint or Graphs showing error panel with id 2 not found</strong></summary>
 
-If the graphs are not visible check if Prometheus is configured properly. Then go to **Global Configurations** > **Clusters & Environments** > Click on any environment for the cluster where you added Prometheus endpoint and simply click `Update`.  
+If the graphs are not visible check if Prometheus is configured properly. Then go to **Global Configurations** → **Clusters & Environments** → Click on any environment for the cluster where you added Prometheus endpoint and simply click `Update`.  
 If the charts are still not visible, try visiting the URL: `<devtron-url>/grafana?orgId=2`  
 If you see `Not Found` on this page, then follow all the given steps or if the page is accessible, and you are getting `panel with id 2 not found` then follow from step 6:  
 1. Get Grafana password using `kubectl -n devtroncd get secret devtron-secret -o jsonpath='{.data.GRAFANA_PASSWORD}' | base64 -d`
@@ -223,7 +223,7 @@ If you see `Not Found` on this page, then follow all the given steps or if the p
 
 5. Now from Devtron UI, update any of the environment again and its data source will be created automatically.
 
-6. In Grafana UI you need to be logged in and Go to Dashboards > Manage then click `Import` and Import the given dashboards one by one.
+6. In Grafana UI you need to be logged in and Go to Dashboards → Manage then click `Import` and Import the given dashboards one by one.
 
     ```
     https://grafana.com/api/dashboards/13322/revisions/4/download

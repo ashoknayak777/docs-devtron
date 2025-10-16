@@ -17,7 +17,7 @@ Users need to have the **Admin role** or the **Super Admin role**.
 Refer the [User permissions](../../global-configurations/authorization/user-access.md#roles-available-for-jobs).
 :::
 
-1. In your job, go to **Configurations** → **Environment Overrides**. 
+1. In your job, go to **Configurations** (tab) → **Environment Overrides**. 
 
     ![Figure 1: Environment Override](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/env-over.jpg)
 

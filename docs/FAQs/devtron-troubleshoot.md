@@ -76,7 +76,7 @@ Again wait for 5 minutes and your issue should be resolved
 
 #### 5. Grafana dashboards not visible in App Details page even after adding prometheus endpoint or Graphs showing error panel with id 2 not found
 
-If the graphs are not visible check if prometheus is configured properly. Then go to Global Configurations > Clusters & Environments > Click on any environment for the cluster where you added prometheus endpoint and simply click `Update`.  
+If the graphs are not visible check if prometheus is configured properly. Then go to Global Configurations → Clusters & Environments → Click on any environment for the cluster where you added prometheus endpoint and simply click `Update`.  
 If the charts are still not visible, try visiting the url: `<devtron-url>`/grafana?orgId=2  
 If you see `Not Found` on this page, then follow all the given steps or if the page is accessible and you are getting `panel with id 2 not found` then follow from step 6:  
 1. Get grafana password using `kubectl -n devtroncd get secret devtron-secret -o jsonpath='{.data.GRAFANA_PASSWORD}' | base64 -d`
@@ -110,7 +110,7 @@ EOF
 and run in the pod that we created above in step 2.
 4. Now visit `<devtron-url>`/grafana?orgId=2 again and you'll see grafana login page. Login using username `admin` and password from step 1 and check if prometheus url is updated in datasources. If not, update it in the default datasource.
 5. Now from devtron UI, update any of the environment again and it's datasource will be created automatically.
-6. In Grafana UI you need to be logged in and Go to Dashboards > Manage then click `Import` and Import the given dashboards one by one.
+6. In Grafana UI you need to be logged in and Go to Dashboards → Manage then click `Import` and Import the given dashboards one by one.
 ```
 https://grafana.com/api/dashboards/13322/revisions/4/download
 https://grafana.com/api/dashboards/13320/revisions/4/download
@@ -142,7 +142,7 @@ If using Chrome -
 4. Now right click on token and click on `delete` option.
 
 If using Safari -
-1. Goto Safari preferences >> Advanced options and check the show develop menu as shown in the image below.
+1. Goto Safari preferences → Advanced options and check the show develop menu as shown in the image below.
 
 ![safari-preferences](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/safari-preferences.png)
 
@@ -158,14 +158,14 @@ After clearing `Cookies`, try again to login, you should be able to login now.
 
 #### 7. No charts found in Charts Discover Section
 
-In the Devtron's Discover Chart section, if you are not able to see any charts available, goto `Global Configuration` >> `Chart Repositories` and click on `Refresh Chart` at the top-right as shown in the image below. After clicking the button, it might take 4-5mins to show all the charts in `Discover` section depending upon the chart repositories added.
+In the Devtron's Discover Chart section, if you are not able to see any charts available, go to **Application Management** → **Configurations** → **Chart Repository** and click on `Refresh Chart` at the top-right as shown in the image below. After clicking the button, it might take 4-5mins to show all the charts in `Discover` section depending upon the chart repositories added.
 
 ![charts-not-found](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/refresh-charts.png)
 
 
 #### 8. Not able to update cluster
 
-In `Global Configurations` >> `Cluters & Environments`, if you try to update a cluster which has been already added in Devtron, you might get an error as `{"message":"Failed to update datasource. Reload new version and try again"}`. If you are facing such issue, please follow the following steps - 
+In **Global Configurations** → **Clusters & Environments**, if you try to update a cluster which has been already added in Devtron, you might get an error as `{"message":"Failed to update datasource. Reload new version and try again"}`. If you are facing such issue, please follow the following steps - 
 
 1. Edit the changes you want to make in respective cluster
 2. Click on save after making changes and you may get error message stated above.
@@ -414,7 +414,7 @@ helm upgrade devtron devtron/devtron-operator --namespace devtroncd \
 This can occur if you are using or recently upgraded to Kubernetes version 1.22 or above and you are using rollout controller version 0.13.0 from chart `devtron-charts/rollout` or `devtron/rollout`. The issue can be because of CRDs which were updated in later versions of rollout chart.
 
 1. Check which chart repo and version of rollout controller are you using on that cluster from Helm Apps section
-2. Update the rollout chart version to latest and re-deploy. If your rollout controller is deployed from `devtron-charts` helm repo then change the repo to `devtron/rollout` and then update the version to latest. Also, if devtron helm repo is not showing on your devtron then go to Global Configurations > Chart Repositories and add a new repo with the name `devtron` and url `https://helm.devtron.ai`. Wait for few minutes and then charts from devtron repo will be there on your devtron. This should resolve your issue
+2. Update the rollout chart version to latest and re-deploy. If your rollout controller is deployed from `devtron-charts` helm repo then change the repo to `devtron/rollout` and then update the version to latest. Also, if devtron helm repo is not showing on your devtron then go to Application Management → Configurations → Chart Repository and add a new repo with the name `devtron` and url `https://helm.devtron.ai`. Wait for few minutes and then charts from devtron repo will be there on your devtron. This should resolve your issue
 
 
 
@@ -606,13 +606,13 @@ Follow the below steps if you are getting the above error:
 
 * Make sure your [Devtron version](https://devtron-public-asset.s3.us-east-2.amazonaws.com/integrations/about-devtron.png) is 0.7.1 ([check how to upgrade](../setup/upgrade/README.md)).
 
-* Navigate to Global Configurations → Chart Repositories → Bitnami
+* Navigate to **Application Management** → **Chart Repository** → **Bitnami**
 
 * Now in the Bitnami repository, uncheck the **Allow Insecure Connection** and update it as shown below.
 
   ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/bitnami-chart-issue.jpg)
 
-* Go to Chart Store and initiate the Chart Sync.
+* Go to **Application Management** → **Chart Store** and initiate the Chart Sync.
 
   ![](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/chart-sync.jpg)
 

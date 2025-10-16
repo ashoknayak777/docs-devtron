@@ -37,7 +37,7 @@ This allows for better control by making sure critical deployment template confi
 
 To create a profile, follow the steps below:
 
-1. Go to **Global Configurations** → **Lock Deployment Configuration**.
+1. Go to **Application Management** → **Policies** → **Lock Deployment Configuration**.
 
 2. Click **+ Create Profile**; a new **Create Profile** page will open.
 
@@ -86,7 +86,7 @@ Adding an entry within the locked range may shift the indices and result in vali
 
 After creating a profile, the next step is to apply the profile to the specific deployment templates according to your use case. To apply a profile, follow the steps below:
 
-1. Go to **Global Configurations** → **Lock Deployment Configuration**.
+1. Go to **Application Management** → **Policies** → **Lock Deployment Configuration**.
 
      ![Figure 7: Clicking 'Apply Profile'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/lock-dt/lock-config-apply-profile.jpg)
 
@@ -182,7 +182,7 @@ The same result can be seen if the user tries to edit environment-specific deplo
 
 To manage an existing applied profile, follow the steps below:
 
-1. Go to **Global Configurations** → **Lock Deployment Configuration**. 
+1. Go to **Application Management** → **Policies** → **Lock Deployment Configuration**. 
 
 2. Click the **Applied Profiles** tab and click the `⋮` button next to the preferred applied profile.
 
@@ -208,7 +208,7 @@ Removing an applied profile does not delete the lock deployment configuration pr
 
 To update a lock deployment configuration file, follow the steps below:
 
-1. Go to **Global Configurations** → **Lock Deployment Configuration**. 
+1. Go to **Application Management** → **Policies** → **Lock Deployment Configuration**. 
 
 2. Click the **Profiles** tab and then click the edit button next to the preferred profile.
 
@@ -224,7 +224,7 @@ To update a lock deployment configuration file, follow the steps below:
 
 To delete a lock deployment configuration file, follow the steps below:
 
-1. Go to **Global Configurations** → **Lock Deployment Configuration**. 
+1. Go to **Application Management** → **Policies** → **Lock Deployment Configuration**. 
 
 2. Click the **Profiles** tab and then click the delete button next to the preferred profile.
 

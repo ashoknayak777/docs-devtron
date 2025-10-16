@@ -19,7 +19,7 @@ Devtron leverages the power of Grafana to show application metrics like CPU, Mem
 
 ## Installation
 
-1. On the **Devtron Stack Manager > Discover** page, click the **Monitoring (Grafana)**.
+1. On the **Devtron Stack Manager** → **Discover** page, click the **Monitoring (Grafana)**.
 2. On the **Discover integrations/Monitoring (Grafana)** page, click **Install**.
  
 The installation status may be one of the following:
@@ -33,6 +33,6 @@ The installation status may be one of the following:
 | Installed | The integration is successfully installed and available on the **Installed** page. |
 | Request timed out | The request to install has hit the maximum number of retries. You may retry the installation or [contact support](https://discord.devtron.ai/) for further assistance. |
  
-> A list of installed integrations can be viewed on the **Devtron Stack Manager > Installed** page.
+> A list of installed integrations can be viewed on the **Devtron Stack Manager** → **Installed** page.
  
 To update an installed integration, please [update Devtron](../../setup/upgrade/upgrade-devtron-ui.md).

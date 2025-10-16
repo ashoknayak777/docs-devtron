@@ -74,7 +74,7 @@ To enable deployments through GitOps via FluxCD, you need to enable a specific f
 
 5. Restart the deployment: 
       1. **For OSS Users:**
-          1. Navigate to Devtron's Resource Browser.
+          1. Navigate to Devtron's [Resource Browser](../resource-browser/).
 
           2. Select the cluster for which you have enabled the feature flags.
 
@@ -88,7 +88,7 @@ To enable deployments through GitOps via FluxCD, you need to enable a specific f
 
                ![Figure 6: Restarting Deployment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/fluxcd/fluxcd-restart-deployment.gif)
       2. **For Enterprise Users:**
-           1. Go to **Resource Browser** → (select the cluster in which you have enabled the feature flags) → **Workloads** → **Deployment**
+           1. Go to **Infrastructure Management** → **Resource Browser** → (select the cluster in which you have enabled the feature flags) → **Workloads** → **Deployment**
 
            2. Click the checkbox next to the `dashboard` Deployment workloads and restart them using the `⟳` button.
 

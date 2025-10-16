@@ -16,7 +16,7 @@ Users need to have super-admin permission to enable pull image digest at environ
 
 ## Steps to Enable Pull Image Digest
 
-From the left sidebar, go to **Global Configurations** → **Pull Image Digest**. 
+From the left sidebar, go to **Application Management** → **Policies** → **Pull Image Digest**. 
 
 As a super-admin, you can decide whether you wish to enable pull image digest [for all environments](#for-all-environments) or [for specific environments](#for-specific-environments).
 

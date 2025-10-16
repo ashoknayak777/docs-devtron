@@ -22,7 +22,7 @@ The **Plugin Policy** feature in Devtron lets you enforce the presence of specif
 Users need to have super-admin permission to create a plugin policy.
 :::
 
-1. Go to **Global Configurations** → **Plugin Policy**.
+1. Go to**Application Management** → **Policies** → **Plugin Policy**.
 
     ![Figure 2: Plugin Policy](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/plugin-policy/gc-plugin-policy.jpg)
 

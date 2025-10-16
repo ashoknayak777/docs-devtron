@@ -19,7 +19,7 @@ Only a [Super-Admin](../global-configurations/authorization/user-access.md#grant
 
 To add a chart repository, follow the steps below:
 
-1. Navigate to **Global Configurations** → **Chart Repositories**. 
+1. Navigate to **Application Management** → **Configurations** → **Chart Repository**. 
 
 2. Click **Add repository**.
 

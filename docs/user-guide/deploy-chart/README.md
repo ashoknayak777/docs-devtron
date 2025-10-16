@@ -33,7 +33,7 @@ Only a [Super Admin](../global-configurations/user-access.md#assign-super-admin-
 
 To add a chart repository or an OCI registry as a chart source, follow the instructions below:
 
-1. Navigate to **Chart Store** → **Sources**. The **Helm chart sources** section appears, displaying all helm chart sources.
+1. Navigate to **Application Management** → **Chart Store** → **Sources**. The **Helm chart sources** section appears, displaying all helm chart sources.
 
 2. Click the **Add** button. 
 

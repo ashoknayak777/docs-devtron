@@ -23,7 +23,7 @@ The **Approval Policy** feature in Devtron lets you introduce an approval mechan
 Users need to have super-admin permissions to create an approval policy.
 :::
 
-1. Go to **Global Configurations** → **Approval Policy**.
+1. Go to **Application Management** → **Policies** → **Approval Policy**.
 
     ![Figure 2: Approval Policy](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/gc-approval-policy.jpg)
 
@@ -185,7 +185,7 @@ You can choose to:
 
 You can configure whether super-admins are required to follow approval policies or bypass them.
 
-1. Navigate to **Approval Policy** → **Exceptions**.
+1. Navigate to **Application Management** → **Policies** → **Approval Policy** → **Exceptions**.
 
 2. Choose the scope, for which you want super admins to not require approval.The available scopes are:
 
@@ -207,7 +207,7 @@ Super-admins can approve requests even if the toggle is turned off.
 
 ### Excluding Specific Users / User Groups / API Tokens
 
-1. Navigate to **Approval Policy** → **Exceptions**.
+1. Navigate to **Application Management** → **Policies** → **Approval Policy** → **Exceptions**.
 
     ![Figure 17: Exceptions Tab](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/approval-policy/approval-policy-exceptions.jpg)
 

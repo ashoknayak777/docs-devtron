@@ -51,7 +51,7 @@ Users with view only permission or above for an application can view helm app li
 
 External Helm apps are Helm applications deployed outside of Devtron. 
 
-1. Connect the cluster containing your external Helm apps in [Global Configurations → Cluster & Environments](./global-configurations/cluster-and-environments.md).
+1. Connect the cluster containing your external Helm apps in [Global Configurations → Clusters & Environments](./global-configurations/cluster-and-environments.md).
 
 2. Use the **Cluster** selection dropdown to choose the external cluster(s). You will see your external Helm apps under the **Helm Apps** tab.
 

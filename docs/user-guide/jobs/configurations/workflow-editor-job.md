@@ -448,7 +448,7 @@ Refer the [User permissions](../../global-configurations/authorization/user-acce
 You can update the configurations of an existing Job Pipeline except for the pipeline's name.
 To update your job pipeline
 
-1. Navigate to **Configurations** → **Workflow Editor** of the specific job you want to update.
+1. Navigate to **Configurations** (tab) → **Workflow Editor** of the specific job you want to update.
 
 2. Select the **Job pipeline** you wish to update, a **Edit job pipeline** modal window will appear.
 
@@ -469,7 +469,7 @@ Refer the [User permissions](../../global-configurations/authorization/user-acce
 
 To delete a job pipeline 
 
-1.  Navigate to **Configurations** → **Workflow Editor** for the job you want to delete.
+1.  Navigate to **Configurations** (tab) → **Workflow Editor** for the job you want to delete.
 
 2. Select the **Job pipeline** you wish to delete, a **Edit job pipeline** modal window will appear.
 
