@@ -5,8 +5,8 @@
 <meta name="generator" content="Docusaurus v3.9.1">
 <title data-rh="true">Using Devtron Intelligence | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/devtron-intelligence"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Using Devtron Intelligence | Devtron Docs"><meta data-rh="true" name="description" content="What is Devtron Intelligence (AI Agent)"><meta data-rh="true" property="og:description" content="What is Devtron Intelligence (AI Agent)"><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/devtron-intelligence"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/devtron-intelligence" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/devtron-intelligence" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Resources","item":"https://docs.venz.shop/docs/reference/resources"},{"@type":"ListItem","position":2,"name":"Using Devtron Intelligence","item":"https://docs.venz.shop/docs/user-guide/devtron-intelligence"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.500152f5.css">
-<script src="/assets/js/runtime~main.659a8f98.js" defer="defer"></script>
-<script src="/assets/js/main.aa61913f.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.f8861b64.js" defer="defer"></script>
+<script src="/assets/js/main.75d7d71a.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -41,7 +41,7 @@
 <p>Go to <a href="https://strings.devtron.ai/base64-encoder" target="_blank" rel="noopener noreferrer">strings.devtron.ai</a> and encode your API key in base64. This base64 encoded key will be used while creating a secret in the next step.</p>
 </li>
 <li>
-<p>Go to Devtron&#x27;s <strong>Resource Browser</strong> → (Select Cluster) → <strong>Create Resource</strong></p>
+<p>Go to <strong>Infrastructure Management</strong> → <strong>Resource Browser</strong> → (Select Cluster) → <strong>Create Resource</strong></p>
 </li>
 <li>
 <p>Paste the following YAML and replace the key with your base64-encoded OpenAI key. Also, enter the namespace where the <a href="#3-deploy-ai-agent-chart">AI Agent chart</a> will be installed:</p>
@@ -118,7 +118,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-update-configmaps">5. Update ConfigMaps<a href="#5-update-configmaps" class="hash-link" aria-label="Direct link to 5. Update ConfigMaps" title="Direct link to 5. Update ConfigMaps" translate="no">​</a></h3>
 <ol>
 <li>
-<p>In a new tab, go to <strong>Resource Browser</strong> → (Select Cluster) → <strong>Config &amp; Storage</strong> → <strong>ConfigMap</strong></p>
+<p>In a new tab, go to <strong>Infrastructure Management</strong> → <strong>Resource Browser</strong> → (Select Cluster) → <strong>Config &amp; Storage</strong> → <strong>ConfigMap</strong></p>
 </li>
 <li>
 <p>Edit the ConfigMaps:</p>
@@ -141,7 +141,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="6-restart-pods">6. Restart Pods<a href="#6-restart-pods" class="hash-link" aria-label="Direct link to 6. Restart Pods" title="Direct link to 6. Restart Pods" translate="no">​</a></h3>
 <ol>
 <li>
-<p>Go to <strong>Resource Browser</strong> → (Select Cluster) → <strong>Workloads</strong> → <strong>Deployment</strong></p>
+<p>Go to <strong>Infrastructure Management</strong> → <strong>Resource Browser</strong> → (Select Cluster) → <strong>Workloads</strong> → <strong>Deployment</strong></p>
 </li>
 <li>
 <p>Click the checkbox next to the following <strong>Deployment</strong> workloads and restart them using the <strong><code>⟳</code></strong> button:</p>
@@ -162,21 +162,21 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="results">Results<a href="#results" class="hash-link" aria-label="Direct link to Results" title="Direct link to Results" translate="no">​</a></h2>
 <p>Devtron supports <strong>Explain</strong> option at the following screens (only for specific scenarios where troubleshooting is possible through AI):</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-errors">Pod Errors<a href="#pod-errors" class="hash-link" aria-label="Direct link to Pod Errors" title="Direct link to Pod Errors" translate="no">​</a></h3>
-<p><strong>Path</strong>: Resource Browser → (Select Cluster) → Workloads → Pod</p>
+<p><strong>Path</strong>: Infrastructure Management → Resource Browser → (Select Cluster) → Workloads → Pod</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/explain-with-ai.jpg" alt="Figure 8a: AI Explain for Pod Issues" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/ai-explanation.jpg" alt="Figure 8b: AI-assisted Troubleshooting" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="pod-last-restart-snapshot">Pod Last Restart Snapshot<a href="#pod-last-restart-snapshot" class="hash-link" aria-label="Direct link to Pod Last Restart Snapshot" title="Direct link to Pod Last Restart Snapshot" translate="no">​</a></h3>
-<p><strong>Path</strong>: Resource Browser → (Select Cluster) → Workloads → Pod → Pod Last Restart Snapshot</p>
+<p><strong>Path</strong>: Infrastructure Management → Resource Browser → (Select Cluster) → Workloads → Pod → Pod Last Restart Snapshot</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/pod-restart-explain.jpg" alt="Figure 9: AI Explain for Pod Restart Snapshot" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="event-errors">Event Errors<a href="#event-errors" class="hash-link" aria-label="Direct link to Event Errors" title="Direct link to Event Errors" translate="no">​</a></h3>
-<p><strong>Path</strong>: Resource Browser → (Select Cluster) → Events</p>
+<p><strong>Path</strong>: Infrastructure Management → Resource Browser → (Select Cluster) → Events</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/events-explain.jpg" alt="Figure 10: AI Explain for Event Errors" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="app-details---application-status">App Details - Application Status<a href="#app-details---application-status" class="hash-link" aria-label="Direct link to App Details - Application Status" title="Direct link to App Details - Application Status" translate="no">​</a></h3>
-<p><strong>Path</strong>: Application → App Details → Application Status Drawer</p>
+<p><strong>Path</strong>: Application Management → Applications → (Select Application) → App Details → Application Status Drawer</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/appstatus-drawer-explain1.jpg" alt="Figure 11a: AI Explain at Application Status" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/appstatus-drawer-explain2.jpg" alt="Figure 11b: AI Explain at Application Status Drawer" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="app-details---k8s-resources">App Details - K8s Resources<a href="#app-details---k8s-resources" class="hash-link" aria-label="Direct link to App Details - K8s Resources" title="Direct link to App Details - K8s Resources" translate="no">​</a></h3>
-<p><strong>Path</strong>: Application → App Details → K8s Resources (tab) → Workloads</p>
+<p><strong>Path</strong>: Application Management → Applications → (Select Application) → App Details → K8s Resources (tab) → Workloads</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/devtron-intelligence/app-workload-explain.jpg" alt="Figure 12: AI Explain at K8s Resources (tab)" class="img_ev3q"></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/plugins/vulnerability-scanning"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Vulnerability-Scanning</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/creating-application/fluxcd"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Enable GitOps Deployments with FluxCD</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#what-is-devtron-intelligence-ai-agent-" class="table-of-contents__link toc-highlight">What is Devtron Intelligence (AI Agent) <a></a></a><ul><li><a href="#tutorial" class="table-of-contents__link toc-highlight">Tutorial</a></li></ul></li><li><a href="#steps-to-configure-devtron-intelligence" class="table-of-contents__link toc-highlight">Steps to Configure Devtron Intelligence</a><ul><li><a href="#1-get-api-key-from-llm" class="table-of-contents__link toc-highlight">1. Get API Key from LLM</a></li><li><a href="#2-create-secret-in-devtron" class="table-of-contents__link toc-highlight">2. Create Secret in Devtron</a></li><li><a href="#3-deploy-ai-agent-chart" class="table-of-contents__link toc-highlight">3. Deploy AI Agent Chart</a></li><li><a href="#4-check-service-endpoint" class="table-of-contents__link toc-highlight">4. Check Service Endpoint</a></li><li><a href="#5-update-configmaps" class="table-of-contents__link toc-highlight">5. Update ConfigMaps</a></li><li><a href="#6-restart-pods" class="table-of-contents__link toc-highlight">6. Restart Pods</a></li><li><a href="#7-perform-hard-refresh" class="table-of-contents__link toc-highlight">7. Perform Hard Refresh</a></li></ul></li><li><a href="#results" class="table-of-contents__link toc-highlight">Results</a><ul><li><a href="#pod-errors" class="table-of-contents__link toc-highlight">Pod Errors</a></li><li><a href="#pod-last-restart-snapshot" class="table-of-contents__link toc-highlight">Pod Last Restart Snapshot</a></li><li><a href="#event-errors" class="table-of-contents__link toc-highlight">Event Errors</a></li><li><a href="#app-details---application-status" class="table-of-contents__link toc-highlight">App Details - Application Status</a></li><li><a href="#app-details---k8s-resources" class="table-of-contents__link toc-highlight">App Details - K8s Resources</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">
