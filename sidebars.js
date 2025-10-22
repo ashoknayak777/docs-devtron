@@ -435,7 +435,7 @@ const sidebars = {
         id: 'user-guide/ai-recommendations/README',
       },
       items: [
-        'user-guide/ai-recommendations/README',
+        'user-guide/ai-recommendations/notifications',
       ],
     },
 
