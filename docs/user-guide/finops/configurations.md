@@ -103,7 +103,7 @@ az ad sp create-for-rbac \
 {
    "appId": "1d9b1532-abe4-4e08-b172-adfa5384da1",
    "displayName": "OpenCostAccess",
-   "password": "3DZ8Q~KOE.WgdmmRkBHg3dF1rfrpFhSPk.Hnb4-",
+   "password": "3XxxxxxxxxxxxxxxxxxxX3",
    "tenant": "aee9b2ed-7ecc-4cb2-bfed-60d71c0e957"
 }
 ```
