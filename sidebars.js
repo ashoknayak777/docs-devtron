@@ -309,7 +309,7 @@ const sidebars = {
     // Software Distribution Hub
     {
       type: 'category',
-      label: 'Software Distribution Hub',
+      label: 'Software Release Management',
       collapsed: true,
       link: {
         type: 'doc', // or 'generated-index'
