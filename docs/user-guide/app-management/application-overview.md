@@ -232,9 +232,9 @@ These insights help you ensure that the right governance controls are followed, 
 ## FAQs
 
 <details>
-<summary><strong>1. Why do the counts of Devtron and Helm applications differ from what I see in my dashboards?</strong></summary>
+<summary><strong>1. Why do the count of Devtron and Helm applications differs from what I see in my dashboards?</strong></summary>
 
-The counts displayed in the application overview across **all connected clusters**, which are reachable. If some applications are missing, verify that, the clusters where they are deployed are reachable.
+The count displayed in the application overview reflects **all connected clusters** which are reachable. If some applications are missing, verify that the clusters where they are deployed are reachable.
 
 Disconnected clusters or standalone Helm releases won’t appear until Devtron syncs them.
  

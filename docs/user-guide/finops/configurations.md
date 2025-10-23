@@ -51,7 +51,7 @@ To enable cost visibility for your Azure clusters in Devtron, you need to allow 
    1. Create a custom role in Azure with billing access.
    2. Create a service principal (an identity) that Devtron can use to fetch cost details.
 
- ### Step 1: Creating Custom Role
+ #### Step 1: Creating Custom Role
 
  1. Open a text editor and copy the following JSON:
 
@@ -85,7 +85,7 @@ az role definition create --verbose --role-definition @myrole.json
 
 This creates a role called `OpenCostRole` with just enough access to read pricing information.
 
-### Step 2: Create a Service Principal
+#### Step 2: Create a Service Principal
 
 1. Run the command below, again replacing `YOUR_SUBSCRIPTION_ID` with your subscription ID:
 
@@ -110,7 +110,7 @@ az ad sp create-for-rbac \
 
 3. Note this information as you need to enter this in Devtron.
 
-### Step 3: Enter Details in Devtron
+#### Step 3: Enter Details in Devtron
 
 Now go back to the **Edit cluster** modal window, and fill the following fields:
 
@@ -135,7 +135,7 @@ If you face any issues while enabling or configuring the **Cost Visibility** mod
 
 If you have spot node instances in your AWS cluster, then only you need to do the below additional configurations for your AWS cluster, else you can skip the below configurations
 
-### Step 1: Set up a Spot Instance Data Feed
+#### Step 1: Set up a Spot Instance Data Feed
 
 1. Create an S3 bucket
 
@@ -176,7 +176,7 @@ You can subscribe to the Spot Data Feed for only one S3 bucket at a time. Runnin
 :::
 
 
-### Step 2: Create an IAM Role or Use Access Keys
+#### Step 2: Create an IAM Role or Use Access Keys
 
 You can connect Devtron to AWS cost data using either of the following methods:
 
@@ -209,7 +209,7 @@ Create a Web Identity IAM role for your EKS/EC2 cluster with permissions to acce
 
 Provide an Access Key and Secret Key with permissions `s3:ListBucket` and `s3:GetObject` for the Spot Data Feed bucket.
 
-### Step 3: Configure in Devtron
+#### Step 3: Configure in Devtron
 
 Now go back to the **Edit cluster** modal window, and fill the following fields:
 
@@ -236,19 +236,19 @@ Prometheus endpoint should be publicly exposed for the cost visibility to work.
 
 6. Click **Save**, cost visibility will be enabled for the cluster.
 
-:::warning Note
-### Note
+:::info Note
 After enabling cost visibility, you will see your cluster information after 1 hour in cost visibility module.
 :::
 
-### Fetching Prometheus Endpoint
+---
+
+## Fetching Prometheus Endpoint
 
 :::warning Note 
 Ensure [GitOps](../global-configurations/gitops.md) is configured before deploying Prometheus. If not, Prometheus will default to being deployed via Helm.
-
 :::
 
-#### Installing Prometheus
+### Installing Prometheus
    
 1. Go to the **Chart Store** and search for `prometheus`. Use the Prometheus community's `kube-prometheus-stack` chart to deploy Prometheus.
 
