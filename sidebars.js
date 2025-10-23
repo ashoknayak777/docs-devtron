@@ -72,7 +72,7 @@ const sidebars = {
         id: 'user-guide/app-management/README',
       },
       items: [
-        'user-guide/app-management/app-management-overview',
+        'user-guide/app-management/application-overview',
         // Applications top
         {
           type: 'category',
@@ -279,6 +279,7 @@ const sidebars = {
         id: 'user-guide/infra-management/README',
       },
       items: [
+        'user-guide/infra-management/infrastructure-overview',
         {
           type: 'category',
           label: 'Resource Browser',
@@ -330,7 +331,7 @@ const sidebars = {
         id: 'user-guide/finops/README',
       },
       items: [
-        'user-guide/finops/cost-visibility-overview',
+        'user-guide/finops/overview-cost-visibility',
         'user-guide/finops/cost-breakdown',
         'user-guide/finops/configurations',
       ],

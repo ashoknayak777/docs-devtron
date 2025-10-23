@@ -44,7 +44,7 @@ const features = [
     title: 'Application Management',
     Icon: Box,
     description: 'Create, configure, and deploy applications with ease.',
-    link: '/docs/user-guide/app-management/app-management-overview',
+    link: '/docs/user-guide/app-management/application-overview',
     color: '#2563EB',
   },
   {
@@ -65,7 +65,7 @@ const features = [
     title: 'Cost Visibility',
     Icon: DollarSign,
     description: 'Track and optimize your infrastructure costs.',
-    link: '/docs/user-guide/finops/cost-visibility-overview',
+    link: '/docs/user-guide/finops/overview-cost-visibility',
     color: '#10B981',
   },
   {

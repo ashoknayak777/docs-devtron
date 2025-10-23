@@ -30,7 +30,7 @@ You can click a recommendation to get its [Detailed View](#detailed-view).
 
 ## Detailed View
 
-This modal window has two tabs: [Summary](#summary) and [Recommended Change]():
+This modal window has two tabs: [Summary](#summary) and [Recommended Change](#recommended-change):
 
 ### Summary
 
