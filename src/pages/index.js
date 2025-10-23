@@ -55,7 +55,7 @@ const features = [
     color: '#0891B2',
   },
   {
-    title: 'Software Distribution Hub',
+    title: 'Software Release Management',
     Icon: Package,
     description: 'Manage tenants and distribute releases efficiently.',
     link: '/docs/user-guide/software-distribution-hub',

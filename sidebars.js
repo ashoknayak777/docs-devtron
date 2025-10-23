@@ -306,7 +306,7 @@ const sidebars = {
       ]
     },
 
-    // Software Distribution Hub
+    // Software Release Management
     {
       type: 'category',
       label: 'Software Release Management',

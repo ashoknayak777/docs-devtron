@@ -32,7 +32,7 @@ The left side of the **About** section displays essential information about the 
 | **Created on** |No|Shows the exact date and time when the application was created.|
 | **Created by**|No|Displays the email address of the user who created the application.|
 | **Code Source** |No|Shows the connected Git repository or template used for the application.|
-| **Part of release track** |No|Lists all release track names linked to the app.<ul><li>Clicking a release opens its detailed view in the Software Distribution Hub.</li><li>This is an enterprise-only feature available as part of Devtron's SDH offering.</li></ul>|
+| **Part of release track** |No|Lists all release track names linked to the app.<ul><li>Clicking a release opens its detailed view in the Software Release Management.</li><li>This is an enterprise-only feature available as part of Devtron's SDH offering.</li></ul>|
 | **Tags** |Yes| Refer [Manage Tags](#manage-tags) |
 
 
