@@ -303,7 +303,7 @@ Ensure [GitOps](../global-configurations/gitops.md) is configured before deployi
 
   ArgoCD handles such cases automatically and the `kube-prometheus-stack` will continue to function as expected.
 
-5. After the chart deployed successfully, you need to make the Prometheus endpoint exposed publicly.
+5. After the chart is deployed successfully, you need to expose the Prometheus endpoint publicly.
 
 :::info 
 If you face any issues while enabling or configuring the **Cost Visibility** module, please contact the [Devtron Support Team](mailto:enterprise@devtron.ai) for assistance.

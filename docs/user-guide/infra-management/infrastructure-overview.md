@@ -91,12 +91,10 @@ You can sort the data by:
 
 :::info Note
 If a cluster shows zero utilization or capacity, it may be inactive or disconnected. Verify its status under **Cluster Configuration**.
-
 :::
 
----
 
-## Node Counts
+### Node Counts
 
 The **Node Counts** section helps you visualize how nodes are distributed across clusters and autoscaling modes.  
 It provides a quick overview of your cluster node density and helps identify environments with higher or lower capacity.
@@ -111,7 +109,7 @@ It provides a quick overview of your cluster node density and helps identify env
 
 You can sort the chart data using the dropdown in the top-right corner. **High to Low** or **Low to High**, to focus on clusters with the most or fewest nodes.
 
-### Troubleshooting Autoscaler Detection
+#### Troubleshooting Autoscaler Detection
 
 Devtron currently supports autoscaler detection for the following autoscalers: **EKS Auto Mode**, **Karpenter**, **CAST AI**, and **GKE Autopilot**.
 If your cluster uses any other autoscaler, it will be categorized as **Not Detected** under the **By Autoscaler** view.
@@ -145,7 +143,9 @@ LabelGKEAutoPilot    = "spot"
 [Submit a feature request on GitHub](https://github.com/devtron-labs/devtron/issues). Our team regularly reviews community requests, and your feedback helps us prioritize new integrations in upcoming releases.
 :::
 
-### Cost Visibility <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
+---
+
+## Cost Visibility <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The Cost Breakdown chart helps you see how costs are distributed across different infrastructure components for the selected time period. 
 

@@ -17,12 +17,11 @@ Cost Overview has the following sections:
 3. [Track Performance](#track-performance)
 4. [Actions and Insights](#actions-and-insights)
 
-### How is the Cost Calculated?
+### How is the cost calculated?
 
-Devtron calculates and updates cost data **every hour** based on the resource usage metrics collected from **Prometheus**.  
-
-Prometheus gathers real-time data for **CPU**, **Memory**, **GPU**, **Storage (PV)**, and **Network** from your connected clusters.  
-Devtron then processes this data every hour to display accurate and up-to-date cost insights across your infrastructure.
+* Devtron calculates and updates cost data **every hour** based on the resource usage metrics collected from **Prometheus**.  
+* Prometheus gathers real-time data for **CPU**, **Memory**, **GPU**, **Storage (PV)**, and **Network** from your connected clusters.  
+* Devtron then processes this data every hour to display accurate and up-to-date cost insights across your infrastructure.
 
 :::info Note
 Cost Visibility is currently supported **only for Devtron and Helm applications**.  
