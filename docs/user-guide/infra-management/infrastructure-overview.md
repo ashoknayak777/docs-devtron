@@ -109,16 +109,43 @@ It provides a quick overview of your cluster node density and helps identify env
 | **By Cluster** | This graph displays the total number of nodes within each cluster. Each bar shows the number of clusters within a specific cluster. This view helps you assess how evenly nodes are distributed and whether specific clusters may be over or under-provisioned |
 | **By Autoscaler** | Groups nodes based on their autoscaling configuration (for example, **GKE Automode** or **Not Detected**). Each bar shows the number of nodes within the autoscaling configuration|
 
-You can sort the chart data using the dropdown in the top-right corner:
-* **High to Low** or **Low to High**, to focus on clusters with the most or fewest nodes.
+You can sort the chart data using the dropdown in the top-right corner. **High to Low** or **Low to High**, to focus on clusters with the most or fewest nodes.
 
-:::info 
-If some clusters show **Not Detected** under autoscaler, it means Devtron could not identify their scaling configuration.  
-You can verify autoscaling settings in your respective cloud console or cluster configuration.
+### Troubleshooting Autoscaler Detection
 
+Devtron currently supports autoscaler detection for the following autoscalers: **EKS Auto Mode**, **Karpenter**, **CAST AI**, and **GKE Autopilot**.
+If your cluster uses any other autoscaler, it will be categorized as **Not Detected** under the **By Autoscaler** view.
+
+Devtron identifies supported autoscalers using the following Kubernetes node labels:
+
+```bash
+# EKS Auto Mode label
+
+LabelEKSComputeType = "eks.amazonaws.com/compute-type"
+LabelEKSComputeAuto = "auto"
+
+# Karpenter label
+
+LabelKarpenterInitialized = "karpenter.sh/initialized"
+LabelKarpenterTrue        = "true"
+
+# Cast AI label
+
+LabelCastAIManagedBy = "provisioner.cast.ai/managed-by"
+LabelCastAIValue     = "cast.ai"
+
+# GKE label
+
+LabelGKEProvisioning = "cloud.google.com/gke-provisioning"
+LabelGKEAutoPilot    = "spot"
+
+```
+
+:::success Need support for another autoscaler? 
+[Submit a feature request on GitHub](https://github.com/devtron-labs/devtron/issues). Our team regularly reviews community requests, and your feedback helps us prioritize new integrations in upcoming releases.
 :::
 
-### Cost Visibility
+### Cost Visibility <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
 The Cost Breakdown chart helps you see how costs are distributed across different infrastructure components for the selected time period. 
 

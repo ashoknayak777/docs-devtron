@@ -32,6 +32,8 @@ To enable cost visibility for a cluster, follow the below steps:
 
 <TabItem label="GCP" value="GCP">
 
+### Enable Cost Visibility for GCP
+
 To enable cost visibility for Google Cloud in Devtron, you need to generate an API key and use it to connect Devtron with your GCP account.
 
 1. Generate the API key using standard [Google Cloud API key documentation](https://cloud.google.com/docs/authentication/api-keys#gcloud).
@@ -46,6 +48,8 @@ If you face any issues while enabling or configuring the **Cost Visibility** mod
 </TabItem>
 
 <TabItem label="Azure" value="Azure"> 
+
+### Enable Cost Visibility for Azure
 
 To enable cost visibility for your Azure clusters in Devtron, you need to allow Devtron to access your billing data securely. This requires two steps:
    1. Create a custom role in Azure with billing access.
@@ -132,6 +136,8 @@ If you face any issues while enabling or configuring the **Cost Visibility** mod
 </TabItem>
 
 <TabItem label="AWS" value="AWS"> 
+
+### Enable Cost Visibility for AWS
 
 If you have spot node instances in your AWS cluster, then only you need to do the below additional configurations for your AWS cluster, else you can skip the below configurations
 
@@ -287,16 +293,20 @@ Ensure [GitOps](../global-configurations/gitops.md) is configured before deployi
       
 4. After enabling the parameter, click **Deploy Chart**.
 
-:::warning Common Pitfall: Prometheus Deployment Timeout due to Failed CRDs
-While deploying `kube-prometheus-stack` chart, the deployment status may show as **Timed out**, and some CustomResourceDefinitions (CRDs) may appear as **Failed**.
+  While deploying `kube-prometheus-stack` chart, the deployment status may show as **Timed out**, and some CustomResourceDefinitions (CRDs) may appear as **Failed**. This behavior is expected and does not require any action from you.
 
-To solve it, refer [Troubleshoot Issues](../creating-application/app-metrics.md#troubleshoot-issues)
-:::
+  ![Figure 4a: Deployment Timed Out](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/app-metrics/app-metrics-deployment-timed-out-v2.jpg)
+
+  ![Figure 4b: CRDs Failed](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/app-metrics/app-metrics-crds-failed.jpg)
+
+  This occurs because certain Prometheus CRDs are large in size, which can lead to temporary sync issues during deployment, but, this does not impact the functionality of the Prometheus components.
+
+  ArgoCD handles such cases automatically and the `kube-prometheus-stack` will continue to function as expected.
 
 5. After the chart deployed successfully, you need to make the Prometheus endpoint exposed publicly.
 
 :::info 
-If you face any issues while enabling or configuring the **Cost Visibility** module, please contact the [Devtron Support Team](mailto:support@devtron.ai) for assistance.
+If you face any issues while enabling or configuring the **Cost Visibility** module, please contact the [Devtron Support Team](mailto:enterprise@devtron.ai) for assistance.
 :::
 
 <!-- #### Set Up Prometheus Endpoint
