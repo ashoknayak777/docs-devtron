@@ -1,6 +1,15 @@
 # Backup & Restore
 ## Introduction
-The **Backup & Restore** feature in Devtron helps you protect your Kubernetes workloads and data by allowing you to back up and restore **clusters**, **namespaces**, or specific resources directly from the Devtron UI. You can create on-demand or scheduled backups, choose where your data is stored (such as AWS S3, Azure Blob, or GCP Storage), and restore it to the same or another cluster when needed. Whether you are preparing for disaster recovery, migrating environments, or ensuring business continuity, Devtron makes the process simple, reliable, and transparent while giving you complete visibility and control.
+
+The **Backup & Restore** feature in Devtron helps you protect your Kubernetes workloads and data by allowing you to back up and restore **clusters**, **namespaces**, or **specific resources** directly from the Devtron UI. 
+
+You can 
+
+ * Create on-demand or scheduled backups
+ * Choose where your data is stored (such as AWS S3, Azure Blob, or GCP Storage)
+ * Restore the backups to the same or another cluster when needed. 
+ 
+ Whether you are preparing for disaster recovery, migrating environments, or ensuring business continuity, Devtron makes the process simple, reliable, and transparent while giving you complete visibility and control.
 
 ---
 
@@ -109,6 +118,56 @@ After selecting **Create Backup Schedule**, a modal window opens where you can s
 
 ---
 
+## Viewing Backups and Backup Schedules
+
+### Backups 
+
+After you initiated the backup, you can find it under **Backup** tab. This tab shows all the backups weather they are created manually or via a backup-schedule.
+
+| **Column** | **Description** |
+|-------------|-----------------|
+| **Name** | Displays the unique name of the backup. Click the name to view the backup details, and restore it |
+| **Cluster** | Shows the cluster where the backup was taken |
+| **Created By** | Shows the user or backup schedule name that initiated the backup |
+| **Status** | Shows the current state of the backup:<ul><li> **Creating** – Backup is in progress</li><li> **Completed** – Backup finished successfully</li><li> **Failed** – Backup failed</li><li> **Partially Failed** – Some resources were not backed up </li><li> **Expired** – The backup has reached its retention (TTL) limit</li></ul> |
+| **Backup Date** | Shows the date and time of when the backup was created |
+| **Expires In** | Shows the remaining time before the backup expires |
+| **Size** | Indicates the total size of the backup stored in the configured location|
+
+You can use the **Search** bar or apply filters such as **Cluster**, **Status**, and **Created By** to quickly locate specific backups or narrow down the list based on: their current state, or who initiated them.
+
+These filters help you quickly find backups for restore operations or verify recent backup activity across clusters.
+
+### Backup Schedules
+
+After creating a backup schedule, you can view it under **Backup Schedules** tab. This tab shows all the backup schedules and displays the following details for each of them
+
+| **Column** | **Description** |
+|-------------|-----------------|
+| **Schedule Name** | Name of the backup schedule. Click to view or edit details |
+| **Status** | Indicates the current state of the backup schedule: <ul><li>**New** – The schedule has been created successfully but no backups have run yet. Once the first scheduled backup is executed, the status changes to **Active**</li><li> **Active** – The schedule is valid and enabled. Backups are automatically triggered at the defined intervals based on the configured cron expression</li><li> **Paused** – The schedule is temporarily disabled. No backups will run until the schedule is resumed manually</li> <li> **Failed Validation** – The schedule configuration is invalid due to missing or incorrect parameters (for example, an invalid cron expression, unavailable cluster, or deleted storage location). Backups will not run until the issue is resolved, and the schedule is validated again </li></ul> |
+| **Cluster** | Shows the cluster associated with the schedule |
+| **Storage Location** | Displays the storage target (for example, AWS S3, Azure Blob, or GCP Storage)|
+| **Cron** | The cron expression defining how frequently the backup runs (for example, *Every 6 hours*)|
+| **Last Backup** | The timestamp of the last backup triggered by this schedule|
+| **Last Skipped** | Displays when the schedule last skipped a run (if applicable)|
+
+---
+
 ## Restoring Backup
+
+To restore a backup, 
+
+1. Navigate to **Backup and Schedule** → **Backups**. You will find the list of all backups.
+
+2. Click on the backup name that you want to restore, a new page will open containing details of the backup.
+
+3. Click **Restore Backup** and the restoration will be initiated.
+
+---
+
+## Viewing Restores
+
+After restoration of a backup is initiated, you can view your restore on the **Restores** Page under **Data Protection Management**. This page shows all your backup restores
 
 
