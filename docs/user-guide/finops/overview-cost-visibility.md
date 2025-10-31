@@ -17,11 +17,18 @@ Cost Overview has the following sections:
 3. [Track Performance](#track-performance)
 4. [Actions and Insights](#actions-and-insights)
 
+### How is the cost calculated?
+
+* Devtron calculates and updates cost data **every hour** based on the resource usage metrics collected from **Prometheus**.  
+* Prometheus gathers real-time data for **CPU**, **Memory**, **GPU**, **Storage (PV)**, and **Network** from your connected clusters.  
+* Devtron then processes this data every hour to display accurate and up-to-date cost insights across your infrastructure.
+
 :::info Note
 Cost Visibility is currently supported **only for Devtron and Helm applications**.  
 It is **not available** for applications deployed externally through **Argo CD** or **Flux**.
-
 :::
+
+---
 
 ## At a Glance
 
@@ -41,8 +48,9 @@ The **At a Glance** summarizes the total cost for the selected period and breaks
 
 :::success Tip 
 Network cost refers to the expenses associated with **data transfer**, including communication between **pods, nodes, and external services** within or across clusters. Refer to [AWS guide on network cost](https://aws.amazon.com/premiumsupport/knowledge-center/eks-cluster-networking-costs/) to learn more.
-
 :::
+
+---
 
 ## Potential Savings
  
@@ -58,6 +66,7 @@ The **Potential Savings** section estimates how much cost can be saved by compar
 | **Estimated cost reduction**  | The percentage of your current spend that could be saved, for the selected time period           |
 
 
+---
 
 ## Track Performance
 
@@ -184,6 +193,8 @@ You can customize the view using the following filters:
 | **Scope Selector** | Lets you choose for which category (**Cluster**, **Application**, **Environment**, or **Project**), you want to view the most expensive resources |
 | **Time Range** | Allows you to choose the time period for cost evaluation,  **Last 24 Hours**, **Last 7 Days**, **Last 30 Days**, or **Last 90 Days**. |
 | **Cost Type** | Enables you to filter costs by specific categories such as **CPU Cost**, **Memory Cost**, **Storage Cost**, **GPU Cost**, **Network Cost**, or **Total Cost**. |
+
+---
 
 ## Actions and Insights
 
