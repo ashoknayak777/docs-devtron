@@ -94,11 +94,11 @@ This section is view-only and does not require any configuration at the applicat
 
 ### Catalog <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
-The **Catalog** in the **About** section displays information about your application, such as documentation references, ownership details, and technical specifications. This data is managed using [Devtron’s Catalog Framework](../global-configurations/catalog-framework.md).
+The **Catalog** in the **About** section displays information about your application, such as documentation references, ownership details, and technical specifications. You can manage this data using the **Manage Schema**￼ option, which defines the structure of your catalog. Refer the [Catalog Documentation](../global-configurations/catalog-framework.md#managing-a-schema) to learn more.
 
-![Figure 6: Catalog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog.jpg)
+![Figure 6: Catalog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-edit.jpg)
 
-You can use the **Catalog framework** to maintain information about your application, such as Documentation (e.g., API contract, service documentation), ownership details, technical attributes, etc. This makes it easier for others to understand, manage, and use your application.
+You can use the **Catalog** to maintain information about your application, such as Documentation (e.g., API contract, service documentation), ownership details, technical attributes, etc. This makes it easier for others to understand, manage, and use your application.
 
 Super-Admins define a custom JSON schema that determines what fields are shown in the catalog form. This schema is specific to each resource type, such as Devtron applications.
 
@@ -108,15 +108,15 @@ When you click the **Edit** icon, a form appears based on the defined schema. As
 *	Code owners and on-call responsibilities
 *	Service attributes (e.g., internet-facing flag, communication method, framework, language)
 
-![Figure 7: Catalog Form](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog-expanded.jpg)
+![Figure 7: Catalog Form](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-schema-generated-form.jpg)
 
 :::info 
-The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in **Catalog Framework**. Field names and sections may vary depending on how the schema was defined by your organization.
+The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in **Catalog**. Field names and sections may vary depending on how the schema was defined by your organization. Refer [Catalog Documentation](../global-configurations/catalog-framework.md) to learn more.
 :::
 
 Once saved, this information is displayed in a readable format within the Catalog subsection and is accessible to all users who have permission to view the application.
 
-![Figure 8: Catalog Final View](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog-final.jpg)
+![Figure 8: Catalog Final View](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-final-view.jpg)
 
 ### Configure PersistentVolumeClaim (PVC)
 
