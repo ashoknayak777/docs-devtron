@@ -22,7 +22,7 @@ Introduce an approval mechanism to ensure that changes to sensitive configuratio
 ### 3. [Plugin Policy](../global-configurations/plugin-policy.md)
 Enforce the presence of specific plugins at various stages in your application's build and deployment pipelines.
 
-### 4. [Pull Image Digest Policy](../global-configurations/pull-image-digest.md)
+### 4. [Pull Image Digest](../global-configurations/pull-image-digest.md)
 Enforce image pull-by-digest instead of pull-by-tag for deployments.
 
 ### 5. [Tags Policy](../global-configurations/tags-policy.md)
@@ -31,8 +31,9 @@ Enforce the presence of tag before application creation or before deployment to 
 ### 6. [Filter Condition](../global-configurations/filter-condition.md)
 Apply conditional logic to determine which images should be eligible for deployment after the CI stage.
 
-### 7. [Lock Deployment Config](../global-configurations/lock-deployment-config.md)
+### 7. [Image Promotion](../global-configurations/image-promotion-policy.md)
+Promote verified builds between deployment pipelines (e.g., from staging to production) by skipping intermediate pipelines.
+
+### 8. [Lock Deployment Config](../global-configurations/lock-deployment-config.md)
 Lock down deployment configurations to prevent unauthorized modifications or accidental changes to critical base configurations or environment configurations.
 
-### 8. [Image Promotion Policy](../global-configurations/image-promotion-policy.md)
-Promote container images between environments (e.g., from staging to production) when underlying restrictions exist.

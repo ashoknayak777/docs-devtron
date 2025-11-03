@@ -413,18 +413,18 @@ const sidebars = {
     },
 
     // Backup & Restore
-    {
-      type: 'category',
-      label: 'Backup & Restore',
-      collapsed: true,
-      link: {
-        type: 'doc', // or 'generated-index'
-        id: 'user-guide/storageops/README',
-      },
-      items: [
-        'user-guide/storageops/backup-and-restore',
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Backup & Restore',
+    //   collapsed: true,
+    //   link: {
+    //     type: 'doc',
+    //     id: 'user-guide/storageops/README',
+    //   },
+    //   items: [
+    //     'user-guide/storageops/backup-and-restore',
+    //   ],
+    // },
 
     // AI Recommendations
     {

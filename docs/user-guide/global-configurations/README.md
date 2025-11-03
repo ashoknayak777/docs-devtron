@@ -1,52 +1,47 @@
-# Global Configurations
+---
+id: README
+title: Global Configurations
+sidebar_label: Global Configurations
+description: Manage cluster-level, authorization, and integration settings that apply across all Devtron modules.
+---
 
-A global configuration allows you to easily share common configuration between multiple repositories without copy/pasting it to these repositories.
+The **Global Configurations** section defines system-wide settings that govern clusters, environments, container registries, authentication, and integrations across Devtron.
 
-Before you start creating an application, we recommend to provide basic information in different sections of Global Configurations available in `Devtron`.
+Before you start creating an application, we recommend to you to complete the Global Configurations.
 
-[Host URL](host-url.md)
+These configurations act as the foundation for all application, deployment, and policy operations.
 
-[GitOps](gitops.md)
+---
 
-[Projects](projects.md)
+## Table of Contents
 
-[Clusters & Environments](cluster-and-environments.md)
+### 1. SSO Login Services
+* [Google](./authorization/sso/google.md)  
+* [GitHub](./authorization/sso/github.md)  
+* [GitLab](./authorization/sso/gitlab.md)  
+* [Microsoft](./authorization/sso/microsoft.md)  
+* [LDAP](./authorization/sso/ldap.md)  
+* [OIDC](./authorization/sso/oidc.md)  
+* [Keycloak](./authorization/sso/keycloak.md)  
+* [Okta](./authorization/sso/okta.md)  
+* [OpenShift](./authorization/sso/openshift.md)
 
-[Git Accounts](git-accounts.md)
+### 2. [Host URL](./host-url.md)
+Define the base URL for accessing the Devtron dashboard and related services.
 
-[Container/OCI Registry](container-registries.md)
+### 3. [Cluster and Environments](./cluster-and-environments.md)
+Register and manage Kubernetes clusters and deployment environments available to applications.
 
-[Chart Repositories](chart-repo.md)
+### 4. [Container/OCI Registry](./container-registries.md)
+Configure Docker or OCI registries where your build artifacts are stored and fetched from during deployment.
 
-[Deployment Charts](deployment-charts.md)
+### 5. [Authorization](./authorization/README.md)
+Control user access and authentication mechanisms (RBAC).
 
-[Authorization](authorization/README.md)
+* [User Permissions](./authorization/user-access.md)  
+* [Permission Groups](./authorization/permission-groups.md)  
+* [API Tokens](./authorization/api-tokens.md)
 
-[Notifications](manage-notification.md)
-
-[Deployment Window](deployment-window.md)
-
-[Approval Policy](approval-policy.md)
-
-[External Links](external-links.md)
-
-[Catalog Framework](catalog-framework.md)
-
-[Scoped Variables](scoped-variables.md)
-
-[Plugin Policy](plugin-policy.md)
-
-[Pull Image Digest](pull-image-digest.md)
-
-[Tags Policy](tags-policy.md)
-
-[Filter Condition](filter-condition.md)
-
-[Lock Deployment Configuration](lock-deployment-config.md)
-
-[Image Promotion Policy](image-promotion-policy.md)
-
-[Build Infra](build-infra.md)
 
 <!-- You can also refer our YouTube video provided here.
 
