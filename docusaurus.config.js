@@ -265,9 +265,7 @@ const config = {
 
   scripts: [
     {
-      src: 'https://static.reo.dev/{replace-client-id}/reo.js',
-      defer: true,
-      onload: "Reo.init({clientID:'replace-client-id'})",
+      src: '/js/reo.js',
     },
   ],
 };
