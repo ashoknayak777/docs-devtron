@@ -260,6 +260,11 @@ const config = {
       src: 'https://www.clarity.ms/tag/u0895xsvql',
       async: true,
     },
+    {
+      src: 'https://static.reo.dev/{replace-client-id}/reo.js',
+      defer: true,
+      onload: "Reo.init({clientID:'replace-client-id'})",
+    },
   ],
 };
 
