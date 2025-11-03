@@ -30,7 +30,7 @@ Before you start creating an application, we recommend to provide basic informat
 
 [External Links](external-links.md)
 
-[Catalog](catalog-framework.md)
+[Catalog Framework](catalog-framework.md)
 
 [Scoped Variables](scoped-variables.md)
 

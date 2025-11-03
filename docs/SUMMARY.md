@@ -35,7 +35,7 @@
   * [Deployment Window](user-guide/global-configurations/deployment-window.md)
   * [Approval Policy](user-guide/global-configurations/approval-policy.md)
   * [External Links](user-guide/global-configurations/external-links.md)
-  * [Catalog](user-guide/global-configurations/catalog-framework.md)
+  * [Catalog Framework](user-guide/global-configurations/catalog-framework.md)
   * [Scoped Variables](user-guide/global-configurations/scoped-variables.md)
   * [Plugin Policy](user-guide/global-configurations/plugin-policy.md)
   * [Pull Image Digest](user-guide/global-configurations/pull-image-digest.md)

@@ -72,7 +72,7 @@ After saving, the system displays the email address of the user who last updated
 
 ### Catalog <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
-The **Catalog** in the **About** section displays information about your job, such as Container port, Environment Variables, Arguments, Resources(CPU and RAM). You can manage this data using the **Manage Schema**￼ option, which defines the structure of your catalog. Refer the [Catalog Documentation](../global-configurations/catalog-framework.md#managing-a-schema) to learn more.
+The **Catalog** in the **About** section displays information about your job, such as Container port, Environment Variables, Arguments, Resources(CPU and RAM). You can manage this data using the **Manage Schema**￼ option, which defines the structure of your catalog. Refer the [Manage Schema](../global-configurations/catalog-framework.md#managing-a-schema) documentation to learn more.
 
 ![Figure 6: Catalog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/overview-job-catalog.jpg)
 

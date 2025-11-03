@@ -1,12 +1,10 @@
-# Catalog
+# Manage Schema
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
-Ideally, all resources such as microservices, clusters, jobs, pods, etc. should contain detailed information so that its users know what each of those resources do, how to use them, as well as all their technical specs. Access to such data makes it easier for engineers to quickly discover and understand the relevant resources.
+Ideally, all resources such as microservices, clusters, jobs, and pods should include detailed information, so users know what each resource does, how to use it, and its technical specifications. 
 
-To achieve this, Devtron supports a feature known as **Catalog**. Using this, you as a [super-admin](../global-configurations/authorization/user-access.md#devtron-apps-permissions) can decide the data you expect from the managers of different resource types. In other words, you can create a custom <a href="https://json-schema.org/understanding-json-schema/reference" target="_blank">JSON schema</a> that would ultimately render a form for the resource owners to fill. Once the form is filled, a GUI output will appear as shown below.
-
-![Figure 1: Sample Catalog Data](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-final-view.jpg)
+To achieve this, Devtron provides a feature called **Catalog**, which lets a [super-admin](../global-configurations/authorization/user-access.md#devtron-apps-permissions)￼ define a custom JSON schema that renders a form for resource owners to fill. After defining a schema, it generates a form that users can fill out, and the entered data appears in a clear GUI format. 
 
 Currently, Devtron supports catalog for the following resource types (a.k.a. resource kind):
 
@@ -14,6 +12,8 @@ Currently, Devtron supports catalog for the following resource types (a.k.a. res
 * [Helm applications](../../reference/glossary.md#helm-apps)
 * [Clusters](../../reference/glossary.md#cluster)
 * [Jobs](../../reference/glossary.md#job)
+
+![Figure 1: Sample Catalog Data](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-final-view.jpg)
 
 There are two parts involved in the creation of a desirable resource catalog:
 
