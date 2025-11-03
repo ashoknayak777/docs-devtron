@@ -93,6 +93,14 @@ const config = {
         anonymizeIP: true,
       },
     ],
+
+    [
+      require.resolve('@gracefullight/docusaurus-plugin-microsoft-clarity'),
+      { 
+        projectId: 'u0895xsvql' 
+      },
+    ],
+
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
@@ -256,10 +264,6 @@ const config = {
     }),
 
   scripts: [
-    {
-      src: 'https://www.clarity.ms/tag/u0895xsvql',
-      async: true,
-    },
     {
       src: 'https://static.reo.dev/{replace-client-id}/reo.js',
       defer: true,
