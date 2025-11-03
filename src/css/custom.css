@@ -464,6 +464,26 @@ html[data-theme='dark'] .theme-doc-sidebar-item-category-level-1>.menu__list-ite
   font-size: var(--ifm-h4-font-size) !important;
 }
 
+/* 🎯 Target only links inside Markdown content */
+.markdown a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+html[data-theme='dark'] .markdown a {
+  color: #58a6ff; 
+}
+
+html[data-theme='dark'] .markdown a:hover {
+  color: #58a6ff; 
+  text-decoration: underline;
+}
+
 
 .video-wrapper {
   position: relative;
