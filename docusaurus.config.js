@@ -92,6 +92,8 @@ const config = {
         trackingID: 'G-RJY45WF21G',
         anonymizeIP: true,
       },
+    ],
+    [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         indexDocs: true,
