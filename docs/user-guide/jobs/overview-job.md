@@ -1,6 +1,6 @@
 # Overview
 
-The Overview page provides a centralized view of a job’s details within Devtron. It allows users to quickly access information about the job, manage tags, and view job pipelines — all in a single, organized interface.
+The Overview page provides a centralized view of a job’s details within Devtron. It allows users to quickly access information about the job, manage tags, and view job pipelines all in a single, organized interface.
 
 ![Figure 1: Job's Overview](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/overview-job.jpg)
 

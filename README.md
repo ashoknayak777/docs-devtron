@@ -1,87 +1,157 @@
-# Introduction to Devtron
- 
+# Devtron Documentation
 
-Devtron is a tool integration platform for Kubernetes.
+Welcome to the official **Devtron Documentation Repository**
+This repo hosts the complete documentation for installing, using, and managing Devtron, an open-source software delivery platform built on Kubernetes.
 
-Devtron deeply integrates with products across the lifecycle of microservices i.e., CI/CD, security, cost, debugging, and observability via an intuitive web interface. 
-Devtron helps you to deploy, observe, manage & debug the existing Helm apps in all your clusters.
+---
 
-<div class="video-wrapper"><iframe width="560" height="315"
-  src="https://www.youtube.com/embed/AG8HfTceHxw"
-  title="Introducing Devtron"
-  frameborder="0"
-  allowfullscreen>
-</iframe></div>
- 
- 
-## Devtron's Key Features:
- 
-### No Code Software Delivery Workflow for Kubernetes
- 
-* Workflow which understands the domain of **Kubernetes, testing, CD, SecOps** so that you don't have to write scripts
-* Reusable and composable components so that workflows are easy to construct and reason through
- 
-### Multi-cloud Deployment
- 
-* Deploy to multiple Kubernetes clusters on multiple cloud/on-prem from one Devtron setup
-* Works for all cloud providers and on-premise Kubernetes clusters
- 
-### Easy DevSecOps Integration
- 
-* Multi-level security policy at global, cluster, environment, and application-level for efficient hierarchical policy management
-* Behavior-driven security policy
-* Define policies and exceptions for Kubernetes resources
-* Define policies for events for faster resolution
- 
-### Application Debugging Dashboard
- 
-* One place for all historical Kubernetes events
-* Access all manifests securely, such as secret obfuscation
-* _**Application metrics**_ for CPU, RAM, HTTP status code, and latency with a comparison between new and old
-* _**Advanced logging**_ with grep and JSON search
-* Intelligent _**correlation between events, logs**_ for faster triangulation of issue
-* Auto issue identification
- 
-### Enterprise-Grade Security and Compliances
- 
-* Fine-grained access control; control who can edit the configuration and who can deploy.
-* Audit log to know who did what and when
-* History of all CI and CD events
-* Kubernetes events impacting application
-* Relevant cloud events and their impact on applications
-* Advanced workflow policies like blackout window, branch environment relationship to secure build and deployment pipelines
- 
-### Implements GitOps
- 
-* GitOps exposed through API and UI so that you don't have to interact with git CLI
-* GitOps backed by Postgres for easy analysis
-* Enforce finer access control than Git
- 
-### Operational Insights
- 
-* Deployment metrics to measure the success of the agile process. It captures MTTR, change failure rate, deployment frequency, and deployment size out of the box.
-* Audit log to understand the failure causes
-* Monitor changes across deployments and reverts easily
- 
-## Compatibility Notes
- 
-* Devtron uses a modified version of [Argo Rollout](https://argoproj.github.io/argo-rollouts/).
-* Application metrics only work for K8s version 1.16+
- 
- 
-## Contributing Guidelines
- 
-Check out our [contributing guidelines](https://github.com/devtron-labs/devtron/blob/main/CONTRIBUTING.md). Directions for opening issues, coding standards, and notes on our development processes are all included.
- 
-## Community
- 
-Get updates on Devtron's development and chat with the project maintainers, contributors, and community members.
- 
-* Join the [Discord Community](https://discord.gg/jsRG5qx2gp)
-* Follow [@DevtronL on Twitter](https://twitter.com/DevtronL)
-* Raise feature requests, suggest enhancements, report bugs at [GitHub issues](https://github.com/devtron-labs/devtron/issues)
-* Read the [Devtron blog](https://devtron.ai/blog/)
- 
-## Vulnerability Reporting
- 
-We, at Devtron, take security and our users' trust very seriously. If you believe you have found a security issue in Devtron, please responsibly disclose it by contacting us at **security@devtron.ai**.
+## 🚀 What is Devtron?
+
+**[Devtron](https://devtron.ai)** is an open-source Kubernetes-native software delivery platform that simplifies complex CI/CD, infrastructure, and release management workflows.  
+
+It provides:
+* Unified dashboards for build, deploy, and monitoring
+* GitOps-driven deployment (powered by ArgoCD)
+* AI-powered debugging and recommendations
+* Built-in vulnerability scanning
+* Plugin ecosystem for extensibility
+* Cluster and cost visibility
+* Role-based access control (RBAC) and SSO integrations
+
+With Devtron, teams can deploy and manage applications across multiple environments without the steep Kubernetes learning curve.
+
+---
+
+## 🧩 Repository Overview
+
+This repository powers the **[Devtron Docs site](https://docs.devtron.ai)** using **Docusaurus v3**.  
+It contains all documentation files, categorized and rendered as website pages.
+
+### 📁 Folder Structure
+
+| Path | Description |
+|------|--------------|
+| `/docs/` | Main documentation directory containing Markdown (`.md`) and MDX files. |
+| `/docs/setup/` | Installation and configuration guides. |
+| `/docs/user-guide/` | Core user guides including Application Management, Infra, Policies, etc. |
+| `/docs/reference/` | FAQs, troubleshooting, and glossaries. |
+| `/static/` | Static assets such as images and icons. |
+| `/sidebars.js` | Defines documentation hierarchy and navigation structure. |
+| `/docusaurus.config.js` | Core site configuration including theme and plugins. |
+| `/src/` | Contains React components, layouts, and theme overrides. |
+
+---
+
+## 🧱 Docs Scaffolding Explained
+
+The documentation follows a structured hierarchy defined in [`sidebars.js`](./sidebars.js):
+
+| Section | Purpose |
+|----------|----------|
+| **Getting Started** | Onboarding and installation instructions for new users. |
+| **Application Management** | Creating, configuring, and managing applications in Devtron. |
+| **Infrastructure Management** | Managing clusters, resources, and node-level operations. |
+| **Automation & Enablement** | Job automation, task configuration, and workflow management. |
+| **Global Configurations** | Managing host URL, GitOps, SSO, permissions, and global policies. |
+| **Software Release Management** | Handling multi-tenant releases and deployment visibility. |
+| **Security & FinOps** | Insights into security scanning and cost visibility. |
+| **Backup & Restore** | Managing application data backups and restoration. |
+| **AI Recommendations** | Features powered by Devtron’s AI system, Athena. |
+| **Resources** | References, integrations, upgrades, and use cases. |
+
+Each folder contains a `README.md` file that serves as an index page and links to nested topics.
+
+---
+
+## 🛠️ Getting Started (Local Development)
+
+### Prerequisites
+* **Node.js** ≥ 18.x  
+* **npm** or **Yarn** or 
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/devtron-labs/devtron-docs.git
+cd devtron-docs
+
+# Install dependencies
+npm install
+# or
+yarn install
+```
+
+### Run the Docs Locally
+
+```bash
+npm run start
+# or
+yarn start
+```
+
+Your site will be available at 👉 **http://localhost:3000**
+
+---
+
+## 📦 Build for Production
+
+To generate an optimized static build resembling production behavior:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+This will create a production-ready site in the `/build` directory. Use the following command to access it:
+
+```bash
+npm run serve
+# or
+yarn serve
+```
+
+Your site will be available at 👉 **http://localhost:3000**
+
+---
+
+## 🧑‍💻 Contributing Guidelines
+
+We welcome contributions from both internal as well as external contributors.  
+Whether it’s fixing typos, improving clarity, or adding new guides, your help makes our documentation better.
+
+### Quick Start
+1. Fork this repository  
+2. Create a branch (`git checkout -b feature/add-new-guide`)  
+3. Make your changes  
+4. Commit and push  
+5. Open a Pull Request (PR) to the `main` branch  
+
+---
+
+## 🧭 Writing Guidelines
+
+* Use clear, concise language  
+* Use title case for titles and headings.
+* Prefer active voice (e.g., “Click Deploy” instead of “The button should be clicked”)  
+* Use fenced code blocks for commands or YAML  
+* Use Docusaurus admonitions (`:::tip`, `:::warning`, etc.) for emphasis  
+* Keep paragraphs short and scannable  
+
+---
+
+## 📘 License
+
+This repository is licensed under the **Apache 2.0 License**.  
+See the [LICENSE](./LICENSE) file for more details.
+
+---
+
+## 🌐 Useful Links
+
+* [Devtron Website](https://devtron.ai)  
+* [Docs Portal](https://docs.devtron.ai)  
+* [GitHub Repository](https://github.com/devtron-labs/devtron)  
+* [Join the Slack Community](https://devtron.ai/community)  
+* [Release Notes](https://github.com/devtron-labs/devtron/releases)
