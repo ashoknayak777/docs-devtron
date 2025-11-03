@@ -16,8 +16,8 @@ The **Application Overview** page contains the following sections:
 2. [Workflow Overview](#workflow-overview)
 3. [Triggers & Build Time](#triggers--build-time)
 4. [Most & Least Triggered Pipelines](#most--least-triggered-pipelines)
-5. [Cost Visibility](#cost-visibility)
-6. [Best Practices](#best-practices)
+5. [Cost Visibility](#cost-visibility-)
+6. [Best Practices](#best-practices-)
 
 ---
 

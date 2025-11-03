@@ -10,7 +10,7 @@ It contains the following sections:
 
 1. [At a Glance](#at-a-glance)
 2. [Cluster & Nodes](#cluster--nodes)  
-3. [Cost Visibility](#cost-visibility)
+3. [Cost Visibility](#cost-visibility-)
 4. [Actions & Insights](#actions-and-insights)
 
 ---
