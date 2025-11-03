@@ -28,6 +28,10 @@ There are two parts involved in the creation of a desirable resource catalog:
 Only a super-admin can create/edit a schema.
 :::
 
+:::caution Note
+The **Catalog** schema you define applies to all resources of that type. For example, managing the schema for one Devtron application updates the catalog for every Devtron app in your system.
+:::
+
 1. Go to the **Overview** tab of your resource (for example, a **Devtron App**, or **Helm App**, or **Job**, or **Cluster**) and locate the **Catalog** section. 
 
 :::caution Note
