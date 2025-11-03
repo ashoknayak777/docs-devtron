@@ -73,7 +73,7 @@ Each folder contains a `README.md` file that serves as an index page and links t
 
 ```bash
 # Clone the repo
-git clone https://github.com/devtron-labs/devtron-docs.git
+git clone https://github.com/devtron-labs/devtron-documentation.git
 cd devtron-docs
 
 # Install dependencies
