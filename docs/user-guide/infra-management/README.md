@@ -14,7 +14,7 @@ This section enables platform and DevOps engineers to:
 
 ---
 
-## 📘 Table of Contents
+## Table of Contents
 
 ### 1. [Infrastructure Overview](./infrastructure-overview.md)
 Understand how Devtron connects to Kubernetes clusters and provides visibility into cluster topology, workloads, and health.
