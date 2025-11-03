@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/global-configurations/user-access" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">User Access | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/global-configurations/user-access"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="User Access | Devtron Docs"><meta data-rh="true" name="description" content="Like any enterprise product, Devtron supports fine grained access control to the resources based on"><meta data-rh="true" property="og:description" content="Like any enterprise product, Devtron supports fine grained access control to the resources based on"><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/global-configurations/user-access"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/global-configurations/user-access" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/global-configurations/user-access" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -16,124 +24,124 @@
 <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/VTqBRIFbuSU" title="" frameborder="0"></iframe></div>
 <p>Like any enterprise product, Devtron supports fine grained access control to the resources based on</p>
 <ol>
-<li>Type of action allowed on the Devtron resources (Create Vs View)</li>
-<li>Sensitivity of the data (Editing image Vs Editing memory)</li>
+<li class="">Type of action allowed on the Devtron resources (Create Vs View)</li>
+<li class="">Sensitivity of the data (Editing image Vs Editing memory)</li>
 </ol>
 <p>Access can be added to the User either directly or via Groups.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="role-based-access-levels">Role-based Access Levels<a href="#role-based-access-levels" class="hash-link" aria-label="Direct link to Role-based Access Levels" title="Direct link to Role-based Access Levels" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="role-based-access-levels">Role-based Access Levels<a href="#role-based-access-levels" class="hash-link" aria-label="Direct link to Role-based Access Levels" title="Direct link to Role-based Access Levels" translate="no">​</a></h2>
 <p>Devtron supports 5 levels of access:</p>
 <ol>
-<li><strong>View</strong>: Users with <code>view</code> access have the least privileges. Such users can only view combination of environments, applications and helm charts on which access has been granted to the user. They cannot view sensitive data like secrets used in applications or charts.</li>
-<li><strong>Build and Deploy</strong>: In addition to <code>view</code> privilege mentioned above, users with <code>build and deploy</code> permission can build and deploy the image of permitted applications and helm charts to permitted environments.</li>
-<li><strong>Admin</strong>: Users with <code>admin</code> privileges can create, edit, delete, and view permitted applications in permitted projects.</li>
-<li><strong>Manager</strong>: Users with <code>manager</code> privileges can do everything that an <code>admin</code> user can do. Additionally, they can also give and revoke access of users for the applications and environments of which they are the manager.</li>
-<li><strong>Super Admin</strong>: Users with <code>super admin</code> privileges have unrestricted access to all the Devtron resources. Super Admins can create, modify, delete and view any Devtron resource without any restriction; it&#x27;s like Superman without the weakness of Kryptonite. Moreover, they can add and delete user access across any Devtron resource, add delete git repository credentials, container registry credentials, cluster, and environment.</li>
-<li><strong>Image approver</strong>: Users with <code>Image approver</code> privileges have the authority to approve requests for image deployment.</li>
-<li><strong>Configuration approver</strong>: Users with <code>Configuration approver</code> privileges have the authority to approve changes to protected configurations of Deployment Template, ConfigMaps, and Secrets. However, the user who proposed the changes cannot self-approve, even if they have configuration approver or super-admin privileges.</li>
-<li><strong>Artifact promoter</strong>: Users with this privilege have the authority to approve promotion of <a href="/docs/reference/glossary#artifacts">artifacts</a> directly to the target CD pipeline.</li>
+<li class=""><strong>View</strong>: Users with <code>view</code> access have the least privileges. Such users can only view combination of environments, applications and helm charts on which access has been granted to the user. They cannot view sensitive data like secrets used in applications or charts.</li>
+<li class=""><strong>Build and Deploy</strong>: In addition to <code>view</code> privilege mentioned above, users with <code>build and deploy</code> permission can build and deploy the image of permitted applications and helm charts to permitted environments.</li>
+<li class=""><strong>Admin</strong>: Users with <code>admin</code> privileges can create, edit, delete, and view permitted applications in permitted projects.</li>
+<li class=""><strong>Manager</strong>: Users with <code>manager</code> privileges can do everything that an <code>admin</code> user can do. Additionally, they can also give and revoke access of users for the applications and environments of which they are the manager.</li>
+<li class=""><strong>Super Admin</strong>: Users with <code>super admin</code> privileges have unrestricted access to all the Devtron resources. Super Admins can create, modify, delete and view any Devtron resource without any restriction; it&#x27;s like Superman without the weakness of Kryptonite. Moreover, they can add and delete user access across any Devtron resource, add delete git repository credentials, container registry credentials, cluster, and environment.</li>
+<li class=""><strong>Image approver</strong>: Users with <code>Image approver</code> privileges have the authority to approve requests for image deployment.</li>
+<li class=""><strong>Configuration approver</strong>: Users with <code>Configuration approver</code> privileges have the authority to approve changes to protected configurations of Deployment Template, ConfigMaps, and Secrets. However, the user who proposed the changes cannot self-approve, even if they have configuration approver or super-admin privileges.</li>
+<li class=""><strong>Artifact promoter</strong>: Users with this privilege have the authority to approve promotion of <a class="" href="/docs/reference/glossary#artifacts">artifacts</a> directly to the target CD pipeline.</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="user-roles-and-permissions">User Roles And Permissions<a href="#user-roles-and-permissions" class="hash-link" aria-label="Direct link to User Roles And Permissions" title="Direct link to User Roles And Permissions" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-custom-applications">1. Custom Applications<a href="#1-custom-applications" class="hash-link" aria-label="Direct link to 1. Custom Applications" title="Direct link to 1. Custom Applications" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="user-roles-and-permissions">User Roles And Permissions<a href="#user-roles-and-permissions" class="hash-link" aria-label="Direct link to User Roles And Permissions" title="Direct link to User Roles And Permissions" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-custom-applications">1. Custom Applications<a href="#1-custom-applications" class="hash-link" aria-label="Direct link to 1. Custom Applications" title="Direct link to 1. Custom Applications" translate="no">​</a></h3>
 <table><thead><tr><th style="text-align:left">User Roles</th><th style="text-align:center">View</th><th style="text-align:center">Create</th><th style="text-align:center">Edit</th><th style="text-align:center">Delete</th><th style="text-align:center">Build &amp; Deploy</th></tr></thead><tbody><tr><td style="text-align:left">View</td><td style="text-align:center">Yes</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">No</td></tr><tr><td style="text-align:left">Build and Deploy</td><td style="text-align:center">Yes</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:left">Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:left">Manager</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:left">Super Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-helm-charts">2. Helm Charts<a href="#2-helm-charts" class="hash-link" aria-label="Direct link to 2. Helm Charts" title="Direct link to 2. Helm Charts" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-helm-charts">2. Helm Charts<a href="#2-helm-charts" class="hash-link" aria-label="Direct link to 2. Helm Charts" title="Direct link to 2. Helm Charts" translate="no">​</a></h3>
 <table><thead><tr><th style="text-align:center">User Roles</th><th style="text-align:center">View</th><th style="text-align:center">Deploy</th><th style="text-align:center">Edit</th><th style="text-align:center">Delete</th></tr></thead><tbody><tr><td style="text-align:center">View Only</td><td style="text-align:center">Yes</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">No</td></tr><tr><td style="text-align:center">Build and Deploy</td><td style="text-align:center">Yes</td><td style="text-align:center">No</td><td style="text-align:center">No</td><td style="text-align:center">No</td></tr><tr><td style="text-align:center">Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:center">Manager</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:center">Super Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3-user-access">3. User Access<a href="#3-user-access" class="hash-link" aria-label="Direct link to 3. User Access" title="Direct link to 3. User Access" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-user-access">3. User Access<a href="#3-user-access" class="hash-link" aria-label="Direct link to 3. User Access" title="Direct link to 3. User Access" translate="no">​</a></h4>
 <table><thead><tr><th style="text-align:left">User Roles</th><th style="text-align:center">Add User Access</th><th style="text-align:center">Edit User Access</th><th style="text-align:center">Delete User Access</th></tr></thead><tbody><tr><td style="text-align:left">Manager</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr><tr><td style="text-align:left">Super Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr></tbody></table>
-<h4 class="anchor anchorWithStickyNavbar_LWe7" id="4-global-configurations">4. Global Configurations<a href="#4-global-configurations" class="hash-link" aria-label="Direct link to 4. Global Configurations" title="Direct link to 4. Global Configurations" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-global-configurations">4. Global Configurations<a href="#4-global-configurations" class="hash-link" aria-label="Direct link to 4. Global Configurations" title="Direct link to 4. Global Configurations" translate="no">​</a></h4>
 <table><thead><tr><th style="text-align:left">User Role</th><th style="text-align:center">Add Global Config</th><th style="text-align:center">Edit Global Config</th><th style="text-align:center">Delete Global Config</th></tr></thead><tbody><tr><td style="text-align:left">Super Admin</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td><td style="text-align:center">Yes</td></tr></tbody></table>
 <p>To control the access of User and Group-</p>
 <p>Go to the left main panel → Global Configurations<code>→</code>User Access`</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="users">Users<a href="#users" class="hash-link" aria-label="Direct link to Users" title="Direct link to Users" translate="no">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-add-new-user">1. Add new user<a href="#1-add-new-user" class="hash-link" aria-label="Direct link to 1. Add new user" title="Direct link to 1. Add new user" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="users">Users<a href="#users" class="hash-link" aria-label="Direct link to Users" title="Direct link to Users" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-add-new-user">1. Add new user<a href="#1-add-new-user" class="hash-link" aria-label="Direct link to 1. Add new user" title="Direct link to 1. Add new user" translate="no">​</a></h3>
 <p>Click <strong>Add User</strong>, to add one or multiple users.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/gc-user-access-add-user.jpg" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-create-user-permissions">2. Create User Permissions<a href="#2-create-user-permissions" class="hash-link" aria-label="Direct link to 2. Create User Permissions" title="Direct link to 2. Create User Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-create-user-permissions">2. Create User Permissions<a href="#2-create-user-permissions" class="hash-link" aria-label="Direct link to 2. Create User Permissions" title="Direct link to 2. Create User Permissions" translate="no">​</a></h3>
 <p>When you click <code>Add User</code>, you will see 6 options to set permission for users which are as follow:</p>
 <ul>
-<li>Email addresses</li>
-<li>Assign super admin permissions</li>
-<li>Group Permissions</li>
-<li>Devtron Apps Permissions<!-- -->
+<li class="">Email addresses</li>
+<li class="">Assign super admin permissions</li>
+<li class="">Group Permissions</li>
+<li class="">Devtron Apps Permissions<!-- -->
 <ul>
-<li>Project</li>
-<li>Environment</li>
-<li>Applications</li>
-<li>Roles</li>
+<li class="">Project</li>
+<li class="">Environment</li>
+<li class="">Applications</li>
+<li class="">Roles</li>
 </ul>
 </li>
-<li>Helm Apps Permissions<!-- -->
+<li class="">Helm Apps Permissions<!-- -->
 <ul>
-<li>Project</li>
-<li>Environment or cluster/namespace</li>
-<li>Applications</li>
-<li>Permission</li>
+<li class="">Project</li>
+<li class="">Environment or cluster/namespace</li>
+<li class="">Applications</li>
+<li class="">Permission</li>
 </ul>
 </li>
-<li>Chart group permissions</li>
+<li class="">Chart group permissions</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="email-addresses">Email addresses:<a href="#email-addresses" class="hash-link" aria-label="Direct link to Email addresses:" title="Direct link to Email addresses:" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="email-addresses">Email addresses:<a href="#email-addresses" class="hash-link" aria-label="Direct link to Email addresses:" title="Direct link to Email addresses:" translate="no">​</a></h2>
 <p>In the <code>Email address</code> box, you have to provide the mail ID of the user to whom you want to give access to your applications.</p>
 <p><strong><code>IMP</code></strong> Please note that Email address should be same as that in the <code>email</code> field in the JWT token returned by OIDC provider.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assign-super-admin-permissions">Assign super admin permissions<a href="#assign-super-admin-permissions" class="hash-link" aria-label="Direct link to Assign super admin permissions" title="Direct link to Assign super admin permissions" translate="no">​</a></h3>
-<p>If you check the option <code>Assign super admin permissions</code>, the user will get full access to your system and the rest of the options will disappear. Please check <a href="#role-based-access-levels">above</a> to see permission levels. Only users with super admin permissions can assign super admin permissions to a user.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="assign-super-admin-permissions">Assign super admin permissions<a href="#assign-super-admin-permissions" class="hash-link" aria-label="Direct link to Assign super admin permissions" title="Direct link to Assign super admin permissions" translate="no">​</a></h3>
+<p>If you check the option <code>Assign super admin permissions</code>, the user will get full access to your system and the rest of the options will disappear. Please check <a href="#role-based-access-levels" class="">above</a> to see permission levels. Only users with super admin permissions can assign super admin permissions to a user.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/add-user-2.jpg" alt="" class="img_ev3q"></p>
 <p>Click <strong>Save</strong> and your user will be saved with super admin permissions.</p>
 <p>We suggest that super admin privileges should be given to only select few.</p>
 <p>If you don’t want to assign super admin permissions then you have to provide the rest of the information.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="group-permissions">Group Permissions<a href="#group-permissions" class="hash-link" aria-label="Direct link to Group Permissions" title="Direct link to Group Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="group-permissions">Group Permissions<a href="#group-permissions" class="hash-link" aria-label="Direct link to Group Permissions" title="Direct link to Group Permissions" translate="no">​</a></h3>
 <p>This is used to assign user to a particular group and user inherits all the permissions granted to this group. The Group permissions section contains a drop-down of all existing groups on which you have access. This is optional field and more than one groups can be selected for a user.</p>
 <p>We will discuss how to create groups in the later section.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="devtron-apps-permissions">Devtron Apps permissions<a href="#devtron-apps-permissions" class="hash-link" aria-label="Direct link to Devtron Apps permissions" title="Direct link to Devtron Apps permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="devtron-apps-permissions">Devtron Apps permissions<a href="#devtron-apps-permissions" class="hash-link" aria-label="Direct link to Devtron Apps permissions" title="Direct link to Devtron Apps permissions" translate="no">​</a></h3>
 <p>Access to devtron applications can be given to user by attaching permission directly to his/her email id through the <code>Devtron Apps</code> section. This section has 4 options to manage the permissions of your users.</p>
 <ul>
-<li><strong>Project</strong></li>
+<li class=""><strong>Project</strong></li>
 </ul>
 <p>Select a project from the drop-down to which you want to give permission to the users. You can select only one project at a time if you want to select more than one project then click <strong>Add row</strong>.</p>
 <ul>
-<li><strong>Environment</strong></li>
+<li class=""><strong>Environment</strong></li>
 </ul>
 <p>In the <code>Environment</code> section, you can select one or more than one or all environments at a time. Click on the environment section, you will see a drop-down of your environments and select any environment on which you want to give permission to the user.</p>
 <p><strong><code>IMP</code></strong> If <code>all environments</code> option is selected then user gets access to all current environments and any new environment which gets associated with this application later.</p>
 <ul>
-<li><strong>Applications</strong></li>
+<li class=""><strong>Applications</strong></li>
 </ul>
 <p>Similarly, you can select <code>Applications</code> from the drop-down corresponding to your selected Environments. In this section, you can also give permissions to one or more than one or to all applications at a time.</p>
 <p><strong><code>IMP</code></strong> If <code>all applications</code> option is selected then user gets access to all current applications and any new application which gets associated with this project later.</p>
 <ul>
-<li>
+<li class="">
 <p><strong>Roles</strong></p>
 <p>Inside the <code>Role</code>, you actually choose which type of permissions you want to give to the users.</p>
 </li>
 </ul>
-<p>There are four different view access levels/Role available for both User and Group as described <a href="#role-based-access-levels">above</a>:</p>
+<p>There are four different view access levels/Role available for both User and Group as described <a href="#role-based-access-levels" class="">above</a>:</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/user-access-permission_1.JPG" alt="" class="img_ev3q"></p>
 <p>You can add multiple rows, for Devtron app permission.</p>
 <p>Once you have finished assigning the appropriate permissions for the listed users, click <strong>Save</strong>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="helm-apps-permissions">Helm Apps Permissions<a href="#helm-apps-permissions" class="hash-link" aria-label="Direct link to Helm Apps Permissions" title="Direct link to Helm Apps Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="helm-apps-permissions">Helm Apps Permissions<a href="#helm-apps-permissions" class="hash-link" aria-label="Direct link to Helm Apps Permissions" title="Direct link to Helm Apps Permissions" translate="no">​</a></h3>
 <p>Access to devtron applications can be given to user by attaching permission directly to his/her email id through the <code>Devtron Apps</code> section. This section has 4 options to manage the permissions of your users.</p>
 <ul>
-<li><strong>Project</strong></li>
+<li class=""><strong>Project</strong></li>
 </ul>
 <p>Select a project from the drop-down to which you want to give permission to the users. You can select only one project at a time if you want to select more than one project then click <strong>Add row</strong>.</p>
 <ul>
-<li><strong>Environment or cluster/namespace</strong></li>
+<li class=""><strong>Environment or cluster/namespace</strong></li>
 </ul>
 <p>In the <code>Environment</code> section, you can select one or more than one or all environments at a time. Click on the environment section, you will see a drop-down of your environments and select any environment on which you want to give permission to the user.</p>
 <p><strong><code>IMP</code></strong> If <code>all environments</code> option is selected then user gets access to all current environments and any new environment which gets associated with this application later.</p>
 <ul>
-<li><strong>Applications</strong></li>
+<li class=""><strong>Applications</strong></li>
 </ul>
 <p>Similarly, you can select <code>Applications</code> from the drop-down corresponding to your selected Environments. In this section, you can also give permissions to one or more than one or to all applications at a time.</p>
 <p><strong><code>IMP</code></strong> If <code>all applications</code> option is selected then user gets access to all current applications and any new application which gets associated with this project later.</p>
 <ul>
-<li>
+<li class="">
 <p><strong>Permission</strong></p>
 <p>Inside the <code>Role</code>, you actually choose which type of permissions you want to give to the users.</p>
 </li>
 </ul>
-<p>There are four different view access levels/Role available for both User and Group as described <a href="#role-based-access-levels">above</a>:</p>
+<p>There are four different view access levels/Role available for both User and Group as described <a href="#role-based-access-levels" class="">above</a>:</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/user-access-permission_helm+app_2.JPG" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chart-group-permissions">Chart Group Permissions<a href="#chart-group-permissions" class="hash-link" aria-label="Direct link to Chart Group Permissions" title="Direct link to Chart Group Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="chart-group-permissions">Chart Group Permissions<a href="#chart-group-permissions" class="hash-link" aria-label="Direct link to Chart Group Permissions" title="Direct link to Chart Group Permissions" translate="no">​</a></h3>
 <p>You can also manage the access of users to Chart Groups in your project.</p>
 <p><strong>NOTE:</strong> You can only give users the ability to <code>create</code> or <code>edit</code>, not both.</p>
 <p>Click on the checkbox of <code>Create</code>, if you want the users to create, view, edit, or delete the chart groups.</p>
@@ -146,35 +154,35 @@
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/chart+group+permission_edit+specific+chart_5.JPG" alt="" class="img_ev3q"></p>
 <p>Click on <code>Save</code>, once you have configured all the required permissions for the users.</p>
 <table><thead><tr><th style="text-align:left">Action</th><th style="text-align:left">Permissions</th></tr></thead><tbody><tr><td style="text-align:left">View</td><td style="text-align:left">Only can view chart groups</td></tr><tr><td style="text-align:left">Create</td><td style="text-align:left">Can create, view, edit or delete</td></tr><tr><td style="text-align:left">Edit</td><td style="text-align:left"><ul><br><li><strong>Deny:</strong> Can&#x27;t edit chart groups</li><li><strong>Specific chart groups:</strong> can edit specific chart group</li></ul></td></tr></tbody></table>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-edit-user-permissions">3. Edit User Permissions<a href="#3-edit-user-permissions" class="hash-link" aria-label="Direct link to 3. Edit User Permissions" title="Direct link to 3. Edit User Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-edit-user-permissions">3. Edit User Permissions<a href="#3-edit-user-permissions" class="hash-link" aria-label="Direct link to 3. Edit User Permissions" title="Direct link to 3. Edit User Permissions" translate="no">​</a></h3>
 <p>You can edit the user permissions, by clicking the <code>downward arrow</code>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/edit+user+permission_dropdown_1.JPG" alt="" class="img_ev3q"></p>
 <p>Then you can edit the user permissions here.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/edit+user+permission_devtron+app_2.JPG" alt="" class="img_ev3q"></p>
 <p>After you have done editing the user permissions, click <strong>Save</strong>.</p>
 <p>If you want to delete the user/users with particular permissions, click <strong>Delete</strong>.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="groups">Groups<a href="#groups" class="hash-link" aria-label="Direct link to Groups" title="Direct link to Groups" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="groups">Groups<a href="#groups" class="hash-link" aria-label="Direct link to Groups" title="Direct link to Groups" translate="no">​</a></h2>
 <p>The advantage of the groups is to define a set of privileges like create, edit, or delete for the given set of resources that can be shared among the users within the group. Users can be added to an existing group to utilize the privileges that it grants. Any access change to group is reflected immediately in user access.</p>
 <p>You can select the group which you are creating in the <code>Group permissions</code> section inside <code>Add users</code>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-add-new-group">1. Add new Group<a href="#1-add-new-group" class="hash-link" aria-label="Direct link to 1. Add new Group" title="Direct link to 1. Add new Group" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-add-new-group">1. Add new Group<a href="#1-add-new-group" class="hash-link" aria-label="Direct link to 1. Add new Group" title="Direct link to 1. Add new Group" translate="no">​</a></h3>
 <p>Go to <code>Groups</code> and click <strong>Add Group</strong>, to create a new group.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/Add+group+permission_dashboard_1.JPG" alt="" class="img_ev3q"></p>
 <p>Enter the <code>Group Name</code> and <code>Description</code>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/group+permission_description_2.JPG" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-create-group-permissions">2. Create Group Permissions<a href="#2-create-group-permissions" class="hash-link" aria-label="Direct link to 2. Create Group Permissions" title="Direct link to 2. Create Group Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-create-group-permissions">2. Create Group Permissions<a href="#2-create-group-permissions" class="hash-link" aria-label="Direct link to 2. Create Group Permissions" title="Direct link to 2. Create Group Permissions" translate="no">​</a></h3>
 <p>Once you have given the group name and group description.</p>
 <p>Then, control the access permissions of groups in the Devtron Apps, Helm Apps or Group Chart Permissions section. Manage the Project, Environment, Application, and Role access the same as we discuss in the above users section.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/group+permission_devtron+app_3.JPG" alt="" class="img_ev3q"></p>
 <p>You can add multiple rows, for the Devtron Apps and Helm Apps Permissions section.</p>
 <p>Once you have finished assigning the appropriate permissions for the listed users, Click <strong>Save</strong>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3-edit-group-permissions">3. Edit Group Permissions<a href="#3-edit-group-permissions" class="hash-link" aria-label="Direct link to 3. Edit Group Permissions" title="Direct link to 3. Edit Group Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-edit-group-permissions">3. Edit Group Permissions<a href="#3-edit-group-permissions" class="hash-link" aria-label="Direct link to 3. Edit Group Permissions" title="Direct link to 3. Edit Group Permissions" translate="no">​</a></h3>
 <p>You can edit the group permissions, by clicking the <code>downward arrow.</code></p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/group+permission_dropdown_4.JPG" alt="" class="img_ev3q"></p>
 <p>Then you can edit the user permissions here.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/user-access/edit+group+permission_devtron+app_5.JPG" alt="" class="img_ev3q"></p>
 <p>Once you are done editing the group permissions. Click <strong>Save</strong>.</p>
 <p>If you want to delete the groups with particular permissions. Click <strong>Delete</strong>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-manage-chart-group-permissions">4. Manage Chart Group Permissions<a href="#4-manage-chart-group-permissions" class="hash-link" aria-label="Direct link to 4. Manage Chart Group Permissions" title="Direct link to 4. Manage Chart Group Permissions" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-manage-chart-group-permissions">4. Manage Chart Group Permissions<a href="#4-manage-chart-group-permissions" class="hash-link" aria-label="Direct link to 4. Manage Chart Group Permissions" title="Direct link to 4. Manage Chart Group Permissions" translate="no">​</a></h3>
 <p>The chart group permissions for the group will be managed in the same way as for the users. For reference, check Manage chart group permissions for users.</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#role-based-access-levels" class="table-of-contents__link toc-highlight">Role-based Access Levels</a></li><li><a href="#user-roles-and-permissions" class="table-of-contents__link toc-highlight">User Roles And Permissions</a><ul><li><a href="#1-custom-applications" class="table-of-contents__link toc-highlight">1. Custom Applications</a></li><li><a href="#2-helm-charts" class="table-of-contents__link toc-highlight">2. Helm Charts</a></li></ul></li><li><a href="#users" class="table-of-contents__link toc-highlight">Users</a><ul><li><a href="#1-add-new-user" class="table-of-contents__link toc-highlight">1. Add new user</a></li><li><a href="#2-create-user-permissions" class="table-of-contents__link toc-highlight">2. Create User Permissions</a></li></ul></li><li><a href="#email-addresses" class="table-of-contents__link toc-highlight">Email addresses:</a><ul><li><a href="#assign-super-admin-permissions" class="table-of-contents__link toc-highlight">Assign super admin permissions</a></li><li><a href="#group-permissions" class="table-of-contents__link toc-highlight">Group Permissions</a></li><li><a href="#devtron-apps-permissions" class="table-of-contents__link toc-highlight">Devtron Apps permissions</a></li><li><a href="#helm-apps-permissions" class="table-of-contents__link toc-highlight">Helm Apps Permissions</a></li><li><a href="#chart-group-permissions" class="table-of-contents__link toc-highlight">Chart Group Permissions</a></li><li><a href="#3-edit-user-permissions" class="table-of-contents__link toc-highlight">3. Edit User Permissions</a></li></ul></li><li><a href="#groups" class="table-of-contents__link toc-highlight">Groups</a><ul><li><a href="#1-add-new-group" class="table-of-contents__link toc-highlight">1. Add new Group</a></li><li><a href="#2-create-group-permissions" class="table-of-contents__link toc-highlight">2. Create Group Permissions</a></li><li><a href="#3-edit-group-permissions" class="table-of-contents__link toc-highlight">3. Edit Group Permissions</a></li><li><a href="#4-manage-chart-group-permissions" class="table-of-contents__link toc-highlight">4. Manage Chart Group Permissions</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">

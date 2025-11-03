@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/jobs/triggering-job" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Triggering Job Pipeline | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/jobs/triggering-job"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Triggering Job Pipeline | Devtron Docs"><meta data-rh="true" name="description" content="After creating the job pipeline, the next step is to trigger the job pipeline. This is the step where the job will be executed in the selected environment."><meta data-rh="true" property="og:description" content="After creating the job pipeline, the next step is to trigger the job pipeline. This is the step where the job will be executed in the selected environment."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/jobs/triggering-job"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/jobs/triggering-job" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/jobs/triggering-job" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Automation & Enablement","item":"https://docs.venz.shop/docs/user-guide/automation/"},{"@type":"ListItem","position":2,"name":"Jobs","item":"https://docs.venz.shop/docs/user-guide/jobs/"},{"@type":"ListItem","position":3,"name":"Triggering Job Pipeline","item":"https://docs.venz.shop/docs/user-guide/jobs/triggering-job"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -16,35 +24,35 @@
 <p>After creating the job pipeline, the next step is to trigger the job pipeline. This is the step where the job will be executed in the selected environment.</p>
 <p>To trigger the job pipeline:</p>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users need to have the <strong>Admin role</strong> or the <strong>Super Admin role</strong>.
-Refer the <a href="/docs/user-guide/global-configurations/authorization/user-access#roles-available-for-jobs">User permissions</a>.</p></div></div>
+Refer the <a class="" href="/docs/user-guide/global-configurations/authorization/user-access#roles-available-for-jobs">User permissions</a>.</p></div></div>
 <ol>
-<li>
+<li class="">
 <p>Navigate to the <strong>Trigger Job</strong> tab of your job, which lists all configured pipelines.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job.jpg" alt="Figure 1: Triggering job" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Select Material</strong> for the job pipeline you wish to execute. A modal window will open, under the <strong>Code-source</strong> tab, this window lists all recent commits along with their hash, author, date, and message from your configured source repository.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-select-material.jpg" alt="Figure 2: Selecting Material for Specific Pipeline" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Select the commit you want to use in the job execution. You can use the search bar to filter the commit hash, and you can also click the kebab menu to reveal excluded commits. If a recent commit isn’t displayed, click the Refresh icon to reload the commit list from your Git repository.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-commit.jpg" alt="Figure 3: Selecting Commit" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Select the <strong>Parameters</strong> tab to configure pipeline runtime inputs(if any). The Key and Type columns are read‑only; enter values for each required parameter (denoted by *). Optional parameters can be configured as needed or left blank.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-parameter.jpg" alt="Figure 4: Configuring Runtime Parameters" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>After selecting the commit and configuring runtime parameters, pick the target environment from the <strong>Execute job in</strong> dropdown at the bottom.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-execute-env.jpg" alt="Figure 5: Select Environment for Job&#x27;s Execution" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Select <strong>Run Job</strong> to execute your pipeline.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-run-job.jpg" alt="Figure 6: Run Job" class="img_ev3q"></p>
 </li>
 </ol>
 <hr>
-<p>After executing your pipeline, the pipeline will now be in running state, and you can monitor the pipeline execution (such as logs, source, artifacts) in <a href="/docs/user-guide/jobs/run-history-job">run-history</a> either by navigating to <strong>Run History</strong> tab or by clicking <code>details</code> above the <strong>Select Material</strong> of the specific pipeline.</p>
+<p>After executing your pipeline, the pipeline will now be in running state, and you can monitor the pipeline execution (such as logs, source, artifacts) in <a class="" href="/docs/user-guide/jobs/run-history-job">run-history</a> either by navigating to <strong>Run History</strong> tab or by clicking <code>details</code> above the <strong>Select Material</strong> of the specific pipeline.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/create-job/trigger-job-details.jpg" alt="Figure 7: Job Status" class="img_ev3q"></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/jobs/configurations/environment-override-job"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Environment Overrides</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/jobs/run-history-job"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Run History</div></a></nav></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">

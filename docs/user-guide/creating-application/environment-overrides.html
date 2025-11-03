@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/creating-application/environment-overrides" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Environment Overrides | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/creating-application/environment-overrides"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Environment Overrides | Devtron Docs"><meta data-rh="true" name="description" content="You can view all environments associated with an application under the Environment Overrides section."><meta data-rh="true" property="og:description" content="You can view all environments associated with an application under the Environment Overrides section."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/creating-application/environment-overrides"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/creating-application/environment-overrides" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/creating-application/environment-overrides" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Application Management","item":"https://docs.venz.shop/docs/user-guide/app-management/"},{"@type":"ListItem","position":2,"name":"Applications","item":"https://docs.venz.shop/docs/user-guide/applications"},{"@type":"ListItem","position":3,"name":"App Configuration","item":"https://docs.venz.shop/docs/user-guide/creating-application/"},{"@type":"ListItem","position":4,"name":"Environment Overrides","item":"https://docs.venz.shop/docs/user-guide/creating-application/environment-overrides"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -16,176 +24,176 @@
 <p>You can view all environments associated with an application under the <strong>Environment Overrides</strong> section.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/environment-override-v3.jpg" alt="Figure 1: Environment Overrides Section" class="img_ev3q"></p>
 <p>The Environment Overrides section allows you to customize the <strong>Deployment Template</strong>, <strong>ConfigMaps</strong>, and <strong>Secrets</strong> for different environments such as development, testing, staging, and production.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How it works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How it works" title="Direct link to How it works" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-it-works">How it works<a href="#how-it-works" class="hash-link" aria-label="Direct link to How it works" title="Direct link to How it works" translate="no">​</a></h2>
 <ul>
-<li>
+<li class="">
 <p>When you add a deployment pipeline to an application&#x27;s workflow, each environment configuration initially inherits the Deployment Template, ConfigMap and Secret from the <strong>Base Configurations</strong> of the application.</p>
 </li>
-<li>
+<li class="">
 <p>The <strong>Environment Overrides</strong> section lets you customize those Deployment Template, ConfigMap and Secret per environment without affecting those of other environments. For example, in a non-production environment, you might allocate <code>100m</code> CPU, while in production, you may increase it to <code>500m</code> to handle higher traffic.</p>
 </li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="environment-configurations-page">Environment Configurations Page<a href="#environment-configurations-page" class="hash-link" aria-label="Direct link to Environment Configurations Page" title="Direct link to Environment Configurations Page" translate="no">​</a></h2>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users need to have <a href="/docs/user-guide/global-configurations/authorization/user-access#roles-available-for-devtron-apps">Admin role</a> or above (along with access to the environment and applications) to perform environment override.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="environment-configurations-page">Environment Configurations Page<a href="#environment-configurations-page" class="hash-link" aria-label="Direct link to Environment Configurations Page" title="Direct link to Environment Configurations Page" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users need to have <a class="" href="/docs/user-guide/global-configurations/authorization/user-access#roles-available-for-devtron-apps">Admin role</a> or above (along with access to the environment and applications) to perform environment override.</p></div></div>
 <ol>
-<li>
+<li class="">
 <p>In your Devtron app, go to <strong>Configurations</strong> (tab) → <strong>Environment Overrides</strong>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/config-env-override.jpg" alt="Figure 2: Accessing Environment Overrides" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Select an environment whose configurations you wish to modify.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/environment-override-v3.jpg" alt="Figure 3: Selecting Environment" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>You will get the following options (similar to the <strong>Base Configurations</strong> page):</p>
 <ul>
-<li><a href="#override-deployment-template">Deployment Template</a></li>
-<li><a href="#override-configmap--secret">ConfigMaps</a></li>
-<li><a href="#override-configmap--secret">Secrets</a></li>
+<li class=""><a href="#override-deployment-template" class="">Deployment Template</a></li>
+<li class=""><a href="#override-configmap--secret" class="">ConfigMaps</a></li>
+<li class=""><a href="#override-configmap--secret" class="">Secrets</a></li>
 </ul>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/env-config-screen.gif" alt="Figure 4: Configuration Options" class="img_ev3q"></p>
 </li>
 </ol>
 <p>Let&#x27;s visit each of the configuration files and see how to override their values for the selected environment (say <em>banking-final</em>).</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="override-deployment-template">Override Deployment Template<a href="#override-deployment-template" class="hash-link" aria-label="Direct link to Override Deployment Template" title="Direct link to Override Deployment Template" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="override-deployment-template">Override Deployment Template<a href="#override-deployment-template" class="hash-link" aria-label="Direct link to Override Deployment Template" title="Direct link to Override Deployment Template" translate="no">​</a></h2>
 <p>As you can see, the Deployment Template for the <em>banking-final</em> environment shows 3 tabs:</p>
 <ul>
-<li>Inherited</li>
-<li>No override or Override</li>
-<li>Dry run</li>
+<li class="">Inherited</li>
+<li class="">No override or Override</li>
+<li class="">Dry run</li>
 </ul>
 <ol>
-<li>
+<li class="">
 <p>Go to the <strong>Inherited</strong> tab. This will show the inherited configuration in a read-only YAML editor. You cannot edit any values here.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/inherited-dt.gif" alt="Figure 5: Inherited Deployment Template" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Clicking <strong>No override</strong> to override the inherited configuration (if not done already).</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/no-override-tab.gif" alt="Figure 6: No Override Tab" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Click the <strong>Create Override</strong> button.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/create-override.gif" alt="Figure 7: Creat Override Button" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>In the same tab (now labelled as <strong>Override</strong>), you can choose any one mode for changing the configuration values:</p>
 <ul>
-<li><strong>YAML</strong> - This mode has a YAML based editor intended for advanced users. <a href="/docs/user-guide/creating-application/base-config/deployment-template-types/deployment#yaml">Click here</a> to know more about each key-value pair within the <code>YAML</code> section.</li>
-<li><strong>GUI</strong> - This mode has a user-friendly interface intended for beginner to advanced users. <a href="/docs/user-guide/creating-application/base-config/deployment-template#using-gui">Click here</a> to know more about each field within the <code>GUI</code> section.</li>
+<li class=""><strong>YAML</strong> - This mode has a YAML based editor intended for advanced users. <a class="" href="/docs/user-guide/creating-application/base-config/deployment-template-types/deployment#yaml">Click here</a> to know more about each key-value pair within the <code>YAML</code> section.</li>
+<li class=""><strong>GUI</strong> - This mode has a user-friendly interface intended for beginner to advanced users. <a class="" href="/docs/user-guide/creating-application/base-config/deployment-template#using-gui">Click here</a> to know more about each field within the <code>GUI</code> section.</li>
 </ul>
 </li>
 </ol>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Note</div><div class="admonitionContent_BuS1"><p>Users who are not super-admins will land on GUI mode when they override; whereas super-admins will land on YAML mode. This is just the default behavior, users can still toggle the mode if needed.</p></div></div>
-<p>Let&#x27;s choose YAML mode for now and proceed. If you prefer GUI mode, go to <a href="#override-deployment-template-using-gui">Override Deployment Template using GUI</a> section.</p>
+<p>Let&#x27;s choose YAML mode for now and proceed. If you prefer GUI mode, go to <a href="#override-deployment-template-using-gui" class="">Override Deployment Template using GUI</a> section.</p>
 <ol start="5">
-<li>You can override the values using any merge strategy:<!-- -->
+<li class="">You can override the values using any merge strategy:<!-- -->
 <ul>
-<li><a href="#using-patch-strategy">Patch</a></li>
-<li><a href="#using-replace-strategy">Replace</a></li>
+<li class=""><a href="#using-patch-strategy" class="">Patch</a></li>
+<li class=""><a href="#using-replace-strategy" class="">Replace</a></li>
 </ul>
 </li>
 </ol>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="using-patch-strategy">Using Patch Strategy<a href="#using-patch-strategy" class="hash-link" aria-label="Direct link to Using Patch Strategy" title="Direct link to Using Patch Strategy" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-patch-strategy">Using Patch Strategy<a href="#using-patch-strategy" class="hash-link" aria-label="Direct link to Using Patch Strategy" title="Direct link to Using Patch Strategy" translate="no">​</a></h3>
 <p>Suppose you want to update only one field (e.g., <code>&quot;username&quot; = &quot;johndoe&quot;</code>) in a deployment template. Using the patch strategy, you can just update the field to <code>&quot;username&quot; = &quot;mathew&quot;</code>. All other fields in the deployment template will remain unchanged.</p>
 <ul>
-<li>Only the fields you explicitly specify are updated.</li>
-<li>The patched template will continue to depend on the base configuration, so all other inherited fields remain unchanged and will continue to inherit in future.</li>
-<li>Best for minor edits.</li>
+<li class="">Only the fields you explicitly specify are updated.</li>
+<li class="">The patched template will continue to depend on the base configuration, so all other inherited fields remain unchanged and will continue to inherit in future.</li>
+<li class="">Best for minor edits.</li>
 </ul>
 <table><thead><tr><th>Field</th><th>Inherited Configuration</th><th>Input (with Patch)</th><th>Final Configuration</th></tr></thead><tbody><tr><td>cpu</td><td>100m</td><td>500m</td><td>500m</td></tr><tr><td>memory</td><td>256Mi</td><td><em>(Not specified)</em></td><td>256Mi <em>(Unchanged)</em></td></tr><tr><td>replicas</td><td>2</td><td><em>(Not specified)</em></td><td>2 <em>(Unchanged)</em></td></tr><tr><td>logLevel</td><td>&quot;info&quot;</td><td><em>(Not specified)</em></td><td>&quot;info&quot; <em>(Unchanged)</em></td></tr><tr><td>timeout</td><td>(Not specified)</td><td>30s</td><td>30s (Added)</td></tr></tbody></table>
 <p>If you know the fields you wish to change, simply enter the changed key-value fields along with indentation (if any).</p>
 <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/phhv1_2eStI" title="" frameborder="0"></iframe></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="using-replace-strategy">Using Replace Strategy<a href="#using-replace-strategy" class="hash-link" aria-label="Direct link to Using Replace Strategy" title="Direct link to Using Replace Strategy" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="using-replace-strategy">Using Replace Strategy<a href="#using-replace-strategy" class="hash-link" aria-label="Direct link to Using Replace Strategy" title="Direct link to Using Replace Strategy" translate="no">​</a></h3>
 <p>Suppose you update your deployment chart version (e.g., from <code>4.0.0</code> to <code>4.0.1</code>). Although the new chart version contains new features and key-value pairs, if you prefer to keep a few configurations unchanged regardless of the new key-value pairs added in the new chart version, you can use the replace strategy.</p>
 <ul>
-<li>The entire configuration is replaced with your new environment-specific settings.</li>
-<li>The replaced template will no longer depend or inherit from base configuration anymore.</li>
-<li>Best for a complete override.</li>
+<li class="">The entire configuration is replaced with your new environment-specific settings.</li>
+<li class="">The replaced template will no longer depend or inherit from base configuration anymore.</li>
+<li class="">Best for a complete override.</li>
 </ul>
 <table><thead><tr><th>Field</th><th>Inherited Configuration</th><th>Input (with Replace)</th><th>Final Configuration</th></tr></thead><tbody><tr><td>cpu</td><td>100m</td><td>500m</td><td>500m</td></tr><tr><td>memory</td><td>256Mi</td><td>512Mi</td><td>512Mi</td></tr><tr><td>replicas</td><td>2</td><td><em>(Not specified)</em></td><td><em>(Removed)</em></td></tr><tr><td>logLevel</td><td>&quot;info&quot;</td><td><em>(Not specified)</em></td><td><em>(Removed)</em></td></tr><tr><td>timeout</td><td>(Not specified)</td><td>30s</td><td>30s (Added)</td></tr></tbody></table>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>What if some keys are locked from editing?</div><div class="admonitionContent_BuS1"><p>You cannot modify locked keys in an environment&#x27;s deployment template unless you are a super-admin. Refer <a href="/docs/user-guide/global-configurations/lock-deployment-config">Lock Deployment Configuration</a> to know more.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="override-deployment-template-using-gui">Override Deployment Template using GUI<a href="#override-deployment-template-using-gui" class="hash-link" aria-label="Direct link to Override Deployment Template using GUI" title="Direct link to Override Deployment Template using GUI" translate="no">​</a></h3>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>What if some keys are locked from editing?</div><div class="admonitionContent_BuS1"><p>You cannot modify locked keys in an environment&#x27;s deployment template unless you are a super-admin. Refer <a class="" href="/docs/user-guide/global-configurations/lock-deployment-config">Lock Deployment Configuration</a> to know more.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="override-deployment-template-using-gui">Override Deployment Template using GUI<a href="#override-deployment-template-using-gui" class="hash-link" aria-label="Direct link to Override Deployment Template using GUI" title="Direct link to Override Deployment Template using GUI" translate="no">​</a></h3>
 <p>Follow the below steps to override your deployment template using GUI:</p>
 <ol>
-<li>
+<li class="">
 <p>Navigate to <strong>Application Management</strong> → <strong>Applications</strong> and click your Devtron application.</p>
 </li>
-<li>
+<li class="">
 <p>Go to <strong>Configurations</strong> (tab) → <strong>Base Configurations</strong> → <strong>Environment Overrides</strong> and click on your preferred environment to override deployment template.</p>
 </li>
-<li>
+<li class="">
 <p>Click on the <strong>No Override</strong> option and then click on <strong>Create Override</strong>.</p>
 </li>
-<li>
+<li class="">
 <p>Click on the <strong>GUI</strong> option. The available fields will be displayed on the right side of the page.</p>
 </li>
-<li>
+<li class="">
 <p>Select your preferred fields and enter the values to override.</p>
 </li>
-<li>
+<li class="">
 <p>Select your preferred merge strategy from the <strong>Merge Strategy</strong> drop-down box.</p>
 </li>
-<li>
+<li class="">
 <p>Click on <strong>Save Changes</strong>.</p>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Want to customize the deployment template values displayed on GUI? <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a></div><div class="admonitionContent_BuS1"><p>The GUI mode shows limited number of fields as specified by the super-admin in the GUI schema. Refer <a href="/docs/user-guide/creating-application/base-config/deployment-template#customize-the-gui-">Customize GUI</a> to know more.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Want to customize the deployment template values displayed on GUI? <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a></div><div class="admonitionContent_BuS1"><p>The GUI mode shows limited number of fields as specified by the super-admin in the GUI schema. Refer <a class="" href="/docs/user-guide/creating-application/base-config/deployment-template#customize-the-gui-">Customize GUI</a> to know more.</p></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="override-configmap--secret">Override ConfigMap &amp; Secret<a href="#override-configmap--secret" class="hash-link" aria-label="Direct link to Override ConfigMap &amp; Secret" title="Direct link to Override ConfigMap &amp; Secret" translate="no">​</a></h2>
-<p>If you want to configure your ConfigMap and Secret at the application-level then you can provide them in <a href="/docs/user-guide/creating-application/base-config/config-maps">ConfigMaps</a> and <a href="/docs/user-guide/creating-application/base-config/secrets">Secrets</a>, but if you want to have environment-specific ConfigMap and Secret, use <strong>Environment Override</strong> to create them. At the time of deployment, it will pick both of them and pass them to your cluster.</p>
-<p>The process to override both ConfigMaps and Secrets is similar to <a href="#override-deployment-template">Override Deployment Template</a>. Refer the tutorials below to know the process in YAML mode. In case you wish to use GUI mode, skip to <a href="#override-configmaps-and-secrets-using-gui">Overriding in GUI mode</a>.</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="patch-strategy">Patch Strategy<a href="#patch-strategy" class="hash-link" aria-label="Direct link to Patch Strategy" title="Direct link to Patch Strategy" translate="no">​</a></h3>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="override-configmap--secret">Override ConfigMap &amp; Secret<a href="#override-configmap--secret" class="hash-link" aria-label="Direct link to Override ConfigMap &amp; Secret" title="Direct link to Override ConfigMap &amp; Secret" translate="no">​</a></h2>
+<p>If you want to configure your ConfigMap and Secret at the application-level then you can provide them in <a class="" href="/docs/user-guide/creating-application/base-config/config-maps">ConfigMaps</a> and <a class="" href="/docs/user-guide/creating-application/base-config/secrets">Secrets</a>, but if you want to have environment-specific ConfigMap and Secret, use <strong>Environment Override</strong> to create them. At the time of deployment, it will pick both of them and pass them to your cluster.</p>
+<p>The process to override both ConfigMaps and Secrets is similar to <a href="#override-deployment-template" class="">Override Deployment Template</a>. Refer the tutorials below to know the process in YAML mode. In case you wish to use GUI mode, skip to <a href="#override-configmaps-and-secrets-using-gui" class="">Overriding in GUI mode</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="patch-strategy">Patch Strategy<a href="#patch-strategy" class="hash-link" aria-label="Direct link to Patch Strategy" title="Direct link to Patch Strategy" translate="no">​</a></h3>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Impact of Patch strategy on Base Configuration&#x27;s CM/Secret?</div><div class="admonitionContent_BuS1"><p>You cannot delete a ConfigMap or Secret in <strong>Base Configurations</strong> if you have used &#x27;Patch&#x27; strategy for overridding ConfigMap or Secret at your environment-level. This happens because they are still dependent and inheriting their values from Base Configurations.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="replace-strategy">Replace Strategy<a href="#replace-strategy" class="hash-link" aria-label="Direct link to Replace Strategy" title="Direct link to Replace Strategy" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="replace-strategy">Replace Strategy<a href="#replace-strategy" class="hash-link" aria-label="Direct link to Replace Strategy" title="Direct link to Replace Strategy" translate="no">​</a></h3>
 <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/lSoj8wwOej0" title="" frameborder="0"></iframe></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="override-configmaps-and-secrets-using-gui">Override ConfigMaps and Secrets using GUI<a href="#override-configmaps-and-secrets-using-gui" class="hash-link" aria-label="Direct link to Override ConfigMaps and Secrets using GUI" title="Direct link to Override ConfigMaps and Secrets using GUI" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="override-configmaps-and-secrets-using-gui">Override ConfigMaps and Secrets using GUI<a href="#override-configmaps-and-secrets-using-gui" class="hash-link" aria-label="Direct link to Override ConfigMaps and Secrets using GUI" title="Direct link to Override ConfigMaps and Secrets using GUI" translate="no">​</a></h3>
 <div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/UOTKLVuSkDg" title="" frameborder="0"></iframe></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="delete-override">Delete Override<a href="#delete-override" class="hash-link" aria-label="Direct link to Delete Override" title="Direct link to Delete Override" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="delete-override">Delete Override<a href="#delete-override" class="hash-link" aria-label="Direct link to Delete Override" title="Direct link to Delete Override" translate="no">​</a></h2>
 <p>This action will discard the current overrides and the base configuration file (in this example, deployment template) will be restored back for the environment.</p>
 <ol>
-<li>On the right side, click the kebab menu (3 vertical dots).</li>
-<li>Click <strong>Delete Override</strong>.</li>
-<li>Confirm the deletion in the dialogbox.</li>
+<li class="">On the right side, click the kebab menu (3 vertical dots).</li>
+<li class="">Click <strong>Delete Override</strong>.</li>
+<li class="">Confirm the deletion in the dialogbox.</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/environment-overrides/delete-override.gif" alt="Figure 8: Delete Override Option" class="img_ev3q"></p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="protected-environment-configurations-">Protected Environment Configurations <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#protected-environment-configurations-" class="hash-link" aria-label="Direct link to protected-environment-configurations-" title="Direct link to protected-environment-configurations-" translate="no">​</a></h2>
-<p>Any changes made to the protected environment configurations (Deployment Template, ConfigMap, Secret) will require approval if an <a href="/docs/user-guide/global-configurations/approval-policy">approval policy</a> is enforced.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="protected-environment-configurations-">Protected Environment Configurations <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#protected-environment-configurations-" class="hash-link" aria-label="Direct link to protected-environment-configurations-" title="Direct link to protected-environment-configurations-" translate="no">​</a></h2>
+<p>Any changes made to the protected environment configurations (Deployment Template, ConfigMap, Secret) will require approval if an <a class="" href="/docs/user-guide/global-configurations/approval-policy">approval policy</a> is enforced.</p>
 <p>Follow the below steps to make changes to a protected environment:</p>
 <ol>
-<li>
+<li class="">
 <p>Navigate to <strong>Application Management</strong> → <strong>Applications</strong> and click on your preferred application.</p>
 </li>
-<li>
+<li class="">
 <p>Go to <strong>Configurations</strong> (tab) → <strong>Base Configurations</strong> → <strong>Environment Overrides</strong> and click on your preferred environment.</p>
 </li>
-<li>
+<li class="">
 <p>Click on the <strong>No Override</strong> option and then click on <strong>Create Override</strong>.</p>
 </li>
-<li>
+<li class="">
 <p>Select your preferred merge strategy from the <strong>Merge Strategy</strong> drop-down box.</p>
 </li>
-<li>
+<li class="">
 <p>Make changes to the key-value pairs in the <strong>Patch data</strong> section.</p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Save Changes</strong>. The <strong>Save as draft</strong> pop-up page will be displayed.</p>
 <ul>
-<li>
+<li class="">
 <p><strong>Save as draft</strong> - Select this option if you want to continue making your changes later but save your changes as a draft for now.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Save &amp; Propose changes</strong> - Select this option if you want to save and propose your changes to the approvers. You can then select the approvers to get notified regarding the change from the <strong>Select approvers to notify</strong> drop-down box.</p>
 </li>
 </ul>
 </li>
-<li>
+<li class="">
 <p>Enter your comments (reason for making the changes) in the <strong>Comment</strong> text box.</p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Propose Changes</strong>. The corresponding approver will be notified via email regarding your request.</p>
 </li>
 </ol></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/creating-application/workflow/pre-post-tasks"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Pre/Post Stages</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/deleting-application"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Deleting Application</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#how-it-works" class="table-of-contents__link toc-highlight">How it works</a></li><li><a href="#environment-configurations-page" class="table-of-contents__link toc-highlight">Environment Configurations Page</a></li><li><a href="#override-deployment-template" class="table-of-contents__link toc-highlight">Override Deployment Template</a><ul><li><a href="#using-patch-strategy" class="table-of-contents__link toc-highlight">Using Patch Strategy</a></li><li><a href="#using-replace-strategy" class="table-of-contents__link toc-highlight">Using Replace Strategy</a></li><li><a href="#override-deployment-template-using-gui" class="table-of-contents__link toc-highlight">Override Deployment Template using GUI</a></li></ul></li><li><a href="#override-configmap--secret" class="table-of-contents__link toc-highlight">Override ConfigMap &amp; Secret</a><ul><li><a href="#patch-strategy" class="table-of-contents__link toc-highlight">Patch Strategy</a></li><li><a href="#replace-strategy" class="table-of-contents__link toc-highlight">Replace Strategy</a></li><li><a href="#override-configmaps-and-secrets-using-gui" class="table-of-contents__link toc-highlight">Override ConfigMaps and Secrets using GUI</a></li></ul></li><li><a href="#delete-override" class="table-of-contents__link toc-highlight">Delete Override</a></li><li><a href="#protected-environment-configurations-" class="table-of-contents__link toc-highlight">Protected Environment Configurations <a></a></a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">

@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/plugins/sonarqube-v1.1.0" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Sonarqube v1.1.0 | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/plugins/sonarqube-v1.1.0"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Sonarqube v1.1.0 | Devtron Docs"><meta data-rh="true" name="description" content="Configuring Sonarqube-v1.1.0 in pre-build or post build task enhances your workflow with Continuous Code Quality &amp; Code Security."><meta data-rh="true" property="og:description" content="Configuring Sonarqube-v1.1.0 in pre-build or post build task enhances your workflow with Continuous Code Quality &amp; Code Security."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/plugins/sonarqube-v1.1.0"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/plugins/sonarqube-v1.1.0" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/plugins/sonarqube-v1.1.0" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Resources","item":"https://docs.venz.shop/docs/reference/resources"},{"@type":"ListItem","position":2,"name":"Pipeline Plugins","item":"https://docs.venz.shop/docs/user-guide/plugins/"},{"@type":"ListItem","position":3,"name":"Sonarqube v1.1.0","item":"https://docs.venz.shop/docs/user-guide/plugins/sonarqube-v1.1.0"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -16,31 +24,31 @@
 <p>Configuring <code>Sonarqube-v1.1.0</code> in pre-build or post build task enhances your workflow with Continuous Code Quality &amp; Code Security.</p>
 <p><strong>Prerequisite</strong>: Make sure you have set up an account in <code>Sonarqube</code> or get the API keys from an admin.</p>
 <ol>
-<li>
+<li class="">
 <p>On the <strong>Edit build pipeline</strong> page, select the <strong>Pre-Build Stage</strong> (or Post-Build Stage).</p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>+ Add task</strong>.</p>
 </li>
-<li>
+<li class="">
 <p>Select <strong>Sonarqube v1.1.0</strong> from <strong>PRESET PLUGINS</strong>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/plugins/sonarqube-v1.1.0.jpeg" alt="" class="img_ev3q"></p>
 </li>
 </ol>
 <ul>
-<li>Enter a relevant name in the <code>Task name</code> field. It is a mandatory field.</li>
-<li>Enter a descriptive message for the task in the <code>Description</code> field. It is an optional field.</li>
-<li>Provide a value for the input variable.<br> Note: The value may be any of the values from the previous build stages, a global variable, or a custom value.</li>
+<li class="">Enter a relevant name in the <code>Task name</code> field. It is a mandatory field.</li>
+<li class="">Enter a descriptive message for the task in the <code>Description</code> field. It is an optional field.</li>
+<li class="">Provide a value for the input variable.<br> Note: The value may be any of the values from the previous build stages, a global variable, or a custom value.</li>
 </ul>
 <table><thead><tr><th>Variable</th><th>Format</th><th>Description</th></tr></thead><tbody><tr><td>SonarqubeProjectPrefixName</td><td>String</td><td>This is the SonarQube project prefix name. If not provided, the prefix name is automatically generated.</td></tr><tr><td>SonarqubeBranchName</td><td>String</td><td>Branch name to be used to send the scanned result on sonarqube project.</td></tr><tr><td>SonarqubeProjectKey</td><td>String</td><td>Project key of SonarQube account</td></tr><tr><td>CheckForSonarAnalysisReport</td><td>Bool</td><td>Boolean value - true or false. Set true to poll for generated report from sonarqube.</td></tr><tr><td>AbortPipelineOnPolicyCheckFailed</td><td>Bool</td><td>Boolean value - true or false. Set true to abort on report check failed.</td></tr><tr><td>UsePropertiesFileFromProject</td><td>Bool</td><td>Boolean value - true or false. Set true to use source code sonar-properties file.</td></tr><tr><td>SonarqubeEndpoint</td><td>String</td><td>API endpoint of SonarQube account.</td></tr><tr><td>CheckoutPath</td><td>String</td><td>Checkout path of Git material.</td></tr><tr><td>SonarqubeApiKey</td><td>String</td><td>API key of SonarQube account</td></tr><tr><td>SonarContainerImage</td><td>String</td><td>Container Image that will be used for sonar scanning purpose.</td></tr></tbody></table>
 <ul>
-<li>
+<li class="">
 <p><code>Trigger/Skip Condition</code> refers to a conditional statement to execute or skip the task. You can select either:</p><ul><li><code>Set trigger conditions</code> or</li><li><code>Set skip conditions</code></li></ul><p></p>
 </li>
-<li>
+<li class="">
 <p><code>Pass/Fail Condition</code> refers to a conditional statement to pass or fail the <strong>Pre-Build Stage</strong> (or Post-Build Stage). You can select either:</p><ul><li><code>Set pass conditions</code> or</li><li><code>Set failure conditions</code></li></ul><p></p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Update Pipeline</strong>.</p>
 </li>
 </ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/plugins/sonarqube"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">SonarQube</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/plugins/terraform-cli"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Terraform CLI</div></a></nav></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">

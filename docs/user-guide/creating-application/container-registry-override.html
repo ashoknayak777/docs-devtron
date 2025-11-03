@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/creating-application/container-registry-override" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Override Build Configuration | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/creating-application/container-registry-override"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Override Build Configuration | Devtron Docs"><meta data-rh="true" name="description" content="Within the same application, you can override a container registry, container image and target platform during the build pipeline, which means the images built for non-production environment can be included to the non-production registry and the images for production environment can be included to the production registry."><meta data-rh="true" property="og:description" content="Within the same application, you can override a container registry, container image and target platform during the build pipeline, which means the images built for non-production environment can be included to the non-production registry and the images for production environment can be included to the production registry."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/creating-application/container-registry-override"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/creating-application/container-registry-override" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/creating-application/container-registry-override" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -18,28 +26,28 @@
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/build-allow-override.jpg" alt="" class="img_ev3q"></p>
 <p>To override a container registry, container image or target platform:</p>
 <ul>
-<li>
+<li class="">
 <p>Go to <strong>Applications</strong> and select your application from the <strong>Devtron Apps</strong> tabs.</p>
 </li>
-<li>
+<li class="">
 <p>On the <strong>App Configuration</strong> tab, select <strong>Workflow Editor</strong>.</p>
 </li>
-<li>
+<li class="">
 <p>Open the build pipeline of your application.</p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Allow Override</strong> to:</p>
 <ul>
-<li>Select the new container registry from the drop-down list.</li>
-<li>Or, <a href="/docs/user-guide/creating-application/docker-build-configuration#build-the-container-image">create and build the new container image</a> with different options.</li>
-<li>Or, set a <a href="/docs/user-guide/creating-application/docker-build-configuration#set-target-platform-for-the-build">new target platform</a> from the drop-down list or enter a new target platform.</li>
+<li class="">Select the new container registry from the drop-down list.</li>
+<li class="">Or, <a class="" href="/docs/user-guide/creating-application/docker-build-configuration#build-the-container-image">create and build the new container image</a> with different options.</li>
+<li class="">Or, set a <a class="" href="/docs/user-guide/creating-application/docker-build-configuration#set-target-platform-for-the-build">new target platform</a> from the drop-down list or enter a new target platform.</li>
 </ul>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Update Pipeline</strong>.</p>
 </li>
 </ul>
-<p>The overridden container registry/container image location/target platform will be reflected on the <a href="/docs/user-guide/creating-application/docker-build-configuration">Build Configuration</a> page. You can also see the number of build pipelines for which the container registry/container image location/target platform is overridden.</p>
+<p>The overridden container registry/container image location/target platform will be reflected on the <a class="" href="/docs/user-guide/creating-application/docker-build-configuration">Build Configuration</a> page. You can also see the number of build pipelines for which the container registry/container image location/target platform is overridden.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/workflow-ci-pipeline/build-configuration-overridden.jpg" alt="" class="img_ev3q"></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">

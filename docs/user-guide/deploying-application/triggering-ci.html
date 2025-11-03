@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/deploying-application/triggering-ci" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Triggering CI Pipelines | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/deploying-application/triggering-ci"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Triggering CI Pipelines | Devtron Docs"><meta data-rh="true" name="description" content="To trigger the CI pipeline, first you need to select a Git commit. To select a Git commit, click the Select Material button present on the CI pipeline."><meta data-rh="true" property="og:description" content="To trigger the CI pipeline, first you need to select a Git commit. To select a Git commit, click the Select Material button present on the CI pipeline."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/deploying-application/triggering-ci"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/deploying-application/triggering-ci" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/deploying-application/triggering-ci" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Application Management","item":"https://docs.venz.shop/docs/user-guide/app-management/"},{"@type":"ListItem","position":2,"name":"Applications","item":"https://docs.venz.shop/docs/user-guide/applications"},{"@type":"ListItem","position":3,"name":"Build and Deploy","item":"https://docs.venz.shop/docs/user-guide/deploying-application/"},{"@type":"ListItem","position":4,"name":"Triggering CI Pipelines","item":"https://docs.venz.shop/docs/user-guide/deploying-application/triggering-ci"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -19,44 +27,44 @@
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/trigger-build.jpg" alt="" class="img_ev3q"></p>
 <p>CI Pipelines with automatic trigger enabled are triggered immediately when a new commit is made to the git branch. If the trigger for a build pipeline is set to manual, it will not be automatically triggered and requires a manual trigger.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="partial-cloning-feature-">Partial Cloning Feature <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#partial-cloning-feature-" class="hash-link" aria-label="Direct link to partial-cloning-feature-" title="Direct link to partial-cloning-feature-" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="partial-cloning-feature-">Partial Cloning Feature <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#partial-cloning-feature-" class="hash-link" aria-label="Direct link to partial-cloning-feature-" title="Direct link to partial-cloning-feature-" translate="no">​</a></h2>
 <p>CI builds can be time-consuming for large repositories, especially for enterprises. However, Devtron&#x27;s partial cloning feature significantly increases cloning speed, reducing the time it takes to clone your source code and leading to faster build times.</p>
 <p><strong>Advantages</strong></p>
 <ul>
-<li>Smaller image sizes</li>
-<li>Reduced resource usage and costs</li>
-<li>Faster software releases</li>
-<li>Improved productivity</li>
+<li class="">Smaller image sizes</li>
+<li class="">Reduced resource usage and costs</li>
+<li class="">Faster software releases</li>
+<li class="">Improved productivity</li>
 </ul>
 <p>Get in touch with us if you are looking for a way to improve the efficiency of your software development process.</p>
 <p>The <strong>Refresh</strong> icon updates the Git Commits section in the CI Pipeline by fetching the latest commits from the repository. Clicking on the refresh icon ensures that you have the most recent commit available.</p>
-<p>The <strong>Ignore Cache</strong> option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. <a href="/docs/user-guide/creating-application/workflow/ci-pipeline#docker-layer-caching-">Click here</a> to read more about controlling cache behavior in Devtron.</p>
+<p>The <strong>Ignore Cache</strong> option ignores the previous build cache and creates a fresh build. If selected, will take a longer build time than usual. <a class="" href="/docs/user-guide/creating-application/workflow/ci-pipeline#docker-layer-caching-">Click here</a> to read more about controlling cache behavior in Devtron.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="passing-build-parameters-">Passing Build Parameters <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#passing-build-parameters-" class="hash-link" aria-label="Direct link to passing-build-parameters-" title="Direct link to passing-build-parameters-" translate="no">​</a></h2>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users need to have <a href="/docs/user-guide/global-configurations/authorization/user-access#devtron-apps-permissions">Build &amp; deploy permission</a> or above (along with access to the environment and application) to pass build parameters.</p></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="passing-build-parameters-">Passing Build Parameters <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#passing-build-parameters-" class="hash-link" aria-label="Direct link to passing-build-parameters-" title="Direct link to passing-build-parameters-" translate="no">​</a></h2>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users need to have <a class="" href="/docs/user-guide/global-configurations/authorization/user-access#devtron-apps-permissions">Build &amp; deploy permission</a> or above (along with access to the environment and application) to pass build parameters.</p></div></div>
 <p>If you wish to pass runtime parameters for a build job, you can provide key-value pairs before triggering the build. Thereafter, you can access those passed values by referencing the corresponding keys in the environment variable dictionary.</p>
 <p><strong>Steps</strong></p>
 <ol>
-<li>
+<li class="">
 <p>Go to the <strong>Parameters</strong> tab available on the screen where you select the commit.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/build-parameter-tab.jpg" alt="" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>+ Add parameter</strong>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/add-parameter.jpg" alt="" class="img_ev3q"></p>
 </li>
-<li>
+<li class="">
 <p>Enter your key-value pair as shown below.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/key-value.jpg" alt="" class="img_ev3q"></p>
 <p><br> Similarly, you may add more than one key-value pair by using the <strong>+ Add Parameter</strong> button.</p>
 </li>
-<li>
+<li class="">
 <p>Click <strong>Start Build</strong>.</p>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>In case you trigger builds in bulk, you can consider passing build parameters in <a href="/docs/user-guide/application-groups">Application Groups</a>.</p></div></div>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>In case you trigger builds in bulk, you can consider passing build parameters in <a class="" href="/docs/user-guide/application-groups">Application Groups</a>.</p></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fetching-logs-and-reports">Fetching Logs and Reports<a href="#fetching-logs-and-reports" class="hash-link" aria-label="Direct link to Fetching Logs and Reports" title="Direct link to Fetching Logs and Reports" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fetching-logs-and-reports">Fetching Logs and Reports<a href="#fetching-logs-and-reports" class="hash-link" aria-label="Direct link to Fetching Logs and Reports" title="Direct link to Fetching Logs and Reports" translate="no">​</a></h2>
 <p>Click the <code>CI Pipeline</code> or navigate to the <code>Build History</code> to get the CI pipeline details such as build logs, source code details, artifacts, and vulnerability scan reports.</p>
 <p>To access the logs of the CI Pipeline, simply click <code>Logs</code>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/build-logs.jpg" alt="" class="img_ev3q"></p>
@@ -64,7 +72,7 @@
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/build-source.jpg" alt="" class="img_ev3q"></p>
 <p>By selecting the <code>Artifacts</code> option, you can download reports related to the tasks performed in the Pre-CI and Post-CI stages. This will allow you to access and retrieve the generated reports, if any, related to these stages. Additionally, you have the option to add tags or comments to the image directly from this section.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/tags-and-artifacts.jpg" alt="" class="img_ev3q"></p>
-<p>To check for any vulnerabilities in the build image, click on <code>Security</code>. Please note that vulnerabilities will only be visible if you have enabled the <code>Scan for vulnerabilities</code> option in the advanced options of the CI pipeline before building the image. For more information about this feature, please refer to this <a href="/docs/user-guide/security-features">documentation</a>.</p>
+<p>To check for any vulnerabilities in the build image, click on <code>Security</code>. Please note that vulnerabilities will only be visible if you have enabled the <code>Scan for vulnerabilities</code> option in the advanced options of the CI pipeline before building the image. For more information about this feature, please refer to this <a class="" href="/docs/user-guide/security-features">documentation</a>.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/triggering-ci/security-scan-report.jpg" alt="" class="img_ev3q"></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/deploying-application"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Deploying Application</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/deploying-application/triggering-cd"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Triggering CD Pipelines</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#partial-cloning-feature-" class="table-of-contents__link toc-highlight">Partial Cloning Feature <a></a></a></li><li><a href="#passing-build-parameters-" class="table-of-contents__link toc-highlight">Passing Build Parameters <a></a></a></li><li><a href="#fetching-logs-and-reports" class="table-of-contents__link toc-highlight">Fetching Logs and Reports</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">

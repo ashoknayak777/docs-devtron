@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-setup/upgrade/devtron-upgrade-0.6.x-0.7.x" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Upgrading Devtron 0.6.x to 0.7.x | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/setup/upgrade/devtron-upgrade-0.6.x-0.7.x"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Upgrading Devtron 0.6.x to 0.7.x | Devtron Docs"><meta data-rh="true" name="description" content="To check the current version of your Devtron setup, use the following command"><meta data-rh="true" property="og:description" content="To check the current version of your Devtron setup, use the following command"><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/setup/upgrade/devtron-upgrade-0.6.x-0.7.x"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/setup/upgrade/devtron-upgrade-0.6.x-0.7.x" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/setup/upgrade/devtron-upgrade-0.6.x-0.7.x" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Resources","item":"https://docs.venz.shop/docs/reference/resources"},{"@type":"ListItem","position":2,"name":"Upgrade Devtron","item":"https://docs.venz.shop/docs/setup/upgrade/"},{"@type":"ListItem","position":3,"name":"Upgrading Devtron 0.6.x to 0.7.x","item":"https://docs.venz.shop/docs/setup/upgrade/devtron-upgrade-0.6.x-0.7.x"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -17,31 +25,31 @@
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">kubectl -n devtroncd get installers installer-devtron -o jsonpath=&#x27;{.status.sync.data}&#x27; | grep &quot;^LTAG=&quot; | cut -d&quot;=&quot; -f2-</span><br></span></code></pre></div></div>
 <p>Proceed with the following steps only if the version is <code>0.6.x</code></p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="prerequisites">Prerequisites<a href="#prerequisites" class="hash-link" aria-label="Direct link to Prerequisites" title="Direct link to Prerequisites" translate="no">​</a></h2>
 <ol>
-<li>Set the release name</li>
+<li class="">Set the release name</li>
 </ol>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">export RELEASE_NAME=devtron</span><br></span></code></pre></div></div>
 <ol start="2">
-<li>Label and annotate the service accounts in the <code>devtron-ci</code> namespace</li>
+<li class="">Label and annotate the service accounts in the <code>devtron-ci</code> namespace</li>
 </ol>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">kubectl -n devtron-ci label sa --all &quot;app.kubernetes.io/managed-by=Helm&quot; --overwrite</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">kubectl -n devtron-ci annotate sa --all &quot;meta.helm.sh/release-name=$RELEASE_NAME&quot; &quot;meta.helm.sh/release-namespace=devtroncd&quot; --overwrite</span><br></span></code></pre></div></div>
 <ol start="3">
-<li>Now, label and annotate the service accounts in the <code>devtron-cd</code> namespace</li>
+<li class="">Now, label and annotate the service accounts in the <code>devtron-cd</code> namespace</li>
 </ol>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">kubectl -n devtron-cd label sa --all &quot;app.kubernetes.io/managed-by=Helm&quot; --overwrite</span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">kubectl -n devtron-cd annotate sa --all &quot;meta.helm.sh/release-name=$RELEASE_NAME&quot; &quot;meta.helm.sh/release-namespace=devtroncd&quot; --overwrite</span><br></span></code></pre></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="upgrade-commands">Upgrade Commands<a href="#upgrade-commands" class="hash-link" aria-label="Direct link to Upgrade Commands" title="Direct link to Upgrade Commands" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="upgrade-commands">Upgrade Commands<a href="#upgrade-commands" class="hash-link" aria-label="Direct link to Upgrade Commands" title="Direct link to Upgrade Commands" translate="no">​</a></h2>
 <ol>
-<li>Update the Helm repository</li>
+<li class="">Update the Helm repository</li>
 </ol>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">helm repo update</span><br></span></code></pre></div></div>
 <ol start="2">
-<li>Run the upgrade command for Devtron</li>
+<li class="">Run the upgrade command for Devtron</li>
 </ol>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">helm upgrade devtron devtron/devtron-operator -n devtroncd --reuse-values -f https://raw.githubusercontent.com/devtron-labs/devtron/main/charts/devtron/devtron-bom.yaml</span><br></span></code></pre></div></div>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="expected-command-output">Expected Command Output<a href="#expected-command-output" class="hash-link" aria-label="Direct link to Expected Command Output" title="Direct link to Expected Command Output" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="expected-command-output">Expected Command Output<a href="#expected-command-output" class="hash-link" aria-label="Direct link to Expected Command Output" title="Direct link to Expected Command Output" translate="no">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/command-output.jpg" alt="Command Output" class="img_ev3q"></p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/setup/upgrade/devtron-upgrade-1.5.0"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Upgrade Devtron to 1.5.0</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/setup/upgrade/devtron-upgrade-0.5.x-0.6.x"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Upgrading Devtron 0.5.x to 0.6.x</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites</a></li><li><a href="#upgrade-commands" class="table-of-contents__link toc-highlight">Upgrade Commands</a></li><li><a href="#expected-command-output" class="table-of-contents__link toc-highlight">Expected Command Output</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">

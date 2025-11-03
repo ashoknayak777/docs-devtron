@@ -2,11 +2,19 @@
 <html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-user-guide/deploying-application/rollback-deployment" data-has-hydrated="false">
 <head>
 <meta charset="UTF-8">
-<meta name="generator" content="Docusaurus v3.9.1">
+<meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Rollback Deployment | Devtron Docs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-social-card.jpg"><meta data-rh="true" property="og:url" content="https://docs.venz.shop/docs/user-guide/deploying-application/rollback-deployment"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Rollback Deployment | Devtron Docs"><meta data-rh="true" name="description" content="Deployments can be rolled back manually. After a deployment is completed, you can manually rollback to a previously deployed image by retaining the same configuration or changing the configuration."><meta data-rh="true" property="og:description" content="Deployments can be rolled back manually. After a deployment is completed, you can manually rollback to a previously deployed image by retaining the same configuration or changing the configuration."><link data-rh="true" rel="icon" href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/devtron-favicon.png"><link data-rh="true" rel="canonical" href="https://docs.venz.shop/docs/user-guide/deploying-application/rollback-deployment"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/deploying-application/rollback-deployment" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.venz.shop/docs/user-guide/deploying-application/rollback-deployment" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Application Management","item":"https://docs.venz.shop/docs/user-guide/app-management/"},{"@type":"ListItem","position":2,"name":"Applications","item":"https://docs.venz.shop/docs/user-guide/applications"},{"@type":"ListItem","position":3,"name":"Build and Deploy","item":"https://docs.venz.shop/docs/user-guide/deploying-application/"},{"@type":"ListItem","position":4,"name":"Rollback Deployment","item":"https://docs.venz.shop/docs/user-guide/deploying-application/rollback-deployment"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Devtron Docs RSS Feed">
-<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed"><link rel="stylesheet" href="/assets/css/styles.d4c09a72.css">
-<script src="/assets/js/runtime~main.5d92f794.js" defer="defer"></script>
-<script src="/assets/js/main.f7c11f29.js" defer="defer"></script>
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Devtron Docs Atom Feed">
+
+
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJY45WF21G"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-RJY45WF21G",{anonymize_ip:!0})</script><link rel="stylesheet" href="/assets/css/styles.503480ce.css">
+<script src="/assets/js/runtime~main.2a786944.js" defer="defer"></script>
+<script src="/assets/js/main.fa5052ae.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -21,19 +29,19 @@
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/rollback-deployment/rollback-icon.jpg" alt="" class="img_ev3q"></p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/deploying-application/rollback-deployment/select-config-to-deploy.jpg" alt="" class="img_ev3q"></p>
 <ol>
-<li>
+<li class="">
 <p>Select <code>Rollback</code> in your deployed pipeline.</p>
 </li>
-<li>
+<li class="">
 <p>On the <code>Rollback</code> page, select a configuration to deploy from the list:</p>
 </li>
 </ol>
 <table><thead><tr><th>Configurations</th><th>Description</th></tr></thead><tbody><tr><td><strong>Last saved config</strong></td><td>Deploy the image with the latest saved configuration.</td></tr><tr><td><strong>Last deployed config</strong></td><td>Deploy the image with the last deployed configuration. <strong>Example</strong>: <code>The configuration C3</code>.</td></tr><tr><td><strong>Config deployed with selected image</strong></td><td>Deploy the configuration which was deployed with the selected image. <strong>Example</strong>: <code>The configuration C2</code>.</td></tr></tbody></table>
 <ol start="3">
-<li>
+<li class="">
 <p>Once you select the previously deployed image and the configuration, review the difference between <code>Last Deployed Configuration</code> and the selected configuration.</p>
 </li>
-<li>
+<li class="">
 <p>Click <code>Deploy</code>.</p>
 </li>
 </ol>
@@ -41,8 +49,8 @@
 <p>The selected previously deployed image will be deployed.</p>
 <p><strong>Note</strong>:</p>
 <ul>
-<li>There will be no difference in the configuration if you select <code>Last deployed config</code> from the list.</li>
-<li>When you select <code>Config deployed with selected image</code> and  if the configuration is missing in the selected previously deployed image, it will show as <code>Config Not Available</code>. In such cases, you can select either <code>Last saved config</code> or <code>Last deployed config</code>.</li>
+<li class="">There will be no difference in the configuration if you select <code>Last deployed config</code> from the list.</li>
+<li class="">When you select <code>Config deployed with selected image</code> and  if the configuration is missing in the selected previously deployed image, it will show as <code>Config Not Available</code>. In such cases, you can select either <code>Last saved config</code> or <code>Last deployed config</code>.</li>
 </ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/user-guide/deploying-application/triggering-cd"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Triggering CD Pipelines</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/user-guide/deploying-application/image-labels-and-comments"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Applying Labels and Comments</div></a></nav></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__links text--center"><div class="footer__links"><span class="footer__link-item">
               <div style="text-align: center;">
                 <div style="margin-bottom: 1rem;">
