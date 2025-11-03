@@ -1,7 +1,7 @@
 # Backup & Restore
 ## Introduction
 
-The **Backup & Restore** feature in Devtron helps you protect your Kubernetes workloads and data by allowing you to back up and restore **clusters**, **namespaces**, or **specific resources** directly from the Devtron UI. 
+The **Backup & Restore** feature in Devtron helps you protect your Kubernetes workloads and data by allowing you to back up and restore your **clusters**, **namespaces**, or **specific resources** directly from the Devtron UI. 
 
 You can 
 
@@ -152,7 +152,7 @@ After creating a backup schedule, you can view it under **Backup Schedules** tab
 | **Last Backup** | The timestamp of the last backup triggered by this schedule|
 | **Last Skipped** | Displays when the schedule last skipped a run (if applicable)|
 
----
+<!-- ---
 
 ## Restoring Backup
 
@@ -162,12 +162,10 @@ To restore a backup,
 
 2. Click on the backup name that you want to restore, a new page will open containing details of the backup.
 
-3. Click **Restore Backup** and the restoration will be initiated.
+3. Click **Restore Backup** and the restoration will be initiated. -->
 
----
+<!-- --- -->
 
-## Viewing Restores
 
-After restoration of a backup is initiated, you can view your restore on the **Restores** Page under **Data Protection Management**. This page shows all your backup restores
 
 
