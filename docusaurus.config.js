@@ -57,13 +57,18 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
           includeCurrentVersion: true,
-          lastVersion: '2.0', //current
+          lastVersion: 'current',
           versions: {
             current: {
               label: '2.0 🚧',
+              path: '',
+            },
+            '1.8': {
+              label: '1.8',
+              path: 'devtron/v1.8', 
             },
           },
           // Please change this to your repo.
