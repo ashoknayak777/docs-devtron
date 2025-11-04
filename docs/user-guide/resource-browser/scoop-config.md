@@ -14,9 +14,15 @@ To use **Pod Last Restart Snapshot** for your workloads, you must deploy the sco
 
 2. Search the `devtron-scoop` chart and click on it. A new page will open.
 
+    ![Figure 1: Finding 'devtron-scoop' chart](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-chart.jpg)
+
 3. Click **Deploy Chart**, and a new page will open.
 
+    ![Figure 2: Clicking 'Deploy Chart'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-deploy-chart.jpg)
+
 4. Enter the required details in the left pane:
+
+    ![Figure 3: Entering Details](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-chart-details.jpg)
 
     | **Field** | **Description** |
     |------------|-----------------|
@@ -33,7 +39,11 @@ To use **Pod Last Restart Snapshot** for your workloads, you must deploy the sco
 
 6. Note down the value you have specified for `PASS_KEY`. If you left the value unchanged, then the `PASS_KEY` value is `random-string`. We will need this value in later configuration steps.
 
+    ![Figure 4: Noting 'PASS_KEY' Value](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-chart-passkey.jpg)
+
 7. Click **Deploy**.
+
+    ![Figure 5: Clicking 'Deploy'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-chart-deploy.jpg)
 
 ### 2. Check Service Endpoint
 
@@ -42,6 +52,8 @@ After deploying scoop chart (`devtron-scoop`), you need to check the service end
 1. In the **App Details** page of the deployed chart, expand **Networking** and click on **Service**.
 
 2. Locate the service entry with the URL in the format: `<service-name>.<namespace>:<port>`. Note the values of `serviceName`, `namespace`, and `port` for each cluster as you will require them in later configuration steps.
+
+![Figure 6: Checking Service Endpoint](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-servicepoint.jpg)
 
 ### 3. Fetching Cluster ID
 
@@ -53,8 +65,11 @@ You need to fetch the cluster ID for each cluster where you have deployed the sc
 
 3. Look at the URL in your browser’s address bar. 
 
-For example: `https://abc.devtron.com/dashboard/infrastructure-management/resource-browser/1/node/k8sEmptyGroup`. <br /> 
-Here, the number appearing after `/resource-browser/` is the cluster ID. In this example, the cluster ID is `1`.
+    For example: `https://abc.devtron.com/dashboard/infrastructure-management/resource-browser/1/node/k8sEmptyGroup`. <br /> 
+
+    Here, the number appearing after `/resource-browser/` is the cluster ID. In this example, the cluster ID is `1`.
+
+    ![Figure 7: Fetching Cluster ID](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-cluster-id.jpg)
 
 Before proceeding to the next step, ensure, that you have noted the values of `PASS_KEY`, `serviceName`, `namespace`, and `port` for each cluster where you have deployed the Scoop chart.
 
@@ -69,6 +84,8 @@ Now that you’ve collected all the required values for: **cluster ID**, **servi
     Ensure the following entry is present in the ConfigMap (create one if it doesn’t exist).
     This flag defines the target clusters and their endpoints of the Scoop service deployed in those clusters:
 
+    ![Figure 8: Editing 'devtron-cm'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-flag.jpg)
+    
     ```json
     SCOOP_CLUSTER_CONFIG: |-
         {
@@ -124,6 +141,8 @@ Now that you’ve collected all the required values for: **cluster ID**, **servi
 1. Go to **Infrastructure Management** → **Resource Browser** → `default cluster` → **Workloads** → **Deployment**.
 
 2. Click the checkbox next to the `devtron` **Deployment** workload and restart it using the **`⟳`** button.
+
+    ![Figure 9: Restarting Deployment](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/resource-browser+/scoop/scoop-restart-deployment.jpg)
 
 ### 6. Perform Hard Refresh
 
@@ -184,6 +203,3 @@ SCOOP_CLUSTER_CONFIG: |-
 ```json
 SCOOP_CLUSTER_CONFIG: '{"1":{"serviceName":"scoop-service","passKey":"random-string","enableResourceList":false,"namespace":"devtroncd","port":"80"},"2":{"serviceName":"scoop-service","passKey":"random-string","enableResourceList":false,"namespace":"monitoring","port":"80"},"3":{"serviceName":"scoop-service","passKey":"unique-key-3","enableResourceList":false,"namespace":"staging","port":"80"},"4":{"serviceName":"scoop-service","passKey":"unique-key-4","enableResourceList":false,"namespace":"prod","port":"80"}}'
 ```
-
-  
-
