@@ -1,4 +1,4 @@
-# Create Job
+# Create a New Job
 
 In Devtron, jobs can be created in two ways:
 

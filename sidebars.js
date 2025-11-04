@@ -372,6 +372,7 @@ const sidebars = {
             id: 'user-guide/jobs/README',
           },
           items: [
+            'user-guide/jobs/what-is-job',
             'user-guide/jobs/create-job',
             {
               type: 'category',
@@ -379,7 +380,7 @@ const sidebars = {
               collapsed: true,
               link: {
                 type: 'doc', // or 'generated-index'
-                id: 'user-guide/jobs/README',
+                id: 'user-guide/jobs/configurations/README',
               },
               items: [
                 'user-guide/jobs/configurations/source-code-job',
