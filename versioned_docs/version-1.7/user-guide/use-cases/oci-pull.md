@@ -2,8 +2,8 @@
 id: oci-pull
 title: Pull Helm Charts from OCI Registry
 sidebar_label: Pull Helm Charts from OCI Registry
-slug: /
 ---
+
 # Pull Helm Charts from OCI Registry
 
 ## Introduction

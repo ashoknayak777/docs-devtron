@@ -2,8 +2,8 @@
 id: microsoft
 title: Microsoft
 sidebar_label: Microsoft
-slug: /
 ---
+
 # Microsoft
 
 ## Sample Configuration

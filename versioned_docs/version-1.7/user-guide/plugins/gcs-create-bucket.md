@@ -2,8 +2,8 @@
 id: gcs-create-bucket
 title: GCS Create Bucket
 sidebar_label: GCS Create Bucket
-slug: /
 ---
+
 # GCS Create Bucket
 
 ## Introduction

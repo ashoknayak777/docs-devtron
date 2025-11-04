@@ -2,8 +2,8 @@
 id: install
 title: Install Hyperion using Helm3 (Deprecated)
 sidebar_label: Install Hyperion using Helm3 (Deprecated)
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

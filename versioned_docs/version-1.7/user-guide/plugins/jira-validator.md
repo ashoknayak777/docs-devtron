@@ -2,8 +2,8 @@
 id: jira-validator
 title: Jira Issue Validator
 sidebar_label: Jira Issue Validator
-slug: /
 ---
+
 # Jira Issue Validator
 
 ## Introduction

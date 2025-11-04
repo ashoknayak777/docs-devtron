@@ -2,8 +2,8 @@
 id: external-links
 title: External Links
 sidebar_label: External Links
-slug: /
 ---
+
 # External Links
 
 This is similar to [External Links](../global-configurations/external-links.md) present under **Application Management** → **Configurations**. 

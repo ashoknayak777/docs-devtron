@@ -2,8 +2,8 @@
 id: upgrade-to-devtron
 title: Upgrade Hyperion to Devtron Full mode
 sidebar_label: Upgrade Hyperion to Devtron Full mode
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

@@ -2,8 +2,8 @@
 id: semgrep
 title: Semgrep
 sidebar_label: Semgrep
-slug: /
 ---
+
 # Semgrep
 
 Semgrep is a fast, open source, static analysis engine for finding bugs, detecting dependency vulnerabilities, and enforcing code standards.

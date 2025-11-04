@@ -2,8 +2,8 @@
 id: image-labels-and-comments
 title: Applying Labels and Comments
 sidebar_label: Applying Labels and Comments
-slug: /
 ---
+
 # Applying Labels and Comments
 
 ## Introduction

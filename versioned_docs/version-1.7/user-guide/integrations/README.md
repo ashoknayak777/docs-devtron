@@ -2,8 +2,8 @@
 id: README
 title: Devtron Integrations
 sidebar_label: Devtron Integrations
-slug: /
 ---
+
 # Devtron Integrations
  
 Devtron integrations extend the functionality of your Devtron stack.

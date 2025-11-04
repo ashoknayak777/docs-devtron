@@ -2,8 +2,8 @@
 id: environment-override-job
 title: Environment Overrides
 sidebar_label: Environment Overrides
-slug: /
 ---
+
 # Environment Overrides
 
 The Environment Overrides section allows you to customize the **ConfigMaps**, and **Secrets** for different environments such as development, testing, staging, and production, and it even allows you to create additional **ConfigMaps**, and **Secrets** (if required) for different environments

@@ -2,8 +2,8 @@
 id: README
 title: Deploying Application
 sidebar_label: Deploying Application
-slug: /
 ---
+
 # Deploying Application
 
 Each time you push a change to your application through GitHub, your application goes through a process to be built and deployed.

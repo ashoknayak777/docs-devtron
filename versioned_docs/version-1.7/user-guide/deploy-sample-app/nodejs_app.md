@@ -2,8 +2,8 @@
 id: nodejs_app
 title: Let's deploy a sample App
 sidebar_label: Let's deploy a sample App
-slug: /
 ---
+
 # Let's deploy a sample App
 
 Hurray! 

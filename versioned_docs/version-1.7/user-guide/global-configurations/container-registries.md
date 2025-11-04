@@ -2,8 +2,8 @@
 id: container-registries
 title: Container/OCI Registry
 sidebar_label: Container/OCI Registry
-slug: /
 ---
+
 # Container/OCI Registry
 
 ## Introduction

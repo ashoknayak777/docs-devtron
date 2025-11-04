@@ -2,8 +2,8 @@
 id: permission-groups
 title: Permission Groups
 sidebar_label: Permission Groups
-slug: /
 ---
+
 # Permission Groups
 
 Using the `Permission groups`, you can assign a user to a particular group and a user inherits all the permissions granted to the group. 

@@ -2,8 +2,8 @@
 id: create-plugin
 title: Create Your Plugin
 sidebar_label: Create Your Plugin
-slug: /
 ---
+
 # Create Your Plugin
 
 ## Introduction

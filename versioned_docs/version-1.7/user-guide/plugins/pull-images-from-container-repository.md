@@ -2,8 +2,8 @@
 id: pull-images-from-container-repository
 title: Pull images from container repository
 sidebar_label: Pull images from container repository
-slug: /
 ---
+
 # Pull images from container repository
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: sonarqube-v1.1.0
 title: Sonarqube v1.1.0
 sidebar_label: Sonarqube v1.1.0
-slug: /
 ---
+
 # Sonarqube v1.1.0
 
 Configuring `Sonarqube-v1.1.0` in pre-build or post build task enhances your workflow with Continuous Code Quality & Code Security.

@@ -2,8 +2,8 @@
 id: connect-expressjs-with-mongodb-database
 title: Connect Expressjs With Mongodb Database
 sidebar_label: Connect Expressjs With Mongodb Database
-slug: /
 ---
+
 # Connect Expressjs With Mongodb Database
 
 ## Introduction

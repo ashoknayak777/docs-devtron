@@ -2,8 +2,8 @@
 id: configmap-job
 title: ConfigMaps
 sidebar_label: ConfigMaps
-slug: /
 ---
+
 # ConfigMaps
 
 A ConfigMap stores key-value pairs that your jobs can use as environment variables or mounted files. Unlike secrets, ConfigMaps are meant for non-sensitive data. Moreover, you can update configurations without modifying or rebuilding your container images, thus making the deployments more efficient.

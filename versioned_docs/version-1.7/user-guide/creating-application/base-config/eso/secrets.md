@@ -2,8 +2,8 @@
 id: secrets
 title: Secrets
 sidebar_label: Secrets
-slug: /
 ---
+
 # Secrets
 
 Secrets allow you to store environment variables and files. With Secrets, you can store and manage sensitive information (e.g., passwords, authentication tokens, and SSH keys) in base64 encrypted form. Embedding this information in secrets is safer and more flexible than putting it verbatim in a pod definition or in a container image. Devtron generally hides the data of secrets, and it is only visible to the users having the edit permission.

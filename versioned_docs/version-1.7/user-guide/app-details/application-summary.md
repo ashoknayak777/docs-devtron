@@ -2,8 +2,8 @@
 id: application-summary
 title: Application Summary
 sidebar_label: Application Summary
-slug: /
 ---
+
 # Application Summary
 
 ## Introduction

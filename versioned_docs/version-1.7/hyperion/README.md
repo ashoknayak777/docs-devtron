@@ -2,8 +2,8 @@
 id: README
 title: Overview
 sidebar_label: Overview
-slug: /
 ---
+
 # Overview
 
 ## Hyperion 🦹

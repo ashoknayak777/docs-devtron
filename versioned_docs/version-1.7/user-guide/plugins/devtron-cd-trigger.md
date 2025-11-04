@@ -2,8 +2,8 @@
 id: devtron-cd-trigger
 title: Devtron-CD-Trigger
 sidebar_label: Devtron-CD-Trigger
-slug: /
 ---
+
 # Devtron-CD-Trigger
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: prometheus-stack-over-devtron
 title: Prerequisite to setup Prometheus Stack over Devtron
 sidebar_label: Prerequisite to setup Prometheus Stack over Devtron
-slug: /
 ---
+
 # Prerequisite to setup Prometheus Stack over Devtron
 
 ## Introduction

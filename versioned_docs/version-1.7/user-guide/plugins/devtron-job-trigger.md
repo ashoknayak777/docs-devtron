@@ -2,8 +2,8 @@
 id: devtron-job-trigger
 title: Devtron-Job-Trigger
 sidebar_label: Devtron-Job-Trigger
-slug: /
 ---
+
 # Devtron-Job-Trigger
 
 ## Introduction

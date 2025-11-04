@@ -2,8 +2,8 @@
 id: jira-updater
 title: Jira Issue Updater
 sidebar_label: Jira Issue Updater
-slug: /
 ---
+
 # Jira Issue Updater
 
 ## Introduction

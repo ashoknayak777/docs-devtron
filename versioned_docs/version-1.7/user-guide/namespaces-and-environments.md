@@ -2,8 +2,8 @@
 id: namespaces-and-environments
 title: Namespaces And Environments
 sidebar_label: Namespaces And Environments
-slug: /
 ---
+
 # Namespaces And Environments
 
 ## Namespaces

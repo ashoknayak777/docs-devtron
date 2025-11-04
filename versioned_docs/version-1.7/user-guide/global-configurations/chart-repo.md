@@ -2,8 +2,8 @@
 id: chart-repo
 title: Chart Repository
 sidebar_label: Chart Repository
-slug: /
 ---
+
 # Chart Repository
 
 ## Introduction

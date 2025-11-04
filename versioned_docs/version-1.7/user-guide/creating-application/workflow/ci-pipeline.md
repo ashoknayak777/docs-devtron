@@ -2,8 +2,8 @@
 id: ci-pipeline
 title: CI Pipeline
 sidebar_label: CI Pipeline
-slug: /
 ---
+
 # CI Pipeline
 
 :::caution Who Can Perform This Action?

@@ -2,8 +2,8 @@
 id: ephemeral-containers
 title: Using Ephemeral Containers
 sidebar_label: Using Ephemeral Containers
-slug: /
 ---
+
 # Using Ephemeral Containers
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: cloning-application
 title: Cloning Application
 sidebar_label: Cloning Application
-slug: /
 ---
+
 # Cloning Application
 
 Click on `Create New` and the select `Custom app` to create a new application.

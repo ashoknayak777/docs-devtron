@@ -2,8 +2,8 @@
 id: chart-group
 title: Chart Groups
 sidebar_label: Chart Groups
-slug: /
 ---
+
 # Chart Groups
 
 ## Introduction

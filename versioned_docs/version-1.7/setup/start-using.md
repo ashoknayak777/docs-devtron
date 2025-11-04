@@ -2,8 +2,8 @@
 id: start-using
 title: Start Using devtron
 sidebar_label: Start Using devtron
-slug: /
 ---
+
 # Start Using devtron
 
 #### configure docker registry

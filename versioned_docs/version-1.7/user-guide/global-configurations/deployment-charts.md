@@ -2,8 +2,8 @@
 id: deployment-charts
 title: Deployment Charts
 sidebar_label: Deployment Charts
-slug: /
 ---
+
 # Deployment Charts
 
 ## Introduction

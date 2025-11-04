@@ -2,8 +2,8 @@
 id: connect-springboot-with-mysql-database
 title: Connect SpringBoot with Mysql Database
 sidebar_label: Connect SpringBoot with Mysql Database
-slug: /
 ---
+
 # Connect SpringBoot with Mysql Database
 
 ## Introduction

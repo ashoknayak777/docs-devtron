@@ -2,8 +2,8 @@
 id: application-groups
 title: Application Groups
 sidebar_label: Application Groups
-slug: /
 ---
+
 # Application Groups
 
 ## Introduction

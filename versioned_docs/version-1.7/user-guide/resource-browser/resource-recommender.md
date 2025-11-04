@@ -2,8 +2,8 @@
 id: resource-recommender
 title: Resource Recommender
 sidebar_label: Resource Recommender
-slug: /
 ---
+
 # Resource Recommender
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>

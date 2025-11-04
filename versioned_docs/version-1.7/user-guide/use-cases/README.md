@@ -2,8 +2,8 @@
 id: README
 title: Use Cases
 sidebar_label: Use Cases
-slug: /
 ---
+
 # Use Cases
 
 _**Welcome, this document consists of Devtron Use Cases**_

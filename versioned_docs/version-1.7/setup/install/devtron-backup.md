@@ -2,8 +2,8 @@
 id: devtron-backup
 title: devtron-backup
 sidebar_label: devtron-backup
-slug: /
 ---
+
 ## Devtron Backup
 
 Regular backups for Devtron PostgreSQL and ArgoCD are crucial components of a disaster recovery plan, as they protect against potential data loss due to unforeseen circumstances. This documentation provides instructions on how to take backups of Devtron and store them either on AWS S3 or Azure containers.

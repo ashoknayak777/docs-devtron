@@ -2,8 +2,8 @@
 id: edit-lock-schema
 title: Configure Lock Schema
 sidebar_label: Configure Lock Schema
-slug: /
 ---
+
 # Configure Lock Schema
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>

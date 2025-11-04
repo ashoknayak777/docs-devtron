@@ -2,8 +2,8 @@
 id: container-image-exporter
 title: Container Image Exporter
 sidebar_label: Container Image Exporter
-slug: /
 ---
+
 # Container Image Exporter
 
 ## Introduction

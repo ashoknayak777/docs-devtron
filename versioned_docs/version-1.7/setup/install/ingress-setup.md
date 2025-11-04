@@ -2,8 +2,8 @@
 id: ingress-setup
 title: Ingress Setup
 sidebar_label: Ingress Setup
-slug: /
 ---
+
 # Ingress Setup
 
 ## Introduction

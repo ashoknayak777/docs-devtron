@@ -2,8 +2,8 @@
 id: demo-tutorials
 title: Demo Tutorials
 sidebar_label: Demo Tutorials
-slug: /
 ---
+
 # Demo Tutorials
 
 Here we have demonstrated the installation of Devtron on popular cloud providers. The videos are easy to follow and provide step-by-step instructions.

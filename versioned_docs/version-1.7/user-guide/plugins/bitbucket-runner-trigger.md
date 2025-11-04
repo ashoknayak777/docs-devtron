@@ -2,8 +2,8 @@
 id: bitbucket-runner-trigger
 title: Bitbucket Runner Trigger
 sidebar_label: Bitbucket Runner Trigger
-slug: /
 ---
+
 # Bitbucket Runner Trigger
 
 ## Introduction

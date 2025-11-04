@@ -2,8 +2,8 @@
 id: devtron-intelligence
 title: Using Devtron Intelligence
 sidebar_label: Using Devtron Intelligence
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

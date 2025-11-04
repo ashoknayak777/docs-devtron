@@ -2,8 +2,8 @@
 id: README
 title: Additional Installation Resources
 sidebar_label: Additional Installation Resources
-slug: /
 ---
+
 # Additional Installation Resources
 
 Every environment is different, and you may want to tune, extend, or troubleshoot your installation.

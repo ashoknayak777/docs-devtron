@@ -2,8 +2,8 @@
 id: rollout-deployment
 title: Rollout Deployment
 sidebar_label: Rollout Deployment
-slug: /
 ---
+
 
 # Rollout Deployment
 

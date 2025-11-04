@@ -2,8 +2,8 @@
 id: github
 title: GitHub
 sidebar_label: GitHub
-slug: /
 ---
+
 # GitHub
 
 ## Introduction

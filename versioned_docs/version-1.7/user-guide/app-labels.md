@@ -2,8 +2,8 @@
 id: app-labels
 title: App Labels Tagging
 sidebar_label: App Labels Tagging
-slug: /
 ---
+
 # App Labels Tagging
 
 Overview

@@ -2,8 +2,8 @@
 id: gcp-eso
 title: Google Secrets Manager
 sidebar_label: Google Secrets Manager
-slug: /
 ---
+
 # Google Secrets Manager
 
 :::caution Prerequisite 

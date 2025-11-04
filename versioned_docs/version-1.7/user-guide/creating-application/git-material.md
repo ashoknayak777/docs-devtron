@@ -2,8 +2,8 @@
 id: git-material
 title: Git Repository
 sidebar_label: Git Repository
-slug: /
 ---
+
 # Git Repository
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: host-url
 title: Host URL
 sidebar_label: Host URL
-slug: /
 ---
+
 # Host URL
 
 Host URL is the domain address at which your devtron dashboard can be reached.  

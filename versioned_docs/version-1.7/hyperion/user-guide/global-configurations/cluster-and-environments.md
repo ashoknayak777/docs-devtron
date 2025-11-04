@@ -2,8 +2,8 @@
 id: cluster-and-environments
 title: Cluster And Environments
 sidebar_label: Cluster And Environments
-slug: /
 ---
+
 # Cluster And Environments
 
 The Global configuration provides a feature of `Cluster & Environments` in which you can add your Kubernetes clusters and environment.

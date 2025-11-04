@@ -2,8 +2,8 @@
 id: user-access
 title: User Access for Hyperion Mode
 sidebar_label: User Access for Hyperion Mode
-slug: /
 ---
+
 # User Access for Hyperion Mode
 
 Like any enterprise product, Devtron supports fine grained access control to the resources

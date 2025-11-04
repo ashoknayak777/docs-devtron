@@ -2,8 +2,8 @@
 id: jenkins
 title: Jenkins
 sidebar_label: Jenkins
-slug: /
 ---
+
 # Jenkins
 
 ## Introduction

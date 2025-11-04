@@ -2,8 +2,8 @@
 id: README
 title: README
 sidebar_label: README
-slug: /
 ---
+
 `Authorization` section describes how to authenticate and authorize access to resources, also managing role-based access levels in Devtron. 
 
 Access can be granted to a user via:

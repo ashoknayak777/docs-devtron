@@ -2,8 +2,8 @@
 id: bulk-update
 title: Bulk Updates
 sidebar_label: Bulk Updates
-slug: /
 ---
+
 # Bulk Updates
 This feature helps you to update Deployment Template, ConfigMaps & Secrets for multiple apps in one go! You can filter the apps on the basis of environments, global flag, and app names(we provide support for both substrings included and excluded in the app name).
 ## Overview

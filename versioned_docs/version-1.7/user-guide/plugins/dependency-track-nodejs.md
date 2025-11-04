@@ -2,8 +2,8 @@
 id: dependency-track-nodejs
 title: Dependency Track for NodeJs
 sidebar_label: Dependency Track for NodeJs
-slug: /
 ---
+
 # Dependency Track for NodeJs
 
 Configuring `Dependency Track for NodeJs` in pre-build or post build task creates a bill of materials from NodeJs projects and environments and uploads it to D-track for [Component Analysis](https://owasp.org/www-community/Component_Analysis) to identify and reduce risk in the software supply chain.

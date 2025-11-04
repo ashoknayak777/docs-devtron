@@ -2,8 +2,8 @@
 id: cosign
 title: Cosign
 sidebar_label: Cosign
-slug: /
 ---
+
 # Cosign
 
 ## Introduction

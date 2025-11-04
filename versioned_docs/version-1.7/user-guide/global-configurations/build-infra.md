@@ -2,8 +2,9 @@
 id: build-infra
 title: Build Infra
 sidebar_label: Build Infra
-slug: /
 ---
+
+
 # Build Infra
 
 ## Introduction

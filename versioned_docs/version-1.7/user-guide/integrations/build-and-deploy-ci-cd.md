@@ -2,8 +2,8 @@
 id: build-and-deploy-ci-cd
 title: Build and Deploy (CI/CD)
 sidebar_label: Build and Deploy (CI/CD)
-slug: /
 ---
+
 # Build and Deploy (CI/CD)
  
 Devtron CI/CD integration enables software development teams to automate the build and deployment process, allowing them to focus on meeting the business requirements, maintaining code quality, and ensuring security.

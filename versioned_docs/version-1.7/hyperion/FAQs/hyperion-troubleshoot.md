@@ -2,8 +2,8 @@
 id: hyperion-troubleshoot
 title: hyperion-troubleshoot
 sidebar_label: hyperion-troubleshoot
-slug: /
 ---
+
 ## Troubleshooting Guide
 
 We always try to make your experience of using hyperion as smooth as possible but still if you face any issues, follow the troubleshooting guide given below or join our [discord channel](https://discord.gg/jsRG5qx2gp) if you couldn't find the solution for the issue you are facing.

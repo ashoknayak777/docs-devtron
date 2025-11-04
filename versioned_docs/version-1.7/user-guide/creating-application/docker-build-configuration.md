@@ -2,8 +2,8 @@
 id: docker-build-configuration
 title: Build Configuration
 sidebar_label: Build Configuration
-slug: /
 ---
+
  # Build Configuration
 
 In this section, we will provide information on the `Build Configuration`.

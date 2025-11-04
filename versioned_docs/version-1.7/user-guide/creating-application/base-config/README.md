@@ -2,8 +2,8 @@
 id: README
 title: Base Configurations
 sidebar_label: Base Configurations
-slug: /
 ---
+
 # Base Configurations
 
 ## Introduction

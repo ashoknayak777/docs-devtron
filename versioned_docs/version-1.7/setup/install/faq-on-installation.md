@@ -2,8 +2,8 @@
 id: faq-on-installation
 title: FAQ
 sidebar_label: FAQ
-slug: /
 ---
+
 
 # FAQ
 

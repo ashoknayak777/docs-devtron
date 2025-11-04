@@ -2,8 +2,8 @@
 id: README
 title: App Details
 sidebar_label: App Details
-slug: /
 ---
+
 # App Details
 
 ## Introduction

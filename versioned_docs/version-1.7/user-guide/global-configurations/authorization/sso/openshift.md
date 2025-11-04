@@ -2,8 +2,8 @@
 id: openshift
 title: Openshift
 sidebar_label: Openshift
-slug: /
 ---
+
 # Openshift
 
 ## Sample Configuration

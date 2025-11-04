@@ -2,8 +2,8 @@
 id: pods
 title: Pods
 sidebar_label: Pods
-slug: /
 ---
+
 # Pods
 
 :::caution Who Can Perform This Action?

@@ -2,8 +2,8 @@
 id: create-application
 title: Create a New Application
 sidebar_label: Create a New Application
-slug: /
 ---
+
 # Create a New Application
 
 * On the Devtron dashboard, select **Applications**.

@@ -2,8 +2,8 @@
 id: docker-slim
 title: DockerSlim
 sidebar_label: DockerSlim
-slug: /
 ---
+
 # DockerSlim
 
 ## Introduction

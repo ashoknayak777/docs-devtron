@@ -2,8 +2,8 @@
 id: copacetic
 title: Copacetic
 sidebar_label: Copacetic
-slug: /
 ---
+
 # Copacetic
 
 ## Introduction

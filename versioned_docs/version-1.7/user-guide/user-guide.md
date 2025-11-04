@@ -2,8 +2,8 @@
 id: user-guide
 title: Introduction
 sidebar_label: Introduction
-slug: /
 ---
+
 # Introduction
 
 Devtron is an open source software delivery workflow for kubernetes written in go.  

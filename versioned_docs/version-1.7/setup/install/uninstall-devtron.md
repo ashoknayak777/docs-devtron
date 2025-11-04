@@ -2,8 +2,8 @@
 id: uninstall-devtron
 title: Uninstall Devtron
 sidebar_label: Uninstall Devtron
-slug: /
 ---
+
 # Uninstall Devtron 
 
 To uninstall Devtron, run the following command:

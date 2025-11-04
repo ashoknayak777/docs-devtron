@@ -2,8 +2,8 @@
 id: graviton
 title: Devtron On Graviton
 sidebar_label: Devtron On Graviton
-slug: /
 ---
+
 # Devtron On Graviton
 In cloud computing, optimizing performance, efficiency, and cost-effectiveness is an endless pursuit. As technology evolves, new opportunities arise to achieve these goals. One such advancement is the introduction of AWS Graviton instances, which are rapidly gaining prominence as a game-changer in cloud architecture. 
 

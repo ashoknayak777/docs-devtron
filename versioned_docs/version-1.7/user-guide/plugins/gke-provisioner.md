@@ -2,8 +2,8 @@
 id: gke-provisioner
 title: GKE Provisioner
 sidebar_label: GKE Provisioner
-slug: /
 ---
+
 # GKE Provisioner
 
 ## Introduction

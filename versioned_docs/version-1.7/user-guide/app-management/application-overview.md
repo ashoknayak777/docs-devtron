@@ -2,8 +2,8 @@
 id: application-overview
 title: Application Overview
 sidebar_label: Application Overview
-slug: /
 ---
+
 import SupademoEmbed from '@site/src/components/SupademoEmbed';
 
 # Application Overview

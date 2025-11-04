@@ -2,8 +2,8 @@
 id: aws-eso
 title: AWS Secrets Manager
 sidebar_label: AWS Secrets Manager
-slug: /
 ---
+
 # AWS Secrets Manager
 
 :::caution Prerequisite 

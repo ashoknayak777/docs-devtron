@@ -2,8 +2,8 @@
 id: secrets
 title: Secrets
 sidebar_label: Secrets
-slug: /
 ---
+
 # Secrets
 
 Secrets and configmaps both are used to store environment variables but there is one major difference between them: Configmap stores key-values in normal text format while secrets store them in base64 encrypted form. Devtron hides the data of secrets for the normal users and it is only visible to the users having edit permission.

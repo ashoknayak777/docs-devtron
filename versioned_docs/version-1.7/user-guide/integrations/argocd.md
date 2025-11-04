@@ -2,8 +2,8 @@
 id: argocd
 title: GitOps (Argo CD)
 sidebar_label: GitOps (Argo CD)
-slug: /
 ---
+
 # GitOps (Argo CD)
  
 **Prerequisite**: Please make sure to install **Build and Deploy (CI/CD)** integration. To install it, click [here](../integrations/build-and-deploy-ci-cd.md).

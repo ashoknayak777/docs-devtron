@@ -2,8 +2,8 @@
 id: overview
 title: Overview
 sidebar_label: Overview
-slug: /
 ---
+
 # Overview
 
 The Overview page provides a centralized view of an application’s details within Devtron. It allows users to quickly access information about the application, manage tags, view deployment environments, and understand inter-app dependencies, all in a single, organized interface.

@@ -2,8 +2,8 @@
 id: README
 title: Workflow Editor
 sidebar_label: Workflow Editor
-slug: /
 ---
+
 # Workflow Editor
 
 ## Introduction

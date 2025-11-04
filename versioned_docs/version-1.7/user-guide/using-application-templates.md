@@ -2,8 +2,8 @@
 id: using-application-templates
 title: Creating Application From Template
 sidebar_label: Creating Application From Template
-slug: /
 ---
+
 # Creating Application From Template
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>

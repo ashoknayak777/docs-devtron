@@ -2,8 +2,8 @@
 id: automated-test
 title: automated-test
 sidebar_label: automated-test
-slug: /
 ---
+
 ## Automated Test suite integration in the CI step using devtron-ci.yaml
 
 Users can run the test case using the Devtron dashboard or by including the test cases in the devtron.ci.yaml file in the source git repository. For reference, check: [https://github.com/kumarnishant/getting-started-nodejs/blob/master/devtron-ci.yaml](https://github.com/kumarnishant/getting-started-nodejs/blob/master/devtron-ci.yaml)

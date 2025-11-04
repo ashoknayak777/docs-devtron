@@ -2,8 +2,8 @@
 id: github-pull-request-updater
 title: GitHub Pull Request Updater
 sidebar_label: GitHub Pull Request Updater
-slug: /
 ---
+
 # GitHub Pull Request Updater
 
 ## Introduction

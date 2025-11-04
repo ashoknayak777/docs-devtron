@@ -2,8 +2,8 @@
 id: secret-job
 title: Secrets
 sidebar_label: Secrets
-slug: /
 ---
+
 # Secrets
 
 Secrets are used to store configurations in base64 encrypted form. Devtron hides the data of secrets for the normal users, and it is only visible to the users having edit permission.

@@ -2,8 +2,8 @@
 id: sso-login
 title: SSO LOGIN
 sidebar_label: SSO LOGIN
-slug: /
 ---
+
 # SSO LOGIN 
 ## Overview
 

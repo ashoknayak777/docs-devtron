@@ -2,8 +2,8 @@
 id: upgrade-devtron-ui
 title: Update Devtron from Devtron UI
 sidebar_label: Update Devtron from Devtron UI
-slug: /
 ---
+
 # Update Devtron from Devtron UI
  
 Devtron can be updated from the **Devtron Stack Manage → About Devtron** section.

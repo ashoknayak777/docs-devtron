@@ -2,8 +2,8 @@
 id: what-is-job
 title: What is Jobs?
 sidebar_label: What is Jobs?
-slug: /
 ---
+
 # What is Jobs?
 
 Devtron Jobs provides a streamlined way to execute specific tasks or a set of tasks defined by the user within the user's application environment.

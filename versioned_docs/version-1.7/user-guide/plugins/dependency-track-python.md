@@ -2,8 +2,8 @@
 id: dependency-track-python
 title: Dependency Track for Python
 sidebar_label: Dependency Track for Python
-slug: /
 ---
+
 # Dependency Track for Python
 
 Configuring `Dependency Track for Python` in pre-build or post build task creates a bill of materials from Python projects and environments and uploads it to D-track for [Component Analysis](https://owasp.org/www-community/Component_Analysis) to identify and reduce risk in the software supply chain.

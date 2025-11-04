@@ -2,8 +2,8 @@
 id: overview
 title: Overview
 sidebar_label: Overview
-slug: /
 ---
+
 # Overview
 
 ![Figure 1: Resource Browser - Overview Page](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/kubernetes-resource-browser/resource-browser-overview.jpg)

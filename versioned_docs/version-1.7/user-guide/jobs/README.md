@@ -2,8 +2,8 @@
 id: README
 title: Jobs
 sidebar_label: Jobs
-slug: /
 ---
+
 # Jobs
 
 Devtron Jobs provides a streamlined way to execute specific tasks or a set of tasks defined by the user within the user's application environment.

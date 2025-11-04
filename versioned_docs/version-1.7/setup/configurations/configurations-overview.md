@@ -2,8 +2,8 @@
 id: configurations-overview
 title: Advanced Configurations
 sidebar_label: Advanced Configurations
-slug: /
 ---
+
 # Advanced Configurations
 
 You can configure Devtron by using configuration files. Configuration files are YAML files which are user-friendly.

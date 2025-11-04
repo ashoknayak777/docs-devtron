@@ -2,8 +2,8 @@
 id: hashicorp-eso
 title: HashiCorp Vault
 sidebar_label: HashiCorp Vault
-slug: /
 ---
+
 # HashiCorp Vault
 
 :::caution Prerequisite 

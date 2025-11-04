@@ -2,8 +2,8 @@
 id: cd-pipeline
 title: CD Pipeline
 sidebar_label: CD Pipeline
-slug: /
 ---
+
 # CD Pipeline
 
 :::caution Prerequisites

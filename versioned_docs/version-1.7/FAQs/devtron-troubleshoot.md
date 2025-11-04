@@ -2,8 +2,8 @@
 id: devtron-troubleshoot
 title: Troubleshooting Guide
 sidebar_label: Troubleshooting Guide
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

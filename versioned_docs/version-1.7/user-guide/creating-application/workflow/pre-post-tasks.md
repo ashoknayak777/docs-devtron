@@ -2,8 +2,8 @@
 id: pre-post-tasks
 title: Pre/Post Stages
 sidebar_label: Pre/Post Stages
-slug: /
 ---
+
 # Pre/Post Stages
 
 The build and deployment pipelines also include a pre stage and a post stage:

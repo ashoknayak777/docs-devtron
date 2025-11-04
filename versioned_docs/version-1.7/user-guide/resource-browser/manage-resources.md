@@ -2,8 +2,8 @@
 id: manage-resources
 title: Discover and Manage Resources
 sidebar_label: Discover and Manage Resources
-slug: /
 ---
+
 # Discover and Manage Resources 
 
 :::caution Who Can Perform This Action?

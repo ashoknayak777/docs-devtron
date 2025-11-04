@@ -2,8 +2,8 @@
 id: rollback-deployment
 title: Rollback Deployment
 sidebar_label: Rollback Deployment
-slug: /
 ---
+
 # Rollback Deployment
 
 

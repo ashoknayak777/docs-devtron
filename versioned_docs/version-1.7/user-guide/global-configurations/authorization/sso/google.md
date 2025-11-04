@@ -2,8 +2,8 @@
 id: google
 title: Google
 sidebar_label: Google
-slug: /
 ---
+
 # Google
 
 ## Introduction

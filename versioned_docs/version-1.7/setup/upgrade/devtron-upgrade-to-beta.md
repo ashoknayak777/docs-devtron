@@ -2,8 +2,8 @@
 id: devtron-upgrade-to-beta
 title: Upgrading existing devtron to beta
 sidebar_label: Upgrading existing devtron to beta
-slug: /
 ---
+
 # Upgrading existing devtron to beta
 
 If you want to check the current version of Devtron you are using, please use the following command.

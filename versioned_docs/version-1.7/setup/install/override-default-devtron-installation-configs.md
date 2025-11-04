@@ -2,8 +2,8 @@
 id: override-default-devtron-installation-configs
 title: Override Default Configurations of Devtron Installation
 sidebar_label: Override Default Configurations of Devtron Installation
-slug: /
 ---
+
 # Override Default Configurations of Devtron Installation
  
 In certain cases, you may want to override default configurations provided by Devtron. For example, for deployments or statefulsets you may want to change the memory or CPU requests or limit or add node affinity or taint tolerance. Say, for ingress, you may want to add annotations or host. Samples are available inside the [manifests/updates](https://github.com/devtron-labs/devtron/tree/main/manifests/updates) directory.

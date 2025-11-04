@@ -7,7 +7,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 const redirectsConfig = require('./docusaurus-redirects.json');
 
-
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */

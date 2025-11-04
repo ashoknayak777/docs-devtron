@@ -2,8 +2,8 @@
 id: triggering-ci
 title: Triggering CI Pipelines
 sidebar_label: Triggering CI Pipelines
-slug: /
 ---
+
 # Triggering CI Pipelines
 
 To trigger the CI pipeline, first you need to select a Git commit. To select a Git commit, click the **Select Material** button present on the CI pipeline.

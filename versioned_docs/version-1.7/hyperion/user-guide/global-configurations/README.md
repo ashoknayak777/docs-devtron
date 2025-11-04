@@ -2,8 +2,8 @@
 id: README
 title: Global Configurations
 sidebar_label: Global Configurations
-slug: /
 ---
+
 # Global Configurations
 
 This documentation consists of the Global Configurations available in Devtron.

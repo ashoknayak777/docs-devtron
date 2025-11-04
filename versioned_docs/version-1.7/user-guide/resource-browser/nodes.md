@@ -2,8 +2,8 @@
 id: nodes
 title: Nodes
 sidebar_label: Nodes
-slug: /
 ---
+
 # Nodes
 
 You can see the list of nodes available in your cluster. Typically you have several nodes in a cluster; in a learning or resource-limited environment, you might have only one node.

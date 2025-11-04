@@ -2,8 +2,8 @@
 id: ldap
 title: LDAP
 sidebar_label: LDAP
-slug: /
 ---
+
 # LDAP
 
 ## Sample Configuration

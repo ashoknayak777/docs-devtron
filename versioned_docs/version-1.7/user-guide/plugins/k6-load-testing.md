@@ -2,8 +2,8 @@
 id: k6-load-testing
 title: K6 Load Testing
 sidebar_label: K6 Load Testing
-slug: /
 ---
+
 # K6 Load Testing
 
 K6 is an open-source tool and cloud service that makes load testing easy for developers and QA engineers.

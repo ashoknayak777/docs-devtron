@@ -2,8 +2,8 @@
 id: README
 title: Devtron Upgrade
 sidebar_label: Devtron Upgrade
-slug: /
 ---
+
 # Devtron Upgrade
 
 Devtron can be upgraded in one of the following ways:

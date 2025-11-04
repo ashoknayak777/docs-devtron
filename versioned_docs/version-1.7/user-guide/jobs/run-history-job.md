@@ -2,8 +2,8 @@
 id: run-history-job
 title: Run History
 sidebar_label: Run History
-slug: /
 ---
+
 # Run History
 
 The run history allows you to review every execution of job pipelines. Here you can review who triggered each pipeline, when it started executing and finished, and whether it succeeded or failed. It also allows you to inspect logs for each execution.

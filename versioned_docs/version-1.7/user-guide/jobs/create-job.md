@@ -2,8 +2,8 @@
 id: create-job
 title: Create Job
 sidebar_label: Create Job
-slug: /
 ---
+
 # Create Job
 
 In Devtron, jobs can be created in two ways:

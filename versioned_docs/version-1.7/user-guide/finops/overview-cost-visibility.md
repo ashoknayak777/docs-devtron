@@ -2,8 +2,8 @@
 id: overview-cost-visibility
 title: Overview
 sidebar_label: Overview
-slug: /
 ---
+
 import SupademoEmbed from '@site/src/components/SupademoEmbed';
 
 # Overview

@@ -2,8 +2,8 @@
 id: devtron-ci-trigger
 title: Devtron-CI-Trigger
 sidebar_label: Devtron-CI-Trigger
-slug: /
 ---
+
 # Devtron-CI-Trigger
 
 ## Introduction

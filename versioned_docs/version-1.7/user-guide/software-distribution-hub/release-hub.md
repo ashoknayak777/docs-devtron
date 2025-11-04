@@ -2,8 +2,8 @@
 id: release-hub
 title: Release Hub
 sidebar_label: Release Hub
-slug: /
 ---
+
 # Release Hub
 
 :::caution Prerequisite

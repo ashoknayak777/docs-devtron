@@ -2,8 +2,8 @@
 id: README
 title: ConfigMaps & Secrets
 sidebar_label: ConfigMaps & Secrets
-slug: /
 ---
+
 # ConfigMaps & Secrets
 
 ## ConfigMaps

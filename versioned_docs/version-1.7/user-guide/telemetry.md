@@ -2,8 +2,8 @@
 id: telemetry
 title: Telemetry Guide
 sidebar_label: Telemetry Guide
-slug: /
 ---
+
 # Telemetry Guide
 
 * [Introduction](#introduction)

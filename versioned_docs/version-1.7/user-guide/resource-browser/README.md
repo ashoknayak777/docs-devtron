@@ -2,8 +2,8 @@
 id: README
 title: Resource Browser
 sidebar_label: Resource Browser
-slug: /
 ---
+
 # Resource Browser
 
 ## Introduction

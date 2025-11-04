@@ -2,8 +2,8 @@
 id: debugging-deployment-and-monitoring
 title: Debugging Deployment And Monitoring
 sidebar_label: Debugging Deployment And Monitoring
-slug: /
 ---
+
 # Debugging Deployment And Monitoring
 
 If the deployment of your application is not successful, then debugging needs to be done to check the cause of the error.

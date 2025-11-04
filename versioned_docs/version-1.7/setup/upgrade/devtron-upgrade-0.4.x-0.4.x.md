@@ -2,8 +2,8 @@
 id: devtron-upgrade-0.4.x-0.4.x
 title: Upgrading Devtron 0.4.x to 0.4.x
 sidebar_label: Upgrading Devtron 0.4.x to 0.4.x
-slug: /
 ---
+
 # Upgrading Devtron 0.4.x to 0.4.x
 
 If you want to check the current version of Devtron you are using, please use the following command.

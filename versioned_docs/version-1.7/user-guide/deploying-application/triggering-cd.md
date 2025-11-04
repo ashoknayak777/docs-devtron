@@ -2,8 +2,8 @@
 id: triggering-cd
 title: Triggering CD Pipelines
 sidebar_label: Triggering CD Pipelines
-slug: /
 ---
+
 # Triggering CD Pipelines
 
 After the [CI pipeline](./triggering-ci.md) is complete, you can trigger the CD pipeline.

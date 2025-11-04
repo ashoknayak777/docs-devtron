@@ -2,8 +2,8 @@
 id: container-registry-override
 title: Override Build Configuration
 sidebar_label: Override Build Configuration
-slug: /
 ---
+
 #  Override Build Configuration
 
 Within the same application, you can override a `container registry`, `container image` and `target platform` during the build pipeline, which means the images built for non-production environment can be included to the non-production registry and the images for production environment can be included to the production registry.

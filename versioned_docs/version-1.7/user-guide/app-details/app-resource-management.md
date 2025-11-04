@@ -2,8 +2,8 @@
 id: app-resource-management
 title: App Resource Management
 sidebar_label: App Resource Management
-slug: /
 ---
+
 # App Resource Management
 
 ## Introduction

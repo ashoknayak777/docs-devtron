@@ -2,8 +2,8 @@
 id: installation-configuration
 title: Installation Configuration
 sidebar_label: Installation Configuration
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

@@ -2,8 +2,8 @@
 id: README
 title: App Configuration
 sidebar_label: App Configuration
-slug: /
 ---
+
 # App Configuration
 
 **Please configure Global Configurations before moving ahead with App Configuration**

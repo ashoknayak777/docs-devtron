@@ -2,8 +2,8 @@
 id: prod-infra
 title: Production Infra Recommendations
 sidebar_label: Production Infra Recommendations
-slug: /
 ---
+
 # Production Infra Recommendations
 
 ## 1. Infrastructure Overview

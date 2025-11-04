@@ -2,8 +2,8 @@
 id: devtron-freemium
 title: Install Devtron Freemium
 sidebar_label: Install Devtron Freemium
-slug: /
 ---
+
 # Install Devtron Freemium
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: eks-create-cluster
 title: EKS Create Cluster
 sidebar_label: EKS Create Cluster
-slug: /
 ---
+
 # EKS Create Cluster
 
 ## Introduction

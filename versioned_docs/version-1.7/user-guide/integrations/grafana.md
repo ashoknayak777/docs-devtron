@@ -2,8 +2,8 @@
 id: grafana
 title: Monitoring (Grafana)
 sidebar_label: Monitoring (Grafana)
-slug: /
 ---
+
 # Monitoring (Grafana)
 
 **Prerequisite**: Please make sure to install **Build and Deploy (CI/CD)** integration. To install it, click [here](../integrations/build-and-deploy-ci-cd.md).

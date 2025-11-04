@@ -2,8 +2,8 @@
 id: fluxcd
 title: Enable GitOps Deployments with FluxCD
 sidebar_label: Enable GitOps Deployments with FluxCD
-slug: /
 ---
+
 # Enable GitOps Deployments with FluxCD
  
 :::info Prerequisite

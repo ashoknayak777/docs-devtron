@@ -2,8 +2,8 @@
 id: sonarqube
 title: SonarQube
 sidebar_label: SonarQube
-slug: /
 ---
+
 # SonarQube
 
 Configuring `Sonarqube` in pre-build or post build task enhances your workflow with Continuous Code Quality & Code Security.

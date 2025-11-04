@@ -2,8 +2,8 @@
 id: gitops-config
 title: GitOps Configuration
 sidebar_label: GitOps Configuration
-slug: /
 ---
+
 # GitOps Configuration
 
 :::caution 

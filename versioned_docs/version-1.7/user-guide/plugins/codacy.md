@@ -2,8 +2,8 @@
 id: codacy
 title: Codacy
 sidebar_label: Codacy
-slug: /
 ---
+
 # Codacy
 
 Codacy is an automated code analysis/quality tool that helps developers to ship better software in a faster manner.

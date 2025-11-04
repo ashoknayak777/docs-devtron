@@ -2,8 +2,8 @@
 id: notifications
 title: Notifications
 sidebar_label: Notifications
-slug: /
 ---
+
 # Notifications
 
 The **Notifications** screen lists AI-generated recommendations for your Kubernetes cluster. Each recommendation highlights cost or performance improvement opportunities.

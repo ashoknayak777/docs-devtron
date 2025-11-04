@@ -2,8 +2,8 @@
 id: glossary
 title: Glossary
 sidebar_label: Glossary
-slug: /
 ---
+
 # Glossary
 
 ### Artifacts

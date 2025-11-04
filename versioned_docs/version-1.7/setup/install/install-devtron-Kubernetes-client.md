@@ -2,8 +2,8 @@
 id: install-devtron-Kubernetes-client
 title: Devtron Kubernetes Desktop Client
 sidebar_label: Devtron Kubernetes Desktop Client
-slug: /
 ---
+
 # Devtron Kubernetes Desktop Client
 
 ## Introduction

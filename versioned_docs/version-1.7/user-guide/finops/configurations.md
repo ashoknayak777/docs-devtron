@@ -2,8 +2,8 @@
 id: configurations
 title: Configurations
 sidebar_label: Configurations
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

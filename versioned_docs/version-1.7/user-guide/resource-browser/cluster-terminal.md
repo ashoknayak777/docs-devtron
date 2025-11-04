@@ -2,8 +2,8 @@
 id: cluster-terminal
 title: Cluster Terminal
 sidebar_label: Cluster Terminal
-slug: /
 ---
+
 # Cluster Terminal
 
 User with [super-admin](../global-configurations/authorization/user-access.md#grant-super-admin-permission) access can now troubleshoot cluster issues by accessing the cluster terminal from Devtron. You can select an image from the list that has all CLI utilities like kubectl, helm, netshoot etc. or can use a custom image, which is publicly available.

@@ -2,8 +2,8 @@
 id: install-eso
 title: Install ESO
 sidebar_label: Install ESO
-slug: /
 ---
+
 # Install ESO
 
 :::info Prerequisites

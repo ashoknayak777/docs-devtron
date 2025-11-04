@@ -2,8 +2,8 @@
 id: image-promotion-policy
 title: Image Promotion Policy
 sidebar_label: Image Promotion Policy
-slug: /
 ---
+
 # Image Promotion Policy
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>

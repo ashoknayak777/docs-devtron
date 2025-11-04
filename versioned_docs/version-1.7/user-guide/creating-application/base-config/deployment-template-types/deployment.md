@@ -2,8 +2,8 @@
 id: deployment
 title: Deployment
 sidebar_label: Deployment
-slug: /
 ---
+
 # Deployment
 
 This chart creates a deployment that runs multiple replicas of your application and automatically replaces any instances that fail or become unresponsive. It does not support Blue/Green and Canary deployments. This is the default deployment chart. You can select `Deployment` chart when you want to use only basic use cases which contain the following:

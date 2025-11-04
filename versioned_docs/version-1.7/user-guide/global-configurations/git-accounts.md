@@ -2,8 +2,8 @@
 id: git-accounts
 title: Git Accounts
 sidebar_label: Git Accounts
-slug: /
 ---
+
 # Git Accounts
 
 Git Accounts allow you to connect your code source with Devtron. You will be able to use these git accounts to build the code using the CI pipeline.

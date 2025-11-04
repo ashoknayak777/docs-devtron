@@ -2,8 +2,8 @@
 id: deployment-visibility
 title: Deployment Visibility & Actions
 sidebar_label: Deployment Visibility & Actions
-slug: /
 ---
+
 # Deployment Visibility & Actions 
 
 :::info Prerequisites

@@ -2,8 +2,8 @@
 id: security-scans
 title: Security Scans
 sidebar_label: Security Scans
-slug: /
 ---
+
 # Security Scans
 
 :::info Prerequisite

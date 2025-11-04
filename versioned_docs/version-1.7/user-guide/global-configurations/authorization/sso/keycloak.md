@@ -2,8 +2,8 @@
 id: keycloak
 title: Keycloak
 sidebar_label: Keycloak
-slug: /
 ---
+
 # Keycloak
 
 ## Prerequisites

@@ -2,8 +2,8 @@
 id: statefulset
 title: StatefulSet
 sidebar_label: StatefulSet
-slug: /
 ---
+
 # StatefulSet
 
 The StatefulSet chart in Devtron allows you to deploy and manage stateful applications. StatefulSet is a Kubernetes resource that provides guarantees about the ordering and uniqueness of Pods during deployment and scaling. 

@@ -2,8 +2,8 @@
 id: README
 title: Chart Store
 sidebar_label: Chart Store
-slug: /
 ---
+
 # Chart Store
 
 ## Introduction

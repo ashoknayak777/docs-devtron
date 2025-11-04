@@ -2,8 +2,8 @@
 id: app-metrics
 title: Application Metrics
 sidebar_label: Application Metrics
-slug: /
 ---
+
 # Application Metrics
 
 ## Introduction

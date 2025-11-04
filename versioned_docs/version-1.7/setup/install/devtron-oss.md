@@ -2,8 +2,8 @@
 id: devtron-oss
 title: Install Devtron OSS
 sidebar_label: Install Devtron OSS
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

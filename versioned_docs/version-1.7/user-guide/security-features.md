@@ -2,8 +2,8 @@
 id: security-features
 title: Overview
 sidebar_label: Overview
-slug: /
 ---
+
 # Overview
 
 ## Introduction

@@ -2,8 +2,8 @@
 id: ansible-runner
 title: Ansible Runner
 sidebar_label: Ansible Runner
-slug: /
 ---
+
 # Ansible Runner
 
 ## Introduction

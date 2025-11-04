@@ -2,8 +2,8 @@
 id: config-maps
 title: ConfigMaps
 sidebar_label: ConfigMaps
-slug: /
 ---
+
 # ConfigMaps
 
 A ConfigMap stores key-value pairs (non-sensitive data) that your applications can use as environment variables or mounted files. You can update configurations without modifying or rebuilding your container images, thus making the deployments more efficient.

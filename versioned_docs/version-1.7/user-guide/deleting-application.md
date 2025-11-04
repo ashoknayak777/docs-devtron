@@ -2,8 +2,8 @@
 id: deleting-application
 title: Deleting Application
 sidebar_label: Deleting Application
-slug: /
 ---
+
 # Deleting Application
 
 Delete the Application, when you are sure you no longer need it.

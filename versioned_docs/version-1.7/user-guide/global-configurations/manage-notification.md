@@ -2,8 +2,8 @@
 id: manage-notification
 title: Manage Notifications
 sidebar_label: Manage Notifications
-slug: /
 ---
+
 # Manage Notifications
 
 ## Introduction

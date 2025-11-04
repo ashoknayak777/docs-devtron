@@ -2,8 +2,8 @@
 id: install-devtron-in-airgapped-environment
 title: Devtron Installation in an Airgapped Environment
 sidebar_label: Devtron Installation in an Airgapped Environment
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

@@ -2,8 +2,8 @@
 id: infrastructure-overview
 title: Infrastructure Overview
 sidebar_label: Infrastructure Overview
-slug: /
 ---
+
 import SupademoEmbed from '@site/src/components/SupademoEmbed';
 
 # Infrastructure Overview

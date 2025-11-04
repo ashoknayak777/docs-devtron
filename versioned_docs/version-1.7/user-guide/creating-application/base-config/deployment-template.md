@@ -2,8 +2,8 @@
 id: deployment-template
 title: Deployment Template
 sidebar_label: Deployment Template
-slug: /
 ---
+
 # Deployment Template
 
 ## Introduction 

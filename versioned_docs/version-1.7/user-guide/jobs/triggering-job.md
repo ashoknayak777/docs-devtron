@@ -2,8 +2,8 @@
 id: triggering-job
 title: Triggering Job Pipeline
 sidebar_label: Triggering Job Pipeline
-slug: /
 ---
+
 # Triggering Job Pipeline
 
 After creating the job pipeline, the next step is to trigger the job pipeline. This is the step where the job will be executed in the selected environment.

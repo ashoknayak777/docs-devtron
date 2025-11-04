@@ -2,8 +2,8 @@
 id: environment-overrides
 title: Environment Overrides
 sidebar_label: Environment Overrides
-slug: /
 ---
+
 # Environment Overrides
 
 You can view all environments associated with an application under the **Environment Overrides** section.

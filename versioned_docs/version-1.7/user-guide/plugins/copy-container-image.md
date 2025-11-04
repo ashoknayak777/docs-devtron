@@ -2,8 +2,8 @@
 id: copy-container-image
 title: Copy Container Image
 sidebar_label: Copy Container Image
-slug: /
 ---
+
 # Copy Container Image
 
 ## Introduction

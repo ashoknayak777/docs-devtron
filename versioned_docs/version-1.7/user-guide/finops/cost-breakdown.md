@@ -2,8 +2,8 @@
 id: cost-breakdown
 title: Cost Breakdown
 sidebar_label: Cost Breakdown
-slug: /
 ---
+
 import SupademoEmbed from '@site/src/components/SupademoEmbed';
 
 # Cost Breakdown

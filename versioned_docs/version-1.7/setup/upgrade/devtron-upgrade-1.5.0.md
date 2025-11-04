@@ -2,8 +2,8 @@
 id: devtron-upgrade-1.5.0
 title: Upgrade Devtron to 1.5.0
 sidebar_label: Upgrade Devtron to 1.5.0
-slug: /
 ---
+
 # Upgrade Devtron to 1.5.0
 
 This document outlines the step-by-step process to be followed before upgrading Devtron to version **1.5.0**.

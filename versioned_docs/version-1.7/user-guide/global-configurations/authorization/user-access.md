@@ -2,8 +2,8 @@
 id: user-access
 title: User Permissions
 sidebar_label: User Permissions
-slug: /
 ---
+
 # User Permissions
 
 ## Introduction

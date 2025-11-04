@@ -2,8 +2,8 @@
 id: job-and-cronjob
 title: Job and CronJob
 sidebar_label: Job and CronJob
-slug: /
 ---
+
 # Job and CronJob 
 
 

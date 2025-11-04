@@ -2,8 +2,8 @@
 id: notifications
 title: Notifications
 sidebar_label: Notifications
-slug: /
 ---
+
 # Notifications
  
  **Prerequisite**: Please make sure to install **Build and Deploy (CI/CD)** integration. To install it, click [here](../integrations/build-and-deploy-ci-cd.md).

@@ -2,8 +2,8 @@
 id: cluster-and-environments
 title: Clusters and Environments
 sidebar_label: Clusters and Environments
-slug: /
 ---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

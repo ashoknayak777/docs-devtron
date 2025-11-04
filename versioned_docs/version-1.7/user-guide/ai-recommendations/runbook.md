@@ -2,8 +2,8 @@
 id: runbook
 title: Runbooks
 sidebar_label: Runbooks
-slug: /
 ---
+
 # Runbooks
 
 AI automatically generates a runbook corresponding to the recommendation actions identified. Since you always have the choice to approve or reject the suggested runbook. Moreover, the user always  option to manually [create additional runbooks](#create-a-runbook).

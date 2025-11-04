@@ -2,8 +2,8 @@
 id: README
 title: Install Devtron
 sidebar_label: Install Devtron
-slug: /
 ---
+
 # Install Devtron
 
 ## Introduction

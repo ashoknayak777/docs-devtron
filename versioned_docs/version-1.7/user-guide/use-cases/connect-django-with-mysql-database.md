@@ -2,8 +2,8 @@
 id: connect-django-with-mysql-database
 title: Connect Django With Mysql Database
 sidebar_label: Connect Django With Mysql Database
-slug: /
 ---
+
 # Connect Django With Mysql Database
 
 ## Introduction

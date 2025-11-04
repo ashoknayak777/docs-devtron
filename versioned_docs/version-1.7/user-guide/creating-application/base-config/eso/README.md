@@ -2,8 +2,8 @@
 id: README
 title: Types of External Secrets
 sidebar_label: Types of External Secrets
-slug: /
 ---
+
 # Types of External Secrets
 
 Apart from the provision to add Secrets, Devtron supports the addition of External Secrets too including:

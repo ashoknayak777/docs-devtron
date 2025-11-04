@@ -2,8 +2,8 @@
 id: api-tokens
 title: API Tokens
 sidebar_label: API Tokens
-slug: /
 ---
+
 # API Tokens
 
 API tokens are the access tokens for authentication. Instead of using username and password, it can be used for programmatic access to API. It allows users to generate API tokens with the desired access. Only super admin users can generate API tokens and see the generated tokens.

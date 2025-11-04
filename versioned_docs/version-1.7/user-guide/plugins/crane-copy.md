@@ -2,8 +2,8 @@
 id: crane-copy
 title: CraneCopy
 sidebar_label: CraneCopy
-slug: /
 ---
+
 # CraneCopy
 
 ## Introduction

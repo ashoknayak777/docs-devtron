@@ -2,8 +2,8 @@
 id: okta
 title: Okta
 sidebar_label: Okta
-slug: /
 ---
+
 # Okta
 
 ## Prerequisites

@@ -2,8 +2,8 @@
 id: source-code-job
 title: Source Code
 sidebar_label: Source Code
-slug: /
 ---
+
 # Source Code
 
 In Devtron, the Source Code configuration is used to specify the repository that contains your scripts, Terraform files, YAML configurations, or other resources. The repository acts as a central location for these files, allowing you to reference and execute them in your job without needing to rewrite the scripts in the Workflow Editor each time.

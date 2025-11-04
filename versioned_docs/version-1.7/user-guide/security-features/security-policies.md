@@ -2,8 +2,8 @@
 id: security-policies
 title: Security Policies
 sidebar_label: Security Policies
-slug: /
 ---
+
 # Security Policies
 
 :::info Prerequisite

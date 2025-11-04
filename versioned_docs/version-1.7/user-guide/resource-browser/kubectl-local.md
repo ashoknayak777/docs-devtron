@@ -2,8 +2,8 @@
 id: kubectl-local
 title: Running Kubectl Commands Locally
 sidebar_label: Running Kubectl Commands Locally
-slug: /
 ---
+
 # Running Kubectl Commands Locally 
 
 ## Introduction <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>

@@ -2,8 +2,8 @@
 id: dependency-track-maven-gradle
 title: Dependency Track for Maven & Gradle
 sidebar_label: Dependency Track for Maven & Gradle
-slug: /
 ---
+
 # Dependency Track for Maven & Gradle
 
 Configuring `Dependency Track for NodeJs` in pre-build or post build task creates a bill of materials from Maven & Gradle projects and environments and uploads it to D-track for [Component Analysis](https://owasp.org/www-community/Component_Analysis) to identify and reduce risk in the software supply chain.

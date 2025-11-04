@@ -2,8 +2,8 @@
 id: oidc
 title: OIDC
 sidebar_label: OIDC
-slug: /
 ---
+
 # OIDC
 
 ## Sample Configuration

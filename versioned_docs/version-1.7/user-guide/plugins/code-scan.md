@@ -2,8 +2,8 @@
 id: code-scan
 title: Code Scan
 sidebar_label: Code Scan
-slug: /
 ---
+
 # Code Scan
 
 ## Introduction

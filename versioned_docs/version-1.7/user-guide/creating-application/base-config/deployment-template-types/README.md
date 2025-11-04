@@ -2,8 +2,8 @@
 id: README
 title: Types of Deployment Templates
 sidebar_label: Types of Deployment Templates
-slug: /
 ---
+
 # Types of Deployment Templates
 
 In Devtron, the following deployment charts are available for you to use for your application:

@@ -2,8 +2,8 @@
 id: sso-login
 title: SSO Login Services
 sidebar_label: SSO Login Services
-slug: /
 ---
+
 # SSO Login Services
 
 ## Introduction

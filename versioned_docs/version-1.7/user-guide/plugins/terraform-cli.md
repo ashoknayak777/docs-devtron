@@ -2,8 +2,8 @@
 id: terraform-cli
 title: Terraform CLI
 sidebar_label: Terraform CLI
-slug: /
 ---
+
 # Terraform CLI 
 
 ## Introduction

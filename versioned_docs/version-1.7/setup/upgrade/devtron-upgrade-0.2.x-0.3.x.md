@@ -2,8 +2,8 @@
 id: devtron-upgrade-0.2.x-0.3.x
 title: Upgrading Devtron 0.2.x to 0.3.x
 sidebar_label: Upgrading Devtron 0.2.x to 0.3.x
-slug: /
 ---
+
 # Upgrading Devtron 0.2.x to 0.3.x
 
 ## Follow the required steps to update the Devtron version

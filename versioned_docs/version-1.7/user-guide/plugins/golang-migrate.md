@@ -2,8 +2,8 @@
 id: golang-migrate
 title: GoLang-migrate
 sidebar_label: GoLang-migrate
-slug: /
 ---
+
 # GoLang-migrate
 
 Migrate reads migrations from sources file and applies them in correct order to a database.
