@@ -2822,7 +2822,7 @@
             "from": [
               "/devtron/v1.7/usage/jobs/configurations"
             ],
-            "to": "/docs/devtron/v1.7/user-guide/finops/configurations"
+            "to": "/docs/devtron/v1.7/user-guide/jobs/configurations"
           },
           {
             "from": [
@@ -4559,7 +4559,7 @@
             "from": [
               "/devtron/v1.8/usage/jobs/configurations"
             ],
-            "to": "/docs/devtron/v1.8/user-guide/finops/configurations"
+            "to": "/docs/devtron/v1.8/user-guide/jobs/configurations"
           },
           {
             "from": [
