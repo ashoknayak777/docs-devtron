@@ -57,7 +57,15 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/docs',
           sidebarPath: './sidebars.js',
+          includeCurrentVersion: true,
+          lastVersion: '2.0', //current
+          versions: {
+            current: {
+              label: '2.0 🚧',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -135,6 +143,12 @@ const config = {
           srcDark: 'https://devtron-public-asset.s3.us-east-2.amazonaws.com/cms-assets/img/hlogos/devtron-logo-horizontal-white.svg',
         },
         items: [
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            // dropdownItemsBefore: [],
+            // dropdownItemsAfter: [{ to: '/versions', label: 'All versions' }],
+          },
           { label: 'Docs', className: 'navbar-docs-link', type: 'docSidebar', sidebarId: 'tutorialSidebar', position: 'left' },
           // { label: 'GitHub Repo', href: 'https://github.com/devtron-labs/devtron', position: 'right' },
           // { label: 'Join Discord', href: 'https://discord.gg/devtron', position: 'right' },
