@@ -66,9 +66,9 @@ const config = {
               label: '2.0 🚧',
               path: '',
             },
-            '1.8': {
-              label: '1.8',
-              path: 'devtron/v1.8', 
+            '1.7': {
+              label: '1.7',
+              path: 'devtron/v1.7', 
             },
           },
           // Please change this to your repo.
