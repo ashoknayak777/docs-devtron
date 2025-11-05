@@ -18,8 +18,8 @@
 
 
 <script src="/js/reo.js"></script><link rel="stylesheet" href="/assets/css/styles.8fdf5883.css">
-<script src="/assets/js/runtime~main.92d0e3cb.js" defer="defer"></script>
-<script src="/assets/js/main.645abae4.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.84af9810.js" defer="defer"></script>
+<script src="/assets/js/main.df07f950.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -122,7 +122,7 @@
 </ol>
 <p>After clearing <code>Cookies</code>, try again to login, you should be able to login now.</p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="7-no-charts-found-in-charts-discover-section">7. No charts found in Charts Discover Section<a href="#7-no-charts-found-in-charts-discover-section" class="hash-link" aria-label="Direct link to 7. No charts found in Charts Discover Section" title="Direct link to 7. No charts found in Charts Discover Section" translate="no">​</a></h4>
-<p>In the Devtron&#x27;s Discover Chart section, if you are not able to see any charts available, go to <strong>Application Management</strong> → <strong>Configurations</strong> → <strong>Chart Repository</strong> and click on <code>Refresh Chart</code> at the top-right as shown in the image below. After clicking the button, it might take 4-5mins to show all the charts in <code>Discover</code> section depending upon the chart repositories added.</p>
+<p>In the Devtron&#x27;s Discover Chart section, if you are not able to see any charts available, go to <strong>Global Configurations</strong> → <strong>Chart Repository</strong> and click on <code>Refresh Chart</code> at the top-right as shown in the image below. After clicking the button, it might take 4-5mins to show all the charts in <code>Discover</code> section depending upon the chart repositories added.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/refresh-charts.png" alt="charts-not-found" class="img_ev3q"></p>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="8-not-able-to-update-cluster">8. Not able to update cluster<a href="#8-not-able-to-update-cluster" class="hash-link" aria-label="Direct link to 8. Not able to update cluster" title="Direct link to 8. Not able to update cluster" translate="no">​</a></h4>
 <p>In <strong>Global Configurations</strong> → <strong>Clusters &amp; Environments</strong>, if you try to update a cluster which has been already added in Devtron, you might get an error as <code>{&quot;message&quot;:&quot;Failed to update datasource. Reload new version and try again&quot;}</code>. If you are facing such issue, please follow the following steps -</p>
@@ -217,7 +217,7 @@ Refer to the <code>Google Cloud specific</code> parameters on the <a class="" hr
 <p>This can occur if you are using or recently upgraded to Kubernetes version 1.22 or above and you are using rollout controller version 0.13.0 from chart <code>devtron-charts/rollout</code> or <code>devtron/rollout</code>. The issue can be because of CRDs which were updated in later versions of rollout chart.</p>
 <ol>
 <li class="">Check which chart repo and version of rollout controller are you using on that cluster from Helm Apps section</li>
-<li class="">Update the rollout chart version to latest and re-deploy. If your rollout controller is deployed from <code>devtron-charts</code> helm repo then change the repo to <code>devtron/rollout</code> and then update the version to latest. Also, if devtron helm repo is not showing on your devtron then go to Application Management → Configurations → Chart Repository and add a new repo with the name <code>devtron</code> and url <code>https://helm.devtron.ai</code>. Wait for few minutes and then charts from devtron repo will be there on your devtron. This should resolve your issue</li>
+<li class="">Update the rollout chart version to latest and re-deploy. If your rollout controller is deployed from <code>devtron-charts</code> helm repo then change the repo to <code>devtron/rollout</code> and then update the version to latest. Also, if devtron helm repo is not showing on your devtron then go to Global Configurations → Chart Repository and add a new repo with the name <code>devtron</code> and url <code>https://helm.devtron.ai</code>. Wait for few minutes and then charts from devtron repo will be there on your devtron. This should resolve your issue</li>
 </ol>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="23-how-to-resolve-if-deployment-status-shows-failed-or-degraded-when-you-pull-images-from-private-container-registry">23. How to resolve if Deployment Status shows Failed or Degraded when you pull images from private container registry<a href="#23-how-to-resolve-if-deployment-status-shows-failed-or-degraded-when-you-pull-images-from-private-container-registry" class="hash-link" aria-label="Direct link to 23. How to resolve if Deployment Status shows Failed or Degraded when you pull images from private container registry" title="Direct link to 23. How to resolve if Deployment Status shows Failed or Degraded when you pull images from private container registry" translate="no">​</a></h4>
 <p>If the deployment status shows <code>Failed</code> or <code>Degraded</code>, then the cluster is not able to pull container image from the private registry. In that case, the status of pod shows <code>ImagePullBackOff</code>.</p>
@@ -327,14 +327,14 @@ Wait for few minutes and check the build pipeline if commits are visible or not<
 <p>Make sure your <a href="https://devtron-public-asset.s3.us-east-2.amazonaws.com/integrations/about-devtron.png" target="_blank" rel="noopener noreferrer" class="">Devtron version</a> is 0.7.1 (<a class="" href="/docs/devtron/v1.8/setup/upgrade">check how to upgrade</a>).</p>
 </li>
 <li class="">
-<p>Navigate to <strong>Application Management</strong> → <strong>Chart Repository</strong> → <strong>Bitnami</strong></p>
+<p>Navigate to <strong>Global Configurations</strong> → <strong>Chart Repository</strong> → <strong>Bitnami</strong></p>
 </li>
 <li class="">
 <p>Now in the Bitnami repository, uncheck the <strong>Allow Insecure Connection</strong> and update it as shown below.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/bitnami-chart-issue.jpg" alt="" class="img_ev3q"></p>
 </li>
 <li class="">
-<p>Go to <strong>Application Management</strong> → <strong>Chart Store</strong> and initiate the Chart Sync.</p>
+<p>Go to <strong>Chart Store</strong> and initiate the Chart Sync.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-troubleshooting/chart-sync.jpg" alt="" class="img_ev3q"></p>
 </li>
 </ul>
