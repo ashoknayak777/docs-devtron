@@ -18,8 +18,8 @@
 
 
 <script src="/js/reo.js"></script><link rel="stylesheet" href="/assets/css/styles.e9c5a562.css">
-<script src="/assets/js/runtime~main.29688610.js" defer="defer"></script>
-<script src="/assets/js/main.1d1e2c07.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.cc4832d1.js" defer="defer"></script>
+<script src="/assets/js/main.645abae4.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -33,7 +33,7 @@
 <p>Therefore, Devtron offers a feature called &#x27;Image Promotion Policy&#x27; that allows you to directly promote an image to the target environment, bypassing the intermediate stages in your workflow including:</p>
 <ul>
 <li class=""><a class="" href="/docs/user-guide/creating-application/workflow/cd-pipeline#pre-deployment-stage">Pre-CD</a> and <a class="" href="/docs/user-guide/creating-application/workflow/cd-pipeline#post-deployment-stage">Post-CD</a> of the intermediate stages</li>
-<li class="">All <a class="" href="/docs/user-guide/global-configurations/approval-policy">approval nodes</a> of the intermediate stages</li>
+<li class="">All <a class="" href="/docs/user-guide/app-management/policies/approval-policy">approval nodes</a> of the intermediate stages</li>
 </ul>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/image-promotion/image-promotion-visual.jpg" alt="Figure 2: Promoting an Image" class="img_ev3q"></p>
 <hr>
@@ -100,7 +100,7 @@
 </li>
 </ol>
 <p>The image&#x27;s promotion to the target environment now depends on the approval settings in the image promotion policy. If the super-admin has enforced an approval process, the image requires the necessary number of approvals before promotion. On the other hand, if the super-admin has not enforced approval, the image will be automatically promoted since there is no request phase involved.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>In case you have configured <a class="" href="/docs/user-guide/global-configurations/manage-notification#configurations">SES or SMTP on Devtron</a>, an email notification will be sent to the approvers.</p></div></div>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>In case you have configured <a class="" href="/docs/user-guide/app-management/configurations/manage-notification#configurations">SES or SMTP on Devtron</a>, an email notification will be sent to the approvers.</p></div></div>
 <ol start="7">
 <li class="">If approval(s) are required for image promotion, you may check the status of your request in the <code>Approval Pending</code> tab.</li>
 </ol>
@@ -134,7 +134,7 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="deploying-a-promoted-image">Deploying a Promoted Image<a href="#deploying-a-promoted-image" class="hash-link" aria-label="Direct link to Deploying a Promoted Image" title="Direct link to Deploying a Promoted Image" translate="no">​</a></h3>
 <div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Who Can Perform This Action?</div><div class="admonitionContent_BuS1"><p>Users with build &amp; deploy permission or above for the application and environment can deploy the promoted image.</p></div></div>
 <p>If a user has approved the promotion request for an image, they may or may not be able to deploy depending upon the <a href="#creating-an-image-promotion-policy" class="">policy configuration</a>.</p>
-<p>However, a promoted image does not automatically qualify as a deployable image. It must fulfill all configured requirements (<a class="" href="/docs/user-guide/global-configurations/approval-policy">Image Deployment Approval</a>, <a class="" href="/docs/user-guide/global-configurations/filter-condition">Filter Conditions</a>, etc.) of the target environment for it to be deployed.</p>
+<p>However, a promoted image does not automatically qualify as a deployable image. It must fulfill all configured requirements (<a class="" href="/docs/user-guide/app-management/policies/approval-policy">Image Deployment Approval</a>, <a class="" href="/docs/user-guide/app-management/policies/filter-condition">Filter Conditions</a>, etc.) of the target environment for it to be deployed.</p>
 <p>In the <strong>Build &amp; Deploy</strong> tab of your application, click <strong>Select Image</strong> for the CD pipeline, and choose your promoted image for deployment.</p>
 <p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/global-configurations/image-promotion/deploying-promoted-image.jpg" alt="Figure 9: Deploying Promoted Image" class="img_ev3q"></p>
 <p>You can check the deployment of promoted images in the <strong>Deployment History</strong> of your application. It will also indicate the pipeline from which the image was promoted and deployed to the target environment.</p>
