@@ -18,7 +18,7 @@
 
 
 <script src="/js/reo.js"></script><link rel="stylesheet" href="/assets/css/styles.8fdf5883.css">
-<script src="/assets/js/runtime~main.2f388247.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.dc4569bc.js" defer="defer"></script>
 <script src="/assets/js/main.cfb70caa.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -94,9 +94,9 @@
 <p>To learn how to configure deployment windows, refer to the <a class="" href="/docs/user-guide/app-management/policies/deployment-window">Deployment Window documentation</a>.</p>
 </blockquote>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="catalog-">Catalog <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" class="enterprise-badge-img"></a><a href="#catalog-" class="hash-link" aria-label="Direct link to catalog-" title="Direct link to catalog-" translate="no">​</a></h3>
-<p>The <strong>Catalog</strong> in the <strong>About</strong> section displays information about your application, such as documentation references, ownership details, and technical specifications. This data is managed using <a class="" href="/docs/user-guide/global-configurations/catalog-framework">Devtron’s Catalog Framework</a>.</p>
-<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog.jpg" alt="Figure 6: Catalog" class="img_ev3q"></p>
-<p>You can use the <strong>Catalog framework</strong> to maintain information about your application, such as Documentation (e.g., API contract, service documentation), ownership details, technical attributes, etc. This makes it easier for others to understand, manage, and use your application.</p>
+<p>The <strong>Catalog</strong> in the <strong>About</strong> section displays information about your application, such as documentation references, ownership details, and technical specifications. You can manage this data using the <strong>Manage Schema</strong> option, which defines the structure of your catalog. Refer the <a class="" href="/docs/user-guide/global-configurations/catalog-framework#managing-a-schema">Manage Schema Documentation</a> to learn more.</p>
+<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-edit.jpg" alt="Figure 6: Catalog" class="img_ev3q"></p>
+<p>You can use the <strong>Catalog</strong> to maintain information about your application, such as Documentation (e.g., API contract, service documentation), ownership details, technical attributes, etc. This makes it easier for others to understand, manage, and use your application.</p>
 <p>Super-Admins define a custom JSON schema that determines what fields are shown in the catalog form. This schema is specific to each resource type, such as Devtron applications.</p>
 <p>When you click the <strong>Edit</strong> icon, a form appears based on the defined schema. As an application owner or client, you can fill out fields like:</p>
 <ul>
@@ -104,10 +104,10 @@
 <li class="">Code owners and on-call responsibilities</li>
 <li class="">Service attributes (e.g., internet-facing flag, communication method, framework, language)</li>
 </ul>
-<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog-expanded.jpg" alt="Figure 7: Catalog Form" class="img_ev3q"></p>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in <strong>Catalog Framework</strong>. Field names and sections may vary depending on how the schema was defined by your organization.</p></div></div>
+<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-schema-generated-form.jpg" alt="Figure 7: Catalog Form" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in <strong>Catalog</strong>. Field names and sections may vary depending on how the schema was defined by your organization. Refer <a class="" href="/docs/user-guide/global-configurations/catalog-framework#managing-a-schema">Manage Schema</a> documentation to learn more.</p></div></div>
 <p>Once saved, this information is displayed in a readable format within the Catalog subsection and is accessible to all users who have permission to view the application.</p>
-<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/creating-application/overview/catalog-final.jpg" alt="Figure 8: Catalog Final View" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-final-view.jpg" alt="Figure 8: Catalog Final View" class="img_ev3q"></p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="configure-persistentvolumeclaim-pvc">Configure PersistentVolumeClaim (PVC)<a href="#configure-persistentvolumeclaim-pvc" class="hash-link" aria-label="Direct link to Configure PersistentVolumeClaim (PVC)" title="Direct link to Configure PersistentVolumeClaim (PVC)" translate="no">​</a></h3>
 <p>A <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims" target="_blank" rel="noopener noreferrer" class="">PersistentVolumeClaim (PVC)</a> is a request for storage, which is used to mount a PersistentVolume (PV) into a Pod that can be used by your application’s CI pipeline.</p>
 <p>In Devtron, you can use a <a href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#persistentvolumeclaims" target="_blank" rel="noopener noreferrer" class="">PersistentVolumeClaim (PVC)</a> to provide persistent storage to the Pod that runs your CI pipeline, enabling the pod to store and reuse cached data such as dependencies.</p>
