@@ -31,7 +31,7 @@ This shows errors in the cluster. If no error is present in the cluster, Resourc
 Users need to have super-admin permission to edit the catalog.
 :::
 
-Based on the schema defined for the catalog, you can add relevant details for each cluster. You can manage this data using the **Manage Schema**￼ option, which defines the structure of your catalog. Refer the [Manage Schema](../global-configurations/catalog-framework.md#managing-a-schema) documentation to learn more.
+Based on the schema defined for the catalog, you can add relevant details for each cluster. You can manage this data using the **Manage Schema** option, which defines the structure of your catalog. Refer the [Manage Schema](../global-configurations/catalog-framework.md#managing-a-schema) documentation to learn more.
 
 ---
 

@@ -4,7 +4,7 @@
 
 Ideally, all resources such as microservices, clusters, jobs, and pods should include detailed information, so users know what each resource does, how to use it, and its technical specifications. 
 
-To achieve this, Devtron provides a feature called **Catalog**, which lets a [super-admin](../global-configurations/authorization/user-access.md#devtron-apps-permissions)￼ define a custom JSON schema that renders a form for resource owners to fill. After defining a schema, it generates a form that users can fill out, and the entered data appears in a clear GUI format. 
+To achieve this, Devtron provides a feature called **Catalog**, which lets a [super-admin](../global-configurations/authorization/user-access.md#devtron-apps-permissions) define a custom JSON schema that renders a form for resource owners to fill. After defining a schema, it generates a form that users can fill out, and the entered data appears in a clear GUI format. 
 
 Currently, Devtron supports catalog for the following resource types (a.k.a. resource kind):
 
@@ -35,18 +35,18 @@ The **Catalog** schema you define applies to all resources of that type. For exa
 1. Go to the **Overview** tab of your resource (for example, a **Devtron App**, or **Helm App**, or **Job**, or **Cluster**) and locate the **Catalog** section. 
 
 :::caution Note
-Here, we’re defining schema for a **Devtron application** as an example. You can define schemas for all other supported resource types (**Helm App**, or **Job**, or **Cluster**) in the exactly same way.
+Here, we’re defining schema for a **Devtron application** as an example. You can define schemas for all other supported resource types (**Helm App**, or **Job**, or **Cluster**) in exactly the same way.
 :::
 
 2. Click **Manage Schema**. A new page will open.
 
     ![Figure 2: Clicking 'Manage Schema'](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-manage-schema.jpg)
 
-3. Enter a **Name** and **Description** (optional). The **Kind** field automatically filled with the resource type (such as **Devtron application**, **Helm application**, **cluster**, or **job**) based on where you opened **Manage Schema**.
+3. Enter a **Name** and **Description** (optional). The **Kind** field is automatically filled with the resource type (such as **Devtron application**, **Helm application**, **cluster**, or **job**) based on where you opened **Manage Schema**.
 
     ![Figure 3: Entering Details](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-enter-details.jpg)
 
-4. There is a sample schema available for you to create your own customized schema. Using this schema, you can decide the input types that renders within the form, for e.g., a dropdown of enum values, a boolean toggle button, text field, label, and many more.
+4. There is a sample schema available for you to create your own customized schema. Using this schema, you can decide the input types that render within the form, for e.g., a dropdown of enum values, a boolean toggle button, text field, label, and many more.
 
     ![Figure 4a: Using Sample Schema](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-sample-schema.jpg)
 

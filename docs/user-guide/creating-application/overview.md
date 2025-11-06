@@ -94,7 +94,7 @@ This section is view-only and does not require any configuration at the applicat
 
 ### Catalog <a href="https://devtron.ai/pricing"><img src="https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/elements/EnterpriseTag.svg" className="enterprise-badge-img" /></a>
 
-The **Catalog** in the **About** section displays information about your application, such as documentation references, ownership details, and technical specifications. You can manage this data using the **Manage Schema**￼ option, which defines the structure of your catalog. Refer the [Manage Schema Documentation](../global-configurations/catalog-framework.md#managing-a-schema) to learn more.
+The **Catalog** in the **About** section displays information about your application, such as documentation references, ownership details, and technical specifications. You can manage this data using the **Manage Schema** option, which defines the structure of your catalog. Refer the [Manage Schema Documentation](../global-configurations/catalog-framework.md#managing-a-schema) to learn more.
 
 ![Figure 6: Catalog](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-edit.jpg)
 
@@ -111,7 +111,7 @@ When you click the **Edit** icon, a form appears based on the defined schema. As
 ![Figure 7: Catalog Form](https://devtron-public-asset.s3.us-east-2.amazonaws.com/images/devtron-v2/catalog/catalog-schema-generated-form.jpg)
 
 :::info 
-The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in **Catalog**. Field names and sections may vary depending on how the schema was defined by your organization. Refer [Manage Schema](../global-configurations/catalog-framework.md) documentation to learn more.
+The structure and labels in the catalog form are entirely configurable by your platform team via JSON schema in **Catalog**. Field names and sections may vary depending on how the schema was defined by your organization. Refer [Manage Schema](../global-configurations/catalog-framework.md#managing-a-schema) documentation to learn more.
 :::
 
 Once saved, this information is displayed in a readable format within the Catalog subsection and is accessible to all users who have permission to view the application.
