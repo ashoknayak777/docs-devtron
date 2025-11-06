@@ -75,11 +75,15 @@ Before proceeding to the next step, ensure, that you have noted the values of `P
 
 ### 4. Update ConfigMap
 
-Now that you’ve collected all the required values for: **cluster ID**, **serviceName**, **namespace**, **port**, and **PASS_KEY** for all the clusters where you have deployed the Scoop chart. The next step is to add them to the **devtron-cm** ConfigMap 
+Now that you’ve collected all the required values for: **cluster ID**, **serviceName**, **namespace**, **port**, and **PASS_KEY** for all the clusters where you have deployed the Scoop chart. The next step is to add them to the **devtron-cm** / **orchestrator-cm** ConfigMap 
+
+::: info Note
+The **orchestrator-cm** ConfigMap will be available only if you have Devtron managed setup.
+:::
 
 1. In a new tab, go to **Infrastructure Management** → **Resource Browser** → `default-Cluster` → **Config & Storage** → **ConfigMap**
 
-2. Edit the **devtron-cm** ConfigMap by clicking **Edit Live Manifest** <br />
+2. Edit the **devtron-cm** / **orchestrator-cm** ConfigMap by clicking **Edit Live Manifest** <br />
 
     Ensure the following entry is present in the ConfigMap (create one if it doesn’t exist).
     This flag defines the target clusters and their endpoints of the Scoop service deployed in those clusters:
